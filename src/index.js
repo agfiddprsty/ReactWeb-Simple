@@ -4,10 +4,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Home from './Home';
-import Batch from './ListBatch.js';
+//import Batch from './ListBatch.js';
 import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render(<Home />, document.getElementById('root'));
+import Reg from './Registrasi';
+ReactDOM.render(<Reg />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Home.css';
 import Header from './Header.js';
 import Footer from './Footer.js';
-import Batch from './ListBatch';
+//import Batch from './ListBatch';
 import profile from './profile.jpeg'
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 
