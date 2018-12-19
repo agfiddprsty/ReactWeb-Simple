@@ -212,3 +212,16 @@ section#box-profile{
     color: #55a8fd;
     border: 1px solid #55a8fd;
 }
+
+.editor{
+  margin:  20px 50px 30px 50px;
+}
+
+.code {
+  margin-left: 1050px;
+}
+
+.compiler{
+  width: 1000;
+  height: 1000
+}
