@@ -7,7 +7,8 @@ import Home from './Home';
 //import Batch from './ListBatch.js';
 import * as serviceWorker from './serviceWorker';
 import Reg from './Registrasi';
-ReactDOM.render(<Reg />, document.getElementById('root'));
+import Hack from './Hackerrank';
+ReactDOM.render(<Hack />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
