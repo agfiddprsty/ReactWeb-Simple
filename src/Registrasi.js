@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import ReactDOM from 'react-dom';
 import { ReCaptcha } from 'react-recaptcha-google'
-import Header from './Header.js';
+import Header from './Headereg.js';
 import Footer from './Footer.js';
 import {Link,Redirect,withRouter} from 'react-router-dom'
 import Home from './Home';
@@ -35,11 +35,15 @@ class registrasi extends Component{
       // }
       registerhandle(){
         if(this.state.isverified){
-         
+          this.props.history.push("/Dashboard");
+
           
         }else{
+
           // alert('Please Proof You Are Human')
-          this.props.history.push("/Hack");
+       //   this.props.history.push("/Hack");
+
+           alert('Please Proof You Are Human')
         //alert(this.state.name);
         }
       }
@@ -84,6 +88,13 @@ class registrasi extends Component{
                 <label className="label-regis">Email</label>
                 <div className="col-9">
                 <input type="email" placeholder="Email" className="form-control"></input>
+                </div>
+              </div>
+
+              <div className="colom">
+                <label className="label-regis">Password</label>
+                <div className="col-9">
+                <input type="password" placeholder="Password" className="form-control"></input>
                 </div>
               </div>
               
