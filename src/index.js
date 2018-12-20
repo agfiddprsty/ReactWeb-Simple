@@ -8,7 +8,21 @@ import Home from './Home';
 import * as serviceWorker from './serviceWorker';
 import Reg from './Registrasi';
 import Hack from './Hackerrank';
-ReactDOM.render(<Hack />, document.getElementById('root'));
+import {
+	BrowserRouter as Router,
+	Route,
+} from 'react-router-dom';
+ReactDOM.render(
+    
+	<Router>
+        <div>
+            <Route exact path="/" component={Reg} />
+
+            <Route path="/Home" component={Home} />
+            <Route path="/Hack" component={Hack} />
+        </div>
+    </Router>
+    , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -1,26 +1,41 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ReactDOM from 'react-dom';
 import { ReCaptcha } from 'react-recaptcha-google'
 import Header from './Header.js';
 import Footer from './Footer.js';
+import {Link,Redirect,withRouter} from 'react-router-dom'
+import Home from './Home';
 class registrasi extends Component{
-    constructor(props){
-        super(props)
-        this.registerhandle = this.registerhandle.bind(this);
-    
-        this.onLoadReecaptcha = this.onLoadRecaptcha.bind(this);
-        this.verifyCallback = this.verifyCallback.bind(this);
-        this.state = {
-            isverified: false
-        }
-      }
+  constructor(props){
+    super(props)
+    this.registerhandle = this.registerhandle.bind(this);
+
+    this.onLoadReecaptcha = this.onLoadRecaptcha.bind(this);
+    this.verifyCallback = this.verifyCallback.bind(this);
+    this.state = {
+        isverified: false,
+        name:'',
+        email:'',
+        alamat:'',
+        no:'',
+        usia:'',
+        Skill:'',
+        asal:'',
+
+    }
+  }
+      // startregister(){
+
+      // }
       registerhandle(){
         if(this.state.isverified){
+         
           
-         // alert('Registered Succsessfull');
         }else{
-          alert('Please Proof You Are Human')
+          // alert('Please Proof You Are Human')
+          this.props.history.push("/App");
         }
       }
       componentDidMount() {
@@ -43,7 +58,9 @@ class registrasi extends Component{
           })
         }
       }
+      
       render(){
+        
           return(
             <div className="App">
             <Header/>
@@ -53,12 +70,12 @@ class registrasi extends Component{
                <h1>Register</h1>
               </div>
               <div className="colom">
-              <p>Nama</p>
-              <input type="text" placeholder="Nama" className="form-control" ></input>
+              <p>Name</p>
+                 <input type="text" placeholder="Name" className="form-control" onChange={this.setState.name} ></input>
               </div>
               <div className="colom">
                 <p>Email</p>
-                <input type="text" placeholder="Email" className="form-control"></input>
+                <input type="email" placeholder="Email" className="form-control"></input>
               </div>
               
               <div className="colom">
