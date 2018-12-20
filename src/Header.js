@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css';
-
+import {withRouter,Link} from 'react-router-dom';
 class Header extends Component {
   render() {
     return (
@@ -8,7 +8,7 @@ class Header extends Component {
         <header className="Hom-header">
             <nav>
               <ul>
-                <li><a href="#">HOME</a></li>
+                <li><Link to='/Reg'>Register</Link></li>
                 <li><a href="#">PROFILE</a></li>
                 <li><a href="#">ABOUT</a></li>
               </ul>

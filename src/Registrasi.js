@@ -11,7 +11,7 @@ class registrasi extends Component{
   constructor(props){
     super(props)
     this.registerhandle = this.registerhandle.bind(this);
-
+    this.handleChange = this.handleChange.bind(this);
     this.onLoadReecaptcha = this.onLoadRecaptcha.bind(this);
     this.verifyCallback = this.verifyCallback.bind(this);
     this.state = {
@@ -26,6 +26,10 @@ class registrasi extends Component{
 
     }
   }
+      handleChange(event) {
+        this.setState({name: event.target.value});
+      }
+
       // startregister(){
 
       // }
@@ -35,7 +39,8 @@ class registrasi extends Component{
           
         }else{
           // alert('Please Proof You Are Human')
-          this.props.history.push("/App");
+          this.props.history.push("/Hack");
+        //alert(this.state.name);
         }
       }
       componentDidMount() {
@@ -70,37 +75,50 @@ class registrasi extends Component{
                <h1>Register</h1>
               </div>
               <div className="colom">
-              <p>Name</p>
-                 <input type="text" placeholder="Name" className="form-control" onChange={this.setState.name} ></input>
+              <label className="label-regis">Name</label>
+              <div className="col-9">
+                 <input type="text" placeholder="Name" className="form-control" onChange={this.handleChange} value={this.state.name}></input>
+                 </div>
               </div>
               <div className="colom">
-                <p>Email</p>
+                <label className="label-regis">Email</label>
+                <div className="col-9">
                 <input type="email" placeholder="Email" className="form-control"></input>
+                </div>
               </div>
               
               <div className="colom">
-                <p>Alamat</p>
+             
+                <label className="label-regis">Alamat</label>
+                <div className="col-9">
                 <textarea placeholder="Alamat" className="form-control"></textarea>
+                </div>
               </div>
               
               <div className="colom">
-                <p>No Handphone</p>
+                <label className="label-regis">No Handphone</label>
+                <div className="col-9">
                 <input type="text" placeholder="No Handphone" className="form-control"></input>
+                </div>
               </div>
               
               <div className="colom">
-                <p>Usia</p>
+                <label className="label-regis">Usia</label>
+                <div className="col-9">
                 <input type="text" placeholder="Usia" className="form-control"></input>
+                </div>
               </div>
              
               <div className="colom">
-               <p>Skils</p>
+               <label className="label-regis">Skils</label>
+               <div className="col-9">
                <input type="text" placeholder="Skill" className="form-control"></input>
+               </div>
               </div>
               
               <div className="colom">
-                <p>Pendidikan Terakhir</p>
-                <select>
+                <label className="label-regis">Pendidikan Terakhir</label><br/>
+                <select className="label-regis">
                   <option>SD</option>
                   <option>SMP</option>
                   <option>SMA</option>
@@ -109,25 +127,29 @@ class registrasi extends Component{
               </div>
               
               <div className="colom">
-                 <p>Asal Sekolah</p>
+                 <label className="label-regis">Asal Sekolah</label>
+                 <div className="col-9">
                  <input type="text" placeholder="Asal Sekolah" className="form-control"></input>
+                 </div>
               </div>
               
               <div className="colom">
-                 <p>Uploud KTP/Kartu Identitas</p>
+                 <label className="label-regis">Uploud KTP/Kartu Identitas</label>
+                 <div className="col-9">
                  <input type="file" placeholder="Asal Sekolah" className="form-control-file border"></input><br/>
+                 </div>
               </div>
               
               <div className="colom">
-                <label>               
+                <label className="label-regis">               
                   <input type="checkbox"></input>
-                  Saya Menyutujui <br/>
-                  <a href="#">Syarat Dan Ketentuan</a>
+                  Saya Menyutujui   
+                  <a href="/">Syarat Dan Ketentuan</a>
                 </label><br/>
               </div>  
               
               <div className="colom">
-                <div>
+                <div className="label-regis">
                   {/* You can replace captchaDemo with any ref word */}
                   <ReCaptcha
                     ref={(el) => {this.captchaDemo = el;}}
@@ -141,7 +163,7 @@ class registrasi extends Component{
               </div>
              
               </div>
-               <div className="colom">
+               <div className="button-regis">
                 <button className="btn btn-primary marginbutton" onClick={this.registerhandle} > Submit</button>
               </div>
           

@@ -31,15 +31,15 @@
   }
 }
 .form{
-  height: 1100px;
+  height: 1000px;
   background-color: white;
-  width: 800px;
-  margin-left: 270px;
+  width: 700px;
+  margin-left: 310px;
 
 }
 .grey{
   background-color: #E9E9F1;
-  height: 1100px;
+  height: 1000px;
 }
 .text{
     margin-left: 10px;
@@ -77,8 +77,8 @@ nav ul li a:hover{
   margin-left: 300px
 }
 .colom{
-  margin-left: 50px;
-  margin-right: 50px;
+  
+  margin-left: 100px;
   margin-top: 10px;
 }
 .footer{
@@ -86,4 +86,10 @@ nav ul li a:hover{
 }
 .marginbutton{
   margin-bottom: 10px
+}
+.button-regis{
+  margin-left: 300px;
+}
+.label-regis{
+  margin-left: 15px;
 }
