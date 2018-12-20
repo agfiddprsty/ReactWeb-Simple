@@ -35,11 +35,11 @@ class registrasi extends Component{
       // }
       registerhandle(){
         if(this.state.isverified){
-         
+          this.props.history.push("/Dashboard");
+
           
         }else{
-          // alert('Please Proof You Are Human')
-          this.props.history.push("/Dashboard");
+           alert('Please Proof You Are Human')
         //alert(this.state.name);
         }
       }
