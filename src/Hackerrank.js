@@ -4,30 +4,31 @@ import './Home.css';
 import Header from './Header';
 import Footer from './Footer';
 import Compiler from './Compiler';
-import MonacoEditor from 'react-monaco-editor';
 import { ListGroup, ListGroupItem, Fade } from 'reactstrap';
 
 class Hackerrank extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  editorDidMount(editor, monaco) {
-    console.log('editorDidMount', editor);
-    editor.focus();
-  }
-  onChange(newValue, e) {
-    console.log('onChange', newValue, e);
-  }
   render() {
-    const options = {
-      selectOnLineNumbers: true
-    };
     return (
       <div className="Hom">
         <Header />
         <body className="Hom-body">
         <ListGroup className="editor">
-          <ListGroupItem>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh sit amet commodo nulla facilisi nullam vehicula. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Elit ut aliquam purus sit. Blandit massa enim nec dui nunc. Scelerisque viverra mauris in aliquam sem. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. Ornare massa eget egestas purus viverra accumsan in. Ultricies mi eget mauris pharetra et ultrices. Morbi tristique senectus et netus et malesuada fames ac. Ultrices tincidunt arcu non sodales neque sodales ut. Donec massa sapien faucibus et molestie. Nulla facilisi morbi tempus iaculis urna. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. In hac habitasse platea dictumst vestibulum. Erat velit scelerisque in dictum non consectetur a. Vestibulum lectus mauris ultrices eros in cursus. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit.</ListGroupItem>
+          <ListGroupItem>Complete the function solveMeFirst to compute the sum of two integers.<br></br>
+            <br></br>Function prototype:<br></br>
+            <br></br>int solveMeFirst(int a, int b);<br></br>
+            <br></br>where,<br></br>
+            <br></br>a is the first integer input.
+            <br></br>b is the second integer input
+            <br></br>Return values
+            <br></br>sum of the above two integers
+            <br></br>Sample Input
+            <br></br>a = 2
+            <br></br>b = 3
+            <br></br>Sample Output
+            <br></br>5
+            <br></br>Explanation<br></br>
+            <br></br>The sum of the two integers
+            <br></br>and is computed as: . </ListGroupItem>
           <ListGroupItem className="compiler">
             <Compiler/>
         </ListGroupItem>
