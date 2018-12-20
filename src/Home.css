@@ -20,7 +20,7 @@ nav ul li{
     float: left;
     display: block;
     font-size: 15px;
-    margin: -5px 30px 25px 15px;
+    margin: -10px 10px 25px 10px;
     align-self: center;
 }
 nav ul li a{
@@ -56,28 +56,32 @@ nav ul li a:hover{
   color: white;
 }
 
-.col{
-  text-align: center;
-  width: 90%;
-  position: relative;
-  min-height: 250px;
-  margin-top: 30px;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  padding-left: 20px;
-  box-shadow: 0 0 7px 0px rgba(136, 136, 136, 0.2);
+section#silabus{
+    position: relative;
+    width: 80%;
+    text-align: center;
+    min-height: 250px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color:  #fff;
+    box-shadow: 0 0 7px 0px rgba(136, 136, 136, 0.2);
 }
 
-.silabus{
-  margin-left: 11%;
-  margin-right: 1%;
-  background-color: #fff;
-}
-
-.batch{
-  margin-left: 1%;
-  background-color: #fff;
-  margin-right: 11%;
+section#batch{
+    position: relative;
+    width: 80%;
+    text-align: center;
+    min-height: 250px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color:  #fff;
+    box-shadow: 0 0 7px 0px rgba(136, 136, 136, 0.2);
 }
 
 .Hom-profile{
