@@ -4,7 +4,7 @@ import Header from './Header.js';
 import Footer from './Footer.js';
 //import Batch from './ListBatch';
 import profile from './profile.jpeg'
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import {withRouter,Link} from 'react-router-dom';
 
 class Home extends Component {
   render() {
@@ -23,7 +23,7 @@ class Home extends Component {
               <p>Android Dev</p>
               <a href="#" className="btn btn-primary" role="button">Edit</a>
               <a href="#" className="btn btn-outline-primary">Resume</a>
-              <a href="#" className="btn btn-outline-primary">Start Test</a>
+              <Link to='/Hack' className="btn btn-outline-primary">Start Test</Link>
           </div>
           <div className="information">
               <div className="data">
@@ -47,11 +47,13 @@ class Home extends Component {
                   <p className="text-gray">agfid11@gmail.com</p>
               </div>
           </div>
-      </section>
-      <div class="row">
-        <div class="col silabus"> silabus </div>
-        <div class="col batch"> batch </div>
-      </div>
+        </section>
+        <section id="silabus">
+            <div> silabus </div>
+        </section>
+        <section id="batch">
+            <div> Batch </div>
+        </section>
         </body>
         <Footer />
       </div>

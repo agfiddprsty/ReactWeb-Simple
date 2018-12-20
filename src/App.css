@@ -31,7 +31,7 @@
   }
 }
 .form{
-  height: 1000px;
+  height: 100%;
   background-color: white;
   width: 700px;
   margin-left: 310px;
@@ -39,7 +39,7 @@
 }
 .grey{
   background-color: #E9E9F1;
-  height: 1000px;
+  height: 100%;
 }
 .text{
     margin-left: 10px;

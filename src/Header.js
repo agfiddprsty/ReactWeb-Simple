@@ -8,9 +8,18 @@ class Header extends Component {
         <header className="Hom-header">
             <nav>
               <ul>
-                <li><Link to='/Reg'>Register</Link></li>
-                <li><a href="#">PROFILE</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li className="nav-item">
+                <Link to='#' className="nav-link">HOME</Link>
+                </li>
+                <li className="nav-item"><a href="#" className="nav-link">ABOUT</a></li>
+                <li className="nav-item dropdown active">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">ACCOUNT
+                 </a>
+                 <div class="dropdown-menu">
+                 <Link to='/Dashboard' className="dropdown-item">PROFILE</Link>
+                 <Link to='/Reg' className="dropdown-item">LOGOUT</Link>
+                </div>
+                </li>
               </ul>
             </nav>
         </header>
