@@ -39,7 +39,7 @@ class registrasi extends Component{
           
         }else{
           // alert('Please Proof You Are Human')
-          this.props.history.push("/Hack");
+       //   this.props.history.push("/Hack");
         //alert(this.state.name);
         }
       }
