@@ -233,3 +233,25 @@ section#box-profile{
   width: 1000;
   height: 1000
 }
+
+.botcam{
+    margin-bottom: 20px;
+}
+
+.desc{
+    text-align: left;
+}
+
+.modul{
+    color:#212529;
+}
+
+.modul:hover {
+    text-decoration: none;
+    color: #212529;
+}
+
+.deck{
+    margin:  20px 5px 0px 5px;
+    text-decoration: none;
+}
