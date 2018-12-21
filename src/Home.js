@@ -54,31 +54,31 @@ class Home extends Component {
              <p class="list-group-item active">Silabus</p>
              <div>
              <CardDeck className="deck">
-             <Card><a href="#" className="modul">
+             <Card><a href="/" className="modul">
                 <CardImg top width="100%" src={profile} alt="Card image cap" />
                 <CardBody>
                 <CardTitle>Module 1</CardTitle>
                 <CardSubtitle>Card subtitle</CardSubtitle>
-                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                <a href="#" className="btn btn-outline-primary">Read Module</a>
+                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
+                <a href="/" className="btn btn-outline-primary">Read Module</a>
                 </CardBody>
                 </a></Card>
-            <Card><a href="#" className="modul">
+            <Card><a href="/" className="modul">
                 <CardImg top width="100%" src={profile} alt="Card image cap" />
                 <CardBody>
                 <CardTitle>Module 2</CardTitle>
                 <CardSubtitle>Card subtitle</CardSubtitle>
-                <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
-                <a href="#" className="btn btn-outline-primary">Read Module</a>
+                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
+                <a href="/" className="btn btn-outline-primary">Read Module</a>
                 </CardBody>
             </a></Card>
-            <Card><a href="#" className="modul">
+            <Card><a href="/" className="modul">
                 <CardImg top width="100%" src={profile} alt="Card image cap" />
                 <CardBody>
                 <CardTitle>Module 3</CardTitle>
                 <CardSubtitle>Card subtitle</CardSubtitle>
                 <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-                <a href="#" className="btn btn-outline-primary">Read Module</a>
+                <a href="/" className="btn btn-outline-primary">Read Module</a>
                 </CardBody>
             </a></Card>
             </CardDeck>

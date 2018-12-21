@@ -12,7 +12,7 @@ class Header extends Component {
                 <Link to='#' className="nav-link">HOME</Link>
                 </li>
                 <li className="nav-item"><a href="#" className="nav-link">ABOUT</a></li>
-                <li className="nav-item dropdown active">
+                <li className="nav-item dropdown">
                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">ACCOUNT
                  </a>
                  <div class="dropdown-menu">
