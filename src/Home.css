@@ -6,7 +6,7 @@ nav{
     position: relative;
     width: 100%;
     height: 60px;
-    background-color: #282c34;
+    background-color: #007bff;
     box-shadow: #888;
 }
 nav ul{
@@ -46,7 +46,7 @@ nav ul li a:hover{
 }
 
 .Hom-header {
-  background-color: #282c34;
+  background-color: #007bff;
   height: 10vh;
   display: flex;
   align-items: center;
