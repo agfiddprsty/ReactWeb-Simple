@@ -8,6 +8,9 @@ import Home from './Home';
 import * as serviceWorker from './serviceWorker';
 import Reg from './Registrasi';
 import Hack from './Hackerrank';
+import Menu from './Menu';
+import Silabus from './Silabus';
+import InfoSilabus from './InfoSilabus';
 import {
 	BrowserRouter as Router,
 	Route,
@@ -16,7 +19,7 @@ ReactDOM.render(
     
 	<Router>
         <div>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={Silabus} />
             <Route path="/Dashboard" component={Home}/>
             <Route path="/Reg" component={Reg} />
             <Route path="/Hack" component={Hack} />

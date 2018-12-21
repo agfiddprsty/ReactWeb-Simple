@@ -255,3 +255,30 @@ section#box-profile{
     margin:  20px 5px 0px 5px;
     text-decoration: none;
 }
+
+.image-silabus{
+    width: 349px;
+    height: 262px;
+}
+.progressbar-silabus{
+    margin-left:10px;
+    
+}
+.bar{
+    height: 100%;
+}
+.image-menu-silabus{
+    width: 20px;
+    height: 20px;
+    margin-right: 40px;
+}
+.listgrup-silabus{
+    text-align: left;
+    margin-top: 40px;
+}
+.ListGrup-Silabus{
+    text-align: left;
+}
+.saya{
+    margin-top: 30px;
+}

@@ -93,3 +93,22 @@ nav ul li a:hover{
 .label-regis{
   margin-left: 15px;
 }
+.Info-Silabus{
+  width: 349px;
+  height: 262px;
+  margin-left: -38%;
+  margin-right: 10%;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 7px 0px rgba(143, 60, 60, 0.2);
+
+}
+.List-Silabus{
+  width: 841px;
+  height: 262px;
+  margin-left: -20%;
+  margin-right: 10%;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 7px 0px rgba(143, 60, 60, 0.2);
+}
