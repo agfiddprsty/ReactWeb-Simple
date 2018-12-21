@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import { Jumbotron, Button } from 'reactstrap';
-import { Jumbotron, Container } from 'reactstrap';
+import { Jumbotron, Container, Button} from 'reactstrap';
 import {Link} from 'react-router-dom';
 import logo from './logo.svg';
 import './Menu.css';
+import './App.css';
 
 class Menu extends Component {
   render() {
     return (
-      <div className="jumbotron text-center" style="margin-bottom:0">
-  <h1>Welcome Admin!</h1>
-  <p>this is the page of admin</p> 
-</div>
-
+<div className="App">
+      <div className="jumbotron text-center" >
+        <h1>Welcome Admin!</h1>
+        <p>this is the page of admin</p> 
+      </div>
   <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -33,7 +33,7 @@ class Menu extends Component {
   </div>  
 </nav>
 
-<div class="container" style="margin-top:30px">
+<div class="container" >
   <div class="row">
     <div class="col-sm-4">
       <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
@@ -70,6 +70,7 @@ class Menu extends Component {
 </div>
 <div class="jumbotron text-center">
   <p>Footer</p>
+</div>
 </div>
     );
   }
