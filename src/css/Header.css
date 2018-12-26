@@ -1,0 +1,49 @@
+nav{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #007bff;
+    box-shadow: #888;
+}
+nav ul{
+    position: relative;
+    top: 20px;
+    margin: 0;
+    float: right;
+    right: 10%;
+}
+nav ul li{
+    float: left;
+    display: block;
+    font-size: 15px;
+    margin: -10px 10px 25px 10px;
+    align-self: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family:  sans-serif;
+    font-size: 15px;
+}
+nav ul li a:hover{
+    color: #55a8fd;
+    text-decoration: none;
+}
+
+.Hom {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.Hom-header {
+    background-color: #007bff;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }

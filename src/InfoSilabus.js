@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import profile from './profile.jpeg'
-import './Home.css';
+import './css/Home.css';
 import { ListGroup, ListGroupItem } from 'reactstrap';
 
 class InfoSilabus extends Component{

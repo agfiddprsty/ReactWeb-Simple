@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Jumbotron, Container, Button} from 'reactstrap';
 import {Link} from 'react-router-dom';
 import logo from './logo.svg';
-import './Menu.css';
-import './App.css';
+import './css/Menu.css';
+import './css/App.css';
 
 class Menu extends Component {
   render() {

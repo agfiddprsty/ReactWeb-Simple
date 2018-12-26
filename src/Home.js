@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import './Home.css';
+import './css/Home.css';
 import Header from './Header.js';
 import Footer from './Footer.js';
-//import Batch from './ListBatch';
 import profile from './profile.jpeg';
 import { Card, Button, CardImg, CardTitle, CardText, CardDeck,
     CardSubtitle, CardBody } from 'reactstrap';   

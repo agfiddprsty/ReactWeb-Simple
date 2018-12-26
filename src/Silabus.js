@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import HeaderSilabus from './Header';
 import { Container, Row, Col } from 'reactstrap';
-import './App.css';
+import './css/App.css';
 import InfoSilabus from './InfoSilabus';
 import ListSilabus from './ListSilabus';
 

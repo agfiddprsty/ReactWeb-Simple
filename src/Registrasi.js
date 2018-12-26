@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
 import ReactDOM from 'react-dom';
 import { ReCaptcha } from 'react-recaptcha-google'
 import Header from './Headereg.js';

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Home.css';
+import './css/Header.css';
 import {withRouter,Link} from 'react-router-dom';
 class Header extends Component {
   render() {
@@ -11,7 +11,7 @@ class Header extends Component {
                 <li className="nav-item">
                 <Link to='#' className="nav-link">HOME</Link>
                 </li>
-                <li className="nav-item"><a href="#" className="nav-link">ABOUT</a></li>
+                <li className="nav-item"><a href="/About" className="nav-link">ABOUT</a></li>
                 <li className="nav-item dropdown">
                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">ACCOUNT
                  </a>

@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './css/index.css';
 import App from './App';
 import Home from './Home';
 //import Batch from './ListBatch.js';
@@ -9,6 +9,7 @@ import * as serviceWorker from './serviceWorker';
 import Reg from './Registrasi';
 import Hack from './Hackerrank';
 import Menu from './Menu';
+import About from './About';
 import Silabus from './Silabus';
 import InfoSilabus from './InfoSilabus';
 import {
@@ -22,6 +23,7 @@ ReactDOM.render(
             <Route exact path="/" component={Silabus} />
             <Route path="/Dashboard" component={Home}/>
             <Route path="/Reg" component={Reg} />
+            <Route path="/About" component={About}/>
             <Route path="/Hack" component={Hack} />
         </div>
     </Router>

@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
-import './App.css'
+import './css/App.css'
 import { ListGroup, ListGroupItem } from 'reactstrap';
-import './Home.css'
+import './css/Home.css'
 class ListSilabus extends Component{
     render(){
         return(

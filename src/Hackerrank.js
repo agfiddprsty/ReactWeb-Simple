@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import './Home.css';
+import './css/Hackerrank.css';
 import Header from './Header';
 import Footer from './Footer';
 import Compiler from './Compiler';
