@@ -25,6 +25,7 @@ ReactDOM.render(
             <Route path="/Reg" component={Reg} />
             <Route path="/About" component={About}/>
             <Route path="/Hack" component={Hack} />
+            <Route path="/Admin" component={Menu} />
         </div>
     </Router>
     , document.getElementById('root'));

@@ -1,13 +1,17 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { shallow, mount, render } from 'enzyme';
-import Registrasi from './Registrasi'
+import Adapter from 'enzyme-adapter-react-16';
+import { configure } from 'enzyme';
+import { Registrasi } from './Registrasi';
+import Registrasi from './Registrasi';
 import renderer from 'react-test-renderer';
 import toJson from 'enzyme-to-json';
 import serializer from 'ngx-jest-snapshot-serializer';
 import {snapshotSerializer} from 'enzyme-to-json';
 
 describe('Registrasi Component', () => {
-  it('should render without throwing an error', () => {
+  it('renders without crashing', () => {
     expect(shallow(<Registrasi />).exists(<form className='Registrasi'></form>)).toBe(true)
    })
   it('renders a Name', () => {
@@ -36,7 +40,7 @@ describe('Registrasi Component', () => {
 
    describe('Name input', () => {
   
-    it('should respond to change event and change the state of the Login Component', () => {
+    it('should respond to change event and change the state of the Name Component', () => {
      const wrapper = shallow(<Registrasi />)
      wrapper.find('#name').simulate('change', {target: {name: 'name', value: 'contoh'}})
      expect(wrapper.state('name')).toEqual('contoh')
@@ -45,7 +49,7 @@ describe('Registrasi Component', () => {
 
    describe('Email input', () => {
   
-    it('should respond to change event and change the state of the Login Component', () => {
+    it('should respond to change event and change the state of the Email Component', () => {
      const wrapper = shallow(<Registrasi />)
      wrapper.find('#email').simulate('change', {target: {name: 'email', value: 'blah@gmail.com'}})
      expect(wrapper.state('email')).toEqual('blah@gmail.com')
@@ -54,7 +58,7 @@ describe('Registrasi Component', () => {
  
    describe('Password input', () => {
   
-    it('should respond to change event and change the state of the Login Component', () => {
+    it('should respond to change event and change the state of the Password Component', () => {
      const wrapper = shallow(<Registrasi />)
      wrapper.find('#password').simulate('change', {target: {name: 'password', value: 'cats'}})
      expect(wrapper.state('password')).toEqual('cats')
@@ -63,7 +67,7 @@ describe('Registrasi Component', () => {
 
    describe('Alamat input', () => {
   
-    it('should respond to change event and change the state of the Login Component', () => {
+    it('should respond to change event and change the state of the Alamat Component', () => {
      const wrapper = shallow(<Registrasi />)
      wrapper.find('#alamat').simulate('change', {target: {name: 'alamat', value: 'jakarta'}})
      expect(wrapper.state('email')).toEqual('jakarta')
@@ -72,7 +76,7 @@ describe('Registrasi Component', () => {
 
    describe('No Handphone input', () => {
   
-    it('should respond to change event and change the state of the Login Component', () => {
+    it('should respond to change event and change the state of the No Handphone Component', () => {
      const wrapper = shallow(<Registrasi />)
      wrapper.find('#nohp').simulate('change', {target: {name: 'nohp', value: '12345'}})
      expect(wrapper.state('nohp')).toEqual('12345')
@@ -81,7 +85,7 @@ describe('Registrasi Component', () => {
 
    describe('Usia input', () => {
   
-    it('should respond to change event and change the state of the Login Component', () => {
+    it('should respond to change event and change the state of the Usia Component', () => {
      const wrapper = shallow(<Registrasi />)
      wrapper.find('#usia').simulate('change', {target: {name: 'usia', value: '16'}})
      expect(wrapper.state('usia')).toEqual('16')
@@ -90,16 +94,16 @@ describe('Registrasi Component', () => {
 
    describe('Skils input', () => {
   
-    it('should respond to change event and change the state of the Login Component', () => {
+    it('should respond to change event and change the state of the Skils Component', () => {
      const wrapper = shallow(<Registrasi />)
      wrapper.find('#skils').simulate('change', {target: {name: 'skils', value: 'Android dev'}})
-     expect(wrapper.state('skils')).toEqual('Android dev')
+     expect(wrapper.state('skils')).toEqual('Android dev')1
     })
    })
 
    describe('Asal Sekolah input', () => {
   
-    it('should respond to change event and change the state of the Login Component', () => {
+    it('should respond to change event and change the state of the Asal Sekolah Component', () => {
      const wrapper = shallow(<Registrasi />)
      wrapper.find('#asal').simulate('change', {target: {name: 'asal', value: 'jakarta'}})
      expect(wrapper.state('asal')).toEqual('jakarta')
@@ -110,6 +114,6 @@ describe('Registrasi Component', () => {
     const tree = renderer.create(
       <Registrasi />
     ).toJson();
-    expect(tree).toMatchSnapshot();
+    expect(tree).toMatchSnapshot();x  
   });
 })
