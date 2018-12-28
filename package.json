@@ -19,7 +19,8 @@
     "react-scripts": "2.1.1",
     "react-tap-event-plugin": "^3.0.3",
     "react-test-renderer": "^16.7.0",
-    "reactstrap": "^6.5.0"
+    "reactstrap": "^6.5.0",
+    "webpack": "^4.19.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,7 +47,6 @@
     "jest": "^23.6.0",
     "jest-cli": "^23.6.0",
     "ngx-jest-snapshot-serializer": "^1.2.3",
-    "webpack": "^4.28.2",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0"
   },
