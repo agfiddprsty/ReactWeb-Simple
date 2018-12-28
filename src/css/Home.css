@@ -191,6 +191,14 @@ section#box-profile{
     margin:  20px 5px 20px 5px;
 }
 
+.crdbdy{
+    text-align: left;
+}
+
+.btnmodule {
+    margin-left: 30%;
+}
+
 .image-silabus{
     width: 349px;
     height: 262px;
@@ -216,4 +224,33 @@ section#box-profile{
 }
 .saya{
     margin-top: 30px;
+}
+
+.listbatch:hover {
+    text-decoration: none;
+}
+
+.cardbatch {
+    margin-top: 15px;
+}
+
+.btnbatch {
+    margin-left:920px;
+    margin-bottom: 15px;
+}
+
+.alrt{
+    text-align: center;
+}
+
+.silab{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.bat{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 5px;
 }

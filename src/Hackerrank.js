@@ -32,7 +32,7 @@ class Hackerrank extends React.Component {
           <ListGroupItem className="compiler">
             <Compiler/>
         </ListGroupItem>
-        <a href="#" className="btn btn-primary code" role="button">Submit My Codes</a>
+        <a href="/" className="btn btn-primary code" role="button">Submit My Codes</a>
       </ListGroup>
       </body>
       <Footer />
