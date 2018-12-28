@@ -10,6 +10,7 @@ import Reg from './Registrasi';
 import Hack from './Hackerrank';
 import Menu from './Menu';
 import About from './About';
+import Batch from './LIstBatch';
 import Silabus from './Silabus';
 import InfoSilabus from './InfoSilabus';
 import {
@@ -26,6 +27,7 @@ ReactDOM.render(
             <Route path="/About" component={About}/>
             <Route path="/Hack" component={Hack} />
             <Route path="/Admin" component={Menu} />
+            <Route path="/Batch" component={Batch}/>
         </div>
     </Router>
     , document.getElementById('root'));
