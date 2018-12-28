@@ -13,6 +13,7 @@ import About from './About';
 import Batch from './LIstBatch';
 import Silabus from './Silabus';
 import InfoSilabus from './InfoSilabus';
+import ListSilabus from './ListSilabus';
 import {
 	BrowserRouter as Router,
 	Route,
@@ -21,7 +22,7 @@ ReactDOM.render(
     
 	<Router>
         <div>
-            <Route exact path="/" component={Silabus} />
+            <Route exact path="/" component={ListSilabus} />
             <Route path="/Dashboard" component={Home}/>
             <Route path="/Reg" component={Reg} />
             <Route path="/About" component={About}/>
