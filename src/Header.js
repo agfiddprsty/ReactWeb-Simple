@@ -16,6 +16,7 @@ class Header extends Component {
                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">ACCOUNT
                  </a>
                  <div class="dropdown-menu">
+                 <Link to='/Silabus/List' className="dropdown-item">SILABUS</Link>
                  <Link to='/Dashboard' className="dropdown-item">PROFILE</Link>
                  <Link to='/Reg' className="dropdown-item">LOGOUT</Link>
                 </div>

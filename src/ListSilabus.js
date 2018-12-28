@@ -8,6 +8,9 @@ import './css/Home.css';
 import {  CardDeck, } from 'reactstrap';
 import Grid from 'material-ui';
 import { Line } from 'rc-progress';
+import Link from 'react-router-dom';
+
+//this is Example JSON
 const PostsData = [
   {
     "category": "Course",
@@ -62,6 +65,7 @@ const PostsData = [
 
 ]
 class ListSilabus extends Component{
+  
   constructor() {
     super();
     
@@ -73,6 +77,9 @@ class ListSilabus extends Component{
     this.setState({
       posts: PostsData
     });
+  }
+  ListBTNHandle(){
+    this.props.history.push("/Silabus/Detail");
   }
     render(){
       
@@ -95,9 +102,10 @@ class ListSilabus extends Component{
 class Button extends React.Component {
   render() {
     return (
-      <button className="button button-primary">
-        <i className="fa fa-chevron-right"></i> Find out more
+      <button className="button button-primary"   >
+        <i onClick={this.ListBTNHandle} className="fa fa-chevron-right"></i> Lets Study
       </button>
+
     )
   }
 }
@@ -124,7 +132,7 @@ class CardBody extends React.Component {
       <div className="card-body">
         <p className="date">March 20 2015</p>
         
-        <h2>{this.props.title}</h2>
+        <h6>{this.props.title}</h6>
         
         <div className="progressbar-silabus">
         <Line percent="50" strokeWidth="4" strokeColor="#341cac" />

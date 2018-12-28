@@ -3,7 +3,7 @@ import HeaderSilabus from './Header';
 import { Container, Row, Col } from 'reactstrap';
 import './css/App.css';
 import InfoSilabus from './InfoSilabus';
-import ListSilabus from './ListSilabus';
+import DetailSilabus from './DetailSilabus';
 
 class Silabus extends Component{
     render(){
@@ -20,7 +20,7 @@ class Silabus extends Component{
                         <Col xs="6" >
                             <div className="List-Silabus">
 
-                                <ListSilabus/>
+                                <DetailSilabus/>
                             </div>
                         </Col>
                     </Row>
