@@ -19,7 +19,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #a883e9;
 }
 
 @keyframes App-logo-spin {
@@ -71,7 +71,7 @@ nav ul li a{
   font-size: 14px;
 }
 nav ul li a:hover{
-  color: #55a8fd;
+  color: #a883e9;
 }
 .register-font{
   margin-left: 300px

@@ -22,7 +22,7 @@ ReactDOM.render(
 	<Router>
         <div>
             <Route exact path="/" component={ListSilabus} />
-            <Route path="/Dashboard" component={Home}/>
+            <Route path="/Home" component={Home}/>
             <Route path="/Reg" component={Reg} />
             <Route path="/About" component={About}/>
             <Route path="/Hack" component={Hack} />

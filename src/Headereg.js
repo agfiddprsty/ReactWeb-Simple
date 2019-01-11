@@ -5,11 +5,11 @@ class Headereg extends Component {
   render() {
     return (
       <div className="Hom">
-        <header className="Hom-header">
-            <nav>
+        <header className="fixed-top Hom-header">
+            <nav className="bg-light">
               <ul>
+                <li><Link to='/Home' className="nav-link">HOME</Link></li>
                 <li><Link to='/Reg' className="nav-link">REGISTER</Link></li>
-                <li><a href="#" className="nav-link">ABOUT</a></li>
               </ul>
             </nav>
         </header>
