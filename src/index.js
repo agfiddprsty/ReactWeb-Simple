@@ -1,6 +1,13 @@
+//import library
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+	BrowserRouter as Router,
+	Route,
+} from 'react-router-dom';
+import {Provider} from 'react-redux';
+//import screen
 import './Screen/css/index.css';
 import App from './Screen/App';
 import Home from './Screen/Home';
@@ -13,18 +20,16 @@ import Batch from './Screen/LIstBatch';
 import Silabus from './Screen/Silabus';
 import InfoSilabus from './Screen/InfoSilabus';
 import ListSilabus from './Screen/ListSilabus';
-import {
-	BrowserRouter as Router,
-	Route,
-} from 'react-router-dom';
-import {Provider} from 'react-redux';
+import Login from './Screen/Login';
+//import store 
 import store from './store'
 ReactDOM.render(
     
 	<Router>
         <Provider store={store}>
         <div>
-            <Route exact path="/" component={ListSilabus} />
+            <Route exact path="/" component={Login} />
+            <Route path="/Dashboard" component={Home}/>
             <Route path="/Home" component={Home}/>
             <Route path="/Reg" component={Reg} />
             <Route path="/About" component={About}/>
