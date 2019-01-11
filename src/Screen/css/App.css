@@ -41,6 +41,10 @@
   background-color: #E9E9F1;
   height: 100%;
 }
+.blue{
+  background-color: #5E91F8;
+  height: 100%;
+}
 .text{
     margin-left: 10px;
     padding-top: 0;
@@ -75,6 +79,12 @@ nav ul li a:hover{
 }
 .register-font{
   margin-left: 300px
+}
+.login-header{
+  margin-left: 550px
+}
+.login-body{
+  margin-left: 50px
 }
 .colom{
   
