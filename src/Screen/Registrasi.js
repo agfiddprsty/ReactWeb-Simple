@@ -7,6 +7,7 @@ import Header from './Headereg.js';
 import Footer from './Footer.js';
 import {Link,Redirect,withRouter} from 'react-router-dom'
 import Home from './Home';
+
 class registrasi extends Component{
   constructor(props){
     super(props)
@@ -19,11 +20,11 @@ class registrasi extends Component{
         name:'',
         email:'',
         password: '',
-        alamat:'',
+        skill:'',
+        asal:'',
         no:'',
         usia:'',
-        Skill:'',
-        asal:'',
+        alamat:'',
 
     }
   }
@@ -36,7 +37,7 @@ class registrasi extends Component{
       // }
       registerhandle(){
         if(this.state.isverified){
-          this.props.history.push("/Dashboard");
+          this.props.history.push("/Home");
 
           
         }else{
@@ -91,22 +92,19 @@ class registrasi extends Component{
                                 <div class="row register-form">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Name *" value="" />
+                                            <input type="text" class="form-control" placeholder="Name *" onChange={this.handleChange} value={this.state.name} />
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Email *" value="" />
+                                            <input type="text" class="form-control" placeholder="Email *" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Password *" value="" />
+                                            <input type="password" class="form-control" placeholder="Password *" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control"  placeholder="Confirm Password *" value="" />
+                                          <input type="text" class="form-control" placeholder="Skill *" />
                                         </div>
                                         <div class="form-group">
-                                          <input type="text" class="form-control" placeholder="Skill *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                          <input type="text" class="form-control" placeholder="Asal Sekolah *" value="" />
+                                          <input type="text" class="form-control" placeholder="Asal Sekolah *" />
                                         </div>
                                         <div class="form-group">
                                             <div class="maxl">
@@ -123,16 +121,16 @@ class registrasi extends Component{
                                         <div>
                                           <label>Uploud KTP/Kartu Identitas</label>
                                           <div>
-                                          <input type="file" placeholder="Asal Sekolah" className="form-control-file border"></input><br/>
+                                          <input type="file" placeholder="Identitas" className="form-control-file border"></input><br/>
                                           </div>
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Phone *" value="" />
+                                            <input type="text" minlength="10" maxlength="13" name="txtEmpPhone" class="form-control" placeholder="Phone *" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Age *" value="" />
+                                            <input type="text" minlength="1" maxlength="2" name="txtEmpPhone" class="form-control" placeholder="Age *" />
                                         </div>
                                         <div class="form-group">
                                             <select class="form-control">
@@ -146,7 +144,7 @@ class registrasi extends Component{
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <textarea type="text" class="form-control" placeholder="Address *" value="" />
+                                            <textarea type="text" class="form-control" placeholder="Address *" />
                                         </div>
                                         <div>
                                       {/* You can replace captchaDemo with any ref word */}
@@ -167,7 +165,7 @@ class registrasi extends Component{
                                         <a href="/"> Syarat Dan Ketentuan</a>
                                       </label>
                                       </div> 
-                                        <button class="btn btn-primary btnRegister" >Register</button>
+                                        <button class="btn btn-primary btnRegister" onClick={this.registerhandle}>Register</button>
                                     </div>
                                 </div>
                             </div>
