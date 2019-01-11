@@ -29,18 +29,15 @@ ReactDOM.render(
         <Provider store={store}>
         <div>
             <Route exact path="/" component={Login} />
-            <Route path="/Dashboard" component={Home}/>
-            <Route path="/Home" component={Home}/>
-            <Route path="/Reg" component={Reg} />
-            <Route path="/About" component={About}/>
-            <Route path="/Hack" component={Hack} />
-            <Route path="/Admin" component={Menu} />
+            <Route path="/home" component={Home}/>
+            <Route path="/reg" component={Reg} />
+            <Route path="/about" component={About}/>
+            <Route path="/hack" component={Hack} />
+            <Route path="/admin" component={Menu} />
 
-            <Route path="/Silabus/List" component={ListSilabus}/>
-            <Route path="/Silabus/Detail" component={Silabus}/>
-            <Route path="/Silabus/List" component={ListSilabus}/>
-            <Route path="/Silabus/Detail" component={Silabus}/>
-            <Route path="/Batch" component={Batch}/>
+            <Route path="/silabus/list" component={ListSilabus}/>
+            <Route path="/silabus/detail" component={Silabus}/>
+            <Route path="/batch" component={Batch}/>
         </div>
         </Provider>
     </Router>

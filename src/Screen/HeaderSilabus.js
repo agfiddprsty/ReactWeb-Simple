@@ -9,15 +9,15 @@ class Header extends Component {
             <nav>
               <ul>
                 <li className="nav-item">
-                <Link to='#' className="nav-link">HOME</Link>
+                <Link to='/home' className="nav-link">HOME</Link>
                 </li>
                 <li className="nav-item"><a href="#" className="nav-link">ABOUT</a></li>
                 <li className="nav-item dropdown active">
                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">ACCOUNT
                  </a>
                  <div class="dropdown-menu">
-                 <Link to='/Dashboard' className="dropdown-item">PROFILE</Link>
-                 <Link to='/Reg' className="dropdown-item">LOGOUT</Link>
+                 <Link to='#' className="dropdown-item">PROFILE</Link>
+                 <Link to='/reg' className="dropdown-item">LOGOUT</Link>
                 </div>
                 </li>
               </ul>

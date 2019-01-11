@@ -37,7 +37,7 @@ class registrasi extends Component{
       // }
       registerhandle(){
         if(this.state.isverified){
-          this.props.history.push("/Home");
+          this.props.history.push("/home");
 
           
         }else{

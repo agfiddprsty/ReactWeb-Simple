@@ -8,8 +8,8 @@ class Headereg extends Component {
         <header className="fixed-top Hom-header">
             <nav className="bg-light">
               <ul>
-                <li><Link to='/Home' className="nav-link">HOME</Link></li>
-                <li><Link to='/Reg' className="nav-link">REGISTER</Link></li>
+                <li><Link to='/home' className="nav-link">HOME</Link></li>
+                <li><Link to='/reg' className="nav-link">REGISTER</Link></li>
               </ul>
             </nav>
         </header>
