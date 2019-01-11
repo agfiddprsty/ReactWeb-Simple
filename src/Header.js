@@ -13,12 +13,10 @@ class Header extends Component {
                 </li>
                 <li className="nav-item"><a href="#silabus" className="nav-link">SILABUS</a></li>
                 <li className="nav-item"><a href="#bootcamp" className="nav-link">BOOTCAMP BATCH</a></li>
-                <li className="nav-item"><a href="/About" className="nav-link">ABOUT</a></li>
                 <li className="nav-item dropdown">
                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">ACCOUNT
                  </a>
                  <div class="dropdown-menu">
-                 <Link to='/Silabus/List' className="dropdown-item">SILABUS</Link>
                  <Link to='/Dashboard' className="dropdown-item">PROFILE</Link>
                  <Link to='/Reg' className="dropdown-item">LOGOUT</Link>
                 </div>
