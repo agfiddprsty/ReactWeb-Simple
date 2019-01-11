@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import './css/Home.css';
+import bghead from './img/image.svg';
+import man from './img/boy.png';
+import fb from './img/fb.png';
+import tw from './img/twitter.png';
+import gh from './img/github.png';
+import li from './img/linkedin.png';
+import pt from './img/pinterest.png';
 import Header from './Header.js';
 import Footer from './Footer.js';
+import Contact from './Contact';
 import rnredux from './rnredux.jpg';
 import profile from './profile.jpeg';
 import Batch from './batch.js';
@@ -11,59 +19,144 @@ import {withRouter,Link} from 'react-router-dom';
 
 class Home extends Component {
   render() {
+    var bgheads = {
+        width: '735px',
+        left: '45%',
+        position: 'absolute',
+        overflow: 'hidden',
+    }
+
+    var h1 = {
+         marginLeft: '45%',
+         marginTop:20
+    }
+
     return (
       <div className="Hom">
         <Header />
         <body className="Hom-body">
-        <div class="alert alert-success alert-dismissible alrt fade show">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>WELCOME!</strong> Agfid Danu Prasetyo
-        </div>
-          <section id="box-profile">
-          <div className="img-profile">
-              <div>
-                <img src={profile} className="img-profile" alt="profile" />
-              </div>
-          </div>
-          <div class="description">
-              <h1>Agfid Danu Prasetyo</h1>
-              <p>Android Dev</p>
-          </div>
-          <div className="information">
-              <div className="data">
-                  <p className="field">Availability</p>
-                  <p className="text-gray">Full Time</p>
-              </div>
-              <div className="data">
-                  <p className="field">Age</p>
-                  <p className="text-gray">16</p>
-              </div>
-              <div className="data">
-                  <p className="field">Location</p>
-                  <p className="text-gray">Purwokerto, Indonesia</p>
-              </div>
-              <div className="data">
-                  <p className="field">Years Exprience</p>
-                  <p className="text-gray">1</p>
-              </div>
-              <div className="data">
-                  <p className="field">Email</p>
-                  <p className="text-gray">agfid11@gmail.com</p>
-              </div>
-          </div>
-        </section>
-        <section id="silabus">
-            <div class="list-group">
-             <h5 className="silab">Silabus</h5>
+        <div>
+            <img id="home" src={bghead} alt="img" style={bgheads} />
+            <div style={h1}>
+                <h1 style={{
+                    fontSize:'50px',
+                }}>Hi !</h1>
+
+                <h1 style={{
+                    color:'#685AA7',marginTop:'-10px',fontSize:'50px',fontWeight:500
+                }}>I'm Human</h1>
+
+                <h2 style={{
+                    marginLeft:200, fontSize:'30px',fontWeight:'200'
+                }}>a graphic designer</h2>
+
+            </div>
+
+            <div className="image">
+                <img src={man} alt="img" style={{
+                            width:'200px',
+                            marginLeft:'150px',
+                            position:'absolute'
+
+                        }}/>
+
+                <h1 style={{
+                    marginLeft: '27%', fontSize:'30px',color:'#685AA7',fontWeight:300
+                }}>About Me</h1>
+
+
+                {/* Button */}
+                { <button className="btn btn-primary" style={{
+                    borderRadius:'50px',
+                    width:'200px',
+                    height:'80px',
+                    textAlign:'left',
+                    fontSize:'30px',
+                    left:'70px',
+                    float:'right',
+                    position:'relative',
+                    backgroundColor:'#685AA7',
+                    borderColor:'#685AA7'
+                }}>Hire Me</button>     }
+
+                <div style={{
+                    marginLeft: '27%',width:'600px',letterSpacing:'0.1em',color: 'gray',
+                }}>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nulla nibh mi, ornare
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nulla nibh mi, ornare
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nulla nibh mi, ornare
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nulla nibh mi, ornare
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nulla nibh mi, ornare
+                    </p>
+                </div>
+
+                <div className="getsocial">
+                <h2 style={{
+                    marginLeft:'27%',
+                    marginBottom:'15px',
+                    fontSize: '20px'
+                }}>Get Social :</h2>
+
+                <a href="#">
+                <img src={fb} alt="img" style={{
+                            width:'30px',
+                            marginLeft:'27%',  
+                        }}/>
+                </a>
+                
+                <a href="#">
+                <img src={tw} alt="img" style={{
+                            width:'30px',
+                            marginLeft:'1%',  
+                        }}/>
+                </a>
+
+                <a href="#">
+                <img src={gh} alt="img" style={{
+                    width:'30px',
+                    marginLeft:'1%',
+                }}/>
+                </a>
+
+                <a href="#">
+                <img src={li} alt="img" style={{
+                            width:'30px',
+                            marginLeft:'1%',
+                            
+                        }}/>
+                </a>
+
+                <a href="#">
+                <img src={pt} alt="img" style={{
+                            width:'30px',
+                            marginLeft:'1%',
+                            
+                        }}/>
+                </a>
+                </div>
+                
+            </div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br/><br/>
+            <br/><br/>
+
+            <div className="list-group">
+            <div className="text-center">
+                <h1 id="silabus" style={{
+                    fontSize:'30px',color:'#685AA7',fontWeight:300
+                }}>Silabus</h1>
+            </div>
+            <br/>
              <div>
-             <CardDeck className="deck">
+             <CardDeck className="deck border border-0">
              <Card className="border border-0"><a href="/Batch" className="modul">
-                <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
+                <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
                 <CardBody className="crdbdy">
                 <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
                 <br></br>
-                <p>learning progress:</p>
-                <Progress value="10">10%</Progress>
                 </CardBody>
                 </a></Card>
             <Card className="border border-0"><a href="/Batch" className="modul">
@@ -71,8 +164,6 @@ class Home extends Component {
                 <CardBody className="crdbdy">
                 <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
                 <br></br>
-                <p>learning progress:</p>
-                <Progress value="10">10%</Progress>
                 </CardBody>
             </a></Card>
             <Card className="border border-0"><a href="/Batch" className="modul">
@@ -80,28 +171,112 @@ class Home extends Component {
                 <CardBody className="crdbdy">
                 <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
                 <br></br>
-                <p>learning progress:</p>
-                <Progress value="10">10%</Progress>
+                </CardBody>
+            </a></Card>
+            <Card className="border border-0"><a href="/Batch" className="modul">
+                <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
+                <CardBody className="crdbdy">
+                <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
+                <br></br>
                 </CardBody>
             </a></Card>
             </CardDeck>
+            <CardDeck className="deck border border-0">
+             <Card className="border border-0"><a href="/Batch" className="modul">
+                <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
+                <CardBody className="crdbdy">
+                <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
+                <br></br>
+                </CardBody>
+                </a></Card>
+            <Card className="border border-0"><a href="/Batch" className="modul">
+                <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
+                <CardBody className="crdbdy">
+                <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
+                <br></br>
+                </CardBody>
+            </a></Card>
+            <Card className="border border-0"><a href="/Batch" className="modul">
+                <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
+                <CardBody className="crdbdy">
+                <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
+                <br></br>
+                </CardBody>
+            </a></Card>
+            <Card className="border border-0"><a href="/Batch" className="modul">
+                <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
+                <CardBody className="crdbdy">
+                <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
+                <br></br>
+                </CardBody>
+            </a></Card>
+            </CardDeck>
+            <br/><br/>
             </div>
-            </div>        
-        </section>
-        <section id="batch">
-        <h5 className="bat">Batch</h5>
-        <div class="row cardbatch">
-            <div class="col"> <a href='/Hack' className="listbatch">
-            <Batch /></a>
+            </div>   
+
+            <div id="bootcamp" className="text-center"><br/>
+                <p>What I Did ?</p>
+                <h1 style={{
+                    fontSize:'30px',color:'#685AA7',fontWeight:300
+                }}>Bootcamp Batch</h1>
             </div>
-            <div class="col"> <a href='/Hack' className="listbatch">
-            <Batch /></a>
+            <div className="row cardbatch">
+            <div className="col"> <a href='#'  data-toggle="modal" data-target="#myModal" className="listbatch">
+                    <Batch /></a>
+                </div>
+                <div className="col"> <a href='#'  data-toggle="modal" data-target="#myModal" className="listbatch">
+                    <Batch /></a>
+                </div>
             </div>
-        </div>
-        <a href="/Batch" className="btn btn-outline-primary btnbatch">See More Batch</a>
-        </section>
+            <div className="row cardbatch">
+                <div className="col"> <a href='#'  data-toggle="modal" data-target="#myModal" className="listbatch">
+                    <Batch /></a>
+                </div>
+                <div className="col"> <a href='#'  data-toggle="modal" data-target="#myModal" className="listbatch">
+                    <Batch /></a>
+                </div>
+            </div>
+            <div className="row cardbatch">
+                <div className="col"> <a href='#'  data-toggle="modal" data-target="#myModal" className="listbatch">
+                    <Batch /></a>
+                </div>
+                <div className="col"> <a href='#'  data-toggle="modal" data-target="#myModal" className="listbatch">
+                    <Batch /></a>
+                </div>
+            </div>
+            <br/><br/><br/><br/>
+            <div id="contact">
+            <Contact />
+            </div>
+            <br/>
+            </div>
         </body>
         <Footer />
+        <div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      {/* <!-- Modal Header --> */}
+      <div class="modal-header">
+        <h4 class="modal-title">Confirm</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      {/* <!-- Modal body --> */}
+      <div class="modal-body">
+      You will start the bootcamp batch 1 test
+      </div>
+
+      {/* <!-- Modal footer --> */}
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Start Test</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
       </div>
     );
   }

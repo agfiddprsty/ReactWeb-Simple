@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import './css/index.css';
 import App from './App';
 import Home from './Home';
-//import Batch from './ListBatch.js';
 import * as serviceWorker from './serviceWorker';
 import Reg from './Registrasi';
 import Hack from './Hackerrank';
@@ -31,7 +30,8 @@ ReactDOM.render(
 
             <Route path="/Silabus/List" component={ListSilabus}/>
             <Route path="/Silabus/Detail" component={Silabus}/>
-
+            <Route path="/Silabus/List" component={ListSilabus}/>
+            <Route path="/Silabus/Detail" component={Silabus}/>
             <Route path="/Batch" component={Batch}/>
         </div>
     </Router>
