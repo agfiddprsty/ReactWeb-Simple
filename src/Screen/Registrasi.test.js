@@ -36,7 +36,7 @@ describe('Registrasi Component', () => {
     expect(shallow(<Registrasi />).find('#asal').length).toEqual(1)
    })
    
-   expect.addSnapshotSerializer(Serializer);
+   expect.addSnapshotSerializer(serializer);
 
    describe('Name input', () => {
   
@@ -97,7 +97,7 @@ describe('Registrasi Component', () => {
     it('should respond to change event and change the state of the Skils Component', () => {
      const wrapper = shallow(<Registrasi />)
      wrapper.find('#skils').simulate('change', {target: {name: 'skils', value: 'Android dev'}})
-     expect(wrapper.state('skils')).toEqual('Android dev')1
+     expect(wrapper.state('skils')).toEqual('Android dev')
     })
    })
 
@@ -114,6 +114,6 @@ describe('Registrasi Component', () => {
     const tree = renderer.create(
       <Registrasi />
     ).toJson();
-    expect(tree).toMatchSnapshot();x  
+    expect(tree).toMatchSnapshot();
   });
 })
