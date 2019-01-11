@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
-import tgl from './tgl.png';
+import tgl from './img/tanggal.png';
 
 const styles = theme => ({
   root: {
@@ -14,17 +14,20 @@ const styles = theme => ({
   paper: {
     padding: theme.spacing.unit * 2,
     margin: 'auto',
-    // boxShadow: 'none',
+    textAlign: 'left',
+    boxShadow: 'none',
     maxWidth: 500,
   },
   image: {
     width: 128,
     height: 128,
+    backgroundColor: '#685AA7'
   },
   img: {
     margin: 'auto',
     display: 'block',
     maxWidth: '100%',
+    backgroundColor: '#685AA7',
     maxHeight: '100%',
   },
 });
@@ -47,6 +50,7 @@ function ComplexGrid(props) {
                   Bootcamp Batch 1
                 </Typography>
                 <Typography gutterBottom>Frontend Mobile Developer dengan React Native dan Redux</Typography>
+                <br/>
                 <Typography color="textSecondary">5 Mei s.d 9 Juni</Typography>
               </Grid>
             </Grid>
