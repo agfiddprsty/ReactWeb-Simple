@@ -30,6 +30,7 @@ ReactDOM.render(
         <div>
             <Route exact path="/" component={Login} />
             <Route path="/Dashboard" component={Home}/>
+            <Route path="/Home" component={Home}/>
             <Route path="/Reg" component={Reg} />
             <Route path="/About" component={About}/>
             <Route path="/Hack" component={Hack} />

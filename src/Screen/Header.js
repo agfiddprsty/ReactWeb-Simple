@@ -9,7 +9,7 @@ class Header extends Component {
             <nav className="fixed-top bg-light">
               <ul>
                 <li className="nav-item">
-                <Link to='#' className="nav-link">HOME</Link>
+                <Link to='/Home' className="nav-link">HOME</Link>
                 </li>
                 <li className="nav-item"><a href="#silabus" className="nav-link">SILABUS</a></li>
                 <li className="nav-item"><a href="#bootcamp" className="nav-link">BOOTCAMP BATCH</a></li>
@@ -17,7 +17,7 @@ class Header extends Component {
                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">ACCOUNT
                  </a>
                  <div class="dropdown-menu">
-                 <Link to='/Dashboard' className="dropdown-item">PROFILE</Link>
+                 <Link to='/Profile' className="dropdown-item">PROFILE</Link>
                  <Link to='/Reg' className="dropdown-item">LOGOUT</Link>
                 </div>
                 </li>
