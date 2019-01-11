@@ -9,6 +9,8 @@ import {Link,Redirect,withRouter} from 'react-router-dom'
 import Home from './Home';
 import connect from 'react-redux';
 import { white } from 'material-ui/styles/colors';
+import bghead from './img/image.svg';
+
 class registrasi extends Component{
   constructor(props){
     super(props)
@@ -72,45 +74,56 @@ class registrasi extends Component{
         }
     }
     render(){
+        var bgheads = {
+            width: '300px',
+            left: '15%',
+            position: 'absolute',
+            overflow: 'hidden',
+        }
         return(
             <div className="App">
-                <Header/>
-                <body className="blue">
-                    <div className="login-header">
-                        <h1 style={{color: 'white'}}>Welcome Back!</h1>
-                        <div className="login-body">
-                            <h3 style={{color: 'white'}}>Please Login</h3>
-                        </div>
-                    </div>
-                    <div className="form">
-                        <div className="colom">
-                            <label className="label-regis">Email</label>
-                            <div className="col-9">
-                                <input type="email" placeholder="Email" className="form-control" onChange={this.handleChange} value={this.state.emailform} name="emailform"></input>
+                <body>
+                    <div class="container register">
+                        <div class="row">
+                            <div class="col-md-3 register-left">
+                                <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                                <h3>Welcome</h3>
+                                <p>Arkademian</p>
+                                <button className="btn btn-light">Register</button><br/>
                             </div>
-                        </div>
-                        <div className="colom">
-                            <label className="label-regis">Password</label>
-                            <div className="col-9">
-                                <input type="password" placeholder="Password" className="form-control"onChange={this.handleChange} value={this.state.passwordform} name="passwordform"></input>
+                            <div class="col-md-9 register-right">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <h3 class="register-heading">Login Bootcamp</h3>
+                                        <div class="row register-form">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" placeholder="Email *" onChange={this.handleChange} value={this.state.emailform} name="emailform" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" placeholder="Password *" onChange={this.handleChange} value={this.state.passwordform} name="passwordform" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <ReCaptcha
+                                                    ref={(el) => {this.captchaDemo = el;}}
+                                                    size="normal"
+                                                    data-theme="dark"            
+                                                    render="explicit"
+                                                    sitekey="6LfQR4IUAAAAAFPioJtlx1v2GeVJJ8_cRrLaa4Ww"
+                                                    onloadCallback={this.onLoadRecaptcha}
+                                                    verifyCallback={this.verifyCallback}/>
+                                                    <button class="btn btn-primary btnRegister" onClick={this.loginhandle} >Login</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img id="home" src={bghead} alt="img" style={bgheads} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
-                        <div className="colom">
-                            <div className="label-regis">
-                                {/* You can replace captchaDemo with any ref word */}
-                                <ReCaptcha
-                                ref={(el) => {this.captchaDemo = el;}}
-                                size="normal"
-                                data-theme="dark"            
-                                render="explicit"
-                                sitekey="6LfQR4IUAAAAAFPioJtlx1v2GeVJJ8_cRrLaa4Ww"
-                                onloadCallback={this.onLoadRecaptcha}
-                                verifyCallback={this.verifyCallback}/>
-                            </div> 
-                        </div>
-                        <div className="button-regis">
-                            <button className="btn btn-primary marginbutton" onClick={this.loginhandle} > Submit</button>
-                        </div>  
                     </div>
                 </body>
             </div>
