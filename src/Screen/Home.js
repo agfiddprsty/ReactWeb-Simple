@@ -66,7 +66,7 @@ class Home extends Component {
 
 
                 {/* Button */}
-                { <button className="btn btn-primary" style={{
+                { <a href="#contact"><button className="btn btn-primary" style={{
                     borderRadius:'50px',
                     width:'200px',
                     height:'80px',
@@ -77,7 +77,7 @@ class Home extends Component {
                     position:'relative',
                     backgroundColor:'#685AA7',
                     borderColor:'#685AA7'
-                }}>Hire Me</button>     }
+                }}>Hire Me</button></a>     }
 
                 <div style={{
                     marginLeft: '27%',width:'600px',letterSpacing:'0.1em',color: 'gray',
@@ -253,7 +253,7 @@ class Home extends Component {
             </div>
         </body>
         <Footer />
-        <div class="modal" id="myModal">
+        <div class="modal fade" id="myModal">
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -270,7 +270,7 @@ class Home extends Component {
 
       {/* <!-- Modal footer --> */}
       <div class="modal-footer">
-        <button type="button" class="btn btn-success">Start Test</button>
+        <a href="/Hack"><button type="button" class="btn btn-success">Start Test</button></a>
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
 
