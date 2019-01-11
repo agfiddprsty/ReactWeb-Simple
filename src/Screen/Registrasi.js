@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './css/App.css';
+import './css/Register.css';
 import ReactDOM from 'react-dom';
 import { ReCaptcha } from 'react-recaptcha-google'
 import Header from './Headereg.js';
@@ -18,6 +18,7 @@ class registrasi extends Component{
         isverified: false,
         name:'',
         email:'',
+        password: '',
         alamat:'',
         no:'',
         usia:'',
@@ -71,113 +72,109 @@ class registrasi extends Component{
       render(){
         
           return(
-            <div className="App">
+            <div>
             <Header/>
-        <body className="grey">
-           <div className="form">
-              <div className="register-font">
-               <h1>Register</h1>
-              </div>
-              <div className="colom">
-              <label className="label-regis">Name</label>
-              <div className="col-9">
-                 <input type="text" placeholder="Name" className="form-control" onChange={this.handleChange} value={this.state.name}></input>
-                 </div>
-              </div>
-              <div className="colom">
-                <label className="label-regis">Email</label>
-                <div className="col-9">
-                <input type="email" placeholder="Email" className="form-control"></input>
+        <body>
+          <div>
+          <div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3>Welcome</h3>
+                        <p>Arkademian</p>
+                        <button className="btn btn-light">LOGIN</button><br/>
+                    </div>
+                    <div class="col-md-9 register-right">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Register Bootcamp</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Email *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control"  placeholder="Confirm Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="text" class="form-control" placeholder="Skill *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="text" class="form-control" placeholder="Asal Sekolah *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="maxl">
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="gender" value="male" checked/>
+                                                    <span> Male </span> 
+                                                </label>
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="gender" value="female"/>
+                                                    <span>Female </span> 
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                          <label>Uploud KTP/Kartu Identitas</label>
+                                          <div>
+                                          <input type="file" placeholder="Asal Sekolah" className="form-control-file border"></input><br/>
+                                          </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Phone *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Age *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option class="hidden"  selected disabled>Last Education</option>
+                                                <option>SD</option>
+                                                <option>SMP</option>
+                                                <option>SMA/SMK</option>
+                                                <option>D3</option>
+                                                <option>S1</option>
+                                                <option>S2</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea type="text" class="form-control" placeholder="Address *" value="" />
+                                        </div>
+                                        <div>
+                                      {/* You can replace captchaDemo with any ref word */}
+                                      <ReCaptcha
+                                        ref={(el) => {this.captchaDemo = el;}}
+                                        size="normal"
+                                        data-theme="dark"            
+                                        render="explicit"
+                                        sitekey="6LfQR4IUAAAAAFPioJtlx1v2GeVJJ8_cRrLaa4Ww"
+                                        onloadCallback={this.onLoadRecaptcha}
+                                        verifyCallback={this.verifyCallback}
+                                      />
+                                      </div>
+                                      <div>
+                                      <label>               
+                                        <input type="checkbox"></input>
+                                        Saya Menyutujui   
+                                        <a href="/"> Syarat Dan Ketentuan</a>
+                                      </label>
+                                      </div> 
+                                        <button class="btn btn-primary btnRegister" >Register</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-
-              <div className="colom">
-                <label className="label-regis">Password</label>
-                <div className="col-9">
-                <input type="password" placeholder="Password" className="form-control"></input>
-                </div>
-              </div>
-              
-              <div className="colom">
-             
-                <label className="label-regis">Alamat</label>
-                <div className="col-9">
-                <textarea placeholder="Alamat" className="form-control"></textarea>
-                </div>
-              </div>
-              
-              <div className="colom">
-                <label className="label-regis">No Handphone</label>
-                <div className="col-9">
-                <input type="text" placeholder="No Handphone" className="form-control"></input>
-                </div>
-              </div>
-              
-              <div className="colom">
-                <label className="label-regis">Usia</label>
-                <div className="col-9">
-                <input type="text" placeholder="Usia" className="form-control"></input>
-                </div>
-              </div>
-             
-              <div className="colom">
-               <label className="label-regis">Skils</label>
-               <div className="col-9">
-               <input type="text" placeholder="Skill" className="form-control"></input>
-               </div>
-              </div>
-              
-              <div className="colom">
-                <label className="label-regis">Pendidikan Terakhir</label><br/>
-                <select className="label-regis">
-                  <option>SD</option>
-                  <option>SMP</option>
-                  <option>SMA</option>
-                  <option>S1</option>
-                </select>
-              </div>
-              
-              <div className="colom">
-                 <label className="label-regis">Asal Sekolah</label>
-                 <div className="col-9">
-                 <input type="text" placeholder="Asal Sekolah" className="form-control"></input>
-                 </div>
-              </div>
-              
-              <div className="colom">
-                 <label className="label-regis">Uploud KTP/Kartu Identitas</label>
-                 <div className="col-9">
-                 <input type="file" placeholder="Asal Sekolah" className="form-control-file border"></input><br/>
-                 </div>
-              </div>
-              
-              <div className="colom">
-                <label className="label-regis">               
-                  <input type="checkbox"></input>
-                  Saya Menyutujui   
-                  <a href="/">Syarat Dan Ketentuan</a>
-                </label><br/>
-              </div>  
-              
-              <div className="colom">
-                <div className="label-regis">
-                  {/* You can replace captchaDemo with any ref word */}
-                  <ReCaptcha
-                    ref={(el) => {this.captchaDemo = el;}}
-                    size="normal"
-                    data-theme="dark"            
-                    render="explicit"
-                    sitekey="6LfQR4IUAAAAAFPioJtlx1v2GeVJJ8_cRrLaa4Ww"
-                    onloadCallback={this.onLoadRecaptcha}
-                    verifyCallback={this.verifyCallback}
-                  />
-              </div>
-             
-              </div>
-               <div className="button-regis">
-                <button className="btn btn-primary marginbutton" onClick={this.registerhandle} > Submit</button>
-              </div>
-          
+            </div>
           </div>
         </body>
        <Footer/>
