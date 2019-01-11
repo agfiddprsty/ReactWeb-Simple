@@ -28,12 +28,11 @@ ReactDOM.render(
             <Route path="/About" component={About}/>
             <Route path="/Hack" component={Hack} />
             <Route path="/Admin" component={Menu} />
-<<<<<<< HEAD
+
             <Route path="/Silabus/List" component={ListSilabus}/>
             <Route path="/Silabus/Detail" component={Silabus}/>
-=======
+
             <Route path="/Batch" component={Batch}/>
->>>>>>> 17c2d10ca8f178a29018dfbe038ba1d54ceeb1a8
         </div>
     </Router>
     , document.getElementById('root'));
