@@ -11,7 +11,7 @@ import { ListGroup, ListGroupItem, Fade } from 'reactstrap';
 class Hackerrank extends React.Component {
   render() {
     return (
-      <div className="Hom">
+      <div className="Hom"> 
         <Header />
         <br></br>
         <div className="container text-left" style={{color:'#000000'}}>
@@ -19,7 +19,7 @@ class Hackerrank extends React.Component {
         <div className="container text-left">
       <h1 style={{
                     fontSize:'30px',color:'#000000',fontWeight:400,padding:10
-                }}>TEST BOOTCAMP</h1>
+                }}>TEST BOOTCAMP ARKADEMY</h1>
         <div className="container text-right">
       <h1 style={{
                   fontSize:'15px',color:'#e87000',fontWeight:100,padding:10
@@ -60,12 +60,12 @@ class Hackerrank extends React.Component {
         <a href="/" className="btn btn-success code" role="button">Submit Code</a>
       </ListGroup>
       </body>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
       <Footer />
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
       </div>
     );
   }

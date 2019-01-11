@@ -152,28 +152,28 @@ class Home extends Component {
             <br/>
              <div>
              <CardDeck className="deck border border-0">
-             <Card className="border border-0"><a href="/Batch" className="modul">
+             <Card className="border border-0"><a href="/batch" className="modul">
                 <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
                 <CardBody className="crdbdy">
                 <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
                 <br></br>
                 </CardBody>
                 </a></Card>
-            <Card className="border border-0"><a href="/Batch" className="modul">
+            <Card className="border border-0"><a href="/batch" className="modul">
                 <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
                 <CardBody className="crdbdy">
                 <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
                 <br></br>
                 </CardBody>
             </a></Card>
-            <Card className="border border-0"><a href="/Batch" className="modul">
+            <Card className="border border-0"><a href="/batch" className="modul">
                 <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
                 <CardBody className="crdbdy">
                 <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
                 <br></br>
                 </CardBody>
             </a></Card>
-            <Card className="border border-0"><a href="/Batch" className="modul">
+            <Card className="border border-0"><a href="/batch" className="modul">
                 <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
                 <CardBody className="crdbdy">
                 <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
@@ -182,28 +182,28 @@ class Home extends Component {
             </a></Card>
             </CardDeck>
             <CardDeck className="deck border border-0">
-             <Card className="border border-0"><a href="/Batch" className="modul">
+             <Card className="border border-0"><a href="/batch" className="modul">
                 <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
                 <CardBody className="crdbdy">
                 <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
                 <br></br>
                 </CardBody>
                 </a></Card>
-            <Card className="border border-0"><a href="/Batch" className="modul">
+            <Card className="border border-0"><a href="/batch" className="modul">
                 <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
                 <CardBody className="crdbdy">
                 <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
                 <br></br>
                 </CardBody>
             </a></Card>
-            <Card className="border border-0"><a href="/Batch" className="modul">
+            <Card className="border border-0"><a href="/batch" className="modul">
                 <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
                 <CardBody className="crdbdy">
                 <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
                 <br></br>
                 </CardBody>
             </a></Card>
-            <Card className="border border-0"><a href="/Batch" className="modul">
+            <Card className="border border-0"><a href="/batch" className="modul">
                 <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
                 <CardBody className="crdbdy">
                 <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
@@ -270,7 +270,7 @@ class Home extends Component {
 
       {/* <!-- Modal footer --> */}
       <div class="modal-footer">
-        <a href="/Hack"><button type="button" class="btn btn-success">Start Test</button></a>
+        <a href="/hack"><button type="button" class="btn btn-success">Start Test</button></a>
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
 
