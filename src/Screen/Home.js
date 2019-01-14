@@ -13,11 +13,26 @@ import Contact from './Contact';
 import rnredux from './rnredux.jpg';
 import profile from './profile.jpeg';
 import Batch from './batch.js';
+import ModalProfile from './ModalProfile';
 import { Card, CardImg, CardDeck,
     CardBody, Progress } from 'reactstrap';   
 import {withRouter,Link} from 'react-router-dom';
+import {Input, InputGroupAddon, Button } from 'reactstrap';
 
 class Home extends Component {
+    constructor(){
+        super()
+        this.handleChange = this.handleChange.bind(this);
+        this.state = {
+            code:'',
+        }
+    }
+
+    handleChange(event) {
+        this.setState({code: event.target.value});
+      }
+
+
   render() {
     var bgheads = {
         width: '735px',
@@ -254,7 +269,7 @@ class Home extends Component {
         </body>
         <Footer />
         <div class="modal fade" id="myModal">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
       {/* <!-- Modal Header --> */}
@@ -265,12 +280,22 @@ class Home extends Component {
 
       {/* <!-- Modal body --> */}
       <div class="modal-body">
-      You will start the bootcamp batch 1 test
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" onChange={this.handleChange} value={this.state.code} placeholder="Code Confirmation Email"/>
+            <div class="input-group-append">
+                <button class="btn btn-success" type="submit">Send Code Confirmation</button>
+            </div>
+            {/* <Input placeholder="and..." />
+          <InputGroupAddon addonType="append"><Button color="secondary">I'm a button</Button></InputGroupAddon> */}
+        </div>
+        <div>
+            <ModalProfile />
+        </div>
       </div>
 
       {/* <!-- Modal footer --> */}
       <div class="modal-footer">
-        <a href="/hack"><button type="button" class="btn btn-success">Start Test</button></a>
+        <a href="/hack"><button type="button" class="btn btn-success">Submit</button></a>
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
 

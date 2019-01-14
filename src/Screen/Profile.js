@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Home.css';
+import './css/Home.css';
 import {withRouter,Link} from 'react-router-dom';
 
 class Profile extends Component {

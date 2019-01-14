@@ -18,6 +18,7 @@ import Menu from './Screen/Menu';
 import About from './Screen/About';
 import Batch from './Screen/LIstBatch';
 import Silabus from './Screen/Silabus';
+import Profile from './Screen/Profile';
 import InfoSilabus from './Screen/InfoSilabus';
 import ListSilabus from './Screen/ListSilabus';
 import Login from './Screen/Login';
@@ -34,6 +35,7 @@ ReactDOM.render(
             <Route path="/about" component={About}/>
             <Route path="/hack" component={Hack} />
             <Route path="/admin" component={Menu} />
+            <Route path='/profile' component={Profile} />
 
             <Route path="/silabus/list" component={ListSilabus}/>
             <Route path="/silabus/detail" component={Silabus}/>
