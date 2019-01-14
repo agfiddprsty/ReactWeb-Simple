@@ -16,7 +16,7 @@ import Reg from './Screen/Registrasi';
 import Hack from './Screen/Hackerrank';
 import Menu from './Screen/Menu';
 import About from './Screen/About';
-import Batch from './Screen/LIstBatch';
+import Batch from './Screen/ListBatch';
 import Silabus from './Screen/Silabus';
 import Profile from './Screen/Profile';
 import InfoSilabus from './Screen/InfoSilabus';

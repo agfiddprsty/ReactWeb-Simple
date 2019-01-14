@@ -269,40 +269,50 @@ class Home extends Component {
             </div>
         </body>
         <Footer />
-        <div class="modal fade" id="myModal">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-
-      {/* <!-- Modal Header --> */}
-      <div class="modal-header">
-        <h4 class="modal-title">Confirm</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      {/* <!-- Modal body --> */}
-      <div class="modal-body">
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" onChange={this.handleChange} value={this.state.code} placeholder="Code Confirmation Email"/>
-            <div class="input-group-append">
-                <button class="btn btn-success" type="submit">Send Code Confirmation</button>
-            </div>
-            {/* <Input placeholder="and..." />
-          <InputGroupAddon addonType="append"><Button color="secondary">I'm a button</Button></InputGroupAddon> */}
-        </div>
         <div>
-            <ModalProfile />
+            <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                {/* <!-- Modal Header --> */}
+                <div class="modal-header">
+                    <h4 class="modal-title">Confirm</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                {/* <!-- Modal body --> */}
+                <div class="modal-body">
+                <div>
+                    <button type="button" class="btn btn-primary btn-block float-left">Connect to LinkedIn</button> <br/>
+                </div><br/><br/>    
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" onChange={this.handleChange} value={this.state.code} placeholder="Code Confirmation Email *"/>
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="submit">Send Code Confirmation</button>
+                        </div>
+                    </div>
+                    <div>
+                        <ModalProfile />
+                    </div>
+                    <div>
+                        <label class="text-left">               
+                            <input type="checkbox"></input>
+                            Saya Menyutujui   
+                            <a href="/"> Syarat Dan Ketentuan</a>
+                        </label>
+                    </div> 
+                </div>
+
+                {/* <!-- Modal footer --> */}
+                <div class="modal-footer">
+                    <a href="/hack"><button type="button" class="btn btn-success">Submit</button></a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+                </div>
+            </div>
+            </div>
         </div>
-      </div>
-
-      {/* <!-- Modal footer --> */}
-      <div class="modal-footer">
-        <a href="/hack"><button type="button" class="btn btn-success">Submit</button></a>
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
       </div>
     );
   }

@@ -255,3 +255,9 @@ section#box-profile{
     margin-left: 20px;
     margin-top: 5px;
 }
+
+.garis {
+    border-width: 1;
+    border: black;
+    width: 100%;
+}
