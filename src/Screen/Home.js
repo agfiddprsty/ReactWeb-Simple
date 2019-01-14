@@ -23,7 +23,7 @@ class Home extends Component {
         width: '735px',
         left: '45%',
         position: 'absolute',
-        overflow: 'hidden',
+        overflowx: 'hidden'
     }
 
     var h1 = {
@@ -77,6 +77,7 @@ class Home extends Component {
                     position:'relative',
                     backgroundColor:'#685AA7',
                     borderColor:'#685AA7'
+                    
                 }}>Hire Me</button></a>     }
 
                 <div style={{
