@@ -10,14 +10,14 @@ import Home from './Home';
 import connect from 'react-redux';
 import { white } from 'material-ui/styles/colors';
 import bghead from './img/image.svg';
-
-class registrasi extends Component{
+class Login extends Component{
   constructor(props){
     super(props)
     this.loginhandle = this.loginhandle.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.onLoadReecaptcha = this.onLoadRecaptcha.bind(this);
     this.verifyCallback = this.verifyCallback.bind(this);
+    this.moveRegister = this.moveRegister.bind(this);
     this.state = {
         isverified: false,
         email:'dw@cam.p',
@@ -73,6 +73,9 @@ class registrasi extends Component{
             this.props.history.push("/Dashboard");
         }
     }
+    moveRegister(){
+        this.props.history.push("/reg");
+    }
     render(){
         var bgheads = {
             width: '300px',
@@ -82,6 +85,7 @@ class registrasi extends Component{
         }
         return(
             <div className="App">
+                <Header/>
                 <body>
                     <div class="container register">
                         <div class="row">
@@ -89,7 +93,7 @@ class registrasi extends Component{
                                 <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
                                 <h3>Welcome</h3>
                                 <p>Arkademian</p>
-                                <button className="btn btn-light">Register</button><br/>
+                                <button className="btn btn-light" onClick={this.moveRegister}>Register</button><br/>
                             </div>
                             <div class="col-md-9 register-right">
                                 <div class="tab-content" id="myTabContent">
@@ -126,8 +130,9 @@ class registrasi extends Component{
                         </div>
                     </div>
                 </body>
+                <Footer/>
             </div>
         );
     }
 }
-export default registrasi;
+export default Login;
