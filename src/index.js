@@ -4,7 +4,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {
 	BrowserRouter as Router,
-	Route,
+    Route,
+
 } from 'react-router-dom';
 import {Provider} from 'react-redux';
 //import screen
@@ -22,6 +23,7 @@ import Profile from './Screen/Profile';
 import InfoSilabus from './Screen/InfoSilabus';
 import ListSilabus from './Screen/ListSilabus';
 import Login from './Screen/Login';
+import ProfileLink from './Screen/ProfileLinked';
 //import store 
 import store from './store'
 ReactDOM.render(
@@ -36,7 +38,7 @@ ReactDOM.render(
             <Route path="/hack" component={Hack} />
             <Route path="/admin" component={Menu} />
             <Route path='/profile' component={Profile} />
-
+            <Route path='/profilelink/:uid' component={ProfileLink}/>
             <Route path="/silabus/list" component={ListSilabus}/>
             <Route path="/silabus/detail" component={Silabus}/>
             <Route path="/batch" component={Batch}/>
