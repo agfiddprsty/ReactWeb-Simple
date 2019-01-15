@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+@-ms-viewport{
+    width: device-width;
+  }
+
+  .responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
 .Hom {
     align-items: center;
     justify-content: center;
@@ -13,6 +23,13 @@
 
 .Hom-body {
   background-color: #f7f7f7;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    margin-Left:'150px';
+    position:'absolute';
 }
 
 section#silabus{

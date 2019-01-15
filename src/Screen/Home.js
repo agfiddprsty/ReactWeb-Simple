@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './css/Home.css';
 import bghead from './img/image.svg';
 import man from './img/boy.png';
+import man2 from './img/man2.png';
 import fb from './img/fb.png';
 import tw from './img/twitter.png';
 import gh from './img/github.png';
@@ -18,6 +19,7 @@ import { Card, CardImg, CardDeck,
     CardBody, Progress } from 'reactstrap';   
 import {withRouter,Link} from 'react-router-dom';
 import {Input, InputGroupAddon, Button } from 'reactstrap';
+import { ResponsiveImage, ResponsiveImageSize } from 'react-responsive-image';
 
 class Home extends Component {
     constructor(){
@@ -36,17 +38,31 @@ class Home extends Component {
   render() {
     var bgheads = {
         width: '735px',
+        height: 'auto',
         left: '45%',
         position: 'absolute',
-        overflowx: 'hidden'
+        overflowx: 'hidden',
+        marginLeft: 'auto',
+        marginright: 'auto',
+        maxWidth: '100%',
+        backgroundrepeat: 'no-repeat',
+        webkitbackgroundsize: 'cover',
+        mozbackgroundsize: 'cover',
+        obackgroundsize: 'cover',
+        backgroundsize:'cover',
+        backgroundposition:'center',
+        backgroundimage:('src/Screen/img/image.svg'),
+        backgroundattachment: 'fixed'
     }
 
     var h1 = {
-         marginLeft: '45%',
+         marginLeft: 'auto',
+         marginLeft:'40%',
          marginTop:20
     }
 
     return (
+       
       <div className="Hom">
         <Header />
         <body className="Hom-body">
@@ -54,29 +70,35 @@ class Home extends Component {
             <img id="home" src={bghead} alt="img" style={bgheads} />
             <div style={h1}>
                 <h1 style={{
-                    fontSize:'50px',
+                    fontSize:'4vw',height:'auto',position:'relative'
                 }}>Hi !</h1>
 
                 <h1 style={{
-                    color:'#685AA7',marginTop:'-10px',fontSize:'50px',fontWeight:500
+                    color:'#685AA7',marginTop:'-10px',fontSize:'4vw',fontWeight:500,height:'auto',position:'relative'
                 }}>I'm Human</h1>
 
-                <h2 style={{
-                    marginLeft:200, fontSize:'30px',fontWeight:'200'
-                }}>a graphic designer</h2>
+                 <h1 style={{
+                    fontSize:'3vw',height:'auto',position:'relative'
+                }}>a graphic designer</h1>
+
+                <br></br>
+                <br></br>
+
 
             </div>
 
             <div className="image">
-                <img src={man} alt="img" style={{
+                  {/* <img src={man} alt="img" style={{
                             width:'200px',
                             marginLeft:'150px',
-                            position:'absolute'
+                            position:'absolute',
+                            height:'auto'                      
 
-                        }}/>
-
+                        }}/>   */}
+                <div className="list-group">
+                <div className="text-left">        
                 <h1 style={{
-                    marginLeft: '27%', fontSize:'30px',color:'#685AA7',fontWeight:300
+                   color:'#685AA7', marginLeft: '27%', fontSize:'3vw',fontWeight:300,height:'auto',position:'relative'
                 }}>About Me</h1>
 
 
@@ -84,7 +106,7 @@ class Home extends Component {
                 { <a href="#contact"><button className="btn btn-primary" style={{
                     borderRadius:'50px',
                     width:'200px',
-                    height:'80px',
+                    height:'auto',
                     textAlign:'left',
                     fontSize:'30px',
                     left:'70px',
@@ -96,7 +118,7 @@ class Home extends Component {
                 }}>Hire Me</button></a>     }
 
                 <div style={{
-                    marginLeft: '27%',width:'600px',letterSpacing:'0.1em',color: 'gray',
+                    marginLeft: '27%',width:'600px',height:'auto',letterSpacing:'0.1em',color: 'gray',position:'relative'
                 }}>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nulla nibh mi, ornare
@@ -267,7 +289,7 @@ class Home extends Component {
             </div>
             <br/>
             </div>
-        </body>
+        </div>
         <Footer />
         <div class="modal fade" id="myModal">
   <div class="modal-dialog modal-lg">
@@ -303,6 +325,8 @@ class Home extends Component {
     </div>
   </div>
 </div>
+      </div>
+      </body>
       </div>
     );
   }
