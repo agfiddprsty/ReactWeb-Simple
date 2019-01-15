@@ -24,25 +24,25 @@ class ModalProfile extends Component {
           <div>
             <div>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name *" value={this.state.value} onChange={this.handleChange}/>
+                    <input type="text" class="form-control" placeholder="Name *" value={this.state.value} onChange={this.handleChange} required/>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Skill *" />
+                    <input type="text" class="form-control" placeholder="Skill *" required/>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Asal Sekolah *" />
+                    <input type="text" class="form-control" placeholder="Asal Sekolah *" required/>
                 </div>
                 <div class="form-group">
-                    <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Phone *" />
+                    <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Phone *" required />
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Usia *" />
+                    <input type="text" class="form-control" placeholder="Usia *" required/>
                 </div>
                 <div class="form-group">
-                    <textarea type="text" class="form-control" placeholder="Alamat *" />
+                    <textarea type="text" class="form-control" placeholder="Alamat *" required />
                 </div>
                 <div class="form-group">
-                    <select class="form-control">
+                    <select class="form-control" required>
                         <option class="hidden"  selected disabled>Last Education</option>
                         <option value="SD">SD</option>
                         <option value="SMP">SMP</option>
