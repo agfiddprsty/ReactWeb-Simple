@@ -12,8 +12,8 @@ class ProfileLinked extends React.Component{
     componentDidMount(){
         var o = this;
         var uid = window.location.href;
-        var id = uid.replace('http://localhost:3002/profilelink/','');
-        $.ajax("http://localhost:5000/profiledata?uid="+ id).done(function (data) {
+        var id = uid.replace('https://pklnode.firebaseapp.com/profilelink/','');
+        $.ajax("https://pklnode.firebaseapp.com/profiledata?uid="+ id).done(function (data) {
            // console.log("data  ", data);
             o.setState(data);
             

@@ -282,7 +282,7 @@ class Home extends Component {
                 {/* <!-- Modal body --> */}
                 <div class="modal-body">
                 <div>
-                    <a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=81izf14qdfojgt&redirect_uri=http://localhost:5000/auth&state=aRandomString&scope=r_basicprofile">
+                    <a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=81izf14qdfojgt&redirect_uri=https://expressjss.herokuapp.com/auth&state=aRandomString&scope=r_basicprofile">
                         <button type="button" class="btn btn-primary btn-block float-left" >Connect to LinkedIn</button> <br/>
                     </a>
                 </div><br/><br/>    
