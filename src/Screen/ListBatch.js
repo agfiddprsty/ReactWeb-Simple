@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+import Header from './HeaderSilabus';
 import Footer from './Footer';
 import Batch from './batch.js';
 import ModalProfile from './ModalProfile';

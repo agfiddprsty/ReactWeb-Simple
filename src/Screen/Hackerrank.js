@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import './css/Hackerrank.css';
-import Header from './Header';
+import Header from './HeaderSilabus';
 import Footer from './Footer';
 import Compiler from './Compiler';
 import { Card, CardImg, CardDeck,

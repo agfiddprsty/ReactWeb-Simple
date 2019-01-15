@@ -13,6 +13,7 @@ class registrasi extends Component{
     this.handleChange = this.handleChange.bind(this);
     this.onLoadReecaptcha = this.onLoadRecaptcha.bind(this);
     this.verifyCallback = this.verifyCallback.bind(this);
+    this.moveLogin = this.moveLogin.bind(this);
     this.state = {
         isverified: false,
         name:'',
@@ -47,6 +48,11 @@ class registrasi extends Component{
         //alert(this.state.name);
         }
       }
+
+      moveLogin(){
+        this.props.history.push("/");
+    }
+
       componentDidMount() {
         if (this.captchaDemo) {
             console.log("started, just a second...")
@@ -81,7 +87,7 @@ class registrasi extends Component{
                         <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
                         <h3>Welcome</h3>
                         <p>Arkademian</p>
-                        <button className="btn btn-light">LOGIN</button><br/>
+                        <button className="btn btn-light" onClick={this.moveLogin}>LOGIN</button><br/>
                     </div>
                     <div class="col-md-9 register-right">
                         <div class="tab-content" id="myTabContent">
