@@ -62,7 +62,7 @@ class Home extends Component {
     
     return (
        
-      <div className="Hom">
+      <div className="Hom" id="home">
         <Header />
         <body className="Hom-body">
         <div>

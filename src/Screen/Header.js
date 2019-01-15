@@ -17,7 +17,7 @@ class Header extends Component {
               <div class="collapse navbar-collapse bg-light colap" id="collapsibleNavbar">
               <ul class="navbar-nav ml-auto">
                 <li className="nav-item ml-auto">
-                  <Link to='/home' className="nav-link">HOME</Link>
+                  <a href='/home#home' className="nav-link">HOME</a>
                   </li>
                   <li className="nav-item ml-auto"><a href="#silabus" className="nav-link">SILABUS</a></li>
                   <li className="nav-item ml-auto"><a href="#bootcamp" className="nav-link">BOOTCAMP BATCH</a></li>
