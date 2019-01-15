@@ -18,6 +18,7 @@ import { Card, CardImg, CardDeck,
     CardBody, Progress } from 'reactstrap';   
 import {withRouter,Link} from 'react-router-dom';
 import {Input, InputGroupAddon, Button } from 'reactstrap';
+import Popout from 'react-popout'
 
 class Home extends Component {
     constructor(){
@@ -30,9 +31,7 @@ class Home extends Component {
 
     handleChange(event) {
         this.setState({code: event.target.value});
-      }
-
-
+    }
   render() {
     var bgheads = {
         width: '735px',
@@ -45,7 +44,7 @@ class Home extends Component {
          marginLeft: '45%',
          marginTop:20
     }
-
+    
     return (
       <div className="Hom">
         <Header />
@@ -283,7 +282,9 @@ class Home extends Component {
                 {/* <!-- Modal body --> */}
                 <div class="modal-body">
                 <div>
-                    <button type="button" class="btn btn-primary btn-block float-left">Connect to LinkedIn</button> <br/>
+                    <a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=81izf14qdfojgt&redirect_uri=http://localhost:5000/auth&state=aRandomString&scope=r_basicprofile">
+                        <button type="button" class="btn btn-primary btn-block float-left" >Connect to LinkedIn</button> <br/>
+                    </a>
                 </div><br/><br/>    
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" onChange={this.handleChange} value={this.state.code} placeholder="Code Confirmation Email *"/>
