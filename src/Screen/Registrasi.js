@@ -52,7 +52,7 @@ class registrasi extends Component{
         }else if(this.state.password != this.state.confpassword){
             alert("Please Check Your Password And Confirmation Password");
         }else if(!this.state.checked){
-            alert("Please Checked Term And Condition");
+            alert("Please Accept Term And Condition");
         }
         else{
             this.props.history.push("/home");

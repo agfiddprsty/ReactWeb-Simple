@@ -26,14 +26,30 @@ class Home extends Component {
     constructor(){
         super()
         this.handleChange = this.handleChange.bind(this);
+        this.handleChecked = this.handleChecked.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
         this.state = {
             code:'',
+            checked: false,
         }
     }
-
+    handleChecked(){
+        this.setState({
+            checked: true
+        })
+    }
     handleChange(event) {
         this.setState({code: event.target.value});
     }
+    handleSubmit(){
+        if(this.state.checked){
+            this.props.history.push("/profile");
+        }
+        else{
+            alert('Please Accept Term And Condition')
+        }
+    }
+
   render() {
     var bgheads = {
         width: '735px',
@@ -314,7 +330,8 @@ class Home extends Component {
                     </div>
                     <div>
                         <label class="text-left">               
-                            <input type="checkbox"></input>
+                            <input type="checkbox" checked={this.state.checked} onChange={this.handleChecked} name="checked"
+                            ></input>
                             Saya Menyutujui   
                             <a href="/"> Syarat Dan Ketentuan</a>
                         </label>
@@ -323,7 +340,7 @@ class Home extends Component {
 
                 {/* <!-- Modal footer --> */}
                 <div class="modal-footer">
-                    <a href="/profile"><button type="button" class="btn btn-success">Submit</button></a>
+                    <button type="button" class="btn btn-success"onClick={this.handleSubmit}>Submit</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
 
