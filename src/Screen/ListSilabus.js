@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import './css/Silabus.css';
 import 'sass-loader';
 import { List } from 'material-ui';
-import Header from './Header.js';
+import Header from './HeaderSilabus';
 import Footer from './Footer.js';
 import './css/Home.css';
 import {  CardDeck, } from 'reactstrap';

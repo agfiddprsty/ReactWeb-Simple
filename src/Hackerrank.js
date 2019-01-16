@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import './css/Hackerrank.css';
-import Header from './HeaderSilabus';
+import Header from './Header';
 import Footer from './Footer';
 import Compiler from './Compiler';
 import { Card, CardImg, CardDeck,
@@ -25,7 +25,7 @@ class Hackerrank extends React.Component {
                   fontSize:'15px',color:'#e87000',fontWeight:100,padding:10
                }}>jawab soal dibawah ini dengan benar
                <br></br>
-               untuk mengikuti seleksi Bootcamp Arkademy
+               untuk mengikuti seleksi Bootcamp Arkademx`y
                  </h1>
                
                 

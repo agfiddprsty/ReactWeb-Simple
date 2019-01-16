@@ -5,7 +5,7 @@ nav{
     color: #a883e9;
     box-shadow: #888;
 }
-nav ul{
+nav ul{ 
     position: relative;
     top: 20px;
     margin: 0;
@@ -16,7 +16,7 @@ nav ul li{
     float: left;
     display: block;
     font-size: 15px;
-    margin: -10px 10px 25px 10px;
+    margin: -10px 0px 25px 10px;
     color: #a883e9;
     align-self: center;
 }
@@ -31,6 +31,30 @@ nav ul li a:hover{
     color: #55a8fd;
     text-decoration: none;
 }
+.menu-mobile{
+    position: relative;
+    float: right;
+    display: none;
+}
+.menu-mobile a{
+    color: #888;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #888 ;
+}
+
+.drpdn{
+  border: none;
+  border-radius: 10px;
+}
+
+.colap {
+  width: 100%;
+  border-radius: 10px;
+}
+
 
 .Hom {
   align-items: center;

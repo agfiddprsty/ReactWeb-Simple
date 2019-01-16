@@ -1,0 +1,258 @@
+*{
+    color: #fff;
+}
+
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    color: #222;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 28px;
+    color: #999;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+.spad {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #fff;
+}
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.section-title p {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.site-btn {
+    font-size: 12px;
+    background: #ffbc00;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 30px;
+    border-radius: 50px;
+    min-width: 160px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 20px 50px 0px rgba(55, 56, 56, 0.2);
+    box-shadow: 0px 20px 50px 0px rgba(55, 56, 56, 0.2);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.site-btn:hover {
+    color: #fff;
+    background: #333;
+}
+
+/* ====================
+  About Section
+=======================*/
+
+.kiela{
+    background-color: #fff;
+}
+
+.kiri-left{
+    text-align: left;
+    color: #fff;
+    margin-top: 4%;
+}
+
+.kanan-right{
+    text-align: right;
+    color:#fff;
+    margin-bottom: 4%;
+    
+
+}
+
+.about-text {
+    padding-top: 80px;
+}
+
+.about-text h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.about-text h5 {
+    font-size: 14px;
+    color: #c3c3c3;
+}
+
+.about-text p span {
+    color: #ffbc00;
+    font-weight: 600;
+}
+
+.about-title {
+    margin-bottom: 60px;
+}
+
+.single-progress-item {
+    margin-bottom: 45px;
+    position: relative;
+}
+
+
+.single-progress-item p {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 7px;
+    margin-bottom: 0px;
+    color: #333;
+}
+
+/* ====================
+  Resume Section
+=======================*/
+
+.resum{
+    background-color: #f7f7f7
+}
+
+.resume-section {
+    background: #f7f7f7;
+}
+
+.resume-item {
+    margin-bottom: 70px;
+}
+ 
+.resume-item .resume-year {
+    float: left;
+    width: 170px;
+    position: relative;
+}
+
+.resume-item .resume-year:after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    right: 25px;
+    top: 8px;
+    border-radius: 20px;
+    background: #ffbc00;
+}
+
+.resume-item .resume-year h2 {
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.resume-item .resume-text {
+    margin-left: 200px;
+    padding-top: 2px;
+}
+
+.resume-item .resume-text h3 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.resume-item .resume-text p {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+/* ====================
+  Contact Section
+=======================*/
+
+.cont-info {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cont-info i {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.cont-info a,
+.cont-info span {
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.cont-info a {
+    text-decoration: none;
+}
+
+.cont-info p {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
