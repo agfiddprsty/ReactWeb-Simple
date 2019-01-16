@@ -13,7 +13,7 @@ class ProfileLinked extends React.Component{
         var o = this;
         var uid = window.location.href;
         var id = uid.replace('https://pklnode.firebaseapp.com/profilelink/','');
-        $.ajax("https://pklnode.firebaseapp.com/profiledata?uid="+ id).done(function (data) {
+        $.ajax("https://expressjss.herokuapp.com/profiledata?uid="+ id).done(function (data) {
            // console.log("data  ", data);
             o.setState(data);
             
