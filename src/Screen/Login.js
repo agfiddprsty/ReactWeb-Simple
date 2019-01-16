@@ -82,6 +82,7 @@ class Login extends Component{
             left: '15%',
             position: 'absolute',
             overflow: 'hidden',
+            paddingBottom: ( 'height' / 'width' * 100 ) + '%',
         }
         return(
             <div className="App">
@@ -120,7 +121,8 @@ class Login extends Component{
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <img id="home" src={bghead} alt="img" style={bgheads} />
+                                                <img id="home" src={bghead} alt="img" style={{bgheads}} />
+                                                
                                             </div>
                                         </div>
                                     </div>
