@@ -5,7 +5,8 @@ import { ReCaptcha } from 'react-recaptcha-google'
 import Header from './Headereg.js';
 import Footer from './Footer.js';
 import {Link,Redirect,withRouter} from 'react-router-dom'
-
+import { Alert } from 'reactstrap';
+import {RadioGroup,Radio} from 'react-radio-group';
 class registrasi extends Component{
   constructor(props){
     super(props)
@@ -13,38 +14,47 @@ class registrasi extends Component{
     this.handleChange = this.handleChange.bind(this);
     this.onLoadReecaptcha = this.onLoadRecaptcha.bind(this);
     this.verifyCallback = this.verifyCallback.bind(this);
+    this.handleChecked = this.handleChecked.bind(this);
+    this.handleValue = this.handleValue.bind(this);
+    this.moveLogin = this.moveLogin.bind(this);
     this.state = {
         isverified: false,
         name:'',
         email:'',
         password: '',
-        skill:'',
-        asal:'',
-        no:'',
-        usia:'',
-        alamat:'',
+        confpassword:'',
+        checked: false,
+        selectedValue: 'Male',
 
     }
   }
       handleChange(event) {
-        this.setState({name: event.target.value});
+        this.setState({ [event.target.name]: event.target.value });
       }
 
       // startregister(){
 
       // }
       registerhandle(){
-        if(this.state.isverified){
-          this.props.history.push("/home");
-
-          
-        }else{
-
-          // alert('Please Proof You Are Human')
-       //   this.props.history.push("/Hack");
-
-           alert('Please Proof You Are Human')
-        //alert(this.state.name);
+        //check all is ok
+        if(!this.state.isverified){
+          alert("Please Proof Your Human");
+        }else if(this.state.name == ""){
+            alert("Please Insert Your Name");
+        }else if(this.state.email == ""){
+            alert("Please Insert Your Email");
+        }else if(this.state.password == ""){
+            alert("Please Insert Your Password");
+        }else if(this.state.confpassword == ""){
+            alert("Please Insert Your Confirmation Password");
+        }else if(this.state.password != this.state.confpassword){
+            alert("Please Check Your Password And Confirmation Password");
+        }else if(!this.state.checked){
+            alert("Please Checked Term And Condition");
+        }
+        else{
+            this.props.history.push("/home");
+            console.log(this.state.selectedValue);
         }
       }
       componentDidMount() {
@@ -67,7 +77,18 @@ class registrasi extends Component{
           })
         }
       }
-      
+
+      handleChecked(){
+        this.setState({
+            checked: true
+        })
+      }
+      handleValue(value) {
+        this.setState({selectedValue: value});
+      }
+      moveLogin(){
+        this.props.history.push("/");
+      }
       render(){
         
           return(
@@ -81,7 +102,7 @@ class registrasi extends Component{
                         <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
                         <h3>Welcome</h3>
                         <p>Arkademian</p>
-                        <button className="btn btn-light">LOGIN</button><br/>
+                        <button className="btn btn-light" onClick={this.moveLogin}>LOGIN</button><br/>
                     </div>
                     <div class="col-md-9 register-right">
                         <div class="tab-content" id="myTabContent">
@@ -90,14 +111,14 @@ class registrasi extends Component{
                                 <div class="row register-form">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Name *" onChange={this.handleChange} value={this.state.name} />
+                                            <input type="text" class="form-control" placeholder="Name *" onChange={this.handleChange} value={this.state.name} name="name" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Email *" />
+                                            <input type="email" class="form-control" placeholder="Email *" onChange={this.handleChange} value={this.state.email} name="email"/>
                                         </div>
                                         <div class="form-group">
-                                            <div class="maxl">
-                                                <label class="radio inline"> 
+                                            {/* <div class="maxl">
+                                                <label class="radio inline" > 
                                                     <input type="radio" name="gender" value="male" checked/>
                                                     <span> Male </span> 
                                                 </label>
@@ -105,11 +126,22 @@ class registrasi extends Component{
                                                     <input type="radio" name="gender" value="female"/>
                                                     <span>Female </span> 
                                                 </label>
-                                            </div>
+                                            </div> */}
+                                            <RadioGroup
+                                            name="fruit"
+                                            selectedValue={this.state.selectedValue}
+                                            onChange={this.handleValue}>
+                                                <label>
+                                                    <Radio value="Male" />Male
+                                                </label>
+                                                <label>
+                                                    <Radio value="Female" />Female
+                                                </label>
+                                            </RadioGroup>
                                         </div>
                                         <div>
                                         <label>               
-                                            <input type="checkbox"></input>
+                                            <input type="checkbox" checked={this.state.checked} onChange={this.handleChecked} name="checked"></input>
                                             Saya Menyutujui   
                                             <a href="/"> Syarat Dan Ketentuan</a>
                                         </label>
@@ -117,10 +149,10 @@ class registrasi extends Component{
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group passw">
-                                            <input type="password" class="form-control" placeholder="Password *" />
+                                            <input type="password" class="form-control" placeholder="Password *" onChange={this.handleChange} value={this.state.password} name="password"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Confirm Password *" />
+                                            <input type="password" class="form-control" placeholder="Confirm Password *" onChange={this.handleChange} value={this.state.confpassword} name="confpassword"/>
                                         </div>
                                         <div>
                                       {/* You can replace captchaDemo with any ref word */}
