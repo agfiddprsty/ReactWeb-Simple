@@ -3,46 +3,22 @@
   Footer Section
 =======================*/
 
+.Hom {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f7f7f7;
+  }
+
+.Hom-footer{
+    background-color: #e9ecef
+}
+
+
 .footer-section {
     background-position: center -5px;
     background-color: #111111;
     text-align: center;
-}
-
-.social-links {
-    margin-bottom: 25px;
-}
-
-.social-links a {
-    display: inline-table;
-    text-align: center;
-    height: 35px;
-    width: 35px;
-    color: #fff;
-    margin: 0 4px;
-    border-radius: 50%;
-    font-size: 13px;
-}
-
-.social-links a i {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.social-links a.facebook {
-    background: #2D5DA1;
-}
-
-.social-links a.twitter {
-    background: #1AB1E5;
-}
-
-.social-links a.behance {
-    background: #2A71F3;
-}
-
-.social-links a.dribbble {
-    background: #DF7EA5;
 }
 
 .copyright {

@@ -67,7 +67,8 @@ class Home extends Component {
         backgroundsize:'cover',
         backgroundposition:'center',
         backgroundimage:('src/Screen/img/image.svg'),
-        backgroundattachment: 'fixed'
+        backgroundattachment: 'fixed',
+        paddingBottom: ( 'height' / 'width' * 100 ) + '%'
     }
 
     var h1 = {
