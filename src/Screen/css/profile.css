@@ -115,6 +115,20 @@ ol {
     background-color: #fff;
 }
 
+.kiri-left{
+    text-align: left;
+    color: #fff;
+    margin-top: 4%;
+}
+
+.kanan-right{
+    text-align: right;
+    color:#fff;
+    margin-bottom: 4%;
+    
+
+}
+
 .about-text {
     padding-top: 80px;
 }
