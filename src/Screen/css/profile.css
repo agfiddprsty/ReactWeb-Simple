@@ -1,7 +1,3 @@
-*{
-    color: #fff;
-}
-
 body {
     height: 100%;
 }
@@ -16,12 +12,7 @@ img {
     max-width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.txthead{
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
@@ -56,7 +47,7 @@ ol {
 }
 
 .spad {
-    padding-top: 100px;
+    padding-top: 10px;
     padding-bottom: 100px;
     background-color: #fff;
 }
@@ -108,6 +99,46 @@ ol {
 }
 
 /* ====================
+  Head Section
+=======================*/
+
+/* 
+.fh5co-social-icons {
+    margin: 0;
+    padding: 0;
+  }
+  .fh5co-social-icons li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+  .fh5co-social-icons li a {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    color: #FF9000;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .fh5co-social-icons li a i {
+    font-size: 20px;
+  }
+
+.fh5co-cover {
+  background-color: rgba(0,0,0,0.5);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 600px;
+  width: 100%;
+} */
+
+/* ====================
   About Section
 =======================*/
 
@@ -115,22 +146,26 @@ ol {
     background-color: #fff;
 }
 
-.kiri-left{
+.kiri{
     text-align: left;
     color: #fff;
+    list-style-type: none;
     margin-top: 4%;
+    background-color: #f7f7f7;
 }
 
-.kanan-right{
+.kanan{
     text-align: right;
     color:#fff;
     margin-bottom: 4%;
-    
+}
 
+li{
+    list-style-type: none;
 }
 
 .about-text {
-    padding-top: 80px;
+    padding-top: 20px;
 }
 
 .about-text h2 {
@@ -150,7 +185,7 @@ ol {
 }
 
 .about-title {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .single-progress-item {
@@ -166,6 +201,10 @@ ol {
     letter-spacing: 7px;
     margin-bottom: 0px;
     color: #333;
+}
+
+.edit{
+    margin-right: 20px;
 }
 
 /* ====================
