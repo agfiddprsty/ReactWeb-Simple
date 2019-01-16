@@ -302,12 +302,7 @@ class Home extends Component {
                 </div>
 
                 {/* <!-- Modal body --> */}
-                <div class="modal-body">
-                <div>
-                    <a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=81izf14qdfojgt&redirect_uri=https://expressjss.herokuapp.com/auth&state=aRandomString&scope=r_basicprofile">
-                        <button type="button" class="btn btn-primary btn-block float-left" >Connect to LinkedIn</button> <br/>
-                    </a>
-                </div><br/><br/>    
+                <div class="modal-body"> 
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" onChange={this.handleChange} value={this.state.code} placeholder="Code Confirmation Email *"/>
                         <div class="input-group-append">
@@ -328,7 +323,7 @@ class Home extends Component {
 
                 {/* <!-- Modal footer --> */}
                 <div class="modal-footer">
-                    <a href="/hack"><button type="button" class="btn btn-success">Submit</button></a>
+                    <a href="/profile"><button type="button" class="btn btn-success">Submit</button></a>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
 
