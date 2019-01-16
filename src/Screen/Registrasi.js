@@ -14,11 +14,8 @@ class registrasi extends Component{
     this.handleChange = this.handleChange.bind(this);
     this.onLoadReecaptcha = this.onLoadRecaptcha.bind(this);
     this.verifyCallback = this.verifyCallback.bind(this);
-<<<<<<< HEAD
     this.handleChecked = this.handleChecked.bind(this);
     this.handleValue = this.handleValue.bind(this);
-=======
->>>>>>> 0a49e32287fd8f8488ae9fa6f3a34d1a9e7f1e90
     this.moveLogin = this.moveLogin.bind(this);
     this.state = {
         isverified: false,
