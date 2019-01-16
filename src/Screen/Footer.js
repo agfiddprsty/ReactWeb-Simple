@@ -5,9 +5,11 @@ class Footer extends Component {
   render() {
     return (
       <div className="Hom">
-        <footer className="Hom-footer">
-          <div> ini footer yakan</div>
-          <div> copyright FiiD17 </div>
+        <footer class="footer-section bg-dark">
+          <div class="container bg-dark">
+            {/* <!-- copyright --> */}
+            <p class="copyright">Copyright &copy; 2018 - All rights Reserved.</p>
+          </div>
         </footer>
       </div>
     );

@@ -16,6 +16,8 @@ class registrasi extends Component{
     this.verifyCallback = this.verifyCallback.bind(this);
     this.handleChecked = this.handleChecked.bind(this);
     this.handleValue = this.handleValue.bind(this);
+    this.handleChecked = this.handleChecked.bind(this);
+    this.handleValue = this.handleValue.bind(this);
     this.moveLogin = this.moveLogin.bind(this);
     this.state = {
         isverified: false,
@@ -91,9 +93,6 @@ class registrasi extends Component{
       handleValue(value) {
         this.setState({selectedValue: value});
       }
-      moveLogin(){
-        this.props.history.push("/");
-      }
       render(){
         
           return(
@@ -122,16 +121,7 @@ class registrasi extends Component{
                                             <input type="email" class="form-control" placeholder="Email *" onChange={this.handleChange} value={this.state.email} name="email"/>
                                         </div>
                                         <div class="form-group">
-                                            {/* <div class="maxl">
-                                                <label class="radio inline" > 
-                                                    <input type="radio" name="gender" value="male" checked/>
-                                                    <span> Male </span> 
-                                                </label>
-                                                <label class="radio inline"> 
-                                                    <input type="radio" name="gender" value="female"/>
-                                                    <span>Female </span> 
-                                                </label>
-                                            </div> */}
+                                            <div class="maxl">
                                             <RadioGroup
                                             name="fruit"
                                             selectedValue={this.state.selectedValue}
@@ -143,6 +133,8 @@ class registrasi extends Component{
                                                     <Radio value="Female" />Female
                                                 </label>
                                             </RadioGroup>
+                                            </div>
+                                           
                                         </div>
                                         <div>
                                         <label>               
