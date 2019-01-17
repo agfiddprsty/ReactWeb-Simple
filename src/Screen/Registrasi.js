@@ -9,42 +9,44 @@ import { Alert } from 'reactstrap';
 import {RadioGroup,Radio} from 'react-radio-group';
 class registrasi extends Component{
   constructor(props){
-    super(props)
-    this.registerhandle = this.registerhandle.bind(this);
-    this.handleChange = this.handleChange.bind(this);
-    this.onLoadReecaptcha = this.onLoadRecaptcha.bind(this);
-    this.verifyCallback = this.verifyCallback.bind(this);
-    this.handleChecked = this.handleChecked.bind(this);
-    this.handleValue = this.handleValue.bind(this);
-    this.handleChecked = this.handleChecked.bind(this);
-    this.handleValue = this.handleValue.bind(this);
-    this.moveLogin = this.moveLogin.bind(this);
-    this.state = {
-        isverified: false,
-        name:'',
-        email:'',
-        password: '',
-        confpassword:'',
-        checked: false,
-        selectedValue: 'Male',
+        super(props)
+        this.registerhandle = this.registerhandle.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+        this.onLoadReecaptcha = this.onLoadRecaptcha.bind(this);
+        this.verifyCallback = this.verifyCallback.bind(this);
+        this.handleChecked = this.handleChecked.bind(this);
+        this.handleValue = this.handleValue.bind(this);
+        this.handleChecked = this.handleChecked.bind(this);
+        this.handleValue = this.handleValue.bind(this);
+        this.moveLogin = this.moveLogin.bind(this);
+        this.state = {
+            isverified: false,
+            name:'',
+            email:'',
+            password: '',
+            confpassword:'',
+            checked: false,
+            selectedValue: '',
+            emailValid: false
 
+        }
     }
-  }
-      handleChange(event) {
+    handleChange(event) {
         this.setState({ [event.target.name]: event.target.value });
-      }
+    }
 
       // startregister(){
 
       // }
-      registerhandle(){
+    registerhandle(){
+
         //check all is ok
-        if(!this.state.isverified){
-          alert("Please Proof Your Human");
-        }else if(this.state.name == ""){
+        if(this.state.name == ""){
             alert("Please Insert Your Name");
         }else if(this.state.email == ""){
             alert("Please Insert Your Email");
+        }else if(!this.state.emailValid){
+            alert('Please Enter Valid Email')
         }else if(this.state.password == ""){
             alert("Please Insert Your Password");
         }else if(this.state.confpassword == ""){
@@ -53,49 +55,52 @@ class registrasi extends Component{
             alert("Please Check Your Password And Confirmation Password");
         }else if(!this.state.checked){
             alert("Please Accept Term And Condition");
+        }else if(!this.state.isverified){
+            alert("Please Proof Your Human");
         }
         else{
             this.props.history.push("/home");
             console.log(this.state.selectedValue);
         }
-      }
+        
+    }
 
-      moveLogin(){
+    moveLogin(){
         this.props.history.push("/");
     }
 
-      componentDidMount() {
+    componentDidMount() {
         if (this.captchaDemo) {
             console.log("started, just a second...")
             this.captchaDemo.reset();
         }
-      }
-      onLoadRecaptcha() {
-          if (this.captchaDemo) {
-              this.captchaDemo.reset();
-          }
-      }
-      verifyCallback(recaptchaToken) {
+    }
+    onLoadRecaptcha() {
+        if (this.captchaDemo) {
+            this.captchaDemo.reset();
+        }
+    }
+    verifyCallback(recaptchaToken) {
         // Here you will get the final recaptchaToken!!!  
         //console.log(recaptchaToken, "<= your recaptcha token")
         if(recaptchaToken){
-          this.setState({
+            this.setState({
             isverified: true
-          })
+            })
         }
-      }
+    }
 
-      handleChecked(){
+    handleChecked(){
         this.setState({
             checked: true
         })
-      }
-      handleValue(value) {
+    }
+    handleValue(value) {
         this.setState({selectedValue: value});
-      }
-      render(){
-        
-          return(
+        console.log(this.state.selectedValue);
+    }
+    render(){    
+        return(
             <div>
             <Header/>
         <body>
@@ -123,7 +128,7 @@ class registrasi extends Component{
                                         <div class="form-group">
                                             <div class="maxl">
                                             <RadioGroup
-                                            name="fruit"
+                                            name="gender"
                                             selectedValue={this.state.selectedValue}
                                             onChange={this.handleValue}>
                                                 <label>
@@ -175,7 +180,7 @@ class registrasi extends Component{
         </body>
        <Footer/>
       </div>
-          );
-      }
+        );
+    }
 }
 export default registrasi;

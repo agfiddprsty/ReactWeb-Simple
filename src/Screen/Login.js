@@ -70,7 +70,7 @@ class Login extends Component{
             alert('please enter correct password');
         }
         else{
-            this.props.history.push("/Dashboard");
+            this.props.history.push("/home");
         }
     }
     moveRegister(){
