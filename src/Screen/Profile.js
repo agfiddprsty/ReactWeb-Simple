@@ -7,22 +7,9 @@ import mail from './img/mail.png';
 import Header from './HeaderSilabus';
 import Footer from './Footer';
 import ModalProfile from './ModalProfile';
-import Covbg from './img/covbg.jpg';
 import {withRouter,Link} from 'react-router-dom';
 
 class Profile extends Component {
-    constructor(){
-        super()
-        this.handleChange = this.handleChange.bind(this);
-        this.state = {
-            code:'',
-        }
-    }
-
-    handleChange(event) {
-        this.setState({code: event.target.value});
-    }
-    
     render() {
         return (
             <div>
@@ -221,22 +208,9 @@ class Profile extends Component {
 
                             {/* <!-- Modal body --> */}
                                 <div class="modal-body">  
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" onChange={this.handleChange} value={this.state.code} placeholder="Code Confirmation Email *"/>
-                                        <div class="input-group-append">
-                                            <button class="btn btn-success" type="submit">Send Code Confirmation</button>
-                                        </div>
-                                    </div>
                                     <div>
                                         <ModalProfile />
                                     </div>
-                                    <div>
-                                        <label class="text-left">               
-                                            <input type="checkbox"></input>
-                                            Saya Menyutujui   
-                                            <a href="/"> Syarat Dan Ketentuan</a>
-                                        </label>
-                                    </div> 
                                 </div>
 
                         {/* <!-- Modal footer --> */}

@@ -65,26 +65,10 @@ handleChange(event) {
                 </div>
 
                 {/* <!-- Modal body --> */}
-                <div class="modal-body">
-                <div>
-                    <button type="button" class="btn btn-primary btn-block float-left">Connect to LinkedIn</button> <br/>
-                </div><br/><br/>    
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" onChange={this.handleChange} value={this.state.code} placeholder="Code Confirmation Email *" required/>
-                        <div class="input-group-append">
-                            <button class="btn btn-success" type="submit">Send Code Confirmation</button>
-                        </div>
-                    </div>
+                <div class="modal-body"> 
                     <div>
                         <ModalProfile />
                     </div>
-                    <div>
-                        <label class="text-left">               
-                            <input type="checkbox"></input>
-                            Saya Menyutujui   
-                            <a href="/"> Syarat Dan Ketentuan</a>
-                        </label>
-                    </div> 
                 </div>
 
                 {/* <!-- Modal footer --> */}

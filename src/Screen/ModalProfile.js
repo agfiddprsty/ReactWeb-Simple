@@ -3,16 +3,26 @@ import React, { Component } from 'react';
 class ModalProfile extends Component {
     constructor(){
         super()
+        this.handleChecked = this.handleChecked.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.state = {
+            code:'',
             name:'',
             skill:'',
             asal:'',
             no:'',
             usia:'',
             alamat:'',
-            value:''
+            value:'',
+            checked: false,
         }
+    }
+
+
+    handleChecked(){
+        this.setState({
+            checked: true
+        })
     }
 
     handleChange(event) {
@@ -23,8 +33,14 @@ class ModalProfile extends Component {
         return (
           <div>
             <div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" onChange={this.handleChange} value={this.state.value} placeholder="Code Confirmation Email *"/>
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="submit">Send Code Confirmation</button>
+                    </div>
+                </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name *" value={this.state.value} onChange={this.handleChange} required/>
+                    <input type="text" class="form-control" placeholder="Name *" required/>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Skill *" required/>
@@ -52,6 +68,14 @@ class ModalProfile extends Component {
                         <option value="S2">S2</option>
                     </select>
                 </div>
+                <div>
+                    <label class="text-left">               
+                        <input type="checkbox" checked={this.state.checked} onChange={this.handleChecked} name="checked"
+                        ></input>
+                        Saya Menyutujui   
+                        <a href="/"> Syarat Dan Ketentuan</a>
+                    </label>
+                </div> 
             </div>
           </div>
         );
