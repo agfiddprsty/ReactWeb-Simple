@@ -7,22 +7,9 @@ import mail from './img/mail.png';
 import Header from './HeaderSilabus';
 import Footer from './Footer';
 import ModalProfile from './ModalProfile';
-import Covbg from './img/covbg.jpg';
 import {withRouter,Link} from 'react-router-dom';
 
 class Profile extends Component {
-    constructor(){
-        super()
-        this.handleChange = this.handleChange.bind(this);
-        this.state = {
-            code:'',
-        }
-    }
-
-    handleChange(event) {
-        this.setState({code: event.target.value});
-    }
-    
     render() {
         return (
             <div>
@@ -30,33 +17,6 @@ class Profile extends Component {
                     <div>
                         <Header/>
                     </div>
-                    {/* <div class="fh5co-loader"></div>
-                    <div id="page">	
-                        <div>
-                            <img class="fh5co-cover" role="banner" src={Covbg}/>		    
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-8 col-md-offset-2 text-center">
-                                        <div class="display-t js-fullheight">
-                                            <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-                                                <div class="profile-thumb" style={{backgroundImage: {potopropil}}}></div>
-                                                <h1 className="txthead"><span>Louie Jie Mahusay</span></h1>
-                                                <h3 className="txthead"><span>Web Developer / Photographer</span></h3>
-                                                <p>
-                                                    <ul class="fh5co-social-icons">
-                                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                                    </ul>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
 
                 {/* <!-- About section start --> */}
                     <section class="about-section spad" id="about">
@@ -74,11 +34,11 @@ class Profile extends Component {
                                     </div>
                                 
                                     <p>I am <span>Agfid Danu Prasetyo</span>. I'm 16 years old. My hobby is Gamming, Watching Anime. I was born in Purwokerto and now lives in Purwokerto, Central Java.</p>
-                                    <div class="container kiri">
-                                        <div class="row">
-                                            <div class="col-md-3">
+                                    <div class="container-fluid kiri">
+                                        <div class="row this">
+                                            <div class="col">
                                                 <ul class="info">
-                                                    <p><li><span class="first-block">Full Name</span><span></span></li></p>
+                                                    <p><li><span class="first-block">Name</span><span></span></li></p>
                                                     <p><li><span class="first-block">Phone</span><span></span></li></p>
                                                     <p><li><span class="first-block">Email</span><span></span></li></p>
                                                     <p><li><span class="first-block">Website</span><span></span></li></p>
@@ -86,7 +46,7 @@ class Profile extends Component {
                                                 </ul>
                                             </div>
 
-                                            <div class="col-md-1">
+                                            <div class="col">
                                                 <ul class="info">
                                                     <p><li><span class="first-block">:</span><span></span></li></p>
                                                     <p><li><span class="first-block">:</span><span></span></li></p>
@@ -96,7 +56,7 @@ class Profile extends Component {
                                                 </ul>
                                             </div>
 
-                                            <div class="col-md-8">
+                                            <div class="col">
                                                 <ul class="info">
                                                     <p><li><span class="first-block">Agfid Danu Prasetyo</span><span></span></li></p>
                                                     <p><li><span class="first-block">081228154479</span><span></span></li></p>
@@ -128,7 +88,7 @@ class Profile extends Component {
                             <div class="row">
                                 <div class="col-lg-10 col-xl-9 offset-lg-2 offset-xl-2">
                                     {/* <!-- Review item --> */}
-                                    <div class="resume-item wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="resume-item">
                                         <div class="resume-year">
                                             <h2 className="txthead">2018</h2>
                                         </div>
@@ -138,7 +98,7 @@ class Profile extends Component {
                                         </div>
                                     </div>
                                     {/* <!-- Review item --> */}
-                                    <div class="resume-item wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="resume-item">
                                         <div class="resume-year">
                                             <h2 className="txthead">2018</h2>
                                         </div>
@@ -164,10 +124,33 @@ class Profile extends Component {
                             </div>
                             <div class="text-center mt-5">
                                 <a href="" class="site-btn wow fadeInUp" data-wow-delay="0.2s">More Projects</a>
+                                <a href="#" class="site-btn">More Projects</a>
                             </div>
                         </div>
                     </section>
                 {/* <!-- Portfolio section end --> */}
+
+                <div class="section-title">
+                        <p className="text-center">Raport</p>
+                            <h2 className="text-center txthead">Completed Task</h2>
+                            </div>
+                            <h6 className="text-center">- I finished finalizing the Fall marketing campaign, Pumpkin Groove. I reviewed my proposal, submitted it to Valerie Goose for approval/feedback.</h6>
+                            <h6 className="text-center">- Published a guest post on Uncrowd and Failsafe’s blogs, then pitched the same concept to three more publications. Waiting on a response.</h6> 
+                            <h6 className="text-center">- I crafted original quote content for social media, posted an infographic on social media and reshared an older article for TBH Tuesdays</h6> 
+
+                            <div class="section-title">
+                            <h2 className="text-center txthead">Ongoing Task</h2>
+                            </div>
+                            <h6 className="text-center">- Conducting outreach to publications to either share our existing content, or let us contribute original content. Aiming to pitch 50 places before the end of the month, currently pitched 41.</h6>
+                            <h6 className="text-center">- Tracking paid-ad performance on Facebook, reviewed metrics and it was satisfactory at the small-scale, will bump up to moderate-scale and measure outcome.</h6> 
+
+                         <div class="section-title">
+                         <h2 className="text-center txthead">Task For Next Week</h2>
+                            </div>
+                            <h6 className="text-center">- Need to make 7 customer calls, sit in 3 meetings (with Uncrowd, Failsafe and Metric Monkey) and make a state-level information request.</h6>
+                            <h6 className="text-center">- Continue working on Pumpkin Groove campaign, follow up edits.</h6> 
+                            <h6 className="text-center">- Finish editing and finalize draft of, “The Golden Rule of Online Copywriting”</h6>
+                            <h6 className="text-center">- Prepare outline for ‘Catchy Phrases’ webinar</h6> 
 
 
                 {/* <!-- Contact section start --> */}
@@ -186,7 +169,7 @@ class Profile extends Component {
                                             <p>email</p>
                                         </div>
                                         {/* <!-- contact info --> */}
-                                        <div class="col-sm-4 cont-info wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="col-sm-4 cont-info">
                                             <img src={gps} alt="alamat" class="ti-location-pin"></img><br/>
                                             <span>Purwokerto, Central Java, Indonesia</span>
                                             <p>Address</p>
@@ -221,22 +204,9 @@ class Profile extends Component {
 
                             {/* <!-- Modal body --> */}
                                 <div class="modal-body">  
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" onChange={this.handleChange} value={this.state.code} placeholder="Code Confirmation Email *"/>
-                                        <div class="input-group-append">
-                                            <button class="btn btn-success" type="submit">Send Code Confirmation</button>
-                                        </div>
-                                    </div>
                                     <div>
                                         <ModalProfile />
                                     </div>
-                                    <div>
-                                        <label class="text-left">               
-                                            <input type="checkbox"></input>
-                                            Saya Menyutujui   
-                                            <a href="/"> Syarat Dan Ketentuan</a>
-                                        </label>
-                                    </div> 
                                 </div>
 
                         {/* <!-- Modal footer --> */}

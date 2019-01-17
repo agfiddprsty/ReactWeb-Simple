@@ -320,23 +320,9 @@ class Home extends Component {
 
                 {/* <!-- Modal body --> */}
                 <div class="modal-body"> 
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" onChange={this.handleChange} value={this.state.code} placeholder="Code Confirmation Email *"/>
-                        <div class="input-group-append">
-                            <button class="btn btn-success" type="submit">Send Code Confirmation</button>
-                        </div>
-                    </div>
                     <div>
                         <ModalProfile />
                     </div>
-                    <div>
-                        <label class="text-left">               
-                            <input type="checkbox" checked={this.state.checked} onChange={this.handleChecked} name="checked"
-                            ></input>
-                            Saya Menyutujui   
-                            <a href="/"> Syarat Dan Ketentuan</a>
-                        </label>
-                    </div> 
                 </div>
 
                 {/* <!-- Modal footer --> */}
