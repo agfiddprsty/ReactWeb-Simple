@@ -52,6 +52,11 @@
     padding: 10%;
     margin-top: 10%;
 }
+
+.register-left button {
+    margin-bottom: 10%;
+}
+
 .btnRegister{
     float: right;
     margin-top: 10%;
@@ -98,4 +103,9 @@
 }
 .passw {
     margin-top: 6px;
+}
+
+.g-recaptcha {
+    transform: scale(0.81); 
+    transform-origin: left top;
 }
