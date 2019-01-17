@@ -109,15 +109,17 @@ class Login extends Component{
                                                     <input type="password" class="form-control" placeholder="Password *" onChange={this.handleChange} value={this.state.passwordform} name="passwordform" />
                                                 </div>
                                                 <div class="form-group">
-                                                    <ReCaptcha
-                                                    ref={(el) => {this.captchaDemo = el;}}
-                                                    size="normal"
-                                                    data-theme="dark"            
-                                                    render="explicit"
-                                                    sitekey="6LfQR4IUAAAAAFPioJtlx1v2GeVJJ8_cRrLaa4Ww"
-                                                    onloadCallback={this.onLoadRecaptcha}
-                                                    verifyCallback={this.verifyCallback}/>
-                                                    <button class="btn btn-primary btnRegister" onClick={this.loginhandle} >Login</button>
+                                                    <div className="g-recaptcha">
+                                                        <ReCaptcha
+                                                        ref={(el) => {this.captchaDemo = el;}}
+                                                        size="normal"
+                                                        data-theme="dark"            
+                                                        render="explicit"
+                                                        sitekey="6LfQR4IUAAAAAFPioJtlx1v2GeVJJ8_cRrLaa4Ww"
+                                                        onloadCallback={this.onLoadRecaptcha}
+                                                        verifyCallback={this.verifyCallback}/>
+                                                        <button class="btn btn-primary btnRegister" onClick={this.loginhandle} >Login</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">

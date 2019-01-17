@@ -93,6 +93,7 @@ class registrasi extends Component{
       handleValue(value) {
         this.setState({selectedValue: value});
       }
+      
       render(){
         
           return(
@@ -120,29 +121,6 @@ class registrasi extends Component{
                                         <div class="form-group">
                                             <input type="email" class="form-control" placeholder="Email *" onChange={this.handleChange} value={this.state.email} name="email"/>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="maxl">
-                                            <RadioGroup
-                                            name="fruit"
-                                            selectedValue={this.state.selectedValue}
-                                            onChange={this.handleValue}>
-                                                <label>
-                                                    <Radio value="Male" />Male
-                                                </label>
-                                                <label>
-                                                    <Radio value="Female" />Female
-                                                </label>
-                                            </RadioGroup>
-                                            </div>
-                                           
-                                        </div>
-                                        <div>
-                                        <label>               
-                                            <input type="checkbox" checked={this.state.checked} onChange={this.handleChecked} name="checked"></input>
-                                            Saya Menyutujui   
-                                            <a href="/"> Syarat Dan Ketentuan</a>
-                                        </label>
-                                      </div> 
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group passw">
@@ -151,9 +129,36 @@ class registrasi extends Component{
                                         <div class="form-group">
                                             <input type="password" class="form-control" placeholder="Confirm Password *" onChange={this.handleChange} value={this.state.confpassword} name="confpassword"/>
                                         </div>
+                                    </div>
+                                    <div className="col-md-6">
+                                    <div class="form-group">
+                                        <div class="maxl">
+                                            <RadioGroup
+                                                name="fruit"
+                                                selectedValue={this.state.selectedValue}
+                                                onChange={this.handleValue}>
+                                                <label>
+                                                    <Radio value="Male" />Male
+                                                </label>
+                                                <label>
+                                                    <Radio value="Female" />Female
+                                                </label>
+                                            </RadioGroup>
+                                        </div>
+                                           
+                                        </div>
                                         <div>
+                                            <label>               
+                                                <input type="checkbox" checked={this.state.checked} onChange={this.handleChecked} name="checked"></input>
+                                                Saya Menyutujui   
+                                                <a href="/"> Syarat Dan Ketentuan</a>
+                                            </label>
+                                        </div> 
+                                    </div>
+                                    <div className="col-md-6">
+                                    <div  className="g-recaptcha">
                                       {/* You can replace captchaDemo with any ref word */}
-                                      <ReCaptcha
+                                      <ReCaptcha 
                                         ref={(el) => {this.captchaDemo = el;}}
                                         size="normal"
                                         data-theme="dark"            
@@ -163,7 +168,7 @@ class registrasi extends Component{
                                         verifyCallback={this.verifyCallback}
                                       />
                                       </div>
-                                        <button class="btn btn-primary btnRegister" onClick={this.registerhandle}>Register</button>
+                                      <button class="btn btn-primary btnRegister" onClick={this.registerhandle}>Register</button>
                                     </div>
                                 </div>
                             </div>
