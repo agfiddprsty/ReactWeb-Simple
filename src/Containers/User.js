@@ -6,7 +6,7 @@ import News from '../screens/News';
 const mapStateToProps = (state) => {
   return{
     data: state.news.data,
-    fetchednews: state,
+    fetchedUser: state,
   };
 }
 
