@@ -61,11 +61,11 @@ class Profile extends Component {
                                     </div>
                                 
                                     <p>I am <span>Agfid Danu Prasetyo</span>. I'm 16 years old. My hobby is Gamming, Watching Anime. I was born in Purwokerto and now lives in Purwokerto, Central Java.</p>
-                                    <div class="container kiri">
-                                        <div class="row">
-                                            <div class="col-md-3">
+                                    <div class="container-fluid kiri">
+                                        <div class="row this">
+                                            <div class="col">
                                                 <ul class="info">
-                                                    <p><li><span class="first-block">Full Name</span><span></span></li></p>
+                                                    <p><li><span class="first-block">Name</span><span></span></li></p>
                                                     <p><li><span class="first-block">Phone</span><span></span></li></p>
                                                     <p><li><span class="first-block">Email</span><span></span></li></p>
                                                     <p><li><span class="first-block">Website</span><span></span></li></p>
@@ -73,7 +73,7 @@ class Profile extends Component {
                                                 </ul>
                                             </div>
 
-                                            <div class="col-md-1">
+                                            <div class="col">
                                                 <ul class="info">
                                                     <p><li><span class="first-block">:</span><span></span></li></p>
                                                     <p><li><span class="first-block">:</span><span></span></li></p>
@@ -83,7 +83,7 @@ class Profile extends Component {
                                                 </ul>
                                             </div>
 
-                                            <div class="col-md-8">
+                                            <div class="col">
                                                 <ul class="info">
                                                     <p><li><span class="first-block">Agfid Danu Prasetyo</span><span></span></li></p>
                                                     <p><li><span class="first-block">081228154479</span><span></span></li></p>
@@ -115,7 +115,7 @@ class Profile extends Component {
                             <div class="row">
                                 <div class="col-lg-10 col-xl-9 offset-lg-2 offset-xl-2">
                                     {/* <!-- Review item --> */}
-                                    <div class="resume-item wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="resume-item">
                                         <div class="resume-year">
                                             <h2 className="txthead">2018</h2>
                                         </div>
@@ -125,7 +125,7 @@ class Profile extends Component {
                                         </div>
                                     </div>
                                     {/* <!-- Review item --> */}
-                                    <div class="resume-item wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="resume-item">
                                         <div class="resume-year">
                                             <h2 className="txthead">2018</h2>
                                         </div>
@@ -150,7 +150,7 @@ class Profile extends Component {
                                 <h2 className="text-center txthead">Letest Projects soon updated</h2>
                             </div>
                             <div class="text-center mt-5">
-                                <a href="https://aboutme-officialputuid.c9users.io/index.html" class="site-btn wow fadeInUp" data-wow-delay="0.2s">More Projects</a>
+                                <a href="#" class="site-btn">More Projects</a>
                             </div>
                         </div>
                     </section>
@@ -173,7 +173,7 @@ class Profile extends Component {
                                             <p>email</p>
                                         </div>
                                         {/* <!-- contact info --> */}
-                                        <div class="col-sm-4 cont-info wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="col-sm-4 cont-info">
                                             <img src={gps} alt="alamat" class="ti-location-pin"></img><br/>
                                             <span>Purwokerto, Central Java, Indonesia</span>
                                             <p>Address</p>
