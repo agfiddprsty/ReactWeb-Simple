@@ -163,7 +163,7 @@ class Profile extends Component {
                                 <h2 className="text-center txthead">Letest Projects soon updated</h2>
                             </div>
                             <div class="text-center mt-5">
-                                <a href="https://aboutme-officialputuid.c9users.io/index.html" class="site-btn wow fadeInUp" data-wow-delay="0.2s">More Projects</a>
+                                <a href="" class="site-btn wow fadeInUp" data-wow-delay="0.2s">More Projects</a>
                             </div>
                         </div>
                     </section>

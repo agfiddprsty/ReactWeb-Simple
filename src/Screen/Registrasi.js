@@ -7,6 +7,7 @@ import Footer from './Footer.js';
 import {Link,Redirect,withRouter} from 'react-router-dom'
 import { Alert } from 'reactstrap';
 import {RadioGroup,Radio} from 'react-radio-group';
+import Axios from 'axios';
 class registrasi extends Component{
   constructor(props){
         super(props)
@@ -27,7 +28,8 @@ class registrasi extends Component{
             confpassword:'',
             checked: false,
             selectedValue: '',
-            emailValid: true
+            emailValid: true,
+            ressjson:''
 
         }
     }
@@ -58,7 +60,20 @@ class registrasi extends Component{
             alert("Please Proof Your Human");
         }
         else{
-
+            //init POST AXIOS
+            const nama = this.state.name;
+            const email = this.state.email;
+            const pass = this.state.password;
+            const gender = this.state.selectedValue;
+            const body={
+                nama,
+                email,
+                pass,
+                gender
+            }
+            // Axios.post('url',body).then(ress=>{
+            //     this.setState({ressjson:ress})
+            // })
             this.props.history.push("/home");
             console.log(this.state.selectedValue);
         
