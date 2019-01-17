@@ -24,6 +24,7 @@ import InfoSilabus from './Screen/InfoSilabus';
 import ListSilabus from './Screen/ListSilabus';
 import Login from './Screen/Login';
 import ProfileLink from './Screen/ProfileLinked';
+import ProfileRaport from './Screen/ProfileRaport';
 //import store 
 import store from './store'
 ReactDOM.render(
@@ -42,6 +43,7 @@ ReactDOM.render(
             <Route path="/silabus/list" component={ListSilabus}/>
             <Route path="/silabus/detail" component={Silabus}/>
             <Route path="/batch" component={Batch}/>
+            <Route path="/profileraport" component={ProfileRaport}/>
         </div>
         </Provider>
     </Router>
