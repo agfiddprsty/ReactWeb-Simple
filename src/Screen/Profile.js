@@ -17,33 +17,6 @@ class Profile extends Component {
                     <div>
                         <Header/>
                     </div>
-                    {/* <div class="fh5co-loader"></div>
-                    <div id="page">	
-                        <div>
-                            <img class="fh5co-cover" role="banner" src={Covbg}/>		    
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-8 col-md-offset-2 text-center">
-                                        <div class="display-t js-fullheight">
-                                            <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-                                                <div class="profile-thumb" style={{backgroundImage: {potopropil}}}></div>
-                                                <h1 className="txthead"><span>Louie Jie Mahusay</span></h1>
-                                                <h3 className="txthead"><span>Web Developer / Photographer</span></h3>
-                                                <p>
-                                                    <ul class="fh5co-social-icons">
-                                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                                    </ul>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
 
                 {/* <!-- About section start --> */}
                     <section class="about-section spad" id="about">
@@ -155,6 +128,28 @@ class Profile extends Component {
                         </div>
                     </section>
                 {/* <!-- Portfolio section end --> */}
+
+                <div class="section-title">
+                        <p className="text-center">Raport</p>
+                            <h2 className="text-center txthead">Completed Task</h2>
+                            </div>
+                            <h6 className="text-center">- I finished finalizing the Fall marketing campaign, Pumpkin Groove. I reviewed my proposal, submitted it to Valerie Goose for approval/feedback.</h6>
+                            <h6 className="text-center">- Published a guest post on Uncrowd and Failsafe’s blogs, then pitched the same concept to three more publications. Waiting on a response.</h6> 
+                            <h6 className="text-center">- I crafted original quote content for social media, posted an infographic on social media and reshared an older article for TBH Tuesdays</h6> 
+
+                            <div class="section-title">
+                            <h2 className="text-center txthead">Ongoing Task</h2>
+                            </div>
+                            <h6 className="text-center">- Conducting outreach to publications to either share our existing content, or let us contribute original content. Aiming to pitch 50 places before the end of the month, currently pitched 41.</h6>
+                            <h6 className="text-center">- Tracking paid-ad performance on Facebook, reviewed metrics and it was satisfactory at the small-scale, will bump up to moderate-scale and measure outcome.</h6> 
+
+                         <div class="section-title">
+                         <h2 className="text-center txthead">Task For Next Week</h2>
+                            </div>
+                            <h6 className="text-center">- Need to make 7 customer calls, sit in 3 meetings (with Uncrowd, Failsafe and Metric Monkey) and make a state-level information request.</h6>
+                            <h6 className="text-center">- Continue working on Pumpkin Groove campaign, follow up edits.</h6> 
+                            <h6 className="text-center">- Finish editing and finalize draft of, “The Golden Rule of Online Copywriting”</h6>
+                            <h6 className="text-center">- Prepare outline for ‘Catchy Phrases’ webinar</h6> 
 
 
                 {/* <!-- Contact section start --> */}
