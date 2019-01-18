@@ -27,6 +27,7 @@ class Home extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleChecked = this.handleChecked.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleValue = this.handleValue.bind(this);
         this.state = {
             code:'',
             name:'',
@@ -45,15 +46,40 @@ class Home extends Component {
         })
     }
     handleChange(event) {
-        this.setState({code: event.target.value});
+        this.setState({ [event.target.name]: event.target.value });
     }
     handleSubmit(){
-        if(this.state.checked){
+        if(this.state.code==""){
+            alert('Please Insert Code From Your Email');
+        }else if(this.state.name==""){
+            alert('Please Insert Your Name');
+        }else if(this.state.skill==""){
+            alert('Please Insert Your Skill');
+        }else if(this.state.asal==""){
+            alert('Please Insert Your Last School');
+        }else if(this.state.no==""){
+            alert('Please Insert Your Phone Number');
+        }else if(this.state.usia==""){
+            alert('Please Insert Your Age');
+        }else if(this.state.alamat==""){
+            alert('Please Insert Your Address');
+        }else if(this.state.value==""){
+            alert('Please Insert Your Last Education');
+        }else if(!this.state.checked){
+            alert('Please Accept Term And Condition');
+        }else{
             this.props.history.push("/profile");
         }
-        else{
-            alert('Please Accept Term And Condition')
-        }
+        // if(this.state.checked){
+        //     this.props.history.push("/profile");
+        //     console.log(this.state.value);
+        // }
+        // else{
+        //     alert('Please Accept Term And Condition')
+        // }
+    }
+    handleValue(e){
+        this.setState({value:e.target.value});
     }
 
   render() {
@@ -340,31 +366,31 @@ class Home extends Component {
                 <div class="modal-body"> 
                     <div>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" onChange={this.handleChange} value={this.state.value} placeholder="Code Confirmation Email *"/>
+                            <input type="text" class="form-control" onChange={this.handleChange} value={this.state.code} name="code" placeholder="Code Confirmation Email *"/>
                             <div class="input-group-append">
                                 <button class="btn btn-success" type="submit">Send Code Confirmation</button>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name *" required/>
+                            <input type="text" class="form-control" placeholder="Name *" onChange={this.handleChange} value={this.state.name} name="name" required/>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Skill *" required/>
+                            <input type="text" class="form-control" placeholder="Skill *"onChange={this.handleChange} value={this.state.skill} name="skill" required/>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Asal Sekolah *" required/>
+                            <input type="text" class="form-control" placeholder="Asal Sekolah *"onChange={this.handleChange} value={this.state.asal} name="asal" required/>
                         </div>
                         <div class="form-group">
-                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Phone *" required />
+                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Phone *"onChange={this.handleChange} value={this.state.no} name="no" required />
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Usia *" required/>
+                            <input type="text" class="form-control" placeholder="Usia *"onChange={this.handleChange} value={this.state.usia} name="usia" required/>
                         </div>
                         <div class="form-group">
-                            <textarea type="text" class="form-control" placeholder="Alamat *" required />
+                            <textarea type="text" class="form-control" placeholder="Alamat *" onChange={this.handleChange} value={this.state.alamat} name="alamat" required />
                         </div>
                         <div class="form-group">
-                            <select class="form-control" required>
+                            <select class="form-control"value={this.state.value} onChange={this.handleValue}  required>
                                 <option class="hidden"  selected disabled>Last Education</option>
                                 <option value="SD">SD</option>
                                 <option value="SMP">SMP</option>
