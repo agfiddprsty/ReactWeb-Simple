@@ -54,19 +54,19 @@ class Login extends Component{
     }
 
     loginhandle(){
-        if(this.state.emailform == ""){
+        if(this.state.emailform === ""){
             alert('please fill email form');
         }
-        else if(this.state.passwordform == ""){
+        else if(this.state.passwordform === ""){
             alert('please fill password form')
         }
         else if(!this.state.isverified){
             alert('Please proof your human')
         }
-        else if(this.state.email != this.state.emailform){
+        else if(this.state.email !== this.state.emailform){
             alert('please enter correct email')
         }
-        else if(this.state.password != this.state.passwordform){
+        else if(this.state.password !== this.state.passwordform){
             alert('please enter correct password');
         }
         else{

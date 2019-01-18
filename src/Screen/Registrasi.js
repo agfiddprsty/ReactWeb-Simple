@@ -41,15 +41,15 @@ class registrasi extends Component{
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (!pattern.test(this.state.email)) {
             alert('Please Enter Valid Email')
-        }else if(this.state.name == ""){
+        }else if(this.state.name === ""){
             alert("Please Insert Your Name");
-        }else if(this.state.email == ""){
+        }else if(this.state.email === ""){
             alert("Please Insert Your Email");
-        }else if(this.state.password == ""){
+        }else if(this.state.password === ""){
             alert("Please Insert Your Password");
-        }else if(this.state.confpassword == ""){
+        }else if(this.state.confpassword === ""){
             alert("Please Insert Your Confirmation Password");
-        }else if(this.state.password != this.state.confpassword){
+        }else if(this.state.password !== this.state.confpassword){
             alert("Please Check Your Password And Confirmation Password");
         }else if (!this.state.password.match(/^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%&!]).*$/)) {
             alert('Please Enter Strong Password');

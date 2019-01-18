@@ -49,21 +49,21 @@ class Home extends Component {
         this.setState({ [event.target.name]: event.target.value });
     }
     handleSubmit(){
-        if(this.state.code==""){
+        if(this.state.code===""){
             alert('Please Insert Code From Your Email');
-        }else if(this.state.name==""){
+        }else if(this.state.name===""){
             alert('Please Insert Your Name');
-        }else if(this.state.skill==""){
+        }else if(this.state.skill===""){
             alert('Please Insert Your Skill');
-        }else if(this.state.asal==""){
+        }else if(this.state.asal===""){
             alert('Please Insert Your Last School');
-        }else if(this.state.no==""){
+        }else if(this.state.no===""){
             alert('Please Insert Your Phone Number');
-        }else if(this.state.usia==""){
+        }else if(this.state.usia===""){
             alert('Please Insert Your Age');
-        }else if(this.state.alamat==""){
+        }else if(this.state.alamat===""){
             alert('Please Insert Your Address');
-        }else if(this.state.value==""){
+        }else if(this.state.value===""){
             alert('Please Insert Your Last Education');
         }else if(!this.state.checked){
             alert('Please Accept Term And Condition');
