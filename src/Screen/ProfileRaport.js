@@ -6,37 +6,10 @@ import gps from './img/gps.png';
 import mail from './img/mail.png';
 import Header from './HeaderSilabus';
 import Footer from './Footer';
+import ModalProfile from './ModalProfile';
 import {withRouter,Link} from 'react-router-dom';
 
 class Profile extends Component {
-    constructor(){
-        super()
-        this.handleChecked = this.handleChecked.bind(this);
-        this.handleChange = this.handleChange.bind(this);
-        this.state = {
-            code:'',
-            name:'',
-            skill:'',
-            asal:'',
-            no:'',
-            usia:'',
-            alamat:'',
-            value:'',
-            checked: false,
-        }
-    }
-
-
-    handleChecked(){
-        this.setState({
-            checked: true
-        })
-    }
-
-    handleChange(event) {
-        this.setState({value: event.target.value});
-      }
-
     render() {
         return (
             <div>
@@ -140,7 +113,38 @@ class Profile extends Component {
                     </section>
                 {/* <!-- Resume section end --> */}
 
+
+
                 {/* <!-- Raport section start --> */}
+                <div className="resume-section spad">
+                        <div className="section-title">
+                            <p className="text-center">Raport</p>
+                            <h2 className="text-center txthead jdl">Completed Task</h2>
+                        </div>
+                        <div>
+                            <h6 className="text-center"> I finished finalizing the Fall marketing campaign, Pumpkin Groove. I reviewed my proposal, submitted it to Valerie Goose for approval/feedback.</h6>
+                            <h6 className="text-center"> Published a guest post on Uncrowd and Failsafe’s blogs, then pitched the same concept to three more publications. Waiting on a response.</h6> 
+                            <h6 className="text-center"> I crafted original quote content for social media, posted an infographic on social media and reshared an older article for TBH Tuesdays</h6> 
+                        </div>
+                        <div className="section-title">
+                            <h2 className="text-center txthead jdl">Ongoing Task</h2>
+                        </div>
+                        <div>
+                            <li className="text-center"> Conducting outreach to publications to either share our existing content, or let us contribute original content. Aiming to pitch 50 places before the end of the month, currently pitched 41.</li>
+                            <li className="text-center"> Tracking paid-ad performance on Facebook, reviewed metrics and it was satisfactory at the small-scale, will bump up to moderate-scale and measure outcome.</li>
+                        </div>
+                        <div className="section-title">
+                            <h2 className="text-center txthead jdl">Task For Next Week</h2>
+                        </div>
+                        <div>
+                            <h6 className="text-center"> Need to make 7 customer calls, sit in 3 meetings (with Uncrowd, Failsafe and Metric Monkey) and make a state-level information request.</h6>
+                            <h6 className="text-center"> Continue working on Pumpkin Groove campaign, follow up edits.</h6> 
+                            <h6 className="text-center"> Finish editing and finalize draft of, “The Golden Rule of Online Copywriting”</h6>
+                            <h6 className="text-center"> Prepare outline for ‘Catchy Phrases’ webinar</h6> 
+                        </div>
+                    </div>
+                {/* <!-- Raport section start --> */}
+
 
                 {/* <!-- Portfolio section start --> */}
                     <section class="portfolio-section spad" id="works">
@@ -208,49 +212,7 @@ class Profile extends Component {
                             {/* <!-- Modal body --> */}
                                 <div class="modal-body">  
                                     <div>
-                                        <div class="input-group mb-3">
-                                            <input type="text" class="form-control" onChange={this.handleChange} value={this.state.value} placeholder="Code Confirmation Email *"/>
-                                            <div class="input-group-append">
-                                                <button class="btn btn-success" type="submit">Send Code Confirmation</button>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Name *" required/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Skill *" required/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Asal Sekolah *" required/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Phone *" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Usia *" required/>
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea type="text" class="form-control" placeholder="Alamat *" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <select class="form-control" required>
-                                                <option class="hidden"  selected disabled>Last Education</option>
-                                                <option value="SD">SD</option>
-                                                <option value="SMP">SMP</option>
-                                                <option value="SMA/SMK">SMA/SMK</option>
-                                                <option value="D3">D3</option>
-                                                <option value="S1">S1</option>
-                                                <option value="S2">S2</option>
-                                            </select>
-                                        </div>
-                                        <div>
-                                            <label class="text-left">               
-                                                <input type="checkbox" checked={this.state.checked} onChange={this.handleChecked} name="checked"
-                                                ></input>
-                                                Saya Menyutujui   
-                                                <a href="/"> Syarat Dan Ketentuan</a>
-                                            </label>
-                                        </div> 
+                                        <ModalProfile />
                                     </div>
                                 </div>
 
