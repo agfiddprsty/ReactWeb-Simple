@@ -229,60 +229,60 @@ class Home extends Component {
                         </a></Card>
                     </CardDeck>
                 </div>
-                <div className="col-md-6">
-                <CardDeck className="deck border border-0">
-                <Card className="border border-0"><a href="/batch" className="modul">
-                    <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
-                    <CardBody className="crdbdy">
-                    <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                    <br></br>
-                    </CardBody>
-                </a></Card>
-                <Card className="border border-0"><a href="/batch" className="modul">
-                    <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
-                    <CardBody className="crdbdy">
-                    <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                    <br></br>
-                    </CardBody>
-                </a></Card>
-                </CardDeck>
+                <div className="col-md-6 knan">
+                    <CardDeck className="deck border border-0">
+                        <Card className="border border-0"><a href="/batch" className="modul">
+                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
+                            <CardBody className="crdbdy">
+                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
+                            <br></br>
+                            </CardBody>
+                        </a></Card>
+                        <Card className="border border-0"><a href="/batch" className="modul">
+                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
+                            <CardBody className="crdbdy">
+                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
+                            <br></br>
+                            </CardBody>
+                        </a></Card>
+                    </CardDeck>
                 </div>
                 <div className="col-md-6">
-            <CardDeck className="deck border border-0">
-             <Card className="border border-0"><a href="/batch" className="modul">
-                <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
-                <CardBody className="crdbdy">
-                <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                <br></br>
-                </CardBody>
-                </a></Card>
-            <Card className="border border-0"><a href="/batch" className="modul">
-                <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
-                <CardBody className="crdbdy">
-                <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                <br></br>
-                </CardBody>
-            </a></Card>
-            </CardDeck>
-            </div>
-            <div className="col-md-6">
-            <CardDeck className="deck border border-0">
-            <Card className="border border-0"><a href="/batch" className="modul">
-                <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
-                <CardBody className="crdbdy">
-                <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                <br></br>
-                </CardBody>
-            </a></Card>
-            <Card className="border border-0"><a href="/batch" className="modul">
-                <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
-                <CardBody className="crdbdy">
-                <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                <br></br>
-                </CardBody>
-            </a></Card>
-            </CardDeck>
-            </div>
+                    <CardDeck className="deck border border-0">
+                        <Card className="border border-0"><a href="/batch" className="modul">
+                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
+                            <CardBody className="crdbdy">
+                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
+                            <br></br>
+                            </CardBody>
+                            </a></Card>
+                        <Card className="border border-0"><a href="/batch" className="modul">
+                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
+                            <CardBody className="crdbdy">
+                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
+                            <br></br>
+                            </CardBody>
+                        </a></Card>
+                    </CardDeck>
+                </div>
+                <div className="col-md-6 knan">
+                    <CardDeck className="deck border border-0">
+                        <Card className="border border-0"><a href="/batch" className="modul">
+                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
+                            <CardBody className="crdbdy">
+                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
+                            <br></br>
+                            </CardBody>
+                        </a></Card>
+                        <Card className="border border-0"><a href="/batch" className="modul">
+                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
+                            <CardBody className="crdbdy">
+                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
+                            <br></br>
+                            </CardBody>
+                        </a></Card>
+                    </CardDeck>
+                </div>
             <br/><br/>
             </div>
             </div>   

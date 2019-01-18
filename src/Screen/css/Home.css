@@ -278,3 +278,13 @@ section#box-profile{
     border: black;
     width: 100%;
 }
+
+.knan {
+    margin-left: -3%;
+}
+
+@media only screen and (max-width: 767px) {
+    .knan {
+        margin-left: 0%;
+    }
+  }
