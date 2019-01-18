@@ -14,7 +14,6 @@ import Contact from './Contact';
 import rnredux from './rnredux.jpg';
 import profile from './profile.jpeg';
 import Batch from './batch.js';
-import ModalProfile from './ModalProfile';
 import { Card, CardImg, CardDeck,
     CardBody, Progress } from 'reactstrap';   
 import {withRouter,Link} from 'react-router-dom';
@@ -30,6 +29,13 @@ class Home extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.state = {
             code:'',
+            name:'',
+            skill:'',
+            asal:'',
+            no:'',
+            usia:'',
+            alamat:'',
+            value:'',
             checked: false,
         }
     }
@@ -204,37 +210,44 @@ class Home extends Component {
                 }}>Silabus</h1>
             </div>
             <br/>
-             <div>
-             <CardDeck className="deck border border-0">
-             <Card className="border border-0"><a href="/batch" className="modul">
-                <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
-                <CardBody className="crdbdy">
-                <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                <br></br>
-                </CardBody>
+             <div className="row">
+                <div className="col-md-6">
+                    <CardDeck className="deck border border-0">
+                        <Card className="border border-0"><a href="/batch" className="modul">
+                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
+                            <CardBody className="crdbdy">
+                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
+                            <br></br>
+                            </CardBody>
+                            </a></Card>
+                        <Card className="border border-0"><a href="/batch" className="modul">
+                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
+                            <CardBody className="crdbdy">
+                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
+                            <br></br>
+                            </CardBody>
+                        </a></Card>
+                    </CardDeck>
+                </div>
+                <div className="col-md-6">
+                <CardDeck className="deck border border-0">
+                <Card className="border border-0"><a href="/batch" className="modul">
+                    <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
+                    <CardBody className="crdbdy">
+                    <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
+                    <br></br>
+                    </CardBody>
                 </a></Card>
-            <Card className="border border-0"><a href="/batch" className="modul">
-                <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
-                <CardBody className="crdbdy">
-                <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                <br></br>
-                </CardBody>
-            </a></Card>
-            <Card className="border border-0"><a href="/batch" className="modul">
-                <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
-                <CardBody className="crdbdy">
-                <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                <br></br>
-                </CardBody>
-            </a></Card>
-            <Card className="border border-0"><a href="/batch" className="modul">
-                <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
-                <CardBody className="crdbdy">
-                <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                <br></br>
-                </CardBody>
-            </a></Card>
-            </CardDeck>
+                <Card className="border border-0"><a href="/batch" className="modul">
+                    <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
+                    <CardBody className="crdbdy">
+                    <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
+                    <br></br>
+                    </CardBody>
+                </a></Card>
+                </CardDeck>
+                </div>
+                <div className="col-md-6">
             <CardDeck className="deck border border-0">
              <Card className="border border-0"><a href="/batch" className="modul">
                 <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
@@ -250,6 +263,10 @@ class Home extends Component {
                 <br></br>
                 </CardBody>
             </a></Card>
+            </CardDeck>
+            </div>
+            <div className="col-md-6">
+            <CardDeck className="deck border border-0">
             <Card className="border border-0"><a href="/batch" className="modul">
                 <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
                 <CardBody className="crdbdy">
@@ -265,6 +282,7 @@ class Home extends Component {
                 </CardBody>
             </a></Card>
             </CardDeck>
+            </div>
             <br/><br/>
             </div>
             </div>   
@@ -321,7 +339,49 @@ class Home extends Component {
                 {/* <!-- Modal body --> */}
                 <div class="modal-body"> 
                     <div>
-                        <ModalProfile />
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" onChange={this.handleChange} value={this.state.value} placeholder="Code Confirmation Email *"/>
+                            <div class="input-group-append">
+                                <button class="btn btn-success" type="submit">Send Code Confirmation</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name *" required/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Skill *" required/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Asal Sekolah *" required/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Phone *" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Usia *" required/>
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" class="form-control" placeholder="Alamat *" required />
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" required>
+                                <option class="hidden"  selected disabled>Last Education</option>
+                                <option value="SD">SD</option>
+                                <option value="SMP">SMP</option>
+                                <option value="SMA/SMK">SMA/SMK</option>
+                                <option value="D3">D3</option>
+                                <option value="S1">S1</option>
+                                <option value="S2">S2</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-left">               
+                                <input type="checkbox" checked={this.state.checked} onChange={this.handleChecked} name="checked"
+                                ></input>
+                                Saya Menyutujui   
+                                <a href="/"> Syarat Dan Ketentuan</a>
+                            </label>
+                        </div> 
                     </div>
                 </div>
 
