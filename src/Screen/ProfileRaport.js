@@ -7,6 +7,7 @@ import mail from './img/mail.png';
 import Header from './HeaderSilabus';
 import Footer from './Footer';
 import ModalProfile from './ModalProfile';
+import Raport from './raport';
 import {withRouter,Link} from 'react-router-dom';
 
 class Profile extends Component {
@@ -116,32 +117,8 @@ class Profile extends Component {
 
 
                 {/* <!-- Raport section start --> */}
-                <div className="resume-section spad">
-                        <div className="section-title">
-                            <p className="text-center">Raport</p>
-                            <h2 className="text-center txthead jdl">Completed Task</h2>
-                        </div>
-                        <div>
-                            <h6 className="text-center"> I finished finalizing the Fall marketing campaign, Pumpkin Groove. I reviewed my proposal, submitted it to Valerie Goose for approval/feedback.</h6>
-                            <h6 className="text-center"> Published a guest post on Uncrowd and Failsafe’s blogs, then pitched the same concept to three more publications. Waiting on a response.</h6> 
-                            <h6 className="text-center"> I crafted original quote content for social media, posted an infographic on social media and reshared an older article for TBH Tuesdays</h6> 
-                        </div>
-                        <div className="section-title">
-                            <h2 className="text-center txthead jdl">Ongoing Task</h2>
-                        </div>
-                        <div>
-                            <li className="text-center"> Conducting outreach to publications to either share our existing content, or let us contribute original content. Aiming to pitch 50 places before the end of the month, currently pitched 41.</li>
-                            <li className="text-center"> Tracking paid-ad performance on Facebook, reviewed metrics and it was satisfactory at the small-scale, will bump up to moderate-scale and measure outcome.</li>
-                        </div>
-                        <div className="section-title">
-                            <h2 className="text-center txthead jdl">Task For Next Week</h2>
-                        </div>
-                        <div>
-                            <h6 className="text-center"> Need to make 7 customer calls, sit in 3 meetings (with Uncrowd, Failsafe and Metric Monkey) and make a state-level information request.</h6>
-                            <h6 className="text-center"> Continue working on Pumpkin Groove campaign, follow up edits.</h6> 
-                            <h6 className="text-center"> Finish editing and finalize draft of, “The Golden Rule of Online Copywriting”</h6>
-                            <h6 className="text-center"> Prepare outline for ‘Catchy Phrases’ webinar</h6> 
-                        </div>
+                    <div className="raport spad">
+                        <Raport />
                     </div>
                 {/* <!-- Raport section start --> */}
 
