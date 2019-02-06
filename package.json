@@ -17,6 +17,7 @@
     "react-ace-editor": "0.0.3",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.7.0",
+    "react-iframe": "^1.3.3",
     "react-monaco-editor": "^0.22.0",
     "react-player": "^1.9.3",
     "react-popout": "^1.0.1",

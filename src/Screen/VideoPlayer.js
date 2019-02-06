@@ -4,6 +4,7 @@ import Fb from './img/bg.svg'
 // import ''
 import rnredux from './rnredux.jpg';
 import './css/video.css';
+import Iframe from 'react-iframe'
 class VideoPlayer extends Component{
     constructor(){
         super()
@@ -21,8 +22,8 @@ class VideoPlayer extends Component{
        
         return(
             <div className="pl">
-            <Player
-            url='http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4'
+            {/* <Player
+            url='https://fast.wistia.net/embed/iframe/dso2sjap7u'
             controls
             playing={this.state.playing}
             // light={rnredux}
@@ -38,7 +39,16 @@ class VideoPlayer extends Component{
                 }
                  
             }}
-            />
+            /> */}
+            <Iframe url="https://fast.wistia.net/embed/iframe/dso2sjap7u"
+            width="450px"
+            height="450px"
+            id="myId"
+            className="myClassname"
+            display="initial"
+            position="relative"
+            allowFullScreen/>
+            {/* <iframe src="https://fast.wistia.net/embed/iframe/dso2sjap7u" style={{width:"100%",height:"100%"}}></iframe> */}
             </div>
         )
     }
