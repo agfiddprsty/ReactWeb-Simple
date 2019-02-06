@@ -26,6 +26,8 @@ import Login from './Screen/Login';
 import ProfileLink from './Screen/ProfileLinked';
 import ProfileRaport from './Screen/ProfileRaport';
 import Payment from './Screen/Payment';
+import Video from './Screen/VideoPlayer';
+
 //import store 
 import store from './store'
 ReactDOM.render(
@@ -46,6 +48,7 @@ ReactDOM.render(
             <Route path="/batch" component={Batch}/>
             <Route path="/profileraport" component={ProfileRaport}/>
             <Route path="/payment" component={Payment}/>
+            <Route path="/video" component={Video}/>
         </div>
         </Provider>
     </Router>
