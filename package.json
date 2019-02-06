@@ -62,7 +62,8 @@
     "jest-cli": "^23.6.0",
     "ngx-jest-snapshot-serializer": "^1.2.3",
     "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.29.0"
   },
   "jest": {
     "snapshotSerializers": [
