@@ -25,6 +25,7 @@ import ListSilabus from './Screen/ListSilabus';
 import Login from './Screen/Login';
 import ProfileLink from './Screen/ProfileLinked';
 import ProfileRaport from './Screen/ProfileRaport';
+import Video from './Screen/VideoPlayer';
 //import store 
 import store from './store'
 ReactDOM.render(
@@ -44,6 +45,7 @@ ReactDOM.render(
             <Route path="/silabus/detail" component={Silabus}/>
             <Route path="/batch" component={Batch}/>
             <Route path="/profileraport" component={ProfileRaport}/>
+            <Route path="/video" component={Video}/>
         </div>
         </Provider>
     </Router>
