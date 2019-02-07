@@ -29,6 +29,7 @@ import Payment from './Screen/Payment';
 import Video from './Screen/VideoPlayer';
 import ListVideo from './Screen/ListVideo'
 import Dashboard from './Screen/Dashboard'
+import DetailVIdeo from './Screen/DetailVideo'
 //import store 
 import store from './store'
 ReactDOM.render(
@@ -52,6 +53,7 @@ ReactDOM.render(
             <Route path="/video" component={Video}/>
             <Route path="/listvideo" component={ListVideo}/>
             <Route path="/Dashboard" component={Dashboard}/>
+            <Route path="/detailvideo" component={DetailVIdeo}/>
 
         </div>
         </Provider>

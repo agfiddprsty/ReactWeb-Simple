@@ -27,6 +27,7 @@ import {Input, InputGroupAddon, Button } from 'reactstrap';
 import { ResponsiveImage, ResponsiveImageSize } from 'react-responsive-image';
 import Popout from 'react-popout';
 import { Uri } from 'monaco-editor';
+import HomeVideo from './HomeVideo';
 
 class Home extends Component {
   render() {
@@ -104,6 +105,7 @@ class Home extends Component {
                             </div>
                             <div className="penjelasan">
                                 <p style={{color: "red", fontSize: "20px"}}>Masih Belum Paham Cara Kerjanya? Lihat Video Berikut...</p>
+                                <HomeVideo/>
                             </div>
                         </div>
                         <div className="text-center"><br/>
