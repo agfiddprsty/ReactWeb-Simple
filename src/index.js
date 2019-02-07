@@ -25,6 +25,10 @@ import ListSilabus from './Screen/ListSilabus';
 import Login from './Screen/Login';
 import ProfileLink from './Screen/ProfileLinked';
 import ProfileRaport from './Screen/ProfileRaport';
+import Daftar from './Screen/Daftar';
+import DashboardUnpaid from './Screen/DashboardUnpaid';
+import DashboardPaidProfile from './Screen/DashboardPaidProfile';
+import Silabusnew from './Screen/Silabusnew';
 import Payment from './Screen/Payment';
 import Video from './Screen/VideoPlayer';
 import ListVideo from './Screen/ListVideo'
@@ -49,6 +53,10 @@ ReactDOM.render(
             <Route path="/silabus/detail" component={Silabus}/>
             <Route path="/batch" component={Batch}/>
             <Route path="/profileraport" component={ProfileRaport}/>
+            <Route path="/daftar" component={Daftar}/>
+            <Route path="/dashboardunpaid" component={DashboardUnpaid}/>
+            <Route path="/dashboardpaidprofile" component={DashboardPaidProfile}/>
+            <Route path="/silabusnew" component={Silabusnew}/>
             <Route path="/payment" component={Payment}/>
             <Route path="/video" component={Video}/>
             <Route path="/listvideo" component={ListVideo}/>
