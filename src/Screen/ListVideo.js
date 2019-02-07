@@ -3,6 +3,7 @@ import { Card, CardImg, CardDeck,
     CardBody, Progress } from 'reactstrap';   
 import {withRouter,Link} from 'react-router-dom';
 import rnredux from './rnreduxplay.png';
+import './css/ListVideo.css';
 import {Input, InputGroupAddon, Button } from 'reactstrap';
 import { RenderLoop } from 'brace';
 import quiz from './quiz.png'
@@ -17,7 +18,7 @@ return (
                 <div className="col-md-12">
                     <CardDeck className="deck border border-0">
                         <Card className="border border-0"><a href="/video" className="modul">
-                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
+                            <CardImg className="thumbnail-images" top width="100%" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
                             <CardBody className="crdbdy">
                             <h5>1.Perkenalan</h5>
                             <br></br>
