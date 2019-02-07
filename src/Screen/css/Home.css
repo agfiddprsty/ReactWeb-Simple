@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 @-ms-viewport{
     width: device-width;
   }
@@ -31,10 +35,12 @@
 
 .Hom-body {
   background-color: #f7f7f7;
+  overflow-x: hidden;
 }
 
 .hom-a {
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 .timer {
@@ -68,8 +74,27 @@
     padding: 20px;
 }
 
+.gmbrlanding1 {
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(253, 245, 255, 0.8) ), url("../img/covbg.jpg");
+    width: 100%;
+    padding: 0;
+    background-size: cover;
+    height: 1000px;
+    padding: 20px;
+}
+
+.gmbrlanding2 {
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(253, 245, 255, 0.8) ), url("https://assets-a2.kompasiana.com/items/album/2018/04/17/technology-5ad5eae9dcad5b46970bc882.jpg?t=o&v=760");
+    width: 100%;
+    padding: 0;
+    background-size: cover;
+    height: 1000px;
+    padding: 20px;
+}
+
 .soo {
     padding: 30px 0 30px 0;
+    overflow-x:hidden;
     background-color: #f7f7f7;
 }
 

@@ -54,6 +54,7 @@ ReactDOM.render(
             <Route path="/listvideo" component={ListVideo}/>
             <Route path="/Dashboard" component={Dashboard}/>
             <Route path="/detailvideo" component={DetailVIdeo}/>
+            <Route path="/dashboard" component={Dashboard}/>
 
         </div>
         </Provider>
