@@ -15,6 +15,11 @@ class DashboardPaidProfile extends Component {
 
         <div>
             <div class="container" style={{margin:'0 0 25px 120px', border:'1px solid'}}>
+
+                <h5 style={{color:'#FF0000', margin:'15px 0 0 15px'}}>Terimakasih telah Mengikuti Online Bootcamp ini</h5>
+                <p style={{color:'#696969', margin:'15px 0 0 15px'}}>Silahkan melengkapi profile Anda demi kemudahan kami dalam menyalurkan kerja dan administrasi</p>
+                <br/>
+
                 <label for="notelp">No. Telp*</label>
                 <input type="text" minlength="10" maxlength="15" id="notelp" name="notelp" placeholder="+62">
                 </input>

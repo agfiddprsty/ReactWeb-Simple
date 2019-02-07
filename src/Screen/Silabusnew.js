@@ -17,21 +17,26 @@ class Silabusnew extends Component {
                       <p style={{color:'#696969', margin:'0 0 0 50px'}}>Silahkan download di sini</p>    
                     <br/>
                         <div class="row">
-                            <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div className="col-lg-5 col-md-5 col-sm-5 col-xs-5">
                                 <label for="fullname">Nama Lengkap</label>
                                 <input type="text" id="fullname" name="fullname" placeholder="">
                                 </input>
                             </div>
-                            <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="">
+                                <input type="text" id="email" name="email" placeholder="">
                                 </input>
                             </div>
+                            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+                                <br/>
+                                <br/>
+                                <a href="/dashboardunpaid"/*silabus*/ 
+                                    style={{marginTop:'50px'}}
+                                ><button type="button" class="btn btn-danger" data-dismiss="modal">Kirim Silabus</button></a>
+                            </div>
 
-                        </div>
-                      <a href="/dashboardunpaid"/*silabus*/ 
-                      style={{margin:'0 10px 0 900px'}}
-                      ><button type="button" class="btn btn-danger" data-dismiss="modal">Kirim Silabus</button></a>  
+                        </div >
+                        
                 </div>
               </div>
         </div>      
