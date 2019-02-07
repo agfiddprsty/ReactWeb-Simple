@@ -39,37 +39,6 @@ class Daftar extends Component {
             </div>
         </div>
         </div>
-
-        //                 <label for="fname">Nama Lengkap</label>
-        //                     <input type="text" id="fname" name="fname" placeholder="">
-        //                     </input>
-        //             </div>
-
-        //             <div class="form-group">
-        //                 <label for="email">Email</label>
-        //                     <input type="text" id="email" name="email" placeholder="">
-        //                     </input>
-        //             </div>
-        
-        //             <div class="form-group">
-        //                 <label for="pass">Password</label>
-        //                     <input type="password" id="pass" name="password" placeholder="">
-        //                     </input>
-        //             </div>
-
-        //             <div class="form-group">
-        //                 <label for="confirmpass">Konfirmasi Password</label>
-        //                     <input type="password" id="confirmpass" name="password" placeholder="">
-        //                     </input>
-        //             </div>
-
-                    // <div className="button">
-                    //     <a href=""/*next page*/><button type="button" class="btn btn-danger" data-dismiss="modal">Daftar dan Kirim Silabus</button></a>
-                    // </div>
-        //         </div>
-        //     </div>
-        // </div>
-    
       );
     }
   }
