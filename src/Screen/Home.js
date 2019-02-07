@@ -1,431 +1,280 @@
 import React, { Component } from 'react';
 import './css/Home.css';
-import bghead from './img/image.svg';
-import man from './img/boy.png';
-import man2 from './img/man2.png';
-import fb from './img/fb.png';
-import tw from './img/twitter.png';
-import gh from './img/github.png';
-import li from './img/linkedin.png';
-import pt from './img/pinterest.png';
-import Header from './Header.js';
+import daftar from './img/daftar.png';
+import Header from './headerlanding';
 import Footer from './Footer.js';
 import Contact from './Contact';
 import rnredux from './rnredux.jpg';
 import profile from './profile.jpeg';
 import Batch from './batch.js';
-import { Card, CardImg, CardDeck,
-    CardBody, Progress } from 'reactstrap';   
+import covbg from './img/covbg.jpg';
+import lengkapi from './img/lengkapi.png';
+import diskusi from './img/diskusi.png';
+import mulai from './img/mulai.png';
+import quiz from './img/quiz.png';
+import kerja from './img/kerja.png';
+import mentor from './img/mentor.png';
+import teknologi from './img/teknologi.png';
 import {withRouter,Link} from 'react-router-dom';
-import {Input, InputGroupAddon, Button } from 'reactstrap';
+import Timer from './timer';
 import { ResponsiveImage, ResponsiveImageSize } from 'react-responsive-image';
 import Popout from 'react-popout';
+import { Uri } from 'monaco-editor';
 
 class Home extends Component {
-    constructor(){
-        super()
-        this.handleChange = this.handleChange.bind(this);
-        this.handleChecked = this.handleChecked.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleValue = this.handleValue.bind(this);
-        this.state = {
-            code:'',
-            name:'',
-            skill:'',
-            asal:'',
-            no:'',
-            usia:'',
-            alamat:'',
-            value:'',
-            checked: false,
-        }
-    }
-    handleChecked(){
-        this.setState({
-            checked: true
-        })
-    }
-    handleChange(event) {
-        this.setState({ [event.target.name]: event.target.value });
-    }
-    handleSubmit(){
-        if(this.state.code===""){
-            alert('Please Insert Code From Your Email');
-        }else if(this.state.name===""){
-            alert('Please Insert Your Name');
-        }else if(this.state.skill===""){
-            alert('Please Insert Your Skill');
-        }else if(this.state.asal===""){
-            alert('Please Insert Your Last School');
-        }else if(this.state.no===""){
-            alert('Please Insert Your Phone Number');
-        }else if(this.state.usia===""){
-            alert('Please Insert Your Age');
-        }else if(this.state.alamat===""){
-            alert('Please Insert Your Address');
-        }else if(this.state.value===""){
-            alert('Please Insert Your Last Education');
-        }else if(!this.state.checked){
-            alert('Please Accept Term And Condition');
-        }else{
-            this.props.history.push("/profile");
-        }
-        // if(this.state.checked){
-        //     this.props.history.push("/profile");
-        //     console.log(this.state.value);
-        // }
-        // else{
-        //     alert('Please Accept Term And Condition')
-        // }
-    }
-    handleValue(e){
-        this.setState({value:e.target.value});
-    }
-
   render() {
-    var bgheads = {
-        width: '735px',
-        height: 'auto',
-        left: '45%',
-        position: 'absolute',
-        overflowx: 'hidden',
-        marginLeft: 'auto',
-        marginright: 'auto',
-        maxWidth: '100%',
-        backgroundrepeat: 'no-repeat',
-        webkitbackgroundsize: 'cover',
-        mozbackgroundsize: 'cover',
-        obackgroundsize: 'cover',
-        backgroundsize:'cover',
-        backgroundposition:'center',
-        backgroundimage:('src/Screen/img/image.svg'),
-        backgroundattachment: 'fixed',
-        paddingBottom: ( 'height' / 'width' * 100 ) + '%'
-    }
 
-    var h1 = {
-         marginLeft: 'auto',
-         marginLeft:'40%',
-         marginTop:20
-    }
+    const currentDate = new Date();
+    const year = (currentDate.getMonth() === 3 && currentDate.getDate() > 15) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
     
     return (
-       
-      <div className="Hom" id="home">
-        <Header />
-        <body className="Hom-body">
-        <div>
-            <img id="home" src={bghead} alt="img" style={bgheads} />
-            <div style={h1}>
-                <h1 style={{
-                    fontSize:'4vw',height:'auto',position:'relative'
-                }}>Hi !</h1>
-
-                <h1 style={{
-                    color:'#685AA7',marginTop:'-10px',fontSize:'4vw',fontWeight:500,height:'auto',position:'relative'
-                }}>I'm Human</h1>
-
-                 <h1 style={{
-                    fontSize:'3vw',height:'auto',position:'relative'
-                }}>a graphic designer</h1>
-
-                <br></br>
-                <br></br>
-
-
-            </div>
-
-            <div className="image">
-                  {/* <img src={man} alt="img" style={{
-                            width:'200px',
-                            marginLeft:'150px',
-                            position:'absolute',
-                            height:'auto'                      
-
-                        }}/>   */}
-                <div className="list-group">
-                <div className="text-left">        
-                <h1 style={{
-                   color:'#685AA7', marginLeft: '27%', fontSize:'3vw',fontWeight:300,height:'auto',position:'relative'
-                }}>About Me</h1>
-
-
-                {/* Button */}
-                { <a href="#contact"><button className="btn btn-primary" style={{
-                    borderRadius:'50px',
-                    width:'200px',
-                    height:'auto',
-                    textAlign:'left',
-                    fontSize:'30px',
-                    left:'70px',
-                    float:'right',
-                    position:'relative',
-                    backgroundColor:'#685AA7',
-                    borderColor:'#685AA7'
-                    
-                }}>Hire Me</button></a>     }
-
-                <div style={{
-                    marginLeft: '27%',width:'600px',height:'auto',letterSpacing:'0.1em',color: 'gray',position:'relative'
-                }}>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nulla nibh mi, ornare
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nulla nibh mi, ornare
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nulla nibh mi, ornare
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nulla nibh mi, ornare
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nulla nibh mi, ornare
-                    </p>
-                </div>
-
-                <div className="getsocial">
-                <h2 style={{
-                    marginLeft:'27%',
-                    marginBottom:'15px',
-                    fontSize: '20px'
-                }}>Get Social :</h2>
-
-                <a href="#">
-                <img src={fb} alt="img" style={{
-                            width:'30px',
-                            marginLeft:'27%',  
-                        }}/>
-                </a>
-                
-                <a href="#">
-                <img src={tw} alt="img" style={{
-                            width:'30px',
-                            marginLeft:'1%',  
-                        }}/>
-                </a>
-
-                <a href="#">
-                <img src={gh} alt="img" style={{
-                    width:'30px',
-                    marginLeft:'1%',
-                }}/>
-                </a>
-
-                <a href="#">
-                <img src={li} alt="img" style={{
-                            width:'30px',
-                            marginLeft:'1%',
-                            
-                        }}/>
-                </a>
-
-                <a href="#">
-                <img src={pt} alt="img" style={{
-                            width:'30px',
-                            marginLeft:'1%',
-                            
-                        }}/>
-                </a>
-                </div>
-                
-            </div>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br/><br/>
-            <br/><br/>
-
-            <div className="list-group">
-            <div className="text-center">
-                <h1 id="silabus" style={{
-                    fontSize:'30px',color:'#685AA7',fontWeight:300
-                }}>Silabus</h1>
-            </div>
-            <br/>
-             <div className="row">
-                <div className="col-md-6">
-                    <CardDeck className="deck border border-0">
-                        <Card className="border border-0"><a href="/batch" className="modul">
-                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
-                            <CardBody className="crdbdy">
-                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                            <br></br>
-                            </CardBody>
-                            </a></Card>
-                        <Card className="border border-0"><a href="/batch" className="modul">
-                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
-                            <CardBody className="crdbdy">
-                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                            <br></br>
-                            </CardBody>
-                        </a></Card>
-                    </CardDeck>
-                </div>
-                <div className="col-md-6 knan">
-                    <CardDeck className="deck border border-0">
-                        <Card className="border border-0"><a href="/batch" className="modul">
-                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
-                            <CardBody className="crdbdy">
-                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                            <br></br>
-                            </CardBody>
-                        </a></Card>
-                        <Card className="border border-0"><a href="/batch" className="modul">
-                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
-                            <CardBody className="crdbdy">
-                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                            <br></br>
-                            </CardBody>
-                        </a></Card>
-                    </CardDeck>
-                </div>
-                <div className="col-md-6">
-                    <CardDeck className="deck border border-0">
-                        <Card className="border border-0"><a href="/batch" className="modul">
-                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
-                            <CardBody className="crdbdy">
-                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                            <br></br>
-                            </CardBody>
-                            </a></Card>
-                        <Card className="border border-0"><a href="/batch" className="modul">
-                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
-                            <CardBody className="crdbdy">
-                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                            <br></br>
-                            </CardBody>
-                        </a></Card>
-                    </CardDeck>
-                </div>
-                <div className="col-md-6 knan">
-                    <CardDeck className="deck border border-0">
-                        <Card className="border border-0"><a href="/batch" className="modul">
-                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
-                            <CardBody className="crdbdy">
-                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                            <br></br>
-                            </CardBody>
-                        </a></Card>
-                        <Card className="border border-0"><a href="/batch" className="modul">
-                            <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
-                            <CardBody className="crdbdy">
-                            <h5>Frontend Mobile Developer dengan React Native dan Redux</h5>
-                            <br></br>
-                            </CardBody>
-                        </a></Card>
-                    </CardDeck>
-                </div>
-            <br/><br/>
-            </div>
-            </div>   
-
-            <div id="bootcamp" className="text-center"><br/>
-                <p>What I Did ?</p>
-                <h1 style={{
-                    fontSize:'30px',color:'#685AA7',fontWeight:300
-                }}>Bootcamp Batch</h1>
-            </div>
-            <div className="row cardbatch">
-            <div className="col"> <a href='#'  data-toggle="modal" data-target="#myModal" className="listbatch">
-                    <Batch /></a>
-                </div>
-                <div className="col"> <a href='#'  data-toggle="modal" data-target="#myModal" className="listbatch">
-                    <Batch /></a>
-                </div>
-            </div>
-            <div className="row cardbatch">
-                <div className="col"> <a href='#'  data-toggle="modal" data-target="#myModal" className="listbatch">
-                    <Batch /></a>
-                </div>
-                <div className="col"> <a href='#'  data-toggle="modal" data-target="#myModal" className="listbatch">
-                    <Batch /></a>
-                </div>
-            </div>
-            <div className="row cardbatch">
-                <div className="col"> <a href='#'  data-toggle="modal" data-target="#myModal" className="listbatch">
-                    <Batch /></a>
-                </div>
-                <div className="col"> <a href='#'  data-toggle="modal" data-target="#myModal" className="listbatch">
-                    <Batch /></a>
-                </div>
-            </div>
-            <br/><br/><br/><br/>
-            <div id="contact">
-            <Contact />
-            </div>
-            <br/>
-            </div>
-        </div>
-        <Footer />
-        <div>
-            <div class="modal fade" id="myModal">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-
-                {/* <!-- Modal Header --> */}
-                <div class="modal-header">
-                    <h4 class="modal-title">Confirm</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-
-                {/* <!-- Modal body --> */}
-                <div class="modal-body"> 
+            <div className="Hom-b">
+                <div>
+                    <Header />
+                </div> 
+                <body className="Hom-a" style={{backgroundColor: "#fff"}}>
                     <div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" onChange={this.handleChange} value={this.state.code} name="code" placeholder="Code Confirmation Email *"/>
-                            <div class="input-group-append">
-                                <button class="btn btn-success" type="submit">Send Code Confirmation</button>
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+                            <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div className="jumbotron jumbotron-fluid gmbrlanding" style={{height: "600px"}}>
+                                        <div>
+                                            <h4 className="card-title text-center title">Menjadi Fullstack Mobile Developer Professional</h4>
+                                            <h4 className="card-title text-center titleb">dan Disalurkan Kerja</h4>
+                                            <div style={{textAlign: "center", marginTop: "50px"}}>
+                                                <span className="card-text text-center isi" style={{color: "red", fontSize: "30px", fontWeight: "700", display: "inline-block", paddingRight: "20px"}}>IDR</span>
+                                                <span className="text-center" style={{textDecorationLine: "line-through", textDecorationStyle: "solid", textDecorationColor: "red", fontSize: "30px", fontWeight: "700", paddingRight: "20px"}}>2.000.000</span>
+                                                <span style={{color: "green", fontSize: "30px", fontWeight: "700"}}>500.000</span>
+                                            </div>
+                                            <p className="text-center">Penawaran Akan Berakhir Dalam:</p>
+                                            <div className="timer" >
+                                                <Timer date={`${year}-03-16T00:00:00`} />
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                                                    <a href="/daftar" class="btn btn-danger reg">Daftar Sekarang</a>
+                                                </div>
+                                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left">
+                                                    <a href="/silabusnew" class="btn btn-outline-danger text-center lengkap">Lihat Silabus</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div className="jumbotron jumbotron-fluid gmbrlanding1" style={{height: "600px"}}>
+                                        <div>
+                                            <h4 className="card-title text-center title">Menjadi Fullstack Mobile Developer Professional</h4>
+                                            <h4 className="card-title text-center titleb">dan Disalurkan Kerja</h4>
+                                            <div style={{textAlign: "center", marginTop: "50px"}}>
+                                                <span className="card-text text-center isi" style={{color: "red", fontSize: "30px", fontWeight: "700", display: "inline-block", paddingRight: "20px"}}>IDR</span>
+                                                <span className="text-center" style={{textDecorationLine: "line-through", textDecorationStyle: "solid", textDecorationColor: "red", fontSize: "30px", fontWeight: "700", paddingRight: "20px"}}>2.000.000</span>
+                                                <span style={{color: "green", fontSize: "30px", fontWeight: "700"}}>500.000</span>
+                                            </div>
+                                            <p className="text-center">Penawaran Akan Berakhir Dalam:</p>
+                                            <div className="timer" >
+                                                <Timer date={`${year}-03-16T00:00:00`} />
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                                                    <a href="#" class="btn btn-danger reg">Daftar Sekarang</a>
+                                                </div>
+                                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left">
+                                                    <a href="#" class="btn btn-outline-danger text-center lengkap">Lihat Silabus</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>
+                                <div class="carousel-item">
+                                    <div className="jumbotron jumbotron-fluid gmbrlanding2" style={{height: "600px"}}>
+                                        <div>
+                                            <h4 className="card-title text-center title">Menjadi Fullstack Mobile Developer Professional</h4>
+                                            <h4 className="card-title text-center titleb">dan Disalurkan Kerja</h4>
+                                            <div style={{textAlign: "center", marginTop: "50px"}}>
+                                                <span className="card-text text-center isi" style={{color: "red", fontSize: "30px", fontWeight: "700", display: "inline-block", paddingRight: "20px"}}>IDR</span>
+                                                <span className="text-center" style={{textDecorationLine: "line-through", textDecorationStyle: "solid", textDecorationColor: "red", fontSize: "30px", fontWeight: "700", paddingRight: "20px"}}>2.000.000</span>
+                                                <span style={{color: "green", fontSize: "30px", fontWeight: "700"}}>500.000</span>
+                                            </div>
+                                            <p className="text-center">Penawaran Akan Berakhir Dalam:</p>
+                                            <div className="timer" >
+                                                <Timer date={`${year}-03-16T00:00:00`} />
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                                                    <a href="#" class="btn btn-danger reg">Daftar Sekarang</a>
+                                                </div>
+                                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left">
+                                                    <a href="#" class="btn btn-outline-danger text-center lengkap">Lihat Silabus</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                            </div>
+                        {/* <div className="jumbotron jumbotron-fluid gmbrlanding" style={{height: "600px"}}>
+                            <div>
+                                <h4 className="card-title text-center title">Menjadi Fullstack Mobile Developer Professional</h4>
+                                <h4 className="card-title text-center titleb">dan Disalurkan Kerja</h4>
+                                <div style={{textAlign: "center", marginTop: "50px"}}>
+                                    <span className="card-text text-center isi" style={{color: "red", fontSize: "30px", fontWeight: "700", display: "inline-block", paddingRight: "20px"}}>IDR</span>
+                                    <span className="text-center" style={{textDecorationLine: "line-through", textDecorationStyle: "solid", textDecorationColor: "red", fontSize: "30px", fontWeight: "700", paddingRight: "20px"}}>2.000.000</span>
+                                    <span style={{color: "green", fontSize: "30px", fontWeight: "700"}}>500.000</span>
+                                </div>
+                                <p className="text-center">Penawaran Akan Berakhir Dalam:</p>
+                                <div className="timer" >
+                                    <Timer date={`${year}-03-16T00:00:00`} />
+                                </div>
+                                <div className="row">
+                                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                                        <a href="#" class="btn btn-danger reg">Daftar Sekarang</a>
+                                    </div>
+                                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left">
+                                        <a href="#" class="btn btn-outline-danger text-center lengkap">Lihat Silabus</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> */}
+                        <div className="list-group">
+                            <div className="text-center">
+                                <h1 id="silabus" style={{fontSize:'30px', color:'red', fontWeight:400, paddingBottom: "50px"}}>Cara Kerja</h1>
+                            </div>
+                            <br/>
+                            <div className="row text-center">
+                                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <p style={{color: "red", fontSize: "20px", paddingBottom: "20px"}}>Daftar</p>
+                                    <img alt="" src={daftar} style={{width: "250px", height: "250px"}}/>
+                                    <p className="text-left" style={{padding: "10px 90px 30px 90px"}}>Buat akunmu dan lakukan pembayaran awal sebesar 500rb rupiah</p>
+                                </div>
+                                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <p style={{color: "red", fontSize: "20px", paddingBottom: "20px"}}>Lengkapi Profile</p>
+                                    <img alt="" src={lengkapi} style={{width: "250px", height: "250px"}}/>
+                                    <p className="text-left" style={{padding: "10px 90px 30px 90px"}}>Lengkapi data dirimu untuk kebutuhan administrasi</p>                             
+                                </div>
+                                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <p style={{color: "red", fontSize: "20px", paddingBottom: "20px"}}>Mulai Belajar</p>
+                                    <img alt="" src={mulai} style={{width: "250px", height: "250px"}}/>
+                                    <p className="text-left" style={{padding: "10px 90px 30px 90px"}}>Dipandu oleh mentor professional, Anda dapat belajar melalui media Video streaming yang bisa Anda akses selamanya!</p>
+                                </div>
+                                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <p style={{color: "red", fontSize: "20px", paddingBottom: "20px"}}>Diskusi Online</p>
+                                    <img alt="" src={diskusi} style={{width: "250px", height: "250px"}}/>
+                                    <p className="text-left" style={{padding: "10px 90px 30px 90px"}}>Kami menyediakan diskusi online untuk tanya jawab,selamanya!</p>
+                                </div>
+                                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <p style={{color: "red", fontSize: "20px", paddingBottom: "20px"}}>Kerjakan Quiz</p>
+                                    <img alt="" src={quiz} style={{width: "250px", height: "250px"}}/>
+                                    <p className="text-left" style={{padding: "10px 90px 30px 90px"}}>Kerjakan Mini Quiz, Weekly Quiz dan Quiz Final untuk mengasah skillmu!</p>
+                                </div>
+                                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <p style={{color: "red", fontSize: "20px", paddingBottom: "20px"}}>Penyaluran Kerja</p>
+                                        <img alt="" src={kerja} style={{width: "250px", height: "250px"}}/>
+                                    <p className="text-left" style={{padding: "10px 90px 30px 90px"}}>Kami akan menyalurkan Anda ke perusahaan rekanan kami, Berdasarkan hasil Quiz yang anda kerjakan</p>
+                                </div>
+                            <br/><br/>
+                            </div>
+                            <div className="penjelasan">
+                                <p style={{color: "red", fontSize: "20px"}}>Masih Belum Paham Cara Kerjanya? Lihat Video Berikut...</p>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name *" onChange={this.handleChange} value={this.state.name} name="name" required/>
+                        <div className="text-center"><br/>
+                            <h1 style={{fontSize:'30px',color:'red', marginTop: "50px", marginBottom: "50px"}}>Mengapa Memilih Kami?</h1>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Skill *"onChange={this.handleChange} value={this.state.skill} name="skill" required/>
+                        <div className="row text-center" style={{marginBottom: "50px"}}>
+                            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <p style={{color: "red", fontSize: "15px", paddingBottom: "10px"}}>Mentor Professional</p>
+                                <img alt="" src={mentor} style={{width: "250px", height: "250px"}}/>
+                            </div>
+                            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <p style={{color: "red", fontSize: "15px", paddingBottom: "10px"}}>Penyaluran Kerja</p>
+                                <img alt="" src={kerja} style={{width: "250px", height: "250px"}}/>
+                            </div>
+                            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <p style={{color: "red", fontSize: "15px", paddingBottom: "10px"}}>Teknologi Terupdate</p>
+                                <img alt="" src={teknologi} style={{width: "250px", height: "250px"}}/>
+                            </div>
+                            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <p style={{color: "red", fontSize: "15px", paddingBottom: "10px"}}>Diskusi Online Selamanya</p>
+                                <img alt="" src={diskusi} style={{width: "250px", height: "250px"}}/>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Asal Sekolah *"onChange={this.handleChange} value={this.state.asal} name="asal" required/>
+                        <div className="row soo">
+                            <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <p style={{padding: "20px 90px 20px 90px", color: "red", fontSize: "20px"}}>So, Tunggu apa lagi? Daftar sekarang</p>
+                            </div>
+                            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <a href="#" class="btn btn-danger float-right reg-b">Daftar Sekarang</a>
+                            </div>
+                            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <a href="#" class="btn btn-outline-danger reg-b">Lihat Silabus</a>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Phone *"onChange={this.handleChange} value={this.state.no} name="no" required />
+                        <div className="text-center">
+                            <p style={{color: "red", fontSize: "20px", padding: "50px 0 50px 0"}}>Perusahaan Rekanan</p>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Usia *"onChange={this.handleChange} value={this.state.usia} name="usia" required/>
-                        </div>
-                        <div class="form-group">
-                            <textarea type="text" class="form-control" placeholder="Alamat *" onChange={this.handleChange} value={this.state.alamat} name="alamat" required />
-                        </div>
-                        <div class="form-group">
-                            <select class="form-control"value={this.state.value} onChange={this.handleValue}  required>
-                                <option class="hidden"  selected disabled>Last Education</option>
-                                <option value="SD">SD</option>
-                                <option value="SMP">SMP</option>
-                                <option value="SMA/SMK">SMA/SMK</option>
-                                <option value="D3">D3</option>
-                                <option value="S1">S1</option>
-                                <option value="S2">S2</option>
-                            </select>
+                        <div className="row">
+                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <img alt="" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/tokopedia.png"/>
+                            </div>
+                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <img alt="" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/true-money.png"/>
+                            </div>
+                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <img alt="" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/telecreative.png"/>
+                            </div>
+                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <img alt="" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/telkom-indonesia.png"/>
+                            </div>
+                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <img alt="" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/kofera.png"/>
+                            </div>
+                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <img alt="" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/sirclo.png"/>
+                            </div>
                         </div>
                         <div>
-                            <label class="text-left">               
-                                <input type="checkbox" checked={this.state.checked} onChange={this.handleChecked} name="checked"
-                                ></input>
-                                Saya Menyutujui   
-                                <a href="/"> Syarat Dan Ketentuan</a>
-                            </label>
-                        </div> 
+                            <p className="text-center" style={{color: "red", fontSize: "20px", padding: "50px 0 50px 0"}}>Teknologi</p>
+                        </div>
+                        <div className="row text-center">
+                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <p className="devicon-javascript-plain colored" style={{fontSize: "50px", marginBottom: "50px"}}></p>
+                            </div>
+                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <p className="devicon-react-original-wordmark colored" style={{fontSize: "50px", marginBottom: "50px"}}></p>
+                            </div>
+                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <p className="devicon-nodejs-plain-wordmark colored" style={{fontSize: "50px", marginBottom: "50px"}}></p>
+                            </div>
+                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <p className="devicon-mysql-plain-wordmark colored" style={{fontSize: "50px", marginBottom: "50px"}}></p>
+                            </div>
+                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <p className="devicon-git-plain-wordmark colored" style={{fontSize: "50px", marginBottom: "50px"}}></p>
+                            </div>
+                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <p className="fas fa-server" style={{fontSize: "50px", marginBottom: "50px"}}></p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                {/* <!-- Modal footer --> */}
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success"onClick={this.handleSubmit}>Submit</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-
-                </div>
+                </body>
+                <div>
+                    <Footer />
+                </div>                  
             </div>
-            </div>
-        </div>
-      </div>
-      </body>
-      </div>
-    );
-  }
+        );
+    }
 }
 
 export default Home;

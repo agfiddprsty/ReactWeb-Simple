@@ -29,6 +29,10 @@ import Daftar from './Screen/Daftar';
 import DashboardUnpaid from './Screen/DashboardUnpaid';
 import DashboardPaidProfile from './Screen/DashboardPaidProfile';
 import Silabusnew from './Screen/Silabusnew';
+import Payment from './Screen/Payment';
+import Video from './Screen/VideoPlayer';
+import ListVideo from './Screen/ListVideo'
+import Dashboard from './Screen/Dashboard'
 //import store 
 import store from './store'
 ReactDOM.render(
@@ -52,6 +56,11 @@ ReactDOM.render(
             <Route path="/dashboardunpaid" component={DashboardUnpaid}/>
             <Route path="/dashboardpaidprofile" component={DashboardPaidProfile}/>
             <Route path="/silabusnew" component={Silabusnew}/>
+            <Route path="/payment" component={Payment}/>
+            <Route path="/video" component={Video}/>
+            <Route path="/listvideo" component={ListVideo}/>
+            <Route path="/dashboard" component={Dashboard}/>
+
         </div>
         </Provider>
     </Router>

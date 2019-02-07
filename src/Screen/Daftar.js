@@ -14,7 +14,7 @@ class Daftar extends Component {
         </div>
 
         <div>
-            <div class="container" style={{margin:'0 0 0 120px'}}>
+            <div class="container" style={{margin:'0 0 0 120px',}}>
                 <label for="fname">Nama Lengkap</label>
                 <input type="text" id="fname" name="fullname" placeholder="">
                 </input>

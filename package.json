@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@coreui/react": "^2.1.3",
     "@material-ui/core": "^3.7.1",
     "axios": "^0.18.0",
     "bootstrap": "^4.1.3",
+    "dplayer": "^1.25.0",
     "jquery": "^3.3.1",
     "material-ui": "^0.20.2",
     "mdbreact": "^4.9.0",
+    "prop-types": "^15.6.2",
     "random-words": "^1.1.0",
     "rc-progress": "^2.2.6",
     "react": "^16.7.0",
@@ -16,7 +19,9 @@
     "react-ace-editor": "0.0.3",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.7.0",
+    "react-iframe": "^1.3.3",
     "react-monaco-editor": "^0.22.0",
+    "react-player": "^1.9.3",
     "react-popout": "^1.0.1",
     "react-radio-group": "^3.0.3",
     "react-recaptcha-google": "^1.1.1",
@@ -25,7 +30,8 @@
     "react-responsive-navbar": "^1.0.11",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
+    "react-script": "^2.0.5",
+    "react-scripts": "^2.1.3",
     "react-social-login": "^3.4.3",
     "react-tap-event-plugin": "^3.0.3",
     "react-test-renderer": "^16.7.0",
@@ -34,6 +40,7 @@
     "redux-logger": "^3.0.6",
     "redux-promise-middleware": "^5.1.1",
     "redux-thunk": "^2.3.0",
+    "video-react": "^0.13.2",
     "webpack": "^4.19.1"
   },
   "scripts": {
@@ -62,7 +69,8 @@
     "jest-cli": "^23.6.0",
     "ngx-jest-snapshot-serializer": "^1.2.3",
     "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.29.0"
   },
   "jest": {
     "snapshotSerializers": [

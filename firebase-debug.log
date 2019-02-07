@@ -1,0 +1,304 @@
+[debug] [2019-02-06T11:39:29.247Z] ----------------------------------------------------------------------
+[debug] [2019-02-06T11:39:29.250Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-02-06T11:39:29.250Z] CLI Version:   6.3.1
+[debug] [2019-02-06T11:39:29.250Z] Platform:      linux
+[debug] [2019-02-06T11:39:29.250Z] Node Version:  v8.10.0
+[debug] [2019-02-06T11:39:29.250Z] Time:          Wed Feb 06 2019 18:39:29 GMT+0700 (WIB)
+[debug] [2019-02-06T11:39:29.250Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-06T11:39:29.261Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-06T11:39:29.262Z] > authorizing via signed-in user
+[debug] [2019-02-06T11:39:29.262Z] [iam] checking project reactwebsimple for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-02-06T11:39:29.264Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/reactwebsimple:testIamPermissions  
+
+[debug] [2019-02-06T11:39:30.760Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-06T11:39:30.763Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/reactwebsimple  
+ 
+[debug] [2019-02-06T11:39:31.223Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'reactwebsimple'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-02-06T11:39:31.231Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/reactwebsimple/versions  
+
+[debug] [2019-02-06T11:39:32.840Z] <<< HTTP RESPONSE 500
+[debug] [2019-02-06T11:39:32.840Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-02-06T11:39:33.011Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 06 Feb 2019 11:39:32 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/reactwebsimple/versions",
+        "path": "/v1beta1/sites/reactwebsimple/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/reactwebsimple/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2019-02-06T11:39:46.392Z] ----------------------------------------------------------------------
+[debug] [2019-02-06T11:39:46.396Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-02-06T11:39:46.396Z] CLI Version:   6.3.1
+[debug] [2019-02-06T11:39:46.396Z] Platform:      linux
+[debug] [2019-02-06T11:39:46.396Z] Node Version:  v8.10.0
+[debug] [2019-02-06T11:39:46.396Z] Time:          Wed Feb 06 2019 18:39:46 GMT+0700 (WIB)
+[debug] [2019-02-06T11:39:46.396Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-06T11:39:46.411Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-06T11:39:46.412Z] > authorizing via signed-in user
+[debug] [2019-02-06T11:39:46.412Z] [iam] checking project reactwebsimple for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-02-06T11:39:46.415Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/reactwebsimple:testIamPermissions  
+
+[debug] [2019-02-06T11:39:47.671Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-06T11:39:47.675Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/reactwebsimple  
+ 
+[debug] [2019-02-06T11:39:48.116Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'reactwebsimple'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-02-06T11:39:48.125Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/reactwebsimple/versions  
+
+[debug] [2019-02-06T11:39:49.715Z] <<< HTTP RESPONSE 500
+[debug] [2019-02-06T11:39:49.716Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-02-06T11:39:49.903Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 06 Feb 2019 11:39:49 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/reactwebsimple/versions",
+        "path": "/v1beta1/sites/reactwebsimple/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/reactwebsimple/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2019-02-06T11:39:59.330Z] ----------------------------------------------------------------------
+[debug] [2019-02-06T11:39:59.333Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-02-06T11:39:59.333Z] CLI Version:   6.3.1
+[debug] [2019-02-06T11:39:59.333Z] Platform:      linux
+[debug] [2019-02-06T11:39:59.333Z] Node Version:  v8.10.0
+[debug] [2019-02-06T11:39:59.333Z] Time:          Wed Feb 06 2019 18:39:59 GMT+0700 (WIB)
+[debug] [2019-02-06T11:39:59.333Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-06T11:39:59.345Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-06T11:39:59.346Z] > authorizing via signed-in user
+[debug] [2019-02-06T11:39:59.346Z] [iam] checking project reactwebsimple for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-02-06T11:39:59.348Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/reactwebsimple:testIamPermissions  
+
+[debug] [2019-02-06T11:40:00.605Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-06T11:40:00.608Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/reactwebsimple  
+ 
+[debug] [2019-02-06T11:40:01.024Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'reactwebsimple'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-02-06T11:40:01.032Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/reactwebsimple/versions  
+
+[debug] [2019-02-06T11:40:02.582Z] <<< HTTP RESPONSE 500
+[debug] [2019-02-06T11:40:02.583Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-02-06T11:40:02.759Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 06 Feb 2019 11:40:02 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/reactwebsimple/versions",
+        "path": "/v1beta1/sites/reactwebsimple/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/reactwebsimple/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2019-02-06T11:40:11.880Z] ----------------------------------------------------------------------
+[debug] [2019-02-06T11:40:11.883Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-02-06T11:40:11.883Z] CLI Version:   6.3.1
+[debug] [2019-02-06T11:40:11.883Z] Platform:      linux
+[debug] [2019-02-06T11:40:11.883Z] Node Version:  v8.10.0
+[debug] [2019-02-06T11:40:11.883Z] Time:          Wed Feb 06 2019 18:40:11 GMT+0700 (WIB)
+[debug] [2019-02-06T11:40:11.883Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-06T11:40:11.895Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-06T11:40:11.896Z] > authorizing via signed-in user
+[debug] [2019-02-06T11:40:11.896Z] [iam] checking project reactwebsimple for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-02-06T11:40:11.898Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/reactwebsimple:testIamPermissions  
+
+[debug] [2019-02-06T11:40:13.148Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-06T11:40:13.151Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/reactwebsimple  
+ 
+[debug] [2019-02-06T11:40:13.475Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'reactwebsimple'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-02-06T11:40:13.483Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/reactwebsimple/versions  
+
+[debug] [2019-02-06T11:40:15.076Z] <<< HTTP RESPONSE 500
+[debug] [2019-02-06T11:40:15.077Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-02-06T11:40:15.306Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 06 Feb 2019 11:40:14 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/reactwebsimple/versions",
+        "path": "/v1beta1/sites/reactwebsimple/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/reactwebsimple/versions"
+      },
+      "method": "POST"
+    }
+  }
+}

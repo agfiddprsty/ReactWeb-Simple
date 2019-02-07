@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 @-ms-viewport{
     width: device-width;
   }
@@ -21,8 +25,129 @@
     overflow-x: hidden;
   }
 
+ .hom-b{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    overflow-x: hidden;
+ } 
+
 .Hom-body {
   background-color: #f7f7f7;
+  overflow-x: hidden;
+}
+
+.hom-a {
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.timer {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.reg {
+    margin-right: 30px;
+    width: 200px;
+    padding: 10px;
+}
+
+.reg-b {
+    width: 200px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.lengkap {
+    width: 200px;
+    padding: 10px;
+}
+
+.gmbrlanding {
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(253, 245, 255, 0.8) ), url("https://cdn-images-1.medium.com/max/2600/0*LWGNRvaAD7jRra_L.");
+    width: 100%;
+    padding: 0;
+    background-size: cover;
+    height: 1000px;
+    padding: 20px;
+}
+
+.gmbrlanding1 {
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(253, 245, 255, 0.8) ), url("../img/covbg.jpg");
+    width: 100%;
+    padding: 0;
+    background-size: cover;
+    height: 1000px;
+    padding: 20px;
+}
+
+.gmbrlanding2 {
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(253, 245, 255, 0.8) ), url("https://assets-a2.kompasiana.com/items/album/2018/04/17/technology-5ad5eae9dcad5b46970bc882.jpg?t=o&v=760");
+    width: 100%;
+    padding: 0;
+    background-size: cover;
+    height: 1000px;
+    padding: 20px;
+}
+
+.soo {
+    padding: 30px 0 30px 0;
+    overflow-x:hidden;
+    background-color: #f7f7f7;
+}
+
+.title {
+    color: red;
+    margin-top: 50px;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-position: top center;
+}
+
+.titleb{
+    color: red;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-position: top center;
+}
+
+.harga {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: top center;
+}
+
+.keterangan {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.penjelasan {
+    padding: 20px 0 20px 100px;
 }
 
 .image {

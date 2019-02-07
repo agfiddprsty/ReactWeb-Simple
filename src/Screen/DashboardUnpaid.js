@@ -15,15 +15,14 @@ class DashboardUnpaid extends Component {
             <div>
               <div class="container" style={{border:'1px solid'}}>
                 <p style={{color:'#000000', margin:'0 0 0 20px'}}>Agreement</p>
-                  <div class="container">
+                  <div class="container" style={{border:'1px solid'}}>
                       <p style={{color:'#000000',}}>Dengan mengikuti program ini, Saya setuju jika data saya digunakan oleh pihak DumbWays.id sepenuhnya. Materi ini hanya boleh diakses oleh 1 orang, yaitu orang yang terdaftar saja. Selanjutnya Saya setuju bila ingin disalurkan kerja, maka akan diadakan kesepakatan lanjutan berupa kontrak kerja selama 1 tahun dengan pihak DumbWays.id dan hanya bekerja di perusahaan rekanan DumbWays.id. Jika kesepakatan ini saya langgar, maka pihak DumbWays.id berhak menutup akses materi ini, dan melakukan blacklist terhadap Saya.</p>    
-                    <br/>
-
-                      <a href=""/*silabus*/ 
-                      style={{margin:'0 10px 0 720px'}}
+                  </div>
+                      <a href="/silabusnew" 
+                      style={{margin:'10px 10px 0 720px'}}
                       ><button type="button" class="btn btn-secondary" data-dismiss="modal">Saya Tidak Setuju</button></a>
                       <a href="/payment"><button type="button" class="btn btn-success">Ya, Saya Setuju</button></a>  
-                  </div>
+                  
                 </div>
               </div>
             </div>
