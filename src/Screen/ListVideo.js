@@ -8,6 +8,7 @@ import {Input, InputGroupAddon, Button } from 'reactstrap';
 import { RenderLoop } from 'brace';
 import quiz from './quiz.png'
 import { ActionSettingsBrightness } from 'material-ui/svg-icons';
+import HeaderDashboard from './HeaderDashboard';
 
 class ListVideo extends Component {
 
