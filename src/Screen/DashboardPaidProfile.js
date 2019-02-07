@@ -41,7 +41,7 @@ class DashboardPaidProfile extends Component {
                 </input>
 
             <div class="modal-footer">
-                <a href="/DashboardUnpaidCopy"><button type="button" class="btn btn-success">Selesai</button></a>
+                <a href="/listvideo"><button type="button" class="btn btn-success">Selesai</button></a>
             </div>
 
             </div>
