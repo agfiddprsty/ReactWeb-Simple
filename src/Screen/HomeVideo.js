@@ -7,7 +7,7 @@ class HomeVideo extends Component{
         return(
             <div>
             <Iframe url="https://fast.wistia.net/embed/iframe/dso2sjap7u"
-            width="450px"
+            width="800px"
             height="450px"
             id="myId"
             className="myClassname"

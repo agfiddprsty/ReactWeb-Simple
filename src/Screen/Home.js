@@ -11,7 +11,7 @@ import covbg from './img/covbg.jpg';
 import lengkapi from './img/lengkapi.png';
 import diskusi from './img/diskusi.png';
 import mulai from './img/mulai.png';
-import quiz from './img/quiz.png';
+import quiz from './img/quis.png';
 import kerja from './img/kerja.png';
 import mentor from './img/mentor.png';
 import teknologi from './img/teknologi.png';
@@ -108,7 +108,7 @@ class Home extends Component {
                                             </div>
                                             <div className="row">
                                                 <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
-                                                    <a href="#" class="btn btn-danger reg">Daftar Sekarang</a>
+                                                    <a href="/daftar" class="btn btn-danger reg">Daftar Sekarang</a>
                                                 </div>
                                                 <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left">
                                                     <a href="#" class="btn btn-outline-danger text-center lengkap">Lihat Silabus</a>
@@ -124,33 +124,10 @@ class Home extends Component {
                             <a class="carousel-control-next" href="#demo" data-slide="next">
                                 <span class="carousel-control-next-icon"></span>
                             </a>
-                            </div>
-                        {/* <div className="jumbotron jumbotron-fluid gmbrlanding" style={{height: "600px"}}>
-                            <div>
-                                <h4 className="card-title text-center title">Menjadi Fullstack Mobile Developer Professional</h4>
-                                <h4 className="card-title text-center titleb">dan Disalurkan Kerja</h4>
-                                <div style={{textAlign: "center", marginTop: "50px"}}>
-                                    <span className="card-text text-center isi" style={{color: "red", fontSize: "30px", fontWeight: "700", display: "inline-block", paddingRight: "20px"}}>IDR</span>
-                                    <span className="text-center" style={{textDecorationLine: "line-through", textDecorationStyle: "solid", textDecorationColor: "red", fontSize: "30px", fontWeight: "700", paddingRight: "20px"}}>2.000.000</span>
-                                    <span style={{color: "green", fontSize: "30px", fontWeight: "700"}}>500.000</span>
-                                </div>
-                                <p className="text-center">Penawaran Akan Berakhir Dalam:</p>
-                                <div className="timer" >
-                                    <Timer date={`${year}-03-16T00:00:00`} />
-                                </div>
-                                <div className="row">
-                                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
-                                        <a href="#" class="btn btn-danger reg">Daftar Sekarang</a>
-                                    </div>
-                                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left">
-                                        <a href="#" class="btn btn-outline-danger text-center lengkap">Lihat Silabus</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
+                        </div>
                         <div className="list-group">
                             <div className="text-center">
-                                <h1 id="silabus" style={{fontSize:'30px', color:'red', fontWeight:400, paddingBottom: "50px"}}>Cara Kerja</h1>
+                                <h1 style={{fontSize:'30px', color:'red', fontWeight:400, paddingBottom: "50px"}}>Cara Kerja</h1>
                             </div>
                             <br/>
                             <div className="row text-center">
@@ -187,7 +164,7 @@ class Home extends Component {
                             <br/><br/>
                             </div>
                             <div className="penjelasan">
-                                <p style={{color: "red", fontSize: "20px"}}>Masih Belum Paham Cara Kerjanya? Lihat Video Berikut...</p>
+                                <p style={{color: "red", fontSize: "20px", marginBottom: "30px"}}>Masih Belum Paham Cara Kerjanya? Lihat Video Berikut...</p>
                                 <HomeVideo/>
                             </div>
                         </div>

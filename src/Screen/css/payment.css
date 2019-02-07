@@ -1,0 +1,23 @@
+.isii{
+    margin: 0 15% 0 15%;
+    height: 100%;
+}
+.kotak{
+    width: 800px;
+    margin-top: 50px;
+    border-width: 1px;
+    border-color: black;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontener{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

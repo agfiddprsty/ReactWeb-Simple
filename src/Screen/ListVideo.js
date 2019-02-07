@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { Card, CardImg, CardDeck,
     CardBody, Progress } from 'reactstrap';   
 import {withRouter,Link} from 'react-router-dom';
-import rnredux from './rnreduxplay.png';
+import rnredux from './img/rnreduxplay.png';
 import './css/ListVideo.css';
 import {Input, InputGroupAddon, Button } from 'reactstrap';
 import { RenderLoop } from 'brace';
-import quiz from './quiz.png'
+import quiz from './img/quiz.png'
 import { ActionSettingsBrightness } from 'material-ui/svg-icons';
 import HeaderDashboard from './HeaderDashboard';
 

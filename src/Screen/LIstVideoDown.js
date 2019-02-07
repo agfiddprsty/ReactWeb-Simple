@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import quiz from './quiz.png'
+import quiz from './img/quiz.png'
 import { Card, CardImg, CardDeck,
     CardBody, Progress } from 'reactstrap';   
-import rnredux from './rnreduxplay.png';
+import rnredux from './img/rnreduxplay.png';
 
 class ListVideoDown extends Component{
     render(){
