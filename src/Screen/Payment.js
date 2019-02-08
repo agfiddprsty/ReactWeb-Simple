@@ -6,11 +6,13 @@ import './css/payment.css';
 import mandiri from './img/bankmandiri.jpg';
 import whatsapp from './img/whatsapp.png';
 import telegram from './img/telegram.png';
+import HeaderDashboard from './HeaderDashboard';
 
 class Payment extends Component {
     render() {
       return (
             <div className="isii">
+            <HeaderDashboard/>
                 <div className="kontener">
                     <div class="kotak">
                         <div>
