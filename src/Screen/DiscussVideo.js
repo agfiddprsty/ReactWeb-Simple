@@ -16,59 +16,57 @@ class DiscussVideo extends Component{
                     Diskusi Yuk...
                 </h3>
                 <div className="tulis">
-                    <table>
+                    {/* <table>
                         <tr>
                             <td>
                                 <img src={Profile} style={{width:"20px"}} ></img>
                                 <input style={{border:"0",outline:transparent}}></input>
                             </td>
                         </tr>
-                    </table>
-                </div>
-                <div class="card" style={{width:"90%"}}>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
-                                <p class="text-secondary text-center">15 Minutes Ago</p>
-                            </div>
-                            <div class="col-md-10">
-                                <p>
-                                    <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman Akash</strong></a>
-                                    <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                                    <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                                    <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                                    <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                                </p>
-                            </div>
-                            <div class="clearfix">
-                                <p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                <p>
-                                    <a class="float-right btn btn-outline-primary ml-2"> <i class="fa fa-reply"></i> Reply</a>
-                                    <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Like</a>
-                                </p>
-                            </div>
+                    </table> */}
+                    <div class="row" id="post-review-box">
+                        <div class="col-md-12">
+                            <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
                         </div>
-                        <div class="card card-inner">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
-                                        <p class="text-secondary text-center">15 Minutes Ago</p>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <p><a href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman Akash</strong></a></p>
-                                        <p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                        <p>
-                                            <a class="float-right btn btn-outline-primary ml-2">  <i class="fa fa-reply"></i> Reply</a>
-                                            <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Like</a>
-                                        </p>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+              
+                <div class="row">
+                    <div class="col-sm-1">
+                        <div class="thumbnail">
+                            <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"/>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
+                            </div>
+                            <div class="panel-body">
+                                panelcontent
                             </div>
                         </div>
                     </div>
                 </div>
+                <br/>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <div class="thumbnail">
+                            <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"/>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
+                            </div>
+                            <div class="panel-body">
+                                panelcontent
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         )
     }
