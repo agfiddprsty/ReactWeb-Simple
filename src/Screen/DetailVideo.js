@@ -7,10 +7,10 @@ import DiscussVideo from './DiscussVideo'
 class DetailVideo extends Component {
     render(){
         return(
-            <div>
+            <div style={{background:"#F8F9FA"}}>
                 <HeaderDashboard/>
-                <body >
-                    <div style={{marginLeft:"100px",marginTop:"80px"}} className="bg-light">
+                <body className="bg-light" >
+                    <div style={{marginLeft:"100px",marginTop:"80px"}} >
                         <div className="row">
                             <div class="col-md-auto">
                                 <Video/>
