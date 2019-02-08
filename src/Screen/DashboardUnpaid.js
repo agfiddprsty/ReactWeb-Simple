@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import HeaderDashboar from './HeaderDashboard'
+import HeaderPage from './HeaderPage'
 import './css/DashboardUnpaid.css';
 
 class DashboardUnpaid extends Component {
     render() {
       return (
         <div>
-          <HeaderDashboar/>
+          <HeaderPage/>
             <body>
               <div>
                   <div className="text-center">
