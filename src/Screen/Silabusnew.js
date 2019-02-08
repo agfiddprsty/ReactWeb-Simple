@@ -42,6 +42,15 @@ class Silabusnew extends Component {
               </div>
               </body>
               <div>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
               <Footer />
               </div>
         </div>      
