@@ -4,6 +4,7 @@ import { Table } from 'material-ui';
 import Video from './VideoPlayer'
 import ListVideo from './LIstVideoDown'
 import DiscussVideo from './DiscussVideo'
+import Footer from './Footer';
 class DetailVideo extends Component {
     render(){
         return(
@@ -22,6 +23,7 @@ class DetailVideo extends Component {
                         <DiscussVideo/>
                     </div> 
                 </body>
+                <Footer/>
             </div>
         )
     }
