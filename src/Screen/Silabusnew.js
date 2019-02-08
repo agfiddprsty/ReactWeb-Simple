@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Footer from './Footer.js';
 
 class Silabusnew extends Component {
     render() {
       return (
         <div>
-
+            <body>
             <div className="text-center">
             <h1 style={{
                 fontSize:'30px',color:'#ececed',fontWeight:300, margin:'25px 0 25px 0'
@@ -38,6 +39,10 @@ class Silabusnew extends Component {
                         </div >
                         
                 </div>
+              </div>
+              </body>
+              <div>
+              <Footer />
               </div>
         </div>      
         );

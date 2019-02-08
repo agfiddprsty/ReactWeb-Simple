@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from './Footer.js';
 import './css/Daftar.css';
 
 class Daftar extends Component {
@@ -37,7 +38,10 @@ class Daftar extends Component {
                 </div>
 
             </div>
+            <br/>
+            <br/>
         </div>
+        <Footer />
         </div>
       );
     }

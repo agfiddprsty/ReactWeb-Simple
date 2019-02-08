@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import HeaderPage from './HeaderPage'
+import Footer from './Footer.js';
 import './css/DashboardPaidProfile.css';
 
 class DashboardPaidProfile extends Component {
@@ -17,7 +18,7 @@ class DashboardPaidProfile extends Component {
                     </div>
 
                     <div>
-                        <div class="container" style={{margin:'0 0 25px 120px', border:'1px solid'}}>
+                        <div class="container" style={{margin:'0 0 25px 120px', border:'1px solid black'}}>
 
                             <h5 style={{color:'#FF0000', margin:'15px 0 0 15px'}}>Terimakasih telah Mengikuti Online Bootcamp ini</h5>
                             <p style={{color:'#000', margin:'15px 0 0 15px'}}>Silahkan melengkapi profile Anda demi kemudahan kami dalam menyalurkan kerja dan administrasi</p>
@@ -49,7 +50,16 @@ class DashboardPaidProfile extends Component {
 
                     </div>
                 </div>
+                <div>
+                        <div className="text-center">
+                        <h1 style={{
+                            fontSize:'30px',color:'#ececed',fontWeight:300, margin:'25px 0 25px 0'
+                        }}>Blank</h1>
+                        </div>
+                    </div>
+
                 </body>
+                <Footer />
         </div>
       );
     }
