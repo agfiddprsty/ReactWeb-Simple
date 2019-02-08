@@ -27,7 +27,7 @@ class HeaderDashboard extends Component{
             <div className="Hom">
                 <header className="Hom-header bg-light">
                     <nav className="navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light">
-                        <a style={{textAlign:"left"}}class="brand" href="https://dumbways.id/">DumbWays.id</a>
+                        <a style={{textAlign:"left"}}class="brand" href="/dashboard">DumbWays.id</a>
 
                         {/* <!-- Toggler/collapsibe Button --> */}
                         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -36,7 +36,7 @@ class HeaderDashboard extends Component{
                         <div class="collapse navbar-collapse bg-light colap" id="collapsibleNavbar">
                             <ul class="navbar-nav ml-auto">
                                 <li className="nav-item ml-auto" style={{marginRight:"10px"}}>
-                                    <a href="home" className="nav-link">Home</a>
+                                    <a href="/dashboard" className="nav-link">Home</a>
                                 </li>
                                 <li style={{marginRight:"10px"}} className="nav-item ml-auto">
                                     {/* <NavItem className="d-md-down-none"> */}
