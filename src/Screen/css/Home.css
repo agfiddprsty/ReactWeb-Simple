@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-body{
-    overflow-x: hidden;
-}
-
 @-ms-viewport{
     width: device-width;
   }
@@ -45,13 +41,14 @@ body{
 
 .timer {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    transform: scale(0.80); 
 }
 
 .reg {
-    margin-right: 30px;
-    width: 200px;
-    padding: 10px;
+    width: 210px;
+    padding: 13px 0 13px 0;
+    transform: scale(0.90); 
 }
 
 .reg-b {
@@ -61,8 +58,9 @@ body{
 }
 
 .lengkap {
-    width: 200px;
-    padding: 10px;
+    width: 210px;
+    padding: 13px;
+    transform: scale(0.90); 
 }
 
 .gmbrlanding {
@@ -108,8 +106,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 50px 350px 0 350px;
     height: 100%;
     background-position: top center;
+    transform: scale(0.95); 
 }
 
 .titleb{
@@ -123,6 +123,7 @@ body{
     align-items: center;
     height: 100%;
     background-position: top center;
+    transform: scale(0.95); 
 }
 
 .harga {
@@ -147,7 +148,7 @@ body{
 }
 
 .penjelasan {
-    padding: 20px 0 20px 100px;
+    padding: 20px 0 20px 175px;
 }
 
 .image {
@@ -408,4 +409,29 @@ section#box-profile{
     .knan {
         margin-left: 0%;
     }
+
+    .title {
+        color: red;
+        margin-top: 50px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 50px 0;
+
+        background-position: top center;
+        transform: scale(0.95); 
+    }
   }
+
+.homevideo {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

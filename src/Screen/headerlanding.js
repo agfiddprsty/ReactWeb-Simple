@@ -8,7 +8,7 @@ class Header extends Component {
       <div className="Hom">
         <header className="Hom-header bg-light">
             <nav className="navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light">
-              <a class="brand" href="#">DumbWays.id Online Bootcamp</a>
+              <a class="brand" href="#" style={{fontWeight: '600'}}>DumbWays.id Online Bootcamp</a>
 
               {/* <!-- Toggler/collapsibe Button --> */}
               <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

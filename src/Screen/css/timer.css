@@ -1,6 +1,5 @@
-
 .Countdown{
-    margin: 10px auto;
+    margin: 5px auto;
     padding-bottom: 20px;
   }
   
@@ -10,7 +9,7 @@
   
   .Countdown-col-element{
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 10px;
     display: flex;
     flex-direction: column;
   }
@@ -18,3 +17,27 @@
   .Countdown-col-element strong{
     font-size: 50px;
   }
+
+
+@media only screen and (max-width: 767px) {
+  
+  .Countdown{
+    margin: 5px auto;
+    padding-bottom: 10px;
+  }
+  
+  .Countdown-col{
+    display: inline-block;
+  }
+  
+  .Countdown-col-element{
+    display: inline-block;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Countdown-col-element strong{
+    font-size: 40px;
+  }  
+}
