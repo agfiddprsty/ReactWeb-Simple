@@ -5,9 +5,13 @@ import  '../Screen/css/DiscussVideo.css'
 class DiscussVideo extends Component{
     constructor(){
         super()
+        this.showreply = this.showreply.bind(this)
         this.state={
-
+            show:false
         }
+    }
+    showreply(){
+        this.setState({show:!this.state.show})
     }
     render(){
         return(
@@ -15,7 +19,7 @@ class DiscussVideo extends Component{
                 <h3>
                     Diskusi Yuk...
                 </h3>
-                <div className="tulis">
+                <div className="tulis" id="tulis" >
                     {/* <table>
                         <tr>
                             <td>
@@ -44,9 +48,18 @@ class DiscussVideo extends Component{
                             </div>
                             <div class="panel-body">
                                 panelcontent
+                                <button class="float-right btn btn-outline-primary ml-2" onClick={this.showreply} >Reply</button>
+                                <div id="reply" style={{display: this.state.show ? 'block' : 'none'}}>
+                                    <div class="row" id="post-review-box">
+                                        <div class="col-md-12">
+                                            <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <br/>
                 <div class="row">
@@ -65,6 +78,7 @@ class DiscussVideo extends Component{
                             </div>
                         </div>
                     </div>
+
                 </div>
                 
             </div>
