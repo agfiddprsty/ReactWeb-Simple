@@ -5,6 +5,10 @@ class Silabusnew extends Component {
     render() {
       return (
         <div>
+
+            <div className="jumbotron jumbotron-fluid gmbrlanding" style={{height: "600px"}}>
+            </div>
+
             <body>
             <div className="text-center">
             <h1 style={{
@@ -41,7 +45,9 @@ class Silabusnew extends Component {
                 </div>
               </div>
               </body>
-              <div>
+            <br/>
+            <br/>
+              <div style={{marginTop:'50px'}}>
               <Footer />
               </div>
         </div>      
