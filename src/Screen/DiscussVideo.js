@@ -22,13 +22,13 @@ class DiscussVideo extends Component{
                 <div  >
                     <div class="row" id="post-review-box">
                         <div class="col-md-8">
-                            <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
+                            <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your question here..." rows="5"></textarea>
                             <button class="float-right btn btn-outline-primary ml-2 "> Submit</button>
                         </div>
                     </div>
                 </div>
               
-                <div class="row">
+                <div class="row"> 
                     <div class="col-sm-1">
                         <div class="thumbnail">
                             <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"/>
