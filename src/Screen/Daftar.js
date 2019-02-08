@@ -8,7 +8,7 @@ class Daftar extends Component {
             <div>
                 <div className="text-center">
                 <h1 style={{
-                    fontSize:'30px',color:'#FF0000',fontWeight:300, margin:'25px 0 25px 0'
+                    fontSize:'30px', fontStyle:'vertical-align: inherit;', color:'red',fontWeight:300, margin:'25px 0 25px 0',
                 }}>Daftar Sekarang</h1>
             </div>
         </div>
