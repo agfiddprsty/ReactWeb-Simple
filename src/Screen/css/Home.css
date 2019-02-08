@@ -109,7 +109,7 @@
     margin: 50px 350px 0 350px;
     height: 100%;
     background-position: top center;
-    transform: scale(0.95); 
+    /* transform: scale(0.95);  */
 }
 
 .titleb{
@@ -148,7 +148,7 @@
 }
 
 .penjelasan {
-    padding: 20px 0 20px 175px;
+    padding: 20px 0 0px 0px;
 }
 
 .image {
@@ -422,11 +422,71 @@ section#box-profile{
         align-items: center;
         height: 100%;
         margin: 50px 0;
-
         background-position: top center;
         transform: scale(0.95); 
     }
+
+    .penjelasan {
+        padding: 20px 0 0px 0;
+    }
+
+    .homevideo {
+        display: flex;
+        flex-basis: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.30); 
+        margin-top: -100px;
+    }
+
+    .resp-iframe {
+        transform: scale(0.80); 
+    }
   }
+
+@media only screen and (max-width: 657px) {
+    .resp-iframe {
+        transform: scale(0.70); 
+    }
+
+    .homevideo{
+        margin-top: -120px;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    .resp-iframe {
+        transform: scale(0.60); 
+    }
+
+    .homevideo{
+        margin-top: -150px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .resp-iframe {
+        transform: scale(0.50); 
+    }
+    .homevideo{
+        margin-top: -170px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .homevideo {
+        display: flex;
+        flex-basis: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.50); 
+    }
+    .resp-iframe {
+        transform: scale(0.40); 
+    }
+}
 
 .homevideo {
     display: flex;
@@ -434,4 +494,124 @@ section#box-profile{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: scale(0.80); 
 }
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+
+@media only screen and (max-width: 1350px) {
+    .title {
+        color: red;
+        margin-top: 50px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 280px 0 280px;
+        height: 100%;
+        background-position: top center;
+    }
+}
+
+
+@media only screen and (max-width: 1210px) {
+    .title {
+        color: red;
+        margin-top: 50px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 200px 0 200px;
+        height: 100%;
+        background-position: top center;
+    }
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .title {
+        color: red;
+        margin-top: 50px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 150px 0 150px;
+        height: 100%;
+        background-position: top center;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    .title {
+        color: red;
+        margin-top: 50px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 100px 0 100px;
+        height: 100%;
+        background-position: top center;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .title {
+        color: red;
+        margin-top: 50px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 50px 0 50px;
+        height: 100%;
+        background-position: top center;
+    }
+}
+
+@media only screen and (max-width: 454px) {
+    .title {
+        color: red;
+        margin-top: 50px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+        height: 100%;
+        background-position: top center;
+    }
+}
+
+

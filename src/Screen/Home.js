@@ -67,40 +67,40 @@ class Home extends Component {
                             <div className="row text-center">
                                 <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                     <p style={{color: "red", fontSize: "20px", paddingBottom: "20px"}}>Daftar</p>
-                                    <img alt="" src={daftar} style={{width: "250px", height: "250px"}}/>
+                                    <img alt="" className="img-fluid" src={daftar} style={{width: "250px", height: "250px"}}/>
                                     <p className="text-left" style={{padding: "10px 90px 30px 90px"}}>Buat akunmu dan lakukan pembayaran awal sebesar 500rb rupiah</p>
                                 </div>
                                 <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                     <p style={{color: "red", fontSize: "20px", paddingBottom: "20px"}}>Lengkapi Profile</p>
-                                    <img alt="" src={lengkapi} style={{width: "250px", height: "250px"}}/>
+                                    <img alt="" className="img-fluid" src={lengkapi} style={{width: "250px", height: "250px"}}/>
                                     <p className="text-left" style={{padding: "10px 90px 30px 90px"}}>Lengkapi data dirimu untuk kebutuhan administrasi</p>                             
                                 </div>
                                 <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                     <p style={{color: "red", fontSize: "20px", paddingBottom: "20px"}}>Mulai Belajar</p>
-                                    <img alt="" src={mulai} style={{width: "250px", height: "250px"}}/>
+                                    <img alt="" className="img-fluid" src={mulai} style={{width: "250px", height: "250px"}}/>
                                     <p className="text-left" style={{padding: "10px 90px 30px 90px"}}>Dipandu oleh mentor professional, Anda dapat belajar melalui media Video streaming yang bisa Anda akses selamanya!</p>
                                 </div>
                                 <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                     <p style={{color: "red", fontSize: "20px", paddingBottom: "20px"}}>Diskusi Online</p>
-                                    <img alt="" src={diskusi} style={{width: "250px", height: "250px"}}/>
+                                    <img alt="" className="img-fluid" src={diskusi} style={{width: "250px", height: "250px"}}/>
                                     <p className="text-left" style={{padding: "10px 90px 30px 90px"}}>Kami menyediakan diskusi online untuk tanya jawab,selamanya!</p>
                                 </div>
                                 <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                     <p style={{color: "red", fontSize: "20px", paddingBottom: "20px"}}>Kerjakan Quiz</p>
-                                    <img alt="" src={quiz} style={{width: "250px", height: "250px"}}/>
+                                    <img alt="" className="img-fluid" src={quiz} style={{width: "250px", height: "250px"}}/>
                                     <p className="text-left" style={{padding: "10px 90px 30px 90px"}}>Kerjakan Mini Quiz, Weekly Quiz dan Quiz Final untuk mengasah skillmu!</p>
                                 </div>
                                 <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                     <p style={{color: "red", fontSize: "20px", paddingBottom: "20px"}}>Penyaluran Kerja</p>
-                                        <img alt="" src={kerja} style={{width: "250px", height: "250px"}}/>
+                                        <img alt="" className="img-fluid" src={kerja} style={{width: "250px", height: "250px"}}/>
                                     <p className="text-left" style={{padding: "10px 90px 30px 90px"}}>Kami akan menyalurkan Anda ke perusahaan rekanan kami, Berdasarkan hasil Quiz yang anda kerjakan</p>
                                 </div>
                             <br/><br/>
                             </div>
-                            <div className="penjelasan">
-                                <p style={{color: "red", fontSize: "20px", marginBottom: "30px", fontWeight: '600'}}>Masih Belum Paham Cara Kerjanya? Lihat Video Berikut...</p>
+                            <div className="penjelasan text-center">
+                                <p style={{color: "red", fontSize: "20px", fontWeight: '600'}}>Masih Belum Paham Cara Kerjanya? Lihat Video Berikut...</p>
                             </div>
-                            <div className="homevideo">    
+                            <div className="homevideo ">    
                                 <HomeVideo/>
                             </div>
                         </div>
@@ -110,24 +110,24 @@ class Home extends Component {
                         <div className="row text-center" style={{marginBottom: "50px"}}>
                             <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                 <p style={{color: "red", fontSize: "15px", paddingBottom: "10px"}}>Mentor Professional</p>
-                                <img alt="" src={mentor} style={{width: "250px", height: "250px"}}/>
+                                <img alt="" className="img-fluid" src={mentor} style={{width: "250px", height: "250px"}}/>
                             </div>
                             <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                 <p style={{color: "red", fontSize: "15px", paddingBottom: "10px"}}>Penyaluran Kerja</p>
-                                <img alt="" src={kerja} style={{width: "250px", height: "250px"}}/>
+                                <img alt="" className="img-fluid" src={kerja} style={{width: "250px", height: "250px"}}/>
                             </div>
                             <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                 <p style={{color: "red", fontSize: "15px", paddingBottom: "10px"}}>Teknologi Terupdate</p>
-                                <img alt="" src={teknologi} style={{width: "250px", height: "250px"}}/>
+                                <img alt="" className="img-fluid" src={teknologi} style={{width: "250px", height: "250px"}}/>
                             </div>
                             <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                 <p style={{color: "red", fontSize: "15px", paddingBottom: "10px"}}>Diskusi Online Selamanya</p>
-                                <img alt="" src={diskusi} style={{width: "250px", height: "250px"}}/>
+                                <img alt="" className="img-fluid" src={diskusi} style={{width: "250px", height: "250px"}}/>
                             </div>
                         </div>
                         <div className="row soo">
                             <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <p style={{padding: "20px 90px 20px 90px", color: "red", fontSize: "20px"}}>So, Tunggu apa lagi? Daftar sekarang</p>
+                                <p style={{padding: "30px 90px 20px 90px", alignItems:'center', color: "red", fontSize: "20px"}}>So, Tunggu apa lagi? Daftar sekarang</p>
                             </div>
                             <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                 <div className="text-center" style={{padding: "20px 90px 20px 90px"}}>
@@ -141,22 +141,22 @@ class Home extends Component {
                         </div>
                         <div className="row text-center">
                             <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                <img alt="" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/tokopedia.png"/>
+                                <img alt="" className="img-fluid" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/tokopedia.png"/>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                <img alt="" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/true-money.png"/>
+                                <img alt="" className="img-fluid" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/true-money.png"/>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                <img alt="" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/telecreative.png"/>
+                                <img alt="" className="img-fluid" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/telecreative.png"/>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                <img alt="" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/telkom-indonesia.png"/>
+                                <img alt="" className="img-fluid" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/telkom-indonesia.png"/>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                <img alt="" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/kofera.png"/>
+                                <img alt="" className="img-fluid" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/kofera.png"/>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                <img alt="" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/sirclo.png"/>
+                                <img alt="" className="img-fluid" style={{marginLeft: "20px", height: "100px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/sirclo.png"/>
                             </div>
                         </div>
                         <div>
@@ -164,22 +164,22 @@ class Home extends Component {
                         </div>
                         <div className="row text-center">
                             <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                <p className="devicon-javascript-plain colored" style={{fontSize: "100px", marginBottom: "50px"}}></p>
+                                <p className="devicon-javascript-plain colored" title="Javascript" style={{fontSize: "100px", marginBottom: "50px"}}></p>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                <p className="devicon-react-original-wordmark colored" style={{fontSize: "100px", marginBottom: "50px"}}></p>
+                                <p className="devicon-react-original-wordmark colored" title="React" style={{fontSize: "100px", marginBottom: "50px"}}></p>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                <p className="devicon-nodejs-plain-wordmark colored" style={{fontSize: "100px", marginBottom: "50px"}}></p>
+                                <p className="devicon-nodejs-plain-wordmark colored" title="Node.Js" style={{fontSize: "100px", marginBottom: "50px"}}></p>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                <p className="devicon-mysql-plain-wordmark colored" style={{fontSize: "100px", marginBottom: "50px"}}></p>
+                                <p className="devicon-mysql-plain-wordmark colored" title="MySQL" style={{fontSize: "100px", marginBottom: "50px"}}></p>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                <p className="devicon-git-plain-wordmark colored" style={{fontSize: "100px", marginBottom: "50px"}}></p>
+                                <p className="devicon-git-plain-wordmark colored" title="GIT" style={{fontSize: "100px", marginBottom: "50px"}}></p>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                <p className="fas fa-server" style={{fontSize: "100px", color: '#4ED8FE', marginBottom: "50px"}}></p>
+                                <p className="fas fa-server" title="VPS" style={{fontSize: "100px", color: '#4ED8FE', marginBottom: "50px"}}></p>
                             </div>
                         </div>
                     </div>
