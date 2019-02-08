@@ -9,18 +9,18 @@ class DetailVideo extends Component {
         return(
             <div>
                 <HeaderDashboard/>
-                <body>
-                    <div className="container">
+                <body >
+                    <div style={{marginLeft:"100px",marginTop:"80px"}} className="bg-light">
                         <div className="row">
-                            <div class="col">
+                            <div class="col-md-auto">
                                 <Video/>
                             </div>
-                            <div class="col">
+                            <div class="col-md-auto" style={{marginLeft:"100px"}}>
                                 <ListVideo/>
                             </div>
                         </div>
-                    </div>
-                    <DiscussVideo/>
+                        <DiscussVideo/>
+                    </div> 
                 </body>
             </div>
         )
