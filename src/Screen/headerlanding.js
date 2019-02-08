@@ -17,10 +17,10 @@ class Header extends Component {
               <div class="collapse navbar-collapse bg-light colap" id="collapsibleNavbar">
               <ul class="navbar-nav ml-auto">
                 <li className="nav-item ml-auto">
-                  <a href='/login' className="nav-link">Sign In</a>
+                  <a href='/' className="nav-link">Sign In</a>
                 </li>
                 <li className="nav-item ml-auto">
-                  <a href="/daftar" className="nav-link">Sign Up</a>
+                  <a href="/reg" className="nav-link">Sign Up</a>
                 </li>
               </ul>
             </div> 

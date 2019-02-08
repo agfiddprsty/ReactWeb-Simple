@@ -41,8 +41,8 @@ class VideoPlayer extends Component{
             }}
             /> */}
             <Iframe url="https://fast.wistia.net/embed/iframe/dso2sjap7u"
-            width="450px"
-            height="450px"
+            width="800px"
+            height="500px"
             id="myId"
             className="myClassname"
             display="initial"
