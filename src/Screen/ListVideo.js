@@ -66,21 +66,21 @@ return (
                     <h3> Minggu 2</h3>
                     <CardDeck className="deck border border-0">
                         <Card className="border border-0"><a href="#" className="modul">
-                            <CardImg top width="100%" src={quiz} style={{filter: "brightness(10%)"}} alt="Card image cap" className="rounded"/>
+                            <CardImg top width="100%" src={quiz} style={{filter: "grayscale(100%)"}} alt="Card image cap" className="rounded"/>
                             <CardBody className="crdbdy">
                             <h5>4.Quiz 1</h5>
                             <br></br>
                             </CardBody>
                         </a></Card>
-                        <Card className="border border-0"><a href="/video" className="modul">
-                            <CardImg top width="100%" src={rnredux} style={{filter: "brightness(10%)"}} alt="Card image cap" className="rounded"/>
+                        <Card className="border border-0"><a href="#" className="modul">
+                            <CardImg top width="100%" src={rnredux} style={{filter: "grayscale(100%)"}} alt="Card image cap" className="rounded"/>
                             <CardBody className="crdbdy">
                             <h5>2.Instalasi</h5>
                             <br></br>
                             </CardBody>
                         </a></Card>
-                        <Card className="border border-0"><a href="/video" className="modul">
-                            <CardImg top width="100%" src={rnredux} style={{filter: "brightness(10%)"}} alt="Card image cap" className="rounded"/>
+                        <Card className="border border-0"><a href="#" className="modul">
+                            <CardImg top width="100%" src={rnredux} style={{filter: "grayscale(100%)"}} alt="Card image cap" className="rounded"/>
                             <CardBody className="crdbdy">
                             <h5>3.Component</h5>
                             <br></br>
