@@ -60,7 +60,6 @@ ReactDOM.render(
             <Route path="/payment" component={Payment}/>
             <Route path="/video" component={Video}/>
             <Route path="/listvideo" component={ListVideo}/>
-            <Route path="/Dashboard" component={Dashboard}/>
             <Route path="/detailvideo" component={DetailVIdeo}/>
             <Route path="/dashboard" component={Dashboard}/>
 

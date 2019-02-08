@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import HeaderDashboar from './HeaderDashboard'
 import ListVideo from './ListVideo'
 import { List } from 'material-ui';
+import Footer from './Footer';
 
 class Dashboard extends Component{
     constructor(){
@@ -16,6 +17,7 @@ class Dashboard extends Component{
                 <HeaderDashboar/>
                 <body>
                     <ListVideo/>
+                    <Footer/>
                 </body>
             </div>
         )
