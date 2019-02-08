@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Iframe from 'react-iframe'
+import Iframe from 'react-iframe';
+import './css/Home.css';
 
 
 class HomeVideo extends Component{
@@ -7,13 +8,13 @@ class HomeVideo extends Component{
         return(
             <div>
             <Iframe url="https://fast.wistia.net/embed/iframe/dso2sjap7u"
-            width="1000px"
-            height="600px"
-            id="myId"
-            className="myClassname"
-            display="initial"
-            position="relative"
-            allowFullScreen/>
+                width="1000px"
+                height="600px"
+                id="myId"
+                className="resp-iframe"
+                display="initial"
+                position="relative"
+                allowFullScreen/>
             </div>
         )
     }
