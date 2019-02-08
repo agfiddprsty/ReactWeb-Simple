@@ -48,7 +48,8 @@ class DiscussVideo extends Component{
                             </div>
                             <div class="panel-body">
                                 panelcontent
-                                <button class="float-right btn btn-outline-primary ml-2" onClick={this.showreply} >Reply</button>
+                                <button class="float-right btn btn-outline-primary ml-2 fa fa-heart"> Like</button>
+                                <button class="float-right btn btn-outline-primary ml-2 fa fa-reply" onClick={this.showreply} > Reply</button>
                                 <div id="reply" style={{display: this.state.show ? 'block' : 'none'}}>
                                     <div class="row" id="post-review-box">
                                         <div class="col-md-12">
@@ -75,6 +76,8 @@ class DiscussVideo extends Component{
                             </div>
                             <div class="panel-body">
                                 panelcontent
+                                <button class="float-right btn btn-outline-primary ml-2 fa fa-heart"> Like</button>
+                                <button class="float-right btn btn-outline-primary ml-2 fa fa-reply" onClick={this.showreply} > Reply</button>
                             </div>
                         </div>
                     </div>
