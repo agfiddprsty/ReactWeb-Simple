@@ -10,16 +10,16 @@ class DetailVideo extends Component {
             <div>
                 <HeaderDashboard/>
                 <body>
-                    <table>
-                        <tr>
-                            <td>
+                    <div className="container">
+                        <div className="row">
+                            <div class="col">
                                 <Video/>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col">
                                 <ListVideo/>
-                            </td>
-                        </tr>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                     <DiscussVideo/>
                 </body>
             </div>

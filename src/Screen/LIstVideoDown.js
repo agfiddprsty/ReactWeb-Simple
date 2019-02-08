@@ -7,12 +7,12 @@ import rnredux from './img/rnreduxplay.png';
 class ListVideoDown extends Component{
     render(){
         return(
-            <div style={{marginLeft:"500px"}}>
-                <h3> Berikutnya</h3>
-                <div className="col-md-12">
+            <div >
+                <div className="col-md-11">
+                    <h3> Berikutnya</h3>
                     <CardDeck className="deck border border-0">
                         <Card className="border border-0"><a href="/video" className="modul">
-                            <CardImg top width="10%" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
+                            <CardImg top width="10px" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
                             <CardBody className="crdbdy">
                                 <h5>1.Perkenalan</h5>
                                 <br></br>
