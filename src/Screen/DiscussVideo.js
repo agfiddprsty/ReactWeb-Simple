@@ -41,12 +41,18 @@ class DiscussVideo extends Component{
                             </div>
                             <div class="panel-body">
                                 How To Fast Learning ?
-                                {/* <button class=" btn btn-outline-primary ml-2 fa fa-heart"> Like</button>
-                                <button class=" btn btn-outline-primary ml-2 fa fa-reply" onClick={this.showreply} > Reply</button> */}
+                                <div className="row">
+                                    <div className="col-md-auto">
+                                        <button className="btn btn-outline-primary ml-2 fa fa-heart" > Like</button>
+                                    </div>
+                                    <div className="col-md-auto">
+                                        <button class=" btn btn-outline-primary ml-2 fa fa-reply" onClick={this.showreply} > Reply</button>
+                                    </div>
+                                </div>
                                 <div id="reply" style={{display: this.state.show ? 'block' : 'none'}}>
                                     <div class="row" id="post-review-box">
-                                        <div class="col-md-12">
-                                            <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
+                                        <div class="col-md-auto">
+                                            <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your question here..." rows="5" style={{width:"600px"}}></textarea>                           
                                         </div>
                                     </div>
                                 </div>
@@ -69,8 +75,14 @@ class DiscussVideo extends Component{
                             <div class="panel-body">
                                 <p>Reply from myusername</p>
                                 Just Try Anytime :V
-                                {/* <button class="float-right btn btn-outline-primary ml-2 fa fa-heart"> Like</button>
-                                <button class="float-right btn btn-outline-primary ml-2 fa fa-reply" onClick={this.showreply} > Reply</button> */}
+                                <div className="row">
+                                    <div className="col-md-auto">
+                                        <button className="btn btn-outline-primary ml-2 fa fa-heart" > Like</button>
+                                    </div>
+                                    <div className="col-md-auto">
+                                        <button class=" btn btn-outline-primary ml-2 fa fa-reply" onClick={this.showreply} > Reply</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
