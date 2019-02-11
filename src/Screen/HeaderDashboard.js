@@ -39,10 +39,59 @@ class HeaderDashboard extends Component{
                                     <a href="/dashboard" className="nav-link">Home</a>
                                 </li>
                                 <li style={{marginRight:"10px"}} className="nav-item ml-auto">
-                                    {/* <NavItem className="d-md-down-none"> */}
-                                        {/* <NavLink href="#"><i className="fa fa-bell"></i><Badge pill color="danger">9</Badge></NavLink> */}
-                                    {/* </NavItem> */}
-                                    <i className="fa fa-bell" style={{fontsize:"24px"}}></i><Badge pill color="danger">9</Badge>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        {/* <i className="fa fa-bell" style={{fontsize:"24px"}}></i><Badge pill color="danger">9</Badge> */}
+                                        <li class="dropdown">
+                                            {/* <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notification (<b>2</b>)</a> */}
+                                            <i className="fa fa-bell " style={{fontsize:"24px"}}></i><Badge className="dropdown-toggle" data-toggle="dropdown" pill color="danger">9</Badge>                                        
+
+                                            <ul class="dropdown-menu notify-drop">
+                                                <div class="notify-drop-title">
+            	                                    <div class="row">
+            		                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                                            {/* <i className="fa fa-bell" style={{fontsize:"24px"}}></i><Badge pill color="danger">9</Badge>                                         */}
+                                                    		<div class="col-md-6 col-sm-6 col-xs-6">Unread (<b>9</b>)</div>
+                                                        </div>
+            		                                    <div class="col-md-6 col-sm-6 col-xs-6 text-right"><a href="" class="rIcon allRead" data-tooltip="tooltip" data-placement="bottom" title="Read All"><i class="fa fa-dot-circle-o"></i></a></div>
+            	                                    </div>
+                                                </div>
+                                                {/* <!-- end notify title -->
+                                                <!-- notify content --> */}
+                                                <div class="drop-content">
+                                                    <li>
+            		                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                                            <div class="notify-img">
+                                                                <img src="http://placehold.it/45x45" alt=""/>
+                                                            </div>
+                                                        </div>
+                                                        {/* <hr> */}
+            		                                    <p class="time">Şimdi</p>
+            		                                    {/* </hr> */}
+                                                    </li>
+                                                    <li>
+            		                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                                            <div class="notify-img">
+                                                                <img src="http://placehold.it/45x45" alt=""/>
+                                                            </div>
+                                                        </div>
+                                                        {/* <hr> */}
+            		                                    <p class="time">Şimdi</p>
+            		                                    {/* </hr> */}
+                                                    </li>
+                                                    <li>
+            		                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                                            <div class="notify-img">
+                                                                <img src="http://placehold.it/45x45" alt=""/>
+                                                            </div>
+                                                        </div>
+                                                        {/* <hr> */}
+            		                                    <p class="time">Şimdi</p>
+            		                                    {/* </hr> */}
+                                                    </li>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </li>
                                 
                                 <li className="nav-item ml-auto" style={{marginRight:"10px"}}>
