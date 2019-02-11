@@ -16,14 +16,14 @@ class DetailVideo extends Component {
                             <div class="col-md-auto">
                                 <Video/>
                             </div>
-                            <div class="col-md-auto" style={{marginLeft:"100px"}}>
+                            <div class="col-md-auto" >
                                 <ListVideo/>
                             </div>
+                            
                         </div>
-                        <DiscussVideo/>
+                        {/* <DiscussVideo/> */}
                     </div> 
                 </body>
-                <Footer/>
             </div>
         )
     }

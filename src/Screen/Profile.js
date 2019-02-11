@@ -7,6 +7,7 @@ import mail from './img/mail.png';
 import Header from './HeaderSilabus';
 import Footer from './Footer';
 import {withRouter,Link} from 'react-router-dom';
+import HeaderDashboard from './HeaderDashboard';
 
 class Profile extends Component {
     constructor(){
@@ -42,7 +43,7 @@ class Profile extends Component {
             <div>
                 <div className="about">
                     <div>
-                        <Header/>
+                        <HeaderDashboard/>
                     </div>
 
                 {/* <!-- About section start --> */}

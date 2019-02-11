@@ -5,6 +5,7 @@ import Fb from './img/bg.svg'
 import rnredux from './rnredux.jpg';
 import './css/video.css';
 import Iframe from 'react-iframe'
+import COmment from './DiscussVideo'
 class VideoPlayer extends Component{
     constructor(){
         super()
@@ -48,6 +49,11 @@ class VideoPlayer extends Component{
             display="initial"
             position="relative"
             allowFullScreen/>
+            <h4>THIS IS TITLE VIDEO</h4>
+            <br/>
+            <br/>
+            <br/>
+            <COmment/>
             {/* <iframe src="https://fast.wistia.net/embed/iframe/dso2sjap7u" style={{width:"100%",height:"100%"}}></iframe> */}
             </div>
         )
