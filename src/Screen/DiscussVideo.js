@@ -7,7 +7,8 @@ class DiscussVideo extends Component{
         super()
         this.showreply = this.showreply.bind(this)
         this.state={
-            show:false
+            show:false,
+            jumlahlike:"1.8rb"
         }
     }
     showreply(){
@@ -40,10 +41,15 @@ class DiscussVideo extends Component{
                                 <strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
                             </div>
                             <div class="panel-body">
+                                <div class="row">
+                                    <div className="col-md-auto">
+                                        <p className="fa fa-thumbs-up">{this.state.jumlahlike +" Like"}</p>    
+                                    </div>
+                                </div>
                                 How To Fast Learning ?
                                 <div className="row">
                                     <div className="col-md-auto">
-                                        <button className="btn btn-outline-primary ml-2 fa fa-heart" > Like</button>
+                                        <button className="btn btn-outline-primary ml-2 fa fa-thumbs-up" > Like</button>
                                     </div>
                                     <div className="col-md-auto">
                                         <button class=" btn btn-outline-primary ml-2 fa fa-reply" onClick={this.showreply} > Reply</button>
@@ -73,11 +79,20 @@ class DiscussVideo extends Component{
                                 <strong>yourusername</strong> <span class="text-muted">commented 5 days ago</span>
                             </div>
                             <div class="panel-body">
-                                <p>Reply from myusername</p>
+                                <div class="row">
+                                    <div className="col-md-auto">
+                                        <p>Reply from myusername</p>    
+                                    </div>
+                                    <div className="col-md-auto">
+                                        <p className="fa fa-thumbs-up">{this.state.jumlahlike +" Like"}</p>    
+                                    </div>
+                                </div>
+                                
                                 Just Try Anytime :V
                                 <div className="row">
                                     <div className="col-md-auto">
-                                        <button className="btn btn-outline-primary ml-2 fa fa-heart" > Like</button>
+                                        
+                                        <button className="btn btn-outline-primary ml-2 fa fa-thumbs-up" > Like</button>
                                     </div>
                                     <div className="col-md-auto">
                                         <button class=" btn btn-outline-primary ml-2 fa fa-reply" onClick={this.showreply} > Reply</button>
