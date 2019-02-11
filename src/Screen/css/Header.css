@@ -77,10 +77,5 @@ nav ul li a:hover{
   .brand {
     color: red !important;
     font-size: 20px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 50%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-left: 10px;
   }
