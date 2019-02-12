@@ -52,8 +52,14 @@ class VideoPlayer extends Component{
             <h4>THIS IS TITLE VIDEO</h4>
             <br/>
             <br/>
+            Pada video ini kita akan membuat sesuatu yang sangat keren :v 
             <br/>
-            <COmment/>
+            <br/>
+            <div style={{borderWidth:"5px",borderTop:"solid"}}>
+                <COmment/>
+
+            </div>
+            {/* <COmment/> */}
             {/* <iframe src="https://fast.wistia.net/embed/iframe/dso2sjap7u" style={{width:"100%",height:"100%"}}></iframe> */}
             </div>
         )
