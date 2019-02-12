@@ -8,52 +8,52 @@ class DashboardPaidProfile extends Component {
       return (
         <div>
             <HeaderPage/>
-                <body>
-                    <div>
-                        <div className="text-center">
+                <body style={{backgroundColor:'#fafafa'}}>
+                    <div style={{backgroundColor:'#fafafa'}}>
+                        <div className="text-center" style={{backgroundColor:'#fafafa'}}>
                         <h1 style={{
-                            fontSize:'30px',color:'#ececed',fontWeight:300, margin:'25px 0 25px 0'
+                            fontSize:'30px', backgroundColor:'#fafafa', color:'#fafafa',fontWeight:300, padding:'25px 0 0 0'
                         }}>Blank</h1>
                         </div>
                     </div>
 
-                    <div>
-                        <div class="container" style={{margin:'0 0 25px 120px', border:'1px solid black'}}>
-
-                            <h5 style={{color:'#FF0000', margin:'15px 0 0 15px'}}>Terimakasih telah Mengikuti Online Bootcamp ini</h5>
-                            <p style={{color:'#000', margin:'15px 0 0 15px'}}>Silahkan melengkapi profile Anda demi kemudahan kami dalam menyalurkan kerja dan administrasi</p>
+                    <div style={{backgroundColor:'#fafafa'}}>
+                    <div class="container" style={{width:'62%', backgroundColor:'#FFF', position:'center', margin:'', border:'1px solid #ececec'}}>
+                        <div class="col-md-12" style={{padding:'0 25px 0 25px'}}>
+                            <p style={{color:'#000', fontWeight:'200', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', padding:'10px 0 0 -15px'}}>Terimakasih telah Mengikuti Online Bootcamp ini</p>
+                            <p style={{color:'#808080', fontWeight:'200', fontSize:'1.00000000em', margin:'10px 0 0 0'}}>Silahkan melengkapi profile Anda demi kemudahan kami dalam menyalurkan kerja dan administrasi</p>
                             <br/>
 
-                            <label for="notelp">No. Telp*</label>
-                            <input type="text" minlength="10" maxlength="15" id="notelp" name="notelp" placeholder="+62">
+                            <p style={{color:'black'}} for="notelp">No. Telp*</p>
+                            <input class="form-control input-sm" type="text" minlength="10" maxlength="15" id="notelp" name="notelp" placeholder="+62">
                             </input>
 
-                            <label for="alamat">Alamat*</label>
-                            <input type="text" minlength="10" maxlength="50" id="alamat" name="alamat" placeholder="">
+                            <p style={{color:'black'}} for="alamat">Alamat*</p>
+                            <input class="form-control input-sm" type="text" minlength="10" maxlength="50" id="alamat" name="alamat" placeholder="">
                             </input>
 
-                            <label for="pendidikan">Nama Institusi Pendidikan Terakhir*</label>
-                            <input type="text" minlength="10" maxlength="20" id="pendidikan" name="pendidikan" placeholder="">
+                            <p style={{color:'black'}} for="pendidikan">Nama Institusi Pendidikan Terakhir*</p>
+                            <input class="form-control input-sm" class="form-control input-sm" type="text" minlength="10" maxlength="20" id="pendidikan" name="pendidikan" placeholder="">
                             </input>
 
-                            <label for="tempat">Tempat, Tanggal Lahir*</label>
-                            <input type="text" minlength="10" maxlength="30" id="tempat" name="tempat" placeholder="">
+                            <p style={{color:'black'}} for="tempat">Tempat, Tanggal Lahir*</p>
+                            <input class="form-control input-sm" type="text" minlength="10" maxlength="30" id="tempat" name="tempat" placeholder="">
                             </input>
                             
-                            <label for="jeniskelamin">Jenis Kelamin*</label>
-                            <input type="text" minlength="9" maxlength="9" id="jeniskelamin" name="jeniskelamin" placeholder="Laki-laki / Perempuan">
+                            <p style={{color:'black'}} for="jeniskelamin">Jenis Kelamin*</p>
+                            <input class="form-control input-sm" type="text" minlength="9" maxlength="9" id="jeniskelamin" name="jeniskelamin" placeholder="Laki-laki / Perempuan">
                             </input>
 
                         <div class="modal-footer">
-                            <a href="/dashboard"><button type="button" class="btn btn-success">Selesai</button></a>
+                            <a href="/dashboard"><button type="button" class="btn btn-success" >Selesai</button></a>
                         </div>
-
+                        </div>
                     </div>
                 </div>
                 <div>
-                        <div className="text-center">
+                        <div className="text-center" style={{backgroundColor:'#fafafa'}}>
                         <h1 style={{
-                            fontSize:'30px',color:'#ececed',fontWeight:300, margin:'25px 0 25px 0'
+                            fontSize:'30px',color:'#fafafa',fontWeight:300, padding:'10px 0 0 0'
                         }}>Blank</h1>
                         </div>
                     </div>

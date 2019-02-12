@@ -12,14 +12,14 @@ class DashboardUnpaid extends Component {
               <div>
                   <div className="text-center">
                   <h1 style={{
-                      fontSize:'30px',color:'#ececed',fontWeight:300, margin:'25px 0 25px 0'
+                      fontSize:'30px',color:'#ececec',fontWeight:300, margin:'25px 0 25px 0'
                   }}>Blank</h1>
               </div>
 
               <div>
                 <div class="container" style={{color:'#f8f9fa', margin:'' ,border:'1px solid #A9A9A9'}}>
                   <legend>
-                  <h6 style={{color:'#000000', backgroundColor:'#f2f1f2', margin:'0 0 -17px 22px', backgroundRepeat:'no-repeat', backgroundPosition:'center', backgroundSize:'cover', }}>Agreement</h6>
+                  <h6 style={{color:'#000000', backgroundColor:'#f2f1f2', margin:'0 0 -17px 22px',}}>Agreement</h6>
                   </legend>
                   
                     <div class="container" style={{color:'#f8f9fa', margin:'0 0 0 0', border:'1px solid #A9A9A9'}}>
