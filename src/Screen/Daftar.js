@@ -45,7 +45,7 @@ class Daftar extends Component {
                         </input>
                         
                         <div className="btn-block" style={{width:'100%', padding:'15px 0 15px 0'}}>
-                            <a href="/silabusnew"><button stype="button" class="btn btn-success btn-block" data-disable="Saving...">Daftar dan Kirim Silabus</button></a>
+                            <a href="/silabusnew"><button stype="button" class="btn btn-danger btn-block" data-disable="Saving...">Daftar dan Kirim Silabus</button></a>
                         </div>
                     </div>
                 </div>
