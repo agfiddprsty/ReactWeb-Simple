@@ -17,29 +17,29 @@ class Silabusnew extends Component {
                 </div>
 
                 <div style={{backgroundColor:'#fafafa'}}>
-                    <div class="container" style={{width:'62%', backgroundColor:'#FFF', position:'center', margin:'', border:'1px solid #ececec'}}>
+                    <div class="container" style={{width:'55%', backgroundColor:'#FFF', position:'center', margin:'', border:'1px solid #ececec'}}>
                         <div class="col-md-12" style={{padding:'0 25px 0 25px', backgroundColor:'#FFF'}}>
-                        <p style={{color:'#000', fontWeight:'200', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', padding:'10px 0 0 -15px'}}>
+                        <p style={{color:'#000', fontWeight:'150', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', padding:'10px 0 0 -15px'}}>
                         Tertarik dengan Materi Pembelajaran kami?
                         </p>
-                        <p style={{color:'#808080', fontWeight:'200', fontSize:'1.00000000em', margin:'-10px 0 0 0'}}>Silahkan download di sini</p>    
+                        <p style={{color:'#666666', fontWeight:'150', fontSize:'1.00000000em', margin:'-10px 0 0 0'}}>Silahkan download di sini</p>    
                           <br/>
                             <div class="row">
                                 <div className="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                                    <p style={{color:'black'}} for="fullname">Nama Lengkap</p>
-                                    <input class="form-control input-sm" type="text" id="fullname" name="fullname" placeholder="">
+                                    <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="fullname">Nama Lengkap</p>
+                                    <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="fullname" name="fullname" placeholder="">
                                     </input>
                                 </div>
-                                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                    <p style={{color:'black'}} for="email">Email</p>
-                                    <input class="form-control input-sm" type="text" id="email" name="email" placeholder="">
+                                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4" style={{padding:'0 25px 0 25px'}}>
+                                    <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="email">Email</p>
+                                    <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="email" name="email" placeholder="">
                                     </input>
                                 </div>
-                                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+                                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center" style={{padding:'0 25px 0 0'}}>
                                 <p style={{color:'#FFF'}} for="">sdv</p>
                                     <a href="/dashboardunpaid"/*silabus*/ 
-                                        style={{marginTop:'50px'}}
-                                    ><button type="button" class="btn btn-success" data-dismiss="modal">Kirim Silabus</button></a>
+                                        style={{marginTop:'50px', padding:'0 25px 0 10px'}}
+                                    ><button type="button" class="btn btn-danger" data-dismiss="modal">Kirim Silabus</button></a>
                                 </div>
                             </div>
                         </div >        
