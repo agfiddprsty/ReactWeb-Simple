@@ -9,6 +9,7 @@ import { RenderLoop } from 'brace';
 import quis from './img/quizz.jpg'
 import { ActionSettingsBrightness } from 'material-ui/svg-icons';
 import HeaderDashboard from './HeaderDashboard';
+// import { Link } from 'react-router-dom';
 
 class ListVideo extends Component {
 
@@ -20,13 +21,16 @@ return (
                 <div className="col-md-12">
                 <h3>Minggu 1</h3>
                     <CardDeck >
-                        <Card className=" border-0"><a href="/detailvideo" className="modul"> 
+                        <Card className=" border-0">
+                            <a href='/detailvideo' className="modul"> 
+                            {/* <Link to = 'https://google.com/'></Link> */}
                             <CardImg className="thumbnail-images" top width="10%" src={rnredux} alt="Card image cap" className="rounded imgcard"/>
                             <CardBody className="crdbdy">
                             <h5>1.Perkenalan</h5>
                             <br></br>
                             </CardBody>
-                            </a></Card>
+                            </a>
+                            </Card>
                         <Card className=" border-0"><a href="/detailvideo" className="modul">
                             <CardImg top width="10%" src={rnredux} alt="Card image cap" className="rounded"/>
                             <CardBody className="crdbdy">
