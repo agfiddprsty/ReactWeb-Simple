@@ -81,7 +81,7 @@ nav ul li a:hover{
   }
 
 .navbar-default  .dropdown-menu.notify-drop {
-  min-width: 330px;
+  min-width: 260px;
   background-color: #fff;
   min-height: 360px;
   max-height: 360px;

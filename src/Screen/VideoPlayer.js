@@ -49,15 +49,19 @@ class VideoPlayer extends Component{
             display="initial"
             position="relative"
             allowFullScreen/>
-            <h4>THIS IS TITLE VIDEO</h4>
+            <h2 style={{width:"800px",marginTop:"1%"}}>1.Perkenalan</h2>
             <br/>
             <br/>
-            Pada video ini kita akan membuat sesuatu yang sangat keren :v 
+            <h5 style={{width:"800px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h5>
+             
             <br/>
             <br/>
-            <div style={{borderWidth:"5px",borderTop:"solid"}}>
-                <COmment/>
+            <br/>
+            <br/>
 
+            <div style={{borderWidth:"1px",borderTop:"solid",width:"800px"}}>
+                <br/>
+                <COmment/>
             </div>
             {/* <COmment/> */}
             {/* <iframe src="https://fast.wistia.net/embed/iframe/dso2sjap7u" style={{width:"100%",height:"100%"}}></iframe> */}
