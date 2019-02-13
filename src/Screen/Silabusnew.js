@@ -26,12 +26,12 @@ class Silabusnew extends Component {
                           <br/>
                             <div class="row">
                                 <div className="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                                    <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="fullname">Nama Lengkap</p>
+                                    <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="fullname">Nama Lengkap<span style={{color:'red'}}>*</span></p>
                                     <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="fullname" name="fullname" placeholder="">
                                     </input>
                                 </div>
                                 <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4" style={{padding:'0 25px 0 25px'}}>
-                                    <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="email">Email</p>
+                                    <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="email">Email<span style={{color:'red'}}>*</span></p>
                                     <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="email" name="email" placeholder="">
                                     </input>
                                 </div>
