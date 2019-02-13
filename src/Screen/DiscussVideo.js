@@ -22,14 +22,20 @@ class DiscussVideo extends Component{
                 </h3>
                 <div  >
                     <div class="row" id="post-review-box" >
-                        <div class="col-md-auto">
-                            <textarea class="form-control animated" cols="150" id="new-review" name="comment" placeholder="Enter your question here..." rows="5" style={{width:"800px"}}></textarea>
-                            <button class=" btn btn-outline-primary"style={{marginLeft:"700px"}} > Submit</button>
+                        <div class="col-sm-2">
+                            {/* <div class="thumbnail"> */}
+                                <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"/>
+                            {/* </div> */}
+                        </div>
+                        <div class="col-sm-10" style={{marginTop:"30px"}}>
+                            {/* <textarea class="form-control animated" cols="150" id="new-review" name="comment" placeholder="Enter your question here..." rows="5" style={{width:"800px"}}></textarea> */}
+                            <input style={{borderStyle:"none none solid none",width:"650px"}} placeholder="Write A Comment"></input>
+                            <button class=" btn btn-outline-primary"style={{marginLeft:"550px"}} > Submit</button>
                         </div>
                     </div>
                 </div>
               
-                <div class="row"> 
+                <div class="row" style={{marginTop:"30px"}}> 
                     <div class="col-sm-2">
                         <div class="thumbnail">
                             <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"/>
@@ -56,9 +62,16 @@ class DiscussVideo extends Component{
                                     </div>
                                 </div>
                                 <div id="reply" style={{display: this.state.show ? 'block' : 'none'}}>
-                                    <div class="row" id="post-review-box">
-                                        <div class="col-md-auto">
-                                            <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your question here..." rows="5" style={{width:"600px"}}></textarea>                           
+                                    <div class="row" id="post-review-box" style={{marginTop:"30px"}}>
+                                        <div class="col-sm-auto">
+                                            {/* <div class="thumbnail"> */}
+                                            <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{width:"50px",height:"50px"}}/>
+                                            {/* </div> */}
+                                        </div>
+                                        <div class="col-sm-10">
+                                            {/* <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your question here..." rows="5" style={{width:"600px"}}></textarea>                            */}
+                                            <input style={{borderStyle:"none none solid none",width:"550px"}} placeholder="Write A Comment"></input>
+                                            <button class=" btn btn-outline-primary"style={{marginLeft:"475px"}} > Submit</button>
                                         </div>
                                     </div>
                                 </div>

@@ -52,14 +52,18 @@ class VideoPlayer extends Component{
             <h2 style={{width:"800px",marginTop:"1%"}}>1.Perkenalan</h2>
             <br/>
             <br/>
-            <h5 style={{width:"800px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h5>
-             
+            <div style={{borderWidth:"1px",borderTop:"solid",width:"800px",borderColor:"#E7E7E7"}}>
+                <br/>
+                <br/>
+                <h3>Deskripsi: </h3>
+                <h6 style={{width:"800px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h6>
+            </div>             
             <br/>
             <br/>
             <br/>
             <br/>
 
-            <div style={{borderWidth:"1px",borderTop:"solid",width:"800px"}}>
+            <div style={{borderWidth:"1px",borderTop:"solid",width:"800px",borderColor:"#E7E7E7"}}>
                 <br/>
                 <COmment/>
             </div>
