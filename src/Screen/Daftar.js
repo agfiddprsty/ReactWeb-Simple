@@ -20,28 +20,24 @@ class Daftar extends Component {
             <div>
                 <div class="container" style={{width:'55%', backgroundColor:'#FFF', position:'center', margin:'', border:'1px solid #ececec'}}>
                     <div class="col-md-12" style={{padding:'0 25px 0 25px'}}>
-                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="fname">Nama Depan</p>
+                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="fname">Nama Depan<span style={{color:'red'}}>*</span></p>
                         <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="fname" name="firstname" placeholder="">
                         </input>
 
-                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="lname">Nama Belakang</p>
+                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="lname">Nama Belakang<span style={{color:'red'}}>*</span></p>
                         <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="lname" name="lastname" placeholder="">
                         </input>
 
-                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="email">Email</p>
+                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="email">Email<span style={{color:'red'}}>*</span></p>
                         <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="email" name="email" placeholder="">
                         </input>
 
-                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="adress">Alamat</p>
-                        <textarea class="form-control imput-sm" id="FormControlTextarea" rows="12" type="text" id="adress" name="adress" placeholder="" style={{height:'75px', paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}}>
-                        </textarea>
-
-                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="password">Password</p>
-                        <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="password" name="password" placeholder="">
+                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="password">Password<span style={{color:'red'}}>*</span></p>
+                        <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em', marginBottom:'16px'}} type="password" id="password" name="password" placeholder="">
                         </input>
 
-                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="email">Konfirmasi Password</p>
-                        <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="confirmpass" name="confirmpass" placeholder="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="confirmpass">Konfirmasi Password<span style={{color:'red'}}>*</span></p>
+                        <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em', marginBottom:'16px'}} type="password" id="confirmpass" name="confirmpass" placeholder="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
                         </input>
                         
                         <div className="btn-block" style={{width:'100%', padding:'15px 0 15px 0'}}>

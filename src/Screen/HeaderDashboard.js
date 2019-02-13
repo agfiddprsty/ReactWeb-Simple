@@ -49,7 +49,7 @@ class HeaderDashboard extends Component{
             	                                    <div class="row">
             		                                    <div class="col-md-auto">
                                                             {/* <div class="col-md-2 col-sm-2 col-xs-2">Unread (<b>9</b>)</div> */}
-                                                            Unread (<b>9</b>)
+                                                            Unread (<b>2</b>)
                                                         </div>
             		                                    <div class="col-md-6 col-sm-6 col-xs-6 text-right"><a href="" class="rIcon allRead" data-tooltip="tooltip" data-placement="bottom" title="Read All"><i class="fa fa-dot-circle-o"></i></a></div>
             	                                    </div>
@@ -57,23 +57,6 @@ class HeaderDashboard extends Component{
                                                 {/* <!-- end notify title -->
                                                 <!-- notify content --> */}
                                                 <div class="drop-content">
-                                                    {/* <li>
-                                                        <div class="col-md-3">
-                                                            <div class="notify-img">
-                                                                <img src="http://placehold.it/45x45" alt=""/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-auto">
-                                                            <a href="">Ahmet</a> yorumladı. 
-                                                            <a href="">Çicek bahçeleri...</a> 
-                                                            <a href="" class="rIcon">
-                                                                <i class="fa fa-dot-circle-o"></i>
-                                                            </a> */}
-                                                        
-                                                        {/* <hr/> */}
-                                                        {/* <p class="time">Şimdi</p>
-            		                                    </div>
-                                                    </li> */}
                                                     <li>
             		                                    {/* <div class="col-md-auto">
                                                             <div class="notify-img">
@@ -81,13 +64,13 @@ class HeaderDashboard extends Component{
                                                             </div>
                                                         </div> */}
             		                                    <div class="col-md-auto">
-                                                        <a href="">Ahmet</a> yorumladı. 
-                                                        <a href="">Çicek bahçeleri...</a>
+                                                        <a href="">Admin</a> 
+                                                        {/* <a href="">Çicek bahçeleri...</a> */}
                                                         <a href="" class="rIcon">
                                                             <i class="fa fa-dot-circle-o"></i>
                                                         </a>
-                                                        <p>Lorem ipsum sit dolor amet consilium.</p>
-                                                        <p class="time">2 Hafta önce</p>
+                                                        <p>Terima Kasih Pembayaran Sudah Disetujui</p>
+                                                        {/* <p class="time">2 Hafta önce</p> */}
             		                                    </div>
             	                                    </li>
                                                     <li>
@@ -97,29 +80,12 @@ class HeaderDashboard extends Component{
                                                             </div>
                                                         </div> */}
             		                                    <div class="col-md-auto">
-                                                        <a href="">Ahmet</a> yorumladı. 
-                                                        <a href="">Çicek bahçeleri...</a>
+                                                        <a href="">Admin</a> 
                                                         <a href="" class="rIcon">
                                                             <i class="fa fa-dot-circle-o"></i>
                                                         </a>
-                                                        <p>Lorem ipsum sit dolor amet consilium.</p>
-                                                        <p class="time">2 Hafta önce</p>
-            		                                    </div>
-            	                                    </li>
-                                                    <li>
-            		                                    {/* <div class="col-md-auto">
-                                                            <div class="notify-img">
-                                                                <img src="http://placehold.it/45x45" alt=""/>
-                                                            </div>
-                                                        </div> */}
-            		                                    <div class="col-md-auto">
-                                                        <a href="">Ahmet</a> yorumladı. 
-                                                        <a href="">Çicek bahçeleri...</a>
-                                                        <a href="" class="rIcon">
-                                                            <i class="fa fa-dot-circle-o"></i>
-                                                        </a>
-                                                        <p>Lorem ipsum sit dolor amet consilium.</p>
-                                                        <p class="time">2 Hafta önce</p>
+                                                        <p>Selamat Anda Diterima di Bootcamps</p>
+                                                        {/* <p class="time">2 Hafta önce</p> */}
             		                                    </div>
             	                                    </li>
                                                 </div>
