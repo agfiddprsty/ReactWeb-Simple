@@ -1,14 +1,17 @@
 .isii{
-    margin: 0 15% 0 15%;
+    /* margin: 0 15% 0 15%; */
     height: 100%;
+    background-color: #fafafa;
+    padding-bottom: 65px;
 }
 .kotak{
     width: 800px;
-    margin-top: 50px;
-    border-width: 1px;
-    border-color: black;
     background-color: white;
+    position: relative;
+    padding-left: 50px;
     justify-content: center;
+    box-shadow: 0 0 7px 0px rgba(136, 136, 136, 0.329);
+    margin-top: 50px;
     align-items: center;
 }
 
