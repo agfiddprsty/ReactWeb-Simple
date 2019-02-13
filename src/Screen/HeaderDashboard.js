@@ -27,8 +27,10 @@ class HeaderDashboard extends Component{
             <div className="Hom">
                 <header className="Hom-header bg-light">
                     <nav className="navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light navbar-default">
-                        <a style={{textAlign:"left"}}class="brand" href="/dashboard">DumbWays.id</a>
-
+                        {/* <a style={{textAlign:"left"}}class="brand" href="/dashboard">DumbWays.id</a> */}
+                        <a href="/dashboard">
+                            <img alt="" src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://www.filepicker.io/api/file/mWcP190oTCqiAo5VjrE8"/>
+                        </a>
                         {/* <!-- Toggler/collapsibe Button --> */}
                         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                             <span class="navbar-toggler-icon"></span>
