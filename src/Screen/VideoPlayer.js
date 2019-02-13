@@ -49,7 +49,7 @@ class VideoPlayer extends Component{
             display="initial"
             position="relative"
             allowFullScreen/>
-            <h2 style={{width:"800px",marginTop:"1%"}}>1.Perkenalan</h2>
+            <h2 style={{width:"800px",marginTop:"1%"}}>1. Perkenalan</h2>
             <br/>
             <br/>
             <h5 style={{width:"800px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h5>

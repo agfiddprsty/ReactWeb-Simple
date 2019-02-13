@@ -1,54 +1,50 @@
 import React, { Component } from 'react';
-import Footer from './Footer.js';
+import dwicon from './img/dwicon.png';
 import './css/Daftar.css';
 
 class Daftar extends Component {
     render() {
       return (
-        <div style={{backgroundColor:'#fafafa'}}>
+        <div style={{backgroundColor:'#FFF'}}>
             <div>
-                <div className="text-center">
-                    <h1 style={{color:'#000', fontWeight:'300', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'2.25000000em', lineHeight:'1.68421053em', display:'block', padding:'50px 0 25px 0',
-                    }}>Daftar Sekarang</h1>
-
-                    <p style={{color:'#666666', fontWeight:'150', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.25000000em', lineHeight:'1.68421053em', display:'block', marginBlockStart:'1em', marginBlockEnd:'1em', marginInlineStart:'0px', marginInlineEnd:'0px', margin:'0 300px 50px 300px'}}>
-                    Bergabunglah bersama kami, website Pemrograman Fullstack Mobile dan Web Developer. Mempelajari bahasa Pemrograman JavaScript, NodeJs., Laravel, React, Redux, django, MySQL, express.
+                <div className="text-title" style={{padding:'100px 0 0 600px'}}>
+                    <img alt='' src={dwicon} style={{margin:'0 0 0 140px'}}/>
+                    <h1 style={{color:'##3B3B3B', fontWeight:'525', fontFamily:'Circular Std Black, sans-serif;', fontSize:'2.00000000em',display:'block', margin:'0 0 0 140px',
+                    }}>Selamat datang di Squad </h1>
+                    <p style={{color:'#666666', fontWeight:'400', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.297550000em', display:'block', margin:'0 0 15px 140px'}}>
+                    Screencast Pemrograman Zaman Now
                     </p>
                 </div>
             </div>
 
-            <div>
-                <div class="container" style={{width:'55%', backgroundColor:'#FFF', position:'center', margin:'', border:'1px solid #ececec'}}>
+            <div style={{padding:'0 0 0 630px'}}>
+                <div class="container" style={{boxShadow:'0 0 7px 0 rgba(136, 136, 136, 0.4)', width:'70%', backgroundColor:'#FFF', position:'center', margin:'', border:'1px solid #ececec'}}>
                     <div class="col-md-12" style={{padding:'0 25px 0 25px'}}>
-                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="fname">Nama Depan<span style={{color:'red'}}>*</span></p>
-                        <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="fname" name="firstname" placeholder="">
+                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="fname">Nama Lengkap</p>
+                        <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="fullname" name="fullname" placeholder="">
                         </input>
 
-                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="lname">Nama Belakang<span style={{color:'red'}}>*</span></p>
-                        <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="lname" name="lastname" placeholder="">
-                        </input>
-
-                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="email">Email<span style={{color:'red'}}>*</span></p>
+                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="email">Email</p>
                         <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="email" name="email" placeholder="">
                         </input>
 
-                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="password">Password<span style={{color:'red'}}>*</span></p>
+                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="password">Password</p>
                         <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em', marginBottom:'16px'}} type="password" id="password" name="password" placeholder="">
                         </input>
 
-                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="confirmpass">Konfirmasi Password<span style={{color:'red'}}>*</span></p>
+                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="confirmpass">Konfirmasi Password</p>
                         <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em', marginBottom:'16px'}} type="password" id="confirmpass" name="confirmpass" placeholder="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
                         </input>
                         
-                        <div className="btn-block" style={{width:'100%', padding:'15px 0 15px 0'}}>
-                            <a href="/silabusnew"><button stype="button" class="btn btn-danger btn-block" >Daftar dan Kirim Silabus</button></a>
+                        <div className="text-center btn-lg" style={{width:'95%', padding:'15px 0 15px 0'}}>
+                            <a href="/payment"><button type="button" class="btn btn-danger btn-lg" style={{padding:'15px 125px 15px 125px', borderRadius:'0', boxShadow:'0 0 15px 0 rgba(136, 136, 136, 0.4)'}} >Daftar Sekarang</button></a>
                         </div>
                     </div>
                 </div>
-            <br/>
-            <br/>
             </div>
-        <Footer />
+            <br/>
+            <br/>
+            <br/>
         </div>
         
       );
