@@ -16,31 +16,30 @@ class Payment extends Component {
                     <HeaderDashboard/>
                 </div>
                 <div className="kontener">
-                    <div className="kotak">
+                    <section className="kotak">
                         <h2 style={{
-                            height:'50px',textAlign:'left',color:'black', fontWeight:'600', marginTop: '30px', marginLeft: '20px'
-                        }}>Pembayaran Pendaftaran Dibutuhkan!</h2>
-                        <p style={{
-                            height:'auto', marginLeft: '20px'
-                        }}> silahkan membayar biaya  pendaftaran online bootcamp sebesar **IDR 500.000,-** untuk dapat</p>
-                        <p style={{marginLeft:'20px'}}> mengakses konten kami.</p>
-                        <h6 style={{
-                            height:'auto',textAlign:'left',color:'black', marginTop: "30px", marginLeft: '20px'
-                        }}>Silahkan Kirim ke Rekening Berikut:</h6>
-                        <div>
-                        <img className="rounded" src={bca} alt="" style={{width:'10%',height:'50px', marginLeft: '20px'}}/> 
-                            <span style={{color: '#989898'}}> BCA  320 0401 823 a.n Ega Wachid</span>
+                            height:'50px',textAlign:'left',color:'black', fontWeight:'600', marginTop: '30px'
+                        }}>Pembayaran pendaftaran dibutuhkan</h2>
+                        <span style={{
+                            height:'auto', color: '#000'
+                        }}> silahkan membayar biaya  pendaftaran online bootcamp sebesar IDR 500.000 untuk dapat</span>
+                        <span style={{ color: '#000'}}> mengakses konten kami.</span>
+                        <div style={{marginBottom: '30px'}}>
+                            <img className="rounded" src={bca} alt="" style={{marginLeft: '-25px', width:'20%'}}/> 
+                            <span style={{fontWeight: '600'}}> BCA  320 0401 823 a/n Ega Wachid</span>
                             <br></br>
-                            <img className="rounded" src={mandiri} alt="" style={{width:'10%', marginLeft: '20px'}}/> 
-                            <span style={{color: '#989898'}}> MANDIRI  90000 2773 5407 a.n Ega Wachid</span>
+                            <img className="rounded" src={mandiri} alt="" style={{marginLeft: '-20px', width:'20%'}}/> 
+                            <span style={{marginBottom: '50px', fontWeight: '600'}}> MANDIRI  90000 2773 5407 a/n Ega Wachid</span>
                         </div>
+                    </section>
+                    <div className="text-center">
                         <h6 style={{
-                            height:'auto',color:'black', marginTop: '20px', marginLeft: '20px'
+                            height:'auto',color:'black', marginTop: '50px', marginLeft: '20px'
                         }}>Silahkan Konfirmasi, jika sudah melakukan pembayaran, melalui:</h6>
                         <div>
-                            <img src={whatsapp} alt="" style={{width:'6%', marginLeft: '20px'}}/> 
-                        <img src={telegram} alt="" style={{width:'5%', marginLeft: '10px'}}/> 
-                            <span style={{marginLeft: '20px', color: '#989898'}}>  +62 8564 1278 479</span>
+                            <img src={telegram} alt="" style={{width:'3%'}}/> 
+                            <img src={whatsapp} alt="" style={{width:'4%', marginLeft: '10px'}}/> 
+                            <span style={{marginLeft: '10px'}}>  +62 8564 1278 479</span>
                             <br/>
                             <br/>
                         </div>
