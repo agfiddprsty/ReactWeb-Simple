@@ -52,7 +52,7 @@ class VideoPlayer extends Component{
             <h2 style={{width:"800px",marginTop:"1%"}}>1.Perkenalan</h2>
             <br/>
             <br/>
-            <div style={{borderWidth:"1px",borderTop:"solid",width:"800px"}}>
+            <div style={{borderWidth:"1px",borderTop:"solid",width:"800px",borderColor:"#E7E7E7"}}>
                 <br/>
                 <br/>
                 <h3>Deskripsi: </h3>
@@ -63,7 +63,7 @@ class VideoPlayer extends Component{
             <br/>
             <br/>
 
-            <div style={{borderWidth:"1px",borderTop:"solid",width:"800px"}}>
+            <div style={{borderWidth:"1px",borderTop:"solid",width:"800px",borderColor:"#E7E7E7"}}>
                 <br/>
                 <COmment/>
             </div>

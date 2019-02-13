@@ -4,11 +4,15 @@ import { Card, CardImg, CardDeck,
     CardBody, Progress } from 'reactstrap';   
 import rnredux from './img/rnreduxplay.png';
 import './css/ListVideo.css';
+import ProgressDetail from './ProgressDetail';
+// import { Progress } from 'reactstrap';
 
 class ListVideoDown extends Component{
     render(){
         return(
-            <div >
+            <div>
+                <ProgressDetail/>
+                <br/>
                 <h5>Berikutnya</h5>
                 <div className="col-md-10">
                     <div className="scrollbar scrollbar-primary">
