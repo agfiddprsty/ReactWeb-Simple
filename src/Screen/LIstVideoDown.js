@@ -12,6 +12,8 @@ class ListVideoDown extends Component{
         return(
             <div>
                 {/* <ProgressDetail/> */}
+<<<<<<< HEAD
+=======
                 <div>
                     <Card style={{width:"250px"}} color="#000">
                     {/* <CardTitle style={{backgroundColor:"#FF6567"}}>
@@ -26,6 +28,7 @@ class ListVideoDown extends Component{
                         </CardBody>
                     </Card>
                 </div>
+>>>>>>> 1311ba4714e8258fdc5cd442dde51176f558b76d
                 <br/>
                 <h5>Berikutnya</h5>
                 <div className="col-md-10">
