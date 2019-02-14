@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Card, CardImg, CardDeck,
     CardBody, Progress } from 'reactstrap';   
 import {withRouter,Link} from 'react-router-dom';
-import rnredux from './img/rnredux.jpg';
+import rnredux from './img/rnreduxplayred.png';
 import './css/ListVideo.css';
 import {Input, InputGroupAddon, Button } from 'reactstrap';
 import { RenderLoop } from 'brace';
@@ -31,7 +31,7 @@ return (
                                 <i class="fa fa-play"></i>
                             </a>
                         </div>
-                            <h5>1. Perkenalan <span className="fa fa-clock-o" style={{fontSize:'15px',color:"red", marginLeft:"260px"}}> 04.32</span></h5>
+                            <h5>1. Perkenalan <p className="fa fa-clock-o" style={{fontSize:'15px',color:"red",marginLeft:"255px"}}> 04.32</p></h5>
                             <br></br>
                             </CardBody>
                             </a>
@@ -45,14 +45,14 @@ return (
                         </a>
 
                         </div>
-                            <h5>2. Instalasi <span className="fa fa-clock-o" style={{fontSize:'15px',color:"red", marginLeft:"270px"}}> 04.32</span> </h5>
+                            <h5>2. Instalasi <p className="fa fa-clock-o" style={{fontSize:'15px',color:"red", marginLeft:"255px"}}> 04.32</p> </h5>
                             <br></br>
                             </CardBody>
                         </a></Card>
                         <Card className=" border-0"><a href="/detailvideo" className="modul">
                             <CardImg top width="10%" src={rnredux} alt="Card image cap" className="rounded"/>
                             <CardBody className="crdbdy">
-                            <h5>3. Component <span className="fa fa-clock-o" style={{fontSize:'15px',color:"red",marginLeft:"260px"}}> 04.32</span> </h5>
+                            <h5>3. Component <p className="fa fa-clock-o" style={{fontSize:'15px',color:"red",marginLeft:"255px"}}> 04.32</p> </h5>
                             <br></br>
                             </CardBody>
                         </a></Card>
@@ -60,7 +60,7 @@ return (
                             <CardImg top width="10%" src={rnredux} alt="Card image cap" className="rounded"/>
                             <CardBody className="crdbdy">
 
-                            <h5>4. Character <span className="fa fa-clock-o" style={{fontSize:'15px',color:"red", marginLeft:"260px"}}> 04.32</span> </h5>
+                            <h5>4. Character <p className="fa fa-clock-o" style={{fontSize:'15px',color:"red", marginLeft:"255px"}}> 04.32</p> </h5>
                             <br></br>
                             </CardBody>
                         </a></Card>
@@ -71,21 +71,21 @@ return (
                         <Card className=" border-0"><a href="/detailvideo" className="modul">
                             <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
                             <CardBody className="crdbdy">
-                            <h5>4. Kuis Mingguan #1 <span className="fa fa-clock-o" style={{fontSize:'15px',color:"red", marginLeft:"260px"}}> 04.32</span> </h5>
+                            <h5>4. Kuis Mingguan #1 <span className="fa fa-level-up" style={{fontSize:'15px',color:"green", marginLeft:"264px"}}> Level</span> </h5>
                             <br></br>
                             </CardBody>
                             </a></Card>
                         <Card className="border-0"><a href="/detailvideo" className="modul">
                             <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
                             <CardBody className="crdbdy">
-                            <h5>2. Instalasi <span className="fa fa-clock-o" style={{fontSize:'15px',color:"red", marginLeft:"260px"}}> 04.32</span> </h5>
+                            <h5>2. Instalasi <p className="fa fa-clock-o" style={{fontSize:'15px',color:"red", marginLeft:"255px"}}> 04.32</p> </h5>
                             <br></br>
                             </CardBody>
                         </a></Card>
                         <Card className="border-0"><a href="/detailvideo" className="modul">
                             <CardImg top width="100%" src={rnredux} alt="Card image cap" className="rounded"/>
                             <CardBody className="crdbdy">
-                            <h5>3. Component <span className="fa fa-clock-o" style={{fontSize:'15px',color:"red", marginLeft:"260px"}}> 04.32</span> </h5>
+                            <h5>3. Component <p className="fa fa-clock-o" style={{fontSize:'15px',color:"red", marginLeft:"255px"}}> 04.32</p> </h5>
                             <br></br>
                             </CardBody>
                         </a></Card>
@@ -93,7 +93,7 @@ return (
                             <CardImg top width="10%" src={rnredux}  alt="Card image cap" className="rounded"/>
                             <CardBody className="crdbdy">
 
-                            <h5>4. Character<span className="fa fa-clock-o" style={{fontSize:'15px',color:"red", marginLeft:"260px"}}> 04.32</span> </h5>
+                            <h5>4. Character<p className="fa fa-clock-o" style={{fontSize:'15px',color:"red", marginLeft:"255px"}}> 04.32</p> </h5>
                             <br></br>
                             </CardBody>
                         </a></Card>
