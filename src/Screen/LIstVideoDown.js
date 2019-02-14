@@ -12,23 +12,22 @@ class ListVideoDown extends Component{
         return(
             <div>
                 {/* <ProgressDetail/> */}
-<<<<<<< HEAD
-=======
                 <div>
-                    <Card style={{width:"250px"}} color="#000">
+                    <Card style={{marginLeft:"100px",width:"300px"}} color="#000">
                     {/* <CardTitle style={{backgroundColor:"#FF6567"}}>
                         <h2>Progress</h2>
                     </CardTitle> */}
                     
-                        <CardBody style={{backgroundColor:"#FF6567"}}>
+                        <div>
+                        <CardBody style={{marginRight:"100px",height:"50%",backgroundColor:"#FF6567"}}>
                             <h2 style={{color:"#FFF"}}>Progress</h2>
                             <Progress value="25"></Progress>
                             <label style={{marginLeft:"190px",marginTop:"10px",color:"#FFF"}}>25%</label>
                             {/* <font style={{marginLeft:"190px",marginTop:"10px"}}color="">25%</font> */}
                         </CardBody>
+                        </div>
                     </Card>
                 </div>
->>>>>>> 1311ba4714e8258fdc5cd442dde51176f558b76d
                 <br/>
                 <h5>Berikutnya</h5>
                 <div className="col-md-10">
