@@ -11,7 +11,7 @@ class ListVideoDown extends Component{
     render(){
         return(
             <div>
-                <ProgressDetail/>
+                {/* <ProgressDetail/> */}
                 <br/>
                 <h5>Berikutnya</h5>
                 <div className="col-md-10">
