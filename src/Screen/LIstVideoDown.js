@@ -12,7 +12,7 @@ class ListVideoDown extends Component{
         return(
             <div>
                 {/* <ProgressDetail/> */}
-                <div style={{width:"250px",backgroundColor:"#FF6567",height:"130px",borderRadius:"10px"}}>
+                <div style={{width:"340px",backgroundColor:"#FF6567",height:"130px",borderRadius:"10px"}}>
                     {/* <Card style={{width:"250px"}} color="#000"> */}
                     {/* <CardTitle style={{backgroundColor:"#FF6567"}}>
                         <h2>Progress</h2>
@@ -20,7 +20,9 @@ class ListVideoDown extends Component{
                     <br/>
                     <h2 style={{color:"#FFF",marginLeft:"20px",borderRadius:"10px"}}>Progress</h2>
                     <Progress style={{width:"100",marginLeft:"20px",marginRight:"20px"}} value="25"></Progress>
-                    <font style={{marginLeft:"190px",marginTop:"10px"}}color="#FFF">25%</font>
+                    {/* <br/> */}
+                    {/* <font style={{marginLeft:"290px"}}color="#FFF">25%</font> */}
+                    <label style={{marginLeft:"290px",marginTop:"10px",color:"#FFF"}}>25%</label>
                         {/* <CardBody style={{backgroundColor:"#FF6567"}}>
                             <h2 style={{color:"#FFF"}}>Progress</h2>
                             <Progress value="25"></Progress>
@@ -36,7 +38,7 @@ class ListVideoDown extends Component{
                 </div>
 
                 <br/>
-                <div style={{borderTop:"solid",borderColor:"#E7E7E7",width:"250px"}}></div>
+                <div style={{borderTop:"solid",borderColor:"#E7E7E7",width:"340px"}}></div>
                 <br/>
                 <h5>Berikutnya</h5>
                 <div className="col-md-10">
