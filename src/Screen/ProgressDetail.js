@@ -5,12 +5,15 @@ class ProgressDetail extends Component{
         return(
             <div>
                 <Card style={{width:"250px"}} color="#000">
-                <CardTitle style={{backgroundColor:"#FF6567"}}>
+                {/* <CardTitle style={{backgroundColor:"#FF6567"}}>
                     <h2>Progress</h2>
-                </CardTitle>
-                <CardBody style={{backgroundColor:"#FF6567"}}>
-                    <Progress value="25"></Progress>
-                </CardBody>
+                </CardTitle> */}
+                
+                    <CardBody style={{backgroundColor:"#FF6567"}}>
+                        <h2>Progress</h2>
+                        <Progress value="25"></Progress>
+                        
+                    </CardBody>
                 </Card>
             </div>
         )
