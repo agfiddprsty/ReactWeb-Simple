@@ -28,8 +28,11 @@ class ListVideoDown extends Component{
                             <font style={{marginLeft:"190px",marginTop:"10px"}}color="">25%</font>
                         </CardBody>
                     </Card> */}
+                
                 </div>
 
+                <br/>
+                <div style={{borderTop:"solid",borderColor:"#E7E7E7",width:"250px"}}></div>
                 <br/>
                 <h5>Berikutnya</h5>
                 <div className="col-md-10">
@@ -128,6 +131,7 @@ class ListVideoDown extends Component{
                         </div>
                     </div>
                 </div>
+               
             </div>
         )
     }
