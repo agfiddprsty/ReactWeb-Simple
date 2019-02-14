@@ -18,21 +18,24 @@ class DashboardPaidProfile extends Component {
             <div>
                 <div class="container" style={{boxShadow:'0 0 7px 0 rgba(136, 136, 136, 0.4)', width:'37%', backgroundColor:'#FFF', position:'center', margin:'', border:'1px solid #ececec'}}> 
                     <div class="col-md-12" style={{padding:'0 25px 0 25px'}}>
-                        <p class="input-prefix" style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="notelp">Nomor Telepon</p>
-                        <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" minlength="10" maxlength="15" id="notelp" name="notelp" placeholder="+62 &nbsp;">
-                        </input>
+                    <form class="login100-form validate-form">
 
-                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="addres">Alamat Rumah</p>
-                        <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="addres" name="addres" placeholder="">
-                        </input>
-                            
-                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="name-last-education">Nama Institusi Pendidikan Terakhir</p>
-                        <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="name-last-education" name="name-last-education" placeholder="">
-                        </input>
-                    
-                        <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="confirmpass">Konfirmasi Password</p>
-                        <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em', marginBottom:'16px'}} type="password" id="confirmpass" name="confirmpass" placeholder="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-                        </input>
+                        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                            <input class="input100" type="email" name="email" placeholder="Email"/>
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate = "Password is required">
+                            <input class="input100" type="password" name="pass" placeholder="Password"/>
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </form>
 
                             <div className="text-center btn-lg" style={{width:'95%', padding:'15px 0 15px 283px'}}>
                                 <a href="/dashboard">
