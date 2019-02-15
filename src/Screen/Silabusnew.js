@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-
+import Header from './HeaderPage'
 class Silabusnew extends Component {
     render() {
       return (
         <div style={{backgroundColor:'#FFF'}}>
-            
-            <div className="jumbotron jumbotron-fluid imagelanding" style={{height: "650px"}}>
+            <Header/>
+            <body style={{backgroundColor:'#FFF'}}>
+            <div className="jumbotron jumbotron-fluid gmbrlanding" style={{height: "650px"}}>
+                <h4 className="card-title text-center title">Menjadi Fullstack Mobile Developer <br/>Professional dan Disalurkan Kerja</h4>
             </div>
               
                 <div className="text-title">
@@ -42,6 +44,7 @@ class Silabusnew extends Component {
                         </div>
                     </div>
                 </div>
+                </body>
         </div>
         );
     }
