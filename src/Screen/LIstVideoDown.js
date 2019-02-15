@@ -13,7 +13,7 @@ class ListVideoDown extends Component{
                     <div className="scrollbar scrollbar-primary">
                         <div class="force-overflow">
                             <CardDeck>
-                                <Card className="border-0"><a href="/video" className="modul">
+                                <Card className="border-0"><a href="/detailvideo" className="modul">
                                     <CardImg src={rnredux} alt="Card image cap" className="rounded imgcard" style={{height:"50%"}}/>
                                         <CardBody className="crdbdy">
                                             <h5>1.Perkenalan</h5>
@@ -23,7 +23,7 @@ class ListVideoDown extends Component{
                                 </Card>
                             </CardDeck>
                             <CardDeck>
-                                <Card className="border-0"><a href="/video" className="modul">
+                                <Card className="border-0"><a href="/detailvideo" className="modul">
                                     <CardImg src={rnredux} alt="Card image cap" className="rounded imgcard" style={{height:"50%"}}/>
                                         <CardBody className="crdbdy">
                                             <h5>1.Perkenalan</h5>
@@ -33,7 +33,17 @@ class ListVideoDown extends Component{
                                 </Card>
                             </CardDeck>
                             <CardDeck>
-                                <Card className="border-0"><a href="/video" className="modul">
+                                <Card className="border-0"><a href="/detailquiz" className="modul">
+                                    <CardImg src={rnredux} alt="Card image cap" className="rounded imgcard" style={{height:"50%"}}/>
+                                        <CardBody className="crdbdy">
+                                            <h5>Quiz</h5>
+                                            <br></br>
+                                        </CardBody>
+                                    </a>
+                                </Card>
+                            </CardDeck>
+                            <CardDeck>
+                                <Card className="border-0"><a href="/detailvideo" className="modul">
                                     <CardImg src={rnredux} alt="Card image cap" className="rounded imgcard" style={{height:"50%"}}/>
                                         <CardBody className="crdbdy">
                                             <h5>1.Perkenalan</h5>
@@ -43,7 +53,7 @@ class ListVideoDown extends Component{
                                 </Card>
                             </CardDeck>
                             <CardDeck>
-                                <Card className="border-0"><a href="/video" className="modul">
+                                <Card className="border-0"><a href="/detailvideo" className="modul">
                                     <CardImg src={rnredux} alt="Card image cap" className="rounded imgcard" style={{height:"50%"}}/>
                                         <CardBody className="crdbdy">
                                             <h5>1.Perkenalan</h5>
@@ -53,17 +63,7 @@ class ListVideoDown extends Component{
                                 </Card>
                             </CardDeck>
                             <CardDeck>
-                                <Card className="border-0"><a href="/video" className="modul">
-                                    <CardImg src={rnredux} alt="Card image cap" className="rounded imgcard" style={{height:"50%"}}/>
-                                        <CardBody className="crdbdy">
-                                            <h5>1.Perkenalan</h5>
-                                            <br></br>
-                                        </CardBody>
-                                    </a>
-                                </Card>
-                            </CardDeck>
-                            <CardDeck>
-                                <Card className="border-0"><a href="/video" className="modul">
+                                <Card className="border-0"><a href="#" className="modul">
                                     <CardImg src={rnredux} alt="Card image cap" className="rounded imgcard" style={{height:"50%",filter:"grayscale(100%)"}}/>
                                         <CardBody className="crdbdy">
                                         <i class="fa fa-key"></i>
@@ -74,7 +74,7 @@ class ListVideoDown extends Component{
                                 </Card>
                             </CardDeck>
                             <CardDeck>
-                                <Card className="border-0"><a href="/video" className="modul">
+                                <Card className="border-0"><a href="#" className="modul">
                                     <CardImg src={rnredux} alt="Card image cap" className="rounded imgcard" style={{height:"50%",filter:"grayscale(100%)"}}/>
                                         <CardBody className="crdbdy">
                                         <i class="fa fa-key"></i>
@@ -85,7 +85,7 @@ class ListVideoDown extends Component{
                                 </Card>
                             </CardDeck>
                             <CardDeck>
-                                <Card className="border-0"><a href="/video" className="modul">
+                                <Card className="border-0"><a href="#" className="modul">
                                     <CardImg src={rnredux} alt="Card image cap" className="rounded imgcard" style={{height:"50%",filter:"grayscale(100%)"}}/>
                                         <CardBody className="crdbdy">
                                         <i class="fa fa-key"></i>
@@ -96,7 +96,7 @@ class ListVideoDown extends Component{
                                 </Card>
                             </CardDeck>
                             <CardDeck>
-                                <Card className="border-0"><a href="/video" className="modul">
+                                <Card className="border-0"><a href="#" className="modul">
                                     <CardImg src={rnredux} alt="Card image cap" className="rounded imgcard" style={{height:"50%",filter:"grayscale(100%)"}}/>
                                         <CardBody className="crdbdy">
                                         <i class="fa fa-key"></i>
