@@ -632,8 +632,8 @@ section#box-profile{
 
 .circle-steps-bootcamp {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background: #fff;
     border: #d4d4d4 solid;
@@ -645,8 +645,8 @@ section#box-profile{
 
 .circle-steps-bootcamp1 {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     border: #d4d4d4 solid;
     background: #fff;
@@ -659,8 +659,8 @@ section#box-profile{
 
 .circle-steps-bootcamp2 {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     border: #d4d4d4 solid;
     background: #fff;
@@ -673,8 +673,8 @@ section#box-profile{
 
 .circle-steps-bootcamp3 {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     border: #d4d4d4 solid;
     background: #fff;
@@ -716,4 +716,10 @@ section#box-profile{
     margin: -180px 0 0 10px;
     box-shadow: 4px 4px 7px 0px rgba(136, 136, 136, 0.9);
     height: 195px;
+}
+.rekan{
+    margin-left: 20px;
+    height: 150px;
+    margin-bottom: 50px;
+    transform: scale(0.90)
 }
