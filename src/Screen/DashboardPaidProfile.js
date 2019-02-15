@@ -9,7 +9,7 @@ class DashboardPaidProfile extends Component {
                 <div className="text-center" style={{padding:'145px 0 0 0'}}>
                     <h1 style={{color:'##3B3B3B', fontWeight:'510', fontFamily:'Circular Std Black, sans-serif;', fontSize:'2.17000000em',display:'block', margin:'-5px 0 0 0',}}>
                     Terimakasih telah mengikuti bootcamp online ini </h1>
-                    <p style={{color:'#666666', fontWeight:'400', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.39000000em', display:'block', margin:'13px 0 39px 0'}}>
+                    <p style={{color:'#666666', fontWeight:'400', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.39000000em', display:'block', margin:'15px 0 39px 0'}}>
                     Silahkan melengkapi profile anda demi kemudahan kami dalam menyalurkan kerja dan administrasi
                     </p>
                 </div>
