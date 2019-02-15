@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import HeaderDashboard from './HeaderDashboard';
-import VideoPlayer from './VideoPlayer';
 import ListVideoDown from './LIstVideoDown';
+import QuizPlayer from './QuizPlayer';
 
 
 class DetailQuiz extends Component{
@@ -13,7 +13,7 @@ class DetailQuiz extends Component{
                     <div style={{marginLeft:"100px",marginTop:"80px"}} >
                         <div className="row">
                             <div class="col-md-auto">
-                                <VideoPlayer/>
+                                <QuizPlayer/>
                             </div>
                             <div class="col-md-auto" >
                                 <ListVideoDown/>
