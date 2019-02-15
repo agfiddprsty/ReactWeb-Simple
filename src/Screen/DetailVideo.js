@@ -8,17 +8,23 @@ class DetailVideo extends Component {
         return(
             <div style={{background:"#F8F9FA"}}>
                 <HeaderDashboard/>
-                <body className="bg-light" style={{borderTop:"solid",borderColor:"#E7E7E7"}} >
-                    <div style={{marginLeft:"100px",marginTop:"80px"}} >
+
+                <body className="bg-light" style={{borderTop:"solid",borderColor:"#E7E7E7",paddingLeft:"20px",paddingRight:"20px"}} >
+                    <div style={{marginLeft:"75px",marginTop:"80px"}} >
                         <div className="row">
                             <div class="col-md-auto">
                                 <Video/>
                             </div>
                             <div class="col-md-auto" >
-                                <ProgressDetail/>
+                                <div style={{marginLeft:"45px"}}>
+                                    <ProgressDetail/>
+                                </div>
                                 <br/>
                                 <br/>
-                                <div style={{borderTop:"solid",borderColor:"#E7E7E7",width:"340px"}}></div>
+                                <div style={{borderTop:"solid",borderColor:"#E7E7E7",width:"300px",marginLeft:"45px"}}>
+                                    <br/>
+                                    <h5>Berikutnya : </h5>
+                                </div>
                                 <br/>
                                 <br/>
 

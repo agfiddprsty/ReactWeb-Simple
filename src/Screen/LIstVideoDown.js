@@ -8,8 +8,8 @@ class ListVideoDown extends Component{
     render(){
         return(
             <div>
-                <h5>Berikutnya</h5>
-                <div className="col-md-10">
+                {/* <h5>Berikutnya</h5> */}
+                <div className="col-md-auto">
                     <div className="scrollbar scrollbar-primary">
                         <div class="force-overflow">
                             <CardDeck>
