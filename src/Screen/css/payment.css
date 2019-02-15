@@ -10,7 +10,7 @@
     position: relative;
     padding-left: 50px;
     justify-content: center;
-    box-shadow: 0 0 7px 0px rgba(136, 136, 136, 0.329);
+    box-shadow: 0 0 20px 1px rgba(136, 136, 136, 0.4);
     margin-top: 50px;
     align-items: center;
 }
