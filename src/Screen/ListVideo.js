@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import { Card, CardImg, CardDeck,
     CardBody, Progress } from 'reactstrap';   
@@ -102,14 +101,14 @@ return (
             </div>
             <div class="row text-center text-lg-left">
                 <div class="col-lg-3 col-md-4 col-6">
-                    <a class="d-block mb-4 h-100">
+                    <a href="#" class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/95YRwf6CNw8/450x250" style={{filter:"grayscale(100%)"}} alt=""></img>
                         <br/>
                         <h4>1. Perkenalan</h4>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
-                    <a class="d-block mb-4 h-100">
+                    <a href="#" class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/95YRwf6CNw8/450x250" style={{filter:"grayscale(100%)"}} alt=""></img>
                         <br/>
                         <h4>2. Instalasi</h4>
@@ -151,7 +150,7 @@ return (
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
-                    <a class="d-block mb-4 h-100">
+                    <a href="#" class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/95YRwf6CNw8/450x250" style={{filter:"grayscale(100%)"}} alt=""></img>
                         <br/>
                         <h4>4. Character</h4>

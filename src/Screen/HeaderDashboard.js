@@ -101,7 +101,10 @@ class HeaderDashboard extends Component{
                                 
                                 <li className="nav-item ml-auto" style={{marginRight:"10px"}}>
                                     {/* <i className="fa fa-user"> */}
-                                        <a href="profile" className="nav-link">Samudra Gawang</a>
+                                        {/* <a href="profile" className="nav-link">Samudra Gawang</a> */}
+                                        <a href="/profile">
+                                            <img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50%",width:"40px",height:"40px"}}></img>
+                                        </a>
                                     {/* </i> */}
                                 </li>
                             </ul>
