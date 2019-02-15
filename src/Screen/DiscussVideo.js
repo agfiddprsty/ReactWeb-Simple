@@ -1,7 +1,6 @@
 import React,{Component}from 'react'
-import Profile from '../Screen/img/boy.png'
-import { transparent } from 'material-ui/styles/colors';
 import  '../Screen/css/DiscussVideo.css'
+
 class DiscussVideo extends Component{
     constructor(){
         super()
