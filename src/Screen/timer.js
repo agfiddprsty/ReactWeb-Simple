@@ -87,31 +87,38 @@ class Timer extends Component {
     return (
       <div className="Countdown">
         <span className="Countdown-col">
-          <span className="Countdown-col-element">
+          <span className="Countdown-col-element border border-warning" style={{margin: '0', padding: '10px'}}>
               <strong>{this.addLeadingZeros(countDown.days)}</strong>
-              <span>{countDown.days === 1 ? 'Day' : 'Days'}</span>
+              <span>Hari</span>
           </span>
         </span>
 
+
         <span className="Countdown-col">
           <span className="Countdown-col-element">
+            <strong>:</strong>
+          </span>
+        </span>
+
+
+        <span className="Countdown-col">
+          <span className="Countdown-col-element border border-warning" style={{margin: '0', padding: '10px'}}>
             <strong>{this.addLeadingZeros(countDown.hours)}</strong>
-            <span>Hours</span>
+            <span>Jam</span>
+          </span>
+        </span>
+
+        <span className="Countdown-col">
+          <span className="Countdown-col-element">
+            <strong>:</strong>
           </span>
         </span>
 
 
         <span className="Countdown-col">
-          <span className="Countdown-col-element">
+          <span className="Countdown-col-element border border-warning" style={{margin: '0', padding: '10px'}}>
             <strong>{this.addLeadingZeros(countDown.min)}</strong>
-            <span>Min</span>
-          </span>
-        </span>
-
-        <span className="Countdown-col">
-          <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.sec)}</strong>
-            <span>Sec</span>
+            <span>Menit</span>
           </span>
         </span>
       </div>

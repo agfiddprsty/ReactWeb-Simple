@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import HeaderDashboard from './HeaderDashboard';
-import { Table } from 'material-ui';
 import Video from './VideoPlayer'
 import ListVideo from './LIstVideoDown'
-import DiscussVideo from './DiscussVideo'
-import Footer from './Footer';
+import ProgressDetail from './ProgressDetail';
 class DetailVideo extends Component {
     render(){
         return(
@@ -17,6 +15,13 @@ class DetailVideo extends Component {
                                 <Video/>
                             </div>
                             <div class="col-md-auto" >
+                                <ProgressDetail/>
+                                <br/>
+                                <br/>
+                                <div style={{borderTop:"solid",borderColor:"#E7E7E7",width:"340px"}}></div>
+                                <br/>
+                                <br/>
+
                                 <ListVideo/>
                             </div>
                             
