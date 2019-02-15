@@ -281,13 +281,13 @@ class Home extends Component {
                             </div>
                             <div className="row text-center" style={{margin: '0px 100px 0px 100px'}}>
                                 <div className="col-lg col-md col-sm col-xs">
-                                    <img alt="" className="img-fluid" style={{marginLeft: "20px", height: "150px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/telecreative.png"/>
+                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/telecreative.png"/>
                                 </div>
                                 <div className="col-lg col-md col-sm col-xs">
-                                    <img alt="" className="img-fluid" style={{marginLeft: "20px", height: "150px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/prosehat.png"/>
+                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/prosehat.png"/>
                                 </div>
                                 <div className="col-lg col-md col-sm col-xs">
-                                    <img alt="" className="img-fluid" style={{marginLeft: "20px", height: "150px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/rekeningku.png"/>
+                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/rekeningku.png"/>
                                 </div>
                             </div>
                         </div>
