@@ -10,7 +10,7 @@ class Quiz extends Component{
                         <div class="col-sm-3">
                             <ul class="nav flex-column nav-pills" style={{backgroundColor:"#FFF"}}>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#vtab1" data-toggle="tab">Tab 1</a>
+                                    <a class="nav-link active" href="#vtab1" data-toggle="tab">Tab 1</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#vtab2" data-toggle="tab">Tab 2</a>
@@ -22,7 +22,7 @@ class Quiz extends Component{
                         </div>
                         <div class="col-sm-9">
                             <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade in active" id="vtab1">
+                                <div role="tabpanel" class="tab-pane active" id="vtab1">
                                     <h3>Tab 1</h3>
                                     <p>Place a link with the class <code>.nav-tabs-dropdown.btn.btn-block.btn-primary</code> above the tabs list and add an id of <code>#nav-tabs-wrapper</code> to the tabs list for the dropdown to work.</p>
                                     <DiscussVideo/>
