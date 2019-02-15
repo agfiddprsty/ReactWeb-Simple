@@ -17,7 +17,6 @@ class Dashboard extends Component{
                 <HeaderDashboar/>
                 <body>
                     <ListVideo/>
-                    <Footer/>
                 </body>
             </div>
         )
