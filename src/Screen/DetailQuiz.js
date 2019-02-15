@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import HeaderDashboard from './HeaderDashboard';
 import ListVideoDown from './LIstVideoDown';
 import QuizPlayer from './QuizPlayer';
+import Quiz from './Quiz';
 
 
 class DetailQuiz extends Component{
@@ -18,8 +19,11 @@ class DetailQuiz extends Component{
                             <div class="col-md-auto" >
                                 <ListVideoDown/>
                             </div>
-                            
                         </div>
+                        <br/>
+                        <div style={{borderTop:"solid",borderColor:"#E7E7E7",width:"800px"}}></div>
+                        <br/>
+                        <Quiz/>
                     </div>
                 </body>
             </div>
