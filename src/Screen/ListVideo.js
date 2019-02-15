@@ -61,7 +61,7 @@ return (
                             <a href="/detailvideo" class="d-block mb-4 h-100">
                                     <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/95YRwf6CNw8/450x250" alt=""></img>
                                     <br/>
-                                    <h4>1. Perkenalan</h4>
+                                    <h4>1. Perkenalan</h4> 
                                 </a>
                             </div>
                             <div class="col-lg-3 col-md-4 col-6">
@@ -86,7 +86,7 @@ return (
                             <hr class="mt-2 mb-5"></hr>
                         <div class="row text-center text-lg-left">
                         <div class="col-lg-3 col-md-4 col-6">
-                            <a href="/#" class="d-block mb-4 h-100">
+                            <a href="#" class="d-block mb-4 h-100">
                                     <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/95YRwf6CNw8/450x250" style={{filter:"grayscale(100%)"}} alt=""></img>
                                     <br/>
                                     <h4>1. Perkenalan</h4>
