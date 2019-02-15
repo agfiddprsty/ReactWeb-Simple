@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './css/Home.css';
 import daftar from './img/daftar.png';
 import Header from './headerlanding';
-import Footer from './Footer.js';
+import Footer from './footerLanding';
 import Contact from './Contact';
 import rnredux from './rnredux.jpg';
 import profile from './profile.jpeg';
@@ -224,7 +224,7 @@ class Home extends Component {
                         <div className="text-center" ><br/>
                             <h1 style={{fontSize:'30px',color:'black', marginTop: "50px", fontWeight: '600', marginBottom: "50px"}}>Mengapa Memilih Kami?</h1>
                         </div>
-                        <div className="row text-center" style={{marginBottom: "50px"}}>
+                        <div className="row text-center" style={{marginBottom: "50px", fontWeight: '600'}}>
                             <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                 <img alt="" className="img-fluid" src={mentor} style={{width: "150px", height: "150px"}}/>
                                 <p style={{color: "black", fontSize: "15px", padding: "20px 0 10px 0"}}>Mentor Professional</p>
@@ -239,7 +239,7 @@ class Home extends Component {
                             </div>
                             <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                 <img alt="" className="img-fluid" src={diskusi} style={{width: "150px", height: "150px"}}/>
-                                <p style={{color: "black", fontSize: "15px", padding: "20px 0 10px 0"}}>Diskusi Online Selamanya</p>
+                                <p style={{color: "black", fontSize: "15px", padding: "20px 0 10px 0"}}>Diskusi Online</p>
                             </div>
                         </div>
                         <div className="row soo">
@@ -279,8 +279,7 @@ class Home extends Component {
                             <div className="text-center">
                                 <p style={{color: "black", fontSize: "25px", fontWeight: '600', padding: "50px 0"}}>Perusahaan Rekanan</p>
                             </div>
-                            <div className="row text-center">
-                                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                            <div className="row text-center" style={{margin: '0px 100px 0px 100px'}}>
                                 <div className="col-lg col-md col-sm col-xs">
                                     <img alt="" className="img-fluid" style={{marginLeft: "20px", height: "150px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/telecreative.png"/>
                                 </div>
@@ -290,7 +289,6 @@ class Home extends Component {
                                 <div className="col-lg col-md col-sm col-xs">
                                     <img alt="" className="img-fluid" style={{marginLeft: "20px", height: "150px", marginBottom: "50px"}} src="https://www.arkademy.com/asset/v3/img/hiring/rekeningku.png"/>
                                 </div>
-                                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
                             </div>
                         </div>
                     </div>
