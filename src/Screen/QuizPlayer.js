@@ -13,7 +13,7 @@ class QuizPlayer extends Component{
                     <br/>                    
                     <h3>Petunjuk: </h3>
                     <br/>
-                    <div style={{backgroundColor:"#FFAD4E",width:"500px",height:"100px"}}>
+                    <div style={{backgroundColor:"#FFAD4E",width:"500px",height:"110px"}}>
                         <br/>
                         <h6 style={{color:"#FFF",marginLeft:"10px"}}>Cara Submit git : </h6>
                         <ul style={{display: "block",listStyleType:"disc",marginLeft:"10px",color:"#FFF"}}>
