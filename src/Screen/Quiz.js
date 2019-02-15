@@ -8,15 +8,9 @@ class Quiz extends Component{
                 <h4>To-dos(0/3)</h4>
                     <div class="row">
                         <div class="col-sm-3">
-                        {/* <a href="#" class="nav-tabs-dropdown btn btn-block btn-primary">Tabs</a>
-                            <ul id="nav-tabs-wrapper" class="nav nav-tabs nav-pills nav-stacked well">
-                                <li class="active"><a href="#vtab1" data-toggle="tab">Tab 1</a></li>
-                                <li><a href="#vtab2" data-toggle="tab">Tab 2</a></li>
-                                <li><a href="#vtab3" data-toggle="tab">Tab 3</a></li>
-                            </ul> */}
-                            <ul class="nav flex-column nav-pills">
+                            <ul class="nav flex-column nav-pills" style={{backgroundColor:"#FFF"}}>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#vtab1" data-toggle="tab">Tab 1</a>
+                                    <a class="nav-link" href="#vtab1" data-toggle="tab">Tab 1</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#vtab2" data-toggle="tab">Tab 2</a>
