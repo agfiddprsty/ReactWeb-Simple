@@ -70,7 +70,7 @@ class DiscussVideo extends Component{
                                         </div>
                                         <div class="col-sm-10">
                                             {/* <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your question here..." rows="5" style={{width:"600px"}}></textarea>                            */}
-                                            <input style={{borderStyle:"none none solid none",width:"550px"}} placeholder="Write A Comment"></input>
+                                            <input style={{borderStyle:"none none solid none",width:"550px",borderColor:"#E7E7E7"}} placeholder="Write A Comment"></input>
                                             <button class=" btn btn-outline-primary"style={{marginLeft:"475px"}} > Submit</button>
                                         </div>
                                     </div>

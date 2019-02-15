@@ -10,7 +10,7 @@ class DetailVideo extends Component {
         return(
             <div style={{background:"#F8F9FA"}}>
                 <HeaderDashboard/>
-                <body className="bg-light" >
+                <body className="bg-light" style={{borderTop:"solid",borderColor:"#E7E7E7"}} >
                     <div style={{marginLeft:"100px",marginTop:"80px"}} >
                         <div className="row">
                             <div class="col-md-auto">

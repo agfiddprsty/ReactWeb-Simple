@@ -37,15 +37,15 @@ class HeaderDashboard extends Component{
                         </button>
                         <div class="collapse navbar-collapse bg-light colap" id="collapsibleNavbar">
                             <ul class="navbar-nav ml-auto">
-                                <li className="nav-item ml-auto" style={{marginRight:"10px"}}>
+                                {/* <li className="nav-item ml-auto" style={{marginRight:"10px"}}>
                                     <a href="/dashboard" className="nav-link">Home</a>
-                                </li>
+                                </li> */}
                                 <li style={{marginRight:"10px"}} className="nav-item ml-auto ">
                                     <ul class="nav navbar-nav navbar-right">
                                         <li class="dropdown">
-                                            <div className="dropdown-toggle" data-toggle="dropdown">
+                                            {/* <div className="dropdown-toggle" data-toggle="dropdown">
                                                 <i className="fa fa-bell " style={{fontsize:"24px"}}></i><Badge pill color="danger">9</Badge>                                        
-                                            </div>
+                                            </div> */}
                                             <ul class="dropdown-menu notify-drop">
                                                 <div class="notify-drop-title">
             	                                    <div class="row">

@@ -1,63 +1,59 @@
 import React, { Component } from 'react';
-import Footer from './Footer.js';
 
 class Silabusnew extends Component {
     render() {
       return (
-        <div style={{backgroundColor:'#fafafa'}}>
+        <div style={{backgroundColor:'#FFF'}}>
             
-            <div className="jumbotron jumbotron-fluid imagelanding" style={{height: "150px"}}>
+            <div className="jumbotron jumbotron-fluid imagelanding" style={{height: "650px"}}>
             </div>
-
-              <body style={{backgroundColor:'#fafafa'}}>
-                <div className="text-center" style={{backgroundColor:'#fafafa'}}>
-                  <h1 style={{
-                      fontSize:'30px', backgroundColor:'#fafafa', color:'#fafafa',fontWeight:300, padding:'25px 0 0 0'
-                  }}>Blank</h1>
-                </div>
-
-                <div style={{backgroundColor:'#fafafa'}}>
-                    <div class="container" style={{width:'55%', backgroundColor:'#FFF', position:'center', margin:'', border:'1px solid #ececec'}}>
-                        <div class="col-md-12" style={{padding:'0 25px 0 25px', backgroundColor:'#FFF'}}>
-                        <p style={{color:'#000', fontWeight:'150', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', padding:'10px 0 0 -15px'}}>
-                        Tertarik dengan Materi Pembelajaran kami?
+              
+                <div className="text-title">
+                    <div className="text-center" style={{padding:'60px 0 0 0', backgroundColor:'#FFF'}}>
+                        <h1 style={{color:'##3B3B3B', fontWeight:'510', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.9700000em',display:'block', margin:'0 0 30px 0'}}>
+                        Tertarik dengan pembelajaran kami? </h1>
+                        <p style={{color:'#666666', fontWeight:'325', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.48500000em', display:'block', margin:'33px 0 39px 0'}}>
+                        Isi Form dibawah ini untuk mendapatkan silabus melalui email
                         </p>
-                        <p style={{color:'#666666', fontWeight:'150', fontSize:'1.00000000em', margin:'-10px 0 0 0'}}>Silahkan download di sini</p>    
-                          <br/>
-                            <div class="row">
-                                <div className="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                                    <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="fullname">Nama Lengkap<span style={{color:'red'}}>*</span></p>
-                                    <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="fullname" name="fullname" placeholder="">
-                                    </input>
-                                </div>
-                                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4" style={{padding:'0 25px 0 25px'}}>
-                                    <p style={{color:'#666666', fontSize:'.85714286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}} for="email">Email<span style={{color:'red'}}>*</span></p>
-                                    <input class="form-control input-sm" style={{paddingLeft:'0.92857143em', color:'#000', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.000000em'}} type="text" id="email" name="email" placeholder="">
-                                    </input>
-                                </div>
-                                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center" style={{padding:'0 25px 0 0'}}>
-                                <p style={{color:'#FFF'}} for="">sdv</p>
-                                    <a href="/dashboardunpaid"/*silabus*/ 
-                                        style={{marginTop:'50px', padding:'0 25px 0 10px'}}
-                                    ><button type="button" class="btn btn-danger" data-dismiss="modal">Kirim Silabus</button></a>
-                                </div>
-                            </div>
-                        </div >        
                     </div>
                 </div>
+            
+                <div style={{paddingBottom:'50px', backgroundColor:'#FFF'}}>
+                    <div class="daftar" style={{boxShadow:'0 0 7px 0 rgba(136, 136, 136, 0.4)', width:'37.5%', backgroundColor:'#FFF', position:'center', margin:'25px 0 100px 430px', border:'1px solid #ececec'}}> 
+                        <div class="col-md-12" style={{margin:'0 25px 0 75px'}}>
+                            <form class="login-form validate-form" style={{margin:'50px 25px 0 25px'}}>
 
-                <div className="text-center" style={{backgroundColor:'#fafafa'}}>
-                  <h1 style={{
-                      fontSize:'30px', backgroundColor:'#fafafa', color:'#fafafa',fontWeight:300, padding:'25px 0 0 0'
-                  }}>Blank</h1>
+                                <div class="wrap-input validate-input" data-validate = "">
+                                    <input class="input" type="text" name="fullname" placeholder="Nama Lengkap"/>
+                                    <span class="focus-input"></span>
+                                </div>
+
+                                <div class="wrap-input validate-input" data-validate = "">
+                                  <input class="input" type="text" name="email" placeholder="Email"/>
+                                  <span class="focus-input"></span>
+                                </div>
+
+                            </form>
+
+                            <div className="btn-block" style={{width:'85%', padding:'15px 0 15px 0', margin:'0 0 0 -35px'}}>
+                              <a href="/payment"><button type="button" class="btn btn-danger btn-block" style={{marginBottom:'10px', borderRadius:'0'}}>Kirim Silabus</button></a>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-
-              </body> 
-              <div style={{marginTop:'50px'}}>
-                <Footer />
-              </div>     
         </div>
         );
     }
   }
   export default Silabusnew;
+
+//   <div className="text-title">
+//   <div className="text-center" style={{padding:'25px 0 0 0'}}>
+//       <h1 style={{color:'##3B3B3B', fontWeight:'510', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'2.07550000em',display:'block', margin:'0 0 0 0',}}>
+//       Tertarik dengan pembelajaran kami? </h1>
+//       <p style={{color:'#666666', fontWeight:'150', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', margin:'15px 0 39px 0'}}>
+//       Isi Form dibawah ini untuk mendapatkan silabus melalui email
+//       </p>
+//   </div>
+// </div>
