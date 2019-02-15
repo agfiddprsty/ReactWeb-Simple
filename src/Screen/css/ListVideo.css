@@ -1,12 +1,7 @@
-.kotak{
-  width: 100px;
-  background-color: white;
-  position: relative;
-  padding-left: 50px;
-  justify-content: center;
-  box-shadow: 0 0 7px 0px rgba(136, 136, 136, 0.329);
-  margin-top: 50px;
-  align-items: center;
+.kiee{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/95YRwf6CNw8/450x250");
+  background-repeat: no-repeat;
+  height: 70%;
 }
 
  .icon {
