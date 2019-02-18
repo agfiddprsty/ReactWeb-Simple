@@ -16,7 +16,8 @@ class DetailVideo extends Component {
                                 <Video/>
                             </div>
                             <div class="col-md-auto" >
-                                <div style={{marginLeft:"45px"}}>
+                                <div style={{marginLeft:"45px",marginTop:"10px"}}>
+                                    
                                     <ProgressDetail/>
                                 </div>
                                 <br/>

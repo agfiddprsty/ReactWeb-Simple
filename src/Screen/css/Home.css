@@ -389,96 +389,6 @@ section#box-profile{
     margin-left: -3%;
 }
 
-@media only screen and (max-width: 767px) {
-    .knan {
-        margin-left: 0%;
-    }
-
-    .title {
-        color: #fff;
-        margin-top: 50px;
-        display: flex;
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 0%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        margin: 50px 0;
-        background-position: top center;
-        transform: scale(0.95); 
-    }
-
-    .penjelasan {
-        padding: 20px 0 0px 0;
-    }
-
-    .homevideo {
-        display: flex;
-        flex-basis: auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transform: scale(0.30); 
-        margin-top: -100px;
-    }
-
-    .resp-iframe {
-        transform: scale(0.80); 
-    }
-  }
-
-@media only screen and (max-width: 657px) {
-    .resp-iframe {
-        transform: scale(0.70); 
-    }
-
-    .homevideo{
-        margin-top: -120px;
-    }
-}
-
-@media only screen and (max-width: 565px) {
-    .resp-iframe {
-        transform: scale(0.60); 
-    }
-
-    .homevideo{
-        margin-top: -150px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .resp-iframe {
-        transform: scale(0.50); 
-    }
-    .homevideo{
-        margin-top: -170px;
-    }
-    
-    .gmbrlanding {
-        background: linear-gradient( rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.116) ), url('https://blog.galvanize.com/wp-content/uploads/2018/03/20150708172005-coding-working-workspace-apple-macintosh.jpg');
-        width: 100%;
-        background-size: cover;
-        padding: 20px;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .homevideo {
-        display: flex;
-        flex-basis: auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transform: scale(0.50); 
-    }
-    .resp-iframe {
-        transform: scale(0.40); 
-    }
-}
-
 .homevideo {
     display: flex;
     flex-basis: auto;
@@ -495,114 +405,6 @@ section#box-profile{
     width: 100%;
     height: 100%;
     border: 0;
-}
-
-
-
-
-@media only screen and (max-width: 1350px) {
-    .title {
-        color: #fff;
-        margin-top: 50px;
-        display: flex;
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 0%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 50px 280px 0 280px;
-        height: 100%;
-        background-position: top center;
-    }
-}
-
-
-@media only screen and (max-width: 1210px) {
-    .title {
-        color: #fff;
-        margin-top: 50px;
-        display: flex;
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 0%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 50px 200px 0 200px;
-        height: 100%;
-        background-position: top center;
-    }
-}
-
-
-@media only screen and (max-width: 1050px) {
-    .title {
-        color: #fff;
-        margin-top: 50px;
-        display: flex;
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 0%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 50px 150px 0 150px;
-        height: 100%;
-        background-position: top center;
-    }
-}
-
-
-@media only screen and (max-width: 950px) {
-    .title {
-        color: #fff;
-        margin-top: 50px;
-        display: flex;
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 0%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 50px 100px 0 100px;
-        height: 100%;
-        background-position: top center;
-    }
-}
-
-@media only screen and (max-width: 950px) {
-    .title {
-        color: #fff;
-        margin-top: 50px;
-        display: flex;
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 0%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 50px 50px 0 50px;
-        height: 100%;
-        background-position: top center;
-    }
-}
-
-@media only screen and (max-width: 454px) {
-    .title {
-        color: #fff;
-        margin-top: 50px;
-        display: flex;
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 0%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 50px 0;
-        height: 100%;
-        background-position: top center;
-    }
 }
 
 .bootcamp-steps {
@@ -695,7 +497,7 @@ section#box-profile{
 
 .bootcamp-step-list {
     width: 55%;
-    padding: 20px;
+    padding: 20px 0 20px 0;
     color: #3D3F41;
     margin: auto;
 }
@@ -707,7 +509,7 @@ section#box-profile{
 }
 
 .kotakiri{
-    box-shadow: 0 0 7px 0px rgba(136, 136, 136, 0.9);
+    box-shadow: 0 0 7px 2px rgba(136, 136, 136, 0.9);
     padding: 0px 30px 30px 30px;
     width: 96%;
 }
@@ -717,9 +519,382 @@ section#box-profile{
     box-shadow: 4px 4px 7px 0px rgba(136, 136, 136, 0.9);
     height: 195px;
 }
+
 .rekan{
-    margin-left: 20px;
     height: 150px;
+    margin-bottom: 10px;
+    padding: 0 50px 0 50px;
+}
+
+.idr {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.duajt {
+    color: #fafafa; 
+    text-decoration-style: solid; 
+    text-decoration-color: red; 
+    font-size: 30px; 
+    font-weight: 700; 
+    padding-right: 20px;
+    text-decoration-line: line-through; 
+}
+
+.limaratus {
+    font-size: 30px; 
+    font-weight: 700;
+    color: #FFC900 
+}
+
+.berakhir {
+    color: #fafafa; 
+    margin-top: 20px; 
+    margin-bottom: -10px;
+}
+
+.caraker {
+    font-size: 30px; 
+    font-weight: 600; 
+    padding-top: 70px;
+}
+
+.title-cara {
+    color: red; 
+    font-weight: 600;
+}
+
+.icotech {
+    font-size: 100px; 
     margin-bottom: 50px;
-    transform: scale(0.90)
+    padding: 0 80px 0 80px;
+}
+
+.logi {
+    flex-wrap: wrap;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    justify-content: center;
+}
+
+.rekanusaha {
+    color: black;
+    font-size: 25px;
+    font-weight: 600; 
+    padding: 50px 0;
+}
+
+.rekanus{
+    flex-wrap: wrap;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.tech{
+    color: black; 
+    font-size: 25px; 
+    font-weight: 600;
+    padding: 50px 0 50px 0;
+}
+
+.tunggu {
+    padding: 30px 90px 20px 90px; 
+    lign-items: center; 
+    color: #fff;
+    font-size: 20px; 
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1350px) {
+    .title {
+        color: #fff;
+        margin-top: 50px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 280px 0 280px;
+        height: 100%;
+        background-position: top center;
+    }
+}
+
+
+@media only screen and (max-width: 1210px) {
+    .title {
+        color: #fff;
+        margin-top: 50px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 200px 0 200px;
+        height: 100%;
+        background-position: top center;
+    }
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .title {
+        color: #fff;
+        margin-top: 50px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 150px 0 150px;
+        height: 100%;
+        background-position: top center;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    .title {
+        color: #fff;
+        margin-top: 50px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 100px 0 100px;
+        height: 100%;
+        background-position: top center;
+    }
+    .vertical-line {
+        position: absolute;
+        top: 5px;
+        width: 0px;
+        height: 90%;
+        color: transparent;
+        background: #d4d4d400;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .circle-steps-bootcamp{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: transparent;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .circle-steps-bootcamp2{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: transparent;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    .circle-steps-bootcamp3{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: transparent;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .circle-steps-bootcamp1{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: transparent;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .rekan {
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .knan {
+        margin-left: 0%;
+    }
+
+    .title {
+        color: #fff;
+        margin-top: 50px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 50px 0;
+        background-position: top center;
+        transform: scale(0.95); 
+    }
+
+    .penjelasan {
+        padding: 20px 0 0px 0;
+    }
+
+    .homevideo {
+        display: flex;
+        flex-basis: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -100px;
+    }
+
+    .resp-iframe {
+        transform: scale(0.80); 
+    }
+  }
+
+@media only screen and (max-width: 657px) {
+    .resp-iframe {
+        transform: scale(0.70); 
+    }
+
+    .homevideo{
+        margin-top: -120px;
+    }
+
+    .rekan {
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    .resp-iframe {
+        transform: scale(0.60); 
+    }
+
+    .homevideo{
+        margin-top: -150px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .icotech {
+        padding: 0 30px 0 30px;
+        font-size: 90px; 
+        margin-bottom: 50px;
+    }
+
+    .rekan {
+        padding: 0 30px 0 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .resp-iframe {
+        transform: scale(0.50); 
+    }
+    .homevideo{
+        margin-top: -170px;
+    }
+    
+    .gmbrlanding {
+        background: linear-gradient( rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.116) ), url('https://blog.galvanize.com/wp-content/uploads/2018/03/20150708172005-coding-working-workspace-apple-macintosh.jpg');
+        width: 100%;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    .icotech {
+        padding: 0 30px 0 30px;
+        font-size: 90px; 
+        margin-bottom: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 454px) {
+    .title {
+        color: #fff;
+        margin-top: 50px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+        height: 100%;
+        background-position: top center;
+    }
+
+    .icotech {
+        padding: 0 30px 0 30px;
+        font-size: 90px;
+        margin-bottom: 50px;
+    }
+
+    .rekan {
+        padding: 0;
+    }
+
+    .kotakananduo {
+        margin: -220px 0 0 10px;
+        box-shadow: 4px 4px 7px 0px rgba(136, 136, 136, 0.9);
+        height: 230px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .homevideo {
+        display: flex;
+        flex-basis: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.50); 
+    }
+    .resp-iframe {
+        transform: scale(0.40); 
+    }
 }
