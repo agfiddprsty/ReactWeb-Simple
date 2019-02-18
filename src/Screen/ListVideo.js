@@ -67,7 +67,7 @@ return (
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
                     <h4>4. Character</h4>
-                    <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04:32 </a>
+                    <span><i className="fa fa-clock-o" style={{color:"red"}}></i> 04:32 </span>
                     </a>
                 </div>
                     <div class="col-lg-3 col-md-4 col-6">
@@ -116,6 +116,7 @@ return (
                 </div>
             </div>
             <div>
+            <hr class="mt-2 mb-5"></hr>
                 <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Minggu 2</h1>
                 <br/>
                 <span>Konten Terkunci. selesaikan semua kuis di Minggu 1 untuk membuka</span>
