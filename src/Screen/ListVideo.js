@@ -27,36 +27,44 @@ return (
                         <a href="/detailvideo" class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
                             <br/>
-                            <h4>1. Perkenalan</h4>
                         </a>
                     </div>
+                    <a href="/detailvideo" class="d-block mb-4 h-100">
+                    <h4>1. Perkenalan</h4>
+                    </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center kiee">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
                             <br/>
-                            <h4>2. Instalasi</h4>
                         </a>
                     </div>
+                    <a href="/detailvideo" class="d-block mb-4 h-100">
+                    <h4>2. Instalasi</h4>
+                    </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center kiee">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
                             <br/>
-                            <h4>3. Component</h4>
                         </a>
                     </div>
+                    <a href="/detailvideo" class="d-block mb-4 h-100">
+                    <h4>3. Component</h4>
+                    </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center kiee">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
                             <br/>
-                            <h4>4. Character</h4>
                         </a>
                     </div>
+                    <a href="/detailvideo" class="d-block mb-4 h-100">
+                    <h4>4. Character</h4>
+                    </a>
                 </div>
                     <div class="col-lg-3 col-md-4 col-6">
                     <a href="/detailquiz" class="d-block mb-4 h-100">
@@ -70,27 +78,33 @@ return (
                         <a href="/detailvideo" class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
                             <br/>
-                            <h4>1. Perkenalan</h4>
                         </a>
                     </div>
+                    <a href="/detailvideo" class="d-block mb-4 h-100">
+                    <h4>1. Perkenalan</h4>
+                    </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center kiee">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
                             <br/>
-                            <h4>2. Instalasi</h4>
                         </a>
                     </div>
+                    <a href="/detailvideo" class="d-block mb-4 h-100">
+                    <h4>2. Instalasi</h4>
+                    </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center kiee">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
                             <br/>
-                            <h4>3. Component</h4>
                         </a>
                     </div>
+                    <a href="/detailvideo" class="d-block mb-4 h-100">
+                    <h4>3. Component </h4>
+                    </a>
                 </div>
             </div>
             <div>
@@ -105,73 +119,73 @@ return (
                         <a class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
                             <br/>
-                            <h4>1. Perkenalan</h4>
                         </a>
                     </div>
+                    <h4>1. Perkenalan</h4>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center kiee">
                         <a class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
                             <br/>
-                            <h4>2. Instalasi</h4>
                         </a>
                     </div>
+                    <h4>2. Instalasi</h4>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center kiee">
                         <a class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
                             <br/>
-                            <h4>3. Component</h4>
                         </a>
                     </div>
+                    <h4>3. Component</h4>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center kiee">
                         <a class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
                             <br/>
-                            <h4>4. Character</h4>
                         </a>
                     </div>
+                    <h4>4. Character</h4>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center kiee">
                         <a class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
                             <br/>
-                            <h4>1. Perkenalan</h4>
                         </a>
                     </div>
+                    <h4>1. Perkenalan</h4>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center kiee">
                         <a class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
                             <br/>
-                            <h4>2. Instalasi</h4>
                         </a>
                     </div>
+                    <h4>2. Instalasi</h4>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center kiee">
                         <a class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
                             <br/>
-                            <h4>3. Component</h4>
                         </a>
                     </div>
+                    <h4>3. Component</h4>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center kiee">
                         <a class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
                             <br/>
-                            <h4>4.  Character</h4>
                         </a>
                     </div>
-                </div>       
+                    <h4>4.  Character</h4>   
+                </div>    
             </div>
         </div>
         );
