@@ -29,7 +29,7 @@ class VideoPlayer extends Component{
                     className="myClassname"
                     display="initial"
                     position="relative"
-                    ratio='4:3'
+                    ratio='16:9'
                     allowFullScreen/>
                 </div>
                 <h2 style={{width:"800px",marginTop:"1%"}}>1. Perkenalan</h2>
