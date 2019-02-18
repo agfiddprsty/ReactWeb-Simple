@@ -20,7 +20,7 @@ class Quiz extends Component{
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-sm-9">
+                        <div class="col-sm-7">
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="vtab1">
                                     <h3>Tab 1</h3>
