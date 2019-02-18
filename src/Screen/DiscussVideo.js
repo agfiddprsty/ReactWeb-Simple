@@ -1,6 +1,6 @@
 import React,{Component}from 'react'
 import  '../Screen/css/DiscussVideo.css'
-
+import './css/VideoPlayer.css'
 class DiscussVideo extends Component{
     constructor(){
         super()
@@ -22,14 +22,11 @@ class DiscussVideo extends Component{
                 <div  >
                     <div class="row" id="post-review-box" >
                         <div class="col-sm-2">
-                            {/* <div class="thumbnail"> */}
                                 <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"/>
-                            {/* </div> */}
                         </div>
-                        <div class="col-sm-10" style={{marginTop:"30px"}}>
-                            {/* <textarea class="form-control animated" cols="150" id="new-review" name="comment" placeholder="Enter your question here..." rows="5" style={{width:"800px"}}></textarea> */}
-                            <input style={{borderStyle:"none none solid none",width:"650px",borderColor:"#E7E7E7"}} placeholder="Write A Comment"></input>
-                            <button class=" btn btn-outline-primary"style={{marginLeft:"550px"}} > Submit</button>
+                        <div class="col-md-auto col-s-9" style={{marginTop:"30px"}}>
+                            <input style={{borderStyle:"none none solid none",borderColor:"#E7E7E7"}} className="col-s-9 col-12" placeholder="Write A Comment"></input>
+                            <button class="btn btn-outline-primary submitbutton" > Submit</button>
                         </div>
                     </div>
                 </div>
@@ -63,14 +60,11 @@ class DiscussVideo extends Component{
                                 <div id="reply" style={{display: this.state.show ? 'block' : 'none'}}>
                                     <div class="row" id="post-review-box" style={{marginTop:"30px"}}>
                                         <div class="col-sm-auto">
-                                            {/* <div class="thumbnail"> */}
                                             <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{width:"50px",height:"50px"}}/>
-                                            {/* </div> */}
                                         </div>
-                                        <div class="col-sm-10">
-                                            {/* <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your question here..." rows="5" style={{width:"600px"}}></textarea>                            */}
-                                            <input style={{borderStyle:"none none solid none",width:"550px",borderColor:"#E7E7E7"}} placeholder="Write A Comment"></input>
-                                            <button class=" btn btn-outline-primary"style={{marginLeft:"475px"}} > Submit</button>
+                                        <div class="col-md-auto col-s-9" style={{marginTop:"30px"}}>
+                                            <input style={{borderStyle:"none none solid none",borderColor:"#E7E7E7"}} className="col-s-9 col-12" placeholder="Write A Comment"></input>
+                                            <button class="btn btn-outline-primary submitbutton" > Submit</button>
                                         </div>
                                     </div>
                                 </div>

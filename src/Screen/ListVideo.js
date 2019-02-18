@@ -31,6 +31,7 @@ return (
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
                     <h4>1. Perkenalan</h4>
+                    <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04:32 </a>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -42,6 +43,7 @@ return (
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
                     <h4>2. Instalasi</h4>
+                    <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04:32 </a>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -53,6 +55,7 @@ return (
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
                     <h4>3. Component</h4>
+                    <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04:32 </a>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -64,13 +67,15 @@ return (
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
                     <h4>4. Character</h4>
+                    <span><i className="fa fa-clock-o" style={{color:"red"}}></i> 04:32 </span>
                     </a>
                 </div>
                     <div class="col-lg-3 col-md-4 col-6">
                     <a href="/detailquiz" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" style={{height:"70%" ,border: 'none'}}src="https://source.unsplash.com/jvBXiynINGE/550x300" alt=""></img>
+                        <img class="img-fluid img-thumbnail" style={{backgroundSize:"100px 50px",background: 'transparent',height:"72%" ,border: 'none'}}src="http://brainboosterstv.com/wp-content/uploads/2018/03/quiz-1400-800x500.jpg" alt=""></img>
                         <br/>
                         <h4>Quiz Mingguan #1</h4>
+                        <a> Level <i className="fa fa-signal" style={{color:"#00DFEB"}}></i></a>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -82,6 +87,7 @@ return (
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
                     <h4>1. Perkenalan</h4>
+                    <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04:32 </a>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -93,6 +99,7 @@ return (
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
                     <h4>2. Instalasi</h4>
+                    <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04:32 </a>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -104,10 +111,12 @@ return (
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
                     <h4>3. Component </h4>
+                    <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04:32 </a>
                     </a>
                 </div>
             </div>
             <div>
+            <hr class="mt-2 mb-5"></hr>
                 <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Minggu 2</h1>
                 <br/>
                 <span>Konten Terkunci. selesaikan semua kuis di Minggu 1 untuk membuka</span>
