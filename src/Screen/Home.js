@@ -234,7 +234,7 @@ class Home extends Component {
                         </div>
                         <div className="row soo">
                             <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <p style={{padding: "30px 90px 20px 90px", alignItems:'center', color: "#fff", fontSize: "20px", fontWeight: '600'}}>So, Tunggu apa lagi?</p>
+                                <p className="tunggu">So, Tunggu apa lagi?</p>
                             </div>
                             <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                 <div className="text-center" style={{padding: "20px 90px 20px 90px"}}>
@@ -245,12 +245,12 @@ class Home extends Component {
                         </div>
                         <div>
                             <div>
-                                <p className="text-center" style={{color: "black", fontSize: "25px", fontWeight: '600', padding: "50px 0 50px 0"}}>Teknologi</p>
+                                <p className="text-center tech">Teknologi</p>
                             </div>
                             <div className="text-center logi">
+                                <span className="img-fluid devicon-nodejs-plain-wordmark colored icotech" title="Node.Js"></span>
                                 <span className="img-fluid devicon-javascript-plain colored icotech" title="Javascript"></span>
                                 <span className="img-fluid devicon-react-original-wordmark colored icotech" title="React"></span>
-                                <span className="img-fluid devicon-nodejs-plain-wordmark colored icotech" title="Node.Js"></span>
                                 <span className="img-fluid devicon-mysql-plain-wordmark colored icotech" title="MySQL"></span>
                                 <span className="img-fluid devicon-git-plain-wordmark colored icotech" title="GIT"></span>
                             </div>
@@ -261,13 +261,46 @@ class Home extends Component {
                             </div>
                             <div className="text-center rekanus">
                                 <span>
-                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/telecreative.png"/>
+                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/ketitik.png"/>
+                                </span>
+                                <span>
+                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/sirclo.png"/>
+                                </span>
+                                <span>
+                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/clap.png"/>
+                                </span>
+                                <span>
+                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/kofera.png"/>
                                 </span>
                                 <span>
                                     <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/prosehat.png"/>
                                 </span>
                                 <span>
+                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/telkom-indonesia.png"/>
+                                </span>
+                                <span>
+                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/tokopedia.png"/>
+                                </span>
+                                <span>
+                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/schema.png"/>
+                                </span>
+                                <span>
+                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/emago.png"/>
+                                </span>
+                                <span>
+                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/jeager.png"/>
+                                </span>
+                                <span>
                                     <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/rekeningku.png"/>
+                                </span>
+                                <span>
+                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/bagidata.png"/>
+                                </span>
+                                <span>
+                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/telecreative.png"/>
+                                </span>
+                                <span>
+                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/true-money.png"/>
                                 </span>
                             </div>
                         </div>

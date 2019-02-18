@@ -24,3 +24,176 @@
     justify-content: center;
     align-items: center;
 }
+
+.butuh {
+    height: 50px;
+    text-align: left;
+    color:black; 
+    font-weight: 600; 
+    /* font-size: 25px; */
+    margin-top: 30px;
+}
+
+.silahkan {
+    height: auto;
+    color: #666666;
+    font-weight: 325;
+    font-family: Open Sans, helvetica, Arial, sans serif;
+    font-size: 1.2em;
+}
+
+.icobca {
+    width: 20%;
+}
+
+.icoman {
+    width: 20%;
+}
+
+.icotel {
+    width:3%;
+}
+
+.icowa {
+    width: 4%;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .kotak {
+        width: 700px;
+        padding: 0 25px 0 25px;
+    }
+    .butuh {
+        height: 50px;
+        text-align: left;
+        color:black; 
+        font-weight: 600; 
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .silahkan {
+        height: auto;
+        color: #666666;
+        font-weight: 325;
+        font-family: Open Sans, helvetica, Arial, sans serif;
+        font-size: 1.1em;
+    }
+
+    .icotel{
+        width: 5%;
+    }
+
+    .icowa{
+        width: 6%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .kotak {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .kotak {
+        width: 500px;
+    }
+    .butuh {
+        height: 60px;
+        text-align: left;
+        color:black; 
+        font-weight: 600; 
+        font-size: 23px;
+        margin-top: 30px;
+    }
+    .silahkan {
+        height: auto;
+        color: #666666;
+        font-weight: 325;
+        font-family: Open Sans, helvetica, Arial, sans serif;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .kotak {
+        width: 400px;
+    }
+    .butuh {
+        height: 65px;
+        text-align: left;
+        color:black; 
+        font-weight: 600; 
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .silahkan {
+        height: auto;
+        color: #666666;
+        font-weight: 325;
+        font-family: Open Sans, helvetica, Arial, sans serif;
+        font-size: 0.9em;
+    }
+
+    .bca {
+        font-size: 15px;
+    }
+
+    .mandiri {
+        font-size: 15px;
+    }
+
+    .icotel{
+        width: 7%;
+    }
+
+    .icowa{
+        width: 8%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .kotak {
+        width: 300px;
+        height: 500px;
+    }
+    .butuh {
+        height: 100px;
+        text-align: left;
+        color:black; 
+        font-weight: 600; 
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .silahkan {
+        height: auto;
+        color: #666666;
+        font-weight: 325;
+        font-family: Open Sans, helvetica, Arial, sans serif;
+        font-size: 1.1em;
+    }
+
+    .bca {
+        font-size: 17px;
+    }
+
+    .mandiri {
+        font-size: 17px;
+    }
+
+    .icoman {
+        width: 30%;
+    }
+
+    .icobca {
+        width: 30%;
+    }
+
+    .icotel{
+        width: 9%;
+    }
+
+    .icowa{
+        width: 10%;
+    }
+}
