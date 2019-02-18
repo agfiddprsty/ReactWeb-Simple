@@ -17,16 +17,16 @@ class Daftar extends Component {
                         <img alt='' src={dwicon} style={{margin:'0 0 0 -8px', width:'14%'}}/>
                         <h1 style={{color:'##3B3B3B', fontWeight:'515', fontFamily:'Circular Std Black, sans-serif;', fontSize:'2.15000000em',display:'block', margin:'0 0 0 -7px',
                         }}>Selamat datang di Squad </h1>
-                        <p style={{color:'#666666', fontWeight:'400', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.500000000em', display:'block', margin:'0 0 20px -7px'}}>
+                        <p style={{color:'grey', fontWeight:'400', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.500000000em', display:'block', margin:'0 0 20px -7px'}}>
                         Online Bootcamp Zaman Now
                         </p>
                     </div>
                 </div>
 
                 <div style={{padding:'0 0 140px 45px'}}>
-                    <div class="daftar" style={{position:'relative', width:'81%', boxShadow:'0 0 7px 0 rgba(136, 136, 136, 0.4)', backgroundColor:'#FFF', position:'center', padding:'', border:'1px solid #ececec'}}>
-                        <div class="col-md-12" style={{padding:'16px 25px 0 25px'}}>
-                        <form class="login-form validate-form" style={{margin:'50px 25px 0 77px'}}>
+                    <div class="daftar" style={{position:'relative', width:'81%', boxShadow:'0 0 20px 1px rgba(136, 136, 136, 0.4)', backgroundColor:'#FFF', position:'center', padding:'', border:'1px solid #ececec'}}>
+                        <div class="col-md-12" style={{padding:'16px 10px 0 30px'}}>
+                        <form class="login-form validate-form" style={{width:'90%', margin:'25px 15px 0 15px'}}>
 
                             <div class="wrap-input validate-input" data-validate = "">
                                 <input class="input" type="email" name="email" placeholder="Email"/>
@@ -44,11 +44,12 @@ class Daftar extends Component {
                                 </span>
                             </div>
 
+                            <div className="text-center btn-lg" style={{width:'', padding:'10px 0 10px 0', margin:'0'}}>
+                                <a href="/silabusnew"><button type="button" class="btn btn-danger btn-lg" style={{padding:'15px 170px 15px 170px', borderRadius:'0', boxShadow:'0 0 15px 0 rgba(136, 136, 136, 0.4)'}} >Masuk</button></a>
+                            </div>
+
                         </form>
 
-                            <div className="text-center btn-lg" style={{width:'100%', padding:'15px 0 15px 3px'}}>
-                                <a href="/silabusnew"><button type="button" class="btn btn-danger btn-lg" style={{padding:'15px 180px 15px 180px', borderRadius:'0', boxShadow:'0 0 15px 0 rgba(136, 136, 136, 0.4)'}} >Masuk</button></a>
-                            </div>
 
                             <p class="text-center" style={{color:'#666666', fontWeight:'400', fontSize:'.97514286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}}>Lupa Password?</p>
                             <p class="text-center" style={{color:'#666666', fontWeight:'400', fontSize:'.97514286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}}>Belum punya akun? <span style={{color:'red'}}> Daftar</span></p>

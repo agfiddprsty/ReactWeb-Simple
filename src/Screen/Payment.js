@@ -21,15 +21,14 @@ class Payment extends Component {
                             height:'50px',textAlign:'left',color:'black', fontWeight:'600', marginTop: '30px'
                         }}>Pembayaran pendaftaran dibutuhkan</h2>
                         <span style={{
-                            height:'auto', color: '#000'
-                        }}> silahkan membayar biaya  pendaftaran online bootcamp sebesar IDR 500.000 untuk dapat</span>
-                        <span style={{ color: '#000'}}> mengakses konten kami.</span>
+                            height:'auto', color:'#666666', fontWeight:'325', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.20500000em'
+                        }}> Silahkan membayar biaya  pendaftaran online bootcamp sebesar IDR <br/> 500.000 untuk dapat mengakses konten kami</span>
                         <div style={{marginBottom: '30px'}}>
                             <img className="rounded" src={bca} alt="" style={{marginLeft: '-25px', width:'20%'}}/> 
-                            <span style={{fontWeight: '600'}}> BCA  320 0401 823 a/n Ega Wachid</span>
+                            <span style={{fontWeight: '600'}}> 320 0401 823 a/n Ega Wachid</span>
                             <br></br>
                             <img className="rounded" src={mandiri} alt="" style={{marginLeft: '-20px', width:'20%'}}/> 
-                            <span style={{marginBottom: '50px', fontWeight: '600'}}> MANDIRI  90000 2773 5407 a/n Ega Wachid</span>
+                            <span style={{marginBottom: '50px', fontWeight: '600'}}> 90000 2773 5407 a/n Ega Wachid</span>
                         </div>
                     </section>
                     <div className="text-center">

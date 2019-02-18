@@ -6,12 +6,12 @@ class Silabusnew extends Component {
         <div style={{backgroundColor:'#FFF'}}>
             <Header/>
             <body style={{backgroundColor:'#FFF'}}>
-            <div className="jumbotron jumbotron-fluid gmbrlanding" style={{height: "650px"}}>
+            <div className="jumbotron jumbotron-fluid gmbrlanding" style={{height: "660px"}}>
                 <h4 className="card-title text-center title">Menjadi Fullstack Mobile Developer <br/>Professional dan Disalurkan Kerja</h4>
             </div>
               
                 <div className="text-title">
-                    <div className="text-center" style={{padding:'60px 0 0 0', backgroundColor:'#FFF'}}>
+                    <div className="text-center" style={{padding:'90px 0 0 0', backgroundColor:'#FFF'}}>
                         <h1 style={{color:'##3B3B3B', fontWeight:'510', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.9700000em',display:'block', margin:'0 0 30px 0'}}>
                         Tertarik dengan pembelajaran kami? </h1>
                         <p style={{color:'#666666', fontWeight:'325', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.48500000em', display:'block', margin:'33px 0 39px 0'}}>
@@ -21,25 +21,26 @@ class Silabusnew extends Component {
                 </div>
             
                 <div style={{paddingBottom:'50px', backgroundColor:'#FFF'}}>
-                    <div class="daftar" style={{boxShadow:'0 0 7px 0 rgba(136, 136, 136, 0.4)', width:'37.5%', backgroundColor:'#FFF', position:'center', margin:'25px 0 100px 430px', border:'1px solid #ececec'}}> 
-                        <div class="col-md-12" style={{margin:'0 25px 0 75px'}}>
-                            <form class="login-form validate-form" style={{margin:'50px 25px 0 25px'}}>
+                    <div class="daftar" style={{boxShadow:'0 0 20px 1px rgba(136, 136, 136, 0.4)', width:'37.5%', backgroundColor:'#FFF', position:'center', margin:'25px 0 100px 430px', border:'1px solid #ececec'}}> 
+                        <div class="col-md-12" style={{margin:'0 10px 0 10px'}}>
+                            <form class="login-form validate-form" style={{width:'90%', margin:'25px 15px 0 15px',}}>
 
                                 <div class="wrap-input validate-input" data-validate = "">
-                                    <input class="input" type="text" name="fullname" placeholder="Nama Lengkap"/>
+                                    <input class="input" type="text" name="fullname" placeholder="Nama Lengkap" style={{borderRadius:'0'}}/>
                                     <span class="focus-input"></span>
                                 </div>
 
                                 <div class="wrap-input validate-input" data-validate = "">
-                                  <input class="input" type="text" name="email" placeholder="Email"/>
+                                  <input class="input" type="text" name="email" placeholder="Email" style={{borderRadius:'0'}}/>
                                   <span class="focus-input"></span>
                                 </div>
-
+                        
+                                <div className="btn-block" style={{width:'', padding:'10px 0 15px 0', margin:'0'}}>
+                                    <a href="/payment"><button type="button" class="btn btn-danger btn-block" style={{marginBottom:'10px', padding:'10px 0 10px 0', borderRadius:'0'}}>Kirim Silabus</button></a>
+                                </div>
                             </form>
 
-                            <div className="btn-block" style={{width:'85%', padding:'15px 0 15px 0', margin:'0 0 0 -35px'}}>
-                              <a href="/payment"><button type="button" class="btn btn-danger btn-block" style={{marginBottom:'10px', borderRadius:'0'}}>Kirim Silabus</button></a>
-                            </div>
+                           
 
                         </div>
                     </div>
