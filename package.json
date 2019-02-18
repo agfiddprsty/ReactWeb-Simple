@@ -26,6 +26,7 @@
     "react-radio-group": "^3.0.3",
     "react-recaptcha-google": "^1.1.1",
     "react-redux": "^6.0.0",
+    "react-responsive-embed": "^2.1.0",
     "react-responsive-image": "^4.0.0",
     "react-responsive-navbar": "^1.0.11",
     "react-router": "^4.3.1",

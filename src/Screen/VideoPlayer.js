@@ -3,6 +3,7 @@ import './css/video.css';
 import Iframe from 'react-iframe'
 import COmment from './DiscussVideo'
 import './css/VideoPlayer.css'
+import Iframeresponsive from 'react-responsive-embed'
 class VideoPlayer extends Component{
     constructor(){
         super()
@@ -21,13 +22,14 @@ class VideoPlayer extends Component{
         return(
             <div className="col-md-auto">
                 <div className="">
-                    <Iframe url="https://fast.wistia.net/embed/iframe/dso2sjap7u"
-                    width="800px"
-                    height="500px"
+                    <Iframeresponsive src="https://fast.wistia.net/embed/iframe/dso2sjap7u"
+                    // width="800px"
+                    // height="500px"
                     id="myId"
                     className="myClassname"
                     display="initial"
                     position="relative"
+                    ratio='4:3'
                     allowFullScreen/>
                 </div>
                 <h2 style={{width:"800px",marginTop:"1%"}}>1. Perkenalan</h2>
