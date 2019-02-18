@@ -5,13 +5,13 @@ import './css/DashboardUnpaid.css';
 class DashboardUnpaid extends Component {
     render() {
       return (
-        <div style={{backgroundColor:'#FFF'}}>
+        <div className="hir" style={{backgroundColor:'#FFF'}}>
           <div>
             <Header/>
           </div>
           <body style={{backgroundColor:'#FFF'}}>
-            <div style={{padding:'0 0 20px 0', backgroundColor:'#FFF'}}>
-              <div class="agreement" style={{boxShadow:'0 0 20px 1px rgba(136, 136, 136, 0.4)', width:'59.7%', padding:'50px 40px 50px 40px', backgroundColor:'#FFF', position:'center', margin:'50px 0 80px 275px', border:'1px solid #ececec'}}> 
+            <div className="tengah" style={{backgroundColor:'#FFF'}}>
+              <div class="agreement"> 
                 <div className="persetujuan">
                   <h1 className="text-center" style={{color:'red', fontWeight:'510', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.9700000em',display:'block'}}>
                       Persetujuan</h1>
@@ -23,8 +23,8 @@ class DashboardUnpaid extends Component {
                 </div>
 
                 <div class="d-flex justify-content-end" style={{paddingTop: '50px'}}>
-                  <a href="/silabusnew" ><p class="btn btn-outline-danger" style={{borderRadius:'0', padding:'15px 42px 15px 42px', marginRight:'25px'}}>Tolak</p></a>
-                  <a href="/payment"><p class="btn btn-danger" style={{borderRadius:'0', padding:'15px 42px 15px 42px'}}>Setuju</p></a>  
+                  <a href="/silabusnew" ><span className="btn btn-outline-danger tolak">Tolak</span></a>
+                  <a href="/payment"><span class="btn btn-danger setuju">Setuju</span></a>  
                 </div>
               </div>
             </div>
