@@ -18,7 +18,7 @@ class DetailQuiz extends Component{
                                 <QuizPlayer/>
                             </div>
                             <div class="col-md-3" >
-                                <div style={{marginLeft:"45px"}}>
+                                <div style={{marginLeft:"45px",marginTop:"10px"}}>
                                     <br/>
                                     <h5>Berikutnya : </h5>
                                 </div>
