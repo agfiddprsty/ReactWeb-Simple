@@ -14,6 +14,7 @@ class DetailQuiz extends Component{
                     <div style={{marginLeft:"75px",marginTop:"80px"}} >
                         <div className="row">
                             <div class="col-md-auto">
+                                <h5>Kuis Mingguan #1</h5>
                                 <QuizPlayer/>
                             </div>
                             <div class="col-md-3" >
