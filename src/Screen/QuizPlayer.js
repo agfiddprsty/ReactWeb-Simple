@@ -17,8 +17,8 @@ class QuizPlayer extends Component{
                         <br/>
                         <h6 style={{color:"#FFF",marginLeft:"10px"}} className="col-12 col-s-9">Cara Submit git : </h6>
                         <ul style={{display: "block",listStyleType:"disc",marginLeft:"10px",color:"#FFF"}}className="col-12 col-s-9">
-                            <li > Register Ke git arkademy melalui link berikut</li>
-                            <li> Buat Repository baru dengan nama "kuis"</li>
+                            <li className="col-12 col-s-9" > Register Ke git arkademy melalui link berikut</li>
+                            <li className="col-12 col-s-9"> Buat Repository baru dengan nama "kuis"</li>
                         </ul>
                     </div>
                 </div>     

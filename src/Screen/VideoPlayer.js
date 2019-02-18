@@ -46,7 +46,7 @@ class VideoPlayer extends Component{
                 <br/>
                 <br/>
 
-                <div style={{borderWidth:"1px",borderTop:"solid",width:"800px",borderColor:"#E7E7E7"}}>
+                <div style={{borderWidth:"1px",borderTop:"solid",width:"800px",borderColor:"#E7E7E7"}}className="col-12 col-s-9">
                     <br/>
                     <COmment/>
                 </div>
