@@ -81,7 +81,7 @@ class ListVideoDown extends Component{
                                     <a href="/detailquiz" className="modul">
                                         <div className="row" style={{backgroundColor:"#FFF"}}>
                                                 <div className="col-md-4">
-                                                    <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/originals/e0/7e/e3/e07ee3a851126adcc2795dd1bc16798a.jpg)", backgroundRepeat:"no-repeat",backgroundSize:"100% auto"}}>
+                                                    <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://4.bp.blogspot.com/-IFLTOxo35e4/UyEZFO7s6pI/AAAAAAAAJSQ/4DqSJ6xJiPg/s1600/Quiz+Time.png)", backgroundRepeat:"no-repeat",backgroundSize:"100% auto"}}>
                                                         <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '100px', border: 'none',height:"50px"}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
                                                     </div>
                                                 </div>
