@@ -10,7 +10,7 @@ class DashboardUnpaid extends Component {
             <Header/>
           </div>
           <body style={{backgroundColor:'#FFF'}}>
-            <div className="tengah" style={{backgroundColor:'#FFF'}}>
+            <div className="tengahagre" style={{backgroundColor:'#FFF'}}>
               <div class="agreement"> 
                 <div className="persetujuan">
                   <h1 className="text-center" style={{color:'red', fontWeight:'510', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.9700000em',display:'block'}}>
