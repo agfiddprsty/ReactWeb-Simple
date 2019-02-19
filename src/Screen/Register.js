@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import Reduxilus from './img/Reduxilus.png';
 import dwicon from './img/dwicon.png';
-import './css/Daftar.css';
+import './css/Registerpage.css';
 
-class Daftar extends Component {
+class Register extends Component {
     render() {
       return (
         <div class="row" style={{backgroundColor:'#FFF'}}>
             <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <img alt='' src={Reduxilus} style={{margin:'175px 0 0 85px'}}/>
+                <img alt='' src={Reduxilus} style={{margin:'175px 0 200px 85px'}}/>
             </div>
             
             <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -30,17 +30,24 @@ class Daftar extends Component {
                                 <form>
                                     <div>
                                         <input type="email" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                        <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Nama Lengkap</label>
+                                    </div>
+                                    <div>
+                                        <input type="email" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                         <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Email</label>
                                     </div>
                                     <div>
                                         <input type="password" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                         <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Password</label>
                                     </div>
-                                    <div className="text-center btn-lg" style={{width:'', padding:'10px 0 10px 0', margin:'0'}}>
-                                        <a href="/silabusnew"><button type="button" class="btn btn-danger btn-lg" style={{padding:'15px 170px 15px 170px', borderRadius:'0', boxShadow:'0 0 15px 0 rgba(136, 136, 136, 0.4)'}} >Masuk</button></a>
+                                    <div>
+                                        <input type="password" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                        <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Konfirmasi Password</label>
                                     </div>
-                                    <p class="text-center" style={{color:'#666666', fontWeight:'400', fontSize:'.97514286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}}>Lupa Password?</p>
-                                    <p class="text-center" style={{color:'#666666', fontWeight:'400', fontSize:'.97514286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}}>Belum punya akun? <span style={{color:'red'}}> Daftar</span></p>
+                                    <div className="text-center btn-lg" style={{width:'', padding:'5px 0 5px 0', margin:'0'}}>
+                                        <a href="/silabusnew"><button type="button" class="btn btn-danger btn-lg" style={{padding:'15px 130px 15px 130px', borderRadius:'0', boxShadow:'0 0 15px 0 rgba(136, 136, 136, 0.4)', fontFamily:'helvetica, Arial, sans serif'
+                                    }} >Daftar Sekarang</button></a>
+                                    </div>
                                 </form>
                             </div>
                             <br/>
@@ -57,4 +64,4 @@ class Daftar extends Component {
       );
     }
   }
-  export default Daftar;
+  export default Register;
