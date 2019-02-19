@@ -16,7 +16,7 @@ class ListVideoDown extends Component{
                                 <Card className="border-0"><a href="/detailvideo" className="modul">
                                         <div className="row" style={{backgroundColor:"#FFF"}}>
                                             <div className="col-md-4">
-                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)",backgroundRepeat:"no-repeat"}}>
+                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)",backgroundRepeat:"no-repeat", backgroundSize:"100% auto"}}>
                                                     <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '100px', border: 'none',height:"50px"}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
                                                 </div>
                                             </div>
@@ -32,7 +32,7 @@ class ListVideoDown extends Component{
                                 <Card className="border-0"><a href="/detailvideo" className="modul">
                                         <div className="row" style={{backgroundColor:"#FFF"}}>
                                             <div className="col-md-4">
-                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)", backgroundRepeat:"no-repeat"}}>
+                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)", backgroundRepeat:"no-repeat",backgroundSize:"100% auto"}}>
                                                     <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '100px', border: 'none',height:"50px"}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
                                                 </div>
                                             </div>
@@ -48,7 +48,7 @@ class ListVideoDown extends Component{
                                 <Card className="border-0"><a href="/detailvideo" className="modul">
                                         <div className="row" style={{backgroundColor:"#FFF"}}>
                                             <div className="col-md-4">
-                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)", backgroundRepeat:"no-repeat"}}>
+                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)", backgroundRepeat:"no-repeat",backgroundSize:"100% auto"}}>
                                                     <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '100px', border: 'none',height:"50px"}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
                                                 </div>
                                             </div>
@@ -64,7 +64,7 @@ class ListVideoDown extends Component{
                                 <Card className="border-0"><a href="/detailvideo" className="modul">
                                         <div className="row" style={{backgroundColor:"#FFF"}}>
                                             <div className="col-md-4">
-                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)", backgroundRepeat:"no-repeat"}}>
+                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)", backgroundRepeat:"no-repeat",backgroundSize:"100% auto"}}>
                                                     <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '100px', border: 'none',height:"50px"}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
                                                 </div>
                                             </div>
@@ -81,7 +81,7 @@ class ListVideoDown extends Component{
                                     <a href="/detailquiz" className="modul">
                                         <div className="row" style={{backgroundColor:"#FFF"}}>
                                                 <div className="col-md-4">
-                                                    <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)", backgroundRepeat:"no-repeat"}}>
+                                                    <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/originals/e0/7e/e3/e07ee3a851126adcc2795dd1bc16798a.jpg)", backgroundRepeat:"no-repeat",backgroundSize:"100% auto"}}>
                                                         <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '100px', border: 'none',height:"50px"}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
                                                     </div>
                                                 </div>
@@ -98,7 +98,7 @@ class ListVideoDown extends Component{
                                     <a href="#" className="modul">
                                         <div className="row" style={{backgroundColor:"#FFF"}}>
                                             <div className="col-md-4">
-                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)", backgroundRepeat:"no-repeat",filter:"grayscale(100%)"}}>
+                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)", backgroundRepeat:"no-repeat",filter:"grayscale(100%)",backgroundSize:"100% auto"}}>
                                                     <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '100px', border: 'none',height:"50px"}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
                                                 </div>
                                             </div>
@@ -116,7 +116,7 @@ class ListVideoDown extends Component{
                                     <a href="#" className="modul">
                                         <div className="row" style={{backgroundColor:"#FFF"}}>
                                             <div className="col-md-4">
-                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)", backgroundRepeat:"no-repeat",filter:"grayscale(100%)"}}>
+                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)", backgroundRepeat:"no-repeat",filter:"grayscale(100%)",backgroundSize:"100% auto"}}>
                                                     <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '100px', border: 'none',height:"50px"}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
                                                 </div>
                                             </div>
@@ -134,7 +134,7 @@ class ListVideoDown extends Component{
                                     <a href="#" className="modul">
                                         <div className="row" style={{backgroundColor:"#FFF"}}>
                                             <div className="col-md-4">
-                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)", backgroundRepeat:"no-repeat",filter:"grayscale(100%)"}}>
+                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)", backgroundRepeat:"no-repeat",filter:"grayscale(100%)",backgroundSize:"100% auto"}}>
                                                     <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '100px', border: 'none',height:"50px"}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
                                                 </div>
                                             </div>
@@ -152,7 +152,7 @@ class ListVideoDown extends Component{
                                     <a href="#" className="modul">
                                         <div className="row" style={{backgroundColor:"#FFF"}}>
                                             <div className="col-md-4">
-                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)", backgroundRepeat:"no-repeat",filter:"grayscale(100%)"}}>
+                                                <div className="d-flex justify-content-center" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/95YRwf6CNw8/450x250)", backgroundRepeat:"no-repeat",filter:"grayscale(100%)",backgroundSize:"100% auto"}}>
                                                     <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '100px', border: 'none',height:"50px"}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
                                                 </div>
                                             </div>
