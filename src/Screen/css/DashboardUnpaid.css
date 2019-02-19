@@ -1,11 +1,40 @@
-.card{
-    border: 1px solid black;
-    margin: 25px 50px 75px 100px;
-    background-color: lightblue;
+.hir {
+	padding-bottom: 100px;
 }
 
 .persetujuan {
     padding: 0px 0px 10px 0px;
+}
+
+.tengah {
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.agreement {
+	box-shadow: 0 0 20px 1px rgba(136, 136, 136, 0.4);
+	width: 60%; 
+	padding: 50px 40px 50px 40px;
+	background-color: #FFF; 
+	position: center;
+	margin-top: 50px;
+	border: 1px solid #ececec;
+}
+
+.tolak {
+	border-radius: 0; 
+	padding: 15px 42px 15px 42px; 
+	margin-right:25px;
+}
+
+.setuju {
+	border-radius: 0; 
+	padding: 15px 42px 15px 42px;
 }
 
 #style-1:-webkit-scrollbar-track
@@ -27,4 +56,21 @@
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #555;
+}
+
+
+@media only screen and (max-width: 454px) {
+    .agreement {
+		box-shadow: 0 0 20px 1px rgba(136, 136, 136, 0.4);
+		width: 90%; 
+		padding: 50px 5px 50px 5px;
+		background-color: #FFF; 
+		position: center;
+		margin-top: 50px;
+		border: 1px solid #ececec;
+	}
+
+	.persetujuan {
+		font-size: 15px;
+	}
 }
