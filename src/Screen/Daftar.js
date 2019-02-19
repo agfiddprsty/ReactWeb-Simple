@@ -29,12 +29,12 @@ class Daftar extends Component {
                             <div class="box" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                 <form>
                                     <div>
-                                        <input type="email" name="" required=""/>
-                                        <label>Email</label>
+                                        <input type="email" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                        <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Email</label>
                                     </div>
                                     <div>
-                                        <input type="password" name="" required=""/>
-                                        <label>Password</label>
+                                        <input type="password" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                        <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Password</label>
                                     </div>
                                     <div className="text-center btn-lg" style={{width:'', padding:'10px 0 10px 0', margin:'0'}}>
                                         <a href="/silabusnew"><button type="button" class="btn btn-danger btn-lg" style={{padding:'15px 170px 15px 170px', borderRadius:'0', boxShadow:'0 0 15px 0 rgba(136, 136, 136, 0.4)'}} >Masuk</button></a>

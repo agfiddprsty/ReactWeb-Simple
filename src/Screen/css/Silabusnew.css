@@ -1,4 +1,4 @@
-.gmbrlanding {
+.silabus {
     background: linear-gradient( rgba(255, 255, 255, 0.15), rgba(253, 245, 255, 0.15) ), url("https://blog.galvanize.com/wp-content/uploads/2018/03/20150708172005-coding-working-workspace-apple-macintosh.jpg");
     width: 100%;
     padding: 0;
@@ -6,7 +6,7 @@
     height: 505px;
     padding: 20px;
 }
-.title {
+.tengah {
     color: #fff;
     font-size: 25px;
     display: flex;
@@ -53,6 +53,7 @@
   
   .box input [type="submit"]
   {
+    font-family:'Open Sans, helvetica, Arial, sans serif';
     border-bottom: none;
     cursor: pointer;
     background: grey;
@@ -66,6 +67,7 @@
     position: relative;
   }
   .box form div label {
+    font-family:'Open Sans, helvetica, Arial, sans serif';
     position: absolute;
     top: 10px;
     left: 0;
@@ -75,11 +77,12 @@
     
   }
   
-  .box input:focus ~ label  
+  .box input:focus ~ label 
   {
+    font-family:'Open Sans, helvetica, Arial, sans serif';
     top: -12px;
     left: 0;
     color: grey;
     font-size: 12px;
-  
+    
   }

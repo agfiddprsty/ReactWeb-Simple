@@ -8,8 +8,8 @@ class Silabusnew extends Component {
         <div style={{backgroundColor:'#FFF', paddingBottom:'250px'}}>
             <Header/>
             <body style={{backgroundColor:'#FFF'}}>
-            <div className="jumbotron jumbotron-fluid gmbrlanding" style={{height: "660px"}}>
-                <h4 className="card-title text-center title">Menjadi Fullstack Mobile Developer <br/>Professional dan Disalurkan Kerja</h4>
+            <div className="jumbotron jumbotron-fluid silabus" style={{height: "660px"}}>
+                <h4 className="card-title text-center tengah">Menjadi Fullstack Mobile Developer <br/>Professional dan Disalurkan Kerja</h4>
             </div>
               
                 <div className="text-title">
@@ -28,12 +28,12 @@ class Silabusnew extends Component {
                             <div class="box" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                 <form>
                                     <div>
-                                        <input type="text" name="" required=""/>
-                                        <label>Nama Lengkap</label>
+                                        <input type="text" name="" required="" pattern="[A-Za-z}" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                        <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Nama Lengkap</label>
                                     </div>
                                     <div>
-                                        <input type="email" name="" required=""/>
-                                        <label>Email</label>
+                                        <input type="email" name="" required pattern="[^@]+@[^@]+.[a-zA-z]{2,6}" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                        <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Email</label>
                                     </div>
                                     <div className="btn-block" style={{width:'', padding:'10px 0 15px 0', margin:'0'}}>
                                     <a href="/payment"><button type="button" class="btn btn-danger btn-block" style={{marginBottom:'10px', padding:'10px 0 10px 0', borderRadius:'0'}}>Kirim Silabus</button></a>
