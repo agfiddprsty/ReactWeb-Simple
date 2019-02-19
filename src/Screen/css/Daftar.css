@@ -310,6 +310,7 @@ iframe {
 
 .box input [type="submit"]
 {
+  font-family:'Open Sans, helvetica, Arial, sans serif';
   border-bottom: none;
   cursor: pointer;
   background: grey;
@@ -323,6 +324,7 @@ iframe {
   position: relative;
 }
 .box form div label {
+  font-family:'Open Sans, helvetica, Arial, sans serif';
   position: absolute;
   top: 10px;
   left: 0;
@@ -334,6 +336,7 @@ iframe {
 
 .box input:focus ~ label  
 {
+  font-family:'Open Sans, helvetica, Arial, sans serif';
   top: -12px;
   left: 0;
   color: grey;

@@ -21,20 +21,20 @@ class DashboardPaidProfile extends Component {
                             <div class="box">
                                 <form>
                                     <div>
-                                        <input type="text" name="" required="" />
-                                        <label>Nomor Telepon</label>
+                                        <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                        <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Nomor Telepon</label>
                                     </div>
                                     <div>
-                                        <input type="text" name="" required=""/>
-                                        <label>Alamat Rumah</label>
+                                        <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                        <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Alamat Rumah</label>
                                     </div>
                                     <div>
-                                        <input type="text" name="" required=""/>
-                                        <label>Nama Institusi Pendidikan Terakhir</label>
+                                        <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                        <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Nama Institusi Pendidikan Terakhir</label>
                                     </div>
                                     <div>
-                                        <input type="password" name="" required=""/>
-                                        <label>Konfirmasi Password</label>
+                                        <input type="password" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                        <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Konfirmasi Password</label>
                                     </div>
                                     <div className="text-center btn-lg" style={{width:'95%', padding:'15px 0 15px 280px'}}>
                                     <a href="/dashboard">
