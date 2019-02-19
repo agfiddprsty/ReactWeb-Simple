@@ -23,8 +23,8 @@ class DashboardUnpaid extends Component {
                 </div>
 
                 <div class="d-flex justify-content-end" style={{paddingTop: '50px'}}>
-                  <a href="/silabusnew" ><span className="btn btn-outline-danger tolak">Tolak</span></a>
-                  <a href="/payment"><span class="btn btn-danger setuju">Setuju</span></a>  
+                  <a href="/silabusnew" ><span className="btn btn-outline-danger tolak" style={{fontFamily:'helvetica, Arial, sans serif'}}>Tolak</span></a>
+                  <a href="/payment"><span class="btn btn-danger setuju" style={{fontFamily:'helvetica, Arial, sans serif'}}>Setuju</span></a>  
                 </div>
               </div>
             </div>
