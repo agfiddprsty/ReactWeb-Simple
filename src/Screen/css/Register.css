@@ -109,3 +109,101 @@
     transform: scale(0.81); 
     transform-origin: left top;
 }
+
+.registe {
+    background-color: #FFF;
+    height: 100%;
+    overflow: hidden;
+}
+
+.persegi{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 500px;
+    background: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
+    margin-bottom: 50px;
+  }
+  
+  .persegi input{
+    padding: 10px 0;
+    margin-bottom: 30px;
+  }
+  
+  .persegi input:hover{
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+  }
+  
+  .persegi input{
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+    
+  }
+  .persegi form div {
+    position: relative;
+  }
+  .persegi form div label {
+    font-family:'Open Sans, helvetica, Arial, sans serif';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #999;
+    transition: .5s;
+    pointer-events: none;
+    
+  }
+  
+  .persegi input:focus ~ label  
+  {
+    font-family:'Open Sans, helvetica, Arial, sans serif';
+    top: -12px;
+    left: 0;
+    color: grey;
+    font-size: 12px;
+  
+  }
+
+  .btndaftar {
+    padding: 15px 130px 15px 130px;
+    border-radius: 0; 
+    box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
+    font-family: helvetica, Arial, sans serif;
+  }
+
+
+@media only screen and (max-width: 550px) {
+    .persegi {
+        width: 450px;    
+    }
+    .btndaftar {
+        padding: 15px 100px 15px 100px;
+        border-radius: 0; 
+        box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
+        font-family: helvetica, Arial, sans serif;
+      }
+}
+
+
+@media only screen and (max-width: 470px) {
+    .persegi {
+        width: 350px;    
+    }
+    .btndaftar {
+        padding: 15px 50px 15px 50px;
+        border-radius: 0; 
+        box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
+        font-family: helvetica, Arial, sans serif;
+      }
+}
