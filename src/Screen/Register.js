@@ -45,8 +45,7 @@ class Register extends Component {
                                         <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Konfirmasi Password</label>
                                     </div>
                                     <div className="text-center btn-lg" style={{width:'', padding:'5px 0 5px 0', margin:'0'}}>
-                                        <a href="/silabusnew"><button type="button" class="btn btn-danger btn-lg" style={{padding:'15px 135px 15px 135px', borderRadius:'0', boxShadow:'0 0 15px 0 rgba(136, 136, 136, 0.4)', fontFamily:'helvetica, Arial, sans serif'
-                                    }} >Daftar Sekarang</button></a>
+                                        <a href="/silabusnew"><button type="button" class="btn btn-danger btn-lg" style={{padding:'15px 130px 15px 130px', borderRadius:'0', boxShadow:'0 0 15px 0 rgba(136, 136, 136, 0.4)',}} >Daftar Sekarang</button></a>
                                     </div>
                                 </form>
                             </div>
