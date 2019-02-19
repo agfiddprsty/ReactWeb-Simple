@@ -1,0 +1,38 @@
+.one {
+    position: relative;
+    margin:0 auto;
+    top: 0px;
+    left: 0px;
+    width: 980px;
+    height: 100px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.load {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color:rgba(0,0,0,0.7);
+}
+
+.gambr {
+    margin-top: -19px;
+    position: relative;
+    top: 50%;
+    width: 38px;
+    height: 38px;
+}
+
+.tu {
+    cursor: default;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 980px;
+    height: 100px;
+    overflow: hidden;
+}

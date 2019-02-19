@@ -11,6 +11,7 @@ import mentor from './img/mentor.png';
 import teknologi from './img/teknologi.png';
 import Timer from './timer';
 import HomeVideo from './HomeVideo';
+import Slider from './slider';
 
 class Home extends Component {
   render() {
@@ -259,8 +260,9 @@ class Home extends Component {
                             <div className="text-center">
                                 <p className="rekanusaha">Perusahaan Rekanan</p>
                             </div>
-                            <div className="text-center rekanus">
-                                <span>
+                            <div className="text-right rekanus">
+                                <Slider className="pull-right"/>
+                                {/* <span>
                                     <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/ketitik.png"/>
                                 </span>
                                 <span>
@@ -301,7 +303,7 @@ class Home extends Component {
                                 </span>
                                 <span>
                                     <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/true-money.png"/>
-                                </span>
+                                </span> */}
                             </div>
                         </div>
                     </div>
