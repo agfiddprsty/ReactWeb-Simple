@@ -12,7 +12,7 @@
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
     .col-s-1-2{
-      width: 100px;
+      width: 200px;
       background-color: #FF6567;
       border-radius: 10px;
       height: 130px;
@@ -26,6 +26,32 @@
     .submit-cl{
       margin-left: 150px
     }
+    .dt-gr-cl{
+      border-top:solid;
+      border-color:#E7E7E7;
+      margin-left:45px;
+      width: 200px;
+    }
+    .a-pd-cl{
+      color:#FFF;
+      margin-Left:20px;
+      border-Radius:10px;
+      font-size: 20px;
+    }
+    .prog-cl{
+      width: 100px;
+      margin-left:50px;
+      margin-right:50px;
+      border-radius: 10px;
+
+    }
+    .dt-dv-pg-cl{
+      margin-left:10px;
+      margin-top:20px;
+    }
+    /* .ls-dv-cl{
+      margin-left: -60px;
+    } */
   }
   
   @media only screen and (min-width: 768px) {
@@ -56,10 +82,35 @@
     .submit-gd{
       margin-left: 500px;
     }
+    .dt-gr-gd{
+      border-top:solid;
+      border-color:#E7E7E7;
+      margin-left:45px;
+      width: 300px;
+    }
+    .a-pd-gd{
+      color:#FFF;
+      margin-Left:20px;
+      border-Radius:10px;
+      font-size: 35px;
+    }
+    .pd-d-gd{
+      margin-left: 0px;
+    }
+    .dt-dv-pg-gd{
+      margin-left:45px;
+      margin-top:10px;
+    }
+    .ls-dv-gd{
+      margin-left: 10px;
+    }
   }
   @media only screen and (min-width: 375px) {
     .col-xss-1{
         width: 100px;
         height: 50px;
+    }
+    .ls-dv-cl{
+      margin-left: -60px;
     }
   }
