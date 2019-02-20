@@ -42,7 +42,7 @@ class Home extends Component {
                                     <div className="row">
                                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div className="text-center" style={{padding: "20px 0 20px 0"}}>
-                                                <a href="/daftar" style={{fontWeight: '600' }} class="btn btn-danger reg">Daftar Sekarang</a>
+                                                <a href="/register" style={{fontWeight: '600' }} class="btn btn-danger reg">Daftar Sekarang</a>
                                                 <a href="/silabusnew" style={{fontWeight: '600', color: '#fff'}} class="btn btn-outline-danger text-center lengkap">Lihat Silabus</a>
                                             </div> 
                                         </div>
@@ -239,7 +239,7 @@ class Home extends Component {
                             </div>
                             <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                 <div className="text-center" style={{padding: "20px 90px 20px 90px"}}>
-                                    <a href="/daftar" class="btn btn-warning reg" style={{color: '#fff', fontWeight: '600'}}>Daftar Sekarang</a>
+                                    <a href="/register" class="btn btn-warning reg" style={{color: '#fff', fontWeight: '600'}}>Daftar Sekarang</a>
                                     <a href="/silabusnew" class="btn btn-outline-light text-center lengkap" style={{fontWeight: '600'}}>Lihat Silabus</a>
                                 </div> 
                             </div>

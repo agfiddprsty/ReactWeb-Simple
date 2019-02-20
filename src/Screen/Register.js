@@ -13,7 +13,7 @@ class Register extends Component {
                         <img alt='' src={Reduxilus} style={{margin:'175px 0 200px 85px'}}/>
                     </span>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-auto">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <div>
                         <div className="text-title" style={{padding:'55px 0 0 52px'}}>
                             <img alt='' src={dwicon} style={{margin:'0 0 0 -8px', width:'14%'}}/>
