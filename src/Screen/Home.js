@@ -261,8 +261,7 @@ class Home extends Component {
                                 <p className="rekanusaha">Perusahaan Rekanan</p>
                             </div>
                             <div className="text-right rekanus">
-                                <Slider className="pull-right"/>
-                                {/* <span>
+                                <span>
                                     <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/ketitik.png"/>
                                 </span>
                                 <span>
@@ -303,7 +302,7 @@ class Home extends Component {
                                 </span>
                                 <span>
                                     <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/true-money.png"/>
-                                </span> */}
+                                </span>
                             </div>
                         </div>
                     </div>
