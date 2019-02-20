@@ -118,7 +118,6 @@ return (
             <div>
             <hr class="mt-2 mb-5"></hr>
                 <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Minggu 2</h1>
-                <br/>
                 <hr class="mt-2 mb-5"></hr>
                 <h5 style={{color:"red"}}>Konten Terkunci!. selesaikan semua kuis di Minggu 1 untuk membuka</h5>
             </div>

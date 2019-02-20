@@ -26,7 +26,7 @@ class DiscussVideo extends Component{
                         </div>
                         <div class="col-md-auto col-s-9" style={{marginTop:"30px"}}>
                             <input style={{borderStyle:"none none solid none",borderColor:"#E7E7E7"}} className="col-s-9 col-12" placeholder="Write A Comment"></input>
-                            <button class="btn btn-outline-primary submitbutton" > Submit</button>
+                            <button class="btn btn-outline-primary col-s-9" > Submit</button>
                         </div>
                     </div>
                 </div>
