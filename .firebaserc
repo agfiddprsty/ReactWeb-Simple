@@ -1,5 +1,6 @@
 {
   "projects": {
-    "abc": "reactwebsimple"
+    "default": "pklnode",
+    "pklnode": "pklnode"
   }
 }
