@@ -3,14 +3,14 @@ import { Card, CardImg, CardDeck,
     CardBody, Progress } from 'reactstrap';   
 import rnredux from './img/rnreduxplay.png';
 import './css/ListVideo.css';
-
+import './css/VideoPlayer.css'
 class ListVideoDown extends Component{
     render(){
         return(
             <div>
                 {/* <h5>Berikutnya</h5> */}
-                <div className="col-md-auto">
-                    <div className="scrollbar scrollbar-primary">
+                <div className="col-md">
+                    <div className="scrollbar scrollbar-primary scrollbar-cl">
                         <div class="force-overflow">
                             <CardDeck>
                                 <Card className="border-0"><a href="/detailvideo" className="modul">
