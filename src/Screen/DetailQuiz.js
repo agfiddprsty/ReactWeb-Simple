@@ -3,7 +3,7 @@ import HeaderDashboard from './HeaderDashboard';
 import ListVideoDown from './LIstVideoDown';
 import QuizPlayer from './QuizPlayer';
 import Quiz from './Quiz';
-
+import './css/VideoPlayer.css'
 
 class DetailQuiz extends Component{
     render(){
@@ -26,7 +26,7 @@ class DetailQuiz extends Component{
                             </div>
                         </div>
                         <br/>
-                        <div style={{borderTop:"solid",borderColor:"#E7E7E7",width:"800px"}}>
+                        <div style={{borderTop:"solid",borderColor:"#E7E7E7"}} className="col-s-9">
                         
                         </div>
                         <br/>
