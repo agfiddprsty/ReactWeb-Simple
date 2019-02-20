@@ -3,6 +3,7 @@ import HeaderDashboard from './HeaderDashboard';
 import Video from './VideoPlayer'
 import ListVideo from './LIstVideoDown'
 import ProgressDetail from './ProgressDetail';
+import './css/VideoPlayer.css'
 class DetailVideo extends Component {
     render(){
         return(
@@ -15,14 +16,14 @@ class DetailVideo extends Component {
                             <div class="col-md-auto">
                                 <Video/>
                             </div>
-                            <div class="col-md-auto" >
+                            <div class="col-xs-6 col-s-1" >
                                 <div style={{marginLeft:"45px",marginTop:"10px"}}>
                                     
                                     <ProgressDetail/>
                                 </div>
                                 <br/>
                                 <br/>
-                                <div style={{borderTop:"solid",borderColor:"#E7E7E7",width:"300px",marginLeft:"45px"}}>
+                                <div style={{borderTop:"solid",borderColor:"#E7E7E7",marginLeft:"45px"}} >
                                     <br/>
                                     <h5>Berikutnya : </h5>
                                 </div>
