@@ -71,9 +71,9 @@ return (
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
-                    <div className="d-flex justify-content-center loh">
+                    <div className="d-flex justify-content-center nikuis">
                         <a href="/detailquiz" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/5a461410d099a2ad03f9c998.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
