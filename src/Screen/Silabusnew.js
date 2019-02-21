@@ -5,7 +5,7 @@ import './css/Silabusnew.css';
 class Silabusnew extends Component {
     render() {
       return (
-        <div style={{backgroundColor:'#FFF'}}>
+        <div style={{backgroundColor:'#FFF', overflow: 'hidden'}}>
             <div>
                 <Header/>
             </div>
