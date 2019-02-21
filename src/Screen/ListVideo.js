@@ -16,7 +16,7 @@ class ListVideo extends Component {
 
 render() {
 return (
-        <div class="container">
+        <div style={{overflowX:"hidden"}} class="container">
             <div>
                 <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Minggu 1</h1>                       
                 <hr class="mt-2 mb-5"></hr>
