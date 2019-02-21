@@ -26,7 +26,7 @@ class DetailVideo extends Component {
                                 <br/>
                                 <div className="dt-gr-gd dt-gr-cl" >
                                     <br/>
-                                    <h5>Berikutnya : </h5>
+                                    <h5 style={{fontWeight:"bold"}}>Tonton Selanjutnya </h5>
                                 </div>
                                 <br/>
                                 <br/>

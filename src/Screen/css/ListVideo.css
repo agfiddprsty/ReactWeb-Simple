@@ -12,6 +12,12 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/F2WX4BTIkpQ/450x250");
   background-repeat: no-repeat;
 }
+
+.nikuis{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/ZSPBhokqDMc/450x250");
+  background-repeat: no-repeat;
+}
+
 @media only screen and (max-width:1920px){
   .scrollbar {
     margin-left: 30px;

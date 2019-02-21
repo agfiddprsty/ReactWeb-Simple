@@ -16,9 +16,9 @@ class DiscussVideo extends Component{
     render(){
         return(
             <div >
-                <h3>
+                <h5>
                     Diskusi Yuk...
-                </h3>
+                </h5>
                 <div  >
                     <div class="row" id="post-review-box" >
                         <div class="col-sm-2">
@@ -64,7 +64,7 @@ class DiscussVideo extends Component{
                                         </div>
                                         <div class="col-md-auto col-s-9" style={{marginTop:"30px"}}>
                                             <input style={{borderStyle:"none none solid none",borderColor:"#E7E7E7"}} className="col-s-9 col-12" placeholder="Write A Comment"></input>
-                                            <button class="btn btn-outline-primary submitbutton" > Submit</button>
+                                            <button class="btn btn-outline-primary submit-gd submit-cl" > Submit</button>
                                         </div>
                                     </div>
                                 </div>
