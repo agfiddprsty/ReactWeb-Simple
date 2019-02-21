@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1920px) {
+    .dv-pg-gd{
+        width:300px;
+        background-Color:#FF6567;
+        height:130px;
+        border-Radius:10px;
+    }
+    .h2-pg-gd{
+        color:#FFF;
+        margin-Left:20px;
+        border-Radius:10px;
+        font-size: 30px;
+    }
+    .pg-pg-gd{
+        width:100;
+        margin-Left:20px;
+        margin-Right:20px;
+        border-radius: 10px;
+    }
+    .pg-lb-gd{
+        margin-Left:250px;
+        margin-Top:10px;
+        color:#FFF;
+    }
+}
+@media only screen and (max-width:600px){
+    .dv-pg-cl{
+        width:200px;
+        background-Color:#FF6567;
+        height:130px;
+        border-Radius:10px;
+    }
+    .h2-pg-cl{
+        color:#FFF;
+        margin-Left:20px;
+        border-Radius:10px;
+        font-size: 20px;
+    }
+    .pg-pg-cl{
+        width:50;
+        margin-Left:20px;
+        margin-Right:20px;
+        border-radius: 10px;
+    }
+    .pg-lb-cl{
+        margin-Left:150px;
+        margin-Top:10px;
+        color:#FFF;
+    }
+}
