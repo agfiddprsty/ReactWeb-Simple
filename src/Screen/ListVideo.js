@@ -29,9 +29,9 @@ return (
                             <br/>
                         </a>
                     </div>
-                    <a><i className="fa fa-clock-o" style={{marginLeft:"190px",color:"red"}}></i> 04:32 </a>
+                    <span>1. Perkenalan</span>
+                    <span><span className="fa fa-clock-o" style={{marginLeft:"80px",color:"red"}}></span> 04:32 </span>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <h4>1. Perkenalan</h4>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -41,9 +41,9 @@ return (
                             <br/>
                         </a>
                     </div>
-                    <a><i className="fa fa-clock-o" style={{marginLeft:"190px",color:"red"}}></i> 04:32 </a>
+                    <span>2. Instalasi</span>
+                    <span><span className="fa fa-clock-o" style={{marginLeft:"80px",color:"red"}}></span> 04:32 </span>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <h4>2. Instalasi</h4>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -53,31 +53,23 @@ return (
                             <br/>
                         </a>
                     </div>
-                    <a><i className="fa fa-clock-o" style={{marginLeft:"190px",color:"red"}}></i> 04:32 </a>
+                    <span>3. Component</span>
+                    <span><span className="fa fa-clock-o" style={{marginLeft:"70px",color:"red"}}></span> 04:32 </span>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <h4>3. Component</h4>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
-                    <div className="d-flex justify-content-center ini">
+                    <div className="d-flex justify-content-center loh">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
-                    <span><i className="fa fa-clock-o" style={{marginLeft:"190px",color:"red"}}></i> 04:32 </span>
+                    <span>4. Character</span>
+                    <span><span className="fa fa-clock-o" style={{marginLeft:"80px",color:"red"}}></span> 04:32 </span>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <h4>4. Character</h4>
                     </a>
                 </div>
-                    {/* <div class="col-lg-3 col-md-4 col-6">
-                    <a href="/detailquiz" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" style={{backgroundSize:"100px 50px",background: 'transparent',border: 'none'}}src="http://brainboosterstv.com/wp-content/uploads/2018/03/quiz-1400-800x500.jpg" alt=""></img>
-                        <br/>
-                        <h4>Quiz Mingguan #1</h4>
-                        <a> Level <i className="fa fa-signal" style={{color:"#00DFEB"}}></i></a>
-                    </a>
-                </div> */}
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center loh">
                         <a href="/detailquiz" class="d-block mb-4 h-100">
@@ -85,9 +77,9 @@ return (
                             <br/>
                         </a>
                     </div>
-                    <span><i className="fa fa-signal" style={{marginLeft:"190px",color:"#00DFEB"}}></i> Level </span>
+                    <span>Quiz Minggu 1</span>
+                    <span><span className="fa fa-signal" style={{marginLeft:"60px",paddingBottom:"1px",color:"#00DFEB"}}></span> Level </span>
                     <a href="/detailquiz" class="d-block mb-4 h-100">
-                    <h4>Quiz</h4>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -97,9 +89,9 @@ return (
                             <br/>
                         </a>
                     </div>
-                    <span><i className="fa fa-clock-o" style={{marginLeft:"190px",color:"red"}}></i> 04:32 </span>
+                    <span>4. Character</span>
+                    <span><span className="fa fa-clock-o" style={{marginLeft:"80px",paddingBottom:"1px",color:"red"}}></span> 04:32 </span>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <h4>4. Character</h4>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -109,9 +101,9 @@ return (
                             <br/>
                         </a>
                     </div>
-                    <a><i className="fa fa-clock-o" style={{marginLeft:"190px",color:"red"}}></i> 04:32 </a>
+                    <span>2. Instalasi</span>
+                    <a><span className="fa fa-clock-o" style={{marginLeft:"80px",paddingBottom:"1px",color:"red"}}></span> 04:32 </a>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <h4>2. Instalasi</h4>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -121,9 +113,9 @@ return (
                             <br/>
                         </a>
                     </div>
-                    <a><i className="fa fa-clock-o" style={{marginLeft:"190px",color:"red"}}></i> 04:32 </a>
+                    <span>3. Component </span>
+                    <a><span className="fa fa-clock-o" style={{marginLeft:"70px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <h4>3. Component </h4>
                     </a>
                 </div>
             </div>
