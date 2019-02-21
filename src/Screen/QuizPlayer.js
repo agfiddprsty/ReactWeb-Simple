@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-
+import './css/QuizPlayer.css'
 class QuizPlayer extends Component{
     render(){
         return(
@@ -13,12 +13,14 @@ class QuizPlayer extends Component{
                     <br/>                    
                     <h3>Petunjuk: </h3>
                     <br/>
-                    <div style={{backgroundColor:"#FFAD4E",width:"500px",height:"110px"}} className="col-12 col-s-9">
+                    <div className="qp-dv-pg qp-dv-cl">
                         <br/>
-                        <h6 style={{color:"#FFF",marginLeft:"10px"}} className="col-12 col-s-9">Cara Submit git : </h6>
+                        <h6 className="qp-h6-pg qp-h6-cl">Cara Submit git : </h6>
                         <ul style={{display: "block",listStyleType:"disc",marginLeft:"10px",color:"#FFF"}}className="col-12 col-s-9">
-                            <li className="col-12 col-s-9" > Register Ke git arkademy melalui link berikut</li>
-                            <li className="col-12 col-s-9"> Buat Repository baru dengan nama "kuis"</li>
+                            <li className="qp-li-cl" > Register Ke git arkademy melalui link berikut</li>
+                            <li className="qp-li-cl"> Buat Repository baru dengan nama "kuis"</li>
+                            {/* <label className="qp-li-cl">Register Ke git arkademy melalui link berikut</label>
+                            <label className="qp-li-cl">Buat Repository baru dengan nama "kuis"</label> */}
                         </ul>
                     </div>
                 </div>     

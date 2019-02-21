@@ -1,0 +1,27 @@
+@media only screen and (max-width:1920px){
+    .qp-dv-pg{
+        background-Color:#FFAD4E;
+        width:500px;
+        height:110px;
+    }
+    .qp-h6-pg{
+        color:#FFF;
+        margin-Left:10px;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:600px){
+    .qp-dv-cl{
+        background-Color:#FFAD4E;
+        width:300px;
+        height:100px;
+    }
+    .qp-h6-cl{
+        color:#FFF;
+        margin-Left:10px;
+        font-size: 13px;
+    }
+    .qp-li-cl{
+        font-size: 12px;
+    }
+}
