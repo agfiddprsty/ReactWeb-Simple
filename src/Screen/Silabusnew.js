@@ -10,17 +10,15 @@ class Silabusnew extends Component {
                 <Header/>
             </div>
             <body style={{backgroundColor:'#FFF'}}>
-                <div className="mb-12 d-none d-lg-block d-xl-block">
+                <div className="mb-10 d-none d-md-block d-lg-block d-xl-block">
                     <div className="jumbotron jumbotron-fluid silabus" style={{height: "600px"}}>
                         <h4 className="card-title text-center tengah">Menjadi Fullstack Mobile Developer <br/>Professional dan Disalurkan Kerja</h4>
                     </div>
-                
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
                         <div className="text-center" style={{padding:'90px 0 0 0', backgroundColor:'#FFF'}}>
                             <h1 className="tertarik">Tertarik dengan pembelajaran kami? </h1>
                             <p className="isiform">Isi Form dibawah ini untuk mendapatkan silabus melalui email</p>
                         </div>
-
                         <div className="d-flex justify-content-center">
                             <div class="daftar">
                                 <div class="col-md-12">
@@ -46,13 +44,12 @@ class Silabusnew extends Component {
                         </div>
                     </div>
                 </div>
-                <div class="row mb-10 d-lg-none d-xl-none" style={{height: '100%'}}>
+                <div class="row mb-10 d-md-none d-lg-none d-xl-none" style={{height: '100%'}}>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
                         <div className="text-center" style={{padding:'90px 0 0 0', backgroundColor:'#FFF'}}>
                             <h1 className="tertarik">Tertarik dengan pembelajaran kami? </h1>
                             <p className="isiform">Isi Form dibawah ini untuk mendapatkan silabus melalui email</p>
                         </div>
-
                         <div className="d-flex justify-content-center">
                             <div class="daftar">
                                 <div class="col-md-12">
@@ -84,4 +81,3 @@ class Silabusnew extends Component {
     }
   }
   export default Silabusnew;
-    

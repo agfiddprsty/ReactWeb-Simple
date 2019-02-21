@@ -1,9 +1,152 @@
 import React, { Component } from 'react';
 import LabelFloatInput from 'label-float-input';
-import Header from './HeaderPage'
+import Header from './HeaderPage';
 import './css/DashboardPaidProfile.css';
 
 class DashboardPaidProfile extends Component {
+    constructor(props){
+        super(props)
+        this.finishhandle = this.finishhandle.bind(this);
+        this.pendidikanhandle = this.finishhandle.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+        this.handleChecked = this.handleChecked.bind(this);
+        this.moveLogin = this.moveLogin.bind(this);
+        this.state = {
+            isverified: false,
+            fullname:'',
+            email:'',
+            telpnumber:'',
+            adress:'',
+            summary:'',
+            emailValid: true,
+            ressjson:'',
+            checked: false,
+            selectedValue: ''
+
+        }
+    }
+    handleChange(event) {
+        this.setState({ [event.target.name]: event.target.value });
+    }
+    finishhandle(){
+        //check all is ok
+        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+        if (!pattern.test(this.state.email)) {
+            alert('Silahkan masukkan email yang valid')
+        }else if(this.state.fullname === ""){
+            alert("Silahkan masukkan nama lengkap anda");
+        }else if(this.state.email === ""){
+            alert("Silahkan masukkan email anda");
+        }else if(this.state.telpnumber === ""){
+            alert("Silahkan masukkan nomor telepon anda");
+        }else if(this.state.adress === ""){
+            alert("Silahkan masukkan alamat anda");
+        }else if(this.state.summary === ""){
+            alert("Silahkan masukkan summary anda");
+        }
+        else{
+            //init POST AXIOS
+            const fullname = this.state.fullname;
+            const email = this.state.email;
+            const telpnumber = this.state.telpnumber;
+            const adress = this.state.adress;
+            const summary = this.state.summary;
+            const body={
+                fullname,
+                email,
+                telpnumber,
+                adress,
+                summary
+            }
+            // Axios.post('url',body).then(ress=>{
+            //     this.setState({ressjson:ress})
+            // })
+            this.props.history.push("#");
+            console.log(this.state.selectedValue);
+        }        
+        
+    }
+
+    handleChecked(){
+        this.setState({
+            checked: true
+        })
+    }
+
+    handleValue(value) {
+        this.setState({selectedValue: value});
+        console.log(this.state.selectedValue);
+    }
+
+    pendidikanhandle(){
+        //check all is ok
+        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+        if (this.state.sekolah) {
+            alert('Silahkan masukkan sekolah anda')
+        }else if(this.state.study === ""){
+            alert("Silahkan masukkan bidang study anda");
+        }else if(this.state.jurusan === ""){
+            alert("Silahkan masukkan jurusan anda");
+        }else if(this.state.gelar === ""){
+            alert("Silahkan masukkan gelar anda");
+        }
+        else{
+            //init POST AXIOS
+            const sekolah = this.state.sekolah;
+            const study = this.state.study;
+            const jurusan = this.state.jurusan;
+            const gelar = this.state.gelar;
+            const body={
+                sekolah,
+                study,
+                jurusan,
+                gelar
+            }
+            // Axios.post('url',body).then(ress=>{
+            //     this.setState({ressjson:ress})
+            // })
+            this.props.history.push("#");
+            console.log(this.state.selectedValue);
+        }
+    }
+
+    kerjahandle(){
+        //check all is ok
+        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+        if (this.state.perusahaan) {
+            alert('Silahkan masukkan perusahaan pekerjaan anda')
+        }else if(this.state.industri === ""){
+            alert("Silahkan masukkan industri pekerjaan anda");
+        }else if(this.state.title === ""){
+            alert("Silahkan masukkan title pekerjaan anda");
+        }else if(this.state.description === ""){
+            alert("Silahkan masukkan deskripsi pekerjaan anda");
+        }
+        else{
+            //init POST AXIOS
+            const perusahaan = this.state.perusahaan;
+            const industri = this.state.industri;
+            const title = this.state.title;
+            const description = this.state.description;
+            const body={
+                perusahaan,
+                industri,
+                title,
+                description
+            }
+            // Axios.post('url',body).then(ress=>{
+            //     this.setState({ressjson:ress})
+            // })
+            this.props.history.push("#");
+            console.log(this.state.selectedValue);
+        }
+    }
+
+
+    moveLogin(){
+        this.props.history.push("/");
+    }
+
     render() {
       return (
     <div>
@@ -33,24 +176,53 @@ class DashboardPaidProfile extends Component {
                                 </div>
                                     <form>
                                         <div>
-                                            <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                            <input type="text" name="fullname" onChange={this.handleChange} value={this.state.fullname} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                             <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Nama Lengkap</label>
                                         </div>
                                         <div>
-                                            <input type="email" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                            <input type="email" name="email" onChange={this.handleChange} value={this.state.email} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                             <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Email</label>
                                         </div>
                                         <div>
-                                            <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                            <input type="text" name="telpnumber" onChange={this.handleChange} value={this.state.telpnumber} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                             <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Nomor Ponsel</label>
                                         </div>
                                         <div>
-                                            <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                            <input type="text" name="adress" onChange={this.handleChange} value={this.state.adress} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                             <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Alamat</label>
+                                        </div>
+                                        <div>
+                                            <form className="text-left" style={{marginLeft: '20px'}}>
+                                                <div class="custom-control custom-radio custom-control-inline" style={{paddingRight: '100px'}}>
+                                                    <input type="radio" onChange={this.handleValue} selectedValue={this.state.selectedValue} class="custom-control-input" id="lakilaki" name="gender" value="Laki-Laki"/>
+                                                    <label class="custom-control-label" for="lakilaki">Laki-Laki</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" onChange={this.handleValue} selectedValue={this.state.selectedValue} class="custom-control-input" id="perempuan" name="gender" value="Perempuan"/>
+                                                    <label class="custom-control-label" for="perempuan">Perempuan</label>
+                                                </div> 
+                                            </form>
+                                        </div>
+                                        <div>
+                                            <form class="row" style={{marginLeft: '0'}}>
+                                                <div class="form-group col-2">
+                                                    <label for="Date" style={{paddingBottom:'100px'}}>Date</label>
+                                                    <select class="form-control text-center" id="exampleFormControlSelect1">
+                                                        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-2">
+                                                    <label for="Date">Month</label>
+                                                    <select class="form-control text-center" id="exampleFormControlSelect1">
+                                                        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+                                                        <option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>
+                                                    </select>
+                                                </div>
+                                            </form>
                                         </div>
                                         <br/>
                                         <div>
-                                            <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                            <input type="text" name="summary" onChange={this.handleChange} value={this.state.summary} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                             <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Summary</label>
                                         </div>
                                     </form>
@@ -74,25 +246,25 @@ class DashboardPaidProfile extends Component {
                                                                 Tambah Pendidikan
                                                             </p>
                                                             <div>
-                                                                <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                                <input type="text" name="sekolah" onChange={this.handleChange} value={this.state.sekolah} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                                 <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Sekolah</label>
                                                             </div>
                                                             <div>
-                                                                <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                                <input type="text" name="study" onChange={this.handleChange} value={this.state.study} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                                 <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Bidang Study</label>
                                                             </div>
                                                             <div>
-                                                                <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                                <input type="text" name="jurusan" onChange={this.handleChange} value={this.state.jurusan} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                                 <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Jurusan</label>
                                                             </div>
                                                             <div>
-                                                                <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Degree</label>
+                                                                <input type="text" name="gelar" onChange={this.handleChange} value={this.state.gelar} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                                <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Gelar</label>
                                                             </div>
                                                             <br/>
                                                             <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
                                                                 <a href="#"><span class="btn btn-outline-danger btn-lg setuju" style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0', marginRight:'15px'}}>Batal</span></a>  
-                                                                <a href="#"><span class="btn btn-danger btn-lg setuju" style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0'}}>Selesai</span></a>  
+                                                                <a href="#"><span class="btn btn-danger btn-lg setuju" onClick={this.pendidikanhandle} style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0'}}>Selesai</span></a>  
                                                             </div>
                                                         </div>
                                                     </form>
@@ -114,25 +286,25 @@ class DashboardPaidProfile extends Component {
                                                                     Tambah Pengalaman
                                                                 </p>
                                                                 <div>
-                                                                    <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                                    <input type="text" name="perusahaan" onChange={this.handleChange} value={this.state.perusahaan} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                                     <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Perusahaan</label>
                                                                 </div>
                                                                 <div>
-                                                                    <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                                    <input type="text" name="industri" onChange={this.handleChange} value={this.state.industri} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                                     <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Industri</label>
                                                                 </div>
                                                                 <div>
-                                                                    <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Title</label>
+                                                                    <input type="text" name="title" onChange={this.handleChange} value={this.state.title} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Gelar</label>
                                                                 </div>
                                                                 <div>
-                                                                    <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Description</label>
+                                                                    <input type="text" name="description" onChange={this.handleChange} value={this.state.description} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Deskripsi</label>
                                                                 </div>
                                                                 <br/>
                                                                 <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
                                                                     <a href="#"><span class="btn btn-outline-danger btn-lg setuju" style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0', marginRight:'15px'}}>Batal</span></a>  
-                                                                    <a href="#"><span class="btn btn-danger btn-lg setuju" style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0'}}>Selesai</span></a>  
+                                                                    <a href="#"><span class="btn btn-danger btn-lg setuju" onClick={this.kerjahandle} style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0'}}>Selesai</span></a>  
                                                                 </div>
                                                             </div>
                                                         </form>
@@ -141,10 +313,10 @@ class DashboardPaidProfile extends Component {
                                         <div>
                                             <br/>
                                             <p style={{color:'black', fontWeight:'501', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'2.00000000em', display:'block', textAlign:'left', marginBottom:'5px'}}>
-                                                Portofolio
+                                                Portfolio
                                             </p>
                                             <p style={{color:'grey', textAlign:'left', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.10000000em', marginTop:'-5px'}}>
-                                                Upload atau link ke portofolio yang kamu punya.
+                                                Upload atau link ke portfolio yang kamu punya.
                                             </p>
                                             <br/>
                                             <div class="row">
@@ -178,8 +350,22 @@ class DashboardPaidProfile extends Component {
                                                 <p class="col-3" style={{color:'black', fontWeight:'501', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.75000000em', display:'block', textAlign:'left'}}>
                                                     Skills
                                                 </p>
-                                                <button type="button" class="btn " style={{backgroundColor:'lightgrey', color:'#000', marginLeft:'625px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif'}}>Add Skill</button>
+                                                <button type="button" class="btn" data-toggle="collapse" data-target="#tambahskills" style={{backgroundColor:'lightgrey', color:'#000', marginLeft:'625px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif'}}>Add Skill</button>
                                             </div>
+                                            <div>
+                                                    <form>
+                                                        <div id="tambahskills" class="collapse">
+                                                            <p style={{color:'red', fontWeight:'400', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', margin:'25px 0 15px 0', textAlign:'left'}}>
+                                                                Tambah Skills
+                                                            </p>
+                                                            <br/>
+                                                            <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>  
+                                                                <a href="#"><button class="btn btn-danger btn-sm setuju" style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0'}}>Tambah</button></a>  
+                                                            </div>  
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            
                                         </div>
                                         <br/>
                                         <div>
@@ -206,7 +392,7 @@ class DashboardPaidProfile extends Component {
                                                                 </div>
                                                                 <div>
                                                                     <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Description</label>
+                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Deskripsi</label>
                                                                 </div>
                                                                 <br/>
                                                                 <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
@@ -217,7 +403,7 @@ class DashboardPaidProfile extends Component {
                                                         </form>
                                                     </div>
                                         <div class="d-flex justify-content-end" style={{paddingTop: '35px'}}>
-                                            <a href="#"><span class="btn btn-danger btn-lg setuju" style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'5px'}}>Finish</span></a>  
+                                            <a href="#"><span class="btn btn-danger btn-lg setuju" onClick={this.finishhandle} style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'5px'}}>Finish</span></a>  
                                         </div>
                                 </div>
                             <br/>
