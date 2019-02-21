@@ -72,17 +72,18 @@
     top: 10px;
     left: 0;
     color: #999;
-    transition: .5s;
+    transition: none;
     pointer-events: none;
     
   }
   
-  .box input:focus ~ label 
+ 
+  .box input:valid ~ label 
   {
     font-family:'Open Sans, helvetica, Arial, sans serif';
     top: -12px;
     left: 0;
     color: grey;
-    font-size: 12px;
+    font-size: 15px;
     
   }

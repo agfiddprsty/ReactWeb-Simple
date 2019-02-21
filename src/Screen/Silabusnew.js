@@ -32,7 +32,7 @@ class Silabusnew extends Component {
                                         <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Nama Lengkap</label>
                                     </div>
                                     <div>
-                                        <input type="email" name="" required pattern="[^@]+@[^@]+.[a-zA-z]{2,6}" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                        <input type="email" name="" required="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                         <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Email</label>
                                     </div>
                                     <div className="btn-block" style={{width:'', padding:'10px 0 15px 0', margin:'0'}}>
