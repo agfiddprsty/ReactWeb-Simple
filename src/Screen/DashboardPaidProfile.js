@@ -154,7 +154,7 @@ class DashboardPaidProfile extends Component {
                     <div class="daftar" style={{width:'86.5%'}}>
                         <div class="col-md-12" style={{padding:'15px 10px 0 30px'}}>
                             <div class="box" style={{width:'100%', boxShadow: '0 0 20px 1px rgba(136, 136, 136, 0.4)'}}>
-                                <div class="row">
+                                <div class="row" style={{marginBottom:'30px'}}>
                                     <p class="col-1" style={{color:'black', fontWeight:'501', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.75000000em', display:'block', textAlign:'left', marginLeft:''}}>
                                         Profil
                                     </p>
@@ -177,7 +177,7 @@ class DashboardPaidProfile extends Component {
                                             <input type="text" name="adress" onChange={this.handleChange} value={this.state.adress} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                             <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Alamat</label>
                                         </div>
-                                        <div style={{padding:'20px 0px 20px 20px'}}>
+                                        {/* <div style={{padding:'20px 0px 20px 20px'}}>
                                             <form>
                                                 <label class="radio-inline" style={{paddingRight:'20px'}}>
                                                     <input type="radio" name="optradio" checked/>Male
@@ -186,8 +186,8 @@ class DashboardPaidProfile extends Component {
                                                     <input type="radio" name="optradio"/>Female
                                                 </label>
                                             </form>
-                                        </div>
-                                        <div>
+                                        </div> */}
+                                        {/* <div>
                                             <form class="row">
                                                 <div class="form-group col-1">
                                                     <label for="Date">Date</label>
@@ -203,7 +203,7 @@ class DashboardPaidProfile extends Component {
                                                     </select>
                                                 </div>
                                             </form>
-                                        </div>
+                                        </div> */}
                                         <br/>
                                         <div>
                                             <input type="text" name="summary" onChange={this.handleChange} value={this.state.summary} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
@@ -220,7 +220,7 @@ class DashboardPaidProfile extends Component {
                                         </div>
                                         <div>
                                             <br/>
-                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#tambahpendidikan" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
+                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#tambahpendidikan" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 30px 0', fontFamily:'helvetica, Arial, sans serif'}}
                                             >+ Tambah Pendidikan</button>
                                                 </div>
                                                     <div>
@@ -260,7 +260,7 @@ class DashboardPaidProfile extends Component {
                                                 Pengalaman Kerja
                                             </p>
                                             <br/>
-                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#tambahpengalamankerja" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
+                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#tambahpengalamankerja" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 30px 0', fontFamily:'helvetica, Arial, sans serif'}}
                                             >+ Tambah Pengalaman Kerja</button>
                                                 </div>
                                                     <div>
@@ -296,7 +296,7 @@ class DashboardPaidProfile extends Component {
                                         <br/>
                                         <div>
                                             <br/>
-                                            <p style={{color:'black', fontWeight:'501', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'2.00000000em', display:'block', textAlign:'left', marginBottom:'5px'}}>
+                                            <p style={{color:'black', fontWeight:'501', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'2.00000000em', display:'block', textAlign:'left', marginBottom:'10px'}}>
                                                 Portfolio
                                             </p>
                                             <p style={{color:'grey', textAlign:'left', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.10000000em', marginTop:'-5px'}}>
@@ -357,7 +357,7 @@ class DashboardPaidProfile extends Component {
                                                 Projects
                                             </p>
                                             <br/>
-                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#tambahproject" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
+                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#tambahproject" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 30px 0', fontFamily:'helvetica, Arial, sans serif'}}
                                             >+ Tambah Project</button>
                                                 </div>
                                                     <div>
