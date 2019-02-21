@@ -10,13 +10,13 @@ class Quiz extends Component{
                         <div class="col-sm-3">
                             <ul class="nav flex-column nav-pills" style={{backgroundColor:"#FFF"}}>
                                 <li class="nav-item">
-                                    <a class="nav-link active fa fa-check" href="#vtab1" data-toggle="tab"> Tab 1</a>
+                                    <a class="nav-link active " href="#vtab1" data-toggle="tab"> Tab 1<i className="fa fa-check" style={{marginLeft:"199px",borderRadius:"10px",color:"#4CAF50"}}></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link fa fa-times" href="#vtab2" data-toggle="tab"> Tab 2</a>
+                                    <a class="nav-link " href="#vtab2" data-toggle="tab"> Tab 2<i class="fa fa-times"style={{marginLeft:"199px",borderRadius:"10px",color:"#FF2324"}}></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link fa fa-times" href="#vtab3" data-toggle="tab"> Tab 3</a>
+                                    <a class="nav-link" href="#vtab3" data-toggle="tab"> Tab 3<i class="fa fa-times"style={{marginLeft:"199px",borderRadius:"10px",color:"#FF2324"}}></i></a>
                                 </li>
                             </ul>
                         </div>
