@@ -127,16 +127,17 @@ return (
             </div>
             <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-6">
-                    <div className="d-flex justify-content-center ini">
+            <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
+                    <a class="d-block mb-4 h-100">
                     <span>1. Perkenalan</span>
-                    <a><span className="fa fa-clock-o" style={{marginLeft:"70px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
+                    <span><span className="fa fa-clock-o" style={{marginLeft:"80px",color:"red"}}></span> 04:32 </span>
+                    </a>
                 </div>
-                <br/>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
