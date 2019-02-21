@@ -18,6 +18,69 @@
   background-repeat: no-repeat;
 }
 
+.sociallocker {
+	background-color: #EEEEEE;
+	text-align: center;
+	position: relative;
+	max-width: 500px;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	border-radius:10px;
+}
+
+.sociallocker-overlay {
+	background-color: rgba(0,0,0,0.6);
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	transition: all 0.2s ease;
+}
+
+.sociallocker-overlay i {
+	margin-right: 10px;
+}
+
+.sociallocker:hover #sociallocker-overlay {
+	top: -100%;
+	transition: all 0.2s linear;
+}
+
+.sociallocker:hover #sociallocker-content {
+	top: 100%;
+	transition: all 0.2s linear;
+}
+
+.sociallocker-content a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 20px;
+	background-color: #777777;
+	color: #f9f9f9;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+.sociallocker-overlay,
+.sociallocker-content,
+.sociallocker-links {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	left: 0;
+}
+
+.sociallocker-content {
+	background-color: #ccc;
+	transition: all 0.2s ease;
+}
+
 @media only screen and (max-width:1920px){
   .scrollbar {
     margin-left: 30px;

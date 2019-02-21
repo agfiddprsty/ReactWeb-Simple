@@ -18,8 +18,9 @@ render() {
 return (
         <div style={{overflowX:"hidden"}} class="container">
             <div>
-                <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Minggu 1</h1>                       
-                <hr class="mt-2 mb-5"></hr>
+                <br/>
+                <h1 style={{fontWeight:"bold"}}>Minggu 1</h1>
+                <br/>
             </div>
             <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-6">
@@ -121,8 +122,8 @@ return (
             </div>
             <div>
             <hr class="mt-2 mb-5"></hr>
-                <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Minggu 2</h1>
-                <hr class="mt-2 mb-5"></hr>
+                <h1 style={{fontWeight:"bold"}}>Minggu 2</h1>
+                <br/>
             </div>
             <div id="sociallocker-content">
             <div class="row text-center text-lg-left">
