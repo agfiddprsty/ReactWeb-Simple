@@ -4,19 +4,20 @@ import Video from './VideoPlayer'
 import ListVideo from './LIstVideoDown'
 import ProgressDetail from './ProgressDetail';
 import './css/VideoPlayer.css'
+import './css/DetailVideo.css'
 class DetailVideo extends Component {
     render(){
         return(
-            <div style={{background:"#F8F9FA"}}>
+            <div style={{background:"#F8F9FA",paddingRight:"20px",paddingLeft:"20px",overflowX:"hidden"}}>
                 <HeaderDashboard/>
 
-                <body className="bg-light" style={{borderTop:"solid",borderColor:"#E7E7E7",paddingLeft:"20px",paddingRight:"20px"}} >
+                <body className="bg-light dt-body-gd dt-body-cl" >
                     <div style={{marginLeft:"75px",marginTop:"80px"}} >
                         <div className="row">
                             <div class="col-md-auto">
                                 <Video/>
                             </div>
-                            <div class="col-xs-6 col-s-1" >
+                            <div class="col-md-3" >
                                 <div className="dt-dv-pg-gd dt-dv-pg-cl">
                                     
                                     <ProgressDetail/>
@@ -25,12 +26,13 @@ class DetailVideo extends Component {
                                 <br/>
                                 <div className="dt-gr-gd dt-gr-cl" >
                                     <br/>
-                                    <h5>Berikutnya : </h5>
+                                    <h5 style={{fontWeight:"bold"}}>Tonton Selanjutnya </h5>
                                 </div>
                                 <br/>
                                 <br/>
-                                
-                                <ListVideo/>
+                                <div>
+                                    <ListVideo/>
+                                </div>
                             </div>
                             
                         </div>

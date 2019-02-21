@@ -43,7 +43,7 @@ class Masuk extends Component {
                                             }} >Masuk</button></a>
                                             </div>
                                             <p class="text-center" style={{color:'#666666', fontWeight:'400', fontSize:'.97514286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}}>Lupa Password?</p>
-                                            <p class="text-center" style={{color:'#666666', fontWeight:'400', fontSize:'.97514286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}}>Belum punya akun? <span style={{color:'red'}}> Daftar</span></p>
+                                            <p class="text-center" style={{color:'#666666', fontWeight:'400', fontSize:'.97514286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}}>Belum punya akun? <a href="/register"><span style={{color:'red'}}> Daftar</span></a></p>
                                         </form>
                                     </div>
                                     <br/>

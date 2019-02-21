@@ -23,9 +23,6 @@
       margin-right: 20px;
       border-radius: 10px;
     }
-    .submit-cl{
-      margin-left: 150px
-    }
     .dt-gr-cl{
       border-top:solid;
       border-color:#E7E7E7;
@@ -46,12 +43,12 @@
 
     }
     .dt-dv-pg-cl{
-      margin-left:10px;
+      margin-left:-70px;
       margin-top:20px;
     }
-    /* .ls-dv-cl{
-      margin-left: -60px;
-    } */
+    .ls-dv-cl{
+      margin-left: -70px;
+    }
   }
   
   @media only screen and (min-width: 768px) {
@@ -102,7 +99,7 @@
       margin-top:10px;
     }
     .ls-dv-gd{
-      margin-left: 10px;
+      margin-left: 70px;
     }
   }
   @media only screen and (min-width: 375px) {
