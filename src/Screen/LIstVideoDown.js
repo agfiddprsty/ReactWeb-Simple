@@ -10,7 +10,7 @@ class ListVideoDown extends Component{
             <div>
                 {/* <h5>Berikutnya</h5> */}
                 <div className="col-md">
-                    <div className="scrollbar scrollbar-primary">
+                    <div className="scrollbar scrollbar-primary scrollbar-cl">
                         <div class="force-overflow">
                             <CardDeck>
                                 <Card className="border-0"><a href="/detailvideo" className="modul">

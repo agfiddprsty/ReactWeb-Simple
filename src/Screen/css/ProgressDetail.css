@@ -25,7 +25,7 @@
 }
 @media only screen and (max-width:600px){
     .dv-pg-cl{
-        width:200px;
+        width:250px;
         background-Color:#FF6567;
         height:130px;
         border-Radius:10px;
@@ -43,7 +43,7 @@
         border-radius: 10px;
     }
     .pg-lb-cl{
-        margin-Left:150px;
+        margin-Left:200px;
         margin-Top:10px;
         color:#FFF;
     }
