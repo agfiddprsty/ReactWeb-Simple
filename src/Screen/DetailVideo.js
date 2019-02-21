@@ -16,7 +16,7 @@ class DetailVideo extends Component {
                             <div class="col-md-auto">
                                 <Video/>
                             </div>
-                            <div class="col-xs-6 col-s-1" >
+                            <div class="col-md-auto" >
                                 <div className="dt-dv-pg-gd dt-dv-pg-cl">
                                     
                                     <ProgressDetail/>
@@ -29,8 +29,9 @@ class DetailVideo extends Component {
                                 </div>
                                 <br/>
                                 <br/>
-                                
-                                <ListVideo/>
+                                <div>
+                                    <ListVideo/>
+                                </div>
                             </div>
                             
                         </div>
