@@ -1,8 +1,8 @@
 .ini{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/Mv4sg6_6qmE/450x250");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/Mv4sg6_6qmE/650x240");
   background-repeat: no-repeat;
-  height: 174px;
-  width: 255px;
+  height: 170px;
+  width: 265px;
 }
 
 .plybtn {
@@ -22,15 +22,17 @@
 }
 
 .loh{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/F2WX4BTIkpQ/450x250");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/F2WX4BTIkpQ/650x240");
   background-repeat: no-repeat;
-  height: 174px;
-  width: 255px;
+  height: 170px;
+  width: 265px;
 }
 
 .nikuis{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/ZSPBhokqDMc/450x250");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/ZSPBhokqDMc/550x240");
   background-repeat: no-repeat;
+  height: 170px;
+  width: 265px;
 }
 
 .sociallocker {
@@ -111,7 +113,7 @@
   }
 
   .scrollbar-primary::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -128,7 +130,7 @@
   }
 
   .scrollbar-danger::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -145,7 +147,7 @@
   }
 
   .scrollbar-warning::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -172,7 +174,7 @@
   }
 
   .scrollbar-success::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -189,7 +191,7 @@
   }
 
   .scrollbar-info::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -206,7 +208,7 @@
   }
 
   .scrollbar-default::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -223,7 +225,7 @@
   }
 
   .scrollbar-secondary::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -248,7 +250,7 @@
   }
 
   .scrollbar-primary::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -265,7 +267,7 @@
   }
 
   .scrollbar-danger::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -282,7 +284,7 @@
   }
 
   .scrollbar-warning::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -309,7 +311,7 @@
   }
 
   .scrollbar-success::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -326,7 +328,7 @@
   }
 
   .scrollbar-info::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -343,7 +345,7 @@
   }
 
   .scrollbar-default::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -360,7 +362,7 @@
   }
 
   .scrollbar-secondary::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 

@@ -26,9 +26,9 @@ class DetailQuiz extends Component{
                             </div>
                         </div>
                         <br/>
-                        <div style={{borderTop:"solid",borderColor:"#E7E7E7",marginLeft:"10px",width:"800px"}} className="col-s-9">
-                        
-                        </div>
+                        {/* <div style={{borderTop:"solid",borderColor:"#E7E7E7",marginLeft:"10px",width:"800px"}} className="col-s-9"> */}
+                        <hr class="mt-2 mb-5" style={{width:"800px"}}></hr>
+                        {/* </div> */}
                         <br/>
                         <Quiz/>
                     </div>
