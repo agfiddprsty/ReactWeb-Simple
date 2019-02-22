@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 import LabelFloatInput from 'label-float-input';
 import Header from './HeaderPage';
 import './css/DashboardPaidProfile.css';
+import DropboxChooser from 'react-dropbox-chooser';
 import {RadioGroup,Radio} from 'react-radio-group';
 import './css/Register.css';
+
+const APP_KEY = 'jni8bfvqjntw35s';
+
 class DashboardPaidProfile extends Component {
     constructor(props){
         super(props)
@@ -13,6 +17,7 @@ class DashboardPaidProfile extends Component {
         this.handleChecked = this.handleChecked.bind(this);
         this.moveLogin = this.moveLogin.bind(this);
         this.upload = this.upload.bind(this)
+        this.onSuccess = this.onSuccess.bind(this);
         this.state = {
             isverified: false,
             fullname:'',
@@ -25,8 +30,13 @@ class DashboardPaidProfile extends Component {
             checked: false,
             selectedValue: '',
             image:null,
+            files: ''
 
         }
+    }
+    onSuccess(value){
+        this.setState({files: value});
+        console.log(this.state.files);
     }
     handleChange(event) {
         this.setState({ [event.target.name]: event.target.value });
@@ -186,7 +196,7 @@ class DashboardPaidProfile extends Component {
                     <div class="daftar" style={{width:'86.5%'}}>
                         <div class="col-md-12" style={{padding:'15px 10px 0 30px'}}>
                             <div class="box" style={{width:'100%', boxShadow: '0 0 20px 1px rgba(136, 136, 136, 0.4)'}}>
-                                <div class="row">
+                                <div class="row" style={{marginBottom:'30px'}}>
                                     <p class="col-1" style={{color:'black', fontWeight:'501', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.75000000em', display:'block', textAlign:'left', marginLeft:''}}>
                                         Profil
                                     </p>
@@ -209,6 +219,24 @@ class DashboardPaidProfile extends Component {
                                             <input type="text" name="adress" onChange={this.handleChange} value={this.state.adress} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                             <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Alamat</label>
                                         </div>
+                                        {/* <div style={{padding:'20px 0px 20px 20px'}}>
+                                            <form>
+                                                <label class="radio-inline" style={{paddingRight:'20px'}}>
+                                                    <input type="radio" name="optradio" checked/>Male
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="optradio"/>Female
+                                                </label>
+                                            </form>
+                                        </div> */}
+                                        {/* <div>
+                                            <form class="row">
+                                                <div class="form-group col-1">
+                                                    <label for="Date">Date</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                    <option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+                                        <div>
+                                            <form className="text-left" style={{marginLeft: '20px'}}>
                                         <div class="form-group">
                                             <form className="text-left" style={{marginLeft: '20px'}}action="">
                                                 <div class="custom-control custom-radio custom-control-inline" style={{paddingRight: '100px'}}>
@@ -224,7 +252,8 @@ class DashboardPaidProfile extends Component {
                                             </form>
                                         </div>
                                         <div>
-                                            <form class="row" style={{marginLeft: '0'}}>
+                                            <label for="tgl">Tanggal Lahir</label>
+                                            <form class="row" id="tgl" style={{marginLeft: '0'}}>
                                                 <div class="form-group col-2">
                                                     <select class="form-control text-center" id="exampleFormControlSelect1">
                                                         <option value="" selected disabled hidden>Date</option>
@@ -239,7 +268,7 @@ class DashboardPaidProfile extends Component {
                                                     </select>
                                                 </div>
                                             </form>
-                                        </div>
+                                        </div> */}
                                         <br/>
                                         <div>
                                             <input type="text" name="summary" onChange={this.handleChange} value={this.state.summary} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
@@ -256,7 +285,7 @@ class DashboardPaidProfile extends Component {
                                         </div>
                                         <div>
                                             <br/>
-                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#tambahpendidikan" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
+                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#tambahpendidikan" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 30px 0', fontFamily:'helvetica, Arial, sans serif'}}
                                             >+ Tambah Pendidikan</button>
                                                 </div>
                                                     <div>
@@ -296,7 +325,7 @@ class DashboardPaidProfile extends Component {
                                                 Pengalaman Kerja
                                             </p>
                                             <br/>
-                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#tambahpengalamankerja" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
+                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#tambahpengalamankerja" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 30px 0', fontFamily:'helvetica, Arial, sans serif'}}
                                             >+ Tambah Pengalaman Kerja</button>
                                                 </div>
                                                     <div>
@@ -332,7 +361,7 @@ class DashboardPaidProfile extends Component {
                                         <br/>
                                         <div>
                                             <br/>
-                                            <p style={{color:'black', fontWeight:'501', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'2.00000000em', display:'block', textAlign:'left', marginBottom:'5px'}}>
+                                            <p style={{color:'black', fontWeight:'501', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'2.00000000em', display:'block', textAlign:'left', marginBottom:'10px'}}>
                                                 Portfolio
                                             </p>
                                             <p style={{color:'grey', textAlign:'left', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.10000000em', marginTop:'-5px'}}>
@@ -341,15 +370,35 @@ class DashboardPaidProfile extends Component {
                                             <br/>
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <button onClick={this.upload} type="button" class="btn btn-outline-danger btn-lg btn-block" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
+
+                                                    {/* <button onClick={this.upload} type="button" class="btn btn-outline-danger btn-lg btn-block" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
                                                     >
                                                     <i class="fa fa-cloud-upload"></i> Upload</button>
-                                                    <input id='selectImage' hidden type="file" onChange={this.fileSelectHandler} />
+                                                    <input id='selectImage' hidden type="file" onChange={this.fileSelectHandler} /> */}
+                                                    <div>
+                                                        <DropboxChooser 
+                                                            appKey={APP_KEY}
+                                                            success={files => this.onSuccess(files)}
+                                                            cancel={() => console.log('Closed')}
+                                                            multiselect={true}>
+                                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block dropbox-button" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}>
+                                                            <i class="fa fa-cloud-upload"></i> Upload</button> 
+                                                        </DropboxChooser>
+                                                    </div>
                                                 </div>
                                                 <div class="col-6">
                                                     <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#link" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
                                                     >
                                                     <i class="fas fa-link"></i> Link</button>
+                                                </div>
+                                                <div>
+                                                    {this.state.files && this.state.files.map((files, key) => 
+                                                    <span className="d-flex text-left" style={{padding: '10px'}}>
+                                                        <span class="fa fa-dropbox" aria-hidden="true" style={{color: 'blue', fontSize:'30px', paddingRight: '10px'}}></span>
+                                                        <a href={files.link}>
+                                                        <span key={key} style={{display: 'flex', flexGrow: '1', color: 'blue'}}>{files.link}</span>
+                                                        </a>
+                                                    </span> )}
                                                 </div>
                                             </div>
                                         </div>
@@ -376,11 +425,14 @@ class DashboardPaidProfile extends Component {
                                             <div>
                                                     <form>
                                                         <div id="tambahskills" class="collapse">
-                                                            <p style={{color:'red', fontWeight:'400', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', margin:'25px 0 15px 0', textAlign:'left'}}>
+                                                            <p style={{color:'red', fontWeight:'400', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', margin:'25px 0 15px 40px', textAlign:'left'}}>
                                                                 Tambah Skills
                                                             </p>
-                                                            <br/>
-                                                            <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>  
+                                                            <div class="input-group input-group-lg" style={{margin:'0 -80px 0 40px'}}>
+                                                                <input class="input-group-prepend" type="text" name="skills" required="" placeholder="        Skill (ex: Data Analysis)" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', border:'1px solid red', margin:'0 80x 0 -80px', paddingRight:'-70px'}}/>
+                                                            </div>
+                                                            <p style={{textAlign:'left', color:'black', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'.75000000em', marginLeft:'40px', marginTop:'-25px'}}>Kamu bisa menambahkan 10 skill lagi</p> 
+                                                            <div class="d-flex justify-content-end" style={{paddingTop:'-25px', paddingRight:'40px'}}>  
                                                                 <a href="#"><button class="btn btn-danger btn-sm setuju" style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0'}}>Tambah</button></a>  
                                                             </div>  
                                                         </div>
@@ -394,7 +446,7 @@ class DashboardPaidProfile extends Component {
                                                 Projects
                                             </p>
                                             <br/>
-                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#tambahproject" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
+                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#tambahproject" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 30px 0', fontFamily:'helvetica, Arial, sans serif'}}
                                             >+ Tambah Project</button>
                                                 </div>
                                                     <div>
@@ -413,7 +465,7 @@ class DashboardPaidProfile extends Component {
                                                                 </div>
                                                                 <div>
                                                                     <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Deskripsi</label>
+                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Description</label>
                                                                 </div>
                                                                 <br/>
                                                                 <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
@@ -423,6 +475,7 @@ class DashboardPaidProfile extends Component {
                                                             </div>
                                                         </form>
                                                     </div>
+
                                         <div class="d-flex justify-content-end" style={{paddingTop: '35px'}}>
                                             <a href="#"><span class="btn btn-danger btn-lg setuju" onClick={this.finishhandle} style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'5px'}}>Finish</span></a>  
                                         </div>
@@ -434,6 +487,8 @@ class DashboardPaidProfile extends Component {
                 </div>
         </div>
         </body>
+        
+
                 
                 
         </div>

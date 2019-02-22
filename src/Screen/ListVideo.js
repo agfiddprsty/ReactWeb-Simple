@@ -43,7 +43,7 @@ return (
                         </a>
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <span>2. INSTALASI</span>
+                    <span>2. Component</span>
                     <span><span className="fa fa-clock-o" style={{marginLeft:"80px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -55,8 +55,8 @@ return (
                         </a>
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <span>3. Component</span>
-                    <span><span className="fa fa-clock-o" style={{marginLeft:"70px",color:"red"}}></span> 04:32 </span>
+                    <span>3. Instalasi</span>
+                    <span><span className="fa fa-clock-o" style={{marginLeft:"90px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -91,7 +91,7 @@ return (
                         </a>
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <span>4. Character</span>
+                    <span>1. Perkenalan</span>
                     <span><span className="fa fa-clock-o" style={{marginLeft:"80px",paddingBottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -103,7 +103,7 @@ return (
                         </a>
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <span>2. INSTALASI</span>
+                    <span>2. Component</span>
                     <a><span className="fa fa-clock-o" style={{marginLeft:"80px",paddingBottom:"1px",color:"red"}}></span> 04:32 </a>
                     </a>
                 </div>
@@ -115,8 +115,8 @@ return (
                         </a>
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <span>3. Component </span>
-                    <a><span className="fa fa-clock-o" style={{marginLeft:"70px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
+                    <span>3. Instalasi</span>
+                    <a><span className="fa fa-clock-o" style={{marginLeft:"90px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                     </a>
                 </div>
             </div>
@@ -127,7 +127,10 @@ return (
             </div>
         <div id="sociallocker">
             <div id="sociallocker-content">
+            <div class="alert alert-danger" role="alert">
             <span  style={{marginTop:"-300%",color:"red"}} class="fas fa-lock"></span> Konten Terkunci, selesaikan semua kuis di Minggu 1
+            </div>
+            {/* <span  style={{marginTop:"-300%",color:"red"}} class="fas fa-lock"></span> Konten Terkunci, selesaikan semua kuis di Minggu 1 */}
             <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-6">
             <div className="d-flex justify-content-center ini">
@@ -148,8 +151,8 @@ return (
                             <br/>
                         </a>
                     </div>
-                    <span>2. INSTALASI</span>
-                    <a><span className="fa fa-clock-o" style={{marginLeft:"80px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
+                    <span>2. Component</span>
+                    <a><span className="fa fa-clock-o" style={{marginLeft:"75px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
@@ -158,8 +161,8 @@ return (
                             <br/>
                         </a>
                     </div>
-                    <span>3. Component</span>
-                    <a><span className="fa fa-clock-o" style={{marginLeft:"70px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
+                    <span>3. Instalasi</span>
+                    <a><span className="fa fa-clock-o" style={{marginLeft:"90px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
@@ -189,7 +192,7 @@ return (
                             <br/>
                         </a>
                     </div>
-                    <span>2. INSTALASI</span>
+                    <span>2. Component</span>
                     <a><span className="fa fa-clock-o" style={{marginLeft:"80px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -199,8 +202,8 @@ return (
                             <br/>
                         </a>
                     </div>
-                    <span>3. Component</span>
-                    <a><span className="fa fa-clock-o" style={{marginLeft:"70px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
+                    <span>3. Instalasi</span>
+                    <a><span className="fa fa-clock-o" style={{marginLeft:"90px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
@@ -211,7 +214,7 @@ return (
                     </div>
                     <span>4. Character</span>   
                     <a><span className="fa fa-clock-o" style={{marginLeft:"80px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
-                </div>      
+                </div> 
             </div>
             </div>
             <br/>
