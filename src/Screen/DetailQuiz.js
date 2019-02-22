@@ -8,13 +8,13 @@ import './css/VideoPlayer.css'
 class DetailQuiz extends Component{
     render(){
         return(
-            <div style={{paddingRight:"20px",paddingLeft:"20px"}}>
+            <div style={{overflowX:"hidden"}}>
                 <HeaderDashboard/>
                 <body className="bg-light" style={{borderTop:"solid",borderColor:"#E7E7E7"}} >
-                    <div style={{marginLeft:"75px",marginTop:"80px"}} >
+                    <div style={{marginLeft:"75px",marginTop:"30px"}} >
                         <div className="row">
                             <div class="col-md-auto">
-                                <h3 style={{fontWeight:"bold"}}>Kuis Mingguan #1</h3>
+                                <h3 style={{fontWeight:"bold",marginLeft:"10px",marginBottom:"50px"}}>Kuis Mingguan #1</h3>
                                 <QuizPlayer/>
                             </div>
                             <div class="col-md-3" >
@@ -26,7 +26,7 @@ class DetailQuiz extends Component{
                             </div>
                         </div>
                         <br/>
-                        <div style={{borderTop:"solid",borderColor:"#E7E7E7"}} className="col-s-9">
+                        <div style={{borderTop:"solid",borderColor:"#E7E7E7",marginLeft:"10px",width:"800px"}} className="col-s-9">
                         
                         </div>
                         <br/>
