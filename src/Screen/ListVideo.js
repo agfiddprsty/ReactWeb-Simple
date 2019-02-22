@@ -16,16 +16,17 @@ class ListVideo extends Component {
 
 render() {
 return (
-        <div class="container">
+        <div style={{overflowX:"hidden"}} class="container">
             <div>
-                <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Minggu 1</h1>                       
-                <hr class="mt-2 mb-5"></hr>
+                <br/>
+                <h1 style={{fontWeight:"bold"}}>Minggu 1</h1>
+                <br/>
             </div>
             <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
@@ -37,31 +38,31 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center loh">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <span>2. INSTALASI</span>
+                    <span>2. Component</span>
                     <span><span className="fa fa-clock-o" style={{marginLeft:"80px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <span>3. Component</span>
-                    <span><span className="fa fa-clock-o" style={{marginLeft:"70px",color:"red"}}></span> 04:32 </span>
+                    <span>3. Instalasi</span>
+                    <span><span className="fa fa-clock-o" style={{marginLeft:"90px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center loh">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
@@ -85,51 +86,53 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <span>4. Character</span>
+                    <span>1. Perkenalan</span>
                     <span><span className="fa fa-clock-o" style={{marginLeft:"80px",paddingBottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center loh">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <span>2. INSTALASI</span>
+                    <span>2. Component</span>
                     <a><span className="fa fa-clock-o" style={{marginLeft:"80px",paddingBottom:"1px",color:"red"}}></span> 04:32 </a>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                    <span>3. Component </span>
-                    <a><span className="fa fa-clock-o" style={{marginLeft:"70px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
+                    <span>3. Instalasi</span>
+                    <a><span className="fa fa-clock-o" style={{marginLeft:"90px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                     </a>
                 </div>
             </div>
             <div>
             <hr class="mt-2 mb-5"></hr>
-                <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Minggu 2</h1>
-                <hr class="mt-2 mb-5"></hr>
-                <h5 style={{color:"red"}}>Konten Terkunci!!! selesaikan semua kuis di Minggu 1 untuk membuka</h5>
+                <h1 style={{fontWeight:"bold"}}>Minggu 2</h1>
+                <br/>
             </div>
+        <div id="sociallocker">
+            <div id="sociallocker-content">
+            <span  style={{marginTop:"-300%",color:"red"}} class="fas fa-lock"></span> Konten Terkunci, selesaikan semua kuis di Minggu 1
             <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-6">
             <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
@@ -141,38 +144,38 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
-                    <span>2. INSTALASI</span>
-                    <a><span className="fa fa-clock-o" style={{marginLeft:"80px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
+                    <span>2. Component</span>
+                    <a><span className="fa fa-clock-o" style={{marginLeft:"75px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
-                    <span>3. Component</span>
-                    <a><span className="fa fa-clock-o" style={{marginLeft:"70px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
+                    <span>3. Instalasi</span>
+                    <a><span className="fa fa-clock-o" style={{marginLeft:"90px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
                     <span>4. Character</span>
                     <a><span className="fa fa-clock-o" style={{marginLeft:"80px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
-                </div>
+                </div>  
                 <hr class="mt-2 mb-5"></hr>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
@@ -182,36 +185,38 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
-                    <span>2. INSTALASI</span>
+                    <span>2. Component</span>
                     <a><span className="fa fa-clock-o" style={{marginLeft:"80px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
-                    <span>3. Component</span>
-                    <a><span className="fa fa-clock-o" style={{marginLeft:"70px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
+                    <span>3. Instalasi</span>
+                    <a><span className="fa fa-clock-o" style={{marginLeft:"90px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
                     <span>4. Character</span>   
                     <a><span className="fa fa-clock-o" style={{marginLeft:"80px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
-                </div>    
+                </div> 
+            </div>
             </div>
             <br/>
             <br/>
+            </div>
         </div>
         );
     }
