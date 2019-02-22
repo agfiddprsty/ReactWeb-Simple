@@ -32,14 +32,14 @@ class VideoPlayer extends Component{
                     ratio='16:9'
                     allowFullScreen/>
                 </div>
-                <h2 style={{width:"800px",marginTop:"1%",fontWeight:"bold"}}>1. Perkenalan</h2>
+                <h4 style={{width:"800px",marginTop:"20px",fontWeight:"bold"}}>1. Mengenal Component</h4>
                 <br/>
                 <br/>
                 <div style={{borderWidth:"1px",borderTop:"solid",width:"800px",borderColor:"#E7E7E7"}} className="col-12 col-s-9">
                     <br/>
                     <br/>
-                    <h5>Deskripsi </h5>
-                    <h6 style={{width:"800px"}} className="col-12 col-s-9">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h6>
+                    <h5 style={{fontWeight:"bold",marginLeft:"-15px"}}>Deskripsi </h5>
+                    <h6 style={{width:"800px",marginTop:"10px",marginLeft:"-30px"}} className="col-12 col-s-9">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h6>
                 </div>             
                 <br/>
                 <br/>

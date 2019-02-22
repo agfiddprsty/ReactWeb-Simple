@@ -4,7 +4,7 @@ import DiscussVideo from './DiscussVideo'
 class Quiz extends Component{
     render(){
         return(
-            <div>
+            <div style={{marginLeft:"10px"}}>
                 <h4>To-dos(0/3)</h4>
                     <div class="row">
                         <div class="col-sm-3">

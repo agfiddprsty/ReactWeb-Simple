@@ -12,7 +12,7 @@ class DetailVideo extends Component {
                 <HeaderDashboard/>
 
                 <body className="bg-light dt-body-gd dt-body-cl" >
-                    <div style={{marginLeft:"75px",marginTop:"80px"}} >
+                    <div style={{marginLeft:"75px",marginTop:"30px"}} >
                         <div className="row">
                             <div class="col-md-auto">
                                 <Video/>
@@ -23,13 +23,10 @@ class DetailVideo extends Component {
                                     <ProgressDetail/>
                                 </div>
                                 <br/>
-                                <br/>
                                 <div className="dt-gr-gd dt-gr-cl" >
                                     <br/>
                                     <h5 style={{fontWeight:"bold"}}>Tonton Selanjutnya </h5>
                                 </div>
-                                <br/>
-                                <br/>
                                 <div>
                                     <ListVideo/>
                                 </div>
