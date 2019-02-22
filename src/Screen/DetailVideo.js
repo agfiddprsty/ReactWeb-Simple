@@ -23,7 +23,6 @@ class DetailVideo extends Component {
                                     <ProgressDetail/>
                                 </div>
                                 <br/>
-                                <br/>
                                 <div className="dt-gr-gd dt-gr-cl" >
                                     <br/>
                                     <h5 style={{fontWeight:"bold"}}>Tonton Selanjutnya </h5>
