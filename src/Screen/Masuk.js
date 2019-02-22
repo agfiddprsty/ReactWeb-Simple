@@ -4,6 +4,49 @@ import dwicon from './img/dwicon.png';
 import './css/Masuk.css';
 
 class Masuk extends Component {
+    constructor(props){
+        super(props)
+        this.masukhandle = this.masukhandle.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+        this.moveLogin = this.moveLogin.bind(this);
+        this.state = {
+            email:'',
+            password:''
+
+        }
+    }
+    handleChange(event) {
+        this.setState({ [event.target.name]: event.target.value });
+    }
+    masukhandle(){
+        //check all is ok
+        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+        if (!pattern.test(this.state.email)) {
+            alert('Silahkan masukkan email yang valid')
+        }else if(this.state.email === ""){
+            alert("Silahkan masukkan email anda");
+        }else if(this.state.telpnumber === ""){
+            alert("Silahkan masukkan password anda");
+        }
+        else{
+            //init POST AXIOS
+            const email = this.state.email;
+            const password = this.state.password;
+            const body={
+                email,
+                password
+            }
+            // Axios.post('url',body).then(ress=>{
+            //     this.setState({ressjson:ress})
+            // })
+            this.props.history.push("/silabusnew");
+            console.log(this.state.selectedValue);
+        }        
+    }
+    moveLogin(){
+        this.props.history.push("/");
+    }
+
     render() {
       return (
             <div className="registe">
@@ -31,16 +74,16 @@ class Masuk extends Component {
                                     <div class="box" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                         <form>
                                             <div>
-                                                <input type="email" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                <input type="email" name="email" required="" onChange={this.handleChange} value={this.state.email} style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                 <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Email</label>
                                             </div>
                                             <div>
-                                                <input type="password" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                <input type="password" name="password" required="" onChange={this.handleChange} value={this.state.password} style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                 <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Password</label>
                                             </div>
                                             <div className="text-center btn-lg" style={{width:'', padding:'10px 0 10px 0', margin:'0'}}>
-                                                <a href="/silabusnew"><button type="button" class="btn btn-danger btn-lg" style={{padding:'15px 170px 15px 170px', borderRadius:'0', boxShadow:'0 0 15px 0 rgba(136, 136, 136, 0.4)', fontFamily:'helvetica, Arial, sans serif'
-                                            }} >Masuk</button></a>
+                                                <button type="button" class="btn btn-danger btn-lg" onClick={this.masukhandle} style={{padding:'15px 170px 15px 170px', borderRadius:'0', boxShadow:'0 0 15px 0 rgba(136, 136, 136, 0.4)', fontFamily:'helvetica, Arial, sans serif'
+                                            }} >Masuk</button>
                                             </div>
                                             <p class="text-center" style={{color:'#666666', fontWeight:'400', fontSize:'.97514286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}}>Lupa Password?</p>
                                             <p class="text-center" style={{color:'#666666', fontWeight:'400', fontSize:'.97514286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}}>Belum punya akun? <a href="/register"><span style={{color:'red'}}> Daftar</span></a></p>
@@ -72,15 +115,15 @@ class Masuk extends Component {
                                     <div class="persegi" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                         <form>
                                             <div>
-                                                <input type="email" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                <input type="email" name="email" required="" onChange={this.handleChange} value={this.state.email} style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                 <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Email</label>
                                             </div>
                                             <div>
-                                                <input type="password" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                <input type="password" name="password" required="" onChange={this.handleChange} value={this.state.password} style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                 <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Password</label>
                                             </div>
                                             <div className="text-center btn-lg" style={{width:'', padding:'10px 0 10px 0', margin:'0'}}>
-                                                <a href="/silabusnew"><button type="button" class="btn btn-danger btn-lg btnmsk">Masuk</button></a>
+                                                <a href="/silabusnew"><button type="button" onClick={this.masukhandle} class="btn btn-danger btn-lg btnmsk">Masuk</button></a>
                                             </div>
                                             <p class="text-center" style={{color:'#666666', fontWeight:'400', fontSize:'.97514286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}}>Lupa Password?</p>
                                             <p class="text-center" style={{color:'#666666', fontWeight:'400', fontSize:'.97514286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}}>Belum punya akun? <a href="/register"><span style={{color:'red'}}> Daftar</span></a></p>
