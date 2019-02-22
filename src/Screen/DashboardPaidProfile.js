@@ -12,6 +12,7 @@ class DashboardPaidProfile extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleChecked = this.handleChecked.bind(this);
         this.moveLogin = this.moveLogin.bind(this);
+        this.upload = this.upload.bind(this)
         this.state = {
             isverified: false,
             fullname:'',
@@ -22,7 +23,8 @@ class DashboardPaidProfile extends Component {
             emailValid: true,
             ressjson:'',
             checked: false,
-            selectedValue: ''
+            selectedValue: '',
+            image:null,
 
         }
     }
@@ -73,10 +75,25 @@ class DashboardPaidProfile extends Component {
             checked: true
         })
     }
-
+    fileUploadHandler = () => {
+        if (this.state.image) {
+          console.log(this.state.image, this.props.userId);
+          const fd = new FormData();
+          fd.append('avatar', this.state.image, this.state.image.name);
+          this.props.addAvatar({ avatar: fd, userId: this.props.userId });
+        }
+    };
+    fileSelectHandler = (e) => {
+        this.setState({
+          image: e.target.files[0],
+        });
+    };
     handleValue(value) {
         this.setState({selectedValue: value});
         console.log(this.state.selectedValue);
+    }
+    upload() {
+        document.getElementById("selectImage").click()
     }
 
     pendidikanhandle(){
@@ -324,9 +341,10 @@ class DashboardPaidProfile extends Component {
                                             <br/>
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <button type="button" class="btn btn-outline-danger btn-lg btn-block" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
+                                                    <button onClick={this.upload} type="button" class="btn btn-outline-danger btn-lg btn-block" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
                                                     >
                                                     <i class="fa fa-cloud-upload"></i> Upload</button>
+                                                    <input id='selectImage' hidden type="file" onChange={this.fileSelectHandler} />
                                                 </div>
                                                 <div class="col-6">
                                                     <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#link" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
@@ -342,9 +360,9 @@ class DashboardPaidProfile extends Component {
                                                 Sertifikat
                                             </p>
                                             <br/>
-                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
-                                            >
+                                            <button type="button" onClick={this.upload} class="btn btn-outline-danger btn-lg btn-block" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}>
                                             <i class="fa fa-cloud-upload"></i> Upload</button>
+                                            <input id='selectImage' hidden type="file" onChange={this.fileSelectHandler} />
                                         </div>
                                         <br/>
                                         <div>
