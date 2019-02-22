@@ -35,7 +35,9 @@ class VideoPlayer extends Component{
                 <h4 style={{width:"800px",marginTop:"20px",fontWeight:"bold"}}>1. Mengenal Component</h4>
                 <br/>
                 <br/>
-                <div style={{borderWidth:"1px",borderTop:"solid",width:"800px",borderColor:"#E7E7E7"}} className="col-12 col-s-9">
+                <div style={{borderWidth:"1px",width:"800px",borderColor:"#E7E7E7"}} className="col-12 col-s-9">
+                    <hr class="mt-2 mb-5" style={{width:"800px",marginLeft:"-15px"}}></hr>
+
                     <br/>
                     <br/>
                     <h5 style={{fontWeight:"bold",marginLeft:"-15px"}}>Deskripsi </h5>
@@ -46,7 +48,9 @@ class VideoPlayer extends Component{
                 <br/>
                 <br/>
 
-                <div style={{borderWidth:"1px",borderTop:"solid",width:"800px",borderColor:"#E7E7E7"}}className="col-12 col-s-9">
+                <div style={{borderWidth:"1px",width:"800px",borderColor:"#E7E7E7"}}className="col-12 col-s-9">
+                <hr class="mt-2 mb-5" style={{width:"800px",marginLeft:"-15px"}}></hr>
+                    
                     <br/>
                     <COmment/>
                 </div>

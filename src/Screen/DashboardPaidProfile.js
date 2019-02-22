@@ -245,20 +245,20 @@ class DashboardPaidProfile extends Component {
                                 </div>
                                     <form>
                                         <div>
-                                            <input type="text" name="fullname" onChange={this.handleChange} value={this.state.fullname} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Nama Lengkap</label>
+                                            <input type="text" name="fullname" onChange={this.handleChange} value={this.state.fullname} required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                            <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Nama Lengkap</label>
                                         </div>
                                         <div>
-                                            <input type="text" name="email" onChange={this.handleChange} value={this.state.email} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Email</label>
+                                            <input type="text" name="email" onChange={this.handleChange} value={this.state.email} required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                            <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Email</label>
                                         </div>
                                         <div>
-                                            <input type="text" name="telpnumber" onChange={this.handleChange} value={this.state.telpnumber} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Nomor Ponsel</label>
+                                            <input type="text" name="telpnumber" onChange={this.handleChange} value={this.state.telpnumber} required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                            <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Nomor Ponsel</label>
                                         </div>
                                         <div>
-                                            <input type="text" name="adress" onChange={this.handleChange} value={this.state.adress} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Alamat</label>
+                                            <input type="text" name="adress" onChange={this.handleChange} value={this.state.adress} required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                            <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Alamat</label>
                                         </div>
                                         {/* <div style={{padding:'20px 0px 20px 20px'}}>
                                             <form>
@@ -312,8 +312,8 @@ class DashboardPaidProfile extends Component {
                                         </div> */}
                                         <br/>
                                         <div>
-                                            <input type="text" name="summary" onChange={this.handleChange} value={this.state.summary} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Summary</label>
+                                            <input type="text" name="summary" onChange={this.handleChange} value={this.state.summary} required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                            <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Summary</label>
                                         </div>
                                     </form>
                                         
@@ -322,7 +322,7 @@ class DashboardPaidProfile extends Component {
                                             <p class="col-5" style={{color:'black', fontWeight:'601', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.75000000em', display:'block', textAlign:'left', marginLeft:''}}>
                                                 Riwayat Pendidikan
                                             </p>
-                                            <p class="col-12" style={{color:'blue', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontWeight:'600', fontSize:'1.00500000em', textAlign:'right', marginTop:'-41px'}}><span style={{color:'blue'}}>*</span>required</p>
+                                            <p class="col-12" style={{color:'blue', fontFamily:'helvetica, Arial, sans serif', fontWeight:'600', fontSize:'1.00500000em', textAlign:'right', marginTop:'-41px'}}><span style={{color:'blue'}}>*</span>required</p>
                                         </div>
                                         <div>
                                             <br/>
@@ -338,20 +338,20 @@ class DashboardPaidProfile extends Component {
                                                             </p>
                                                             <br/>
                                                             <div>
-                                                                <input type="text" name="sekolah" onChange={this.handleChange} value={this.state.sekolah} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Sekolah</label>
+                                                                <input type="text" name="sekolah" onChange={this.handleChange} value={this.state.sekolah} required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                                                <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Sekolah</label>
                                                             </div>
                                                             <div>
-                                                                <input type="text" name="study" onChange={this.handleChange} value={this.state.study} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Bidang Study</label>
+                                                                <input type="text" name="study" onChange={this.handleChange} value={this.state.study} required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                                                <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Bidang Study</label>
                                                             </div>
                                                             <div>
-                                                                <input type="text" name="jurusan" onChange={this.handleChange} value={this.state.jurusan} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Jurusan</label>
+                                                                <input type="text" name="jurusan" onChange={this.handleChange} value={this.state.jurusan} required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                                                <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Jurusan</label>
                                                             </div>
                                                             <div>
-                                                                <input type="text" name="degree" onChange={this.handleChange} value={this.state.degree} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Degree</label>
+                                                                <input type="text" name="degree" onChange={this.handleChange} value={this.state.degree} required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                                                <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Degree</label>
                                                             </div>
                                                             <br/>
                                                             <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
@@ -380,20 +380,20 @@ class DashboardPaidProfile extends Component {
                                                                 </p>
                                                                 <br/>
                                                                 <div>
-                                                                    <input type="text" name="perusahaan" onChange={this.handleChange} value={this.state.perusahaan} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Perusahaan</label>
+                                                                    <input type="text" name="perusahaan" onChange={this.handleChange} value={this.state.perusahaan} required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                                                    <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Perusahaan</label>
                                                                 </div>
                                                                 <div>
-                                                                    <input type="text" name="industri" onChange={this.handleChange} value={this.state.industri} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Industri</label>
+                                                                    <input type="text" name="industri" onChange={this.handleChange} value={this.state.industri} required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                                                    <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Industri</label>
                                                                 </div>
                                                                 <div>
-                                                                    <input type="text" name="title" onChange={this.handleChange} value={this.state.title} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Title</label>
+                                                                    <input type="text" name="title" onChange={this.handleChange} value={this.state.title} required="" style={{fontFamily:'elvetica, Arial, sans serif'}}/>
+                                                                    <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Title</label>
                                                                 </div>
                                                                 <div>
-                                                                    <input type="text" name="description" onChange={this.handleChange} value={this.state.description} required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Description</label>
+                                                                    <input type="text" name="description" onChange={this.handleChange} value={this.state.description} required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                                                    <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Description</label>
                                                                 </div>
                                                                 <br/>
                                                                 <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
@@ -409,7 +409,7 @@ class DashboardPaidProfile extends Component {
                                             <p style={{color:'black', fontWeight:'601', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.75000000em', display:'block', textAlign:'left', marginBottom:'10px'}}>
                                                 Portfolio
                                             </p>
-                                            <p style={{color:'grey', textAlign:'left', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.10000000em', marginTop:'-5px'}}>
+                                            <p style={{color:'grey', textAlign:'left', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.10000000em', marginTop:'-5px'}}>
                                                 Upload atau link ke portfolio yang kamu punya.
                                             </p>
                                             <br/>
@@ -426,7 +426,7 @@ class DashboardPaidProfile extends Component {
                                                             success={files => this.onSuccess(files)}
                                                             cancel={() => console.log('Closed')}
                                                             multiselect={true}>
-                                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block dropbox-button" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>
+                                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block dropbox-button" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}>
                                                             <i class="fa fa-cloud-upload"></i> Upload</button> 
                                                         </DropboxChooser>
                                                     </div>
@@ -473,11 +473,20 @@ class DashboardPaidProfile extends Component {
                                                         <p style={{color:'red', fontWeight:'525', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', margin:'25px 0 30px 40px', textAlign:'left'}}>
                                                             Tambah Skills
                                                         </p>
-                                                        <div class="input-group input-group-lg" style={{margin:'0 -80px 0 40px'}}>
-                                                            <input class="input-group-prepend" type="text" name="skills" required="" placeholder="          Skill (ex: Data Analysis)" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', border:'1px solid red', margin:'0 40x 0 -80px', paddingRight:'-70px'}}/>
+                                                        <div class="input-group input-group-lg text-center d-flex flex-wrap align-content-center" style={{margin:'0 -80px 0 40px', border:'1px solid red'}}>
+                                                            <span className="fa fa-search" style={{fontSize: '30px', color: 'red', marginRight: '5px', padding: '20px'}}></span>
+                                                            <span>
+                                                                <input class="input-group-prepend inputskil" type="text" name="skills" required="" placeholder="Skill (ex: Data Analysis)" style={{marginBottom: '0px', paddingTop: '20px', width: '750px', border: 'none'}}/>
+                                                            </span>
                                                         </div>
-                                                        <p style={{textAlign:'left', color:'black', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'.75000000em', marginLeft:'40px', marginTop:'-25px'}}>Kamu bisa menambahkan 10 skills lagi</p> 
+                                                        <p style={{textAlign:'left', color:'black', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'.75000000em', marginLeft:'40px'}}>Kamu bisa menambahkan 10 skills lagi</p> 
                                                         <br/>
+                                                        <div className="text-left" style={{marginLeft: '40px'}}>
+                                                            <span className="btn btn-danger" style={{borderRadius: '50px', fontWeight: '600', margin: '0 5px 0 0'}}>Design</span>
+                                                            <span className="btn btn-danger" style={{borderRadius: '50px', fontWeight: '600', margin: '0 5px 0 5px'}}>Design</span>
+                                                            <span className="btn btn-danger" style={{borderRadius: '50px', fontWeight: '600', margin: '0 5px 0 5px'}}>Design</span>
+                                                            <span className="btn btn-danger" style={{borderRadius: '50px', fontWeight: '600', margin: '0 0 0 5px'}}>Design</span>
+                                                        </div>
                                                         <br/>
                                                         <div class="d-flex justify-content-end" style={{paddingTop:'-25px', marginRight:'-40px'}}>  
                                                             <a href="#"><button class="btn btn-danger btn-sm setuju" style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0'}}>Tambah</button></a>  
@@ -504,16 +513,16 @@ class DashboardPaidProfile extends Component {
                                                                 </p>
                                                                 <br/>
                                                                 <div>
-                                                                    <input type="text" name="" required="" onChange={this.handleChange} value={this.state.namaproject} style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Nama Project</label>
+                                                                    <input type="text" name="" required="" onChange={this.handleChange} value={this.state.namaproject} style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                                                    <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Nama Project</label>
                                                                 </div>
                                                                 <div>
-                                                                    <input type="text" name="" required="" onChange={this.handleChange} value={this.state.projecturl} style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Project URL</label>
+                                                                    <input type="text" name="" required="" onChange={this.handleChange} value={this.state.projecturl} style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                                                    <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Project URL</label>
                                                                 </div>
                                                                 <div>
-                                                                    <input type="text" name="" required="" onChange={this.handleChange} value={this.state.descproject} style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Description</label>
+                                                                    <input type="text" name="" required="" onChange={this.handleChange} value={this.state.descproject} style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                                                    <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Description</label>
                                                                 </div>
                                                                 <br/>
                                                                 <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>

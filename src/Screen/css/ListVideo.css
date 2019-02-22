@@ -113,7 +113,7 @@
   }
 
   .scrollbar-primary::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -130,7 +130,7 @@
   }
 
   .scrollbar-danger::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -147,7 +147,7 @@
   }
 
   .scrollbar-warning::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -174,7 +174,7 @@
   }
 
   .scrollbar-success::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -191,7 +191,7 @@
   }
 
   .scrollbar-info::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -208,7 +208,7 @@
   }
 
   .scrollbar-default::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -225,7 +225,7 @@
   }
 
   .scrollbar-secondary::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -250,7 +250,7 @@
   }
 
   .scrollbar-primary::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -267,7 +267,7 @@
   }
 
   .scrollbar-danger::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -284,7 +284,7 @@
   }
 
   .scrollbar-warning::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -311,7 +311,7 @@
   }
 
   .scrollbar-success::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -328,7 +328,7 @@
   }
 
   .scrollbar-info::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -345,7 +345,7 @@
   }
 
   .scrollbar-default::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 
@@ -362,7 +362,7 @@
   }
 
   .scrollbar-secondary::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: #F5F5F5; 
   }
 

@@ -25,7 +25,7 @@ class DiscussVideo extends Component{
                                 <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"/>
                         </div>
                         <div class="col-md-auto col-s-9" style={{marginTop:"30px"}}>
-                            <input style={{borderStyle:"none none solid none",borderColor:"#E7E7E7",backgroundColor:"transparent"}} className="col-s-9 col-12" placeholder="Write A Comment"></input>
+                            <input style={{borderStyle:"none none solid none",borderColor:"#E7E7E7",backgroundColor:"transparent",width:"650px"}} placeholder="Write A Comment"></input>
                             <button class="btn btn-outline-primary submit-gd" > Submit</button>
                         </div>
                     </div>
@@ -63,8 +63,8 @@ class DiscussVideo extends Component{
                                             <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{width:"50px",height:"50px"}}/>
                                         </div>
                                         <div class="col-md-auto col-s-9" style={{marginTop:"30px"}}>
-                                            <input style={{borderStyle:"none none solid none",borderColor:"#E7E7E7",backgroundColor:"transparent"}} className="col-s-9 col-12" placeholder="Write A Comment"></input>
-                                            <button class="btn btn-outline-primary submit-gd" > Submit</button>
+                                            <input style={{borderStyle:"none none solid none",borderColor:"#E7E7E7",backgroundColor:"transparent",width:"570px"}}  placeholder="Write A Comment"></input>
+                                            <button class="btn btn-outline-primary" style={{marginLeft:"480px"}} > Submit</button>
                                         </div>
                                     </div>
                                 </div>
