@@ -227,7 +227,7 @@ class DashboardPaidProfile extends Component {
                 <div className="text-center" style={{padding:'75px 0 0 0'}}>
                     <h1 style={{color:'##3B3B3B', fontWeight:'510', fontFamily:'Circular Std Black, sans-serif;', fontSize:'2.17000000em',display:'block', margin:'-5px 0 0 0',}}>
                     Terimakasih telah mengikuti bootcamp online ini </h1>
-                    <p style={{color:'grey', fontWeight:'400', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.39000000em', display:'block', margin:'15px 0 75px 0'}}>
+                    <p style={{color:'grey', fontWeight:'400', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.39000000em', display:'block', margin:'15px 0 75px 0'}}>
                     Silahkan melengkapi profile anda demi kemudahan kami dalam menyalurkan kerja dan administrasi
                     </p>
                 </div>
@@ -241,7 +241,7 @@ class DashboardPaidProfile extends Component {
                                     <p class="col-1" style={{color:'black', fontWeight:'601', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.75000000em', display:'block', textAlign:'left', marginLeft:''}}>
                                         Profil
                                     </p>
-                                    <p class="col-12" style={{color:'blue', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontWeight:'600', fontSize:'1.00500000em', textAlign:'right', marginTop:'-41px'}}><span style={{color:'blue'}}>*</span>required</p>
+                                    <p class="col-12" style={{color:'blue', fontFamily:'helvetica, Arial, sans serif', fontWeight:'600', fontSize:'1.00500000em', textAlign:'right', marginTop:'-41px'}}><span style={{color:'blue'}}>*</span>required</p>
                                 </div>
                                     <form>
                                         <div>
@@ -426,7 +426,7 @@ class DashboardPaidProfile extends Component {
                                                             success={files => this.onSuccess(files)}
                                                             cancel={() => console.log('Closed')}
                                                             multiselect={true}>
-                                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block dropbox-button" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}>
+                                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block dropbox-button" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>
                                                             <i class="fa fa-cloud-upload"></i> Upload</button> 
                                                         </DropboxChooser>
                                                     </div>
