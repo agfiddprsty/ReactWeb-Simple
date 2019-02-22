@@ -22,7 +22,7 @@ class ListVideoDown extends Component{
                                             </div>
                                             <div className="col-md-6">
                                                 <h5>1.Perkenalan</h5>
-                                                <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04.32</a>
+                                                <a><i className="far fa-clock" style={{opacity: 0.4,color:"red"}}></i> 04.32</a>
                                             </div>
                                         </div>
                                     </a>
@@ -38,7 +38,7 @@ class ListVideoDown extends Component{
                                             </div>
                                             <div className="col-md-6">
                                                 <h5>1.Perkenalan</h5>
-                                                <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04.32</a>
+                                                <a><i className="far fa-clock" style={{opacity: 0.4,color:"red"}}></i> 04.32</a>
                                             </div>
                                         </div>
                                     </a>
@@ -54,7 +54,7 @@ class ListVideoDown extends Component{
                                             </div>
                                             <div className="col-md-6">
                                                 <h5>1.Perkenalan</h5>
-                                                <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04.32</a>
+                                                <a><i className="far fa-clock" style={{opacity: 0.4,color:"red"}}></i> 04.32</a>
                                             </div>
                                         </div>
                                     </a>
@@ -70,7 +70,7 @@ class ListVideoDown extends Component{
                                             </div>
                                             <div className="col-md-6">
                                                 <h5>1.Perkenalan</h5>
-                                                <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04.32</a>
+                                                <a><i className="far fa-clock" style={{opacity: 0.4,color:"red"}}></i> 04.32</a>
                                             </div>
                                         </div>
                                     </a>
@@ -86,7 +86,7 @@ class ListVideoDown extends Component{
                                             </div>
                                             <div className="col-md-6">
                                                 <h5>1.Perkenalan</h5>
-                                                <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04.32</a>
+                                                <a><i className="far fa-clock" style={{opacity: 0.4,color:"red"}}></i> 04.32</a>
                                             </div>
                                         </div>
                                     </a>
@@ -104,7 +104,7 @@ class ListVideoDown extends Component{
                                             <div className="col-md-6">
                                                 {/* <i class="fa fa-key"></i> */}
                                                 <h5>1.Perkenalan</h5>
-                                                <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04.32</a>
+                                                <a><i className="far fa-clock" style={{opacity: 0.4,color:"red"}}></i> 04.32</a>
                                             </div>
                                         </div>
                                     </a>
@@ -122,7 +122,7 @@ class ListVideoDown extends Component{
                                             <div className="col-md-6">
                                                 {/* <i class="fa fa-key"></i> */}
                                                 <h5>1.Perkenalan</h5>
-                                                <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04.32</a>
+                                                <a><i className="far fa-clock" style={{opacity: 0.4,color:"red"}}></i> 04.32</a>
                                             </div>
                                         </div>
                                     </a>
@@ -140,7 +140,7 @@ class ListVideoDown extends Component{
                                             <div className="col-md-6">
                                                 {/* <i class="fa fa-key"></i> */}
                                                 <h5>1.Perkenalan</h5>
-                                                <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04.32</a>
+                                                <a><i className="far fa-clock" style={{opacity: 0.4,color:"red"}}></i> 04.32</a>
                                             </div>
                                         </div>
                                     </a>
@@ -158,7 +158,7 @@ class ListVideoDown extends Component{
                                             <div className="col-md-6">
                                                 {/* <i class="fa fa-key"></i> */}
                                                 <h5>1.Perkenalan</h5>
-                                                <a><i className="fa fa-clock-o" style={{color:"red"}}></i> 04.32</a>
+                                                <a><i className="far fa-clock" style={{opacity: 0.4,color:"red"}}></i> 04.32</a>
                                             </div>
                                         </div>
                                     </a>
