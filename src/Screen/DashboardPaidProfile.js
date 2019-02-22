@@ -195,40 +195,26 @@ class DashboardPaidProfile extends Component {
                                         <div class="form-group">
                                             <form className="text-left" style={{marginLeft: '20px'}}action="">
                                                 <div class="custom-control custom-radio custom-control-inline" style={{paddingRight: '100px'}}>
-                                                    <input type="radio" onChange={this.handleValue} selectedValue={this.state.selectedValue} class="custom-control-input" id="lakilaki" name="gender" value="Laki-Laki" placeholder="Laki-Laki"/>
-                                                    <label class="custom-control-label" for="lakilaki">Laki-Laki</label> 
-                                                    {/* <input type="radio" name="gender" value="male"> Male<br>  */}
+                                                    <input type="radio" defaultChecked class="custom-control-input" onChange={this.handleValue} selectedValue={this.state.selectedValue}  id="lakilaki" name="gender" value="Laki-Laki" placeholder="Laki-Laki"/>
+                                                    <label class="custom-control-label" for="lakilaki">Laki-Laki</label>  
+                                                    
                                                 </div>
                                                 <div class="custom-control custom-radio custom-control-inline">
-                                                    <input type="radio" onChange={this.handleValue} selectedValue={this.state.selectedValue} class="custom-control-input" id="perempuan" name="gender" value="Perempuan"/>
+                                                    <input type="radio"class="custom-control-input" onChange={this.handleValue} selectedValue={this.state.selectedValue} class="custom-control-input" id="perempuan" name="gender" value="Perempuan"/>
                                                     <label class="custom-control-label" for="perempuan">Perempuan</label>
                                                 </div> 
+                                                
                                             </form>
-                                            {/* <div class="maxl">
-                                                <RadioGroup
-                                                name="gender"
-                                                selectedValue={this.state.selectedValue}
-                                                onChange={this.handleValue}>
-                                                    <label>
-                                                        <Radio value="Male" />Male
-                                                    </label>
-                                                    <label>
-                                                        <Radio value="Female" />Female
-                                                    </label>
-                                                </RadioGroup>
-                                            </div> */}
                                         </div>
                                         <div>
                                             <form class="row" style={{marginLeft: '0'}}>
                                                 <div class="form-group col-2">
-                                                    {/* <label for="Date" style={{paddingBottom:'100px'}}>Date</label> */}
                                                     <select class="form-control text-center" id="exampleFormControlSelect1">
                                                         <option value="" selected disabled hidden>Date</option>
                                                         <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group col-2">
-                                                    {/* <label for="Date">Month</label> */}
                                                     <select class="form-control text-center" id="exampleFormControlSelect1">
                                                         <option value="" selected disabled hidden>Month</option>
                                                         <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
