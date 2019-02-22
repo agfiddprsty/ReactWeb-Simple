@@ -165,7 +165,7 @@
     
   }
   
-  .persegi input:focus ~ label  
+  .persegi input:valid ~ label  
   {
     font-family:'Open Sans, helvetica, Arial, sans serif';
     top: -12px;
