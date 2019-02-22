@@ -14,6 +14,7 @@ class DashboardPaidProfile extends Component {
         this.finishhandle = this.finishhandle.bind(this);
         this.pendidikanhandle = this.pendidikanhandle.bind(this);
         this.kerjahandle = this.kerjahandle.bind(this);
+        this.projecthandle = this.projecthandle.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleChecked = this.handleChecked.bind(this);
         this.moveLogin = this.moveLogin.bind(this);
@@ -38,6 +39,9 @@ class DashboardPaidProfile extends Component {
             industri: '',
             title: '',
             description: '',
+            namaproject: '',
+            projecturl: '',
+            descproject: '',
             image:null,
             files: ''
 
@@ -170,6 +174,34 @@ class DashboardPaidProfile extends Component {
                 industri,
                 title,
                 description
+            }
+            // Axios.post('url',body).then(ress=>{
+            //     this.setState({ressjson:ress})
+            // })
+            this.props.history.push("#");
+            console.log(this.state.selectedValue);
+        }
+    }
+
+    projecthandle(){
+        //check all is ok
+        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+        if (this.state.namaproject === "") {
+            alert('Silahkan masukkan nama project anda')
+        }else if(this.state.projecturl === ""){
+            alert("Silahkan masukkan project url anda");
+        }else if(this.state.descproject === ""){
+            alert("Silahkan masukkan description project anda");
+        }
+        else{
+            //init POST AXIOS
+            const namaproject = this.state.namaproject;
+            const projecturl = this.state.projecturl;
+            const descproject = this.state.descproject;
+            const body={
+                namaproject,
+                projecturl,
+                descproject
             }
             // Axios.post('url',body).then(ress=>{
             //     this.setState({ressjson:ress})
@@ -465,21 +497,21 @@ class DashboardPaidProfile extends Component {
                                                                     Tambah Project
                                                                 </p>
                                                                 <div>
-                                                                    <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                                    <input type="text" name="" required="" onChange={this.handleChange} value={this.state.namaproject} style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                                     <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Nama Project</label>
                                                                 </div>
                                                                 <div>
-                                                                    <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                                    <input type="text" name="" required="" onChange={this.handleChange} value={this.state.projecturl} style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                                     <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Project URL</label>
                                                                 </div>
                                                                 <div>
-                                                                    <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                                    <input type="text" name="" required="" onChange={this.handleChange} value={this.state.descproject} style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                                     <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Description</label>
                                                                 </div>
                                                                 <br/>
                                                                 <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
                                                                     <a href="#"><span class="btn btn-outline-danger btn-lg setuju" style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0', marginRight:'15px'}}>Batal</span></a>  
-                                                                    <a href="#"><span class="btn btn-danger btn-lg setuju" style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0'}}>Selesai</span></a>  
+                                                                    <a href="#"><span class="btn btn-danger btn-lg setuju" onClick={this.projecthandle} style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0'}}>Selesai</span></a>  
                                                                 </div>
                                                             </div>
                                                         </form>
