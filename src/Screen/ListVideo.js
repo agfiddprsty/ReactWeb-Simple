@@ -5,6 +5,7 @@ import {withRouter,Link} from 'react-router-dom';
 import rnredux from './img/rnreduxplayred.png';
 import './css/ListVideo.css';
 import boy from './img/boy.png';
+import play from './img/playbutton.png';
 import {Input, InputGroupAddon, Button } from 'reactstrap';
 import { RenderLoop } from 'brace';
 import quis from './img/quizz.jpg'
