@@ -32,7 +32,7 @@ class VideoPlayer extends Component{
                     ratio='16:9'
                     allowFullScreen/>
                 </div>
-                <h2 style={{width:"800px",marginTop:"20px",fontWeight:"bold"}}>1. Perkenalan</h2>
+                <h4 style={{width:"800px",marginTop:"20px",fontWeight:"bold"}}>1. Mengenal Component</h4>
                 <br/>
                 <br/>
                 <div style={{borderWidth:"1px",borderTop:"solid",width:"800px",borderColor:"#E7E7E7"}} className="col-12 col-s-9">

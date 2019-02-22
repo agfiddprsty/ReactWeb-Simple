@@ -14,13 +14,13 @@ class DetailQuiz extends Component{
                     <div style={{marginLeft:"75px",marginTop:"30px"}} >
                         <div className="row">
                             <div class="col-md-auto">
-                                <h3 style={{fontWeight:"bold",marginLeft:"10px",marginBottom:"50px"}}>Kuis Mingguan #1</h3>
+                                <h3 style={{fontWeight:"bold",marginLeft:"11px",marginBottom:"30px"}}>Kuis Mingguan #1</h3>
                                 <QuizPlayer/>
                             </div>
                             <div class="col-md-3" >
                                 <div style={{marginLeft:"45px",marginTop:"10px"}}>
                                     <br/>
-                                    <h5 style={{fontWeight:"bold"}}>Tonton Selanjutnya </h5>
+                                    <h5 style={{fontWeight:"bold",marginBottom:"10px"}}>Tonton Selanjutnya </h5>
                                 </div>
                                 <ListVideoDown/>
                             </div>

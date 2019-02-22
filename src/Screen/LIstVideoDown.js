@@ -7,7 +7,7 @@ import './css/VideoPlayer.css'
 class ListVideoDown extends Component{
     render(){
         return(
-            <div>
+            <div style={{marginLeft:"-60px"}}>
                 {/* <h5>Berikutnya</h5> */}
                 <div className="col-md">
                     <div className="scrollbar scrollbar-primary scrollbar-cl">
