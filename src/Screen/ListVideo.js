@@ -17,7 +17,8 @@ class ListVideo extends Component {
 
 render() {
 return (
-        <div style={{overflow:"hidden"}} class="container">
+        <div style={{overflow:"hidden",backgroundColor:"#fff"}} >
+        <div class="container">
             <div>
                 <br/>
                 <h1 style={{fontWeight:"bold"}}>Minggu 1</h1>
@@ -39,7 +40,7 @@ return (
             <div class="col-lg-3 col-md-4 col-6">
                 <div className="d-flex justify-content-center loh">
                     <a href="/detailvideo" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '50px', border: 'none',opacity: 0.7}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
+                    <img class="img-fluid img-thumbnail plybtn" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
                         <br/>
                     </a>
                 </div>
@@ -51,9 +52,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.7}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
-                            <br/>
-                        </a>
+                        <img class="img-fluid img-thumbnail plybtn" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>                        </a>
                     </div>
                     <a style={{paddingTop:"10px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>3. Instalasi</span>
@@ -63,9 +62,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center loh">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.7}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
-                            <br/>
-                        </a>
+                        <img class="img-fluid img-thumbnail plybtn" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>                        </a>
                     </div>
                     <a style={{paddingTop:"10px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>4. Character</span>
@@ -75,20 +72,18 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center nikuis">
                         <a href="/detailquiz" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{opacity: 0.4,background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/5a461410d099a2ad03f9c998.png" alt=""></img>
-                            <br/>
+                        <img class="img-fluid img-thumbnail" style={{opacity: 0.4,background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/5a461410d099a2ad03f9c998.png" alt=""></img>
                         </a>
                     </div>
                     <a style={{paddingTop:"10px"}} href="/detailquiz" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>Quiz Minggu 1</span>
-                    <span><span className="fa fa-signal" style={{opacity: 0.4,marginLeft:"60px",paddingBottom:"1px",color:"#00DFEB"}}></span> Level </span>
+                    <span style={{marginLeft:"70px",paddingBottom:"1px"}}>Level <span className="fa fa-signal" style={{opacity: 0.4,paddingBottom:"1px",color:"#00DFEB"}}></span>  </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px',border: 'none',opacity: 0.7}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
-                            <br/>
+                        <img class="img-fluid img-thumbnail plybtn" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>                            <br/>
                         </a>
                     </div>
                     <a style={{paddingTop:"10px"}} href="/detailvideo" class="d-block mb-4 h-100">
@@ -99,9 +94,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center loh">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent',width: '150px',border: 'none',opacity: 0.7}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
-                            <br/>
-                        </a>
+                        <img class="img-fluid img-thumbnail plybtn" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>                        </a>
                     </div>
                     <a style={{paddingTop:"10px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>2. Components</span>
@@ -111,9 +104,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.7}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
-                            <br/>
-                        </a>
+                        <img class="img-fluid img-thumbnail plybtn" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>                        </a>
                     </div>
                     <a style={{paddingTop:"10px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>3. Instalasi</span>
@@ -160,7 +151,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
@@ -172,8 +163,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
-                            <br/>
+                        <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>                            <br/>
                         </a>
                     </div>
                     <a style={{paddingTop:"10px"}} class="d-block mb-4 h-100">
@@ -185,8 +175,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
-                            <br/>
+                        <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>                            <br/>
                         </a>
                     </div>
                     <a style={{paddingTop:"10px"}} class="d-block mb-4 h-100">
@@ -197,8 +186,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
-                            <br/>
+                        <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>                            <br/>
                         </a>
                     </div>
                     <a style={{paddingTop:"10px"}} class="d-block mb-4 h-100">
@@ -209,8 +197,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
-                            <br/>
+                        <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>                            <br/>
                         </a>
                     </div>
                     <a style={{paddingTop:"10px"}} class="d-block mb-4 h-100">
@@ -221,8 +208,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
-                            <br/>
+                        <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>                            <br/>
                         </a>
                     </div>
                     <a style={{paddingTop:"10px"}} class="d-block mb-4 h-100">
@@ -234,6 +220,7 @@ return (
             </div>
             <br/>
             <br/>
+            </div>
             </div>
         </div>
         );
