@@ -3,10 +3,18 @@
         border-Top:solid;
         border-Color:#E7E7E7;
     }
+    .dt-dv-pg-gd{
+        margin-left:45px;
+        margin-top:10px;
+      }
 }
 @media only screen and (max-width:600px){
     .dt-body-cl{
         border-Top:solid;
         border-Color:#E7E7E7;
     }
+    .dt-dv-pg-cl{
+        margin-left:-70px;
+        margin-top:20px;
+      }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LabelFloatInput from 'label-float-input';
-import Header from './HeaderPage'
+import Header from './HeaderPage';
 import './css/DashboardPaidProfile.css';
 
 class DashboardPaidProfile extends Component {
@@ -9,6 +9,7 @@ class DashboardPaidProfile extends Component {
         this.finishhandle = this.finishhandle.bind(this);
         this.pendidikanhandle = this.finishhandle.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.handleChecked = this.handleChecked.bind(this);
         this.moveLogin = this.moveLogin.bind(this);
         this.state = {
             isverified: false,
@@ -18,7 +19,9 @@ class DashboardPaidProfile extends Component {
             adress:'',
             summary:'',
             emailValid: true,
-            ressjson:''
+            ressjson:'',
+            checked: false,
+            selectedValue: ''
 
         }
     }
@@ -62,6 +65,17 @@ class DashboardPaidProfile extends Component {
             console.log(this.state.selectedValue);
         }        
         
+    }
+
+    handleChecked(){
+        this.setState({
+            checked: true
+        })
+    }
+
+    handleValue(value) {
+        this.setState({selectedValue: value});
+        console.log(this.state.selectedValue);
     }
 
     pendidikanhandle(){
@@ -193,13 +207,31 @@ class DashboardPaidProfile extends Component {
                                                     <label for="Date">Date</label>
                                                     <select class="form-control" id="exampleFormControlSelect1">
                                                     <option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+                                        <div>
+                                            <form className="text-left" style={{marginLeft: '20px'}}>
+                                                <div class="custom-control custom-radio custom-control-inline" style={{paddingRight: '100px'}}>
+                                                    <input type="radio" onChange={this.handleValue} selectedValue={this.state.selectedValue} class="custom-control-input" id="lakilaki" name="gender" value="Laki-Laki"/>
+                                                    <label class="custom-control-label" for="lakilaki">Laki-Laki</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" onChange={this.handleValue} selectedValue={this.state.selectedValue} class="custom-control-input" id="perempuan" name="gender" value="Perempuan"/>
+                                                    <label class="custom-control-label" for="perempuan">Perempuan</label>
+                                                </div> 
+                                            </form>
+                                        </div>
+                                        <div>
+                                            <form class="row" style={{marginLeft: '0'}}>
+                                                <div class="form-group col-2">
+                                                    <label for="Date" style={{paddingBottom:'100px'}}>Date</label>
+                                                    <select class="form-control text-center" id="exampleFormControlSelect1">
+                                                        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
                                                     </select>
                                                 </div>
-                                                <div class="form-group col-1">
+                                                <div class="form-group col-2">
                                                     <label for="Date">Month</label>
-                                                    <select class="form-control" id="exampleFormControlSelect1">
-                                                    <option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option>
-                                                    <option>07</option><option>08</option><option>039</option><option>10</option><option>11</option><option>12</option>
+                                                    <select class="form-control text-center" id="exampleFormControlSelect1">
+                                                        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+                                                        <option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>
                                                     </select>
                                                 </div>
                                             </form>
@@ -339,11 +371,14 @@ class DashboardPaidProfile extends Component {
                                             <div>
                                                     <form>
                                                         <div id="tambahskills" class="collapse">
-                                                            <p style={{color:'red', fontWeight:'400', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', margin:'25px 0 15px 0', textAlign:'left'}}>
+                                                            <p style={{color:'red', fontWeight:'400', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', margin:'25px 0 15px 40px', textAlign:'left'}}>
                                                                 Tambah Skills
                                                             </p>
-                                                            <br/>
-                                                            <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>  
+                                                            <div class="input-group input-group-lg" style={{margin:'0 -80px 0 40px'}}>
+                                                                <input class="input-group-prepend" type="text" name="skills" required="" placeholder="        Skill (ex: Data Analysis)" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', border:'1px solid red', margin:'0 80x 0 -80px', paddingRight:'-70px'}}/>
+                                                            </div>
+                                                            <p style={{textAlign:'left', color:'black', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'.75000000em', marginLeft:'40px', marginTop:'-25px'}}>Kamu bisa menambahkan 10 skill lagi</p> 
+                                                            <div class="d-flex justify-content-end" style={{paddingTop:'-25px', paddingRight:'40px'}}>  
                                                                 <a href="#"><button class="btn btn-danger btn-sm setuju" style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0'}}>Tambah</button></a>  
                                                             </div>  
                                                         </div>
@@ -376,7 +411,7 @@ class DashboardPaidProfile extends Component {
                                                                 </div>
                                                                 <div>
                                                                     <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Deskripsi</label>
+                                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Description</label>
                                                                 </div>
                                                                 <br/>
                                                                 <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
@@ -386,6 +421,7 @@ class DashboardPaidProfile extends Component {
                                                             </div>
                                                         </form>
                                                     </div>
+
                                         <div class="d-flex justify-content-end" style={{paddingTop: '35px'}}>
                                             <a href="#"><span class="btn btn-danger btn-lg setuju" onClick={this.finishhandle} style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'5px'}}>Finish</span></a>  
                                         </div>
@@ -397,6 +433,8 @@ class DashboardPaidProfile extends Component {
                 </div>
         </div>
         </body>
+        
+
                 
                 
         </div>
