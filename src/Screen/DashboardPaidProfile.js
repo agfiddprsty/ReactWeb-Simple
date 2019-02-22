@@ -12,7 +12,8 @@ class DashboardPaidProfile extends Component {
     constructor(props){
         super(props)
         this.finishhandle = this.finishhandle.bind(this);
-        this.pendidikanhandle = this.finishhandle.bind(this);
+        this.pendidikanhandle = this.pendidikanhandle.bind(this);
+        this.kerjahandle = this.kerjahandle.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleChecked = this.handleChecked.bind(this);
         this.moveLogin = this.moveLogin.bind(this);
@@ -28,7 +29,16 @@ class DashboardPaidProfile extends Component {
             ressjson:'',
             checked: false,
             selectedValue: '',
-            files: ''
+            files: '',
+            sekolah: '',
+            study: '', 
+            jurusan: '',
+            gelar: '',
+            perusahaan: '',
+            industri: '',
+            title: '',
+            description: '',
+            displayStudy: false,
 
         }
     }
@@ -92,7 +102,7 @@ class DashboardPaidProfile extends Component {
     pendidikanhandle(){
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-        if (this.state.sekolah) {
+        if (this.state.sekolah === "") {
             alert('Silahkan masukkan sekolah anda')
         }else if(this.state.study === ""){
             alert("Silahkan masukkan bidang study anda");
@@ -124,7 +134,7 @@ class DashboardPaidProfile extends Component {
     kerjahandle(){
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-        if (this.state.perusahaan) {
+        if (this.state.perusahaan === "") {
             alert('Silahkan masukkan perusahaan pekerjaan anda')
         }else if(this.state.industri === ""){
             alert("Silahkan masukkan industri pekerjaan anda");
