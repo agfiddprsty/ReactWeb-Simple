@@ -11,7 +11,7 @@ class DetailQuiz extends Component{
             <div style={{overflowX:"hidden"}}>
                 <HeaderDashboard/>
                 <body className="bg-light" style={{borderTop:"solid",borderColor:"#E7E7E7"}} >
-                    <div style={{marginLeft:"75px",marginTop:"30px"}} >
+                    <div style={{marginLeft:"75px",marginTop:"30px",paddingLeft:"20px"}} >
                         <div className="row">
                             <div class="col-md-auto">
                                 <h3 style={{fontWeight:"bold",marginLeft:"11px",marginBottom:"30px"}}>Kuis Mingguan #1</h3>
@@ -20,7 +20,7 @@ class DetailQuiz extends Component{
                             <div class="col-md-3" >
                                 <div style={{marginLeft:"45px",marginTop:"10px"}}>
                                     <br/>
-                                    <h5 style={{fontWeight:"bold",marginBottom:"10px"}}>Tonton Selanjutnya </h5>
+                                    <h5 style={{fontWeight:"bold",marginBottom:"10px",marginLeft:"-55px",marginTop:"25px"}}>Tonton Selanjutnya </h5>
                                 </div>
                                 <ListVideoDown/>
                             </div>
