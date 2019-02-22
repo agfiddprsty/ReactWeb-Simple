@@ -28,8 +28,6 @@ class DetailVideo extends Component {
                                     <br/>
                                     <h5 style={{fontWeight:"bold"}}>Tonton Selanjutnya </h5>
                                 </div>
-                                <br/>
-                                <br/>
                                 <div>
                                     <ListVideo/>
                                 </div>
