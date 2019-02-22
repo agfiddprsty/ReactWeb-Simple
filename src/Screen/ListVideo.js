@@ -16,16 +16,17 @@ class ListVideo extends Component {
 
 render() {
 return (
-        <div class="container">
+        <div style={{overflowX:"hidden"}} class="container">
             <div>
-                <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Minggu 1</h1>                       
-                <hr class="mt-2 mb-5"></hr>
+                <br/>
+                <h1 style={{fontWeight:"bold"}}>Minggu 1</h1>
+                <br/>
             </div>
             <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
@@ -37,7 +38,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center loh">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
@@ -49,7 +50,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
@@ -61,7 +62,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center loh">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
@@ -85,7 +86,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
@@ -97,7 +98,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center loh">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
@@ -109,7 +110,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fa.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.8}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
                             <br/>
                         </a>
                     </div>
@@ -121,10 +122,10 @@ return (
             </div>
             <div>
             <hr class="mt-2 mb-5"></hr>
-                <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Minggu 2</h1>
-                <hr class="mt-2 mb-5"></hr>
-                <h5 style={{color:"red"}}>Konten Terkunci!!! selesaikan semua kuis di Minggu 1 untuk membuka</h5>
+                <h1 style={{fontWeight:"bold"}}>Minggu 2</h1>
+                <br/>
             </div>
+            <div id="sociallocker-content">
             <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-6">
             <div className="d-flex justify-content-center ini">
@@ -209,6 +210,7 @@ return (
                     <span>4. Character</span>   
                     <a><span className="fa fa-clock-o" style={{marginLeft:"80px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                 </div>    
+            </div>
             </div>
             <br/>
             <br/>
