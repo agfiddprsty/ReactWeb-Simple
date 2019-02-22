@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <div style={{overflowY: 'hidden'}}>
         <header className="Hom-header bg-light">
-            <nav style={{boxShadow: "0 0 20px 1px rgba(136, 136, 136, 0.4"}} className="navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light">
+            <nav style={{height:"80px",boxShadow: '0 0 20px 3px rgba(136, 136, 136, 0.4)'}}className="navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light">
               <a class="brand" href="#" style={{marginLeft: '92px'}}>
               <img style={{paddingTop:"40px",paddingBottom:"50px",width:"85px"}} alt="" src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://www.filepicker.io/api/file/mWcP190oTCqiAo5VjrE8"/>
               <br/>

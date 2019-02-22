@@ -21,7 +21,7 @@ return (
         <div class="container">
             <div>
                 <br/>
-                <h2 style={{fontWeight:"bold"}}>Minggu 1</h2>
+                <h2 style={{fontWeight:"bold",paddingTop:"50px"}}>Minggu 1</h2>
                 <br/>
             </div>
             <div class="row text-center text-lg-left">
