@@ -25,24 +25,24 @@ return (
             </div>
             <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-6">
-                    <div className="d-flex justify-content-center ini">
-                        <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.7}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
-                            <br/>
-                        </a>
-                    </div>
-                    <a style={{paddingTop:"10px"}} href="/detailvideo" class="d-block mb-4 h-100">
-                    <span style={{fontWeight:"bold"}}>1. Perkenalan</span>
-                    <span><span className="far fa-clock" style={{opacity: 0.4 ,marginLeft:"70px",color:"red"}}></span> 04:32 </span>
+                <div className="d-flex justify-content-center ini">
+                    <a href="/detailvideo" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail plybtn" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
+                        <br/>
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div className="d-flex justify-content-center loh">
-                        <a href="/detailvideo" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '150px', border: 'none',opacity: 0.7}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
-                            <br/>
-                        </a>
-                    </div>
+                <a style={{paddingTop:"10px"}} href="/detailvideo" class="d-block mb-4 h-100">
+                    <span style={{fontWeight:"bold"}}>1. Perkenalan</span>
+                    <span><span className="far fa-clock" style={{opacity: 0.4 ,marginLeft:"70px",color:"red"}}></span> 04:32 </span>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <div className="d-flex justify-content-center loh">
+                    <a href="/detailvideo" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" style={{background: 'transparent', width: '50px', border: 'none',opacity: 0.7}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
+                        <br/>
+                    </a>
+                </div>
                     <a style={{paddingTop:"10px"}}href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>2. Components</span>
                     <span><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"50px",color:"red"}}></span> 04:32 </span>
