@@ -473,11 +473,17 @@ class DashboardPaidProfile extends Component {
                                                         <p style={{color:'red', fontWeight:'525', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', margin:'25px 0 30px 40px', textAlign:'left'}}>
                                                             Tambah Skills
                                                         </p>
-                                                        <div class="input-group input-group-lg" style={{margin:'0 -80px 0 40px'}}>
-                                                            <input class="input-group-prepend" type="text" name="skills" required="" placeholder="          Skill (ex: Data Analysis)" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', border:'1px solid red', margin:'0 40x 0 -80px', paddingRight:'-70px'}}/>
+                                                        <div class="input-group input-group-lg text-center d-flex flex-wrap align-content-center" style={{margin:'0 -80px 0 40px', border:'1px solid red'}}>
+                                                            <span className="fa fa-search" style={{fontSize: '30px', color: 'red', marginRight: '5px', padding: '20px'}}></span>
+                                                            <span>
+                                                                <input class="input-group-prepend inputskil" type="text" name="skills" required="" placeholder="Skill (ex: Data Analysis)" style={{marginBottom: '0px', paddingTop: '20px', width: '750px', border: 'none'}}/>
+                                                            </span>
                                                         </div>
-                                                        <p style={{textAlign:'left', color:'black', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'.75000000em', marginLeft:'40px', marginTop:'-25px'}}>Kamu bisa menambahkan 10 skills lagi</p> 
+                                                        <p style={{textAlign:'left', color:'black', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'.75000000em', marginLeft:'40px'}}>Kamu bisa menambahkan 10 skills lagi</p> 
                                                         <br/>
+                                                        <div className="text-left" style={{marginLeft: '40px'}}>
+                                                            <span className="btn btn-danger" style={{borderRadius: '50px', fontWeight: '600'}}>Design</span>
+                                                        </div>
                                                         <br/>
                                                         <div class="d-flex justify-content-end" style={{paddingTop:'-25px', marginRight:'-40px'}}>  
                                                             <a href="#"><button class="btn btn-danger btn-sm setuju" style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0'}}>Tambah</button></a>  
