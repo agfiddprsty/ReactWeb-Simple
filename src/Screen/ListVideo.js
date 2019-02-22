@@ -131,7 +131,7 @@ return (
                             <br/>
                         </a>
                     </div>
-                    <a style={{paddingTop:"10px"}} class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>1. Perkenalan</span>
                     <span><span className="far fa-clock" style={{opacity:0.4,marginLeft:"70px",color:"red"}}></span> 04:32 </span>
                     </a>
@@ -143,7 +143,7 @@ return (
                             <br/>
                         </a>
                     </div>
-                    <a style={{paddingTop:"10px"}} class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>2. Components</span>
                     <a><span className="far fa-clock" style={{opacity:0.4,marginLeft:"60px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                     </a>
@@ -155,7 +155,7 @@ return (
                             <br/>
                         </a>
                     </div>
-                    <a style={{paddingTop:"10px"}} class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>3. Instalasi</span>
                     <a><span className="far fa-clock" style={{opacity:0.4,marginLeft:"90px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                     </a>
@@ -166,7 +166,7 @@ return (
                         <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>                            <br/>
                         </a>
                     </div>
-                    <a style={{paddingTop:"10px"}} class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>4. Character</span>
                     <a><span className="far fa-clock" style={{opacity:0.4,marginLeft:"80px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                     </a>
@@ -178,7 +178,7 @@ return (
                         <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>                            <br/>
                         </a>
                     </div>
-                    <a style={{paddingTop:"10px"}} class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>1. Perkenalan</span>
                     <a><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"70px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                     </a>
@@ -189,7 +189,7 @@ return (
                         <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>                            <br/>
                         </a>
                     </div>
-                    <a style={{paddingTop:"10px"}} class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>2. Components</span>
                     <a><span className="far fa-clock" style={{opacity:0.4,marginLeft:"60px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                     </a>
@@ -200,7 +200,7 @@ return (
                         <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>                            <br/>
                         </a>
                     </div>
-                    <a style={{paddingTop:"10px"}} class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>3. Instalasi</span>
                     <a><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"90px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                     </a>
