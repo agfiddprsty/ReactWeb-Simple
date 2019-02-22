@@ -2,16 +2,24 @@ import React, { Component } from 'react';
 import LabelFloatInput from 'label-float-input';
 import Header from './HeaderPage';
 import './css/DashboardPaidProfile.css';
+import DropboxChooser from 'react-dropbox-chooser';
 import {RadioGroup,Radio} from 'react-radio-group';
 import './css/Register.css';
+
+const APP_KEY = 'jni8bfvqjntw35s';
+
 class DashboardPaidProfile extends Component {
     constructor(props){
         super(props)
         this.finishhandle = this.finishhandle.bind(this);
-        this.pendidikanhandle = this.finishhandle.bind(this);
+        this.pendidikanhandle = this.pendidikanhandle.bind(this);
+        this.kerjahandle = this.kerjahandle.bind(this);
+        this.projecthandle = this.projecthandle.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleChecked = this.handleChecked.bind(this);
         this.moveLogin = this.moveLogin.bind(this);
+        this.upload = this.upload.bind(this)
+        this.onSuccess = this.onSuccess.bind(this);
         this.state = {
             isverified: false,
             fullname:'',
@@ -22,9 +30,26 @@ class DashboardPaidProfile extends Component {
             emailValid: true,
             ressjson:'',
             checked: false,
-            selectedValue: ''
+            selectedValue: '',
+            sekolah: '',
+            study: '', 
+            jurusan: '',
+            gelar: '',
+            perusahaan: '',
+            industri: '',
+            title: '',
+            description: '',
+            namaproject: '',
+            projecturl: '',
+            descproject: '',
+            image:null,
+            files: ''
 
         }
+    }
+    onSuccess(value){
+        this.setState({files: value});
+        console.log(this.state.files);
     }
     handleChange(event) {
         this.setState({ [event.target.name]: event.target.value });
@@ -73,16 +98,31 @@ class DashboardPaidProfile extends Component {
             checked: true
         })
     }
-
+    fileUploadHandler = () => {
+        if (this.state.image) {
+          console.log(this.state.image, this.props.userId);
+          const fd = new FormData();
+          fd.append('avatar', this.state.image, this.state.image.name);
+          this.props.addAvatar({ avatar: fd, userId: this.props.userId });
+        }
+    };
+    fileSelectHandler = (e) => {
+        this.setState({
+          image: e.target.files[0],
+        });
+    };
     handleValue(value) {
         this.setState({selectedValue: value});
         console.log(this.state.selectedValue);
+    }
+    upload() {
+        document.getElementById("selectImage").click()
     }
 
     pendidikanhandle(){
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-        if (this.state.sekolah) {
+        if (this.state.sekolah === "") {
             alert('Silahkan masukkan sekolah anda')
         }else if(this.state.study === ""){
             alert("Silahkan masukkan bidang study anda");
@@ -114,7 +154,7 @@ class DashboardPaidProfile extends Component {
     kerjahandle(){
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-        if (this.state.perusahaan) {
+        if (this.state.perusahaan === "") {
             alert('Silahkan masukkan perusahaan pekerjaan anda')
         }else if(this.state.industri === ""){
             alert("Silahkan masukkan industri pekerjaan anda");
@@ -134,6 +174,34 @@ class DashboardPaidProfile extends Component {
                 industri,
                 title,
                 description
+            }
+            // Axios.post('url',body).then(ress=>{
+            //     this.setState({ressjson:ress})
+            // })
+            this.props.history.push("#");
+            console.log(this.state.selectedValue);
+        }
+    }
+
+    projecthandle(){
+        //check all is ok
+        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+        if (this.state.namaproject === "") {
+            alert('Silahkan masukkan nama project anda')
+        }else if(this.state.projecturl === ""){
+            alert("Silahkan masukkan project url anda");
+        }else if(this.state.descproject === ""){
+            alert("Silahkan masukkan description project anda");
+        }
+        else{
+            //init POST AXIOS
+            const namaproject = this.state.namaproject;
+            const projecturl = this.state.projecturl;
+            const descproject = this.state.descproject;
+            const body={
+                namaproject,
+                projecturl,
+                descproject
             }
             // Axios.post('url',body).then(ress=>{
             //     this.setState({ressjson:ress})
@@ -225,7 +293,8 @@ class DashboardPaidProfile extends Component {
                                             </form>
                                         </div>
                                         <div>
-                                            <form class="row" style={{marginLeft: '0'}}>
+                                            <label for="tgl">Tanggal Lahir</label>
+                                            <form class="row" id="tgl" style={{marginLeft: '0'}}>
                                                 <div class="form-group col-2">
                                                     <select class="form-control text-center" id="exampleFormControlSelect1">
                                                         <option value="" selected disabled hidden>Date</option>
@@ -346,14 +415,35 @@ class DashboardPaidProfile extends Component {
                                             <br/>
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <button type="button" class="btn btn-outline-danger btn-lg btn-block" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
+
+                                                    {/* <button onClick={this.upload} type="button" class="btn btn-outline-danger btn-lg btn-block" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
                                                     >
                                                     <i class="fa fa-cloud-upload"></i> Upload</button>
+                                                    <input id='selectImage' hidden type="file" onChange={this.fileSelectHandler} /> */}
+                                                    <div>
+                                                        <DropboxChooser 
+                                                            appKey={APP_KEY}
+                                                            success={files => this.onSuccess(files)}
+                                                            cancel={() => console.log('Closed')}
+                                                            multiselect={true}>
+                                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block dropbox-button" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}>
+                                                            <i class="fa fa-cloud-upload"></i> Upload</button> 
+                                                        </DropboxChooser>
+                                                    </div>
                                                 </div>
                                                 <div class="col-6">
                                                     <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#link" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
                                                     >
                                                     <i class="fas fa-link"></i> Link</button>
+                                                </div>
+                                                <div>
+                                                    {this.state.files && this.state.files.map((files, key) => 
+                                                    <span className="d-flex text-left" style={{padding: '10px'}}>
+                                                        <span class="fa fa-dropbox" aria-hidden="true" style={{color: 'blue', fontSize:'30px', paddingRight: '10px'}}></span>
+                                                        <a href={files.link}>
+                                                        <span key={key} style={{display: 'flex', flexGrow: '1', color: 'blue'}}>{files.link}</span>
+                                                        </a>
+                                                    </span> )}
                                                 </div>
                                             </div>
                                         </div>
@@ -364,9 +454,9 @@ class DashboardPaidProfile extends Component {
                                                 Sertifikat
                                             </p>
                                             <br/>
-                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
-                                            >
+                                            <button type="button" onClick={this.upload} class="btn btn-outline-danger btn-lg btn-block" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}>
                                             <i class="fa fa-cloud-upload"></i> Upload</button>
+                                            <input id='selectImage' hidden type="file" onChange={this.fileSelectHandler} />
                                         </div>
                                         <br/>
                                         <div>
@@ -414,21 +504,21 @@ class DashboardPaidProfile extends Component {
                                                                 </p>
                                                                 <br/>
                                                                 <div>
-                                                                    <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                                    <input type="text" name="" required="" onChange={this.handleChange} value={this.state.namaproject} style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                                     <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Nama Project</label>
                                                                 </div>
                                                                 <div>
-                                                                    <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                                    <input type="text" name="" required="" onChange={this.handleChange} value={this.state.projecturl} style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                                     <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Project URL</label>
                                                                 </div>
                                                                 <div>
-                                                                    <input type="text" name="" required="" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                                    <input type="text" name="" required="" onChange={this.handleChange} value={this.state.descproject} style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                                     <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Description</label>
                                                                 </div>
                                                                 <br/>
                                                                 <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
                                                                     <a href="#"><span class="btn btn-outline-danger btn-lg setuju" style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0', marginRight:'15px'}}>Batal</span></a>  
-                                                                    <a href="#"><span class="btn btn-danger btn-lg setuju" style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0'}}>Selesai</span></a>  
+                                                                    <a href="#"><span class="btn btn-danger btn-lg setuju" onClick={this.projecthandle} style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0'}}>Selesai</span></a>  
                                                                 </div>
                                                             </div>
                                                         </form>
