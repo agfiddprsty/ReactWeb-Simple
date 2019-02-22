@@ -59,6 +59,7 @@
     margin-bottom: 0;
     text-transform: uppercase;
     left: 10px;
+    display: none;
   }
   
   .box form div {
@@ -83,7 +84,10 @@
     left: 0;
     color: grey;
     font-size: 15px;
-    
+  }
+
+  .input [type="submit"]{
+    position: hide;
   }
 
   .isiform {

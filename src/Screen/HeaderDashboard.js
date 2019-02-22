@@ -28,7 +28,7 @@ class HeaderDashboard extends Component{
                 <header className="Hom-header bg-light">
                     <nav className="navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light navbar-default">
                         {/* <a style={{textAlign:"left"}}class="brand" href="/dashboard">DumbWays.id</a> */}
-                        <a href="/dashboard">
+                        <a href="/home">
                             <img alt="" src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://www.filepicker.io/api/file/mWcP190oTCqiAo5VjrE8"/>
                         </a>
                         {/* <!-- Toggler/collapsibe Button --> */}
@@ -99,11 +99,11 @@ class HeaderDashboard extends Component{
                                     </ul>
                                 </li>
                                 
-                                <li className="nav-item ml-auto" style={{marginRight:"10px"}}>
+                                <li className="nav-item d-flex justify-content-end">
                                     {/* <i className="fa fa-user"> */}
                                         {/* <a href="profile" className="nav-link">Samudra Gawang</a> */}
                                         <a href="/profile">
-                                            <img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50%",width:"40px",height:"40px"}}></img>
+                                            <img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{marginRight:"10px",borderRadius:"50%",width:"40px",height:"40px"}}></img>
                                         </a>
                                     {/* </i> */}
                                 </li>
