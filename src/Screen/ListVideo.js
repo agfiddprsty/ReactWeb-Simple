@@ -32,7 +32,7 @@ return (
                         <br/>
                     </a>
                 </div>
-                <a style={{paddingTop:"10px"}} href="/detailvideo" class="d-block mb-4 h-100">
+                <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>1. Perkenalan</span>
                     <span><span className="far fa-clock" style={{opacity: 0.4 ,marginLeft:"70px",color:"red"}}></span> 04:32 </span>
                 </a>
@@ -44,7 +44,7 @@ return (
                         <br/>
                     </a>
                 </div>
-                    <a style={{paddingTop:"10px"}}href="/detailvideo" class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}}href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>2. Components</span>
                     <span><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"50px",color:"red"}}></span> 04:32 </span>
                     </a>
@@ -54,7 +54,7 @@ return (
                         <a href="/detailvideo" class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail plybtn" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>                        </a>
                     </div>
-                    <a style={{paddingTop:"10px"}} href="/detailvideo" class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>3. Instalasi</span>
                     <span><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"90px",color:"red"}}></span> 04:32 </span>
                     </a>
@@ -64,7 +64,7 @@ return (
                         <a href="/detailvideo" class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail plybtn" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>                        </a>
                     </div>
-                    <a style={{paddingTop:"10px"}} href="/detailvideo" class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>4. Character</span>
                     <span><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"80px",color:"red"}}></span> 04:32 </span>
                     </a>
@@ -75,7 +75,7 @@ return (
                         <img class="img-fluid img-thumbnail" style={{opacity: 0.4,background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/5a461410d099a2ad03f9c998.png" alt=""></img>
                         </a>
                     </div>
-                    <a style={{paddingTop:"10px"}} href="/detailquiz" class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} href="/detailquiz" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>Quiz Minggu 1</span>
                     <span style={{marginLeft:"70px",paddingBottom:"1px"}}>Level <span className="fa fa-signal" style={{opacity: 0.4,paddingBottom:"1px",color:"#00DFEB"}}></span>  </span>
                     </a>
@@ -86,7 +86,7 @@ return (
                         <img class="img-fluid img-thumbnail plybtn" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>                            <br/>
                         </a>
                     </div>
-                    <a style={{paddingTop:"10px"}} href="/detailvideo" class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>1. Perkenalan</span>
                     <span><span className="far fa-clock" style={{opacity:0.4 ,marginLeft:"70px",paddingBottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
@@ -96,7 +96,7 @@ return (
                         <a href="/detailvideo" class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail plybtn" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>                        </a>
                     </div>
-                    <a style={{paddingTop:"10px"}} href="/detailvideo" class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>2. Components</span>
                     <a><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"50px",paddingBottom:"1px",color:"red"}}></span> 04:32 </a>
                     </a>
@@ -106,7 +106,7 @@ return (
                         <a href="/detailvideo" class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail plybtn" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>                        </a>
                     </div>
-                    <a style={{paddingTop:"10px"}} href="/detailvideo" class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>3. Instalasi</span>
                     <a><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"90px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                     </a>
