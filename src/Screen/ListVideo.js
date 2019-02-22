@@ -21,7 +21,7 @@ return (
         <div class="container">
             <div>
                 <br/>
-                <h1 style={{fontWeight:"bold"}}>Minggu 1</h1>
+                <h2 style={{fontWeight:"bold"}}>Minggu 1</h2>
                 <br/>
             </div>
             <div class="row text-center text-lg-left">
@@ -114,7 +114,7 @@ return (
             </div>
             <div>
             <hr class="mt-2 mb-5"></hr>
-                <h1 style={{fontWeight:"bold"}}>Minggu 2</h1>
+                <h2 style={{fontWeight:"bold"}}>Minggu 2</h2>
                 <br/>
             </div>
         <div id="sociallocker">
