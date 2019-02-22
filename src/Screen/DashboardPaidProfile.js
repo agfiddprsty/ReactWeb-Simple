@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import LabelFloatInput from 'label-float-input';
 import Header from './HeaderPage';
 import './css/DashboardPaidProfile.css';
+import DropboxChooser from 'react-dropbox-chooser';
+
+const APP_KEY = 'jni8bfvqjntw35s';
 
 class DashboardPaidProfile extends Component {
     constructor(props){
@@ -11,6 +14,7 @@ class DashboardPaidProfile extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleChecked = this.handleChecked.bind(this);
         this.moveLogin = this.moveLogin.bind(this);
+        this.onSuccess = this.onSuccess.bind(this);
         this.state = {
             isverified: false,
             fullname:'',
@@ -21,9 +25,14 @@ class DashboardPaidProfile extends Component {
             emailValid: true,
             ressjson:'',
             checked: false,
-            selectedValue: ''
+            selectedValue: '',
+            files: ''
 
         }
+    }
+    onSuccess(value){
+        this.setState({files: value});
+        console.log(this.state.files);
     }
     handleChange(event) {
         this.setState({ [event.target.name]: event.target.value });
@@ -204,16 +213,18 @@ class DashboardPaidProfile extends Component {
                                             </form>
                                         </div>
                                         <div>
-                                            <form class="row" style={{marginLeft: '0'}}>
+                                            <label for="tgl">Tanggal Lahir</label>
+                                            <form class="row" id="tgl" style={{marginLeft: '0'}}>
                                                 <div class="form-group col-2">
-                                                    <label for="Date" style={{paddingBottom:'100px'}}>Date</label>
-                                                    <select class="form-control text-center" id="exampleFormControlSelect1">
-                                                        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+                                                    <label for="Date" >Date</label>
+                                                    <select class="form-control text-center" id="Date">
+                                                        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                                                        <option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group col-2">
-                                                    <label for="Date">Month</label>
-                                                    <select class="form-control text-center" id="exampleFormControlSelect1">
+                                                    <label for="Month">Month</label>
+                                                    <select class="form-control text-center" id="Month">
                                                         <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
                                                         <option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>
                                                     </select>
@@ -321,14 +332,30 @@ class DashboardPaidProfile extends Component {
                                             <br/>
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <button type="button" class="btn btn-outline-danger btn-lg btn-block" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
-                                                    >
-                                                    <i class="fa fa-cloud-upload"></i> Upload</button>
+                                                    <div>
+                                                        <DropboxChooser 
+                                                            appKey={APP_KEY}
+                                                            success={files => this.onSuccess(files)}
+                                                            cancel={() => console.log('Closed')}
+                                                            multiselect={true}>
+                                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block dropbox-button" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}>
+                                                            <i class="fa fa-cloud-upload"></i> Upload</button> 
+                                                        </DropboxChooser>
+                                                    </div>
                                                 </div>
                                                 <div class="col-6">
                                                     <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="collapse" data-target="#link" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
                                                     >
                                                     <i class="fas fa-link"></i> Link</button>
+                                                </div>
+                                                <div>
+                                                    {this.state.files && this.state.files.map((files, key) => 
+                                                    <span className="d-flex text-left" style={{padding: '10px'}}>
+                                                        <span class="fa fa-dropbox" aria-hidden="true" style={{color: 'blue', fontSize:'30px', paddingRight: '10px'}}></span>
+                                                        <a href={files.link}>
+                                                        <span key={key} style={{display: 'flex', flexGrow: '1', color: 'blue'}}>{files.link}</span>
+                                                        </a>
+                                                    </span> )}
                                                 </div>
                                             </div>
                                         </div>
