@@ -5,7 +5,7 @@ class QuizPlayer extends Component{
         return(
             <div className="col-12 col-s-9">
                 <img src="http://brainboosterstv.com/wp-content/uploads/2018/03/quiz-1400-800x500.jpg" style={{width:"800px",height:"450px"}} ></img>
-                <div style={{borderWidth:"1px",borderTop:"solid",width:"800px",borderColor:"#E7E7E7",marginTop:"20px"}} className="col-12 col-s-9"> 
+                <div style={{borderWidth:"1px",marginTop:"20px"}} className="col-12 col-s-9"> 
                     <br/>
                     <br/>
                     <h5 style={{fontWeight:"bold",marginLeft:"-15px"}}>Deskripsi: </h5>
