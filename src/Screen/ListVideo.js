@@ -127,7 +127,10 @@ return (
             </div>
         <div id="sociallocker">
             <div id="sociallocker-content">
+            <div class="alert alert-danger" role="alert">
             <span  style={{marginTop:"-300%",color:"red"}} class="fas fa-lock"></span> Konten Terkunci, selesaikan semua kuis di Minggu 1
+            </div>
+            {/* <span  style={{marginTop:"-300%",color:"red"}} class="fas fa-lock"></span> Konten Terkunci, selesaikan semua kuis di Minggu 1 */}
             <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-6">
             <div className="d-flex justify-content-center ini">
