@@ -6,7 +6,7 @@ import './css/Masuk.css';
 class Masuk extends Component {
     constructor(props){
         super(props)
-        this.masukhandle = this.masukhandle.bind(this);
+        this.loginhandle = this.loginhandle.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.moveLogin = this.moveLogin.bind(this);
         this.state = {
@@ -24,14 +24,13 @@ class Masuk extends Component {
     handlePasswordChange(p) {
         this.setState({password:p.target.value})
     }
-    masukhandle(){
-        //check all is ok
+    loginhandle(){
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (!pattern.test(this.state.email)) {
             alert('Silahkan masukkan email yang valid')
         }else if(this.state.email === ""){
             alert("Silahkan masukkan email anda");
-        }else if(this.state.telpnumber === ""){
+        }else if(this.state.password === ""){
             alert("Silahkan masukkan password anda");
         }
         else{
@@ -95,7 +94,7 @@ class Masuk extends Component {
                                             </div>
                                             <div className="text-center btn-lg" style={{width:'', padding:'10px 0 10px 0', margin:'0'}}>
                                                 <button type="button" class="btn btn-danger btn-lg" 
-                                                onClick={this.masukhandle} 
+                                                onClick={this.loginhandle} 
                                                 style={{padding:'15px 170px 15px 170px', borderRadius:'0', boxShadow:'0 0 15px 0 rgba(136, 136, 136, 0.4)', fontFamily:'helvetica, Arial, sans serif'
                                             }} >Masuk</button>
                                             </div>
@@ -110,6 +109,8 @@ class Masuk extends Component {
                         </div>
                     </div>
                 </div>
+
+                {/* Responsive */}
                 <div class="row mb-10 d-lg-none d-xl-none" style={{height: '100%'}}>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
                         <div>
@@ -144,7 +145,7 @@ class Masuk extends Component {
                                             </div>
                                             <div className="text-center btn-lg" style={{width:'', padding:'10px 0 10px 0', margin:'0'}}>
                                                 <button type="button" 
-                                                onClick={this.masukhandle} 
+                                                onClick={this.loginhandle} 
                                                 class="btn btn-danger btn-lg btnmsk">Masuk</button>
                                             </div>
                                             <p class="text-center" style={{color:'#666666', fontWeight:'400', fontSize:'.97514286em', fontFamily: 'Lato, Verdana, Helvetica, sans-serif'}}>Lupa Password?</p>
