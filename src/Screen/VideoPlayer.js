@@ -32,26 +32,19 @@ class VideoPlayer extends Component{
                     ratio='16:9'
                     allowFullScreen/>
                 </div>
-                <h4 style={{width:"800px",marginTop:"20px",fontWeight:"bold"}}>1. Mengenal Component</h4>
-                <br/>
-                <br/>
+                <h4 style={{width:"800px",marginTop:"20px",fontWeight:"bold",marginBottom:"20px"}}>1. Mengenal Component</h4>
                 <div style={{borderWidth:"1px",width:"800px",borderColor:"#E7E7E7"}} className="col-12 col-s-9">
                     <hr class="mt-2 mb-5" style={{width:"800px",marginLeft:"-15px"}}></hr>
 
                     <br/>
                     <br/>
-                    <h5 style={{fontWeight:"bold",marginLeft:"-15px"}}>Deskripsi </h5>
+                    <h5 style={{fontWeight:"bold",marginLeft:"-15px",marginTop:"-80px"}}>Deskripsi </h5>
                     <h6 style={{width:"800px",marginTop:"10px",marginLeft:"-30px"}} className="col-12 col-s-9">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h6>
-                </div>             
-                <br/>
-                <br/>
-                <br/>
+                </div> 
                 <br/>
 
                 <div style={{borderWidth:"1px",width:"800px",borderColor:"#E7E7E7"}}className="col-12 col-s-9">
-                <hr class="mt-2 mb-5" style={{width:"800px",marginLeft:"-15px"}}></hr>
-                    
-                    <br/>
+                <hr class="mt-2 mb-5" style={{width:"800px",marginLeft:"-15px",marginBottom:"-100px"}}></hr>
                     <COmment/>
                 </div>
             </div>
