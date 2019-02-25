@@ -71,9 +71,6 @@
       margin-right:20px;
       border-radius: 10px;
     }
-    .submit-gd{
-      margin-left: 570px;
-    }
     .dt-gr-gd{
       border-color:#E7E7E7;
       margin-left:-30px;
@@ -135,5 +132,10 @@
   }
   .vp-v-gd{
     width: 800px;
+  }
+}
+@media only screen and (max-width:768px){
+  .vp-v-cl{
+    width: 200px;
   }
 }

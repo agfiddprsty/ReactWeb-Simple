@@ -302,7 +302,7 @@
 }
 @media only screen and (max-width:600px){
   .scrollbar-cl {
-    margin-left: -50px;
+    margin-left: 50px;
     float: left;
     height: 500px;
     width: 300px;
