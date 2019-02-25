@@ -293,6 +293,9 @@ iframe {
   }
 }
 
+.text-center{
+  padding: 75px 0 0 0;
+}
 
 .box{
   position:absolute;

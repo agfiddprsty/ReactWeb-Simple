@@ -40,6 +40,7 @@
   }
   
   .box input{
+    font-family:'Open Sans, helvetica, Arial, sans serif';
     width: 100%;
     box-sizing: border-box;
     box-shadow: none;
@@ -86,20 +87,20 @@
     font-size: 15px;
   }
 
-  .isiform {
-    color: #666666;
-    font-weight: 325;
-    font-family: Open Sans, helvetica, Arial, sans serif;
-    font-size: 1.48500000em;
-    display: block;
-    margin: 33px 0 39px 0;
-  }
-
-  .tertarik {
+  .title {
     color: #3B3B3B;
     font-weight: 510;
     font-family: Open Sans, helvetica, Arial, sans serif;
     font-size: 1.9700000em;
     display: block;
     margin: 0 0 30px 0;
+  }
+
+  .title-silabus {
+    color: #666666;
+    font-weight: 500;
+    font-family: Open Sans, helvetica, Arial, sans serif;
+    font-size: 1.48500000em;
+    display: block;
+    margin: 33px 0 39px 0;
   }
