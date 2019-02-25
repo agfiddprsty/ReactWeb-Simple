@@ -1,9 +1,10 @@
 @media only screen and (max-width: 1920px) {
     .dv-pg-gd{
-        width:300px;
+        width:275px;
         background-Color:#FF6567;
         height:115px;
         border-Radius:5px;
+        margin-top: 30px
     }
     .h2-pg-gd{
         color:#FFF;
@@ -19,7 +20,7 @@
         border-radius: 10px;
     }
     .pg-lb-gd{
-        margin-Left:250px;
+        margin-Left:225px;
         margin-Top:10px;
         color:#FFF;
     }
