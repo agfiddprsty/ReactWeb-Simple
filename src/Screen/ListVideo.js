@@ -7,7 +7,7 @@ class ListVideo extends Component {
 
 render() {
 return (
-        <div style={{overflow:"hidden",backgroundColor:"#fff"}} >
+        <div style={{marginLeft:"-50px",overflow:"hidden",backgroundColor:"#fff"}} >
         <div class="container">
             <div>
                 <br/>
