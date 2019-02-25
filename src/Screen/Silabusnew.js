@@ -66,7 +66,7 @@ class Silabusnew extends Component {
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
                         <div className="text-center" style={{padding:'90px 0 0 0', backgroundColor:'#FFF'}}>
-                            <h1 className="title">Tertarik dengan pembelajaran kami? </h1>
+                            <h1 className="titlesi">Tertarik dengan pembelajaran kami? </h1>
                             <p className="title-silabus">Isi Form dibawah ini untuk mendapatkan silabus melalui email</p>
                         </div>
                         <div className="d-flex justify-content-center">
