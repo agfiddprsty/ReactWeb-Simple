@@ -8,11 +8,11 @@ import './css/DetailVideo.css'
 class DetailVideo extends Component {
     render(){
         return(
-            <div style={{background:"#F8F9FA",paddingRight:"20px",paddingLeft:"20px",overflowX:"hidden"}}>
+            <div className="dv-luar-gd">
                 <HeaderDashboard/>
 
                 <body className="bg-light dt-body-gd dt-body-cl" >
-                    <div style={{marginLeft:"75px",marginTop:"30px"}} >
+                    <div className="bd-dv-gd" >
                         <div className="row">
                             <div class="col-md-auto">
                                 <Video/>
@@ -24,8 +24,8 @@ class DetailVideo extends Component {
                                 </div>
                                 <br/>
                                 <div className="dt-gr-gd dt-gr-cl" >
-                                    <hr class="mt-2 mb-5" style={{width:"300px"}}></hr>
-                                    <h5 style={{fontWeight:"bold",marginTop:"-30px"}}>Tonton Selanjutnya </h5>
+                                    <hr class="mt-2 mb-5 hr-gd"></hr>
+                                    <h5 className="h5-tn-gd">Tonton Selanjutnya </h5>
                                 </div>
                                 <div>
                                     <ListVideo/>
@@ -33,7 +33,6 @@ class DetailVideo extends Component {
                             </div>
                             
                         </div>
-                        {/* <DiscussVideo/> */}
                     </div> 
                 </body>
             </div>

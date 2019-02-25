@@ -15,14 +15,14 @@ class DiscussVideo extends Component{
     }
     render(){
         return(
-            <div >
-                <h5 style={{fontWeight:"bold",marginLeft:"-15px",marginBottom:"30px"}}>
+            <div style={{marginTop:"-30px"}} >
+                <h5 className="diskusi-gd">
                     Diskusi
                 </h5>
                 <div  >
                     <div class="row" id="post-review-box" >
                         <div class="col-sm-2">
-                                <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"/>
+                                <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
                         </div>
                         <div class="col-md-auto col-s-9" style={{marginTop:"30px"}}>
                             <input style={{borderStyle:"none none solid none",borderColor:"#E7E7E7",backgroundColor:"transparent",width:"650px"}} placeholder="Write A Comment"></input>
@@ -34,7 +34,7 @@ class DiscussVideo extends Component{
                 <div class="row" style={{marginTop:"30px"}}> 
                     <div class="col-sm-2">
                         <div class="thumbnail">
-                            <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"/>
+                            <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
                         </div>
                     </div>
                     <div class="col-sm-10">
@@ -62,7 +62,7 @@ class DiscussVideo extends Component{
                                 {/* end true false ? */}
                                     <div class="row" id="post-review-box" style={{marginTop:"30px"}}>
                                         <div class="col-sm-auto">
-                                            <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{width:"50px",height:"50px"}}/>
+                                            <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{width:"50px",height:"50px",borderRadius:"50px"}}/>
                                         </div>
                                         <div class="col-md-auto col-s-9" style={{marginTop:"30px"}}>
                                             <input style={{borderStyle:"none none solid none",borderColor:"#E7E7E7",backgroundColor:"transparent",width:"570px"}}  placeholder="Write A Comment"></input>
@@ -78,7 +78,7 @@ class DiscussVideo extends Component{
                 <div class="row">
                     <div class="col-sm-2">
                         <div class="thumbnail">
-                            <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"/>
+                            <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
                         </div>
                     </div>
                     <div class="col-sm-10">
