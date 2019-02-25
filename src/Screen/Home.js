@@ -67,7 +67,7 @@ class Home extends Component {
                                         <div class="row mb-5 d-none d-lg-flex d-xl-flex">
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                                 <p class="bootcamp-step-list">
-                                                    <img alt="" className="img-fluid pull-right" src={daftar} style={{width: "150px", height: "150px"}}/>
+                                                    <img alt="" className="img-fluid pull-right onefivzer" src={daftar}/>
                                                 </p>
                                             </div>
                                             <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-auto">
@@ -76,7 +76,7 @@ class Home extends Component {
                                                     <span>
                                                         buat akun dan lengkapi data diri serta lakukan pembayaran untuk dana awal
                                                     </span>
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '10px', fontWeight: '600', color: '#d4d4d4'}}><p style={{fontSize: '30px'}}>01</p></div>
+                                                    <div class="d-flex justify-content-end zerone"><p style={{fontSize: '30px'}}>01</p></div>
                                                 </section>
                                                 <section className="kotakananduo"></section>
                                             </div>
@@ -93,7 +93,7 @@ class Home extends Component {
                                                     <span>
                                                         buat akun dan lengkapi data diri serta lakukan pembayaran untuk dana awal
                                                     </span>
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '10px', fontWeight: '600', color: '#d4d4d4'}}><p style={{fontSize: '30px'}}>01</p></div>
+                                                    <div class="d-flex justify-content-end zerone"><p style={{fontSize: '30px'}}>01</p></div>
                                                 </section>
                                                 <section className="kotakananduo"></section>
                                             </div>
@@ -101,12 +101,12 @@ class Home extends Component {
                                         <div class="row mb-5 d-lg-none d-xl-none">
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                                 <p class="bootcamp-step-list">
-                                                    <img alt="" className="img-fluid" src={lengkapi} style={{width: "150px", height: "150px"}}/>
+                                                    <img alt="" className="img-fluid onefivzer" src={lengkapi}/>
                                                 </p>
                                             </div>
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
                                                 <section class="kotakiri bootcamp-step-list">
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '20px', fontWeight: '600', color: '#d4d4d4', marginBottom: '-20px'}}><p style={{fontSize: '30px'}}>02</p></div>
+                                                    <div class="d-flex justify-content-end zerotwo"><p style={{fontSize: '30px'}}>02</p></div>
                                                     <h5 className="title-cara">Mulai Belajar</h5>
                                                     <span>
                                                         Dipandu oleh mentor professional, anda dapat belajar melalui media video streaming yang bisa anda akses selamanya
@@ -118,7 +118,7 @@ class Home extends Component {
                                         <div class="row mb-5 d-none d-lg-flex d-xl-flex">
                                             <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-auto">
                                                 <section class="kotakiri text-left">
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '20px', fontWeight: '600', color: '#d4d4d4', marginBottom: '-20px'}}><p style={{fontSize: '30px'}}>02</p></div>
+                                                    <div class="d-flex justify-content-end zerotwo"><p style={{fontSize: '30px'}}>02</p></div>
                                                     <h5 className="title-cara">Mulai Belajar</h5>
                                                     <span>
                                                         Dipandu oleh mentor professional, anda dapat belajar melalui media video streaming yang bisa anda akses selamanya
@@ -128,14 +128,14 @@ class Home extends Component {
                                             </div>
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                                 <p class="pull-left bootcamp-step-list">
-                                                    <img alt="" className="img-fluid" src={lengkapi} style={{width: "150px", height: "150px"}}/>
+                                                    <img alt="" className="img-fluid onefivzer" src={lengkapi}/>
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="row mb-5 d-lg-none d-xl-none">
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                                 <p class="bootcamp-step-list">
-                                                    <img alt="" className="img-fluid" src={quiz} style={{width: "150px", height: "150px"}}/>
+                                                    <img alt="" className="img-fluid onefivzer" src={quiz}/>
                                                 </p>
                                             </div>
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mx-auto">
@@ -144,7 +144,7 @@ class Home extends Component {
                                                     <span>
                                                         Kerjakan Mini Quiz, Weekly Quiz dan Quiz Final untuk mengasah skillmu!
                                                     </span>
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '10px', fontWeight: '600', color: '#d4d4d4'}}><p style={{fontSize: '30px'}}>03</p></div>
+                                                    <div class="d-flex justify-content-end zerone"><p style={{fontSize: '30px'}}>03</p></div>
                                                 </section>
                                                 <section className="kotakananduo"></section>
                                             </div>
@@ -152,7 +152,7 @@ class Home extends Component {
                                         <div class="row mb-5 d-none d-lg-flex d-xl-flex">
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
                                                 <p class="pull-right bootcamp-step-list">
-                                                    <img alt="" className="img-fluid" src={quiz} style={{width: "150px", height: "150px"}}/>
+                                                    <img alt="" className="img-fluid onedivzer" src={quiz}/>
                                                 </p>
                                             </div>
                                             <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-auto">
@@ -161,7 +161,7 @@ class Home extends Component {
                                                     <span>
                                                         Kerjakan Mini Quiz, Weekly Quiz dan Quiz Final untuk mengasah skillmu!
                                                     </span>
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '10px', fontWeight: '600', color: '#d4d4d4'}}><p style={{fontSize: '30px'}}>03</p></div>
+                                                    <div class="d-flex justify-content-end zerone"><p style={{fontSize: '30px'}}>03</p></div>
                                                 </section>
                                                 <section className="kotakananduo"></section>
                                             </div>
@@ -169,12 +169,12 @@ class Home extends Component {
                                         <div class="row mb-5 d-lg-none d-xl-none">
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                                 <p class="bootcamp-step-list">
-                                                    <img alt="" className="img-fluid" src={kerja} style={{width: "150px", height: "150px"}}/>
+                                                    <img alt="" className="img-fluid onefivzer" src={kerja}/>
                                                 </p>
                                             </div>
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                                 <section class="kotakiri bootcamp-step-list">
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '20px', fontWeight: '600', color: '#d4d4d4', marginBottom: '-20px'}}><p style={{fontSize: '30px'}}>04</p></div>
+                                                    <div class="d-flex justify-content-end zerotwo"><p style={{fontSize: '30px'}}>04</p></div>
                                                     <h5 className="title-cara">Penyaluran Kerja</h5>
                                                     <span>
                                                     Kami akan menyalurkan Anda ke perusahaan rekanan kami, Berdasarkan hasil Quiz yang anda kerjakan
@@ -186,7 +186,7 @@ class Home extends Component {
                                         <div class="row mb-5 d-none d-lg-flex d-xl-flex">
                                             <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-auto">
                                                 <section class="kotakiri text-left">
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '20px', fontWeight: '600', color: '#d4d4d4', marginBottom: '-20px'}}><p style={{fontSize: '30px'}}>04</p></div>
+                                                    <div class="d-flex justify-content-end zerotwo"><p style={{fontSize: '30px'}}>04</p></div>
                                                     <h5 className="title-cara">Penyaluran Kerja</h5>
                                                     <span>
                                                         Kami akan menyalurkan Anda ke perusahaan rekanan kami, Berdasarkan hasil Quiz yang anda kerjakan

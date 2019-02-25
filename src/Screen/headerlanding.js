@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './css/Header.css';
-import {withRouter,Link} from 'react-router-dom';
 
 class Header extends Component {
   render() {
@@ -8,7 +7,7 @@ class Header extends Component {
       <div className="headland fixed-top bg-light">
         <header className="Hom-header bg-light">
             <nav className="container navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light" style={{height:"80px"}}>
-              <a class="brand" href="#">
+              <a class="brand" href="/home">
               <img alt="" className="img-fluid imgbran" src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://www.filepicker.io/api/file/mWcP190oTCqiAo5VjrE8"/>
               </a>
 

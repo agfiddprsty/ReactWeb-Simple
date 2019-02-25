@@ -1,10 +1,11 @@
 .isii{
     /* margin: 0 15% 0 15%; */
-    height: 100%;
+    height: auto;
+    overflow: hidden;
     background-color: #fafafa;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
-.kotak{
+.sqare{
     width: 800px;
     background-color: white;
     position: relative;
@@ -43,6 +44,34 @@
     font-size: 1.2em;
 }
 
+.plsconfrm {
+    height: auto;
+    color: black;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: Open Sans, helvetica, Arial, sans serif;
+}
+
+.bca{
+    font-weight: 600;
+    font-family: helvetica, Arial, sans serif;
+}
+
+.mandiri {
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-family: helvetica, Arial, sans serif
+}
+
+.norek{
+    margin-bottom: 50px;
+}
+
+.nophone {
+    margin-left: 10px;
+    font-family: Open Sans, helvetica, Arial, sans serif;
+}
+
 .icobca {
     width: 20%;
 }
@@ -61,7 +90,7 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .kotak {
+    .sqare {
         width: 700px;
         padding: 0 25px 0 25px;
     }
@@ -90,7 +119,7 @@
     }
 }
 @media only screen and (max-width: 700px) {
-    .kotak {
+    .sqare {
         width: 600px;
     }
 }
@@ -117,7 +146,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .kotak {
+    .sqare {
         width: 400px;
     }
     .butuh {
@@ -154,7 +183,7 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .kotak {
+    .sqare {
         width: 300px;
         height: 500px;
     }

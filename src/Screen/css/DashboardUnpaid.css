@@ -17,6 +17,14 @@
 	align-items: center;
 }
 
+.agremnt {
+	color: red;
+	font-weight: 510;
+	font-family: Open Sans, helvetica, Arial, sans serif;
+	font-size: 1.9700000em;
+	display: block;
+}
+
 .agreement {
 	box-shadow: 0 0 20px 1px rgba(136, 136, 136, 0.4);
 	width: 60%; 
@@ -27,15 +35,25 @@
 	border: 1px solid #ececec;
 }
 
+.program {
+	height: 500px;
+	color: #000;
+	font-weight: 150;
+	font-size: 1.22000000em;
+	font-family: Open Sans, helvetica, Arial, sans serif;
+}
+
 .tolak {
 	border-radius: 0; 
 	padding: 15px 42px 15px 42px; 
 	margin-right:25px;
+	font-family: helvetica, Arial, sans serif;
 }
 
 .setuju {
 	border-radius: 0; 
 	padding: 15px 42px 15px 42px;
+	font-family: helvetica, Arial, sans serif;
 }
 
 #style-1:-webkit-scrollbar-track
