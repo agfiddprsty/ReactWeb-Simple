@@ -20,7 +20,7 @@ class VideoPlayer extends Component{
        
         return(
             <div className="col-md-auto vp-dv-out-gd">
-                <div className="vp-v-gd">
+                <div className="vp-v-gd vp-v-cl">
                     <Iframeresponsive src="https://fast.wistia.net/embed/iframe/dso2sjap7u"
                     // width="800px"
                     // height="500px"
@@ -31,14 +31,14 @@ class VideoPlayer extends Component{
                     ratio='16:9'
                     allowFullScreen/>
                 </div>
-                <h4 className="tittlevideo-gd">1. Mengenal Component</h4>
+                <h4 className="tittlevideo-gd">2. Mengenal Component</h4>
                 <div className="col-12 col-s-9">
                     <hr class="mt-2 mb-5 hr1-vp-gd"></hr>
 
                     <br/>
                     <br/>
                     <h5 className="deskripsi-gd">Deskripsi </h5>
-                    <h6 className="col-12 col-s-9 detail-deskripsi-gd">On The Course dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h6>
+                    <h6 className="col-12 col-s-9 detail-deskripsi-gd">On The Course dummy text of the printing and typesetting<br/> industry. Lorem Ipsum has been the<br/> industry's standard dummy text ever since the 1500s,</h6>
                 </div> 
                 <div style={{width:"800px"}}className="col-12 col-s-9">
                 <hr class="mt-2 mb-5 hr1-vp-gd"></hr>

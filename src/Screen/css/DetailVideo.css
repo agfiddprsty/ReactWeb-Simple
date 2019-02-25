@@ -26,6 +26,9 @@
         font-family: 'Montserrat';
 
     }
+    .img-cmt-gd{
+        width:70px;
+    }
 }
 @media only screen and (max-width:600px){
     .dt-body-cl{
@@ -34,5 +37,8 @@
     .dt-dv-pg-cl{
         margin-left:-70px;
         margin-top:20px;
-      }
+    }
+    .img-cmt-cl{
+        width: 50px;
+    }
 }
