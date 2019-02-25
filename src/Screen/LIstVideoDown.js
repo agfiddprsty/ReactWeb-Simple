@@ -14,7 +14,7 @@ class ListVideoDown extends Component{
     }
     render(){
         return(
-            <div className="dv-list-luar-gd">
+            <div className="dv-list-out-gd">
                 {/* <h5>Berikutnya</h5> */}
                 <div className="col-md">
                     <div className="scrollbar scrollbar-primary scrollbar-cl">

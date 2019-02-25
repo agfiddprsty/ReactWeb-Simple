@@ -74,21 +74,15 @@ class Silabusnew extends Component {
                                 <div class="col-md-12">
                                     <div class="persegi" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                         <form>
-                                            <div>
-                                                <input type="text" name="fullname" required="" placeholder="" pattern="[A-Za-z}"
-                                                    onChange={this.handleChange} value={this.state.fullname} 
-                                                    onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
-                                                    
-                                                />
-                                                <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.fullname!=''?'transparent':'#999'}}>Nama Lengkap</label>
+                                            <div class="Input">
+                                                <input type="text" id="input" class="Input-text" name="fullname" required="" placeholder="Nama Lengkap" pattern="[A-Za-z}"
+                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                <label for="input" class="Input-label" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', }}>Nama Lengkap</label>
                                             </div>
-                                            <div>
-                                                <input type="text" name="email" required  placeholder="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
-                                                    onChange={this.handleChange} value={this.state.email}                                                     
-                                                    onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
-                                                    
-                                                />
-                                                <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.email!=''?'transparent':'#999'}}>Email</label>
+                                            <div class="Input">
+                                                <input type="text" id="input" class="Input-text" name="email" required  placeholder="Email" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
+                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                <label for="input" class="Input-label" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', }}>Email</label>
                                             </div>
                                             <div className="btn-block" 
                                             onClick={this.sendsilabushandle}
@@ -115,17 +109,15 @@ class Silabusnew extends Component {
                                 <div class="col-md-12">
                                     <div class="persegi" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                         <form>
-                                            <div>
-                                                <input type="text" name="fullname" required=""  placeholder="" pattern="[A-Za-z}" 
-                                                    onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}                                                
-                                                   />
-                                                <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.fullname!=''?'transparent':'#999'}}>Nama Lengkap</label>
+                                            <div class="Input">
+                                                <input type="text" id="input" class="Input-text" name="fullname" required=""  placeholder="Nama Lengkap" pattern="[A-Za-z}" 
+                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                <label for="input" class="Input-label" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', }}>Nama Lengkap</label>
                                             </div>
-                                            <div>
-                                                <input type="email" name="email" required  placeholder="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}" 
-                                                    onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
-                                                    />
-                                                <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.email!=''?'transparent':'#999'}}>Email</label>
+                                            <div class="Input">
+                                                <input type="text" id="input" class="Input-text" name="email" required  placeholder="Email" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}" 
+                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                <label for="input" class="Input-label" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', }}>Email</label>
                                             </div>
                                             <div className="btn-block" style={{width:'', padding:'10px 0 15px 0', margin:'0'}}>
                                                 <button type="button" class="btn btn-danger btn-block" 

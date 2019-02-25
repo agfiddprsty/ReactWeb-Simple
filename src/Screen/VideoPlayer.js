@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './css/video.css';
-import Iframe from 'react-iframe'
 import COmment from './DiscussVideo'
 import './css/VideoPlayer.css'
 import Iframeresponsive from 'react-responsive-embed'
@@ -20,8 +19,8 @@ class VideoPlayer extends Component{
     render(){
        
         return(
-            <div className="col-md-auto">
-                <div>
+            <div className="col-md-auto vp-dv-out-gd">
+                <div style={{width:"800px"}}>
                     <Iframeresponsive src="https://fast.wistia.net/embed/iframe/dso2sjap7u"
                     // width="800px"
                     // height="500px"
