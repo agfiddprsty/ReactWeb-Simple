@@ -448,10 +448,6 @@ iframe {
   font-size: 15px;
 }
 
-.input [type="submit"]{
-  position: hide;
-}
-
 .isiform {
   color: #666666;
   font-weight: 325;

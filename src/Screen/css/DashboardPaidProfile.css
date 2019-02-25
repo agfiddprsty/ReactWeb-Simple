@@ -36,6 +36,16 @@ iframe {
 	border: none !important;
 }
 
+.inputskil {
+  color: red;
+  width: 100%;
+  font-family: Open Sans, helvetica, Arial, sans serif;
+  margin-right: 40px;
+  margin-bottom: 0px;
+  padding-top: 30px;
+  padding-right: -70px;
+}
+
 
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
@@ -183,6 +193,7 @@ iframe {
 }
 
 
+
 /*------------------------------------------------------------------
 [ Responsive ]*/
 
@@ -298,7 +309,7 @@ iframe {
 
 .box input{
   padding: 10px 0;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .box input{
@@ -343,3 +354,4 @@ iframe {
   font-size: 20px;
 
 }
+
