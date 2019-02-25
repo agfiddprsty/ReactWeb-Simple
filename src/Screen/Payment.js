@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import bca from './img/bca.png';
 import './css/payment.css';
-import mandiri from './img/bankmandiri.jpg';
+import mandiri from './img/mandiri.png';
 import whatsapp from './img/whatsapp.png';
 import telegram from './img/telegram.png';
 import Header from './HeaderPage';
@@ -18,11 +18,14 @@ class Payment extends Component {
                         <h2 className="butuh">Pembayaran pendaftaran dibutuhkan</h2>
                         <span className="silahkan"> Silahkan membayar biaya  pendaftaran online bootcamp sebesar IDR <br/> 500.000 untuk dapat mengakses konten kami</span>
                         <div className="norek">
-                            <img className="rounded icobca" src={bca} alt="" /> 
-                            <span className="bca"> 320 0401 823 a/n Ega Wachid</span>
-                            <br></br>
-                            <img className="rounded icoman" src={mandiri} alt=""/> 
-                            <span className="mandiri"> 90000 2773 5407 a/n Ega Wachid</span>
+                            <div className="rekbca">
+                                <img className="rounded icobca" src={bca} alt="" /> 
+                                <span className="bca"> 320 0401 823 a/n Ega Wachid</span>
+                            </div>
+                            <div className="rekman">
+                                <img className="rounded icoman" src={mandiri} alt=""/> 
+                                <span className="mandiri"> 90000 2773 5407 a/n Ega Wachid</span>
+                            </div>
                         </div>
                     </section>
                     <div className="text-center">
