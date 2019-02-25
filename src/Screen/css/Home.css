@@ -521,9 +521,11 @@ section#box-profile{
 }
 
 .rekan{
-    height: 150px;
-    margin-bottom: 10px;
-    padding: 0 50px 0 50px;
+    padding: 0 40px 0 40px;
+}
+
+.rekanrek {
+    margin-top: 70px;
 }
 
 .zerone {
@@ -542,6 +544,10 @@ section#box-profile{
 .onefivzer {
     width: 150px;
     height: 150px;
+}
+
+.ten {
+    padding: 20px 0 10px 0;
 }
 
 .idr {
@@ -594,7 +600,7 @@ section#box-profile{
 }
 
 .icotech {
-    font-size: 100px; 
+    width: 270px;
     margin-bottom: 50px;
     padding: 0 80px 0 80px;
 }
@@ -616,13 +622,14 @@ section#box-profile{
 }
 
 .rekanus{
+    margin: 0 25px 50px 25px;
     flex-wrap: wrap;
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0%;
     justify-content: center;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .tech{
@@ -654,6 +661,12 @@ section#box-profile{
         margin: 50px 280px 0 280px;
         height: 100%;
         background-position: top center;
+    }
+
+    .icotech {
+        width: 250px;
+        margin-bottom: 50px;
+        padding: 5px 80px 0 80px;
     }
 }
 
@@ -821,6 +834,11 @@ section#box-profile{
     .tanya {
         margin-top: -100px;
     }
+
+    .rekan{
+        width: 200px;
+        padding: 0 30px 0 30px;
+    }
   }
 
 @media only screen and (max-width: 657px) {
@@ -857,8 +875,8 @@ section#box-profile{
 
 @media only screen and (max-width: 520px) {
     .icotech {
+        width: 150px;
         padding: 0 30px 0 30px;
-        font-size: 90px; 
         margin-bottom: 50px;
     }
 
@@ -912,8 +930,21 @@ section#box-profile{
         margin-bottom: 50px;
     }
 
-    .rekan {
-        padding: 0;
+    .rekanus{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .rekan{
+        width: 150px;
+        padding: 0px 5px 0px 5px;
+        margin-bottom: 10px;
+    }
+
+    .rekanrek{
+        width: 150px;
+        margin-top: 40px;
+        padding: 0px;
     }
 
     .kotakananduo {
