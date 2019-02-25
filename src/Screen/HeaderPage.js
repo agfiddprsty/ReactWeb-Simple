@@ -13,7 +13,7 @@ class Header extends Component {
               </a> 
               <ul class="navbar-nav ml-auto">
                 <li className="nav-item" style={{width: '50px'}}>
-                  <img src={boy} alt="" className="rounded-circle img-fluid ml-auto" style={{backgroundColor: '#fff', width: '50px', maxWidth: '100%'}}/>
+                  <img src={boy} alt="" className="rounded-circle img-fluid ml-auto" style={{backgroundColor: '#fff', width: '50px', maxWidth: '100%', marginLeft:"40px"}}/>
                 </li>
               </ul>
             </nav>

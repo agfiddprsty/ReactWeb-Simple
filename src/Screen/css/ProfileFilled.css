@@ -46,6 +46,24 @@ iframe {
   padding-right: -70px;
 }
 
+.fmbm {
+  color: #555761;
+  font-family: helvetica, Arial, sans serif;
+  font-size: 0.90000000em;
+  display: block;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.fmbmb {
+  color: #555761;
+  font-family: helvetica, Arial, sans serif;
+  font-size: 0.90000000em;
+  display: block;
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: -10px;
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
@@ -63,6 +81,43 @@ iframe {
   color: #666666;
 }
 
+.txtex {
+  margin: 10px 0 0 40px;
+  color: black;
+  font-family: helvetica, Arial, sans serif;
+  font-size: 1.00000000em;
+  display: block;
+  text-align: left;
+}
+
+.txtexker{
+  margin: 10px 0 0 55px;
+  color: black;
+  font-family: helvetica, Arial, sans serif;
+  font-size: 1.00000000em;
+  display: block;
+  text-align:left;
+}
+
+.dftrskl{
+  border-bottom: 2px solid #999;
+  padding-bottom: 5px;
+  font-size: 1.10000000em;
+  margin-top: 15px;
+}
+
+.dftrskla{
+  border-bottom: 2px solid #999;
+  padding-bottom: 5px;
+  font-size: 1.10000000em;
+  margin-top: 25px;
+}
+
+.seepro {
+  color: #748EFF;
+  margin-left: 40px;
+  font-weight: 600;
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ login ]*/
