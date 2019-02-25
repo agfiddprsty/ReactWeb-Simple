@@ -67,7 +67,7 @@ class Register extends Component {
             // Axios.post('url',body).then(ress=>{
             //     this.setState({ressjson:ress})
             // })
-            this.props.history.push("/silabusnew");
+            this.props.history.push("/dashboardunpaid");
             console.log(this.state.selectedValue);
         
         }        

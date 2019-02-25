@@ -122,8 +122,45 @@
 }
 
 @media only screen and (max-width:1920px){
+  .dv-list-luar-gd{
+    margin-Left:-60px;
+  }
+  .dv-row-gd{
+    background-Color:#F8F9FA;
+  }
   .tittledown{
-    font-family: 'Nunito'
+    font-family: 'Nunito';
+    font-weight: 500;
+  }
+  .dv-bg-gd{
+    background-Repeat:no-repeat;
+    background-Size:100% auto;
+    width:130px;
+    height:80px;
+  }
+  .play-img-gd{
+    background: transparent;
+    width: 70px;
+    border: none;
+    height:60px;
+    margin-Top:10px;
+  }
+  .dv-tittle-gd{
+    margin-Left:-15px;
+  }
+  .i-clock-gd{
+    opacity: 0.4;
+    color:red;
+  }
+  .a-clock-gd{
+    font-size: 13px;
+    margin-top: -100px
+  }
+  .dv-bg-lock-gd{
+    background-Repeat:no-repeat;
+    background-Size:100% auto;
+    width:130px;
+    height:80px;
   }
   .scrollbar {
     margin-left: 30px;
@@ -133,6 +170,8 @@
     background: #fff;
     overflow-y: scroll;
     margin-bottom: 25px;
+    overflow-X:hidden;
+    background-Color:#F8F9FA;
   }
   .force-overflow {
     min-height: 450px;
