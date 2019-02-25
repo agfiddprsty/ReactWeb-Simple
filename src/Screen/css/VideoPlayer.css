@@ -76,7 +76,7 @@
     }
     .dt-gr-gd{
       border-color:#E7E7E7;
-      margin-left:-15px;
+      margin-left:-30px;
       width: 300px;
     }
     .a-pd-gd{
@@ -132,5 +132,8 @@
   .vp-dv-out-gd{
     margin-top: 30px;
     margin-left: 30px;
+  }
+  .vp-v-gd{
+    width: 800px;
   }
 }

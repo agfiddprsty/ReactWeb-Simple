@@ -10,7 +10,7 @@ class DetailVideo extends Component {
         return(
             <div className="dv-out-gd">
                 <HeaderDashboard/>
-
+                
                 <body className="bg-light dt-body-gd dt-body-cl" >
                     <div className="bd-dv-gd" >
                         <div className="row">
@@ -27,7 +27,7 @@ class DetailVideo extends Component {
                                     <hr class="mt-2 mb-5 hr-dt-gd"></hr>
                                     <h5 className="h5-tn-gd">Tonton Selanjutnya </h5>
                                 </div>
-                                <div>
+                                <div style={{marginLeft:"-10px"}}>
                                     <ListVideo/>
                                 </div>
                             </div>

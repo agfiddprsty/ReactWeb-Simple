@@ -16,7 +16,7 @@ class DiscussVideo extends Component{
     render(){
         return(
             <div style={{marginTop:"-30px"}} >
-                <h5 className="diskusi-gd">
+                <h5 className="disscuss-vd-gd">
                     Diskusi
                 </h5>
                 <div  >
