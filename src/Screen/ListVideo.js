@@ -1,16 +1,6 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardDeck,
-    CardBody, Progress } from 'reactstrap';   
-import {withRouter,Link} from 'react-router-dom';
-import rnredux from './img/rnreduxplayred.png';
 import './css/ListVideo.css';
-import boy from './img/boy.png';
 import ply from './img/ply.png';
-import {Input, InputGroupAddon, Button } from 'reactstrap';
-import { RenderLoop } from 'brace';
-import quis from './img/quizz.jpg'
-import { ActionSettingsBrightness } from 'material-ui/svg-icons';
-import HeaderDashboard from './HeaderDashboard';
 // import { Link } from 'react-router-dom';
 
 class ListVideo extends Component {
