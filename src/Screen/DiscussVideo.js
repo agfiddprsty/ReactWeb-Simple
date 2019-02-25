@@ -32,7 +32,7 @@ class DiscussVideo extends Component{
                         <div class="col-md-auto col-s-9" style={{marginTop:"30px"}}>
                             <input onClick={this.showreply} style={{borderStyle:"none none solid none",borderColor:"#E7E7E7",backgroundColor:"transparent",width:"650px"}} placeholder="Write A Comment"></input>
                             <div id="btn" style={{display: this.state.show ? 'block' : 'none'}}>
-                                <button class="btn btn-outline-primary submit-gd submit-btn-cl" > Submit</button>
+                                <button class="btn btn-outline-primary submit-gd" > Submit</button>
                             </div>
                         </div>
                     </div>
