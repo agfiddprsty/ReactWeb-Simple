@@ -112,16 +112,15 @@ return (
                     </a>
                 </div>
             </div>
+            <div></div>
             <div>
             <hr class="mt-2 mb-5"></hr>
                 <h2 style={{fontWeight:"bold"}}>Minggu 2</h2>
                 <br/>
             </div>
-        <div id="sociallocker">
-            <div id="sociallocker-content">
-            <div class="alert alert-danger" role="alert">
-            <span  style={{marginTop:"-300%",color:"red"}} class="fas fa-lock"></span> Konten Terkunci, selesaikan semua kuis di Minggu 1
-            </div>
+            <div id="overlay">
+        <div id="text">Konten Terkunci silahkan selesaikan semua kuis di Minggu 1</div>
+        </div>
             {/* <span  style={{marginTop:"-300%",color:"red"}} class="fas fa-lock"></span> Konten Terkunci, selesaikan semua kuis di Minggu 1 */}
             <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-6">
@@ -220,8 +219,6 @@ return (
             <br/>
             <br/>
             </div>
-            </div>
-        </div>
         );
     }
 }
