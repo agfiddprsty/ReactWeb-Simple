@@ -24,7 +24,7 @@ class Home extends Component {
                 <div>
                     <Header />
                 </div> 
-                <body className="Hom-a" style={{backgroundColor: "#fff", overflowX: 'hidden'}}>
+                <body className="Hom-a" style={{marginTop: '80px', backgroundColor: "#fff", overflowX: 'hidden'}}>
                     <div>
                         <div>    
                             <div className="jumbotron jumbotron-fluid gmbrlanding" style={{height: "600px"}}>
@@ -212,8 +212,8 @@ class Home extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="text-center" ><br/>
-                            <h1 style={{fontSize:'30px',color:'black', marginTop: "50px", fontWeight: '600', marginBottom: "50px"}}>Mengapa Memilih Kami?</h1>
+                        <div className="text-center tanya" ><br/>
+                            <h1 className="mengapa">Mengapa Memilih Kami?</h1>
                         </div>
                         <div className="row text-center" style={{marginBottom: "50px", fontWeight: '600'}}>
                             <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
