@@ -526,6 +526,24 @@ section#box-profile{
     padding: 0 50px 0 50px;
 }
 
+.zerone {
+    padding-top: 10px;
+    font-weight: 600;
+    color: #d4d4d4;
+}
+
+.zerotwo {
+    padding-top: 20px;
+    font-weight: 600;
+    color: #d4d4d4; 
+    margin-bottom: -20px;
+}
+
+.onefivzer {
+    width: 150px;
+    height: 150px;
+}
+
 .idr {
     color: #fff;
     font-size: 30px;
@@ -902,6 +920,20 @@ section#box-profile{
         margin: -220px 0 0 10px;
         box-shadow: 4px 4px 7px 0px rgba(136, 136, 136, 0.9);
         height: 230px;
+    }
+}
+
+@media only screen and (max-width: 418px) {
+    .idr {
+        font-size: 25px;
+    }
+
+    .duajt{
+        font-size: 25px;
+    }
+
+    .limaratus{
+        font-size: 25px;
     }
 }
 
