@@ -68,6 +68,11 @@ nav ul li a:hover{
   box-shadow: 0 0 20px 3px rgba(136, 136, 136, 0.4);
 }
 
+.headdash {
+  height: 80px;
+  box-shadow: 0 0 20px 3px rgba(136, 136, 136, 0.4);
+}
+
 .headland {
   height: 80px;
   box-shadow: 0 0 20px 3px rgba(136, 136, 136, 0.4)

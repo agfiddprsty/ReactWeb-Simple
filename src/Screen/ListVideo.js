@@ -21,7 +21,7 @@ return (
         <div class="container">
             <div>
                 <br/>
-                <h2 style={{fontWeight:"bold",paddingTop:"50px"}}>Minggu 1</h2>
+                <h2 style={{fontWeight:"bold",paddingTop:"45px"}}>Minggu 1</h2>
                 <br/>
             </div>
             <div class="row text-center text-lg-left">
@@ -77,7 +77,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} href="/detailquiz" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>Quiz Minggu 1</span>
-                    <span style={{marginLeft:"70px",paddingBottom:"1px"}}>Level <span className="fa fa-signal" style={{opacity: 0.4,paddingBottom:"1px",color:"#00DFEB"}}></span>  </span>
+                    <span style={{marginLeft:"70px",paddingBottom:"1px",color:"#00DFEB"}}>Level <span className="fa fa-signal" style={{opacity: 0.4,paddingBottom:"1px",color:"#00DFEB"}}></span>  </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -117,11 +117,6 @@ return (
             <hr class="mt-2 mb-5"></hr>
                 <h2 style={{fontWeight:"bold"}}>Minggu 2</h2>
                 <br/>
-                <div class="overlay">
-                <a>
-                 <span className="fas fa-lock" style={{fontSize:"20px",color:"red"}} class="text">Konten Terkunci silahkan selesaikan semua kuis di Minggu 1</span>
-                </a>
-            </div>
             </div>
             {/* <span  style={{marginTop:"-300%",color:"red"}} class="fas fa-lock"></span> Konten Terkunci, selesaikan semua kuis di Minggu 1 */}
             <div class="row text-center text-lg-left">
