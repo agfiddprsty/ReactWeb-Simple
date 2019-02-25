@@ -22,10 +22,10 @@ import Silabus from './Screen/Silabus';
 import Profile from './Screen/Profile';
 import InfoSilabus from './Screen/InfoSilabus';
 import ListSilabus from './Screen/ListSilabus';
-import Login from './Screen/Login';
+import Log from './Screen/Log';
 import ProfileLink from './Screen/ProfileLinked';
 import ProfileRaport from './Screen/ProfileRaport';
-import Masuk from './Screen/Masuk';
+import Login from './Screen/Login';
 import Register from './Screen/Register';
 import DashboardUnpaid from './Screen/DashboardUnpaid';
 import ProfileFill from './Screen/ProfileFill';
@@ -56,7 +56,7 @@ ReactDOM.render(
             <Route path="/silabus/detail" component={Silabus}/>
             <Route path="/batch" component={Batch}/>
             <Route path="/profileraport" component={ProfileRaport}/>
-            <Route path="/masuk" component={Masuk}/>
+            <Route path="/login" component={Login}/>
             <Route path="/register" component={Register}/>
             <Route path="/dashboardunpaid" component={DashboardUnpaid}/>
             <Route path="/profilefill" component={ProfileFill}/>

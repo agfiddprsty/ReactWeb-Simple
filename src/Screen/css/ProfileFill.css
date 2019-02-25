@@ -46,9 +46,6 @@ iframe {
   padding-right: -70px;
 }
 
-.her {
-  margin-top: 80px;
-}
 
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
@@ -294,10 +291,6 @@ iframe {
     visibility: visible;
     opacity: 1;
   }
-}
-
-.text-center{
-  padding: 75px 0 0 0;
 }
 
 .box{

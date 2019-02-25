@@ -19,10 +19,10 @@ class Header extends Component {
               <div class="collapse navbar-collapse bg-light colap" id="collapsibleNavbar" >
               <ul class="navbar-nav ml-auto">
                 <li className="nav-item" style={{width: '100px'}}>
-                  <a href='/masuk' className="nav-link"><span className="btn btn-outline-danger" style={{width:'100px', fontWeight: '600'}}>Masuk</span></a>
+                  <a href='/masuk' className="nav-link"><span className="btn btn-outline-danger btnhead">Masuk</span></a>
                 </li>
                 <li className="nav-item" style={{width: '100px'}}>
-                  <a href="/register" className="nav-link active"><span className="btn btn-danger" style={{width:'100px', fontWeight: '600'}}>Daftar</span></a>
+                  <a href="/register" className="nav-link active"><span className="btn btn-danger btnhead">Daftar</span></a>
                 </li>
               </ul>
             </div> 

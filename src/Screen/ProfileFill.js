@@ -87,7 +87,7 @@ class ProfileFill extends Component {
             // Axios.post('url',body).then(ress=>{
             //     this.setState({ressjson:ress})
             // })
-            this.props.history.push("/dashboard");
+            this.props.history.push("#");
             console.log(this.state.selectedValue);
         }        
         
@@ -218,9 +218,9 @@ class ProfileFill extends Component {
 
     render() {
       return (
-    <div className="huo">
+    <div>
         <Header/>
-        <body className="her">
+        <body>
     
         <div style={{backgroundColor:'#FFF', paddingBottom:'1250px'}}>
             <div className="text-title">
@@ -260,7 +260,7 @@ class ProfileFill extends Component {
                                             <input type="text" name="adress" onChange={this.handleChange} value={this.state.adress} required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
                                             <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Alamat</label>
                                         </div>
-                                        {/* <div style={{padding:'20px 0px 20px 20px'}}>
+                                        <div style={{padding:'20px 0px 20px 20px'}}>
                                             <form>
                                                 <label class="radio-inline" style={{paddingRight:'20px'}}>
                                                     <input type="radio" name="optradio" checked/>Male
@@ -269,7 +269,7 @@ class ProfileFill extends Component {
                                                     <input type="radio" name="optradio"/>Female
                                                 </label>
                                             </form>
-                                        </div> */}
+                                        </div>
                                         {/* <div>
                                             <form class="row">
                                                 <div class="form-group col-1">
@@ -494,6 +494,18 @@ class ProfileFill extends Component {
                                                     </div>
                                                 </form>
                                             </div> 
+                                            <div>
+                                                <input type="text" name="userinterface"  required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                                <label style={{fontFamily:'helvetica, Arial, sans serif'}}>User Interface Design</label>
+                                            </div>
+                                            <div>
+                                                <input type="text" name="graphicdesign" required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                                <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Graphic Design</label>
+                                            </div>
+                                            <div>
+                                                <input type="text" name="userexperience" required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
+                                                <label style={{fontFamily:'helvetica, Arial, sans serif'}}>User Experience Design</label>
+                                            </div>     
                                         </div>
                                         <br/>
                                         <div>
