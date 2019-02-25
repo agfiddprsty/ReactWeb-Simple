@@ -57,7 +57,9 @@ class DiscussVideo extends Component{
                                         <button class=" btn btn-outline-primary ml-2 fa fa-reply" onClick={this.showreply} > Reply</button>
                                     </div>
                                 </div>
+                                {/* true false ? */}
                                 <div id="reply" style={{display: this.state.show ? 'block' : 'none'}}>
+                                {/* end true false ? */}
                                     <div class="row" id="post-review-box" style={{marginTop:"30px"}}>
                                         <div class="col-sm-auto">
                                             <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{width:"50px",height:"50px"}}/>
