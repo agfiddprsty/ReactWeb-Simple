@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import LabelFloatInput from 'label-float-input';
 import Header from './HeaderPage';
-import './css/DashboardPaidProfile.css';
+import './css/ProfileFill.css';
 import DropboxChooser from 'react-dropbox-chooser';
 import {RadioGroup,Radio} from 'react-radio-group';
 import './css/Register.css';
 
 const APP_KEY = 'jni8bfvqjntw35s';
 
-class DashboardPaidProfile extends Component {
+class ProfileFill extends Component {
     constructor(props){
         super(props)
         this.finishhandle = this.finishhandle.bind(this);
@@ -493,7 +493,7 @@ class DashboardPaidProfile extends Component {
                                                         </div>  
                                                     </div>
                                                 </form>
-                                            </div>    
+                                            </div> 
                                         </div>
                                         <br/>
                                         <div>
@@ -552,4 +552,4 @@ class DashboardPaidProfile extends Component {
       );
     }
   }
-  export default DashboardPaidProfile;
+  export default ProfileFill;
