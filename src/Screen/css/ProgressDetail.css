@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1920px) {
     .dv-pg-gd{
-        width:275px;
+        width:320px;
         background-Color:#FF6567;
         height:115px;
         border-Radius:5px;
@@ -31,6 +31,7 @@
         background-Color:#FF6567;
         height:130px;
         border-Radius:5px;
+        margin-left: 70px;
     }
     .h2-pg-cl{
         color:#FFF;

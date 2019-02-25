@@ -3,7 +3,7 @@
         border-Color:#E7E7E7;
     }
     .dt-dv-pg-gd{
-        margin-left:-15px;
+        margin-left:-30px;
         margin-top:10px;
         margin-bottom: -10px
     }
@@ -18,13 +18,16 @@
         margin-Top:50px;
     }
     .hr-dt-gd{
-        width:270px;
+        width:320px;
     }
     .h5-tn-gd{
         font-Weight:600;
         margin-Top:-30px;
         font-family: 'Montserrat';
 
+    }
+    .img-cmt-gd{
+        width:70px;
     }
 }
 @media only screen and (max-width:600px){
@@ -34,5 +37,8 @@
     .dt-dv-pg-cl{
         margin-left:-70px;
         margin-top:20px;
-      }
+    }
+    .img-cmt-cl{
+        width: 50px;
+    }
 }
