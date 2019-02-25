@@ -87,7 +87,7 @@ class ProfileFill extends Component {
             // Axios.post('url',body).then(ress=>{
             //     this.setState({ressjson:ress})
             // })
-            this.props.history.push("#");
+            this.props.history.push("/dashboard");
             console.log(this.state.selectedValue);
         }        
         
@@ -218,9 +218,9 @@ class ProfileFill extends Component {
 
     render() {
       return (
-    <div>
+    <div className="huo">
         <Header/>
-        <body>
+        <body className="her">
     
         <div style={{backgroundColor:'#FFF', paddingBottom:'1250px'}}>
             <div className="text-title">

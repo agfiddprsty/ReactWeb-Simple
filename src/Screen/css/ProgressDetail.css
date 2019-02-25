@@ -2,14 +2,15 @@
     .dv-pg-gd{
         width:300px;
         background-Color:#FF6567;
-        height:130px;
-        border-Radius:10px;
+        height:115px;
+        border-Radius:5px;
     }
     .h2-pg-gd{
         color:#FFF;
         margin-Left:20px;
-        border-Radius:10px;
-        font-size: 30px;
+        font-size: 20px;
+        font-family: 'Montserrat';
+        font-weight: 400;
     }
     .pg-pg-gd{
         width:100;
@@ -28,7 +29,7 @@
         width:250px;
         background-Color:#FF6567;
         height:130px;
-        border-Radius:10px;
+        border-Radius:5px;
     }
     .h2-pg-cl{
         color:#FFF;

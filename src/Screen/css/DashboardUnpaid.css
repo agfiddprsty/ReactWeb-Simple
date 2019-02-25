@@ -1,5 +1,5 @@
 .hir {
-	padding-bottom: 100px;
+	padding-bottom: 80px;
 }
 
 .persetujuan {
@@ -7,6 +7,7 @@
 }
 
 .tengahagre {
+	margin-top: 80px;
 	display: flex;
 	flex-grow: 1;
 	flex-shrink: 1;

@@ -21,7 +21,7 @@ class VideoPlayer extends Component{
        
         return(
             <div className="col-md-auto">
-                <div className="">
+                <div>
                     <Iframeresponsive src="https://fast.wistia.net/embed/iframe/dso2sjap7u"
                     // width="800px"
                     // height="500px"
@@ -32,26 +32,17 @@ class VideoPlayer extends Component{
                     ratio='16:9'
                     allowFullScreen/>
                 </div>
-                <h4 style={{width:"800px",marginTop:"20px",fontWeight:"bold"}}>1. Mengenal Component</h4>
-                <br/>
-                <br/>
-                <div style={{borderWidth:"1px",width:"800px",borderColor:"#E7E7E7"}} className="col-12 col-s-9">
-                    <hr class="mt-2 mb-5" style={{width:"800px",marginLeft:"-15px"}}></hr>
+                <h4 className="tittlevideo-gd">1. Mengenal Component</h4>
+                <div className="col-12 col-s-9">
+                    <hr class="mt-2 mb-5 hr1-vp-gd"></hr>
 
                     <br/>
                     <br/>
-                    <h5 style={{fontWeight:"bold",marginLeft:"-15px"}}>Deskripsi </h5>
-                    <h6 style={{width:"800px",marginTop:"10px",marginLeft:"-30px"}} className="col-12 col-s-9">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h6>
-                </div>             
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-
-                <div style={{borderWidth:"1px",width:"800px",borderColor:"#E7E7E7"}}className="col-12 col-s-9">
-                <hr class="mt-2 mb-5" style={{width:"800px",marginLeft:"-15px"}}></hr>
-                    
-                    <br/>
+                    <h5 className="deskripsi-gd">Deskripsi </h5>
+                    <h6 className="col-12 col-s-9 detail-deskripsi-gd">On The Course dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h6>
+                </div> 
+                <div style={{width:"800px"}}className="col-12 col-s-9">
+                <hr class="mt-2 mb-5 hr1-vp-gd"></hr>
                     <COmment/>
                 </div>
             </div>

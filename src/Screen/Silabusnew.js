@@ -59,7 +59,7 @@ class Silabusnew extends Component {
             <div>
                 <Header/>
             </div>
-            <body style={{backgroundColor:'#FFF'}}>
+            <body style={{marginTop: '80px', backgroundColor:'#FFF'}}>
                 <div className="mb-10 d-none d-md-block d-lg-block d-xl-block">
                     <div className="jumbotron jumbotron-fluid silabus" style={{height: "600px"}}>
                         <h4 className="card-title text-center tengah">Menjadi Fullstack Mobile Developer <br/>Professional dan Disalurkan Kerja</h4>

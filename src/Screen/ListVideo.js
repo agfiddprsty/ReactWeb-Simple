@@ -112,22 +112,23 @@ return (
                     </a>
                 </div>
             </div>
+            <div></div>
             <div>
             <hr class="mt-2 mb-5"></hr>
                 <h2 style={{fontWeight:"bold"}}>Minggu 2</h2>
                 <br/>
+                <div class="overlay">
+                <a>
+                 <span className="fas fa-lock" style={{fontSize:"20px",color:"red"}} class="text">Konten Terkunci silahkan selesaikan semua kuis di Minggu 1</span>
+                </a>
             </div>
-        <div id="sociallocker">
-            <div id="sociallocker-content">
-            <div class="alert alert-danger" role="alert">
-            <span  style={{marginTop:"-300%",color:"red"}} class="fas fa-lock"></span> Konten Terkunci, selesaikan semua kuis di Minggu 1
             </div>
             {/* <span  style={{marginTop:"-300%",color:"red"}} class="fas fa-lock"></span> Konten Terkunci, selesaikan semua kuis di Minggu 1 */}
             <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
                             <br/>
                         </a>
                     </div>
@@ -139,7 +140,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
                             <br/>
                         </a>
                     </div>
@@ -151,7 +152,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>
+                            <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
                             <br/>
                         </a>
                     </div>
@@ -163,7 +164,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>                            <br/>
+                        <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
@@ -174,7 +175,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>                            <br/>
+                        <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
@@ -185,7 +186,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>                            <br/>
+                        <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
@@ -196,7 +197,7 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>                            <br/>
+                        <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
@@ -207,21 +208,20 @@ return (
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center ini">
                         <a class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail plybtn" src="https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627163-lock-512.png" alt=""></img>                            <br/>
+                        <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>4. Character</span>   
                     <a><span className="far fa-clock" style={{opacity:0.4,marginLeft:"80px",paddingbottom:"1px",color:"red"}}></span> 04:32 </a>
                     </a>
-                </div> 
+                </div>
             </div>
             </div>
-            <br/>
-            <br/>
+                    <br/>
+                    <br/>
             </div>
-            </div>
-        </div>
+            
         );
     }
 }

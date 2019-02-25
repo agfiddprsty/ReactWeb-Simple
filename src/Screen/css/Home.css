@@ -567,6 +567,14 @@ section#box-profile{
     font-weight: 600;
 }
 
+.mengapa {
+    font-size: 30px;
+    color:black;
+    margin-top: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
 .icotech {
     font-size: 100px; 
     margin-bottom: 50px;
@@ -791,6 +799,10 @@ section#box-profile{
     .resp-iframe {
         transform: scale(0.80); 
     }
+
+    .tanya {
+        margin-top: -100px;
+    }
   }
 
 @media only screen and (max-width: 657px) {
@@ -805,6 +817,10 @@ section#box-profile{
     .rekan {
         height: 100px;
     }
+
+    .tanya {
+        margin-top: -130px;
+    }
 }
 
 @media only screen and (max-width: 565px) {
@@ -814,6 +830,10 @@ section#box-profile{
 
     .homevideo{
         margin-top: -150px;
+    }
+
+    .tanya {
+        margin-top: -180px;
     }
 }
 
