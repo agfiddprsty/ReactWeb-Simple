@@ -1,7 +1,7 @@
-import React,{Component}from 'react'
-import  '../Screen/css/DiscussVideo.css'
-import './css/VideoPlayer.css'
-class DiscussVideo extends Component{
+import React,{Component} from 'react';
+import './css/DiscussQuiz.css';
+
+class QuizDisscuss extends Component{
     constructor(){
         super()
         this.showreply = this.showreply.bind(this)
@@ -15,7 +15,7 @@ class DiscussVideo extends Component{
     }
     render(){
         return(
-            <div style={{marginTop:"-30px"}} >
+            <div>
                 <h5 className="diskusi-gd">
                     Diskusi
                 </h5>
@@ -25,13 +25,13 @@ class DiscussVideo extends Component{
                                 <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
                         </div>
                         <div class="col-md-auto col-s-9" style={{marginTop:"30px"}}>
-                            <input style={{borderStyle:"none none solid none",borderColor:"#E7E7E7",backgroundColor:"transparent",width:"650px"}} placeholder="Write A Comment"></input>
+                            <input style={{borderStyle:"none none solid none",borderColor:"#E7E7E7",backgroundColor:"transparent",width:"500px"}} placeholder="Write A Comment"></input>
                             <button class="btn btn-outline-primary submit-gd" > Submit</button>
                         </div>
                     </div>
                 </div>
               
-                <div class="row" style={{marginTop:"30px"}}> 
+                <div class="row" style={{marginTop:"10px"}}> 
                     <div class="col-sm-2">
                         <div class="thumbnail">
                             <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
@@ -65,8 +65,8 @@ class DiscussVideo extends Component{
                                             <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{width:"50px",height:"50px",borderRadius:"50px"}}/>
                                         </div>
                                         <div class="col-md-auto col-s-9" style={{marginTop:"30px"}}>
-                                            <input style={{borderStyle:"none none solid none",borderColor:"#E7E7E7",backgroundColor:"transparent",width:"570px"}}  placeholder="Write A Comment"></input>
-                                            <button class="btn btn-outline-primary" style={{marginLeft:"480px"}} > Submit</button>
+                                            <input style={{borderStyle:"none none solid none",borderColor:"#E7E7E7",backgroundColor:"transparent",width:"420px"}}  placeholder="Write A Comment"></input>
+                                            <button class="btn btn-outline-primary" style={{marginLeft:"340px"}} > Submit</button>
                                         </div>
                                     </div>
                                 </div>
@@ -109,11 +109,10 @@ class DiscussVideo extends Component{
                             </div>
                         </div>
                     </div>
-
                 </div>
-                
             </div>
         )
     }
 }
-export default DiscussVideo;
+
+export default QuizDisscuss;

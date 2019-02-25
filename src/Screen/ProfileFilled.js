@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import LabelFloatInput from 'label-float-input';
 import Header from './HeaderPage';
-import './css/DashboardPaidProfile.css';
+import './css/ProfileFilled.css';
 import DropboxChooser from 'react-dropbox-chooser';
 import {RadioGroup,Radio} from 'react-radio-group';
 import './css/Register.css';
 
 const APP_KEY = 'jni8bfvqjntw35s';
 
-class DashboardPaidProfile extends Component {
+class ProfileFilled extends Component {
     constructor(props){
         super(props)
         this.finishhandle = this.finishhandle.bind(this);
@@ -87,7 +87,7 @@ class DashboardPaidProfile extends Component {
             // Axios.post('url',body).then(ress=>{
             //     this.setState({ressjson:ress})
             // })
-            this.props.history.push("/dashboard");
+            this.props.history.push("#");
             console.log(this.state.selectedValue);
         }        
         
@@ -218,11 +218,11 @@ class DashboardPaidProfile extends Component {
 
     render() {
       return (
-    <div className="huo">
+    <div>
         <Header/>
-        <body className="her">
+        <body>
     
-        <div style={{backgroundColor:'#FFF', paddingBottom:'1250px'}}>
+        <div style={{marginTop: '80px', backgroundColor:'#FFF', paddingBottom:'1250px'}}>
             <div className="text-title">
                 <div className="text-center" style={{padding:'75px 0 0 0'}}>
                     <h1 style={{color:'##3B3B3B', fontWeight:'510', fontFamily:'Circular Std Black, sans-serif;', fontSize:'2.17000000em',display:'block', margin:'-5px 0 0 0',}}>
@@ -361,6 +361,41 @@ class DashboardPaidProfile extends Component {
                                                         </div>
                                                     </form>
                                                 </div>
+                                                <div class="row">
+                                                    <div class="col-4" style={{marginLeft:'40px'}}>
+                                                        <div class="col-3">
+                                                        </div>
+                                                        <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                            SMK Uhuy Lah
+                                                        </p>
+                                                        <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                            SMA/SMK
+                                                        </p>
+                                                        <div className="row">
+                                                            <div className="col-lg col-md col-sm col-xs">
+                                                                <p className="fmbm">
+                                                                    Field Of Study
+                                                                </p>
+                                                                <p className="fmbmb">
+                                                                    Major
+                                                                </p>
+                                                            </div>
+                                                            <div className="col-lg col-md col-sm col-xs">
+                                                                <p className="fmbm">
+                                                                    Buisness
+                                                                </p>
+                                                                <p className="fmbmb">
+                                                                    Multimedia
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <p style={{color:'red', fontWeight:'500', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'right', marginRight:'-40px'}}>
+                                                            Januari 2019 - Maret 2020
+                                                        </p>
+                                                    </div>
+                                                </div>
                                                 <br/>
                                                 <div>
                                                 <br/>
@@ -403,6 +438,28 @@ class DashboardPaidProfile extends Component {
                                                             </div>
                                                         </form>
                                                     </div>
+                                                    <div class="row">
+                                                    <div class="col-4" style={{marginLeft:'40px'}}>
+                                                        <div class="col-3">
+                                                        </div>
+                                                        <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                            Programmer
+                                                        </p>
+                                                        <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                            DumbWays
+                                                        </p>
+                                                        
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <p style={{color:'red', fontWeight:'500', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'right', marginRight:'-40px'}}>
+                                                            Januari 2019 - Maret 2020
+                                                        </p>
+                                                    </div>
+                                                    <p className="txtexker">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.
+                                                    </p>
+                                                </div>
+                                                
                                         <br/>
                                         <div>
                                             <br/>
@@ -467,6 +524,23 @@ class DashboardPaidProfile extends Component {
                                                 </p>
                                                 <button type="button" class="btn" data-toggle="collapse" data-target="#tambahskills" style={{backgroundColor:'lightgrey', color:'#000', marginLeft:'625px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif'}}>Add Skill</button>
                                             </div>
+                                            <div className="text-left">
+                                                <div className="dftrskl">
+                                                    <span>
+                                                        User Interface Design
+                                                    </span>
+                                                </div>
+                                                <div className="dftrskla">
+                                                    <span>
+                                                        Graphic Design
+                                                    </span>
+                                                </div>
+                                                <div className="dftrskla">
+                                                    <span>
+                                                        User Experience Design
+                                                    </span>
+                                                </div>
+                                            </div>
                                             <div>
                                                 <form>
                                                     <div id="tambahskills" class="collapse" style={{marginRight:'80px'}}>
@@ -493,11 +567,11 @@ class DashboardPaidProfile extends Component {
                                                         </div>  
                                                     </div>
                                                 </form>
-                                            </div>    
+                                            </div>  
                                         </div>
                                         <br/>
                                         <div>
-                                            <p style={{color:'black', fontWeight:'601', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.75000000em', display:'block', textAlign:'left'}}>
+                                            <p style={{marginTop: '10px', color:'black', fontWeight:'601', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.75000000em', display:'block', textAlign:'left'}}>
                                                 Projects
                                             </p>
                                             <br/>
@@ -532,24 +606,67 @@ class DashboardPaidProfile extends Component {
                                                             </div>
                                                         </form>
                                                     </div>
-
-                                        <div class="d-flex justify-content-end" style={{paddingTop: '35px'}}>
-                                            <a href="#"><span class="btn btn-danger btn-lg setuju" onClick={this.finishhandle} style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'5px'}}>Finish</span></a>  
-                                        </div>
-                                </div>
-                            <br/>
-                            <br/>
+                                                    <div class="row">
+                                                        <div class="col-4" style={{marginLeft:'40px'}}>
+                                                            <div class="col-3">
+                                                            </div>
+                                                            <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                                Aplikasi Kopi Kenangan
+                                                            </p>
+                                                            <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                                DumbWays
+                                                            </p>
+                                                            
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <p style={{color:'red', fontWeight:'500', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'right', marginRight:'-40px'}}>
+                                                                Maret 2020
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <span>
+                                                        <p className="txtex">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.
+                                                        </p>
+                                                    </span>
+                                                    <a href="#"><p className="seepro text-left">See Project</p></a>
+                                                    <div class="row" style={{marginTop:'30px'}}>
+                                                        <div class="col-4" style={{marginLeft:'40px'}}>
+                                                            <div class="col-3">
+                                                            </div>
+                                                            <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                                Aplikasi DumbWays
+                                                            </p>
+                                                            <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                                DumbWays
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <p style={{color:'red', fontWeight:'500', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'right', marginRight:'-40px'}}>
+                                                                Maret 2020
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <span>
+                                                        <p className="txtex">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.
+                                                        </p>
+                                                    </span>
+                                                    <a href="#"><p className="seepro text-left">See Project</p></a>
+                                                <div class="d-flex justify-content-end" style={{paddingTop: '35px'}}>
+                                                    <a href="#"><span class="btn btn-danger btn-lg setuju" onClick={this.finishhandle} style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'5px'}}>Finish</span></a>  
+                                                </div>
+                                            </div>
+                                        <br/>
+                                        <br/>
+                            </div>
                         </div>
                     </div>
                 </div>
-        </div>
-        </body>
-        
-
-                
+            </body>     
                 
         </div>
       );
     }
   }
-  export default DashboardPaidProfile;
+  export default ProfileFilled;

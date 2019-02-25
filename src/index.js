@@ -22,13 +22,14 @@ import Silabus from './Screen/Silabus';
 import Profile from './Screen/Profile';
 import InfoSilabus from './Screen/InfoSilabus';
 import ListSilabus from './Screen/ListSilabus';
-import Login from './Screen/Login';
+import Log from './Screen/Log';
 import ProfileLink from './Screen/ProfileLinked';
 import ProfileRaport from './Screen/ProfileRaport';
-import Masuk from './Screen/Masuk';
+import Login from './Screen/Login';
 import Register from './Screen/Register';
 import DashboardUnpaid from './Screen/DashboardUnpaid';
-import DashboardPaidProfile from './Screen/DashboardPaidProfile';
+import ProfileFill from './Screen/ProfileFill';
+import ProfileFilled from './Screen/ProfileFilled';
 import Silabusnew from './Screen/Silabusnew';
 import Payment from './Screen/Payment';
 import Video from './Screen/VideoPlayer';
@@ -55,10 +56,11 @@ ReactDOM.render(
             <Route path="/silabus/detail" component={Silabus}/>
             <Route path="/batch" component={Batch}/>
             <Route path="/profileraport" component={ProfileRaport}/>
-            <Route path="/masuk" component={Masuk}/>
+            <Route path="/login" component={Login}/>
             <Route path="/register" component={Register}/>
             <Route path="/dashboardunpaid" component={DashboardUnpaid}/>
-            <Route path="/dashboardpaidprofile" component={DashboardPaidProfile}/>
+            <Route path="/profilefill" component={ProfileFill}/>
+            <Route path="/profilefilled" component={ProfileFilled}/>
             <Route path="/silabusnew" component={Silabusnew}/>
             <Route path="/payment" component={Payment}/>
             <Route path="/video" component={Video}/>

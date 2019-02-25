@@ -78,6 +78,12 @@ nav ul li a:hover{
   box-shadow: 0 0 20px 3px rgba(136, 136, 136, 0.4)
 }
 
+.btnhead {
+  margin-left: 80px;
+  width: 100px;
+  font-weight: 600;
+}
+
 .Hom-header {
     background-color: #f8f9fa;
     height: 10vh;
@@ -214,4 +220,10 @@ nav ul li a:hover{
 }
 .navbar-default  .dropdown-menu.notify-drop .notify-drop-footer a:hover {
   color: #333;
+}
+
+@media only screen and (max-width: 575px) {
+  .btnhead {
+    margin-left: 0px;
+  }
 }

@@ -46,9 +46,6 @@ iframe {
   padding-right: -70px;
 }
 
-.her {
-  margin-top: 80px;
-}
 
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
@@ -295,7 +292,6 @@ iframe {
     opacity: 1;
   }
 }
-
 
 .box{
   position:absolute;

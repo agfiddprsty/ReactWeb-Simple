@@ -1,0 +1,14 @@
+@media only screen and (max-width:1920px){
+    .bd-dv-gd{
+        margin-left: 10px;
+    }
+    .diskusi-gd{
+		font-Weight:500;
+		margin-Left:1px;
+		margin-Bottom:30px;
+		font-family: 'Montserrat';
+	}
+    .submit-gd{
+        margin-left: 420px;
+    }   
+}
