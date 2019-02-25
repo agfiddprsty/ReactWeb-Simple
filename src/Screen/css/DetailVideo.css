@@ -6,7 +6,26 @@
         margin-left:-15px;
         margin-top:10px;
         margin-bottom: -10px
-      }
+    }
+    .dv-luar-gd{
+        background:#F8F9FA;
+        padding-Right:20px;
+        padding-Left:20px;
+        overflow-X:"hidden";
+    }
+    .bd-dv-gd{
+        margin-Left:75px;
+        margin-Top:50px;
+    }
+    .hr-gd{
+        width:300px;
+    }
+    .h5-tn-gd{
+        font-Weight:600;
+        margin-Top:-30px;
+        font-family: 'Montserrat';
+
+    }
 }
 @media only screen and (max-width:600px){
     .dt-body-cl{
