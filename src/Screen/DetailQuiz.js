@@ -11,7 +11,7 @@ class DetailQuiz extends Component{
             <div className="dv-out-gd">
                 <HeaderDashboard/>
                 <body className="bg-light">
-                    <div className="bd-dv-gd">
+                    <div className="bd-dv-gd bd-dv-cl">
                         <div className="row">
                             <div class="col-md-auto">
                                 <h3 className="h3-gd">Kuis Mingguan #1</h3>
@@ -20,9 +20,9 @@ class DetailQuiz extends Component{
                             <div class="col-md-3" >
                                 <div className="dv-md3-gd">
                                     <br/>
-                                    <h5 className="h5-gd">Tonton Selanjutnya </h5>
+                                    <h5 className="h5-gd h5-cl">Tonton Selanjutnya </h5>
                                 </div>
-                                <div style={{marginLeft:"-50px"}}>
+                                <div className="ls-dq-gd ls-dq-cl">
                                 <ListVideoDown/>
                                 </div>
                             </div>

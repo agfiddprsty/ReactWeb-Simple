@@ -30,10 +30,12 @@ class Quiz extends Component{
                                 <div role="tabpanel" class="tab-pane fade" id="vtab2">
                                     <h3>Tab 2</h3>
                                     <p> Mauris imperdiet dignissim ante, in efficitur mauris elementum sed. Cras vulputate malesuada magna. Morbi tincidunt eros a dui cursus, vitae dignissim nulla scelerisque. Duis pharetra scelerisque mi vel luctus. Cras eu purus efficitur, blandit nisi id, fringilla nulla.</p>
+                                    <Disscus/>
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade in" id="vtab3">
                                     <h3>Tab 3</h3>
                                     <p>Etiam id pharetra quam. Morbi tristique nunc vel sapien dapibus, sit amet imperdiet quam venenatis. Vestibulum et suscipit urna. Suspendisse volutpat quis est eu volutpat. Nulla non tortor venenatis turpis congue aliquet. Vivamus at elit vel massa elementum tempor sit amet sed odio. Nullam placerat, arcu sed ullamcorper ornare, erat erat placerat quam, in feugiat nulla purus in nunc. Maecenas vitae erat auctor, aliquam tellus et, vulputate eros.</p>
+                                    <Disscus/>
                                 </div>
                             </div>
                         </div>

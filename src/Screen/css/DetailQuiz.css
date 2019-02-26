@@ -30,4 +30,22 @@
         width:800px;
         margin-left: 75px;
     }
+    .ls-dq-gd{
+        margin-left: -50px;
+    }
+}
+@media only screen and (max-width:600px){
+    .bd-dv-cl{
+        margin-left: -50px;
+    }
+    .ls-dq-cl{
+        margin-left: 70px;
+    }
+    .h5-cl{
+        font-Weight:600;
+        margin-Bottom:10px;
+        margin-Left:90px;
+        margin-Top:55px;
+        font-family: 'Montserrat';
+    }
 }
