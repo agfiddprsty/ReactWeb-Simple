@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HeaderDashboard from './HeaderDashboard';
+import HeaderDashboard from './HeaderPage';
 import Video from './VideoPlayer'
 import ListVideo from './LIstVideoDown'
 import ProgressDetail from './ProgressDetail';
