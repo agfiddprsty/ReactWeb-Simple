@@ -26,9 +26,9 @@
     .h6-detail-gd{
         width:800px;
         margin-Left:-30px;
-        font-Weight:100;
+        font-Weight:600;
         font-family: 'Nunito';
-        text-align: initial;
+        color: #878787;    
     }
     .h5-pet-gd{
         font-family: 'Montserrat';
