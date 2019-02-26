@@ -19,7 +19,7 @@ class VideoPlayer extends Component{
     render(){
        
         return(
-            <div className="col-md-auto vp-dv-out-gd">
+            <div className="col-md-auto vp-dv-out-gd vp-dv-out-cl">
                 <div className="vp-v-gd vp-v-cl">
                     <Iframeresponsive src="https://fast.wistia.net/embed/iframe/dso2sjap7u"
                     // width="800px"

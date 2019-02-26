@@ -3,7 +3,7 @@
         border-Color:#E7E7E7;
     }
     .dt-dv-pg-gd{
-        margin-left:-30px;
+        margin-left:-80px;
         margin-top:10px;
         margin-bottom: -10px
     }
@@ -18,7 +18,7 @@
         margin-Top:50px;
     }
     .hr-dt-gd{
-        width:320px;
+        width:300px;
     }
     .h5-tn-gd{
         font-Weight:600;
@@ -40,5 +40,8 @@
     }
     .img-cmt-cl{
         width: 50px;
+    }
+    .bd-dv-cl{
+        margin-Top:50px;
     }
 }
