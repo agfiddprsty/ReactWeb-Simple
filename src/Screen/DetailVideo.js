@@ -8,7 +8,7 @@ import './css/DetailVideo.css'
 class DetailVideo extends Component {
     render(){
         return(
-            <div className="dv-out-gd">
+            <div className="dv-out-vd-gd dv-out-vd-cl">
                 <HeaderDashboard/>
                 
                 <body className="bg-light dt-body-gd dt-body-cl" >

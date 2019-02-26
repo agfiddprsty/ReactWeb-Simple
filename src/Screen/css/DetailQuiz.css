@@ -36,7 +36,7 @@
 }
 @media only screen and (max-width:600px){
     .bd-dv-cl{
-        margin-left: -50px;
+        margin-left: -40px;
     }
     .ls-dq-cl{
         margin-left: 70px;
@@ -47,5 +47,11 @@
         margin-Left:90px;
         margin-Top:55px;
         font-family: 'Montserrat';
+    }
+}
+@media only screen and (max-width:600px){
+    .dv-out-qz-cl{
+        /* margin-top: 10px; */
+        margin-left: -10px;
     }
 }

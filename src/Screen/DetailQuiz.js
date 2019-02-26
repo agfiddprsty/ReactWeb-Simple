@@ -8,7 +8,7 @@ import './css/DetailQuiz.css'
 class DetailQuiz extends Component{
     render(){
         return(
-            <div className="dv-out-gd">
+            <div className="dv-out-gd dv-out-qz-cl">
                 <HeaderDashboard/>
                 <body className="bg-light">
                     <div className="bd-dv-qz-gd bd-dv-cl">
