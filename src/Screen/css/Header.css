@@ -64,7 +64,12 @@ nav ul li a:hover{
 }
 
 .headsilab {
-  height: 80px;
+  height: 75px;
+  box-shadow: 0 0 20px 3px rgba(136, 136, 136, 0.4);
+}
+
+.headdash {
+  height: 75px;
   box-shadow: 0 0 20px 3px rgba(136, 136, 136, 0.4);
 }
 
@@ -90,8 +95,25 @@ nav ul li a:hover{
     color: white;
   }
 
+  .imgboy {
+    background-color: #fff;
+    max-width: 100%;
+    margin-left: 100px;
+  }
+
+  .imgman {
+    background-color: #fff;
+    max-width: 100%;
+    margin-left: 120px;
+  }
+
   .imgbran {
-    width: 85px;
+    width: 70px;
+  }
+
+  .imgdw {
+    width: 80px;
+    margin-left: -9px;
   }
 
   .brand {

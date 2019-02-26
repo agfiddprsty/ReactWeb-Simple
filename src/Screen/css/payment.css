@@ -1,10 +1,11 @@
 .isii{
     /* margin: 0 15% 0 15%; */
-    height: 100%;
+    height: 100vh;
+    overflow: hidden;
     background-color: #fafafa;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
-.kotak{
+.sqare{
     width: 800px;
     background-color: white;
     position: relative;
@@ -43,25 +44,61 @@
     font-size: 1.2em;
 }
 
+.plsconfrm {
+    height: auto;
+    color: black;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: Open Sans, helvetica, Arial, sans serif;
+}
+
+.bca{
+    font-weight: 600;
+    font-family: helvetica, Arial, sans serif;
+}
+
+.mandiri {
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-family: helvetica, Arial, sans serif
+}
+
+.norek{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.rekman{
+    margin-top: 15px;
+}
+
+.nophone {
+    margin-left: 10px;
+    font-family: Open Sans, helvetica, Arial, sans serif;
+}
+
 .icobca {
-    width: 20%;
+    width: 15%;
+    margin-right: 20px;
 }
 
 .icoman {
-    width: 20%;
+    width: 15%;
+    margin-right: 20px;
+
 }
 
 .icotel {
-    width:3%;
+    width:8%;
 }
 
 .icowa {
-    width: 4%;
-    margin-left: 10px;
+    width: 8%;
+    margin-left: 15px;
 }
 
 @media only screen and (max-width: 800px) {
-    .kotak {
+    .sqare {
         width: 700px;
         padding: 0 25px 0 25px;
     }
@@ -90,7 +127,7 @@
     }
 }
 @media only screen and (max-width: 700px) {
-    .kotak {
+    .sqare {
         width: 600px;
     }
 }
@@ -117,7 +154,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .kotak {
+    .sqare {
         width: 400px;
     }
     .butuh {
@@ -154,7 +191,7 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .kotak {
+    .sqare {
         width: 300px;
         height: 500px;
     }

@@ -35,11 +35,14 @@
 	.submit-cl{
 		margin-left: 100px
 	}
+	.submit-btn-cl{
+		margin-left: 100px;
+	  }
 
 }
 @media only screen and (max-width:1920px){
-	.diskusi-gd{
-		font-Weight:500;
+	.disscuss-vd-gd{
+		font-Weight:600;
 		margin-Left:-15px;
 		margin-Bottom:30px;
 		font-family: 'Montserrat';

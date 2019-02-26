@@ -8,7 +8,7 @@ class ProgressDetail extends Component{
                <div className="dv-pg-gd dv-pg-cl">
                     <br/>
                     <h2 className="h2-pg-gd h2-pg-cl">Progress</h2>
-                    <Progress className="pg-pg-gd" value="40"></Progress>
+                    <Progress className="pg-pg-gd" value="40" color="warning"></Progress>
                     <label className="pg-lb-gd pg-lb-cl">40%</label>
                 
                 </div>

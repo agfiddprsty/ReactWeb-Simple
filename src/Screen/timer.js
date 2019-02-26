@@ -87,7 +87,7 @@ class Timer extends Component {
     return (
       <div className="Countdown">
         <span className="Countdown-col">
-          <span className="Countdown-col-element border border-warning" style={{margin: '0', padding: '10px'}}>
+          <span className="Countdown-col-element border border-warning padten">
               <strong>{this.addLeadingZeros(countDown.days)}</strong>
               <span>Hari</span>
           </span>
@@ -102,7 +102,7 @@ class Timer extends Component {
 
 
         <span className="Countdown-col">
-          <span className="Countdown-col-element border border-warning" style={{margin: '0', padding: '10px'}}>
+          <span className="Countdown-col-element border border-warning padten">
             <strong>{this.addLeadingZeros(countDown.hours)}</strong>
             <span>Jam</span>
           </span>
@@ -116,9 +116,22 @@ class Timer extends Component {
 
 
         <span className="Countdown-col">
-          <span className="Countdown-col-element border border-warning" style={{margin: '0', padding: '10px'}}>
+          <span className="Countdown-col-element border border-warning padten">
             <strong>{this.addLeadingZeros(countDown.min)}</strong>
             <span>Menit</span>
+          </span>
+        </span>
+
+        <span className="Countdown-col">
+          <span className="Countdown-col-element">
+            <strong>:</strong>
+          </span>
+        </span>
+
+        <span className="Countdown-col">
+          <span className="Countdown-col-element border border-warning padten">
+            <strong>{this.addLeadingZeros(countDown.sec)}</strong>
+            <span>Detik</span>
           </span>
         </span>
       </div>

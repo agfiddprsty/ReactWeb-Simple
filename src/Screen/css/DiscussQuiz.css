@@ -1,0 +1,67 @@
+@media only screen and (max-width:1920px){
+    .bd-dv-gd{
+        margin-left: 10px;
+    }
+    .diskusi-gd{
+		font-Weight:600;
+		margin-Left:1px;
+		margin-Bottom:30px;
+        font-family: 'Montserrat';
+        margin-top: 30px;
+	}
+    .submit-gd{
+        margin-left: 550px;
+    }
+    .dv-input-cmt-qz-gd{
+        margin-Top:20px
+        /* margin-Left:30px; */
+    }
+    .input-cmt-qz-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:650px;
+    }
+    .submit-cmt-qz-gd{
+        margin-left: 550px;
+    }   
+    .submit-rpl-qz-gd{
+        margin-left: 480px;
+    }
+    .ls-dv-mg-qz-gd{
+        margin-Left:-65px;
+    }
+    .input-rpl-qz-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:580px;
+    }
+    .sh-qz-cmt-gd{
+        margin-left: 10px;
+    }
+}
+@media only screen and (max-width:600px){
+    .dv-input-cmt-qz-cl{
+        margin-Top:-30px;
+        margin-Left:30px;
+    }
+    .input-cmt-qz-cl{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:270px;
+    }
+    .submit-cmt-qz-cl{
+        margin-left:180px;
+    }
+    .submit-rpl-qz-cl{
+        margin-left: 150px;
+    }
+    .input-rpl-qz-cl{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:250px;
+    }
+}

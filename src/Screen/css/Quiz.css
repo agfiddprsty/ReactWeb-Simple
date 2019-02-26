@@ -10,13 +10,15 @@
     position: absolute;
     right: 30px;
   }
-  
-  @media screen and (min-width: 1200px) {
-    #nav-tabs-wrapper {
-      display: block!important;
-    }
+  .navbar-nav > .active {
+    /* color: aqua; */
+    background-color: #BACFFF;
   }
   @media screen and (max-width: 1200px) {
+      .dv-out-gd{
+        margin-Left:30px;
+        margin-Top:-10px;
+      }
       .nav-tabs-dropdown {
           display: block;
       }
@@ -55,5 +57,8 @@
       .nav-tabs-horizontal  > li.active > a:focus {
           color: #ffffff;
           background-color: #428bca;
+      }
+      #nav-tabs-wrapper {
+        display: block!important;
       }
   }

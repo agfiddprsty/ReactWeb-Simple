@@ -1,26 +1,29 @@
 import React,{Component} from 'react';
 import './css/QuizPlayer.css'
+// import './css/DetailVideo.css'
+import lvl from './img/Level.png'
 class QuizPlayer extends Component{
     render(){
         return(
-            <div className="col-12 col-s-9">
-                <img src="http://brainboosterstv.com/wp-content/uploads/2018/03/quiz-1400-800x500.jpg" style={{width:"800px",height:"450px"}} ></img>
-                <div style={{borderWidth:"1px",marginTop:"20px"}} className="col-12 col-s-9"> 
-                    <br/>
-                    <br/>
-                    <h5 style={{fontWeight:"bold",marginLeft:"-15px"}}>Deskripsi: </h5>
-                    <h6 className="col-12 col-s-9"style={{width:"800px",marginLeft:"-30px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h6>
-                    <br/>                    
-                    <h5 style={{fontWeight:"bold",marginLeft:"-15px"}}>Petunjuk: </h5>
-                    <br/>
-                  <div className="qp-dv-pg qp-dv-cl" style={{marginLeft:"-15px"}}>
+            <div className="col-12 col-s-9 qp-dv-out-gd">
+                <img src="http://brainboosterstv.com/wp-content/uploads/2018/03/quiz-1400-800x500.jpg" className="img-quiz-gd img-quiz-cl" ></img>
+                <div className="col-12 col-s-9 dv-gd">
+                    <div className="row" style={{marginTop:"-23px"}}>
+                        <div className="col-md-auto"> 
+                            <h5 className="h5-desk-gd">Deskripsi: </h5>
+                        </div>
+                        <div className="col-md-auto lvl-qz-ds-gd lvl-qz-ds-cl">
+                            <a style={{color:"#22E2ED"}}>Level <img src={lvl}></img></a>
+                        </div>
+                    </div>
+                    <h6 className="col-12 col-s-9 h6-detail-gd">Lorem Ipsum is simply dummy text of the printing and typesetting<br/> industry. Lorem Ipsum has been the <br/> industry's standard dummy text ever since the 1500s,</h6>
+                    <h5 className="h5-pet-gd">Petunjuk: </h5>
+                  <div className="qp-dv-pg qp-dv-cl">
                         <br/>
-                        <h6 className="qp-h6-pg qp-h6-cl">Cara Submit git : </h6>
-                        <ul style={{display: "block",listStyleType:"disc",marginLeft:"10px",color:"#FFF"}}className="col-12 col-s-9">
+                        <h6 className="qp-h6-pg qp-h6-cl" style={{fontWeight:"bold"}}>Cara Submit git : </h6>
+                        <ul className="col-12 col-s-9 ul-gd">
                             <li className="qp-li-cl" > Register Ke git arkademy melalui link berikut</li>
                             <li className="qp-li-cl"> Buat Repository baru dengan nama "kuis"</li>
-                            {/* <label className="qp-li-cl">Register Ke git arkademy melalui link berikut</label>
-                            <label className="qp-li-cl">Buat Repository baru dengan nama "kuis"</label> */}
                         </ul>
                     </div>
                 </div>     

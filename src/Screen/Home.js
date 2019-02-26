@@ -1,15 +1,35 @@
 import React, { Component } from 'react';
 import './css/Home.css';
-import daftar from './img/daftar.png';
+import daftar from './img/daftardanlengkapi.png';
 import Header from './headerlanding';
 import Footer from './footerLanding';
-import lengkapi from './img/lengkapi.png';
-import diskusi from './img/diskusi.png';
-import quiz from './img/quis.png';
-import kerja from './img/kerja.png';
-import mentor from './img/mentor.png';
-import teknologi from './img/teknologi.png';
+import lengkapi from './img/mulaibelajar.png';
+import diskusi from './img/diskusionline.png';
+import quiz from './img/kerjakanquiz.png';
+import kerja from './img/howitworks.png';
+import mentor from './img/mentorpro.png';
+import koper from './img/koper.png';
+import teknologi from './img/teknologi-terupdate.png';
 import Timer from './timer';
+import nodejs from './img/node.png';
+import js from './img/js.png';
+import icoreact from './img/react.png';
+import icomysql from './img/mysql.png';
+import icogit from './img/git.png';
+import ketitik from './img/ketitik.png';
+import sirclo from './img/sirclo.png';
+import clap from './img/clap.png';
+import kofera from './img/kofera.png';
+import prosehat from './img/prosehat.png';
+import telkomindonesia from './img/telkom-indonesia.png';
+import tokopedia from './img/tokopedia.png';
+import schema from './img/schema.png';
+import emago from './img/emago.png';
+import jeager from './img/jeager.png';
+import rekeningku from './img/rekeningku.png';
+import bagidata from './img/bagidata.png';
+import telecreative from './img/telecreative.png';
+import truemoney from './img/true-money.png';
 import HomeVideo from './HomeVideo';
 import Slider from './slider';
 
@@ -54,7 +74,6 @@ class Home extends Component {
                             <div className="text-center">
                                 <h1 className="caraker">Cara Kerja</h1>
                             </div>
-                            <br/>
 
                             <div class="bootcamp-steps">
                                 <div class="vertical-line"></div>
@@ -65,18 +84,18 @@ class Home extends Component {
                                     <div class="circle-steps-bootcamp3"></div>
                                     <div class="kontainer">
                                         <div class="row mb-5 d-none d-lg-flex d-xl-flex">
-                                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mrgnlfth">
                                                 <p class="bootcamp-step-list">
-                                                    <img alt="" className="img-fluid pull-right" src={daftar} style={{width: "150px", height: "150px"}}/>
+                                                    <img alt="" className="img-fluid pull-right onefivzer" src={daftar}/>
                                                 </p>
                                             </div>
-                                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-auto">
+                                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mrgnrghts">
                                                 <section class="kotakanan text-left">
                                                     <h5 className="title-cara">Daftar dan Lengkapi Profile</h5>
-                                                    <span>
-                                                        buat akun dan lengkapi data diri serta lakukan pembayaran untuk dana awal
+                                                    <span className="crtacc">
+                                                        Buat akun dan lengkapi data diri serta lakukan pembayaran untuk dana awal
                                                     </span>
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '10px', fontWeight: '600', color: '#d4d4d4'}}><p style={{fontSize: '30px'}}>01</p></div>
+                                                    <div class="d-flex justify-content-end zerone"><p className="numberstep">01</p></div>
                                                 </section>
                                                 <section className="kotakananduo"></section>
                                             </div>
@@ -84,16 +103,16 @@ class Home extends Component {
                                         <div class="row mb-5 d-lg-none d-xl-none">
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                                 <p class="bootcamp-step-list">
-                                                    <img alt="" className="img-fluid" src={daftar} style={{width: "250px", height: "250px"}}/>
+                                                    <img alt="" className="img-fluid onefivezer" src={daftar}/>
                                                 </p>
                                             </div>
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mx-auto">
                                                 <section class="kotakanan bootcamp-step-list">
                                                     <h5 className="title-cara">Daftar dan Lengkapi Profile</h5>
-                                                    <span>
+                                                    <span className="crtacc">
                                                         buat akun dan lengkapi data diri serta lakukan pembayaran untuk dana awal
                                                     </span>
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '10px', fontWeight: '600', color: '#d4d4d4'}}><p style={{fontSize: '30px'}}>01</p></div>
+                                                    <div class="d-flex justify-content-end zerone"><p className="numberstep">01</p></div>
                                                 </section>
                                                 <section className="kotakananduo"></section>
                                             </div>
@@ -101,14 +120,14 @@ class Home extends Component {
                                         <div class="row mb-5 d-lg-none d-xl-none">
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                                 <p class="bootcamp-step-list">
-                                                    <img alt="" className="img-fluid" src={lengkapi} style={{width: "150px", height: "150px"}}/>
+                                                    <img alt="" className="img-fluid onefivzer" src={lengkapi}/>
                                                 </p>
                                             </div>
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
                                                 <section class="kotakiri bootcamp-step-list">
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '20px', fontWeight: '600', color: '#d4d4d4', marginBottom: '-20px'}}><p style={{fontSize: '30px'}}>02</p></div>
+                                                    <div class="d-flex justify-content-end zerotwo"><p className="numberstep">02</p></div>
                                                     <h5 className="title-cara">Mulai Belajar</h5>
-                                                    <span>
+                                                    <span className="crtacc">
                                                         Dipandu oleh mentor professional, anda dapat belajar melalui media video streaming yang bisa anda akses selamanya
                                                     </span>
                                                 </section>
@@ -116,52 +135,52 @@ class Home extends Component {
                                             </div>
                                         </div>
                                         <div class="row mb-5 d-none d-lg-flex d-xl-flex">
-                                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-auto">
+                                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mrgnlft">
                                                 <section class="kotakiri text-left">
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '20px', fontWeight: '600', color: '#d4d4d4', marginBottom: '-20px'}}><p style={{fontSize: '30px'}}>02</p></div>
+                                                    <div class="d-flex justify-content-end zerotwo"><p className="numberstep">02</p></div>
                                                     <h5 className="title-cara">Mulai Belajar</h5>
-                                                    <span>
+                                                    <span className="crtacc">
                                                         Dipandu oleh mentor professional, anda dapat belajar melalui media video streaming yang bisa anda akses selamanya
                                                     </span>
                                                 </section>
                                                 <section className="kotakananduo"></section>
                                             </div>
-                                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mrgnrght">
                                                 <p class="pull-left bootcamp-step-list">
-                                                    <img alt="" className="img-fluid" src={lengkapi} style={{width: "150px", height: "150px"}}/>
+                                                    <img alt="" className="img-fluid onefivzerpc" src={lengkapi}/>
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="row mb-5 d-lg-none d-xl-none">
-                                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mrgnlfth">
                                                 <p class="bootcamp-step-list">
-                                                    <img alt="" className="img-fluid" src={quiz} style={{width: "150px", height: "150px"}}/>
+                                                    <img alt="" className="img-fluid pull-right onefivzer" src={quiz}/>
                                                 </p>
                                             </div>
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mx-auto">
                                                 <section class="kotakanan bootcamp-step-list">
                                                     <h5 className="title-cara">Kerjakan Quiz Mingguan</h5>
-                                                    <span>
+                                                    <span className="crtacc">
                                                         Kerjakan Mini Quiz, Weekly Quiz dan Quiz Final untuk mengasah skillmu!
                                                     </span>
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '10px', fontWeight: '600', color: '#d4d4d4'}}><p style={{fontSize: '30px'}}>03</p></div>
+                                                    <div class="d-flex justify-content-end zerone"><p className="numberstep">03</p></div>
                                                 </section>
                                                 <section className="kotakananduo"></section>
                                             </div>
                                         </div>
                                         <div class="row mb-5 d-none d-lg-flex d-xl-flex">
-                                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
-                                                <p class="pull-right bootcamp-step-list">
-                                                    <img alt="" className="img-fluid" src={quiz} style={{width: "150px", height: "150px"}}/>
+                                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mrgnpzl">
+                                                <p class="bootcamp-step-list">
+                                                    <img alt="" className="img-fluid pull-right onefivzerpzl" src={quiz}/>
                                                 </p>
                                             </div>
-                                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-auto">
+                                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mrgnlf">
                                                 <section class="kotakanan text-left">
                                                     <h5 className="title-cara">Kerjakan Quiz Mingguan</h5>
-                                                    <span>
+                                                    <span className="crtacc">
                                                         Kerjakan Mini Quiz, Weekly Quiz dan Quiz Final untuk mengasah skillmu!
                                                     </span>
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '10px', fontWeight: '600', color: '#d4d4d4'}}><p style={{fontSize: '30px'}}>03</p></div>
+                                                    <div class="d-flex justify-content-end zerone"><p className="numberstep">03</p></div>
                                                 </section>
                                                 <section className="kotakananduo"></section>
                                             </div>
@@ -169,14 +188,14 @@ class Home extends Component {
                                         <div class="row mb-5 d-lg-none d-xl-none">
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                                 <p class="bootcamp-step-list">
-                                                    <img alt="" className="img-fluid" src={kerja} style={{width: "150px", height: "150px"}}/>
+                                                    <img alt="" className="img-fluid onefivzer" src={kerja}/>
                                                 </p>
                                             </div>
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                                 <section class="kotakiri bootcamp-step-list">
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '20px', fontWeight: '600', color: '#d4d4d4', marginBottom: '-20px'}}><p style={{fontSize: '30px'}}>04</p></div>
+                                                    <div class="d-flex justify-content-end zerotwo"><p className="numberstep">04</p></div>
                                                     <h5 className="title-cara">Penyaluran Kerja</h5>
-                                                    <span>
+                                                    <span className="crtacc">
                                                     Kami akan menyalurkan Anda ke perusahaan rekanan kami, Berdasarkan hasil Quiz yang anda kerjakan
                                                     </span>
                                                 </section>
@@ -184,19 +203,19 @@ class Home extends Component {
                                             </div>
                                         </div>
                                         <div class="row mb-5 d-none d-lg-flex d-xl-flex">
-                                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-auto">
+                                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mrgnlft">
                                                 <section class="kotakiri text-left">
-                                                    <div class="d-flex justify-content-end" style={{paddingTop: '20px', fontWeight: '600', color: '#d4d4d4', marginBottom: '-20px'}}><p style={{fontSize: '30px'}}>04</p></div>
+                                                    <div class="d-flex justify-content-end zerotwo"><p className="numberstep">04</p></div>
                                                     <h5 className="title-cara">Penyaluran Kerja</h5>
-                                                    <span>
+                                                    <span className="crtacc">
                                                         Kami akan menyalurkan Anda ke perusahaan rekanan kami, Berdasarkan hasil Quiz yang anda kerjakan
                                                     </span>
                                                 </section>
                                                 <section className="kotakananduo"></section>
                                             </div>
-                                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mrgnrght">
                                                 <p class="pull-left bootcamp-step-list">
-                                                    <img alt="" className="img-fluid" src={kerja} style={{width: "150px", height: "150px"}}/>
+                                                    <img alt="" className="img-fluid onefivzerkoper gmbrstep" src={koper}/>
                                                 </p>
                                             </div>
                                         </div>
@@ -205,42 +224,42 @@ class Home extends Component {
                             </div>
                             <div >
                                 <div className="penjelasan text-center">
-                                    <p style={{color: "black", fontSize: "20px", fontWeight: '600'}}>Masih Belum Paham Cara Kerjanya? Lihat Video Berikut...</p>
+                                    <p className="masihblm">Masih belum paham Cara Kerjanya? Lihat Video Berikut..</p>
                                 </div>
                                 <div className="homevideo ">    
                                     <HomeVideo/>
                                 </div>
                             </div>
                         </div>
-                        <div className="text-center tanya" ><br/>
+                        <div className="text-center tanya" >
                             <h1 className="mengapa">Mengapa Memilih Kami?</h1>
                         </div>
-                        <div className="row text-center" style={{marginBottom: "50px", fontWeight: '600'}}>
+                        <div className="row text-center icowhy">
                             <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                                <img alt="" className="img-fluid" src={mentor} style={{width: "150px", height: "150px"}}/>
-                                <p style={{color: "black", fontSize: "15px", padding: "20px 0 10px 0"}}>Mentor Professional</p>
+                                <img alt="" className="img-fluid ten" src={mentor}/>
+                                {/* <p style={{color: "black", fontSize: "15px", padding: "20px 0 10px 0"}}>Mentor Professional</p> */}
                             </div>
                             <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                                <img alt="" className="img-fluid" src={kerja} style={{width: "150px", height: "150px"}}/>
-                                <p style={{color: "black", fontSize: "15px", padding: "20px 0 10px 0"}}>Penyaluran Kerja</p>
+                                <img alt="" className="img-fluid pdngtp" src={kerja}/>
+                                {/* <p style={{color: "black", fontSize: "15px", padding: "20px 0 10px 0"}}>Penyaluran Kerja</p> */}
                             </div>
                             <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                                <img alt="" className="img-fluid" src={teknologi} style={{width: "150px", height: "150px"}}/>
-                                <p style={{color: "black", fontSize: "15px", padding: "20px 0 10px 0"}}>Teknologi Terupdate</p>
+                                <img alt="" className="img-fluid tens" src={teknologi}/>
+                                {/* <p style={{color: "black", fontSize: "15px", padding: "20px 0 10px 0"}}>Teknologi Terupdate</p> */}
                             </div>
                             <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                                <img alt="" className="img-fluid" src={diskusi} style={{width: "150px", height: "150px"}}/>
-                                <p style={{color: "black", fontSize: "15px", padding: "20px 0 10px 0"}}>Diskusi Online</p>
+                                <img alt="" className="img-fluid tendsk" src={diskusi}/>
+                                {/* <p style={{color: "black", fontSize: "15px", padding: "20px 0 10px 0"}}>Diskusi Online</p> */}
                             </div>
                         </div>
                         <div className="row soo">
                             <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <p className="tunggu">So, Tunggu apa lagi?</p>
+                                <p className="tunggu">So, Tunggu apalagi?</p>
                             </div>
                             <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div className="text-center" style={{padding: "20px 90px 20px 90px"}}>
-                                    <a href="/register" class="btn btn-warning reg" style={{color: '#fff', fontWeight: '600'}}>Daftar Sekarang</a>
-                                    <a href="/silabusnew" class="btn btn-outline-light text-center lengkap" style={{fontWeight: '600'}}>Lihat Silabus</a>
+                                <div className="text-center" style={{padding: "20px 70px 20px 70px"}}>
+                                    <a href="/register" class="btn btn-warning btndftrskrng">Daftar Sekarang</a>
+                                    <a href="/silabusnew" class="btn btn-outline-light text-center btnseesilab">Lihat Silabus</a>
                                 </div> 
                             </div>
                         </div>
@@ -248,60 +267,60 @@ class Home extends Component {
                             <div>
                                 <p className="text-center tech">Teknologi</p>
                             </div>
-                            <div className="text-center logi">
-                                <span className="img-fluid devicon-nodejs-plain-wordmark colored icotech" title="Node.Js"></span>
-                                <span className="img-fluid devicon-javascript-plain colored icotech" title="Javascript"></span>
-                                <span className="img-fluid devicon-react-original-wordmark colored icotech" title="React"></span>
-                                <span className="img-fluid devicon-mysql-plain-wordmark colored icotech" title="MySQL"></span>
-                                <span className="img-fluid devicon-git-plain-wordmark colored icotech" title="GIT"></span>
+                            <div className="row text-center logi">
+                                <span className="col-lg col-md" title="Node.Js"><img className="icotechnod" alt="" src={nodejs}/></span>
+                                <span className="col-lg col-md" title="Javascript"><img className="icotechjs" alt="" src={js}/></span>
+                                <span className="col-lg col-md" title="React"><img className="icotech" alt="" src={icoreact}/></span>
+                                <span className="col-lg col-md" title="MySQL"><img className="icotechsql" alt="" src={icomysql}/></span>
+                                <span className="col-lg col-md" title="GIT"><img className="icotechgit" alt="" src={icogit}/></span>
                             </div>
                         </div>
                         <div>
                             <div className="text-center">
                                 <p className="rekanusaha">Perusahaan Rekanan</p>
                             </div>
-                            <div className="text-right rekanus">
+                            <div className="row text-right rekanus">
                                 <span>
-                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/ketitik.png"/>
+                                    <img alt="" className="col-lg col-md img-fluid rekanket" src={ketitik}/>
                                 </span>
                                 <span>
-                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/sirclo.png"/>
+                                    <img alt="" className="col-lg col-md img-fluid rekansir" src={sirclo}/>
                                 </span>
                                 <span>
-                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/clap.png"/>
+                                    <img alt="" className="col-lg col-md img-fluid rekanclp" src={clap}/>
                                 </span>
                                 <span>
-                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/kofera.png"/>
+                                    <img alt="" className="col-lg col-md img-fluid rekan" src={kofera}/>
                                 </span>
                                 <span>
-                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/prosehat.png"/>
+                                    <img alt="" className="img-fluid col-lg col-md rekanpro" src={prosehat}/>
                                 </span>
                                 <span>
-                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/telkom-indonesia.png"/>
+                                    <img alt="" className="img-fluid col-lg col-md rekan" src={telkomindonesia}/>
                                 </span>
                                 <span>
-                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/tokopedia.png"/>
+                                    <img alt="" className="img-fluid col-lg col-md rekantoped" src={tokopedia}/>
                                 </span>
                                 <span>
-                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/schema.png"/>
+                                    <img alt="" className="img-fluid col-lg col-md rekansch" src={schema}/>
                                 </span>
                                 <span>
-                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/emago.png"/>
+                                    <img alt="" className="img-fluid col-lg col-md rekanema" src={emago}/>
                                 </span>
                                 <span>
-                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/jeager.png"/>
+                                    <img alt="" className="img-fluid col-lg col-md rekanjea" src={jeager}/>
                                 </span>
                                 <span>
-                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/rekeningku.png"/>
+                                    <img alt="" className="img-fluid rekanrek col-lg col-md" src={rekeningku}/>
                                 </span>
                                 <span>
-                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/bagidata.png"/>
+                                    <img alt="" className="img-fluid col-lg col-md rekanbgdt" src={bagidata}/>
                                 </span>
                                 <span>
-                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/telecreative.png"/>
+                                    <img alt="" className="img-fluid col-lg col-md rekantele" src={telecreative}/>
                                 </span>
                                 <span>
-                                    <img alt="" className="img-fluid rekan" src="https://www.arkademy.com/asset/v3/img/hiring/true-money.png"/>
+                                    <img alt="" className="img-fluid col-lg col-md rekantrue" src={truemoney}/>
                                 </span>
                             </div>
                         </div>

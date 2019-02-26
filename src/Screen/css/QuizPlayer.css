@@ -3,11 +3,52 @@
         background-Color:#FFAD4E;
         width:500px;
         height:110px;
+        margin-Left:-15px;
     }
     .qp-h6-pg{
         color:#FFF;
         margin-Left:10px;
         font-size: 15px;
+    }
+    .img-quiz-gd{
+        width:750px;
+        height:450px;
+    }
+    .dv-gd{
+        margin-Top:20px;
+    }
+    .h5-desk-gd{
+        font-Weight:500;
+        font-family: 'Montserrat';
+        margin-left: -17px;
+        margin-top: 50px;
+    }
+    .h6-detail-gd{
+        width:800px;
+        margin-Left:-30px;
+        font-Weight:600;
+        font-family: 'Nunito';
+        color: #878787;    
+    }
+    .h5-pet-gd{
+        font-family: 'Montserrat';
+        font-Weight:500;
+        margin-Left:-15px;
+        margin-top: 30px;
+    }
+    .ul-gd{
+        display: block;
+        list-Style-Type:disc;
+        margin-Left:10px;
+        color:#FFF;
+    }
+    .qp-dv-out-gd{
+        margin-bottom: 40px;
+        margin-left: 65px;
+    }
+    .lvl-qz-ds-gd{
+        margin-Top:45px;
+        margin-Left:545px;
     }
 }
 @media only screen and (max-width:600px){
@@ -23,5 +64,12 @@
     }
     .qp-li-cl{
         font-size: 12px;
+    }
+    .img-quiz-cl{
+        width: 300px;
+    }
+    .lvl-qz-ds-cl{
+        margin-Top:-40px;
+        margin-Left:200px;
     }
 }
