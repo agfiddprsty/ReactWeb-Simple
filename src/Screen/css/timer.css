@@ -31,18 +31,57 @@
     padding-bottom: 10px;
   }
   
-  .Countdown-col{
-    display: inline-block;
-  }
-  
   .Countdown-col-element{
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 5px;
     display: flex;
     flex-direction: column;
   }
   
   .Countdown-col-element strong{
     font-size: 40px;
+  }  
+}
+
+
+@media only screen and (max-width: 416px) {
+  
+  .Countdown-col-element{
+    display: inline-block;
+    margin: 0 3px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Countdown-col-element strong{
+    font-size: 30px;
+  }  
+}
+
+@media only screen and (max-width: 366px) {
+  
+  .Countdown-col-element{
+    display: inline-block;
+    margin: 0 2px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Countdown-col-element strong{
+    font-size: 25px;
+  }  
+}
+
+@media only screen and (max-width: 349px) {
+  
+  .Countdown-col-element{
+    display: inline-block;
+    margin: 0 1px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Countdown-col-element strong{
+    font-size: 20px;
   }  
 }
