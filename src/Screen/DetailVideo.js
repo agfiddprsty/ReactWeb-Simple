@@ -27,7 +27,7 @@ class DetailVideo extends Component {
                                     <hr class="mt-2 mb-5 hr-dt-gd"></hr>
                                     <h5 className="h5-tn-gd">Tonton Selanjutnya </h5>
                                 </div>
-                                <div style={{marginLeft:"-65px"}}>
+                                <div className="ls-dv-mg-gd ls-dv-mg-cl">
                                     <ListVideo/>
                                 </div>
                             </div>
