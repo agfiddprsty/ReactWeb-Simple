@@ -26,8 +26,9 @@
     .h6-detail-gd{
         width:800px;
         margin-Left:-30px;
-        font-Weight:100;
+        font-Weight:600;
         font-family: 'Nunito';
+        color: #878787;    
     }
     .h5-pet-gd{
         font-family: 'Montserrat';
@@ -45,6 +46,10 @@
         margin-bottom: 40px;
         margin-left: 65px;
     }
+    .lvl-qz-ds-gd{
+        margin-Top:45px;
+        margin-Left:545px;
+    }
 }
 @media only screen and (max-width:600px){
     .qp-dv-cl{
@@ -59,5 +64,12 @@
     }
     .qp-li-cl{
         font-size: 12px;
+    }
+    .img-quiz-cl{
+        width: 300px;
+    }
+    .lvl-qz-ds-cl{
+        margin-Top:-40px;
+        margin-Left:200px;
     }
 }

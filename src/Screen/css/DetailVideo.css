@@ -3,7 +3,7 @@
         border-Color:#E7E7E7;
     }
     .dt-dv-pg-gd{
-        margin-left:-80px;
+        margin-left:-68px;
         margin-top:10px;
         margin-bottom: -10px
     }
@@ -13,9 +13,9 @@
         padding-Left:20px;
         overflow-X:"hidden";
     }
-    .bd-dv-gd{
-        margin-Left:75px;
-        margin-Top:50px;
+    .bd-dv-vd-gd{
+        margin-Left:59px;
+        margin-Top:80px;
     }
     .hr-dt-gd{
         width:300px;
@@ -29,6 +29,35 @@
     .img-cmt-gd{
         width:70px;
     }
+    .input-cmt-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:650px;
+    }
+    .input-rpl-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:580px;
+    }
+    .dv-input-cmt-gd{
+        margin-Top:20px
+        /* margin-Left:30px; */
+    }
+    .sh-cmt-gd{
+        /* marginTop:"-30px",marginLeft:"30px" */
+        margin-top: 15px;
+    }
+    .submit-cmt-gd{
+        margin-left: 550px;
+    }
+    .submit-rpl-gd{
+        margin-left: 480px;
+    }
+    .ls-dv-mg-gd{
+        margin-Left:-55px;
+    }
 }
 @media only screen and (max-width:600px){
     .dt-body-cl{
@@ -39,9 +68,29 @@
         margin-top:20px;
     }
     .img-cmt-cl{
-        width: 50px;
+        width: 30px;
     }
     .bd-dv-cl{
         margin-Top:50px;
+    }
+    .input-cmt-cl{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:200px;
+    }
+    .dv-input-cmt-cl{
+        margin-Top:-30px;
+        margin-Left:30px;
+    }
+    .sh-cmt-cl{
+        margin-Top:-30px;
+        margin-Left:30px;
+    }
+    .submit-cmt-cl{
+        margin-left:100px;
+    }
+    .ls-dv-mg-cl{
+        margin-left: -20px;
     }
 }
