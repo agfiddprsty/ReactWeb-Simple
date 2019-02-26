@@ -7,7 +7,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <div className="d-none d-lg-block d-xl-block">
+        <div className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
           <div className="headsilab fixed-top bg-light">
             <header className="Hom-header bg-light">
                 <nav className="container navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light" style={{height: '75px'}}>
@@ -29,38 +29,29 @@ class Header extends Component {
             </header>
           </div>
         </div>
-        <div className="d-lg-none d-xl-none">
-          <div className="headsilab fixed-top bg-light">
+        <div className="d-sm-none d-md-none d-lg-none d-xl-none">
+
+          <div className="headland fixed-top bg-light">
             <header className="Hom-header bg-light">
-                <nav className="container navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light" style={{height: '80px'}}>
-                  <a class="brand" href="#">
-                  <img alt="" className="imgbran" src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://www.filepicker.io/api/file/mWcP190oTCqiAo5VjrE8"/>
-                  </a> 
+                <nav className="container navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light" style={{height:"80px"}}>
+                  <a class="brand" href="/home">
+                  <img alt="" className="img-fluid imgbran" src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://www.filepicker.io/api/file/mWcP190oTCqiAo5VjrE8"/>
+                  </a>
+
+                  {/* <!-- Toggler/collapsibe Button --> */}
+                  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse bg-light colap" id="collapsibleNavbar" >
                   <ul class="navbar-nav ml-auto">
-                    <li className="nav-item" style={{marginLeft: '50px', width: '50px'}}>
-                      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse bg-light colap" id="collapsibleNavbar" >
-                        <ul class="navbar-nav ml-auto">
-                          <li className="nav-item">
-                            <a href='/profilefilled' className="nav-link">Masuk</a>
-                          </li>
-                          <li className="nav-item">
-                            <a href="/register" className="nav-link active">Logout</a>
-                          </li>
-                        </ul>
-                      </div>
-                      {/* <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
-                        <img src={boy} alt="" className="rounded-circle img-fluid"/>
-                      </a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="/profilefilled">Profile</a>
-                        <a class="dropdown-item" href="/register">Logout</a>
-                      </div> */}
-                      {/* <img src={boy} alt="" className="rounded-circle img-fluid ml-auto" style={{backgroundColor: '#fff', width: '50px', maxWidth: '100%'}}/> */}
+                    <li className="nav-item">
+                      <a href='/profilefilled' className="nav-link">Profile</a>
+                    </li>
+                    <li className="nav-item">
+                      <a href="/register" className="nav-link active">Logout</a>
                     </li>
                   </ul>
+                </div> 
                 </nav>
             </header>
           </div>
