@@ -1,17 +1,18 @@
-.ini{
+.listA{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/Mv4sg6_6qmE/650x240");
   background-repeat: no-repeat;
-  height: 170px;
-  width: 265px;
+  height: 165px;
+  width: 255px;
   }
 
-.overlay {
+.bg-overlay{
+  overflow: auto;
   position: fixed;
-  display: block;
+  display: inline;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.5);
-  z-index: 10000;
+  z-index: 5;
   top: 0;
   left: 0;
   right: 0;
@@ -22,8 +23,8 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  font-size: 50px;
-  color: white;
+  font-size: 20px;
+  color: red;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
 }
@@ -44,18 +45,18 @@
   background-size: "100px 50px"
 }
 
-.loh{
+.listB{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/F2WX4BTIkpQ/650x240");
   background-repeat: no-repeat;
-  height: 170px;
-  width: 265px;
+  height: 165px;
+  width: 255px;
 }
 
-.nikuis{
+.quiiiz{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/ZSPBhokqDMc/550x240");
   background-repeat: no-repeat;
-  height: 170px;
-  width: 265px;
+  height: 165px;
+  width: 255px;
 }
 
 .sociallocker {
