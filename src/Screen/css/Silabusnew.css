@@ -1,125 +1,239 @@
-.silabus {
-    background: linear-gradient( rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.39) ), url("https://blog.galvanize.com/wp-content/uploads/2018/03/20150708172005-coding-working-workspace-apple-macintosh.jpg");
-    width: 100%;
-    padding: 0;
-    background-size: cover;
-    height: 505px;
-    padding: 20px;
-}
-.tengah {
-    color: #fff;
-    font-size: 25px;
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-position: center;
+.box input:valid ~ label 
+{
+  font-family:Montserrat;
+  top: -12px;
+  left: 0;
+  color: grey;
+  font-size: 14px;
 }
 
+.isiform {
+  color: #666666;
+  font-weight: 325;
+  font-family: Montserrat;
+  font-size: 1.48500000em;
+  font-weight: 500;
+  display: block;
+  margin: 33px 0 39px 0;
+}
+.tertarik {
+  color: #3B3B3B;
+  font-weight: 510;
+  font-family: 'Montserrat';
+  font-size: 1.9700000em;
+  display: block;
+  margin: 0 0 30px 0;
+}
 
-.box{
-    position:absolute;
-    top: 0%;
-    left: 0%;
-    width: 500px;
-    background: #fff;
-    padding: 40px;
-    box-sizing: border-box;
-    border: 1px solid rgba(0,0,0,.1);
-    box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
-    margin-bottom: 50px;
-  }
-  
+.register{
+  background: -webkit-linear-gradient(left, #685AA7, #A45AA7);
+  margin-top: 5%;
+  padding: 3%;
+  margin-bottom: 5%;
+  width: 100%;
+  height: 100%;
+}
+.register-left{
+  text-align: center;
+  color: #fff;
+  margin-top: 4%;
+}
+.register-left input{
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2%;
+  width: 60%;
+  background: #f8f9fa;
+  font-weight: bold;
+  color: #383d41;
+  margin-top: 30%;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+.register-right{
+  background: #f8f9fa;
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+}
+.register-left img{
+  margin-top: 15%;
+  margin-bottom: 5%;
+  width: 25%;
+  -webkit-animation: mover 2s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+.register-left p{
+  font-weight: lighter;
+  padding: 12%;
+  margin-top: -9%;
+}
+.register .register-form{
+  padding: 10%;
+  margin-top: 10%;
+}
+.register-left button {
+  margin-bottom: 10%;
+}
+.btnRegister{
+  float: right;
+  margin-top: 10%;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2%;
+  background: #0062cc;
+  color: #fff;
+  font-weight: 600;
+  width: 50%;
+  cursor: pointer;
+}
+.register .nav-tabs{
+  margin-top: 3%;
+  border: none;
+  background: #0062cc;
+  border-radius: 1.5rem;
+  width: 28%;
+  float: right;
+}
+.register .nav-tabs .nav-link{
+  padding: 2%;
+  height: 34px;
+  font-weight: 600;
+  color: #fff;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+  border: none;
+}
+.register .nav-tabs .nav-link.active{
+  width: 100px;
+  color: #0062cc;
+  border: 2px solid #0062cc;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: -15%;
+  color: #495057;
+}
+.passw {
+  margin-top: 6px;
+}
+.g-recaptcha {
+  transform: scale(0.81); 
+  transform-origin: left top;
+}
+.registe {
+  background-color: #FFF;
+  height: 100%;
+  overflow: hidden;
+}
+.persegi{
+  position: relative;
+  top: 0%;
+  left: 0%;
+  width: 500px;
+  background: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,.1);
+  box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
+  margin-bottom: 50px;
+}
 
-  .titlesi {
-    color: #3B3B3B;
-    font-weight: 510;
-    font-family: Open Sans, helvetica, Arial, sans serif;
-    font-size: 1.9700000em;
-    display: block;
-    margin: 0 0 30px 0;
-  }
+.persegi input{
+  padding: 10px 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
 
-  .title-silabus {
-    color: #666666;
-    font-weight: 500;
-    font-family: Open Sans, helvetica, Arial, sans serif;
-    font-size: 1.48500000em;
-    display: block;
-    margin: 33px 0 39px 0;
-  }
+.persegi input:hover{
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #999;
+}
 
-  .Input {
-    font-family: 'helvetica, Arial, sans serif';
-    position: relative;
-  }
+.persegi input{
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #999;
   
-  .Input-text {
-    font-family: 'helvetica, Arial, sans serif';
-    display: block;
-    color: black;
-    box-sizing: border-box;
-    box-shadow: none;
-    outline: none;
-    border: none;
-    width: 100%;
-    font-size: 16px;
-    border-bottom: 2px solid#999;
-    transition: 2ms;
+}
+.persegi form div {
+  position: relative;
+}
+
+.persegi label.field-active {
+  transform: translateY(-25px);
+  font-size: .9em;
+  color: #000;
+  text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff;
+ }
+
+ .persegi floating-label {
+  -webkit-appearance: none !important;
+ }
+
+.persegi form div label {
+  font-family:Montserrat;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #999;
+  transition: .5s;
+  pointer-events: none;
+
+}
+
+.persegi input:valid ~ label  
+{
+  font-family:Montserrat;
+  top: -12px;
+  left: 0;
+  color: grey;
+  font-size: 14px;
+}
+
+.btndaftar {
+  padding: 15px 130px 15px 130px;
+  border-radius: 0; 
+  box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
+  font-family:Montserrat;
+}
+@media only screen and (max-width: 550px) {
+  .persegi {
+      width: 450px;    
   }
-  
-  .Input-text::placeholder {
-    font-family: 'Open Sans, helvetica, Arial, sans serif';
-    font-size: 16px;
-    color: grey;
+  .btndaftar {
+      padding: 15px 100px 15px 100px;
+      border-radius: 0; 
+      box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
+      font-family:Montserrat;
+    }
+}
+@media only screen and (max-width: 470px) {
+  .persegi {
+      width: 350px;    
   }
-  
-  .Input-text:focus {
-    outline: none;
-  }
-  
-  .Input-label {
-    font-family: 'helvetica, Arial, sans serif';
-    position: absolute;
-    bottom: 50%;
-    left: 1rem;
-    color: #fff;
-    font-size: 16px;
-    opacity: 0;
-    transform: 
-      translate3d(0, var(--labelDefaultPosY), 0)
-      scale(1);
-    transform-origin: 0 0;
-    transition:
-      opacity var(--inputTransitionDuration) var(--inputTransitionTF),
-      transform var(--inputTransitionDuration) var(--inputTransitionTF),
-      visibility 0ms var(--inputTransitionDuration) var(--inputTransitionTF),
-      z-index 0ms var(--inputTransitionDuration) var(--inputTransitionTF);
-  }
-  
-  .Input-text:placeholder-shown + .Input-label {
-    font-family: 'helvetica, Arial, sans serif';
-    visibility: hidden;
-    z-index: -1;
-    font-size: 16px;
-  }
-  
-  .Input-text:not(:placeholder-shown) + .Input-label,
-  .Input-text:focus:not(:placeholder-shown) + .Input-label {
-    font-family: 'helvetica, Arial, sans serif';
-    visibility: visible;
-    z-index: 1;
-    opacity: 1;
-    font-size: 16px;
-    transform:
-      translate3d(0, var(--labelTransformedPosY), 0)
-      scale(var(--labelScaleFactor));
-    transition:
-      transform var(--inputTransitionDuration),
-      visibility 0ms,
-      z-index 0ms;
-  }
+  .btndaftar {
+      padding: 15px 50px 15px 50px;
+      border-radius: 0; 
+      box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
+      font-family: Montserrat;
+    }
+}

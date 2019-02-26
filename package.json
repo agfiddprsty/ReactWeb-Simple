@@ -23,6 +23,7 @@
     "react-dropbox-chooser": "0.0.5",
     "react-floating-label-input": "^4.0.8",
     "react-iframe": "^1.3.3",
+    "react-input-password": "^1.0.21",
     "react-monaco-editor": "^0.22.0",
     "react-player": "^1.9.3",
     "react-popout": "^1.0.1",

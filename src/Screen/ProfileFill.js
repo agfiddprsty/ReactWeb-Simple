@@ -222,7 +222,7 @@ class ProfileFill extends Component {
         <Header/>
         <body>
     
-        <div style={{backgroundColor:'#FFF', paddingBottom:'1250px'}}>
+        <div style={{ marginTop:'80px', backgroundColor:'#FFF', paddingBottom:'1250px'}}>
             <div className="text-title">
                 <div className="text-center" style={{padding:'75px 0 0 0'}}>
                     <h1 style={{color:'##3B3B3B', fontWeight:'510', fontFamily:'Circular Std Black, sans-serif;', fontSize:'2.17000000em',display:'block', margin:'-5px 0 0 0',}}>
@@ -260,7 +260,7 @@ class ProfileFill extends Component {
                                             <input type="text" name="adress" onChange={this.handleChange} value={this.state.adress} required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
                                             <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Alamat</label>
                                         </div>
-                                        <div style={{padding:'20px 0px 20px 20px'}}>
+                                        {/* <div style={{padding:'20px 0px 20px 20px'}}>
                                             <form>
                                                 <label class="radio-inline" style={{paddingRight:'20px'}}>
                                                     <input type="radio" name="optradio" checked/>Male
@@ -269,7 +269,7 @@ class ProfileFill extends Component {
                                                     <input type="radio" name="optradio"/>Female
                                                 </label>
                                             </form>
-                                        </div>
+                                        </div> */}
                                         {/* <div>
                                             <form class="row">
                                                 <div class="form-group col-1">
@@ -467,6 +467,23 @@ class ProfileFill extends Component {
                                                 </p>
                                                 <button type="button" class="btn" data-toggle="collapse" data-target="#tambahskills" style={{backgroundColor:'lightgrey', color:'#000', marginLeft:'625px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif'}}>Add Skill</button>
                                             </div>
+                                            <div className="text-left">
+                                                <div className="dftrskl">
+                                                    <span>
+                                                        User Interface Design
+                                                    </span>
+                                                </div>
+                                                <div className="dftrskla">
+                                                    <span>
+                                                        Graphic Design
+                                                    </span>
+                                                </div>
+                                                <div className="dftrskla">
+                                                    <span>
+                                                        User Experience Design
+                                                    </span>
+                                                </div>
+                                            </div>
                                             <div>
                                                 <form>
                                                     <div id="tambahskills" class="collapse" style={{marginRight:'80px'}}>
@@ -476,7 +493,7 @@ class ProfileFill extends Component {
                                                         <div class="input-group input-group-lg text-center d-flex flex-wrap align-content-center" style={{margin:'0 -80px 0 40px', border:'1px solid red'}}>
                                                             <span className="fa fa-search" style={{fontSize: '30px', color: 'red', marginRight: '5px', padding: '20px'}}></span>
                                                             <span>
-                                                                <input class="input-group-prepend inputskil" type="text" name="skills" required="" placeholder="Skill (ex: Data Analysis)" style={{marginBottom: '0px', paddingTop: '20px', width: '750px', border: 'none'}}/>
+                                                                <input class="input-group-prepend inputskil" type="text" name="skills" required="" placeholder="Skill (ex: Data Analysis)" style={{marginBottom: '0px', paddingTop: '25px', width: '750px', border: 'none'}}/>
                                                             </span>
                                                         </div>
                                                         <p style={{textAlign:'left', color:'black', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'.75000000em', marginLeft:'40px'}}>Kamu bisa menambahkan 10 skills lagi</p> 
@@ -494,18 +511,6 @@ class ProfileFill extends Component {
                                                     </div>
                                                 </form>
                                             </div> 
-                                            <div>
-                                                <input type="text" name="userinterface"  required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
-                                                <label style={{fontFamily:'helvetica, Arial, sans serif'}}>User Interface Design</label>
-                                            </div>
-                                            <div>
-                                                <input type="text" name="graphicdesign" required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
-                                                <label style={{fontFamily:'helvetica, Arial, sans serif'}}>Graphic Design</label>
-                                            </div>
-                                            <div>
-                                                <input type="text" name="userexperience" required="" style={{fontFamily:'helvetica, Arial, sans serif'}}/>
-                                                <label style={{fontFamily:'helvetica, Arial, sans serif'}}>User Experience Design</label>
-                                            </div>     
                                         </div>
                                         <br/>
                                         <div>

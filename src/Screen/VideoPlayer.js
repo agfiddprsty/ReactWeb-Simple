@@ -33,7 +33,7 @@ class VideoPlayer extends Component{
                 </div>
                 <h4 className="tittlevideo-gd">2. Mengenal Component</h4>
                 <div className="col-12 col-s-9">
-                    <hr class="mt-2 mb-5 hr1-vp-gd"></hr>
+                    <hr class="mt-2 mb-5 hr1-vp-gd hr1-vp-cl"></hr>
 
                     <br/>
                     <br/>
@@ -41,7 +41,7 @@ class VideoPlayer extends Component{
                     <h6 className="col-12 col-s-9 detail-deskripsi-gd">On The Course dummy text of the printing and typesetting<br/> industry. Lorem Ipsum has been the<br/> industry's standard dummy text ever since the 1500s,</h6>
                 </div> 
                 <div style={{width:"800px"}}className="col-12 col-s-9">
-                <hr class="mt-2 mb-5 hr1-vp-gd"></hr>
+                <hr class="mt-2 mb-5 hr1-vp-gd hr1-vp-cl"></hr>
                     <COmment/>
                 </div>
             </div>
