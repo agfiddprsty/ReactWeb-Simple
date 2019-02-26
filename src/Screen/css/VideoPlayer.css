@@ -111,7 +111,7 @@
     margin-Bottom:20px
   }
   .deskripsi-gd{
-    font-Weight:500;
+    font-Weight:600;
     margin-Left:-15px;
     margin-Top:-80px;
     font-family: 'Montserrat';
@@ -120,9 +120,10 @@
     width:800px;
     margin-Top:10px;
     margin-Left:-30px;
-    font-Weight:100;
+    font-Weight:600;
     font-family: 'Nunito';
     margin-bottom: 20px;
+    color: #878787;
   }
   .hr1-vp-gd{
     width:750px;
@@ -139,7 +140,7 @@
 }
 @media only screen and (max-width:768px){
   .vp-v-cl{
-    width: 400px;
+    width: 300px;
   }
   .vp-dv-out-cl{
     margin-top: 30px;

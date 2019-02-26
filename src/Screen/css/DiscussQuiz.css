@@ -3,10 +3,11 @@
         margin-left: 10px;
     }
     .diskusi-gd{
-		font-Weight:500;
+		font-Weight:600;
 		margin-Left:1px;
 		margin-Bottom:30px;
-		font-family: 'Montserrat';
+        font-family: 'Montserrat';
+        margin-top: 30px;
 	}
     .submit-gd{
         margin-left: 550px;

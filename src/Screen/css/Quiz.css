@@ -10,6 +10,10 @@
     position: absolute;
     right: 30px;
   }
+  .navbar-nav > .active {
+    /* color: aqua; */
+    background-color: #BACFFF;
+  }
   @media screen and (max-width: 1200px) {
       .dv-out-gd{
         margin-Left:30px;
