@@ -73,7 +73,7 @@
     }
     .dt-gr-gd{
       border-color:#E7E7E7;
-      margin-left:-30px;
+      margin-left:-68px;
       width: 300px;
     }
     .a-pd-gd{
@@ -89,7 +89,7 @@
       margin-left: 70px;
     }
     .submit-gd{
-      margin-left: 500px;
+      margin-left: 100px;
     }
   }
   @media only screen and (min-width: 375px) {
@@ -125,20 +125,24 @@
     margin-bottom: 20px;
   }
   .hr1-vp-gd{
-    width:800px;
+    width:750px;
     margin-Left:-15px;
     
   }
   .vp-dv-out-gd{
     margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 60px;
   }
   .vp-v-gd{
-    width: 800px;
+    width: 750px;
   }
 }
 @media only screen and (max-width:768px){
   .vp-v-cl{
-    width: 200px;
+    width: 400px;
+  }
+  .vp-dv-out-cl{
+    margin-top: 30px;
+    margin-left: -50px
   }
 }

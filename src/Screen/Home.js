@@ -73,7 +73,6 @@ class Home extends Component {
                             <div className="text-center">
                                 <h1 className="caraker">Cara Kerja</h1>
                             </div>
-                            <br/>
 
                             <div class="bootcamp-steps">
                                 <div class="vertical-line"></div>
@@ -268,11 +267,11 @@ class Home extends Component {
                                 <p className="text-center tech">Teknologi</p>
                             </div>
                             <div className="text-center logi">
-                                <span title="Node.Js"><img className="icotech" alt="" src={nodejs}/></span>
-                                <span title="Javascript"><img className="icotech" alt="" src={js}/></span>
+                                <span title="Node.Js"><img className="icotechnod" alt="" src={nodejs}/></span>
+                                <span title="Javascript"><img className="icotechjs" alt="" src={js}/></span>
                                 <span title="React"><img className="icotech" alt="" src={icoreact}/></span>
-                                <span title="MySQL"><img className="icotech" alt="" src={icomysql}/></span>
-                                <span title="GIT"><img className="icotech" alt="" src={icogit}/></span>
+                                <span title="MySQL"><img className="icotechsql" alt="" src={icomysql}/></span>
+                                <span title="GIT"><img className="icotechnod" alt="" src={icogit}/></span>
                             </div>
                         </div>
                         <div>
