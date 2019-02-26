@@ -73,7 +73,6 @@ class Home extends Component {
                             <div className="text-center">
                                 <h1 className="caraker">Cara Kerja</h1>
                             </div>
-                            <br/>
 
                             <div class="bootcamp-steps">
                                 <div class="vertical-line"></div>
