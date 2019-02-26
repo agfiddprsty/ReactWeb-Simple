@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import HeaderDashboard from './HeaderDashboard';
+import HeaderDashboard from './HeaderPage';
 import ListVideoDown from './LIstVideoDown';
 import QuizPlayer from './QuizPlayer';
 import Quiz from './Quiz';

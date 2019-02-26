@@ -1,21 +1,61 @@
 .landingage {
     background-color: #FF4141;
     color: #fff;
-    padding: 50px 100px 20px 100px;
+    padding: 80px 100px 100px 100px;
 }
 
 .pertama {
     margin: 10px 0 0px 0;
+    font-size: 23px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .duaaa {
-    margin: -5px 0 -5px 0;
+    margin: 5px 0 5px 0;
+    font-size: 23px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .copiret {
     padding-top: 20px;
+    font-size: 20px;
+}
+
+.txtcpy{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .judulfot {
     margin-top: 30px;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.dwhite{
+    width: 100px;
+}
+
+.titlefoot {
+    font-size: 23px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.addrs {
+    margin: 20px 0 0px 0;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.nope {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.email {
+    margin: -5px 0 -5px 0;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
 }
