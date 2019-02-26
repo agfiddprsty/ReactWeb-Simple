@@ -22,7 +22,9 @@ class DetailQuiz extends Component{
                                     <br/>
                                     <h5 className="h5-gd">Tonton Selanjutnya </h5>
                                 </div>
+                                <div style={{marginLeft:"-50px"}}>
                                 <ListVideoDown/>
+                                </div>
                             </div>
                         </div>
                         <hr class="mt-2 mb-5 hr-gd"></hr>

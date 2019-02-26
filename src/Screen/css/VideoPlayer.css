@@ -139,6 +139,10 @@
 }
 @media only screen and (max-width:768px){
   .vp-v-cl{
-    width: 200px;
+    width: 400px;
+  }
+  .vp-dv-out-cl{
+    margin-top: 30px;
+    margin-left: -50px
   }
 }

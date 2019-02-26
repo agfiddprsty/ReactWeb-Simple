@@ -10,13 +10,13 @@
     .h3-gd{
         margin-top: 30px;
         font-Weight:600;
-        margin-Left:40px;
+        margin-Left:75px;
         margin-Bottom:30px;
         font-family: 'Montserrat';
 
     }
     .dv-md3-gd{
-        margin-Left:45px;
+        margin-Left:-10px;
         margin-Top:10px;
     }
     .h5-gd{
@@ -28,6 +28,6 @@
     }
     .hr-gd{
         width:800px;
-        margin-left: 45px;
+        margin-left: 75px;
     }
 }
