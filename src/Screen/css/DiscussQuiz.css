@@ -21,6 +21,8 @@
         border-Color:#E7E7E7;
         background-Color:transparent;
         width:650px;
+        font-weight: 500;
+        font-family: "Montserrat";
     }
     .submit-cmt-qz-gd{
         margin-left: 550px;
@@ -36,6 +38,8 @@
         border-Color:#E7E7E7;
         background-Color:transparent;
         width:580px;
+        font-weight: 500;
+        font-family: "Montserrat";
     }
     .sh-qz-cmt-gd{
         margin-left: 10px;
@@ -51,6 +55,8 @@
         border-Color:#E7E7E7;
         background-Color:transparent;
         width:270px;
+        font-weight: 500;
+        font-family: "Montserrat";
     }
     .submit-cmt-qz-cl{
         margin-left:180px;
@@ -63,5 +69,7 @@
         border-Color:#E7E7E7;
         background-Color:transparent;
         width:250px;
+        font-weight: 500;
+        font-family: "Montserrat";
     }
 }
