@@ -109,8 +109,8 @@ class Silabusnew extends Component {
             </div>
             <body style={{backgroundColor:'#FFF'}}>
                 <div className="mb-10 d-none d-md-block d-lg-block d-xl-block">
-                    <div className="jumbotron jumbotron-fluid silabus" style={{height: "600px"}}>
-                        <h4 className="card-title text-center tengah">Menjadi Fullstack Mobile Developer <br/>Professional dan Disalurkan Kerja</h4>
+                    <div className="jumbotron jumbotron-fluid silabus" style={{height: "650px"}}>
+                        <h4 className="card-title text-center middle">Menjadi Fullstack Mobile Developer <br/>Professional dan Disalurkan Kerja</h4>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
                         <div className="text-center" style={{padding:'90px 0 0 0', backgroundColor:'#FFF'}}>
@@ -122,7 +122,7 @@ class Silabusnew extends Component {
                                 <div class="col-md-12"></div>
                                     <div class="persegi" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                         <form>
-                                            <div>
+                                            <div >
                                                 <input type="text" name="fullname" required="" placeholder="" pattern="[A-Za-z}"
                                                     onChange={this.handleChange} value={this.state.fullname} 
                                                     onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}

@@ -93,7 +93,7 @@ class Login extends Component {
     render() {
       return (
             <div className="registe">
-                <div class="row mb-5 d-none d-lg-flex d-xl-flex" style={{paddingBottom:'75px'}}>
+                <div class="row mb-5 d-none d-lg-flex d-xl-flex" style={{paddingBottom:'50px'}}>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <span className="col-lg-6 col-md-6 col-sm-6 col-xs-6 mx-auto">
                             <img alt='' src={daftarsekarang} style={{margin:'150px 0 0 85px'}}/>
@@ -123,12 +123,12 @@ class Login extends Component {
                                                 style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',}}/>
                                                 <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Email</label>
                                             </div>
+                                            <span class="fa fa-eye" aria-hidden="true" onClick={this.toggleShow} style={{margin:'0 0 0 375px'}}></span>
                                             <div>
                                                 <input type={this.state.hidden ? 'password': 'text'} id="password-field" name="password" required="" value="secret"
                                                 onChange={this.handleChange} value={this.state.password} 
                                                 onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password}
                                                 style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                <span class="fa fa-eye" aria-hidden="true" onClick={this.toggleShow} style={{margin:'-50px 0 0 375px'}}></span>
                                                 {/* <button onClick={this.toggleShow}>Show / Hide</button> */}
                                                 <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Password</label>
                                             </div>
@@ -151,7 +151,7 @@ class Login extends Component {
                 </div>
 
                 {/* Responsive */}
-                <div class="row mb-10 d-lg-none d-xl-none" style={{height: '80%'}}>
+                <div class="row mb-10 d-lg-none d-xl-none" style={{height: '80%', marginTop:'25px'}}>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
                         <div>
                             <div className="text-title" style={{padding:'0 0 0 20px'}}>
@@ -176,12 +176,12 @@ class Login extends Component {
                                                 style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
                                                 <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', fontWeight:'600'}}>Email</label>
                                             </div>
+                                            <span class="fa fa-eye" aria-hidden="true" onClick={this.toggleShow} style={{margin:'0 0 0 375px'}}></span>
                                             <div>
                                                 <input type={this.state.hidden ? 'password': 'text'} id="password-field" name="password" required="" value="secret"
                                                 onChange={this.handleChange} value={this.state.password} 
                                                 onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password}
                                                 style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                <span class="fa fa-eye" aria-hidden="true" onClick={this.toggleShow} style={{margin:'-50px 0 0 375px'}}></span>
                                                 {/* <button onClick={this.toggleShow}>Show / Hide</button> */}
                                                 <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>Password</label>
                                             </div>

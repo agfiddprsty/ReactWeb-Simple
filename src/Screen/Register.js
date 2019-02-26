@@ -92,7 +92,7 @@ class Register extends Component {
     }
     render() {
       return (
-        <div className="registe">
+        <div className="rgstr">
             <div class="row mb-5 d-none d-lg-flex d-xl-flex">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                     <span className="col-lg-6 col-md-6 col-sm-6 col-xs-6 mx-auto">
