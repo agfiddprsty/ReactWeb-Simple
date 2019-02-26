@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import Reduxilus from './img/Reduxilus.png';
-import dwicon from './img/dwicon.png';
+import daftarsekarang from './img/daftarsekarang.png';
+import logo from './img/logo.png';
 import './css/Registerpage.css';
-
 class Register extends Component {
     constructor(props){
         super(props)
-        this.registerhandle = this.registerhandle.bind(this);
+        this.daftarhandle = this.daftarhandle.bind(this);
+        this.handlePasswordChange = this.handlePasswordChange.bind(this);
+        this.toggleShow = this.toggleShow.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.moveLogin = this.moveLogin.bind(this);
         this.state = {
@@ -17,8 +18,8 @@ class Register extends Component {
             checked: false,
             selectedValue: '',
             emailValid: true,
-            ressjson:''
-
+            ressjson:'',
+            hidden: true,
         }
     }
     handleChange(event) {
@@ -36,11 +37,11 @@ class Register extends Component {
     handleConfirmpassChange(cp) {
         this.setState({confirmpass:cp.target.value})
     }
-    registerhandle(){
+    daftarhandle(){
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (!pattern.test(this.state.email)) {
-            alert('Silahkan masukkan email yang valid')
+            alert('Silahkan masuk email yang valid')
         }else if(this.state.fullname === ""){
             alert("Silahkan masukkan nama lengkap anda");
         }else if(this.state.email === ""){
@@ -67,30 +68,41 @@ class Register extends Component {
             // Axios.post('url',body).then(ress=>{
             //     this.setState({ressjson:ress})
             // })
-            this.props.history.push("/dashboardunpaid");
+            this.props.history.push("/silabusnew");
             console.log(this.state.selectedValue);
         
         }        
     }
+    handlePasswordChange(pc) {
+        this.setState({ pass: pc.target.value });
+      }
+    
+      toggleShow() {
+        this.setState({ hidden: !this.state.hidden });
+      }
+    
+      componentDidMount() {
+        if (this.props.pass) {
+          this.setState({ pass: this.props.pass });
+        }
+      }  
 
     moveLogin(){
         this.props.history.push("/");
     }
-
-
     render() {
       return (
         <div className="registe">
             <div class="row mb-5 d-none d-lg-flex d-xl-flex">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                     <span className="col-lg-6 col-md-6 col-sm-6 col-xs-6 mx-auto">
-                        <img alt='' src={Reduxilus} style={{margin:'175px 0 200px 85px'}}/>
+                        <img alt='' src={daftarsekarang} style={{margin:'145px 0 200px 85px'}}/>
                     </span>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <div>
-                        <div className="text-title" style={{padding:'55px 0 0 52px'}}>
-                            <img alt='' src={dwicon} style={{margin:'0 0 0 -8px', width:'14%'}}/>
+                        <div className="text-title" style={{padding:'20px 0 0 52px'}}>
+                            <img alt='' src={logo} style={{margin:'0 0 15px -8px', width:'18%'}}/>
                             <h1 style={{color:'##3B3B3B', fontWeight:'515', fontFamily:'Circular Std Black, sans-serif;', fontSize:'2.15000000em',display:'block', margin:'0 0 0 -7px',
                             }}>Selamat datang di Squad </h1>
                             <p style={{color:'grey', fontWeight:'400', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.500000000em', display:'block', margin:'0 0 20px -7px'}}>
@@ -98,36 +110,43 @@ class Register extends Component {
                             </p>
                         </div>
                     </div>
-
-                    <div style={{padding:'0 0 140px 45px'}}>
+                    <div style={{padding:'0 0 0 45px'}}>
                         <div class="daftar">
                             <div class="col-md-12" style={{padding:'16px 10px 0 30px', }}>
                                 <div class="box" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                     <form>
-                                        <div class="Input">
-                                            <input type="text" id="input" class="Input-text" name="fullname" required="" placeholder="Nama Lengkap" pattern="[A-Za-z}"
+                                        <div>
+                                        <input type="text" name="fullname" required="" pattern="[A-Za-z}"
+                                            onChange={this.handleChange} value={this.state.fullname} 
+                                            onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
                                             style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label for="input" class="Input-label" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', }}>Nama Lengkap</label>
+                                            <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.fullname!=''?'red':'#999'}}>Nama Lengkap</label>
                                         </div>
-                                        <div class="Input">
-                                            <input type="text" id="input" class="Input-text" name="email" required="" placeholder="Email" pattern="[A-Za-z}"
+                                        <div>
+                                        <input type="text" name="email" required="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
+                                            onChange={this.handleChange} value={this.state.email} 
+                                            onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
                                             style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label for="input" class="Input-label" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', }}>Email</label>
+                                            <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.email!=''?'red':'#999'}}>Email</label>
                                         </div>
-                                        <div class="Input">
-                                            <input type="password" id="input" class="Input-text" name="pass" required="" placeholder="Password" pattern="[A-Za-z}"
-                                            style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label for="input" class="Input-label" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', }}>Password</label>
+                                        <div>
+                                        <input type={this.state.hidden ? 'password': 'text'} id="password-field" name="pass" required="" value="secret"
+                                                onChange={this.handleChange} value={this.state.pass} 
+                                                onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.pass}
+                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                <i class="fa fa-eye" aria-hidden="true" onClick={this.toggleShow} style={{margin:'0 0 0 375px'}}></i>
+                                                {/* <button onClick={this.toggleShow}>Show / Hide</button> */}
+                                            <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.pass!=''?'red':'#999'}}>Password</label>
                                         </div>
-                                        <div class="Input">
-                                            <input type="text" id="input" class="Input-text" name="confirmpass" required="" placeholder="Konfirmasi Password" pattern="[A-Za-z}"
+                                        <div>
+                                        <input type="password" name="confirmpass" required="" 
+                                            onChange={this.handleChange} value={this.state.confirmpass} 
+                                            onChange={(cp)=>this.handleConfirmpassChange(cp)} value={this.state.confirmpass}
                                             style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label for="input" class="Input-label" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', }}>Konfirmasi Password</label>
+                                            <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.confirmpass!=''?'red':'#999'}}>Konfirmasi Password</label>
                                         </div>
                                         <div className="text-center btn-lg" style={{width:'', padding:'5px 0 5px 0', margin:'0'}}>
-                                            <button type="button" 
-                                            onClick={this.registerhandle} 
-                                            class="btn btn-danger btn-lg btndaftar">Daftar Sekarang</button>
+                                            <button type="button" onClick={this.daftarhandle} class="btn btn-danger btn-lg btndaftar">Daftar Sekarang</button>
                                         </div>
                                     </form>
                                 </div>
@@ -142,7 +161,7 @@ class Register extends Component {
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
                     <div>
                         <div className="text-title" style={{padding:'55px 0 0 20px'}}>
-                            <img alt='' src={dwicon} style={{margin:'0 0 0 -8px', width:'14%'}}/>
+                            <img alt='' src={logo} style={{margin:'0 0 15px -8px', width:'14%'}}/>
                             <h1 style={{color:'##3B3B3B', fontWeight:'515', fontFamily:'Circular Std Black, sans-serif;', fontSize:'2.15000000em',display:'block', margin:'0 0 0 -7px',
                             }}>Selamat datang di Squad </h1>
                             <p style={{color:'grey', fontWeight:'400', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.500000000em', display:'block', margin:'0 0 20px -7px'}}>
@@ -150,36 +169,43 @@ class Register extends Component {
                             </p>
                         </div>
                     </div>
-
                     <div className="d-flex justify-content-center">
                         <div class="daftar">
                             <div class="col-md-12">
                                 <div class="persegi" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                     <form>
-                                        <div class="Input">
-                                            <input type="text" id="input" class="Input-text" name="fullname" required="" placeholder="Nama Lengkap" pattern="[A-Za-z}"
+                                        <div>
+                                        <input type="text" name="fullname" required="" pattern="[A-Za-z}"
+                                            onChange={this.handleChange} value={this.state.fullname} 
+                                            onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
                                             style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label for="input" class="Input-label" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', }}>Nama Lengkap</label>
+                                            <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.fullname!=''?'red':'#999'}}>Nama Lengkap</label>
                                         </div>
-                                        <div class="Input">
-                                            <input type="text" id="input" class="Input-text" name="email" required="" placeholder="Email" pattern="[A-Za-z}"
+                                        <div>
+                                        <input type="text" name="email" required="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
+                                            onChange={this.handleChange} value={this.state.email} 
+                                            onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
                                             style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label for="input" class="Input-label" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', }}>Email</label>
+                                            <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.email!=''?'red':'#999'}}>Email</label>
                                         </div>
-                                        <div class="Input">
-                                            <input type="password" id="input" class="Input-text" name="pass" required="" placeholder="Password" pattern="[A-Za-z}"
-                                            style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label for="input" class="Input-label" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', }}>Password</label>
+                                        <div>
+                                        <input type={this.state.hidden ? 'password': 'text'} id="password-field" name="pass" required="" value="secret"
+                                                onChange={this.handleChange} value={this.state.password} 
+                                                onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.pass}
+                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                <i class="fa fa-eye" aria-hidden="true" onClick={this.toggleShow} style={{margin:'0 0 0 375px'}}></i>
+                                                {/* <button onClick={this.toggleShow}>Show / Hide</button> */}
+                                            <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.pass!=''?'red':'#999'}}>Password</label>
                                         </div>
-                                        <div class="Input">
-                                            <input type="text" id="input" class="Input-text" name="confirmpass" required="" placeholder="Konfirmasi Password" pattern="[A-Za-z}"
+                                        <div>
+                                        <input type="password" name="confirmpass" required="" 
+                                            onChange={this.handleChange} value={this.state.confirmpass} 
+                                            onChange={(cp)=>this.handleConfirmpassChange(cp)} value={this.state.confirmpass}
                                             style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label for="input" class="Input-label" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', }}>Konfirmasi Password</label>
+                                            <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.confirmpass!=''?'red':'#999'}}>Konfirmasi Password</label>
                                         </div>
                                         <div className="text-center btn-lg" style={{width:'', padding:'5px 0 5px 0', margin:'0'}}>
-                                            <button type="button" 
-                                            onClick={this.registerhandle} 
-                                            class="btn btn-danger btn-lg btndaftar">Daftar Sekarang</button>
+                                            <button type="button" onClick={this.daftarhandle} class="btn btn-danger btn-lg btndaftar">Daftar Sekarang</button>
                                         </div>
                                     </form>
                                 </div>

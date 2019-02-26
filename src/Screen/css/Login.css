@@ -7,271 +7,6 @@ input {
 	border: none;
 }
 
-textarea {
-  outline: none;
-  border: none;
-}
-
-textarea:focus, input:focus {
-  border-color: transparent !important;
-}
-
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
-
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
-
-input::-webkit-input-placeholder { color: #999999; }
-input:-moz-placeholder { color: #999999; }
-input::-moz-placeholder { color: #999999; }
-input:-ms-input-placeholder { color: #999999; }
-
-textarea::-webkit-input-placeholder { color: #999999; }
-textarea:-moz-placeholder { color: #999999; }
-textarea::-moz-placeholder { color: #999999; }
-textarea:-ms-input-placeholder { color: #999999; }
-
-iframe {
-	border: none !important;
-}
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ login ]*/
-
-.limiter {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.wrap-login {
-  width: 960px;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 177px 130px 33px 95px;
-}
-
-/*------------------------------------------------------------------
-[  ]*/
-.login-form {
-  width: 290px;
-}
-
-.login-form-title {
-  font-family: Poppins-Bold;
-  font-size: 24px;
-  color: #333333;
-  line-height: 1.2;
-  text-align: center;
-
-  width: 100%;
-  display: block;
-  padding-bottom: 54px;
-}
-
-
-/*---------------------------------------------*/
-.wrap-input {
-  position: relative;
-  width: 100%;
-  z-index: 1;
-  margin-bottom: 10px;
-} 
- 
-.input {
-  font-family: Open Sans, helvetica, Arial, sans serif;
-  font-size: 15px;
-  line-height: 1.5;
-  color: #666666;
-
-  display: block;
-  width: 100%;
-  background: #FFF;
-  height: 50px;
-  padding: 0 30px 0 68px;
-} 
-
-
-/*------------------------------------------------------------------
-[ Focus ]*/
-.focus-input {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0px 0px 8px 0px;
-  border-color: gray;
-  color: gray;
-}
-
-.input:focus + .focus-input {
-  -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
-  animation: anim-shadow 0.5s ease-in-out forwards;
-}
-
-@-webkit-keyframes anim-shadow {
-  to {
-    box-shadow: 0px 0px 70px 25px;
-    opacity: 0;
-  }
-}
-
-@keyframes anim-shadow {
-  to {
-    box-shadow: 0px 0px 70px 25px;
-    opacity: 0;
-  }
-}
-
-.symbol-input {
-  font-size: 15px;
-
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  border-radius: 25px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding-left: 35px;
-  pointer-events: none;
-  color: #666666;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.input:focus + .focus-input + .symbol-input {
-  color: grey;
-  padding-left: 28px;
-}
-
-
-/*------------------------------------------------------------------
-[ Responsive ]*/
-
-
-
-@media (max-width: 992px) {
-  .wrap-login100 {
-    padding: 177px 90px 33px 85px;
-  }
-
-  .login100-form {
-    width: 50%;
-  }
-}
-
-@media (max-width: 768px) {
-  .wrap-login100 {
-    padding: 100px 80px 33px 80px;
-  }
-
-  .login100-form {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .wrap-login100 {
-    padding: 100px 15px 33px 15px;
-  }
-}
-
-
-/*------------------------------------------------------------------
-[ Alert validate ]*/
-
-.validate-input {
-  position: relative;
-}
-
-.alert-validate::before {
-  content: attr(data-validate);
-  position: absolute;
-  max-width: 70%;
-  background-color: white;
-  border: 1px solid #c80000;
-  border-radius: 13px;
-  padding: 4px 25px 4px 10px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 8px;
-  pointer-events: none;
-
-  font-family: Poppins-Medium;
-  color: #c80000;
-  font-size: 13px;
-  line-height: 1.4;
-  text-align: left;
-
-  visibility: hidden;
-  opacity: 0;
-
-  -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-}
-
-.alert-validate::after {
-  content: "\f06a";
-  font-family: FontAwesome;
-  display: block;
-  position: absolute;
-  color: #c80000;
-  font-size: 15px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 13px;
-}
-
-.alert-validate:hover:before {
-  visibility: visible;
-  opacity: 1;
-}
-
-@media (max-width: 992px) {
-  .alert-validate::before {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-
 .persegilog{
   position:absolute;
   top: 0%;
@@ -287,7 +22,8 @@ iframe {
 
 .persegilog input{
   padding: 10px 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-size: 12px;
 }
 
 .persegilog input:hover{
@@ -295,7 +31,14 @@ iframe {
   box-shadow: none;
   outline: none;
   border: none;
-  border-bottom: 2px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.persegilog :valid{
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
 }
 
 .persegilog input{
@@ -305,7 +48,7 @@ iframe {
   outline: none;
   border: none;
   border-bottom: 2px solid #999;
-  
+  font-size: 12px;
 }
 
 .persegilog input [type="submit"]
@@ -318,6 +61,7 @@ iframe {
   margin-bottom: 0;
   text-transform: uppercase;
   left: 10px;
+  font-size: 12px;
 }
 
 .persegilog form div {
@@ -331,7 +75,7 @@ iframe {
   color: #999;
   transition: .5s;
   pointer-events: none;
-  
+  font-size: 12px;
 }
 
 .persegilog input:focus ~ label  
@@ -383,71 +127,6 @@ iframe {
     }
 }
 
-.box{
-  position:absolute;
-  top: 0%;
-  left: 0%;
-  width: 500px;
-  background: #fff;
-  padding: 40px;
-  box-sizing: border-box;
-  border: 1px solid rgba(0,0,0,.1);
-  box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
-  margin-bottom: 50px;
-}
-
-.box input{
-  padding: 10px 0;
-  margin-bottom: 30px;
-}
-
-.box input{
-  width: 100%;
-  box-sizing: border-box;
-  box-shadow: none;
-  outline: none;
-  border: none;
-  border-bottom: 2px solid #999;
-
-}
-
-.box input [type="submit"]
-{
-  font-family:'Open Sans, helvetica, Arial, sans serif';
-  border-bottom: none;
-  cursor: pointer;
-  background: grey;
-  color: #fff;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  left: 10px;
-  display: none;
-}
-
-.box form div {
-  position: relative;
-}
-.box form div label {
-  font-family:'Open Sans, helvetica, Arial, sans serif';
-  position: absolute;
-  top: 10px;
-  left: 0;
-  color: #999;
-  transition: none;
-  pointer-events: none;
-  
-}
-
-
-.box input:valid ~ label 
-{
-  font-family:'Open Sans, helvetica, Arial, sans serif';
-  top: -12px;
-  left: 0;
-  color: grey;
-  font-size: 15px;
-}
-
 .isiform {
   color: #666666;
   font-weight: 325;
@@ -456,3 +135,20 @@ iframe {
   display: block;
   margin: 33px 0 39px 0;
 }
+
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.input[type="text"] {
+  width: 100%;
+  border: 0;
+  padding: 20px 20px 20px 50px;
+  background: #FFF;
+  font-size: 12px;
+}
+

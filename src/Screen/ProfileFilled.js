@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import LabelFloatInput from 'label-float-input';
 import Header from './HeaderPage';
 import './css/ProfileFilled.css';
+import projects from './img/projects.png';
 import DropboxChooser from 'react-dropbox-chooser';
 import {RadioGroup,Radio} from 'react-radio-group';
 import './css/Register.css';
@@ -361,7 +361,7 @@ class ProfileFilled extends Component {
                                                         </div>
                                                     </form>
                                                 </div>
-                                                <div class="row">
+                                                <div class="row" style={{marginTop:'15px'}}>
                                                     <div class="col-4" style={{marginLeft:'40px'}}>
                                                         <div class="col-3">
                                                         </div>
@@ -438,7 +438,7 @@ class ProfileFilled extends Component {
                                                             </div>
                                                         </form>
                                                     </div>
-                                                    <div class="row">
+                                                    <div class="row" style={{marginTop:'15px'}}>
                                                     <div class="col-4" style={{marginLeft:'40px'}}>
                                                         <div class="col-3">
                                                         </div>
@@ -606,8 +606,11 @@ class ProfileFilled extends Component {
                                                             </div>
                                                         </form>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col-4" style={{marginLeft:'40px'}}>
+                                                    <div class="row" style={{marginTop:'15px'}}>
+                                                        <div class="col-1" style={{margin:'5px 0 0 -10px'}}>
+                                                            <img alt='' src={projects}/>
+                                                        </div>
+                                                        <div class="col-4" style={{marginLeft:'-25px'}}>
                                                             <div class="col-3">
                                                             </div>
                                                             <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
@@ -619,7 +622,7 @@ class ProfileFilled extends Component {
                                                             
                                                         </div>
                                                         <div class="col-7">
-                                                            <p style={{color:'red', fontWeight:'500', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'right', marginRight:'-40px'}}>
+                                                            <p style={{color:'red', fontWeight:'500', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'right', marginRight:'-35px'}}>
                                                                 Maret 2020
                                                             </p>
                                                         </div>
@@ -631,7 +634,10 @@ class ProfileFilled extends Component {
                                                     </span>
                                                     <a href="#"><p className="seepro text-left">See Project</p></a>
                                                     <div class="row" style={{marginTop:'30px'}}>
-                                                        <div class="col-4" style={{marginLeft:'40px'}}>
+                                                        <div class="col-1" style={{margin:'5px 0 0 -10px'}}>
+                                                            <img alt='' src={projects}/>
+                                                        </div>
+                                                        <div class="col-4" style={{marginLeft:'-25px'}}>
                                                             <div class="col-3">
                                                             </div>
                                                             <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
@@ -641,8 +647,8 @@ class ProfileFilled extends Component {
                                                                 DumbWays
                                                             </p>
                                                         </div>
-                                                        <div class="col-7">
-                                                            <p style={{color:'red', fontWeight:'500', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'right', marginRight:'-40px'}}>
+                                                        <div className="col-7">
+                                                            <p style={{color:'red', fontWeight:'500', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'right', marginRight:'-35px'}}>
                                                                 Maret 2020
                                                             </p>
                                                         </div>
