@@ -6,24 +6,36 @@
   }
 
 .bg-overlay{
-  overflow: auto;
-  position: fixed;
-  display: inline;
+  position: static;
+  display: inline-block;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.5);
-  z-index: 5;
-  top: 0;
+  z-index: -0;
+  cursor:pointer;
   left: 0;
-  right: 0;
-  bottom: 0;
+  right:0;
+  bottom:0;
+  top:0;
 }
 
-.text{
+.overlay-text{
   position: fixed;
+  display:block;
   top: 50%;
   left: 50%;
   font-size: 20px;
+  color: red;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+.locked{
+  position: fixed;
+  display:block;
+  top: 40%;
+  left: 50%;
+  font-size: 50px;
   color: red;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
