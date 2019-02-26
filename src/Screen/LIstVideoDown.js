@@ -5,6 +5,7 @@ import rnredux from './img/rnreduxplay.png';
 import './css/ListVideo.css';
 import './css/VideoPlayer.css'
 import lvl from './img/Level.png'
+import lock from './img/LockWhite.png'
 class ListVideoDown extends Component{
     constructor(){
         super()
@@ -88,8 +89,8 @@ class ListVideoDown extends Component{
                                 <Card className="border-0"><a href="/detailquiz" className="modul">
                                         <div className="row dv-row-gd">
                                             <div className="col-md-auto">
-                                                <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${this.state.urlbackground})`}}>
-                                                    <img class="img-fluid img-thumbnail play-img-gd" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img>
+                                                <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundColor:"#FF5D5D"}}>
+                                                    {/* <img class="img-fluid img-thumbnail play-img-gd" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img> */}
                                                 </div>
                                             </div>
                                             <div className="col-md-auto dv-tittle-gd">
@@ -106,7 +107,7 @@ class ListVideoDown extends Component{
                                         <div className="row dv-row-gd">
                                             <div className="col-md-auto">
                                                 <div className="d-flex justify-content-center dv-bg-gd" style={{background:this.state.url}}>
-                                                    <img class="img-fluid img-thumbnail play-img-gd" src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
+                                                    <img class="img-fluid img-thumbnail play-img-gd" src={lock} alt=""></img>
                                                 </div>
                                             </div>
                                             <div className="col-md-auto dv-tittle-gd">
@@ -123,7 +124,7 @@ class ListVideoDown extends Component{
                                         <div className="row dv-row-gd">
                                             <div className="col-md-auto">
                                                 <div className="d-flex justify-content-center dv-bg-gd" style={{background:this.state.url}}>
-                                                    <img class="img-fluid img-thumbnail play-img-gd" src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
+                                                    <img class="img-fluid img-thumbnail play-img-gd" src={lock} alt=""></img>
                                                 </div>
                                             </div>
                                             <div className="col-md-auto dv-tittle-gd">
@@ -140,7 +141,7 @@ class ListVideoDown extends Component{
                                         <div className="row dv-row-gd">
                                             <div className="col-md-auto">
                                                 <div className="d-flex justify-content-center dv-bg-gd" style={{background:this.state.url}}>
-                                                    <img class="img-fluid img-thumbnail play-img-gd" src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
+                                                    <img class="img-fluid img-thumbnail play-img-gd" src={lock} alt=""></img>
                                                 </div>
                                             </div>
                                             <div className="col-md-auto dv-tittle-gd">
@@ -157,7 +158,7 @@ class ListVideoDown extends Component{
                                         <div className="row dv-row-gd">
                                             <div className="col-md-auto">
                                                 <div className="d-flex justify-content-center dv-bg-gd" style={{background:this.state.url}}>
-                                                    <img class="img-fluid img-thumbnail play-img-gd" src="https://images.vexels.com/media/users/3/132074/isolated/preview/0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" alt=""></img>
+                                                    <img class="img-fluid img-thumbnail play-img-gd" src={lock} alt=""></img>
                                                 </div>
                                             </div>
                                             <div className="col-md-auto dv-tittle-gd">
