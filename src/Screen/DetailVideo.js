@@ -12,7 +12,7 @@ class DetailVideo extends Component {
                 <HeaderDashboard/>
                 
                 <body className="bg-light dt-body-gd dt-body-cl" >
-                    <div className="bd-dv-gd" >
+                    <div className="bd-dv-vd-gd" >
                         <div className="row">
                             <div class="col-md-auto">
                                 <Video/>

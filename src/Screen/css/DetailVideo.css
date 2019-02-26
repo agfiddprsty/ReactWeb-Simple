@@ -3,7 +3,7 @@
         border-Color:#E7E7E7;
     }
     .dt-dv-pg-gd{
-        margin-left:-80px;
+        margin-left:-68px;
         margin-top:10px;
         margin-bottom: -10px
     }
@@ -13,9 +13,9 @@
         padding-Left:20px;
         overflow-X:"hidden";
     }
-    .bd-dv-gd{
-        margin-Left:75px;
-        margin-Top:50px;
+    .bd-dv-vd-gd{
+        margin-Left:59px;
+        margin-Top:80px;
     }
     .hr-dt-gd{
         width:300px;
@@ -56,7 +56,7 @@
         margin-left: 480px;
     }
     .ls-dv-mg-gd{
-        margin-Left:-65px;
+        margin-Left:-55px;
     }
 }
 @media only screen and (max-width:600px){

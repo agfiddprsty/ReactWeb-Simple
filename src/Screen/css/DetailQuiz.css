@@ -3,14 +3,14 @@
         overflow-x: hidden;
 
     }
-    .bd-dv-gd{
+    .bd-dv-qz-gd{
         margin-Left:55px;
         margin-Top:80px;
     }
     .h3-gd{
         margin-top: 30px;
         font-Weight:600;
-        margin-Left:75px;
+        margin-Left:80px;
         margin-Bottom:30px;
         font-family: 'Montserrat';
 
@@ -22,7 +22,7 @@
     .h5-gd{
         font-Weight:600;
         margin-Bottom:10px;
-        margin-Left:-55px;
+        margin-Left:-60px;
         margin-Top:55px;
         font-family: 'Montserrat';
     }
@@ -31,7 +31,7 @@
         margin-left: 75px;
     }
     .ls-dq-gd{
-        margin-left: -50px;
+        margin-left: -55px;
     }
 }
 @media only screen and (max-width:600px){

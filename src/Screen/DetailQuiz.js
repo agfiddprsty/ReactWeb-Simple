@@ -11,7 +11,7 @@ class DetailQuiz extends Component{
             <div className="dv-out-gd">
                 <HeaderDashboard/>
                 <body className="bg-light">
-                    <div className="bd-dv-gd bd-dv-cl">
+                    <div className="bd-dv-qz-gd bd-dv-cl">
                         <div className="row">
                             <div class="col-md-auto">
                                 <h3 className="h3-gd">Kuis Mingguan #1</h3>
