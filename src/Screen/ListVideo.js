@@ -24,7 +24,7 @@ return (
                 </div>
                 <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>1. Perkenalan</span>
-                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4 ,marginLeft:"70px",color:"red"}}></span> 04:32 </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4 ,marginLeft:"96px",color:"red"}}></span> 04:32 </span>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-6">
@@ -36,7 +36,7 @@ return (
                 </div>
                     <a style={{paddingTop:"15px"}}href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>2. Components</span>
-                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"50px",color:"red"}}></span> 04:32 </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"80px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -46,7 +46,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>3. Instalasi</span>
-                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"90px",color:"red"}}></span> 04:32 </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"115px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -56,7 +56,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>4. Character</span>
-                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"80px",color:"red"}}></span> 04:32 </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"103px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -78,7 +78,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>1. Perkenalan</span>
-                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4 ,marginLeft:"70px",paddingBottom:"1px",color:"red"}}></span> 04:32 </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4 ,marginLeft:"96px",paddingBottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -88,7 +88,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>2. Components</span>
-                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"50px",paddingBottom:"1px",color:"red"}}></span> 04:32 </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"80px",paddingBottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -98,7 +98,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>3. Instalasi</span>
-                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"90px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"115px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>  
             </div>  
@@ -123,7 +123,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>1. Perkenalan</span>
-                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"80px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"96px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -135,7 +135,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>2. Components</span>
-                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"60px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"80px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -147,7 +147,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>3. Instalasi</span>
-                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"90px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"115px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -158,7 +158,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>4. Character</span>
-                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"80px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>  
                 <div class="col-lg-3 col-md-4 col-6">
@@ -169,7 +169,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>1. Perkenalan</span>
-                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"70px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"96px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -180,7 +180,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>2. Components</span>
-                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"60px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"80px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -191,7 +191,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>3. Instalasi</span>
-                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"90px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"115px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -202,7 +202,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>4. Character</span>   
-                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"80px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
             </div>
