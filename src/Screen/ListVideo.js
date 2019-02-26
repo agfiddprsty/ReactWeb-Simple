@@ -67,7 +67,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} href="/detailquiz" class="d-block mb-4 h-100">
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>Quiz Minggu 1</span>
-                    <span style={{fontFamily:"Nunito",fontSize:"14px",marginLeft:"70px",paddingBottom:"1px",color:"#00DFEB"}}>Level <img src={lvl} style={{width:"13px"}}></img>  </span>
+                    <span style={{fontFamily:"Nunito",fontSize:"14px",marginLeft:"95px",paddingBottom:"1px",color:"#00DFEB"}}>Level <img src={lvl} style={{width:"13px"}}></img>  </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
