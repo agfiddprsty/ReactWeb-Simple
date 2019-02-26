@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './css/ListVideo.css';
 import ply from './img/ply.png';
 // import { Link } from 'react-router-dom';
-
+import lvl from './img/Level.png'
 class ListVideo extends Component {
 
 render() {
@@ -67,7 +67,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} href="/detailquiz" class="d-block mb-4 h-100">
                     <span style={{fontWeight:"bold"}}>Quiz Minggu 1</span>
-                    <span style={{fontSize:"14px",marginLeft:"70px",paddingBottom:"1px",color:"#00DFEB"}}>Level <span className="fa fa-signal" style={{opacity: 0.4,paddingBottom:"1px",color:"#00DFEB"}}></span>  </span>
+                    <span style={{fontSize:"14px",marginLeft:"70px",paddingBottom:"1px",color:"#00DFEB"}}>Level <img src={lvl} style={{width:"13px"}}></img>  </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
