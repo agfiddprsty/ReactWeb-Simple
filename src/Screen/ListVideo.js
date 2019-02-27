@@ -11,7 +11,7 @@ return (
         <div class="container">
             <div>
                 <br/>
-                <h2 style={{fontWeight:"bold",paddingTop:"90px"}}>Minggu 1</h2>
+                <h2 style={{fontFamily:"Montserrat",fontWeight:"bold",paddingTop:"90px"}}>Minggu 1</h2>
                 <br/>
             </div>
             <div class="row text-center text-lg-left">
@@ -106,11 +106,17 @@ return (
             <div>
                 <br/>
             <hr class="mt-2 mb-5"></hr>
-                <h2 style={{fontWeight:"bold"}}>Minggu 2</h2>
+                <h2 style={{fontFamily:"Montserrat",fontWeight:"bold"}}>Minggu 2</h2>
                 <br/>
+                
+                <div stlye={{width:"20px"}} class="alert alert-danger" role="alert">
+                <div style={{marginRight:"10px"}} className="fas fa-lock"></div>
+                 Konten Terkunci,silahkan selesaikan semua kuis di minggu 1
+                
+                </div>
             </div>
              <div class="row" style={{height:"1px",width:"3440px"}}>
-            <div style={{backgroundcolor:"black",height:"442px",width:"1500px"}} class="col-sm-4"><div className="bg-overlay"></div></div>
+            <div style={{backgroundcolor:"black",height:"442px",width:"1470px"}} class="col-sm-4"><div className="bg-overlay"></div></div>
             </div> 
             {/* <div className="bg-overlay">
             <div className="text">Konten Terkunci,silahkan selesaikan semua kuis di minggu 1</div>
@@ -207,8 +213,8 @@ return (
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>4. Character</span>   
                     <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
-            <div className="fas fa-lock locked"></div>
-                <div className="overlay-text">Konten Terkunci,silahkan selesaikan semua kuis di minggu 1</div>  
+            {/* <div className="fas fa-lock locked"></div>
+                <div className="overlay-text">Konten Terkunci,silahkan selesaikan semua kuis di minggu 1</div>   */}
             </div>
                
             </div>
