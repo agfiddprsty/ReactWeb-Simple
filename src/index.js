@@ -15,7 +15,6 @@ import Home from './Screen/Home';
 import * as serviceWorker from './serviceWorker';
 import Reg from './Screen/Registrasi';
 import Hack from './Screen/Hackerrank';
-import Menu from './Screen/Menu';
 import About from './Screen/About';
 import Batch from './Screen/ListBatch';
 import Silabus from './Screen/Silabus';
@@ -49,7 +48,6 @@ ReactDOM.render(
             <Route path="/reg" component={Reg} />
             <Route path="/about" component={About}/>
             <Route path="/hack" component={Hack} />
-            <Route path="/admin" component={Menu} />
             <Route path='/profile' component={Profile} />
             <Route path='/profilelink/:uid' component={ProfileLink}/>
             <Route path="/silabus/list" component={ListSilabus}/>
