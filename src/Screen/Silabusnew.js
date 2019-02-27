@@ -18,7 +18,6 @@ class Silabusnew extends Component {
             fullname:'',
             inputValue: '',
             fieldActive: false,
-
         }
     }
     handleChange(event) {
@@ -107,105 +106,71 @@ class Silabusnew extends Component {
             <div>
                 <Header/>
             </div>
-            <body style={{backgroundColor:'#FFF'}}>
-                <div className="mb-10 d-none d-md-block d-lg-block d-xl-block">
-                    <div className="jumbotron jumbotron-fluid silabus" style={{height: "650px"}}>
-                        <h4 className="card-title text-center middle">Menjadi Fullstack Mobile Developer <br/>Professional dan Disalurkan Kerja</h4>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
-                        <div className="text-center" style={{padding:'90px 0 0 0', backgroundColor:'#FFF'}}>
-                            <h1 className="tertarik">Tertarik dengan pembelajaran kami? </h1>
-                            <p className="isiform">Isi Form dibawah untuk mendapatkan silabus melalui email</p>
+                <body style={{backgroundColor:'#FFF'}}>
+                    <div className="mb-10 d-none d-md-block d-lg-block d-xl-block">
+                        <div className="jumbotron jumbotron-fluid silabus" style={{height: "670px"}}>
+                            <h4 className="card-title text-center middle">
+                                Menjadi Fullstack Mobile Developer 
+                            <br/>
+                                Professional dan Disalurkan Kerja
+                            </h4>
                         </div>
-                        <div className="d-flex justify-content-center">
-                            <div class="daftar">
-                                <div class="col-md-12"></div>
-                                    <div class="persegi" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
-                                        <form>
-                                            <div >
-                                                <input type="text" name="fullname" required="" placeholder="" pattern="[A-Za-z}"
-                                                    onChange={this.handleChange} value={this.state.fullname} 
-                                                    onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
-                                                    value={this.state.inputfullnameValue}
-                                                    onFocus={this.activatefullnameField}
-                                                    onBlur={this.disablefullnameField}
-                                                    onChange={this.updateInputfullnameValue}
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}
-                                                />
-                                                <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.fullname!=''?'red':'#999'}}
-                                                // check state the input, whether it is active then apply the class for floating label
-                                                className={this.state.fieldfullnameActive ? "field-active" : ""}
-                                                >Nama Lengkap</label>
-                                            </div>
-                                            <div>
-                                                <input type="text" name="email" required=""  placeholder="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
-                                                    onChange={this.handleChange} value={this.state.email}                                                     
-                                                    onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
-                                                    value={this.state.inputemailValue}
-                                                    onFocus={this.activateemailField}
-                                                    onBlur={this.disableemailField}
-                                                    onChange={this.updateInputemailValue}
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}
-                                                />
-                                                <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.email!=''?'red':'#999'}}
-                                                // check state the input, whether it is active then apply the class for floating label
-                                                className={this.state.fieldemailActive ? "field-active" : ""}
-                                                >Email</label>
-                                            </div>
-                                            <div className="btn-block" 
-                                                    onClick={this.kirimhandle}
-                                                    style={{width:'', padding:'10px 0 15px 0', margin:'0'}}>
-                                                    <button type="button" class="btn btn-danger btn-block" style={{marginBottom:'10px', padding:'10px 0 10px 0', borderRadius:'0'}}>Kirim Silabus</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-10 d-md-none d-lg-none d-xl-none" style={{height: '100%'}}>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
-                            <div className="text-center" style={{padding:'90px 0 0 0', backgroundColor:'#FFF'}}>
-                                <h1 className="tertarik">Tertarik dengan pembelajaran kami? </h1>
-                                <p className="isiform">Isi Form dibawah untuk mendapatkan silabus melalui email</p>
+                            <div className="text-center" style={{padding:'60px 0 0 0', backgroundColor:'#FFF'}}>
+                                <h1 className="tertarik">
+                                    Tertarik dengan pembelajaran kami? 
+                                </h1>
+                                <p className="isiform">
+                                    Isi Form dibawah untuk mendapatkan silabus melalui email
+                                </p>
                             </div>
                             <div className="d-flex justify-content-center">
-                                <div class="daftar">
-                                    <div class="col-md-12">
-                                        <div class="persegi" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
+                                <div class="daftar" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
+                                    <div class="col-md-12" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}></div>
+                                        <div class="persegislbs" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                             <form>
-                                                <div>
-                                                    <input className="floating-label" className="floating-label" type="text" name="fullname" required="" placeholder="Nama Lengkap" pattern="[A-Za-z}"
+                                                <div >
+                                                    <input type="text" name="fullname" required="" placeholder="" pattern="[A-Za-z}"
                                                         onChange={this.handleChange} value={this.state.fullname} 
                                                         onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
-                                                        value={this.state.inputValue}
-                                                        onFocus={this.activateField}
-                                                        onBlur={this.disableField}
-                                                        onChange={this.updateInputValue}
+                                                        value={this.state.inputfullnameValue}
+                                                        onFocus={this.activatefullnameField}
+                                                        onBlur={this.disablefullnameField}
+                                                        onChange={this.updateInputfullnameValue}
                                                         style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}
                                                     />
-                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.fullname!=''?'red':'#999'}}
-                                                    className={this.state.fieldActive ? "field-active" : ""}
-                                                    >Nama Lengkap</label>
+                                                    <label 
+                                                        style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', 
+                                                        color:this.state.fullname!=''?'red':'#999'}}
+                                                        // check state the input, whether it is active then apply the class for floating label
+                                                        className={this.state.fieldfullnameActive ? "field-active" : ""}
+                                                        >Nama Lengkap
+                                                    </label>
                                                 </div>
                                                 <div>
-                                                    <input className="floating-label" className="floating-label" type="text" name="email" required=""  placeholder="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
+                                                    <input type="text" name="email" required=""  placeholder="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
                                                         onChange={this.handleChange} value={this.state.email}                                                     
                                                         onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
-                                                        value={this.state.inputValue}
-                                                        onFocus={this.activateField}
-                                                        onBlur={this.disableField}
-                                                        onChange={this.updateInputValue}
+                                                        value={this.state.inputemailValue}
+                                                        onFocus={this.activateemailField}
+                                                        onBlur={this.disableemailField}
+                                                        onChange={this.updateInputemailValue}
                                                         style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}
                                                     />
-                                                    <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', color:this.state.email!=''?'red':'#999'}}
-                                                    className={this.state.fieldActive ? "field-active" : ""}
-                                                    >Email</label>
+                                                    <label 
+                                                        style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', 
+                                                        color:this.state.email!=''?'red':'#999'}}
+                                                        // check state the input, whether it is active then apply the class for floating label
+                                                        className={this.state.fieldemailActive ? "field-active" : ""}
+                                                        >Email
+                                                    </label>
                                                 </div>
-                                                <div className="btn-block" 
-                                                    onClick={this.kirimhandle}
-                                                    style={{width:'', padding:'10px 0 15px 0', margin:'0'}}>
-                                                    <button type="button" class="btn btn-danger btn-block" style={{marginBottom:'10px', padding:'10px 0 10px 0', borderRadius:'0'}}>Kirim Silabus</button>
+                                                <div className="text-center btn-block" 
+                                                        onClick={this.kirimhandle}
+                                                        style={{width:'', padding:'10px 0 15px 0', margin:'0'}}>
+                                                        <button type="button" class="btn btn-danger btn-block btnsilabus">
+                                                            Kirim Silabus
+                                                        </button>
                                                 </div>
                                             </form>
                                         </div>
@@ -213,9 +178,72 @@ class Silabusnew extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </body>
-            <br/>
+                        <div class="row mb-10 d-md-none d-lg-none d-xl-none" style={{height: '100%', marginTop:'35px'}}>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
+                                <div className="text-center" style={{padding:'90px 0 0 0', backgroundColor:'#FFF'}}>
+                                    <h1 className="tertarik">
+                                        Tertarik dengan pembelajaran kami? 
+                                    </h1>
+                                    <p className="isiform">
+                                        Isi Form dibawah untuk mendapatkan silabus melalui email
+                                    </p>
+                                </div>
+                                <div className="d-flex justify-content-center">
+                                    <div class="daftar">
+                                        <div class="col-md-12">
+                                            <div class="persegislbs" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
+                                                <form>
+                                                    <div>
+                                                        <input className="floating-label" className="floating-label" type="text" name="fullname" required="" placeholder="" pattern="[A-Za-z}"
+                                                            onChange={this.handleChange} value={this.state.fullname} 
+                                                            onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
+                                                            value={this.state.inputValue}
+                                                            onFocus={this.activateField}
+                                                            onBlur={this.disableField}
+                                                            onChange={this.updateInputValue}
+                                                            style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}
+                                                        />
+                                                        <label 
+                                                            style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', 
+                                                            color:this.state.fullname!=''?'red':'#999'}}
+                                                            className={this.state.fieldActive ? "field-active" : ""}
+                                                            >Nama Lengkap
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <input className="floating-label" className="floating-label" type="text" name="email" required=""  placeholder="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
+                                                            onChange={this.handleChange} value={this.state.email}                                                     
+                                                            onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
+                                                            value={this.state.inputValue}
+                                                            onFocus={this.activateField}
+                                                            onBlur={this.disableField}
+                                                            onChange={this.updateInputValue}
+                                                            style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}
+                                                        />
+                                                        <label 
+                                                            style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', 
+                                                            color:this.state.email!=''?'red':'#999'}}
+                                                            className={this.state.fieldActive ? "field-active" : ""}
+                                                            >Email
+                                                        </label>
+                                                    </div>
+                                                    <div className="btn-block" 
+                                                        onClick={this.kirimhandle}
+                                                        style={{width:'', padding:'10px 0 15px 0', margin:'0'}}>
+                                                        <button 
+                                                            type="button" class="btn btn-danger btn-block btnsilabus">
+                                                            Kirim Silabus
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </body>
+                <br/>
             <br/>
         </div>  
         );
