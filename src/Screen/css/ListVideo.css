@@ -313,7 +313,7 @@
     background-color: #aa66cc; 
   }
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:810px){
   .scrollbar-cl {
     margin-left: 50px;
     float: left;

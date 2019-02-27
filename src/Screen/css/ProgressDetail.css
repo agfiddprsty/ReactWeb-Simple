@@ -28,7 +28,7 @@
         font-size: 20px;
     }
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:810px){
     .dv-pg-cl{
         width:250px;
         background-Color:#FF6567;

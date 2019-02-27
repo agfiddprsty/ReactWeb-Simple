@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './css/video.css';
 import COmment from './DiscussVideo'
 import './css/VideoPlayer.css'
 import Iframeresponsive from 'react-responsive-embed'
