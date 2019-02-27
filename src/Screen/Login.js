@@ -17,7 +17,7 @@ class Login extends Component {
             password:'',
             type: 'password',
             hidden: true,
-            background:""
+            background:"",
         }
     }
     handleChange(event) {
@@ -103,7 +103,6 @@ class Login extends Component {
                                         <form>
                                             <div>
                                                 <input type="text" name="email" required="" 
-                                                    onChange={this.handleChange} value={this.state.email} 
                                                     onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
                                                     style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',backgroundImage: 'url(' + this.state.background + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}/>
                                                 <label 
