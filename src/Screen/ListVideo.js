@@ -118,8 +118,8 @@ return (
             </div> 
             <div class="row" style={{height:"1px",width:"3440px"}}>
             <div style={{backgroundcolor:"black",height:"442px",width:"1470px"}} class="col-sm-4"><div className="bg-overlay">
-            <img src={lock} style={{height:"130px",marginLeft:"515px",marginTop:"150px",zIndex:"1",position:"absolute"}}></img>
-            <label style={{marginLeft:"515px",marginTop:"300px",color:"red",zIndex:"1",position:"absolute"}}>TEST</label>
+            <img src={lock} style={{height:"130px",marginLeft:"515px",marginTop:"130px",zIndex:"1",position:"absolute"}}></img>
+            <label style={{fontWeight:"bold",fontSize:"17px",fontFamily:"Montserrat",marginLeft:"290px",marginTop:"300px",color:"red",zIndex:"1",position:"absolute"}}> Konten Terkunci,silahkan selesaikan semua kuis di minggu 1</label>
             </div></div>
             </div>
             <div class="row text-center text-lg-left">
@@ -214,8 +214,6 @@ return (
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>4. Character</span>   
                     <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
-             {/* <div className="fas fa-lock locked"></div>
-                <div className="overlay-text">Konten Terkunci,silahkan selesaikan semua kuis di minggu 1</div>   */} */}
             </div>     
             </div>
             </div>
