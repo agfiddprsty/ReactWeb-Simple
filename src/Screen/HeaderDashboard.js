@@ -37,7 +37,7 @@ class Header extends Component {
             <header className="Hom-header bg-light">
                 <nav className="container navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light" style={{height: '64px'}}>
                   <a class="brand" href="/home">
-                    <img alt="" className="imgbran" src={dwicon}/>
+                    <img alt="" className="imgdw" src={dwicon}/>
                   </a> 
                   <ul class="navbar-nav ml-auto">
                     <li className="nav-item dropdown" style={{marginLeft: '200px', width: '75px'}}>
