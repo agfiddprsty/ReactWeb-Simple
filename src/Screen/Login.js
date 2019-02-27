@@ -17,6 +17,7 @@ class Login extends Component {
             password:'',
             type: 'password',
             hidden: true,
+            background:""
         }
     }
     handleChange(event) {
@@ -24,6 +25,13 @@ class Login extends Component {
     }
     handleEmailChange(e) {
         this.setState({email:e.target.value})
+        // console.log(this.state.email)
+        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+        if (pattern.test(this.state.email)) {
+            // alert('Silahkan masukkan email yang valid')
+            this.setState({background:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg"})
+        }
+        console.log(this.state.background)
     }
     handlePasswordChange(p) {
         this.setState({password:p.target.value})
@@ -94,10 +102,10 @@ class Login extends Component {
                                     <div class="persegilogin" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                         <form>
                                             <div>
-                                                <input class="ceklist" type="text" name="email" required="" 
+                                                <input type="text" name="email" required="" 
                                                     onChange={this.handleChange} value={this.state.email} 
                                                     onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',}}/>
+                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',backgroundImage: 'url(' + this.state.background + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}/>
                                                 <label 
                                                     style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'
                                                     }}>Email
