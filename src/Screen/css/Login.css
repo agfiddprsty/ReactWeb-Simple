@@ -1,13 +1,25 @@
 .text-title{
-    padding: '0 0 0 200px'
+  padding: '0 0 0 200px'
 }
 
-input {
-	outline: none;
-	border: none;
+.welcome {
+  color: #3b3b3b;
+  font-weight: 550;
+  font-family: 'Montserrat';
+  font-size: 2.15000000em;
+  display: block;
+  text-align: left;
+  margin-left: -10px;
 }
 
-.persegilog{
+.registe {
+  background-color: #FFF;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* box login */
+.persegilogin{
   position:absolute;
   top: 0%;
   left: 0%;
@@ -20,135 +32,110 @@ input {
   margin-bottom: 50px;
 }
 
-.persegilog input{
-  padding: 10px 0;
-  margin-bottom: 20px;
-  font-size: 12px;
-}
-
-.persegilog input:hover{
-  box-sizing: border-box;
-  box-shadow: none;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #999;
-}
-
-.persegilog :valid{
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: 20px 20px;
-}
-
-.persegilog input{
+.persegilogin input{
+  font-family:'Montserrat';
   width: 100%;
   box-sizing: border-box;
   box-shadow: none;
   outline: none;
   border: none;
-  border-bottom: 2px solid #999;
-  font-size: 12px;
+  border-bottom: 1px solid lightgrey;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* ceklist input form */
+.ceklist {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right 12px;
 }
 
 .persegilog input [type="submit"]
 {
-  font-family:'Open Sans, helvetica, Arial, sans serif';
+  font-family:'Montserrat';
   border-bottom: none;
-  cursor: pointer;
-  background: grey;
+  background: lightgrey;
   color: #fff;
   margin-bottom: 0;
-  text-transform: uppercase;
   left: 10px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
-.persegilog form div {
+.persegilogin form div {
   position: relative;
 }
-.persegilog form div label {
-  font-family:'Open Sans, helvetica, Arial, sans serif';
+.persegilogin form div label {
+  font-family:'Montserrat';
   position: absolute;
-  top: 10px;
+  top: -12px;
   left: 0;
   color: #999;
   transition: .5s;
   pointer-events: none;
-  font-size: 12px;
+  font-size: 14px;
 }
 
-.persegilog input:focus ~ label  
-{
-  font-family:'Open Sans, helvetica, Arial, sans serif';
-  top: -12px;
-  left: 0;
-  color: grey;
-  font-size: 12px;
-
-}
-
-.msk {
+/* button masuk */
+/* text */
+.masuk {
     background-color: #FFF;
     height: 100%;
     overflow: hidden;
 }
 
-.btnmsk {
+/* button */
+.btnmasuk {
   padding: 15px 170px 15px 170px;
   border-radius: 0; 
   box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
-  font-family: helvetica, Arial, sans serif;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+/* text under buttom */
+/* text 1 */
+.textpass{
+  color: #666666;
+  text-align: center;
+  font-size: 15px;
+  font-weight: -200;
+  font-family: 'Lato';
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* text 2 red text */
+.redtext {
+  color: red;
 }
 
 
 @media only screen and (max-width: 550px) {
-  .persegireg {
-      width: 450px;    
+  .persegilogin {
+      width: 450px;  
+      box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);  
   }
   .btnmsk {
       padding: 15px 150px 15px 150px;
       border-radius: 0; 
       box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
-      font-family: helvetica, Arial, sans serif;
+      font-family: 'Montserrat';
     }
 }
 
 
 @media only screen and (max-width: 470px) {
-  .persegilog {
-      width: 350px;    
+  .persegilogin {
+      width: 350px; 
+      box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);   
   }
   .btnmsk {
       padding: 15px 100px 15px 100px;
       border-radius: 0; 
       box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
-      font-family: helvetica, Arial, sans serif;
+      font-family: 'Montserrat';
     }
 }
-
-.isiform {
-  color: #666666;
-  font-weight: 325;
-  font-family: Open Sans, helvetica, Arial, sans serif;
-  font-size: 1.48500000em;
-  display: block;
-  margin: 33px 0 39px 0;
-}
-
-.field-icon {
-  float: right;
-  margin-left: -25px;
-  margin-top: 15px;
-  position: relative;
-  z-index: 1;
-}
-
-.input[type="text"] {
-  width: 100%;
-  border: 0;
-  padding: 20px 20px 20px 50px;
-  background: #FFF;
-  font-size: 12px;
-}
-

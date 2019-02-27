@@ -1,88 +1,128 @@
-.silabus {
-    background: linear-gradient( rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.39) ), url("https://blog.galvanize.com/wp-content/uploads/2018/03/20150708172005-coding-working-workspace-apple-macintosh.jpg");
-    width: 100%;
-    padding: 0;
-    background-size: cover;
-    height: 505px;
-    padding: 20px;
-  }
-  .tengah {
-    color: #fff;
-    font-size: 25px;
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-position: center;
-  }
-  .rgstr {
-    background-color: #FFF;
-    height: 100vh;
-    overflow: hidden;
-  }
-  .box{
-    position:absolute;
-    top: 0%;
-    left: 0%;
-    width: 500px;
-    background: #fff;
-    padding: 40px;
-    box-sizing: border-box;
-    border: 1px solid rgba(0,0,0,.1);
-    box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
-    margin-bottom: 50px;
-  }
-  
-  .box input{
-    padding: 10px 0;
-    margin-bottom: 30px;
-  }
-
-  .box input:hover{
-    box-sizing: border-box;
-    box-shadow: none;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #999;
-    font-size: 14px;
-  }
-  
-  .box input{
-    width: 100%;
-    box-sizing: border-box;
-    box-shadow: none;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #999;
-    font-size: 14px;
-  }
-  
-  .box form div {
-    position: relative;
-  }
-  .box form div label {
-    font-family:Montserrat;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    color: #999;
-    transition: none;
-    pointer-events: none;
-    font-size: 14px;
-  }
-
-  .box input:valid ~ label  {
-    font-family:Montserrat;
-    top: -12px;
-    left: 0;
-    color: grey;
-    font-size: 14px;
+.text-title {
+  padding: '0 0 0 200px'
 }
 
+.welcome {
+  color: #3b3b3b;
+  font-weight: 550;
+  font-family: 'Montserrat';
+  font-size: 2.15000000em;
+  display: block;
+  text-align: left;
+  margin-left: -10px;
+}
   
-  
-  
+.registr {
+  background-color: #FFF;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.input {
+	outline: none;
+	border: none;
+}
+
+/* box login */
+.persegireg{
+  position:absolute;
+  top: 0%;
+  left: 0%;
+  width: 500px;
+  background: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,.1);
+  box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
+  margin-bottom: 50px;
+}
+
+.persegireg input{
+  font-family:'Montserrat';
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* ceklist input form */
+.ceklist {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right 12px;
+}
+
+.persegireg input [type="submit"] {
+  font-family:'Montserrat';
+  border-bottom: none;
+  background: lightgrey;
+  color: #fff;
+  margin-bottom: 0;
+  left: 10px;
+  font-size: 14px;
+}
+
+.persegireg form div {
+  position: relative;
+}
+
+.persegireg form div label {
+  font-family:'Montserrat';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  color: #999;
+  transition: .5s;
+  pointer-events: none;
+  font-size: 14px;
+}
+
+/* button daftar */
+/* text */
+.masuk {
+  background-color: #FFF;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* button */
+.btndaftar {
+  padding: 15px 130px 15px 130px;
+  border-radius: 0; 
+  box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+
+@media only screen and (max-width: 550px) {
+  .persegireg {
+    box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);    
+    width: 450px;
+  }
+  .btndaftar {
+    border-radius: 0; 
+    padding: 15px 100px 15px 100px;
+    font-family: 'Montserrat';
+    box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
+    }
+  }
+@media only screen and (max-width: 470px) {
+  .persegireg {
+    box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);    
+    width: 350px;
+  }
+  .btndaftar {
+    border-radius: 0; 
+    padding: 15px 50px 15px 50px;
+    font-family: 'Montserrat';
+    box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
+      font-weight: 500;
+    }
+  }
