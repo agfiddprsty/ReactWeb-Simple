@@ -45,7 +45,7 @@ class Home extends Component {
                     <div>
                         <Header />
                     </div> 
-                    <body className="Hom-a" style={{marginTop: '80px', backgroundColor: "#fff", overflowX: 'hidden'}}>
+                    <body className="Hom-a" style={{marginTop: '65px', backgroundColor: "#fff", overflowX: 'hidden'}}>
                         <div>
                             <div>    
                                 <div className="jumbotron jumbotron-fluid gmbrlanding" style={{height: "600px"}}>
