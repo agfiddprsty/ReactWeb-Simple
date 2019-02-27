@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './css/ListVideo.css';
 import ply from './img/ply.png';
 // import { Link } from 'react-router-dom';
-import lvl from './img/Level.png'
+import lvl from './img/Level.png';
+import lock from './img/LockRed.png'
 class ListVideo extends Component {
 
 render() {
@@ -116,7 +117,9 @@ return (
                 </div>
             </div>
              <div class="row" style={{height:"1px",width:"3440px"}}>
-            <div style={{backgroundcolor:"black",height:"442px",width:"1470px"}} class="col-sm-4"><div className="bg-overlay"></div></div>
+            <div style={{backgroundcolor:"black",height:"442px",width:"1470px"}} class="col-sm-4"><div className="bg-overlay">
+            <img src={lock} style={{height:"70px",marginLeft:"250px",marginTop:"50px"}}></img>
+            </div></div>
             </div> 
             {/* <div className="bg-overlay">
             <div className="text">Konten Terkunci,silahkan selesaikan semua kuis di minggu 1</div>
