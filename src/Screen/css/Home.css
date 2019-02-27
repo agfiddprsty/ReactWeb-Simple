@@ -109,6 +109,8 @@
 .title {
     color: #fff;
     margin-top: 50px;
+    font-weight: 600;
+    font-size: 30px;
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
@@ -447,12 +449,16 @@ section#box-profile{
     margin-left: 40px;
 }
 
+.mrgnl{
+    margin-left: 195px;
+}
+
 .mrgnlf{
-    margin-left: 10px;
+    margin-left: 180px;
 }
 
 .mrgnrght{
-    margin-left: 110px;
+    margin-left: 90px;
 }
 
 .mrgnrghts{
@@ -571,8 +577,11 @@ section#box-profile{
     box-shadow: 0 0 50px 1px rgba(199, 198, 198, 0.9);
     padding: 30px 30px 30px 30px;
     width: 410px;
+    border-radius: 5px;
+    position: relative;
+    color: #fff;
     background-color: #fff;
-    /* z-index: 5; */
+    z-index: 1;
 }
 
 .crtacc {
@@ -586,14 +595,20 @@ section#box-profile{
     box-shadow: 0 0 50px 1px rgba(199, 198, 198, 0.9);
     padding: 0px 30px 30px 30px;
     width: 410px;
+    position: relative;
+    color: #fff;
+    border-radius: 5px;
     background-color: #fff;
+    z-index: 1;
 }
 
-/* .kotakananduo {
-    margin: -180px 0 0 50px;
+.kotakananduo {
+    margin: -190px 0 0 20px;
     box-shadow: 0 0 50px 1px rgba(199, 198, 198, 0.9);
-    height: 195px;
-} */
+    height: 210px;
+    width: 410px;
+    border-radius: 5px;
+}
 
 .rekan{
     width: 280px;
@@ -1059,6 +1074,14 @@ section#box-profile{
         padding: 0px 0px 0px 30px;
         /* margin-right: 20px;     */
     }
+
+    .kotakananduo {
+        margin: -190px 0 0 145px;
+        box-shadow: 0 0 50px 1px rgba(199, 198, 198, 0.9);
+        height: 210px;
+        width: 410px;
+        border-radius: 5px;
+    }
 }
 
 
@@ -1202,6 +1225,14 @@ section#box-profile{
         /* padding: 0 30px 0 30px; */
     }
 
+    .kotakananduo {
+        margin: -190px 0 0 55px;
+        box-shadow: 0 0 50px 1px rgba(199, 198, 198, 0.9);
+        height: 210px;
+        width: 410px;
+        border-radius: 5px;
+    }
+
   }
 
 @media only screen and (max-width: 657px) {
@@ -1233,6 +1264,13 @@ section#box-profile{
     .divbtnsoo {
         padding: 0px;
     }
+    .kotakananduo {
+        margin: -190px auto auto 65px;
+        box-shadow: 0 0 50px 1px rgba(199, 198, 198, 0.9);
+        height: 210px;
+        width: 410px;
+        border-radius: 5px;
+    }
 }
 
 
@@ -1247,6 +1285,14 @@ section#box-profile{
 
     .tanya {
         margin-top: -180px;
+    }
+
+    .kotakananduo {
+        margin: -190px auto auto 60px;
+        box-shadow: 0 0 50px 1px rgba(199, 198, 198, 0.9);
+        height: 210px;
+        width: 410px;
+        border-radius: 5px;
     }
 }
 
@@ -1274,6 +1320,14 @@ section#box-profile{
         /* padding: 0 30px 0 30px; */
         margin-bottom: 50px;
     }
+
+    .kotakananduo {
+        margin: -190px auto auto 40px;
+        box-shadow: 0 0 50px 1px rgba(199, 198, 198, 0.9);
+        height: 210px;
+        width: 410px;
+        border-radius: 5px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1289,6 +1343,14 @@ section#box-profile{
         width: 100%;
         background-size: cover;
         padding: 20px;
+    }
+
+    .kotakananduo {
+        margin: -250px auto auto 60px;
+        box-shadow: 0 0 50px 1px rgba(199, 198, 198, 0.9);
+        height: 270px;
+        width: 310px;
+        border-radius: 5px;
     }
 
     .kotakiri{
@@ -1333,6 +1395,7 @@ section#box-profile{
         display: flex;
         flex-grow: 1;
         flex-shrink: 1;
+        font-size: 25px;
         flex-basis: 0%;
         flex-direction: column;
         justify-content: center;
@@ -1413,6 +1476,14 @@ section#box-profile{
         width: 180px;
     }
 
+    .kotakananduo {
+        margin: -250px auto auto 45px;
+        box-shadow: 0 0 50px 1px rgba(199, 198, 198, 0.9);
+        height: 270px;
+        width: 310px;
+        border-radius: 5px;
+    }
+
     /* .kotakananduo {
         margin: -220px 0 0 10px;
         box-shadow: 4px 4px 7px 0px rgba(136, 136, 136, 0.9);
@@ -1436,6 +1507,14 @@ section#box-profile{
     .spatech{
         width: 150px;
         margin: 0px 20px 0px 20px;
+    }
+
+    .kotakananduo {
+        margin: -250px auto auto 30px;
+        box-shadow: 0 0 50px 1px rgba(199, 198, 198, 0.9);
+        height: 270px;
+        width: 310px;
+        border-radius: 5px;
     }
 }
 
@@ -1524,6 +1603,20 @@ section#box-profile{
     .spatech{
         width: 130px;
     }
+
+    .kotakananduo {
+        margin: -250px auto auto 10px;
+        box-shadow: 0 0 50px 1px rgba(199, 198, 198, 0.9);
+        height: 270px;
+        width: 310px;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 401px){
+    .kotakananduo{
+        margin: -250px auto auto 20px; 
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1549,6 +1642,10 @@ section#box-profile{
 
     .limaratus{
         font-size: 22px;
+    }
+
+    .title{
+        font-size: 23px;
     }
 }
 

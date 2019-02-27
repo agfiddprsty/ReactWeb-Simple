@@ -1,12 +1,9 @@
 import React from 'react';
-import { render } from 'react-dom';
 import './css/Hackerrank.css';
 import Header from './HeaderSilabus';
 import Footer from './Footer';
-import Compiler from './Compiler';
-import { Card, CardImg, CardDeck,
-  CardBody, Progress } from 'reactstrap';   
-import { ListGroup, ListGroupItem, Fade } from 'reactstrap';
+import Compiler from './Compiler';  
+import { ListGroup, ListGroupItem } from 'reactstrap';
 
 class Hackerrank extends React.Component {
   render() {
