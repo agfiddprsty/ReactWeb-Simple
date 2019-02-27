@@ -443,7 +443,7 @@ section#box-profile{
 }
 
 .mrgnrght{
-    margin-left: 120px;
+    margin-left: 110px;
 }
 
 .mrgnrghts{
@@ -461,7 +461,7 @@ section#box-profile{
 .bootcamp-steps {
     padding-bottom: 188px;
     height: auto;
-    padding: 40px;
+    padding: 40px 0px 40px 0px;
     position: relative;
     margin-top: 40px;
 }
@@ -549,7 +549,7 @@ section#box-profile{
 
 .bootcamp-step-list {
     width: 55%;
-    padding: 0px 0 20px 50px;
+    padding: 0px 0 20px 0px;
     color: #3D3F41;
     margin: auto;
 }
@@ -584,46 +584,46 @@ section#box-profile{
 } */
 
 .rekan{
-    width: 270px;
-    padding: 0px 20px 0px 20px;
+    width: 280px;
+    padding: 0px 0px 0px 50px;
 }
 
 .rekantele{
-    width: 250px;
-    padding: 0px 20px 0px 20px;
+    width: 300px;
+    padding: 0px 0px 0px 80px;
 }
 
 .rekantrue{
-    width: 250px;
+    width: 300px;
     margin-left: 20px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 45px 0px 45px;
 }
 
 .rekansir{
-    width: 270px;
-    padding: 0px 20px 0px 20px;
+    width: 300px;
+    padding: 0px 50px 0px 0px;
 }
 
 .rekanket{
-    width: 270px;
-    padding: 0px 20px 0px 20px;
+    width: 250px;
+    margin-right: 40px;
 }
 
 .rekantoped{
-    width: 240px;
-    padding: 0px 20px 0px 20px;
+    width: 300px;
+    padding: 0px 40px 0px 40px;
 }
 
 .rekanema{
-    width: 240px;
-    padding: 0px 20px 0px 20px;
-    margin-left: 50px;
+    width: 250px;
+    padding: 0px 30px 0px 0px;
+    /* margin-left: 50px; */
 }
 
 .rekanpro{
-    width: 279px;
+    width: 300px;
     margin-top: 15px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px 0px 10px;
 }
 
 .rekanclp{
@@ -633,26 +633,27 @@ section#box-profile{
 }
 
 .rekanrek {
-    width: 250px;
-    margin: 60px 5px 0 5px;;
-    padding: 0px 20px 0px 30px;
+    width: 280px;
+    margin-top: 65px;
+    padding: 0px 0px 0px 60px;
 }
 
 .rekansch{
     width: 250px;
-    padding: 0px 20px 0px 20px;
+    margin-top: 10px;
+    padding: 0px 40px 0px 0px;
 }
 
 .rekanjea{
     width: 300px;
-    padding: 0px 20px 0px 20px;
-    margin: 0 5px;
+    padding: 0px 0px 0px 40px;
+    /* margin: 0 5px; */
 }
 
 .rekanbgdt{
-    width: 310px;
-    padding: 0px 20px 0px 20px;
-    margin-right: 20px;    
+    width: 300px;
+    padding: 0px 0px 0px 30px;
+    /* margin-right: 20px;     */
 }
 
 .zerone {
@@ -726,7 +727,6 @@ section#box-profile{
 }
 
 .icowhy{
-    padding: 0 60px 0 60px;
     margin-bottom: 80px;
     font-weight: 600;
 }
@@ -823,7 +823,6 @@ section#box-profile{
     flex-shrink: 1;
     flex-basis: 0%;
     justify-content: center;
-    margin: 0 50px 0 50px;
 }
 
 .rekanusaha {
@@ -834,7 +833,7 @@ section#box-profile{
 }
 
 .rekanus{
-    margin: 0 25px 50px 25px;
+    margin: 0 -10px 50px -10px;
     flex-wrap: wrap;
     display: flex;
     flex-grow: 1;
@@ -852,10 +851,11 @@ section#box-profile{
 }
 
 .tunggu {
-    padding: 40px 90px 20px 90px; 
-    lign-items: center; 
+    padding: 40px 0px 20px 0px; 
+    align-items: center; 
     color: #fff;
     font-size: 30px; 
+    margin-left: 15px;
     font-weight: 600;
 }
 
