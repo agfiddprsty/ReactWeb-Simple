@@ -115,7 +115,7 @@ return (
                 
                 </div>
             </div>
-             <div class="row" style={{height:"1px",width:"3425px"}}>
+             <div class="row" style={{height:"1px",width:"3440px"}}>
             <div style={{backgroundcolor:"black",height:"442px",width:"1470px"}} class="col-sm-4"><div className="bg-overlay"></div></div>
             </div> 
             {/* <div className="bg-overlay">
