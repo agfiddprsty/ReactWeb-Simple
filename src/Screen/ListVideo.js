@@ -115,7 +115,7 @@ return (
                 
                 </div>
             </div>
-             <div class="row" style={{height:"1px",width:"3440px"}}>
+             <div class="row" style={{height:"1px",width:"3425px"}}>
             <div style={{backgroundcolor:"black",height:"442px",width:"1470px"}} class="col-sm-4"><div className="bg-overlay"></div></div>
             </div> 
             {/* <div className="bg-overlay">
@@ -213,10 +213,9 @@ return (
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>4. Character</span>   
                     <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
-            {/* <div className="fas fa-lock locked"></div>
-                <div className="overlay-text">Konten Terkunci,silahkan selesaikan semua kuis di minggu 1</div>   */}
-            </div>
-               
+             {/* <div className="fas fa-lock locked"></div>
+                <div className="overlay-text">Konten Terkunci,silahkan selesaikan semua kuis di minggu 1</div>   */} */}
+            </div>     
             </div>
             </div>
                     <br/>
