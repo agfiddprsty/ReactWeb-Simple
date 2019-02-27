@@ -415,8 +415,17 @@ section#box-profile{
     margin-left: -3%;
 }
 
+.spatechgit{
+    margin: 0px 5px 0px 50px;
+}
+
+.spatechnod{
+    margin: 0px 50px 0px 5px;
+}
+
 .spatech{
-    margin: 0px 20px 0px 20px;
+    width: 200px;
+    /* margin: 0px 50px 0px 50px; */
 }
 
 .homevideo {
@@ -1431,6 +1440,11 @@ section#box-profile{
     .limaratus{
         font-size: 25px;
     }
+
+    .spatech{
+        width: 150px;
+        margin: 0px 20px 0px 20px;
+    }
 }
 
 @media only screen and (max-width: 404px){
@@ -1513,6 +1527,10 @@ section#box-profile{
         padding: 0px;
         margin: 0px 10px 0px 10px;
         width: 150px;
+    }
+
+    .spatech{
+        width: 130px;
     }
 }
 

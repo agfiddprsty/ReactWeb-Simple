@@ -276,11 +276,11 @@ class Home extends Component {
                                         <p className="text-center tech">Teknologi</p>
                                     </div>
                                     <div className="row text-center logi">
-                                        <span className="d-lg d-md spatech" title="Node.Js"><img className="icotechnod" alt="" src={nodejs}/></span>
-                                        <span className="d-lg d-md spatech" title="Javascript"><img className="icotechjs" alt="" src={js}/></span>
-                                        <span className="d-lg d-md spatech" title="React"><img className="icotech" alt="" src={icoreact}/></span>
-                                        <span className="d-lg d-md spatech" title="MySQL"><img className="icotechsql" alt="" src={icomysql}/></span>
-                                        <span className="d-lg d-md spatech" title="GIT"><img className="icotechgit" alt="" src={icogit}/></span>
+                                        <span className="col-lg col-md spatech" title="Node.Js"><img className="icotechnod" alt="" src={nodejs}/></span>
+                                        <span className="col-lg col-md spatech" title="Javascript"><img className="icotechjs" alt="" src={js}/></span>
+                                        <span className="col-lg col-md spatech" title="React"><img className="icotech" alt="" src={icoreact}/></span>
+                                        <span className="col-lg col-md spatech" title="MySQL"><img className="icotechsql" alt="" src={icomysql}/></span>
+                                        <span className="col-lg col-md spatech" title="GIT"><img className="icotechgit" alt="" src={icogit}/></span>
                                     </div>
                                 </div>
                                 <div>
