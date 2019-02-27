@@ -125,7 +125,7 @@ return (
             <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-6">
             
-                    <div className="d-flex justify-content-center listA">
+                    <div className="d-flex justify-content-center lockedctn">
                         <a class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
                             <br/>
@@ -137,7 +137,7 @@ return (
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
-                    <div className="d-flex justify-content-center listB">
+                    <div className="d-flex justify-content-center lockedctn">
                         <a class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
                             <br/>
@@ -149,7 +149,7 @@ return (
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
-                    <div className="d-flex justify-content-center listA">
+                    <div className="d-flex justify-content-center lockedctn">
                         <a class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
                             <br/>
@@ -161,7 +161,7 @@ return (
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
-                    <div className="d-flex justify-content-center listB">
+                    <div className="d-flex justify-content-center lockedctn">
                         <a class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                         </a>
@@ -172,7 +172,7 @@ return (
                     </a>
                 </div>  
                 <div class="col-lg-3 col-md-4 col-6">
-                    <div className="d-flex justify-content-center listA">
+                    <div className="d-flex justify-content-center lockedctn">
                         <a class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                         </a>
@@ -183,7 +183,7 @@ return (
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
-                    <div className="d-flex justify-content-center listB">
+                    <div className="d-flex justify-content-center lockedctn">
                         <a class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                         </a>
@@ -194,7 +194,7 @@ return (
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
-                    <div className="d-flex justify-content-center listA">
+                    <div className="d-flex justify-content-center lockedctn">
                         <a class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                         </a>
@@ -205,7 +205,7 @@ return (
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
-                    <div className="d-flex justify-content-center listB">
+                    <div className="d-flex justify-content-center lockedctn">
                         <a class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                         </a>
