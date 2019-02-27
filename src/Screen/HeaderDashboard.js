@@ -35,9 +35,9 @@ class Header extends Component {
         <div className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
           <div className="headdash fixed-top bg-light">
             <header className="Hom-header bg-light">
-                <nav className="container navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light" style={{height: '75px'}}>
+                <nav className="container navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light" style={{height: '64px'}}>
                   <a class="brand" href="/home">
-                    <img alt="" className="imgbran" src={dwicon}/>
+                    <img alt="" className="imgdw" src={dwicon}/>
                   </a> 
                   <ul class="navbar-nav ml-auto">
                     <li className="nav-item dropdown" style={{marginLeft: '200px', width: '75px'}}>

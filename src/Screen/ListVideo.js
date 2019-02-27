@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './css/ListVideo.css';
 import ply from './img/ply.png';
 // import { Link } from 'react-router-dom';
-import lvl from './img/Level.png'
+import lvl from './img/Level.png';
+import lock from './img/LockRed.png'
 class ListVideo extends Component {
 
 render() {
@@ -114,16 +115,16 @@ return (
                  Konten Terkunci,silahkan selesaikan semua kuis di minggu 1
                 
                 </div>
-            </div>
-             <div class="row" style={{height:"1px",width:"3440px"}}>
-            <div style={{backgroundcolor:"black",height:"442px",width:"1470px"}} class="col-sm-4"><div className="bg-overlay"></div></div>
             </div> 
-            {/* <div className="bg-overlay">
-            <div className="text">Konten Terkunci,silahkan selesaikan semua kuis di minggu 1</div>
-            </div> */}
-            {/* <span  style={{marginTop:"-300%",color:"red"}} class="fas fa-lock"></span> Konten Terkunci, selesaikan semua kuis di Minggu 1 */}
+            <div class="row" style={{height:"1px",width:"3440px"}}>
+            <div style={{backgroundcolor:"black",height:"442px",width:"1470px"}} class="col-sm-4"><div className="bg-overlay">
+            <img src={lock} style={{height:"130px",marginLeft:"515px",marginTop:"150px",zIndex:"1",position:"absolute"}}></img>
+            <label style={{marginLeft:"515px",marginTop:"300px",color:"red",zIndex:"1",position:"absolute"}}>TEST</label>
+            </div></div>
+            </div>
             <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-6">
+            
                     <div className="d-flex justify-content-center listA">
                         <a class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
@@ -213,10 +214,9 @@ return (
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>4. Character</span>   
                     <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
-            {/* <div className="fas fa-lock locked"></div>
-                <div className="overlay-text">Konten Terkunci,silahkan selesaikan semua kuis di minggu 1</div>   */}
-            </div>
-               
+             {/* <div className="fas fa-lock locked"></div>
+                <div className="overlay-text">Konten Terkunci,silahkan selesaikan semua kuis di minggu 1</div>   */} */}
+            </div>     
             </div>
             </div>
                     <br/>
