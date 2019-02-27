@@ -8,15 +8,15 @@ class Quiz extends Component{
                 <h4>To-dos(0/3)</h4>
                     <div class="row">
                         <div class="col-sm-4">
-                            <ul class="nav flex-column nav-pills" style={{backgroundColor:"#FFF",width:"400px"}}>
+                            <ul class="nav flex-column nav-pills qz-ul-gd qz-ul-cl">
                                 <li class="nav-item" >
-                                    <a class="nav-link active fa fa-square-o " style={{height:"50px"}} href="#vtab1" data-toggle="tab"> Membuat Component Dengan Gelap<i className="fa fa-check-circle" style={{marginLeft:"50px",borderRadius:"10px",color:"#4CAF50"}}></i></a>
+                                    <a class="nav-link active fa fa-square-o qz-tb-gd qz-tb-cl" href="#vtab1" data-toggle="tab"> Membuat Component Dengan Gelap<i className="fa fa-check-circle" style={{marginLeft:"50px",borderRadius:"10px",color:"#4CAF50"}}></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link fa fa-square-o " style={{height:"50px"}} href="#vtab2" data-toggle="tab"> Membuat Component Dengan Gelap<i className="fa fa-check-circle" style={{marginLeft:"50px",borderRadius:"10px",color:"#4CAF50"}}></i></a>
+                                    <a class="nav-link fa fa-square-o qz-tb-gd qz-tb-cl" href="#vtab2" data-toggle="tab"> Membuat Component Dengan Gelap<i className="fa fa-check-circle" style={{marginLeft:"50px",borderRadius:"10px",color:"#4CAF50"}}></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link fa fa-square-o " style={{height:"50px"}} href="#vtab3" data-toggle="tab"> Membuat Component Dengan Terang<i class="fa fa-times-circle "style={{marginLeft:"40px",borderRadius:"10px",color:"#FF2324"}}></i></a>
+                                    <a class="nav-link fa fa-square-o qz-tb-gd qz-tb-cl" href="#vtab3" data-toggle="tab"> Membuat Component Dengan Terang<i class="fa fa-times-circle "style={{marginLeft:"40px",borderRadius:"10px",color:"#FF2324"}}></i></a>
                                 </li>
                             </ul>
                         </div>

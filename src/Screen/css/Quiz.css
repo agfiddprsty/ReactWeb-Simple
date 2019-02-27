@@ -14,7 +14,7 @@
     /* color: aqua; */
     background-color: #BACFFF;
   }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1920px) {
       .dv-out-gd{
         margin-Left:30px;
         margin-Top:-10px;
@@ -60,5 +60,21 @@
       }
       #nav-tabs-wrapper {
         display: block!important;
+      }
+      .qz-tb-gd{
+        height:50px;
+      }
+      .qz-ul-gd{
+        background-Color:#FFF;
+        width:400px;
+      }
+  }
+  @media only screen and (max-width:810px){
+      .qz-ul-cl{
+        background-Color:#FFF;
+        width:200px;
+      }
+      .qz-tb-cl{
+        height:70px;
       }
   }
