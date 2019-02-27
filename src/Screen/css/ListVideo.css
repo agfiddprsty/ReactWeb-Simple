@@ -21,7 +21,7 @@
 
 .overlay-text{
   position: fixed;
-  display:block;
+  display:inline-block;
   top: 50%;
   left: 50%;
   font-size: 20px;
