@@ -88,7 +88,7 @@ class Home extends Component {
                                                 <div class="row mb-5 d-none d-lg-flex d-xl-flex">
                                                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                                         <p class="bootcamp-step-list">
-                                                            <img alt="" className="img-fluid pull-right onefivzer" src={daftar}/>
+                                                            <img alt="" className="img-fluid mrgnl onefivzer" src={daftar}/>
                                                         </p>
                                                     </div>
                                                     <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mrgnrght">
@@ -173,7 +173,7 @@ class Home extends Component {
                                                 <div class="row mb-5 d-none d-lg-flex d-xl-flex">
                                                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                                         <p class="bootcamp-step-list">
-                                                            <img alt="" className="img-fluid pull-right onefivzerpzl" src={quiz}/>
+                                                            <img alt="" className="img-fluid mrgnlf onefivzerpzl" src={quiz}/>
                                                         </p>
                                                     </div>
                                                     <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mrgnrght">
