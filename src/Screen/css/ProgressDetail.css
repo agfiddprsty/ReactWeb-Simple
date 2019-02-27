@@ -10,8 +10,8 @@
         color:#FFF;
         margin-Left:20px;
         font-size: 20px;
-        font-family: 'Montserrat';
-        font-weight: 400;
+        font-weight: 600;
+        font-family: 'Nunito',sans-serif;
     }
     .pg-pg-gd{
         width:100;
@@ -20,9 +20,12 @@
         border-radius: 10px;
     }
     .pg-lb-gd{
-        margin-Left:250px;
-        margin-Top:10px;
+        font-weight: 600;
+        font-family: 'Nunito',sans-serif;
+        margin-Left:230px;
+        margin-Top:5px;
         color:#FFF;
+        font-size: 20px;
     }
 }
 @media only screen and (max-width:600px){

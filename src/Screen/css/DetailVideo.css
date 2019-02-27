@@ -34,12 +34,16 @@
         border-Color:#E7E7E7;
         background-Color:transparent;
         width:650px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
     }
     .input-rpl-gd{
         border-Style:none none solid none;
         border-Color:#E7E7E7;
         background-Color:transparent;
         width:580px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
     }
     .dv-input-cmt-gd{
         margin-Top:20px
@@ -83,6 +87,8 @@
         border-Color:#E7E7E7;
         background-Color:transparent;
         width:200px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
     }
     .dv-input-cmt-cl{
         margin-Top:-30px;

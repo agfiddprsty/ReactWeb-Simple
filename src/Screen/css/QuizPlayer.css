@@ -1,6 +1,6 @@
 @media only screen and (max-width:1920px){
     .qp-dv-pg{
-        background-Color:#FFAD4E;
+        background-Color:#FFAE40;
         width:500px;
         height:110px;
         margin-Left:-15px;
@@ -26,9 +26,9 @@
     .h6-detail-gd{
         width:800px;
         margin-Left:-30px;
-        font-Weight:600;
-        font-family: 'Nunito';
-        color: #878787;    
+        font-Weight:500;
+        font-family: 'Montserrat';
+        color: #545454;    
     }
     .h5-pet-gd{
         font-family: 'Montserrat';

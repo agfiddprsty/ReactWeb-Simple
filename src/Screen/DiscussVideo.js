@@ -49,7 +49,7 @@ class DiscussVideo extends Component{
                             <div class="panel-body sh-cmt-gd sh-cmt-cl">
                                 <div class="row" >
                                 </div>
-                                <label style={{fontFamily:"Nunito",fontWeight:"600",color:"#878787"}} >How To Fast Learning ?</label>
+                                <label style={{fontFamily:"Montserrat",fontWeight:"500",color:"#545454"}} >How To Fast Learning ?</label>
                                 <div className="row">
                                     <div style={{marginLeft:"15px",marginRight:"10px"}}>
                                         <i className="fa fa-thumbs-up"></i>
@@ -92,7 +92,7 @@ class DiscussVideo extends Component{
                             <div class="panel-body sh-cmt-gd sh-cmt-cl">
                                 <div class="row" >
                                 </div>
-                                <label  style={{fontFamily:"Nunito",fontWeight:"600",color:"#878787"}} >Just Try Anytime :v</label>
+                                <label  style={{fontFamily:"Montserrat",fontWeight:"500",color:"#545454"}} >Just Try Anytime :v</label>
                                 <div className="row">
                                     <div style={{marginLeft:"15px",marginRight:"10px"}}>
                                         <i className="fa fa-thumbs-up"></i>
