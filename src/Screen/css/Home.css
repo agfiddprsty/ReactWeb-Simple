@@ -571,7 +571,7 @@ section#box-profile{
     padding: 30px 30px 30px 30px;
     width: 410px;
     background-color: #fff;
-    z-index: 5;
+    /* z-index: 5; */
 }
 
 .crtacc {
