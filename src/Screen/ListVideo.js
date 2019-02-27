@@ -110,11 +110,11 @@ return (
                 <h2 className="h2week2" >Minggu 2</h2>
                 <br/>
                 
-                <div stlye={{width:"20px"}} class="alert alert-danger" role="alert">
+                {/* <div stlye={{width:"20px"}} class="alert alert-danger" role="alert">
                 <div style={{marginRight:"10px"}} className="fas fa-lock"></div>
                  Konten Terkunci,silahkan selesaikan semua kuis di minggu 1
                 
-                </div>
+                </div> */}
             </div> 
             <div class="row" style={{height:"1px",width:"3440px"}}>
             <div style={{backgroundcolor:"black",height:"442px",width:"1470px"}} class="col-sm-4"><div className="bg-overlay">
