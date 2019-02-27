@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <div className="headland fixed-top bg-light">
         <header className="Hom-header bg-light">
-            <nav className="container navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light" style={{height:"80px"}}>
+            <nav className="container navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light" style={{height:"65px"}}>
               <a class="brand" href="/home">
               <img alt="" className="img-fluid imgbran" src={dwicon}/>
               </a>

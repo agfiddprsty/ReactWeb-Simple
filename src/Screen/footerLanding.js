@@ -5,9 +5,9 @@ import dwhite from './img/dwhite.png';
 class Footer extends Component {
   render() {
     return (
-      <div>
-        <footer className="landingage">
-          <div>
+      <div className="landingage">
+        <footer className="container">
+          <div className="container">
             <div className="row" style={{borderBottom: '1px solid #ebebeb', paddingBottom: '50px'}}>
                 <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6" style={{paddingBottom: '20px'}}>
                     <img alt="" src={dwhite} className="dwhite"/>

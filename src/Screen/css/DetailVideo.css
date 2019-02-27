@@ -18,7 +18,7 @@
         margin-Top:70px;
     }
     .hr-dt-gd{
-        width:300px;
+        width:290px;
     }
     .h5-tn-gd{
         font-Weight:600;
@@ -68,7 +68,7 @@
         overflow-x: hidden;
     }
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:810px){
     .dt-body-cl{
         border-Color:#E7E7E7;
     }

@@ -102,6 +102,10 @@
     background-color: #FF4141;
 }
 
+.divbtnsoo {
+    padding: 20px 0px 20px 100px;
+}
+
 .title {
     color: #fff;
     margin-top: 50px;
@@ -411,6 +415,11 @@ section#box-profile{
     margin-left: -3%;
 }
 
+.spatech{
+    width: 200px;
+    /* margin: 0px 50px 0px 50px; */
+}
+
 .homevideo {
     display: flex;
     flex-basis: auto;
@@ -443,7 +452,7 @@ section#box-profile{
 }
 
 .mrgnrght{
-    margin-left: 120px;
+    margin-left: 110px;
 }
 
 .mrgnrghts{
@@ -461,7 +470,7 @@ section#box-profile{
 .bootcamp-steps {
     padding-bottom: 188px;
     height: auto;
-    padding: 40px;
+    padding: 40px 0px 40px 0px;
     position: relative;
     margin-top: 40px;
 }
@@ -549,7 +558,7 @@ section#box-profile{
 
 .bootcamp-step-list {
     width: 55%;
-    padding: 0px 0 20px 50px;
+    padding: 0px 0 20px 0px;
     color: #3D3F41;
     margin: auto;
 }
@@ -559,9 +568,11 @@ section#box-profile{
 }
 
 .kotakanan{
-    box-shadow: 0 0 7px 2px rgba(136, 136, 136, 0.9);
+    box-shadow: 0 0 50px 1px rgba(199, 198, 198, 0.9);
     padding: 30px 30px 30px 30px;
     width: 410px;
+    background-color: #fff;
+    /* z-index: 5; */
 }
 
 .crtacc {
@@ -572,58 +583,59 @@ section#box-profile{
 }
 
 .kotakiri{
-    box-shadow: 0 0 7px 2px rgba(136, 136, 136, 0.9);
+    box-shadow: 0 0 50px 1px rgba(199, 198, 198, 0.9);
     padding: 0px 30px 30px 30px;
     width: 410px;
+    background-color: #fff;
 }
 
 /* .kotakananduo {
     margin: -180px 0 0 50px;
-    box-shadow: 4px 4px 7px 0px rgba(136, 136, 136, 0.9);
+    box-shadow: 0 0 50px 1px rgba(199, 198, 198, 0.9);
     height: 195px;
 } */
 
 .rekan{
-    width: 270px;
-    padding: 0px 20px 0px 20px;
+    width: 280px;
+    padding: 0px 0px 0px 50px;
 }
 
 .rekantele{
-    width: 250px;
-    padding: 0px 20px 0px 20px;
+    width: 300px;
+    padding: 0px 0px 0px 80px;
 }
 
 .rekantrue{
-    width: 250px;
+    width: 300px;
     margin-left: 20px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 45px 0px 45px;
 }
 
 .rekansir{
-    width: 270px;
-    padding: 0px 20px 0px 20px;
+    width: 300px;
+    padding: 0px 50px 0px 0px;
 }
 
 .rekanket{
-    width: 270px;
-    padding: 0px 20px 0px 20px;
+    width: 250px;
+    margin-right: 40px;
 }
 
 .rekantoped{
-    width: 240px;
-    padding: 0px 20px 0px 20px;
+    width: 300px;
+    padding: 0px 40px 0px 40px;
 }
 
 .rekanema{
-    width: 240px;
-    padding: 0px 20px 0px 20px;
-    margin-left: 50px;
+    width: 250px;
+    padding: 0px 30px 0px 0px;
+    /* margin-left: 50px; */
 }
 
 .rekanpro{
-    width: 279px;
+    width: 300px;
     margin-top: 15px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px 0px 10px;
 }
 
 .rekanclp{
@@ -633,26 +645,27 @@ section#box-profile{
 }
 
 .rekanrek {
-    width: 250px;
-    margin: 60px 5px 0 5px;;
-    padding: 0px 20px 0px 30px;
+    width: 280px;
+    margin-top: 65px;
+    padding: 0px 0px 0px 60px;
 }
 
 .rekansch{
     width: 250px;
-    padding: 0px 20px 0px 20px;
+    margin-top: 10px;
+    padding: 0px 40px 0px 0px;
 }
 
 .rekanjea{
     width: 300px;
-    padding: 0px 20px 0px 20px;
-    margin: 0 5px;
+    padding: 0px 0px 0px 40px;
+    /* margin: 0 5px; */
 }
 
 .rekanbgdt{
-    width: 310px;
-    padding: 0px 20px 0px 20px;
-    margin-right: 20px;    
+    width: 300px;
+    padding: 0px 0px 0px 30px;
+    /* margin-right: 20px;     */
 }
 
 .zerone {
@@ -726,7 +739,6 @@ section#box-profile{
 }
 
 .icowhy{
-    padding: 0 60px 0 60px;
     margin-bottom: 80px;
     font-weight: 600;
 }
@@ -782,6 +794,10 @@ section#box-profile{
     margin-bottom: 50px;
 }
 
+.divico{
+    padding: 0px 5px 0px 5px;
+}
+
 .icotech {
     /* width: 270px; */
     margin-bottom: 50px;
@@ -823,7 +839,6 @@ section#box-profile{
     flex-shrink: 1;
     flex-basis: 0%;
     justify-content: center;
-    margin: 0 50px 0 50px;
 }
 
 .rekanusaha {
@@ -834,7 +849,7 @@ section#box-profile{
 }
 
 .rekanus{
-    margin: 0 25px 50px 25px;
+    margin: 0 -10px 50px -10px;
     flex-wrap: wrap;
     display: flex;
     flex-grow: 1;
@@ -852,10 +867,11 @@ section#box-profile{
 }
 
 .tunggu {
-    padding: 40px 90px 20px 90px; 
-    lign-items: center; 
+    padding: 40px 0px 20px 0px; 
+    align-items: center; 
     color: #fff;
     font-size: 30px; 
+    margin-left: 15px;
     font-weight: 600;
 }
 
@@ -901,39 +917,11 @@ section#box-profile{
 }
 
 
-@media only screen and (max-width: 1050px) {
-    .title {
-        color: #fff;
-        margin-top: 50px;
-        display: flex;
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 0%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 50px 150px 0 150px;
-        height: 100%;
-        background-position: top center;
+@media only screen and (max-width: 991px) {
+    .tunggu{
+        margin-top: 30px;
     }
-}
 
-
-@media only screen and (max-width: 950px) {
-    .title {
-        color: #fff;
-        margin-top: 50px;
-        display: flex;
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 0%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 50px 100px 0 100px;
-        height: 100%;
-        background-position: top center;
-    }
     .vertical-line {
         position: absolute;
         top: 5px;
@@ -997,6 +985,98 @@ section#box-profile{
         left: 0;
         right: 0;
     }
+
+
+    .rekan{
+        width: 280px;
+        padding: 0px 0px 0px 30px;
+    }
+
+    .rekantele{
+        width: 300px;
+        padding: 0px 30px 0px 30px;
+    }
+
+    .rekantrue{
+        width: 300px;
+        margin-left: 20px;
+        padding: 0px 25px 0px 25px;
+    }
+
+    .rekansir{
+        width: 300px;
+        padding: 0px 15px 0px 15px;
+    }
+
+    .rekanket{
+        width: 250px;
+        margin-right: 20px;
+    }
+
+    .rekantoped{
+        width: 300px;
+        padding: 0px 70px 0px 10px;
+    }
+
+    .rekanema{
+        width: 250px;
+        padding: 0px 30px 0px 0px;
+        /* margin-left: 50px; */
+    }
+
+    .rekanpro{
+        width: 300px;
+        margin-top: 15px;
+        padding: 0px 20px 0px 10px;
+    }
+
+    .rekanclp{
+        width: 230px;
+        margin-top: 10px;
+        padding: 0px 40px 0px 0px;
+    }
+
+    .rekanrek {
+        width: 280px;
+        margin-top: 65px;
+        padding: 0px 40px 0px 0px;
+    }
+
+    .rekansch{
+        width: 250px;
+        margin-top: 10px;
+        padding: 0px 10px 0px 30px;
+    }
+
+    .rekanjea{
+        width: 300px;
+        padding: 0px 0px 0px 40px;
+        /* margin: 0 5px; */
+    }
+
+    .rekanbgdt{
+        width: 300px;
+        padding: 0px 0px 0px 30px;
+        /* margin-right: 20px;     */
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    .title {
+        color: #fff;
+        margin-top: 50px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 100px 0 100px;
+        height: 100%;
+        background-position: top center;
+    }
 }
 
 @media only screen and (max-width: 930px) {
@@ -1006,8 +1086,78 @@ section#box-profile{
 }
 
 @media only screen and (max-width: 767px) {
-    .knan {
-        margin-left: 0%;
+    
+    .rekan{
+        width: 200px;
+        /* padding: 0px 20px 0px 30px; */
+    }
+
+    .rekantele{
+        width: 200px;
+        /* padding: 0px 30px 0px 30px; */
+    }
+
+    .rekantrue{
+        width: 200px;
+        /* margin-left: 20px; */
+        /* padding: 0px 25px 0px 25px; */
+    }
+
+    .rekansir{
+        width: 200px;
+        /* padding: 0px 15px 0px 15px; */
+    }
+
+    .rekanket{
+        width: 200px;
+        /* margin-right: 20px; */
+    }
+
+    .rekantoped{
+        width: 200px;
+        /* padding: 0px 70px 0px 10px; */
+    }
+
+    .rekanema{
+        width: 200px;
+        /* padding: 0px 30px 0px 0px; */
+        /* margin-left: 50px; */
+    }
+
+    .rekanpro{
+        width: 200px;
+        margin-top: 15px;
+        /* padding: 0px 20px 0px 10px; */
+    }
+
+    .rekanclp{
+        width: 200px;
+        margin-top: 10px;
+        /* padding: 0px 40px 0px 0px; */
+    }
+
+    .rekanrek {
+        width: 200px;
+        margin-top: 65px;
+        /* padding: 0px 40px 0px 0px; */
+    }
+
+    .rekansch{
+        width: 200px;
+        margin-top: 10px;
+        /* padding: 0px 10px 0px 30px; */
+    }
+
+    .rekanjea{
+        width: 200px;
+        /* padding: 0px 0px 0px 40px; */
+        /* margin: 0 5px; */
+    }
+
+    .rekanbgdt{
+        width: 200px;
+        /* padding: 0px 0px 0px 30px; */
+        /* margin-right: 20px;     */
     }
 
     .title {
@@ -1049,8 +1199,9 @@ section#box-profile{
 
     .rekan{
         width: 200px;
-        padding: 0 30px 0 30px;
+        /* padding: 0 30px 0 30px; */
     }
+
   }
 
 @media only screen and (max-width: 657px) {
@@ -1071,6 +1222,20 @@ section#box-profile{
     }
 }
 
+
+@media only screen and (max-width: 575px) {
+
+    .tunggu{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .divbtnsoo {
+        padding: 0px;
+    }
+}
+
+
 @media only screen and (max-width: 565px) {
     .resp-iframe {
         transform: scale(0.60); 
@@ -1087,31 +1252,27 @@ section#box-profile{
 
 @media only screen and (max-width: 520px) {
     .icotech {
-        width: 150px;
-        padding: 0 30px 0 30px;
+        width: 100px;
+        /* padding: 0 30px 0 30px; */
         margin-bottom: 50px;
     }
 
     .icotechnod {
-        width: 150px;
-        padding: 0 30px 0 30px;
+        width: 100px;
+        /* padding: 0 30px 0 30px; */
         margin-bottom: 50px;
     }
 
     .icotechjs {
-        width: 150px;
-        padding: 0 30px 0 30px;
+        width: 100px;
+        /* padding: 0 30px 0 30px; */
         margin-bottom: 50px;
     }
 
     .icotechsql {
-        width: 150px;
-        padding: 0 30px 0 30px;
+        width: 100px;
+        /* padding: 0 30px 0 30px; */
         margin-bottom: 50px;
-    }
-
-    .rekan {
-        padding: 0 30px 0 30px;
     }
 }
 
@@ -1130,9 +1291,18 @@ section#box-profile{
         padding: 20px;
     }
 
+    .kotakiri{
+        width: 300px;
+    }
+
+    .kotakanan{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+/* 
     .icotech {
         padding: 0 30px 0 30px;
-        font-size: 90px; 
         margin-bottom: 50px;
     }
 
@@ -1152,7 +1322,7 @@ section#box-profile{
         padding: 0 30px 0 30px;
         font-size: 90px; 
         margin-bottom: 50px;
-    }
+    } */
 }
 
 
@@ -1172,52 +1342,82 @@ section#box-profile{
         background-position: top center;
     }
 
-    .icotech {
-        padding: 0 30px 0 30px;
-        font-size: 90px;
-        margin-bottom: 50px;
-    }
-
-    .icotechnod {
-        padding: 0 30px 0 30px;
-        font-size: 90px; 
-        margin-bottom: 50px;
-    }
-
-    .icotechjs {
-        padding: 0 30px 0 30px;
-        font-size: 90px; 
-        margin-bottom: 50px;
-    }
-
-    .icotechsql {
-        padding: 0 30px 0 30px;
-        font-size: 90px; 
-        margin-bottom: 50px;
-    }
-
-    .rekanus{
-        margin: 0px;
-        padding: 0px;
-    }
-
     .rekan{
-        width: 150px;
-        padding: 0px 5px 0px 5px;
-        margin-bottom: 10px;
+        width: 180px;
+        /* padding: 0px 20px 0px 30px; */
     }
 
-    .rekanrek{
-        width: 150px;
+    .rekantele{
+        width: 180px;
+        padding: 0px 40px 0px 20px;
+    }
+
+    .rekantrue{
+        width: 180px;
+        /* margin-left: 20px; */
+        /* padding: 0px 25px 0px 25px; */
+    }
+
+    .rekansir{
+        width: 180px;
+        /* padding: 0px 15px 0px 15px; */
+    }
+
+    .rekanket{
+        width: 180px;
+        /* margin-right: 20px; */
+    }
+
+    .rekantoped{
+        width: 180px;
+        padding: 0px 50px 0px 30px;
+    }
+
+    .rekanema{
+        width: 180px;
+        /* padding: 0px 30px 0px 0px; */
+        /* margin-left: 50px; */
+    }
+
+    .rekanpro{
+        width: 180px;
+        margin-top: 15px;
+        /* padding: 0px 20px 0px 10px; */
+    }
+
+    .rekanclp{
+        width: 180px;
+        margin-top: 10px;
+        /* padding: 0px 40px 0px 0px; */
+    }
+
+    .rekanrek {
+        width: 180px;
         margin-top: 40px;
-        padding: 0px;
+        /* padding: 0px 40px 0px 0px; */
     }
 
-    .kotakananduo {
+    .rekansch{
+        width: 180px;
+        margin-top: 0px;
+        /* padding: 0px 10px 0px 30px; */
+    }
+
+    .rekanjea{
+        width: 180px;
+        /* padding: 0px 0px 0px 40px; */
+        /* margin: 0 5px; */
+    }
+
+    .rekanbgdt{
+        width: 180px;
+    }
+
+    /* .kotakananduo {
         margin: -220px 0 0 10px;
         box-shadow: 4px 4px 7px 0px rgba(136, 136, 136, 0.9);
         height: 230px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 418px) {
@@ -1232,6 +1432,98 @@ section#box-profile{
     .limaratus{
         font-size: 25px;
     }
+
+    .spatech{
+        width: 150px;
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 404px){
+
+    .rekan{
+        width: 150px;
+        margin: 0px 10px 0px 10px;
+        padding: 0px;
+    }
+
+    .rekantele{
+        width: 150px;
+        margin: 0px 10px 0px 10px;
+        padding: 0px;
+    }
+
+    .rekantrue{
+        width: 150px;
+        margin-left: 0px;
+        margin: 0px 10px 0px 10px;
+        padding: 0px;
+    }
+
+    .rekansir{
+        width: 150px;
+        margin: 0px 10px 0px 10px;
+        padding: 0px;
+    }
+
+    .rekanket{
+        width: 150px;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .rekantoped{
+        width: 150px;
+        margin: 0px 10px 0px 10px;
+        padding: 0px;
+    }
+
+    .rekanema{
+        width: 150px;
+        padding: 0px;
+        margin: 0px 10px 0px 10px;
+        /* margin-left: 50px; */
+    }
+
+    .rekanpro{
+        width: 150px;
+        margin: 0px 10px 0px 10px;
+        padding: 0px;
+    }
+
+    .rekanclp{
+        width: 150px;
+        margin-top: 0px;
+        padding: 0px;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .rekanrek {
+        width: 150px;
+        margin: 35px 10px 0px 10px;
+        padding: 0px;
+    }
+
+    .rekansch{
+        width: 150px;
+        margin: 0px 10px 0px 10px;
+        padding: 0px;
+    }
+
+    .rekanjea{
+        width: 150px;
+        padding: 0px;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .rekanbgdt{
+        padding: 0px;
+        margin: 0px 10px 0px 10px;
+        width: 150px;
+    }
+
+    .spatech{
+        width: 130px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1244,7 +1536,7 @@ section#box-profile{
         transform: scale(0.50); 
     }
     .resp-iframe {
-        transform: scale(0.40); 
+        transform: scale(0.60); 
     }
 
     .idr {
@@ -1257,5 +1549,92 @@ section#box-profile{
 
     .limaratus{
         font-size: 22px;
+    }
+}
+
+
+@media only screen and (max-width: 364px){
+    .resp-iframe {
+        transform: scale(0.50); 
+    }
+
+    .rekan{
+        width: 150px;
+        margin: 0px 5px 0px 5px;
+        padding: 0px;
+    }
+
+    .rekantele{
+        width: 150px;
+        margin: 0px 5px 0px 5px;
+        padding: 0px;
+    }
+
+    .rekantrue{
+        width: 150px;
+        margin-left: 0px;
+        margin: 0px 5px 0px 5px;
+        padding: 0px;
+    }
+
+    .rekansir{
+        width: 150px;
+        margin: 0px 5px 0px 5px;
+        padding: 0px;
+    }
+
+    .rekanket{
+        width: 150px;
+        margin: 0px 5px 0px 5px;
+    }
+
+    .rekantoped{
+        width: 150px;
+        margin: 0px 5px 0px 5px;
+        padding: 0px;
+    }
+
+    .rekanema{
+        width: 150px;
+        padding: 0px;
+        margin: 0px 5px 0px 5px;
+        /* margin-left: 50px; */
+    }
+
+    .rekanpro{
+        width: 150px;
+        margin: 0px 5px 0px 5px;
+        padding: 0px;
+    }
+
+    .rekanclp{
+        width: 150px;
+        margin-top: 0px;
+        padding: 0px;
+        margin: 0px 5px 0px 5px;
+    }
+
+    .rekanrek {
+        width: 150px;
+        margin: 35px 5px 0px 5px;
+        padding: 0px;
+    }
+
+    .rekansch{
+        width: 150px;
+        margin: 0px 5px 0px 5px;
+        padding: 0px;
+    }
+
+    .rekanjea{
+        width: 150px;
+        padding: 0px;
+        margin: 0px 5px 0px 5px;
+    }
+
+    .rekanbgdt{
+        padding: 0px;
+        margin: 0px 5px 0px 5px;
+        width: 150px;
     }
 }

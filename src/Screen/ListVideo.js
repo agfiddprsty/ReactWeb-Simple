@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './css/ListVideo.css';
 import ply from './img/ply.png';
 // import { Link } from 'react-router-dom';
-import lvl from './img/Level.png'
+import lvl from './img/Level.png';
+import lock from './img/LockRed.png'
 class ListVideo extends Component {
 
 render() {
@@ -11,7 +12,7 @@ return (
         <div class="container">
             <div>
                 <br/>
-                <h2 style={{fontWeight:"bold",paddingTop:"90px"}}>Minggu 1</h2>
+                <h2 style={{fontFamily:"Montserrat",fontWeight:"bold",paddingTop:"90px"}}>Minggu 1</h2>
                 <br/>
             </div>
             <div class="row text-center text-lg-left">
@@ -106,18 +107,24 @@ return (
             <div>
                 <br/>
             <hr class="mt-2 mb-5"></hr>
-                <h2 style={{fontWeight:"bold"}}>Minggu 2</h2>
+                <h2 style={{fontFamily:"Montserrat",fontWeight:"bold"}}>Minggu 2</h2>
                 <br/>
-            </div>
-             <div class="row" style={{height:"1px",width:"3440px"}}>
-            <div style={{backgroundcolor:"black",height:"442px",width:"1500px"}} class="col-sm-4"><div className="bg-overlay"></div></div>
+                
+                <div stlye={{width:"20px"}} class="alert alert-danger" role="alert">
+                <div style={{marginRight:"10px"}} className="fas fa-lock"></div>
+                 Konten Terkunci,silahkan selesaikan semua kuis di minggu 1
+                
+                </div>
             </div> 
-            {/* <div className="bg-overlay">
-            <div className="text">Konten Terkunci,silahkan selesaikan semua kuis di minggu 1</div>
-            </div> */}
-            {/* <span  style={{marginTop:"-300%",color:"red"}} class="fas fa-lock"></span> Konten Terkunci, selesaikan semua kuis di Minggu 1 */}
+            <div class="row" style={{height:"1px",width:"3440px"}}>
+            <div style={{backgroundcolor:"black",height:"442px",width:"1470px"}} class="col-sm-4"><div className="bg-overlay">
+            <img src={lock} style={{height:"130px",marginLeft:"515px",marginTop:"130px",zIndex:"1",position:"absolute"}}></img>
+            <label style={{fontWeight:"bold",fontSize:"17px",fontFamily:"Montserrat",marginLeft:"290px",marginTop:"300px",color:"red",zIndex:"1",position:"absolute"}}> Konten Terkunci,silahkan selesaikan semua kuis di minggu 1</label>
+            </div></div>
+            </div>
             <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-6">
+            
                     <div className="d-flex justify-content-center listA">
                         <a class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
@@ -207,10 +214,7 @@ return (
                     <span style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight:"bold"}}>4. Character</span>   
                     <span style={{fontFamily:"Nunito",fontSize:"14px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
-            <div className="fas fa-lock locked"></div>
-                <div className="overlay-text">Konten Terkunci,silahkan selesaikan semua kuis di minggu 1</div>  
-            </div>
-               
+            </div>     
             </div>
             </div>
                     <br/>

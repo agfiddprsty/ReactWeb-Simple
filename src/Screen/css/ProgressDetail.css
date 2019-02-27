@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1920px) {
     .dv-pg-gd{
-        width:300px;
+        width:290px;
         background-Color:#FF6567;
         height:115px;
         border-Radius:5px;
@@ -28,7 +28,7 @@
         font-size: 20px;
     }
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:810px){
     .dv-pg-cl{
         width:250px;
         background-Color:#FF6567;
