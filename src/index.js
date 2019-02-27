@@ -10,18 +10,13 @@ import {
 import {Provider} from 'react-redux';
 //import screen
 import './Screen/css/index.css';
-import App from './Screen/App';
 import Home from './Screen/Home';
 import * as serviceWorker from './serviceWorker';
-import Reg from './Screen/Registrasi';
 import Hack from './Screen/Hackerrank';
-import About from './Screen/About';
 import Batch from './Screen/ListBatch';
 import Silabus from './Screen/Silabus';
 import Profile from './Screen/Profile';
-import InfoSilabus from './Screen/InfoSilabus';
 import ListSilabus from './Screen/ListSilabus';
-import Log from './Screen/Log';
 import ProfileLink from './Screen/ProfileLinked';
 import ProfileRaport from './Screen/ProfileRaport';
 import Login from './Screen/Login';
@@ -45,8 +40,6 @@ ReactDOM.render(
         <div>
             <Route exact path="/" component={Login} />
             <Route path="/home" component={Home}/>
-            <Route path="/reg" component={Reg} />
-            <Route path="/about" component={About}/>
             <Route path="/hack" component={Hack} />
             <Route path='/profile' component={Profile} />
             <Route path='/profilelink/:uid' component={ProfileLink}/>
