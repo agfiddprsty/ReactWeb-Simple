@@ -109,6 +109,8 @@
 .title {
     color: #fff;
     margin-top: 50px;
+    font-weight: 600;
+    font-size: 30px;
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
@@ -1393,6 +1395,7 @@ section#box-profile{
         display: flex;
         flex-grow: 1;
         flex-shrink: 1;
+        font-size: 25px;
         flex-basis: 0%;
         flex-direction: column;
         justify-content: center;
@@ -1610,6 +1613,12 @@ section#box-profile{
     }
 }
 
+@media only screen and (max-width: 401px){
+    .kotakananduo{
+        margin: -250px auto auto 20px; 
+    }
+}
+
 @media only screen and (max-width: 375px) {
     .homevideo {
         display: flex;
@@ -1633,6 +1642,10 @@ section#box-profile{
 
     .limaratus{
         font-size: 22px;
+    }
+
+    .title{
+        font-size: 23px;
     }
 }
 
