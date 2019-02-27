@@ -108,7 +108,7 @@ class Home extends Component {
                                                             <img alt="" className="img-fluid onefivezer" src={daftar}/>
                                                         </p>
                                                     </div>
-                                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mx-auto">
+                                                    <div class="sqregstp col-lg-6 col-md-12 col-sm-12 col-xs-12 mx-auto">
                                                         <section class="kotakanan bootcamp-step-list">
                                                             <h5 className="title-cara">Daftar dan Lengkapi Profile</h5>
                                                             <span className="crtacc">
@@ -156,7 +156,7 @@ class Home extends Component {
                                                 <div class="row mb-5 d-lg-none d-xl-none">
                                                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
                                                         <p class="bootcamp-step-list">
-                                                            <img alt="" className="img-fluid pull-right onefivzer" src={quiz}/>
+                                                            <img alt="" className="img-fluid onefivzer" src={quiz}/>
                                                         </p>
                                                     </div>
                                                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mx-auto">
@@ -190,7 +190,7 @@ class Home extends Component {
                                                 <div class="row mb-5 d-lg-none d-xl-none">
                                                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                                         <p class="bootcamp-step-list">
-                                                            <img alt="" className="img-fluid onefivzer" src={kerja}/>
+                                                            <img alt="" className="img-fluid onefivzer" src={koper}/>
                                                         </p>
                                                     </div>
                                                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
@@ -237,19 +237,19 @@ class Home extends Component {
                                     <h1 className="mengapa">Mengapa Memilih Kami?</h1>
                                 </div>
                                 <div className="row text-center icowhy">
-                                    <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                    <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 divico">
                                         <img alt="" className="img-fluid ten" src={mentor}/>
                                         {/* <p style={{color: "black", fontSize: "15px", padding: "20px 0 10px 0"}}>Mentor Professional</p> */}
                                     </div>
-                                    <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                    <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 divico">
                                         <img alt="" className="img-fluid pdngtp" src={kerja}/>
                                         {/* <p style={{color: "black", fontSize: "15px", padding: "20px 0 10px 0"}}>Penyaluran Kerja</p> */}
                                     </div>
-                                    <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                    <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 divico">
                                         <img alt="" className="img-fluid tens" src={teknologi}/>
                                         {/* <p style={{color: "black", fontSize: "15px", padding: "20px 0 10px 0"}}>Teknologi Terupdate</p> */}
                                     </div>
-                                    <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                    <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 divico">
                                         <img alt="" className="img-fluid tendsk" src={diskusi}/>
                                         {/* <p style={{color: "black", fontSize: "15px", padding: "20px 0 10px 0"}}>Diskusi Online</p> */}
                                     </div>
@@ -258,11 +258,11 @@ class Home extends Component {
                                 <div className="soo">
                                     <div className="container">
                                         <div className="row">
-                                            <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <div className="col-xl-6 col-lg-5 col-md-6 col-sm-6 col-xs-4">
                                                 <p className="tunggu">So, Tunggu apalagi?</p>
                                             </div>
-                                            <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                <div className="text-center" style={{padding: "20px 0px 20px 100px"}}>
+                                            <div className="col-xl-6 col-lg-7 col-md-6 col-sm-6 col-xs-8">
+                                                <div className="text-center divbtnsoo">
                                                     <a href="/register" class="btn btn-warning btndftrskrng">Daftar Sekarang</a>
                                                     <a href="/silabusnew" class="btn btn-outline-light text-center btnseesilab">Lihat Silabus</a>
                                                 </div> 
@@ -276,11 +276,11 @@ class Home extends Component {
                                         <p className="text-center tech">Teknologi</p>
                                     </div>
                                     <div className="row text-center logi">
-                                        <span className="col-lg col-md" title="Node.Js"><img className="icotechnod" alt="" src={nodejs}/></span>
-                                        <span className="col-lg col-md" title="Javascript"><img className="icotechjs" alt="" src={js}/></span>
-                                        <span className="col-lg col-md" title="React"><img className="icotech" alt="" src={icoreact}/></span>
-                                        <span className="col-lg col-md" title="MySQL"><img className="icotechsql" alt="" src={icomysql}/></span>
-                                        <span className="col-lg col-md" title="GIT"><img className="icotechgit" alt="" src={icogit}/></span>
+                                        <span className="d-lg d-md spatech" title="Node.Js"><img className="icotechnod" alt="" src={nodejs}/></span>
+                                        <span className="d-lg d-md spatech" title="Javascript"><img className="icotechjs" alt="" src={js}/></span>
+                                        <span className="d-lg d-md spatech" title="React"><img className="icotech" alt="" src={icoreact}/></span>
+                                        <span className="d-lg d-md spatech" title="MySQL"><img className="icotechsql" alt="" src={icomysql}/></span>
+                                        <span className="d-lg d-md spatech" title="GIT"><img className="icotechgit" alt="" src={icogit}/></span>
                                     </div>
                                 </div>
                                 <div>
