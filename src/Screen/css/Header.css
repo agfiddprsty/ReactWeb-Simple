@@ -64,7 +64,7 @@ nav ul li a:hover{
 }
 
 .headsilab {
-  height: 75px;
+  height: 64px;
   box-shadow: 0 0 20px 3px rgba(136, 136, 136, 0.4);
 }
 
@@ -99,6 +99,7 @@ nav ul li a:hover{
     background-color: #fff;
     max-width: 100%;
     margin-left: 100px;
+    height: 50px;
   }
 
   .imgman {
