@@ -259,16 +259,37 @@ class ProfileFill extends Component {
                                             onChange={this.handleChange} value={this.state.adress} required=""/>
                                             <label>Alamat</label>
                                         </div>
-                                        {/* <div style={{padding:'20px 0px 20px 20px'}}>
-                                            <form>
-                                                <label class="radio-inline" style={{paddingRight:'20px'}}>
-                                                    <input type="radio" name="optradio" checked/>Male
+                                        <div style={{padding:'20px 0px 20px 20px'}}>
+                                            <p class="gender">Gender</p>
+                                            {/* <form>
+                                                <label class="radio-inline radiogender">
+                                                    <input class="optgendermale" type="radio" name="optradio" checked/>Male
                                                 </label>
-                                                <label class="radio-inline">
-                                                    <input type="radio" name="optradio"/>Female
+                                                <label class="radio-inline radiogender">
+                                                    <input class="optgenderfemale" type="radio" name="optradio"/>Female
                                                 </label>
-                                            </form>
-                                        </div> */}
+                                            </form> */}
+                                        </div>
+                                        <div style={{padding:'20px 0px 20px 20px'}}>
+                                            <p class="dateofbirth">Tanggal Lahir</p>
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-md-1">
+                                                        <p class="datebirth">
+                                                            Date
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-sm-3 col-md-1">
+                                                        <p class="datebirth">
+                                                            Month
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-sm-3 col-md-1">
+                                                        <p class="datebirth">
+                                                            Year
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                        </div>
                                         {/* <div>
                                             <form class="row">
                                                 <div class="form-group col-1">
@@ -401,6 +422,41 @@ class ProfileFill extends Component {
                                                                     <input type="text" name="description" 
                                                                     onChange={this.handleChange} value={this.state.description} required=""/>
                                                                     <label>Description</label>
+                                                                </div>
+                                                                <div style={{padding:'20px 0px 20px 20px'}}>
+                                                                    <p class="from">From</p>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-3 col-md-1">
+                                                                            <p class="fromfrom">
+                                                                                Month
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="col-sm-3 col-md-1">
+                                                                            <p class="fromfrom">
+                                                                                Year
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-3 col-md-1">
+                                                                            <p class="until">
+                                                                                To
+                                                                            </p>
+                                                                            <i class="fa fa-long-arrow-right arrowright"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-3 col-md-1">
+                                                                            <p class="fromto">
+                                                                                Month
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="col-sm-3 col-md-1">
+                                                                            <p class="fromto">
+                                                                                Year
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                                 <br/>
                                                                 <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
@@ -555,6 +611,41 @@ class ProfileFill extends Component {
                                                                     <input type="text" name="" required="" 
                                                                     onChange={this.handleChange} value={this.state.descproject}/>
                                                                     <label>Description</label>
+                                                                </div>
+                                                                <div style={{padding:'20px 0px 20px 20px'}}>
+                                                                    <p class="from">From</p>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-3 col-md-1">
+                                                                            <p class="fromfrom">
+                                                                                Month
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="col-sm-3 col-md-1">
+                                                                            <p class="fromfrom">
+                                                                                Year
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-3 col-md-1">
+                                                                            <p class="until">
+                                                                                To
+                                                                            </p>
+                                                                            <i class="fa fa-long-arrow-right arrowright"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-3 col-md-1">
+                                                                            <p class="fromto">
+                                                                                Month
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="col-sm-3 col-md-1">
+                                                                            <p class="fromto">
+                                                                                Year
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                                 <br/>
                                                                 <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
