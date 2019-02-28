@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import Header from './HeaderPage';
 import './css/ProfileFilled.css';
+import upload from './img/upload.png';
+import link from './img/link.png';
 import projects from './img/projects.png';
 import DropboxChooser from 'react-dropbox-chooser';
+import {RadioGroup,Radio} from 'react-radio-group';
 import './css/Register.css';
-import {Radio,RadioGroup} from 'react-radio-group'
 
 const APP_KEY = 'jni8bfvqjntw35s';
-
 
 class ProfileFilled extends Component {
     constructor(props){
@@ -47,6 +48,9 @@ class ProfileFilled extends Component {
             files: ''
 
         }
+    }
+    setGender(event) {
+        console.log(event.target.value);
     }
     onSuccess(value){
         this.setState({files: value});
@@ -216,9 +220,7 @@ class ProfileFilled extends Component {
     moveLogin(){
         this.props.history.push("/");
     }
-    setGender(event) {
-        console.log(event.target.value);
-    }
+
     render() {
       return (
     <div>
@@ -270,16 +272,17 @@ class ProfileFilled extends Component {
                                                 onChange={this.handleChange} value={this.state.adress} required=""/>
                                                 <label>Alamat</label>
                                             </div>
-                                            <div className="form-group">
+                                            <div style={{padding:'20px 0px 20px 20px'}}>
+                                                <p class="gender">Gender</p>
                                                 {/* <form>
-                                                    <label class="radio-inline" style={{paddingRight:'20px'}}>
-                                                        <input type="radio" name="optradio" checked/>Male
+                                                    <label class="radio-inline radiogender">
+                                                        <input class="optgendermale" type="radio" name="optradio" checked/>Male
                                                     </label>
-                                                    <label class="radio-inline">
-                                                        <input type="radio" name="optradio"/>Female
+                                                    <label class="radio-inline radiogender">
+                                                        <input class="optgenderfemale" type="radio" name="optradio"/>Female
                                                     </label>
                                                 </form> */}
-                                                <div onChange={this.setGender.bind(this)}>
+                                                <div onChange={this.setGender.bind(this)} style={{marginTop:"50px"}}>
                                                     <div className="row">
                                                         <div className="col-md-auto">
                                                             <div className="row">
@@ -291,21 +294,112 @@ class ProfileFilled extends Component {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                         <div className="col-md-auto">
+                                                            <div className="col-md-auto">
                                                             <div className="row">
                                                                 <div className="col-md-auto">
-                                                                    <input style={{display:"block"}} type="radio" value="FEMALE" name="gender" placeholder="Male"/>
+                                                                    <input style={{display:"block"}} type="radio" value="FEMALE" name="gender" placeholder="Male"/>[]
                                                                 </div>
                                                                 <div className="col-md-3">
-                                                                    <label style={{marginTop:"5px",marginLeft:"-25px"}}> Female</label>
+                                                                    <label style={{marginTop:"5px",marginLeft:"15px"}}> Female</label>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    
                                                 </div>
-                                                
                                             </div>
+                                            <div style={{padding:'20px 0px 20px 20px'}}>
+                                                <p class="dateofbirth">Tanggal Lahir</p>
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-2">
+                                                            <p class="datebirth">
+                                                                Date
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-2">
+                                                            <p class="datebirth">
+                                                                Month
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-2">
+                                                            <p class="datebirth">
+                                                                Year
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <select name="date" class="col-1 custom-select mb-3 optdate">
+                                                            <option selected>01</option><option>02</option><option>03</option>
+                                                            <option>04</option>
+                                                            <option>05</option>
+                                                            <option>06</option>
+                                                            <option>07</option>
+                                                            <option>08</option>
+                                                            <option>09</option>
+                                                            <option>10</option>
+                                                            <option>11</option>
+                                                            <option>12</option>
+                                                            <option>13</option>
+                                                            <option>14</option>
+                                                            <option>15</option>
+                                                            <option>16</option>
+                                                            <option>17</option>
+                                                            <option>18</option>
+                                                            <option>19</option>
+                                                            <option>20</option>
+                                                            <option>21</option>
+                                                            <option>22</option>
+                                                            <option>23</option>
+                                                            <option>24</option>
+                                                            <option>25</option>
+                                                            <option>26</option>
+                                                            <option>27</option>
+                                                            <option>28</option>
+                                                            <option>29</option>
+                                                            <option>30</option>
+                                                            <option>31</option>
+                                                        </select>
+                                                        
+                                                        <select name="month" class="col-1 custom-select mb-3 optdate">
+                                                            <option selected>01</option>
+                                                            <option>02</option>
+                                                            <option>03</option>
+                                                            <option>04</option>
+                                                            <option>05</option>
+                                                            <option>06</option>
+                                                            <option>07</option>
+                                                            <option>08</option>
+                                                            <option>09</option>
+                                                            <option>10</option>
+                                                            <option>11</option>
+                                                            <option>12</option>
+                                                        </select>
+
+                                                        <select name="year" class="col-1 custom-select mb-3 optdate">
+                                                            <option selected>2000</option>
+                                                            <option>1999</option>
+                                                            <option>1998</option>
+                                                            <option>1997</option>
+                                                            <option>1996</option>
+                                                            <option>1995</option>
+                                                            <option>1994</option>
+                                                            <option>1993</option>
+                                                            <option>1992</option>
+                                                            <option>19991</option>
+                                                            <option>1990</option>
+                                                            <option>12</option>
+                                                        </select>
+                                                    </div>
+                                            </div>
+                                            {/* <div style={{padding:'20px 0px 20px 20px'}}>
+                                                <form>
+                                                    <label class="radio-inline" style={{paddingRight:'20px'}}>
+                                                        <input type="radio" name="optradio" checked/>Male
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="optradio"/>Female
+                                                    </label>
+                                                </form>
+                                            </div> */}
                                             {/* <div>
                                                 <form class="row">
                                                     <div class="form-group col-1">
@@ -356,8 +450,13 @@ class ProfileFilled extends Component {
                                             
                                             <br/>
                                         <div class="row">
-                                            <p class="titleadd">Tambah Pendidikan</p>
-                                            <p class="col-12 required" style={{color:'#7d98ff', fontFamily:'helvetica, Arial, sans serif', fontWeight:'600', fontSize:'1.00500000em', textAlign:'right', marginTop:'-61px'}}><span style={{color:'#7d98ff'}}>*</span>required</p>
+                                            <p class="col-5 parttext">Riwayat Pendidikan</p>
+                                            <p class="col-12 required">
+                                                <span class="star">
+                                                *
+                                                </span>
+                                                required
+                                            </p>
                                         </div>
                                         <div>
                                             <br/>
@@ -402,7 +501,6 @@ class ProfileFilled extends Component {
                                         <div className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
                                             <div class="row" style={{marginTop:'15px'}}>
                                                 <span class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6 schol">
-                                                    <div class="col-3"></div>
                                                     <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
                                                         SMK Uhuy Lah
                                                     </p>
@@ -419,7 +517,7 @@ class ProfileFilled extends Component {
                                                                 </div>
                                                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                                     <span className="pull-left fmbmb">
-                                                                        Buisness
+                                                                        Business
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -443,6 +541,52 @@ class ProfileFilled extends Component {
                                                     </div>
                                                 </span>
                                                 <span class="col-xl-7 col-lg-7 col-md-7 col-sm-5 col-xs-5">
+                                                    <span class="dateright">
+                                                        Januari 2019 - Maret 2020
+                                                    </span>
+                                                </span>
+                                                <span class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6 schol"
+                                                style={{marginTop:'25px'}}>
+                                                    <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                        SMK Uhuy Lah
+                                                    </p>
+                                                    <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                        SMA/SMK
+                                                    </p>
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div className="row">
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbm">
+                                                                        Field Of Study
+                                                                    </span>
+                                                                </div>
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbmb">
+                                                                        Business
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-12 d-sm-12 col-xs-12">
+                                                            <div className="row">
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbm">
+                                                                        Major
+                                                                    </span>
+                                                                </div>
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbmb">
+                                                                        Multimedia
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                                <span class="col-xl-7 col-lg-7 col-md-7 col-sm-5 col-xs-5" style={{marginTop:'25px'}}>
                                                     <span class="dateright">
                                                         Januari 2019 - Maret 2020
                                                     </span>
@@ -497,6 +641,50 @@ class ProfileFilled extends Component {
                                                         </div>
                                                     </div>
                                                 </span>
+                                                <span class="col-xs-12 schol">
+                                                    <div class="col-3"></div>
+                                                    <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                        SMK Uhuy Lah
+                                                    </p>
+                                                    <span class="dateright">
+                                                        Januari 2019 - Maret 2020
+                                                    </span>
+                                                    <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                        SMA/SMK
+                                                    </p>
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div className="row">
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbm">
+                                                                        Field Of Study
+                                                                    </span>
+                                                                </div>
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbmb">
+                                                                        Business
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-12 d-sm-12 col-xs-12">
+                                                            <div className="row">
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbm">
+                                                                        Major
+                                                                    </span>
+                                                                </div>
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbmb">
+                                                                        Multimedia
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </span>
                                             </div>
                                         </div>
 
@@ -506,7 +694,7 @@ class ProfileFilled extends Component {
                                             <p class="parttext">Pengalaman Kerja</p>
                                             <br/>
                                             <button type="button" class="btn btn-outline-danger btn-lg btn-block btnpengalaman" data-toggle="collapse" data-target="#tambahpengalamankerja"
-                                                >+ Tambah Pengalaman Kerja</button>
+                                            >+ Tambah Pengalaman Kerja</button>
                                         </div>
                                         <br/>
                                         <div>
@@ -534,6 +722,41 @@ class ProfileFilled extends Component {
                                                         onChange={this.handleChange} value={this.state.description} required=""/>
                                                         <label>Description</label>
                                                     </div>
+                                                    <div style={{padding:'20px 0px 20px 20px'}}>
+                                                        <p class="from">From</p>
+                                                            <div class="row">
+                                                                <div class="col-sm-3 col-md-1">
+                                                                    <p class="fromfrom">
+                                                                        Month
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-sm-3 col-md-1">
+                                                                    <p class="fromfrom">
+                                                                        Year
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-3 col-md-1">
+                                                                    <p class="until">
+                                                                        To
+                                                                    </p>
+                                                                    <i class="fa fa-long-arrow-right arrowright"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-3 col-md-1">
+                                                                    <p class="fromto">
+                                                                        Month
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-sm-3 col-md-1">
+                                                                    <p class="fromto">
+                                                                        Year
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     <br/>
                                                     <div class="d-flex justify-content-end divbtncando">
                                                         <a href="#"><span class="btn btn-outline-danger btn-lg btnbatal">Batal</span></a>  
@@ -559,7 +782,6 @@ class ProfileFilled extends Component {
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.
                                                 </p>
                                             </div>
-                                                    
                                             <br/>
                                             <div>
                                                 <br/>
@@ -582,13 +804,21 @@ class ProfileFilled extends Component {
                                                                 cancel={() => console.log('Closed')}
                                                                 multiselect={true}>
                                                                 <button type="button" class="btn btn-outline-danger btn-lg btn-block btnupload dropbox-button">
-                                                                <i class="fa fa-cloud-upload"></i> Upload</button> 
+                                                                    <span>
+                                                                        <img class="iconupload" alt='' src={upload}/>
+                                                                    </span>
+                                                                        Upload
+                                                                </button> 
                                                             </DropboxChooser>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 upldlnk">
                                                     <button type="button" class="btn btn-outline-danger btn-lg btn-block btnlink" data-toggle="collapse" data-target="#link">
-                                                        <i class="fas fa-link"></i> Link</button>
+                                                        <span>
+                                                            <img class="iconlink" alt='' src={link}/>
+                                                        </span>
+                                                            Link
+                                                    </button>
                                                     </div>
                                                     <div>
                                                         {this.state.files && this.state.files.map((files, key) => 
@@ -607,7 +837,11 @@ class ProfileFilled extends Component {
                                                 <p class="parttext">Sertifikat</p>
                                                 <br/>
                                                 <button type="button" onClick={this.upload} class="btn btn-outline-danger btn-lg btn-block btnsertifikat">
-                                                <i class="fa fa-cloud-upload"></i> Upload</button>
+                                                    <span>
+                                                        <img class="iconuploadsertifikat" alt='' src={upload}/>
+                                                    </span>
+                                                        Upload
+                                                </button>
                                                 <input id='selectImage' hidden type="file" onChange={this.fileSelectHandler} />
                                             </div>
                                             <br/>
@@ -693,6 +927,41 @@ class ProfileFilled extends Component {
                                                             onChange={this.handleChange} value={this.state.descproject}/>
                                                             <label>Description</label>
                                                         </div>
+                                                        <div style={{padding:'20px 0px 20px 20px'}}>
+                                                            <p class="from">From</p>
+                                                                <div class="row">
+                                                                    <div class="col-sm-3 col-md-1">
+                                                                        <p class="fromfrom">
+                                                                            Month
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-sm-3 col-md-1">
+                                                                        <p class="fromfrom">
+                                                                            Year
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-3 col-md-1">
+                                                                        <p class="until">
+                                                                            To
+                                                                        </p>
+                                                                        <i class="fa fa-long-arrow-right arrowright"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-3 col-md-1">
+                                                                        <p class="fromto">
+                                                                            Month
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-sm-3 col-md-1">
+                                                                        <p class="fromto">
+                                                                            Year
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         <br/>
                                                         <div class="d-flex justify-content-end divbtncando">
                                                             <a href="#"><span class="btn btn-outline-danger btn-lg btnbatal">Batal</span></a>  

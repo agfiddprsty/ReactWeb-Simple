@@ -88,15 +88,15 @@ class Login extends Component {
                 <div class="row mb-5 d-none d-lg-flex d-xl-flex">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <span className="col-lg-6 col-md-6 col-sm-6 col-xs-6 mx-auto">
-                            <img alt='' src={daftarsekarang} style={{margin:'150px 0 0 85px'}}/>
+                            <img class="illus" alt='' src={daftarsekarang}/>
                         </span>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 logright">
                         <div>
                             <div className="text-title" style={{padding:'40px 0 0 52px'}}>
-                                <img alt='' src={logo} style={{margin:'0 0 15px -8px', width:'18%'}}/>
+                                <img class="logo" alt='' src={logo}/>
                                 <h1 className="welcome">Selamat datang di Squad </h1>
-                                <p style={{color:'grey', fontWeight:'400', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.350000000em', display:'block', margin:'0 0 20px -7px'}}>
+                                <p class="onlinebootcamp" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>
                                     Online Bootcamp Zaman Now
                                 </p>
                             </div>
@@ -105,28 +105,24 @@ class Login extends Component {
                         <div style={{padding:'0 0 10px 45px'}}>
                             <div class="daftar">
                                 <div class="col-md-12" style={{padding:'16px 10px 0 30px', }}>
-                                    <div class="persegilogin" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
+                                    <div class="persegilogin">
                                         <form>
                                             <div>
-                                                <input type="text" name="email" required="" 
+                                                <input class="textinput" type="text" name="email" required="" 
                                                     onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',backgroundImage: 'url(' + this.state.background + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
-                                                    />
-                                                <label 
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'
-                                                    }}>Email
-                                                </label>
+                                                    style={{backgroundImage: 'url(' + this.state.background + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
+                                                />
+                                                <label class="textlabel">Email</label>
                                             </div>
                                             <div>
-                                                <input type={this.state.type} className="password__input" onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} />
-                                                <label 
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'
-                                                    }}>Password
-                                                </label>
+                                                <input class="textinput" type={this.state.type} className="password__input" 
+                                                    onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} 
+                                                />
+                                                <label class="textlabel">Password</label>
                                                 <span className={"password__show" +(this.state.type==='input' ? ' fa fa-eye':' far fa-eye-slash')} onClick={this.toggleShow}></span>
                                             </div>
                                             <div className="text-center btn-lg" 
-                                            style={{width:'', padding:'10px 0 10px 0', margin:'0'}}>
+                                            style={{width:'', padding:'5px 0 5px 0', margin:'0'}}>
                                                 <button type="button" class="btn btn-danger btn-lg btnmasuk" 
                                                     onClick={this.loginhandle} 
                                                     >Masuk
@@ -167,25 +163,20 @@ class Login extends Component {
                                     <div class="persegilogin" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                         <form>
                                             <div>
-                                                <input type="text" name="email" required="" 
+                                                <input class="textinput" type="text" name="email" required="" 
                                                     onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',backgroundImage: 'url(' + this.state.background + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
-                                                    />
-                                                <label 
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'
-                                                    }}>Email
-                                                </label>
+                                                    style={{backgroundImage: 'url(' + this.state.background + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
+                                                />
+                                                <label class="textlabel">Email</label>
                                             </div>
                                             <span class="fa fa-eye" aria-hidden="true" onClick={this.toggleShow} style={{margin:'0 0 0 250px'}}></span>
                                             <div>
-                                                <input type={this.state.hidden ? 'password': 'text'} id="password-field" name="password" required="" value="secret"
+                                                <input class="textinput" type={this.state.hidden ? 'password': 'text'} id="password-field" name="password" required="" value="secret"
                                                     onChange={this.handleChange} value={this.state.password} 
                                                     onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password}
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                />
                                                     {/* <button onClick={this.toggleShow}>Show / Hide</button> */}
-                                                <label 
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'
-                                                    }}>Password</label>
+                                                <label class="textlabel">Password</label>
                                             </div>
                                             <div className="text-center btn-lg" 
                                             style={{padding:'5px 0 5px 0', margin:'0'}}>
