@@ -63,14 +63,22 @@
   box-sizing: border-box;
   border: 1px solid rgba(0,0,0,.1);
   box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+  padding-bottom: -20px;
 }
 
 .persegislbs input {
+  font-family:'Montserrat';
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid lightgrey;
   padding: 10px 0;
-  margin-bottom: 30px;
-  font-size: 14px;
-  font-family: "Montserrat";
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .persegislbs input:hover{
@@ -82,13 +90,17 @@
 }
 
 .persegislbs input{
+  font-family:'Montserrat';
   width: 100%;
   box-sizing: border-box;
   box-shadow: none;
   outline: none;
   border: none;
   border-bottom: 1px solid lightgrey;
-  font-family: "Montserrat";
+  padding: 10px 0;
+  margin-bottom: 40px;
+  font-size: 16x;
+  font-weight: 500;
 }
 .persegislbs form div {
   position: relative;
@@ -107,23 +119,51 @@
  }
 
 .persegislbs form div label {
-  font-family:'Montserrat';
+  font-family:'Nunito';
   position: absolute;
-  top: 10px;
+  top: -12px;
   left: 0;
   color: #999;
-  transition: .5s;
-  pointer-events: none;
+  font-size: 18px;
+  font-weight: 500;
 
 }
 
 .persegislbs input:valid ~ label  
 {
-  font-family:'Montserrat';
+  font-family:'Nunito';
+  position: absolute;
   top: -12px;
   left: 0;
-  color: grey;
-  font-size: 14px;
+  color: #999;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* text input */
+.textinput {
+  font-family:'Montserrat';
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* text label */
+.textlabel {
+  font-family:'Nunito';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  color: #999;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .silabus {
@@ -136,14 +176,27 @@
 padding: 10px 0 10px 0;
 border-radius: 0; 
 box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
-font-family: 'Montserrat';
-font-weight: 500;
+font-family: 'Nunito';
+font-weight: bold;
 margin-bottom: 10px;
 
 }
 
+@media only screen and (max-width: 1920px) {
+  .silabus {
+    height: 700px;
+    padding: 50px; 
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .silabus {
+    height: 505px;
+  }
+}
+
 @media only screen and (max-width: 550px) {
-  .persegislbs {
+  .silabus {
       width: 450px; 
       box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);   
   }

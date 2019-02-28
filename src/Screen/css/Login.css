@@ -12,15 +12,33 @@
   margin-left: -10px;
 }
 
+.onlinebootcamp {
+  color: grey;
+  font-weight: 400;
+  font-size: 1.350000000em;
+  display: block;
+  margin: 0 0 20px -7px;
+}
+
+.illus {
+  width: 75%;
+  margin: 150px 0 0 85px;
+}
+
 .registe {
   background-color: #FFF;
   height: 100vh;
   overflow: hidden;
 }
 
+.logo {
+  margin: 0 0 15px -8px;
+  width: 18%;
+}
+
 /* box login */
 .persegilogin{
-  font-family:'Montserrat';
+  font-family:'Nunito';
   position:absolute;
   top: 0%;
   left: 0%;
@@ -34,7 +52,7 @@
 }
 
 .persegilogin input{
-  font-family:'Montserrat';
+  font-family:'Nunito';
   width: 100%;
   box-sizing: border-box;
   box-shadow: none;
@@ -42,8 +60,9 @@
   border: none;
   border-bottom: 1px solid lightgrey;
   padding: 10px 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 14px;
+  font-weight: 400;
 }
 
 /* ceklist input form */
@@ -56,21 +75,23 @@
 
 .persegilog input [type="submit"]
 {
-  font-family:'Montserrat';
+  font-family:'Nunito';
   border-bottom: none;
   background: transparent;
   color: #fff;
   margin-bottom: 0;
   left: 10px;
   font-size: 14px;
+  font-weight: 400;
 }
 
 .persegilogin form div {
-  font-family:'Montserrat';
+  font-family:'Nunito';
   position: relative;
 }
-.persegilogin form div label {
-  font-family:'Montserrat';
+
+.persegireg form div label {
+  font-family:'Nunito';
   position: absolute;
   top: -12px;
   left: 0;
@@ -78,28 +99,49 @@
   transition: .5s;
   pointer-events: none;
   font-size: 14px;
+  font-weight: 400;
+}
+
+/* text input */
+.textinput {
+  font-family:'Nunito';
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* text label */
+.textlabel {
+  font-family:'Nunito';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /* button masuk */
-/* text */
-.masuk {
-    background-color: #FFF;
-    height: 100%;
-    overflow: hidden;
-}
-
 /* button */
 .btnmasuk {
   padding: 15px 130px 15px 130px;
   border-radius: 0; 
   box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
-  font-family: 'Montserrat';
-  font-weight: 500;
+  font-family: 'Nunito';
+  font-weight: bold;
 }
 
 /* text under buttom */
 /* text 1 */
 .textpass{
+  font-family: 'Nunito';
   color: #666666;
   text-align: center;
   font-size: 15px;
@@ -111,9 +153,277 @@
 
 /* text 2 red text */
 .redtext {
+  font-family: 'Nunito';
   color: red;
 }
 
+@media only screen and (max-width: 1920px) {
+  .registe {
+    padding: 150px 0 0 150px;
+  }
+  
+  .welcome {
+    color: #3b3b3b;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    font-size: 2.55000000em;
+    display: block;
+    text-align: left;
+    margin-left: -50px;
+  }
+  
+  .onlinebootcamp {
+    color: grey;
+    font-weight: 400;
+    font-size: 1.650000000em;
+    display: block;
+    margin: 0 0 20px -50px;
+  }
+  
+  .illus {
+    width: 90%;
+    margin: 100px 0 0 35px;
+  }
+  
+  .registe {
+    background-color: #FFF;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .logo {
+    margin: 0 0 15px -50px;
+    width: 17%;
+  }
+  
+    /* box login */
+    .persegilogin{
+      font-family:'Montserrat';
+      position:absolute;
+      top: 0%;
+      left: 0%;
+      width: 575px;
+      background: transparent;
+      padding: 40px;
+      box-sizing: border-box;
+      border: 1px solid rgba(0,0,0,.1);
+      box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
+      margin-bottom: 50px;
+      margin-left: -50px;
+    }
+  
+    .persegilogin input{
+      font-family:'Montserrat';
+      width: 100%;
+      box-sizing: border-box;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid lightgrey;
+      padding: 10px 0;
+      margin-bottom: 30px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  
+    /* ceklist input form */
+    .ceklist {
+      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: right 12px;
+    }
+  
+    .persegilog input [type="submit"]
+    {
+      font-family:'Montserrat';
+      border-bottom: none;
+      background: transparent;
+      color: #fff;
+      margin-bottom: 0;
+      left: 10px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  
+    .persegilogin form div {
+      font-family:'Montserrat';
+      position: relative;
+    }
+  
+    .persegireg form div label {
+      font-family:'Nunito';
+      position: absolute;
+      top: -12px;
+      left: 0;
+      color: #999;
+      transition: .5s;
+      pointer-events: none;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  
+    /* text input */
+    .textinput {
+      font-family:'Montserrat';
+      width: 100%;
+      box-sizing: border-box;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid lightgrey;
+      padding: 10px 0;
+      margin-bottom: 20px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  
+    /* text label */
+    .textlabel {
+      font-family:'Nunito';
+      position: absolute;
+      top: -12px;
+      left: 0;
+      color: #999;
+      font-size: 14px;
+      font-weight: 400;
+  }
+}
+
+
+@media only screen and (max-width: 1366px) {
+  .registe {
+    padding-top: 0px;
+    padding-left: 0px; 
+  }
+
+  .welcome {
+    color: #3b3b3b;
+    font-weight: 550;
+    font-family: 'Nunito';
+    font-size: 2.15000000em;
+    display: block;
+    text-align: left;
+    margin-left: -10px;
+  }
+  
+  .onlinebootcamp {
+    color: grey;
+    font-weight: 400;
+    font-size: 1.350000000em;
+    display: block;
+    margin: 0 0 20px -7px;
+  }
+  
+  .illus {
+    width: 80%;
+    margin: 175px 0 0 90px;
+  }
+  
+  .registe {
+    background-color: #FFF;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .logo {
+    margin: 0 0 15px -8px;
+    width: 18%;
+  }
+
+    /* box login */
+  .persegilogin{
+    font-family:'Nunito';
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width: 500px;
+    background: transparent;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+
+  .persegilogin input{
+    font-family:'Nunito';
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /* ceklist input form */
+  .ceklist {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right 12px;
+  }
+
+  .persegilog input [type="submit"]
+  {
+    font-family:'Nunito';
+    border-bottom: none;
+    background: transparent;
+    color: #fff;
+    margin-bottom: 0;
+    left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .persegilogin form div {
+    font-family:'Nunito';
+    position: relative;
+  }
+
+  .persegireg form div label {
+    font-family:'Nunito';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    color: #999;
+    transition: .5s;
+    pointer-events: none;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /* text input */
+  .textinput {
+    font-family:'Nunito';
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /* text label */
+  .textlabel {
+    font-family:'Nunito';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+}
+}
 
 @media only screen and (max-width: 550px) {
   .persegilogin {
@@ -124,7 +434,7 @@
       padding: 15px 150px 15px 150px;
       border-radius: 0; 
       box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
-      font-family: 'Montserrat';
+      font-family: 'Nunito';
     }
 }
 
@@ -138,7 +448,7 @@
       padding: 15px 100px 15px 100px;
       border-radius: 0; 
       box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
-      font-family: 'Montserrat';
+      font-family: 'Nunito';
     }
 }
 .password{

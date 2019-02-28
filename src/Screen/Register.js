@@ -111,15 +111,15 @@ class Register extends Component {
             <div class="row mb-5 d-none d-lg-flex d-xl-flex">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                     <span className="col-lg-6 col-md-6 col-sm-6 col-xs-6 mx-auto">
-                        <img alt='' src={daftarsekarang} style={{margin:'150px 0 200px 85px'}}/>
+                        <img class="illus" alt='' src={daftarsekarang}/>
                     </span>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <div>
                         <div className="text-title" style={{padding:'20px 0 0 52px'}}>
-                            <img alt='' src={logo} style={{margin:'0 0 15px -8px', width:'18%'}}/>
+                            <img class="logo" alt='' src={logo}/>
                             <h1 className="welcome">Selamat datang di Squad </h1>
-                            <p style={{color:'grey', fontWeight:'400', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'1.350000000em', display:'block', margin:'0 0 20px -7px'}}>
+                            <p class="onlinebootcamp" style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}>
                                 Online Bootcamp Zaman Now
                             </p>
                         </div>
@@ -127,44 +127,45 @@ class Register extends Component {
                     <div style={{padding:'0 0 0 45px'}}>
                         <div class="daftar">
                             <div class="col-md-12" style={{padding:'16px 10px 0 30px', }}>
-                                <div class="persegireg" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
+                                <div class="persegireg">
                                     <form>
                                         <div>
-                                            <input type="text" name="fullname" required="" pattern="[A-Za-z}"
+                                            <input class="textinput" type="text" name="fullname" required="" pattern="[A-Za-z}"
                                                 onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
-                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',backgroundImage: 'url(' + this.state.backgroundf + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
+                                                style={{backgroundImage: 'url(' + this.state.backgroundf + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
                                             />
-                                            <label 
-                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', 
+                                            <label class="textlabel"
+                                                style={{ 
                                                 // color:this.state.fullname!=''?'red':'#999'
                                                 }}>Nama Lengkap
                                             </label>
                                         </div>
                                         <div>
-                                            <input type="text" name="email" required="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}" 
+                                            <input class="textinput" type="text" name="email" required="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}" 
                                                 onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
-                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',backgroundImage: 'url(' + this.state.backgrounde + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
+                                                style={{backgroundImage: 'url(' + this.state.backgrounde + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
                                             />
-                                            <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', 
+                                            <label class="textlabel" style={{ 
                                                 // color:this.state.email!=''?'red':'#999'
                                                 }}>Email
                                             </label>
                                         </div>
                                         <div>
-                                                 <input type={this.state.type} className="password__input" onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} />
-                                                <label 
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'
+                                            <input class="textinput" type={this.state.type} className="password__input" 
+                                            onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} />
+                                                <label class="textlabel" 
+                                                    style={{
                                                     }}>Password
                                                 </label>
                                                 <span className={"password__show" +(this.state.type==='input' ? ' fa fa-eye':' far fa-eye-slash')} onClick={this.toggleShow}></span>
                                         </div>
                                         <div>
-                                            <input type="password" name="confirmpass" required="" 
+                                            <input class="textinput" type="password" name="confirmpass" required="" 
                                                 onChange={this.handleChange} value={this.state.confirmpass} 
                                                 onChange={(cp)=>this.handleConfirmpassChange(cp)} value={this.state.confirmpass}
-                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label 
-                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', 
+                                                style={{}}/>
+                                            <label class="textlabel"
+                                                style={{ 
                                                 // color:this.state.confirmpass!=''?'red':'#999'
                                                 }}>Konfirmasi Password
                                             </label>
@@ -172,8 +173,8 @@ class Register extends Component {
                                         <div className="text-center btn-lg" 
                                         style={{width:'', padding:'5px 0 5px 0', margin:'0'}}>
                                             <button type="button" 
-                                                onClick={this.daftarhandle} class="btn btn-danger btn-lg btndaftar">
-                                                Daftar Sekarang
+                                                onClick={this.daftarhandle} class="btn btn-danger btn-lg btndaftar"
+                                                > Daftar Sekarang
                                             </button>
                                         </div>
                                     </form>
@@ -204,47 +205,47 @@ class Register extends Component {
                                 <div class="persegireg" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                     <form>
                                         <div>
-                                            <input class="ceklist" type="text" name="fullname" required="" pattern="[A-Za-z}"
+                                            <input class="textinput" class="ceklist" type="text" name="fullname" required="" pattern="[A-Za-z}"
                                                 onChange={this.handleChange} value={this.state.fullname} 
                                                 onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
-                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label 
-                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', 
+                                                style={{}}/>
+                                            <label class="textlabel" 
+                                                style={{ 
                                                 // color:this.state.fullname!=''?'red':'#999'
                                                 }}>Nama Lengkap
                                             </label>
                                         </div>
                                         <div>
-                                            <input class="ceklist" type="text" name="email" required="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
+                                            <input class="textinput" class="ceklist" type="text" name="email" required="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
                                                 onChange={this.handleChange} value={this.state.email} 
                                                 onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
-                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label 
-                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',
+                                                style={{}}/>
+                                            <label class="textlabel"
+                                                style={{
                                                 //  color:this.state.email!=''?'red':'#999'
                                                 }}>Email
                                             </label>
                                         </div>
                                         <span class="fa fa-eye" aria-hidden="true" onClick={this.toggleShow} style={{margin:'0 0 0 250px'}}></span>
                                         <div>
-                                            <input type={this.state.hidden ? 'password': 'text'} id="password-field" name="pass" required="" value="secret"
+                                            <input class="textinput" type={this.state.hidden ? 'password': 'text'} id="password-field" name="pass" required="" value="secret"
                                                     onChange={this.handleChange} value={this.state.password} 
                                                     onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.pass}
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                    style={{}}/>
                                                     {/* <button onClick={this.toggleShow}>Show / Hide</button> */}
-                                            <label 
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', 
+                                            <label class="textlabel"
+                                                    style={{ 
                                                     // color:this.state.pass!=''?'red':'#999'
                                                     }}>Password
                                             </label>
                                         </div>
                                         <div>
-                                            <input type="password" name="confirmpass" required="" 
+                                            <input class="textinput" type="password" name="confirmpass" required="" 
                                                 onChange={this.handleChange} value={this.state.confirmpass} 
                                                 onChange={(cp)=>this.handleConfirmpassChange(cp)} value={this.state.confirmpass}
-                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                            <label 
-                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', 
+                                                style={{}}/>
+                                            <label class="textlabel"
+                                                style={{ 
                                                 // color:this.state.confirmpass!=''?'red':'#999'
                                                 }}>Konfirmasi Password
                                             </label>
@@ -253,7 +254,7 @@ class Register extends Component {
                                         style={{width:'', padding:'5px 0 5px 0', margin:'0'}}>
                                             <button type="button" 
                                                 onClick={this.daftarhandle} class="btn btn-danger btn-lg btndaftar"
-                                                >Daftar Sekarang
+                                                > Daftar Sekarang
                                             </button>
                                         </div>
                                     </form>
