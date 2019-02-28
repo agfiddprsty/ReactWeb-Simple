@@ -22,11 +22,11 @@
   position: relative;
   top: 0%;
   left: 0%;
-  width: 600px;
+  width: 100%;
+  box-shadow: 0 0 20px 1px rgba(136, 136, 136, 0.4);
   background: #fff;
-  box-sizing: border-box;
-  border: 1px solid lightgrey;
-  box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
+  padding: 40px;
+  margin-bottom: 50px;
 }
 
 .parttext {
