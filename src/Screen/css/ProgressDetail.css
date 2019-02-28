@@ -28,13 +28,13 @@
         font-size: 20px;
     }
 }
-@media only screen and (max-width:810px){
+@media only screen and (max-width:400px){
     .dv-pg-cl{
         width:250px;
         background-Color:#FF6567;
         height:130px;
         border-Radius:5px;
-        margin-left: 70px;
+        /* margin-left: 70px; */
     }
     .h2-pg-cl{
         color:#FFF;
