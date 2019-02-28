@@ -474,7 +474,6 @@ class ProfileFilled extends Component {
                                         <div className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
                                             <div class="row" style={{marginTop:'15px'}}>
                                                 <span class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6 schol">
-                                                    <div class="col-3"></div>
                                                     <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
                                                         SMK Uhuy Lah
                                                     </p>
@@ -519,6 +518,52 @@ class ProfileFilled extends Component {
                                                         Januari 2019 - Maret 2020
                                                     </span>
                                                 </span>
+                                                <span class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6 schol"
+                                                style={{marginTop:'25px'}}>
+                                                    <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                        SMK Uhuy Lah
+                                                    </p>
+                                                    <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                        SMA/SMK
+                                                    </p>
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div className="row">
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbm">
+                                                                        Field Of Study
+                                                                    </span>
+                                                                </div>
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbmb">
+                                                                        Business
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-12 d-sm-12 col-xs-12">
+                                                            <div className="row">
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbm">
+                                                                        Major
+                                                                    </span>
+                                                                </div>
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbmb">
+                                                                        Multimedia
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                                <span class="col-xl-7 col-lg-7 col-md-7 col-sm-5 col-xs-5" style={{marginTop:'25px'}}>
+                                                    <span class="dateright">
+                                                        Januari 2019 - Maret 2020
+                                                    </span>
+                                                </span>
                                             </div>
                                         </div>
 
@@ -547,6 +592,50 @@ class ProfileFilled extends Component {
                                                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                                     <span className="pull-left fmbmb">
                                                                         Buisness
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-12 d-sm-12 col-xs-12">
+                                                            <div className="row">
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbm">
+                                                                        Major
+                                                                    </span>
+                                                                </div>
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbmb">
+                                                                        Multimedia
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                                <span class="col-xs-12 schol">
+                                                    <div class="col-3"></div>
+                                                    <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                        SMK Uhuy Lah
+                                                    </p>
+                                                    <span class="dateright">
+                                                        Januari 2019 - Maret 2020
+                                                    </span>
+                                                    <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                        SMA/SMK
+                                                    </p>
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div className="row">
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbm">
+                                                                        Field Of Study
+                                                                    </span>
+                                                                </div>
+                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                    <span className="pull-left fmbmb">
+                                                                        Business
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -666,7 +755,6 @@ class ProfileFilled extends Component {
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.
                                                 </p>
                                             </div>
-                                                    
                                             <br/>
                                             <div>
                                                 <br/>
