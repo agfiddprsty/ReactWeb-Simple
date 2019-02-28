@@ -12,6 +12,10 @@
   margin-left: -10px;
 }
 
+.shadow {
+  box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
+}
+
 .logright {
   margin-top: 0px;
 }
@@ -136,7 +140,7 @@
 
 /* button */
 .btnmasuk {
-  padding: 15px 130px 15px 130px;
+  padding: 15px 150px 15px 150px;
   border-radius: 0; 
   box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
   font-family: 'Nunito';
@@ -298,6 +302,14 @@
       font-size: 14px;
       font-weight: 400;
   }
+
+  .btnmasuk {
+    padding: 15px 150px 15px 150px;
+    border-radius: 0; 
+    box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
+    font-family: 'Nunito';
+    font-weight: bold;
+  }
 }
 
 
@@ -436,7 +448,15 @@
     color: #999;
     font-size: 14px;
     font-weight: 400;
-}
+  }
+
+  .btnmasuk {
+    padding: 15px 175px 15px 175px;
+    border-radius: 0; 
+    box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
+    font-family: 'Nunito';
+    font-weight: bold;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -445,7 +465,7 @@
       box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);  
   }
   .btnmasuk {
-      padding: 15px 150px 15px 150px;
+      padding: 15px 175px 15px 175px;
       border-radius: 0; 
       box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
       font-family: 'Montserrat';
