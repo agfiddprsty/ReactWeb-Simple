@@ -42,7 +42,7 @@ class Header extends Component {
                   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse bg-light colap" id="collapsibleNavbar" >
+                  <div class="collapse bg-light navbar-collapse bg-light colap" id="collapsibleNavbar" >
                   <ul class="navbar-nav ml-auto">
                     <li className="nav-item">
                       <a href='/profilefilled' className="nav-link">Profile</a>

@@ -10,7 +10,7 @@ class DashboardUnpaid extends Component {
             <Header/>
           </div>
           <body style={{backgroundColor:'#FFF'}}>
-            <div className="tengahagre d-flex flex-wrap align-content-center" style={{backgroundColor:'#FFF'}}>
+            <div className="tengahagre" style={{backgroundColor:'#FFF'}}>
               <div class="agreement"> 
                 <div className="persetujuan">
                   <h1 className="text-center agremnt">

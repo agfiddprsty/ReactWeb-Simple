@@ -3,8 +3,8 @@
     height: 100vh;
     overflow: hidden;
     background-color: #fff;
-    padding-bottom: 30px;
 }
+
 .sqare{
     width: 800px;
     background-color: white;
@@ -38,18 +38,20 @@
 
 .silahkan {
     height: auto;
-    color: #666666;
-    font-weight: 325;
-    font-family: Open Sans, helvetica, Arial, sans serif;
+    color: #313131;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.2em;
 }
 
 .plsconfrm {
     height: auto;
-    color: black;
+    font-size: 20px;
     margin-top: 50px;
     margin-left: 20px;
-    font-family: Open Sans, helvetica, Arial, sans serif;
+    color: #313131;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
 }
 
 .bca{
@@ -97,6 +99,33 @@
     margin-left: 15px;
 }
 
+
+@media only screen and (max-width: 1920px) {
+    .sqare{
+		margin-top: 120px;
+	}
+}
+
+@media only screen and (max-width: 1680px) {
+    .sqare{
+		margin-top: 100px;
+	}
+}
+
+@media only screen and (max-width: 1440px) {
+    .sqare{
+		margin-top: 80px;
+	}
+}
+
+
+@media only screen and (max-width: 1366px) {
+    .sqare{
+		margin-top: 60px;
+	}
+}
+
+
 @media only screen and (max-width: 800px) {
     .sqare {
         width: 700px;
@@ -112,9 +141,9 @@
     }
     .silahkan {
         height: auto;
-        color: #666666;
-        font-weight: 325;
-        font-family: Open Sans, helvetica, Arial, sans serif;
+        color: #313131;
+        font-weight: 400;
+        font-family: 'Nunito', sans-serif;
         font-size: 1.1em;
     }
 
@@ -146,9 +175,9 @@
     }
     .silahkan {
         height: auto;
-        color: #666666;
-        font-weight: 325;
-        font-family: Open Sans, helvetica, Arial, sans serif;
+        color: #313131;
+        font-weight: 400;
+        font-family: 'Nunito', sans-serif;
         font-size: 1em;
     }
 }
@@ -167,9 +196,9 @@
     }
     .silahkan {
         height: auto;
-        color: #666666;
-        font-weight: 325;
-        font-family: Open Sans, helvetica, Arial, sans serif;
+        color: #313131;
+        font-weight: 400;
+        font-family: 'Nunito', sans-serif;
         font-size: 0.9em;
     }
 
@@ -205,9 +234,9 @@
     }
     .silahkan {
         height: auto;
-        color: #666666;
-        font-weight: 325;
-        font-family: Open Sans, helvetica, Arial, sans serif;
+        color: #313131;
+        font-weight: 400;
+        font-family: 'Nunito', sans-serif;
         font-size: 1.1em;
     }
 
@@ -233,5 +262,32 @@
 
     .icowa{
         width: 10%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    
+    .sqare{
+		margin-top: 70px;
+	}
+}
+
+@media only screen and (max-width: 360px) {    
+    .sqare{
+		margin-top: 50px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+    .sqare{
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (max-height: 730px) {
+    .isii{
+        overflow: auto;
+        overflow-x: hidden;
     }
 }
