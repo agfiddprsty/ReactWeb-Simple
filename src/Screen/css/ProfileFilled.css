@@ -17,17 +17,21 @@
   margin: 15px 0 75px 0;
 }
 
+.pgpro {
+  margin-top: 64px;
+  background-color: #FFF;
+  /* height:; */
+}
+
 /* box profile */
 .persegiprofile{
-  position:absolute;
+  position: relative;
   top: 0%;
   left: 0%;
-  width: 500px;
+  width: 100%;
+  box-shadow: 0 0 20px 1px rgba(136, 136, 136, 0.4);
   background: #fff;
   padding: 40px;
-  box-sizing: border-box;
-  border: 1px solid rgba(0,0,0,.1);
-  box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
   margin-bottom: 50px;
 }
 
@@ -306,7 +310,7 @@ font-weight: 500;
   font-family: 'Nunito';
   font-size: 15px;
   font-weight: 450;
-  display: block;
+  /* display: block; */
   text-align: left;
   margin-bottom: 0;
 }
@@ -316,10 +320,14 @@ font-weight: 500;
   font-family: 'Nunito';
   font-size: 15px;
   font-weight: 450;
-  display: block;
+  /* display: block; */
   text-align: left;
   margin-bottom: 0;
-  margin-top: -10px;
+  /* margin-top: -10px; */
+}
+
+.schol{
+  margin-left: 40px;
 }
 
 .dateright {
@@ -384,4 +392,27 @@ font-weight: 500;
   font-size: 15px;
   font-family: 'Montserrat';
   font-weight: 600;
+}
+
+@media only screen and (max-width: 767px){
+  .schol{
+    margin-left: 0px;
+  }
+}
+
+
+@media only screen and (max-width: 575px){
+  .schol{
+    margin-left: 40px;
+  }
+  .dateright {
+    color: red;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 600;
+    display: block;
+    text-align: left;
+    margin-right: -40px;
+  }
+  
 }

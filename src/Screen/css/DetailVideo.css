@@ -68,12 +68,152 @@
         overflow-x: hidden;
     }
 }
-@media only screen and (max-width:810px){
+
+@media only screen and (max-width:800px){
+    .img-cmt-cl{
+        width: 60px;
+    }
+    .input-cmt-cl{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:500px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .dv-input-cmt-cl{
+        margin-Top:15px;
+        margin-Left:10px;
+    }
+    .submit-cmt-cl{
+        margin-left:400px;
+    }
+    .sh-cmt-cl{
+        margin-Top:5px;
+        margin-Left:10px;
+    }
+    .dt-dv-pg-cl{
+        margin-left:60px;
+        margin-top:20px;
+    }
+    .ls-dv-mg-cl{
+        margin-left: 70px;
+    }
+    .dt-gr-cl{
+        border-color:#E7E7E7;
+        margin-left:60px;
+        width: 200px;
+      }
+}
+@media only screen and (max-width:700px){
+    .img-cmt-cl{
+        width: 45px;
+    }
+    .input-cmt-cl{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:300px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .dv-input-cmt-cl{
+        margin-Top:5px;
+        margin-Left:10px;
+    }
+    .submit-cmt-cl{
+        margin-left:220px;
+    }
+    .sh-cmt-cl{
+        margin-Top:2px;
+        margin-Left:10px;
+    }
+    .dt-dv-pg-cl{
+        margin-left:60px;
+        margin-top:20px;
+    }
+    .ls-dv-mg-cl{
+        margin-left: 70px;
+    }
+    .dt-gr-cl{
+        border-color:#E7E7E7;
+        margin-left:60px;
+        width: 200px;
+      }
+}
+@media only screen and (max-width:600px){
+    .img-cmt-cl{
+        width: 40px;
+    }
+    .input-cmt-cl{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:300px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .dv-input-cmt-cl{
+        margin-Top:-30px;
+        margin-Left:35px;
+    }
+    .submit-cmt-cl{
+        margin-left:220px;
+    }
+    .sh-cmt-cl{
+        margin-Top:-35px;
+        margin-Left:35px;
+    }
+    .dt-dv-pg-cl{
+        margin-left:60px;
+        margin-top:20px;
+    }
+    .ls-dv-mg-cl{
+        margin-left: 70px;
+    }
+    .dt-gr-cl{
+        border-color:#E7E7E7;
+        margin-left:60px;
+        width: 200px;
+      }
+}
+@media only screen and (max-width:500px){
+    .img-cmt-cl{
+        width: 35px;
+    }
+    .input-cmt-cl{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:250px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .dv-input-cmt-cl{
+        margin-Top:-30px;
+        margin-Left:30px;
+    }
+    .submit-cmt-cl{
+        margin-left:160px;
+    }
+    .sh-cmt-cl{
+        margin-Top:-35px;
+        margin-Left:30px;
+    }
+    .dt-dv-pg-cl{
+        margin-left:-10px;
+        margin-top:20px;
+    }
+    .ls-dv-mg-cl{
+        margin-left: -20px;
+    }
+}
+@media only screen and (max-width:400px){
     .dt-body-cl{
         border-Color:#E7E7E7;
     }
     .dt-dv-pg-cl{
-        margin-left:-70px;
+        margin-left:-10px;
         margin-top:20px;
     }
     .img-cmt-cl{

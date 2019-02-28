@@ -69,7 +69,7 @@
         width:400px;
       }
   }
-  @media only screen and (max-width:810px){
+  @media only screen and (max-width:400px){
       .qz-ul-cl{
         background-Color:#FFF;
         width:200px;

@@ -11,15 +11,13 @@ class VideoPlayer extends Component{
         }
     }
     _Pause(){
-
-        
         this.setState({ playing: !this.state.playing })
     }
     render(){
        
         return(
-            <div className="col-md-auto vp-dv-out-gd vp-dv-out-cl">
-                <div className="vp-v-gd vp-v-cl">
+            <div className="col-md-auto vp-dv-out-gd vp-dv-out-pb vp-dv-out-cl">
+                <div className="vp-v-gd vp-v-pb vp-v-cl">
                     <Iframeresponsive src="https://fast.wistia.net/embed/iframe/dso2sjap7u"
                     // width="800px"
                     // height="500px"
@@ -32,7 +30,7 @@ class VideoPlayer extends Component{
                 </div>
                 <h4 className="tittlevideo-gd">2. Mengenal Component</h4>
                 <div className="col-12 col-s-9">
-                    <hr class="mt-2 mb-5 hr1-vp-gd hr1-vp-cl"></hr>
+                    <hr class="mt-2 mb-5 hr1-vp-gd hr1-vp-cl hr1-vp-pb"></hr>
 
                     <br/>
                     <br/>
