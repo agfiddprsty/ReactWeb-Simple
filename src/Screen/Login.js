@@ -16,7 +16,7 @@ class Login extends Component {
         this.state = {
             email:'',
             password:'',
-            type: 'password',
+            type: 'input',
             hidden: true,
             background:"",
         }
@@ -68,9 +68,14 @@ class Login extends Component {
     handlePasswordChange(pc) {
         this.setState({ password: pc.target.value });
       }
-      toggleShow() {
-        this.setState({ hidden: !this.state.hidden });
-      }
+    toggleShow(e) {
+        // this.setState({ hidden: !this.state.hidden });
+        e.preventDefault();
+        e.stopPropagation();
+        this.setState({
+            type: this.state.type === 'input' ? 'password' : 'input'
+        })
+    }
       componentDidMount() {
         if (this.props.password) {
           this.setState({ password: this.props.password });
@@ -112,29 +117,12 @@ class Login extends Component {
                                                 </label>
                                             </div>
                                             <div>
-                                                {/* <div className="col-md-auto">
-                                                <input type={this.state.hidden ? 'password': 'text'} id="password-field" name="password" required="" value="secret" 
-                                                    onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password}
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                    <button onClick={this.toggleShow}>Show / Hide</button>
-                                                </div>
-                                                 <div className="col-md-auto">
-                                                    <a class="fa fa-eye" aria-hidden="true" onClick={this.toggleShow} style={{marginTop:"-10px"}}></a>
-                                                </div>
+                                                <input type={this.state.type} className="password__input" onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} />
                                                 <label 
                                                     style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'
                                                     }}>Password
-                                                </label> */}
-                                                <PasswordMask
-                                                id="password"
-                                                name="password"
-                                                placeholder="Enter password"
-                                                value={this.state.password}
-                                                onChange={(pc)=>this.handlePasswordChange(pc)}
-                                                />
-                                                {/* <input type="password" id="password" name="password" class="" placeholder="Enter password" value="" style={{width: "100%", display: "block"}}></input>
-                                                <input type="text" id="_password" name="" class="" placeholder="Enter password" value="" style={{width: "100%", display: "none"}}></input>
-                                                <a href="" class="" tabindex="-1" style={{position: "absolute", Top: "50%", Right: "6px",marginTop: "-13px", padding: "4px 10px" ,color: "rgb(0, 0, 0)", textAlign: "center", textDecoration: "none",userSelect:"none"}}>Show</a> */}
+                                                </label>
+                                                <span className="password__show fa fa-eye" onClick={this.toggleShow}></span>
                                             </div>
                                             <div className="text-center btn-lg" 
                                             style={{width:'', padding:'10px 0 10px 0', margin:'0'}}>
