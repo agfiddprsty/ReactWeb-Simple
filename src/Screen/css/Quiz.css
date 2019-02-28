@@ -68,6 +68,14 @@
         background-Color:#FFF;
         width:400px;
       }
+      .qz-outt-gd{
+        margin-Left:85px;margin-Top:-10px;
+      }
+  }
+  @media only screen and (max-width:1680px){
+      .qz-outt-gd{
+        margin-Left:80px;margin-Top:-10px;
+      }
   }
   @media only screen and (max-width:400px){
       .qz-ul-cl{
