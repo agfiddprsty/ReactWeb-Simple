@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import LabelFloatInput from 'label-float-input';
 import Header from './HeaderPage';
 import './css/ProfileFill.css';
+import upload from './img/upload.png';
+import link from './img/link.png';
 import DropboxChooser from 'react-dropbox-chooser';
 import {RadioGroup,Radio} from 'react-radio-group';
 import './css/Register.css';
@@ -44,7 +45,6 @@ class ProfileFill extends Component {
             descproject: '',
             image:null,
             files: ''
-
         }
     }
     onSuccess(value){
@@ -90,9 +90,7 @@ class ProfileFill extends Component {
             this.props.history.push("#");
             console.log(this.state.selectedValue);
         }        
-        
     }
-
     handleChecked(){
         this.setState({
             checked: true
@@ -118,7 +116,6 @@ class ProfileFill extends Component {
     upload() {
         document.getElementById("selectImage").click()
     }
-
     pendidikanhandle(){
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
@@ -150,7 +147,6 @@ class ProfileFill extends Component {
             console.log(this.state.selectedValue);
         }
     }
-
     kerjahandle(){
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
@@ -182,7 +178,6 @@ class ProfileFill extends Component {
             console.log(this.state.selectedValue);
         }
     }
-
     projecthandle(){
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
@@ -210,21 +205,19 @@ class ProfileFill extends Component {
             console.log(this.state.selectedValue);
         }
     }
-
-
     moveLogin(){
         this.props.history.push("/");
     }
-
+    
     render() {
       return (
     <div>
         <Header/>
         <body style={{background:'#FFF'}}>
     
-        <div style={{ marginTop:'80px', backgroundColor:'#FFF', paddingBottom:'1250px'}}>
+        <div style={{ marginTop:'65px', backgroundColor:'#FFF', paddingBottom:'1250px'}}>
             <div className="text-title">
-                <div className="text-center bootcamp" style={{padding:'75px 0 0 0'}}>
+                <div className="text-center bootcamp" style={{padding:'65px 0 0 0'}}>
                     <h1 className="joinbootcamp">
                     Terimakasih telah mengikuti bootcamp online ini
                 </h1>
@@ -235,7 +228,7 @@ class ProfileFill extends Component {
             </div>
 
                 <div class="text-center" style={{padding:'0 0 350px 158px', }}>
-                    <div class="section" style={{width:'86.5%'}}>
+                    <div class="section" style={{width:'86.5%', height:'100vh'}}>
                         <div class="col-md-12" style={{padding:'15px 10px 0 30px'}}>
                             <div class="persegiprofile" style={{width:'100%', boxShadow: '0 0 20px 1px rgba(136, 136, 136, 0.4)'}}>
                                 <div class="row" style={{marginBottom:'30px'}}>
@@ -440,13 +433,21 @@ class ProfileFill extends Component {
                                                             cancel={() => console.log('Closed')}
                                                             multiselect={true}>
                                                             <button type="button" class="btn btn-outline-danger btn-lg btn-block btnupload dropbox-button">
-                                                            <i class="fa fa-cloud-upload"></i> Upload</button> 
+                                                                <span>
+                                                                    <img class="iconupload" alt='' src={upload}/>
+                                                                </span>
+                                                                    Upload
+                                                            </button> 
                                                         </DropboxChooser>
                                                     </div>
                                                 </div>
                                                 <div class="col-6">
                                                     <button type="button" class="btn btn-outline-danger btn-lg btn-block btnlink" data-toggle="collapse" data-target="#link">
-                                                    <i class="fas fa-link"></i> Link</button>
+                                                        <span>
+                                                            <img class="iconlink" alt='' src={link}/>
+                                                        </span>
+                                                            Link
+                                                    </button>
                                                 </div>
                                                 <div>
                                                     {this.state.files && this.state.files.map((files, key) => 
@@ -465,7 +466,11 @@ class ProfileFill extends Component {
                                             <p class="parttext">Sertifikat</p>
                                             <br/>
                                             <button type="button" onClick={this.upload} class="btn btn-outline-danger btn-lg btn-block btnsertifikat">
-                                            <i class="fa fa-cloud-upload"></i> Upload</button>
+                                                <span>
+                                                    <img class="iconuploadsertifikat" alt='' src={upload}/>
+                                                </span>
+                                                    Upload
+                                            </button>
                                             <input id='selectImage' hidden type="file" onChange={this.fileSelectHandler} />
                                         </div>
                                         <br/>
@@ -477,7 +482,7 @@ class ProfileFill extends Component {
                                                 >Skills
                                                 </p>
                                                 <button type="button" class="btn" data-toggle="collapse" data-target="#tambahskills" 
-                                                style={{backgroundColor:'lightgrey', color:'#000', marginRight:'20px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif'}}
+                                                style={{backgroundColor:'lightgrey', color:'#000', marginLeft:'630px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif'}}
                                                 >Add Skill</button>
                                             </div>
                                             <div className="text-left">

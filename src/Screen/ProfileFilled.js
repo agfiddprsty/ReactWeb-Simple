@@ -222,7 +222,7 @@ class ProfileFilled extends Component {
         <Header/>
         <body>
     
-        <div style={{marginTop: '80px', backgroundColor:'#FFF', paddingBottom:'1250px'}}>
+        <div style={{marginTop: '65px', backgroundColor:'#FFF', paddingBottom:'1250px'}}>
             <div className="text-title">
                 <div className="text-center bootcamp" style={{padding:'75px 0 0 0'}}>
                     <h1 className="joinbootcamp">
@@ -528,7 +528,7 @@ class ProfileFilled extends Component {
                                                 >Skills
                                                 </p>
                                                 <button type="button" class="btn" data-toggle="collapse" data-target="#tambahskills" 
-                                                style={{backgroundColor:'lightgrey', color:'#000', marginRight:'20px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif'}}
+                                                style={{backgroundColor:'lightgrey', color:'#000', marginLeft:'630px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif'}}
                                                 >Add Skill</button>
                                             </div>
                                             <div className="text-left">
@@ -627,7 +627,7 @@ class ProfileFilled extends Component {
                                                             
                                                         </div>
                                                         <div class="col-7">
-                                                            <p class="dateright">
+                                                            <p class="daterightproject">
                                                                 Maret 2020
                                                             </p>
                                                         </div>
@@ -653,7 +653,7 @@ class ProfileFilled extends Component {
                                                             </p>
                                                         </div>
                                                         <div className="col-7">
-                                                            <p class="dateright">
+                                                            <p class="daterightproject">
                                                                 Maret 2020
                                                             </p>
                                                         </div>

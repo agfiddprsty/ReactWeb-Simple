@@ -110,7 +110,8 @@ class Login extends Component {
                                             <div>
                                                 <input type="text" name="email" required="" 
                                                     onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',backgroundImage: 'url(' + this.state.background + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}/>
+                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',backgroundImage: 'url(' + this.state.background + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
+                                                    />
                                                 <label 
                                                     style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'
                                                     }}>Email
@@ -166,12 +167,12 @@ class Login extends Component {
                                     <div class="persegilogin" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                         <form>
                                             <div>
-                                                <input class="ceklist" type="text" name="email" required placeholder="" 
-                                                    onChange={this.handleChange} value={this.state.email} 
+                                                <input type="text" name="email" required="" 
                                                     onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
+                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',backgroundImage: 'url(' + this.state.background + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
+                                                    />
                                                 <label 
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', fontWeight:'600'
+                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'
                                                     }}>Email
                                                 </label>
                                             </div>
@@ -186,7 +187,8 @@ class Login extends Component {
                                                     style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'
                                                     }}>Password</label>
                                             </div>
-                                            <div className="text-center btn-lg" style={{width:'', padding:'10px 0 10px 0', margin:'0'}}>
+                                            <div className="text-center btn-lg" 
+                                            style={{padding:'5px 0 5px 0', margin:'0'}}>
                                                 <button type="button" 
                                                     onClick={this.loginhandle} class="btn btn-danger btn-lg btnmasuk">
                                                     Masuk
@@ -195,9 +197,7 @@ class Login extends Component {
                                                 <p class="textpass">Lupa Password?</p>
                                                 <p class="textpass">Belum punya akun?
                                                     <a href="/register">
-                                                        <span class="redtext">
-                                                            Daftar
-                                                         </span>
+                                                        <span class="redtext"> Daftar</span>
                                                     </a>
                                                 </p>
                                         </form>
