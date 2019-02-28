@@ -85,13 +85,13 @@
 
 @media only screen and (max-width: 1920px) {
     .tengahagre{
-		margin-top: 100px;
+		margin-top: 15vh;
 	}
 }
 
 @media only screen and (max-width: 1680px) {
     .tengahagre{
-		margin-top: 60px;
+		margin-top: 5vh;
 	}
 }
 
@@ -114,5 +114,11 @@
 
 	.persetujuan {
 		font-size: 15px;
+	}
+}
+
+@media only screen and (max-height: 820px){
+	.tengahagre{
+		padding-bottom: 30px;
 	}
 }
