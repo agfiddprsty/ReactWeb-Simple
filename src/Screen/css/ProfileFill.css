@@ -122,6 +122,105 @@
   font-weight: 600;
 }
 
+/* gender option */
+.gender {
+  text-align: left;
+  margin: -30px 0 -30px -20px;
+  font-family:'Nunito';
+  font-size: 18px;
+  font-weight: 600;
+  color: #999;
+}
+
+/* label radio gender */
+.radiogender {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  color: #999;
+  margin-left: '30px';
+  margin-top: -50px;
+}
+
+/* input radio gender */
+/* male */
+.optgendermale {
+  margin-top: 50px;
+}
+
+/* female */
+.optgenderfemale {
+  margin-left: 10px;
+  height: 30px;
+  weight: px;
+  margin-top: 100px;
+}
+
+/* date of birth */
+.dateofbirth {
+  text-align: left;
+  margin: 50px 0 -30px -20px;
+  font-family:'Nunito';
+  font-size: 18px;
+  font-weight: 600;
+  color: #5c5c5c;
+}
+
+.datebirth {
+  text-align: left;
+  margin: 40px 0 -20px -20px;
+  font-family:'Nunito';
+  font-size: 18px;
+  font-weight: 600;
+  color: #999;
+}
+
+/* from date input form */
+.from {
+  text-align: left;
+  margin: -30px 20px -30px -20px;
+  font-family:'Nunito';
+  font-size: 18px;
+  font-weight: 600;
+  color: #5c5c5c;
+}
+
+/* from month and year */
+.fromfrom {
+  text-align: left;
+  margin: 40px 0 -20px -20px;
+  font-family:'Nunito';
+  font-size: 18px;
+  font-weight: 600;
+  color: #999;
+}
+
+/* month year to */
+.until {
+  text-align: left;
+  margin: 0 0 -20px 130px;
+  font-family:'Nunito';
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* arrow */
+.arrowright {
+  margin: 10px 0 0 133px;
+  color: red;
+}
+
+/* to month and year */
+.fromto {
+  text-align: left;
+  margin: -47px 0 -20px 190px;
+  font-family:'Nunito';
+  font-size: 18px;
+  font-weight: 600;
+  color: #999;
+}
+
 /* icon button Portfolio */
 /* icon button upload */
 .iconupload {
