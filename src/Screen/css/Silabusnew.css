@@ -183,16 +183,271 @@ margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 1920px) {
-  .silabus {
-    height: 700px;
-    padding: 50px; 
+  .registr {
+    padding: 150px 0 0 150px;
+  }
+  
+  .welcome {
+    color: #3b3b3b;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    font-size: 2.55000000em;
+    display: block;
+    text-align: left;
+    margin-left: -50px;
+  }
+  
+  .onlinebootcamp {
+    color: grey;
+    font-weight: 400;
+    font-size: 1.650000000em;
+    display: block;
+    margin: 0 0 20px -50px;
+  }
+  
+  .illus {
+    width: 90%;
+    margin: 100px 0 0 35px;
+  }
+  
+  .registe {
+    background-color: #FFF;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .logo {
+    margin: 0 0 15px -50px;
+    width: 17%;
+  }
+  
+    /* box login */
+    .persegireg{
+      font-family:'Montserrat';
+      position:absolute;
+      top: 0%;
+      left: 0%;
+      width: 575px;
+      background: transparent;
+      padding: 40px;
+      box-sizing: border-box;
+      border: 1px solid rgba(0,0,0,.1);
+      box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
+      margin-bottom: 50px;
+      margin-left: -50px;
+    }
+  
+    .persegireg input{
+      font-family:'Montserrat';
+      width: 100%;
+      box-sizing: border-box;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid lightgrey;
+      padding: 10px 0;
+      margin-bottom: 30px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  
+    /* ceklist input form */
+    .ceklist {
+      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: right 12px;
+    }
+  
+    .persegireg input [type="submit"]
+    {
+      font-family:'Montserrat';
+      border-bottom: none;
+      background: transparent;
+      color: #fff;
+      margin-bottom: 0;
+      left: 10px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  
+    .persegireg form div {
+      font-family:'Montserrat';
+      position: relative;
+    }
+  
+    .persegireg form div label {
+      font-family:'Nunito';
+      position: absolute;
+      top: -12px;
+      left: 0;
+      color: #999;
+      transition: .5s;
+      pointer-events: none;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  
+    /* text input */
+    .textinput {
+      font-family:'Montserrat';
+      width: 100%;
+      box-sizing: border-box;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid lightgrey;
+      padding: 10px 0;
+      margin-bottom: 20px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  
+    /* text label */
+    .textlabel {
+      font-family:'Nunito';
+      position: absolute;
+      top: -12px;
+      left: 0;
+      color: #999;
+      font-size: 14px;
+      font-weight: 400;
   }
 }
 
+
 @media only screen and (max-width: 1366px) {
-  .silabus {
-    height: 505px;
+  .registr {
+    padding-top: 0px;
+    padding-left: 0px; 
   }
+
+  .welcome {
+    color: #3b3b3b;
+    font-weight: 550;
+    font-family: 'Montserrat';
+    font-size: 2.15000000em;
+    display: block;
+    text-align: left;
+    margin-left: -10px;
+  }
+  
+  .onlinebootcamp {
+    color: grey;
+    font-weight: 400;
+    font-size: 1.350000000em;
+    display: block;
+    margin: 0 0 20px -7px;
+  }
+  
+  .illus {
+    width: 80%;
+    margin: 175px 0 0 90px;
+  }
+  
+  .registr {
+    background-color: #FFF;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .logo {
+    margin: 0 0 15px -8px;
+    width: 18%;
+  }
+
+    /* box login */
+  .persegireg{
+    font-family:'Nunito';
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width: 500px;
+    background: transparent;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+
+  .persegireg input{
+    font-family:'Nunito';
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /* ceklist input form */
+  .ceklist {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right 12px;
+  }
+
+  .persegireg input [type="submit"]
+  {
+    font-family:'Nunito';
+    border-bottom: none;
+    background: transparent;
+    color: #fff;
+    margin-bottom: 0;
+    left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .persegireg form div {
+    font-family:'Nunito';
+    position: relative;
+  }
+
+  .persegireg form div label {
+    font-family:'Nunito';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    color: #999;
+    transition: .5s;
+    pointer-events: none;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /* text input */
+  .textinput {
+    font-family:'Nunito';
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /* text label */
+  .textlabel {
+    font-family:'Nunito';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+}
 }
 
 @media only screen and (max-width: 550px) {

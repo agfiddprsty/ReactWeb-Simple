@@ -121,7 +121,7 @@
 }
 
 @media only screen and (max-width: 1920px) {
-  .registe {
+  .registr {
     padding: 150px 0 0 150px;
   }
   
@@ -148,7 +148,7 @@
     margin: 100px 0 0 35px;
   }
   
-  .registe {
+  .registr {
     background-color: #FFF;
     height: 100vh;
     overflow: hidden;
@@ -255,7 +255,7 @@
 
 
 @media only screen and (max-width: 1366px) {
-  .registe {
+  .registr {
     padding-top: 0px;
     padding-left: 0px; 
   }
@@ -283,7 +283,7 @@
     margin: 175px 0 0 90px;
   }
   
-  .registe {
+  .registr {
     background-color: #FFF;
     height: 100vh;
     overflow: hidden;

@@ -129,6 +129,7 @@
 }
 
 /* button masuk */
+
 /* button */
 .btnmasuk {
   padding: 15px 130px 15px 130px;
@@ -300,7 +301,7 @@
   .welcome {
     color: #3b3b3b;
     font-weight: 550;
-    font-family: 'Nunito';
+    font-family: 'Montserrat';
     font-size: 2.15000000em;
     display: block;
     text-align: left;
@@ -434,7 +435,7 @@
       padding: 15px 150px 15px 150px;
       border-radius: 0; 
       box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
-      font-family: 'Nunito';
+      font-family: 'Montserrat';
     }
 }
 
