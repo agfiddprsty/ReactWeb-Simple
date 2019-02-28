@@ -16,7 +16,7 @@
   }
   @media screen and (max-width: 1920px) {
       .dv-out-gd{
-        margin-Left:30px;
+        /* margin-Left:30px; */
         margin-Top:-10px;
       }
       .nav-tabs-dropdown {
