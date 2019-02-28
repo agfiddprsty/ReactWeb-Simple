@@ -19,7 +19,7 @@ class Register extends Component {
             selectedValue: '',
             emailValid: true,
             ressjson:'',
-            hidden: true,
+            type: 'password',
             backgroundf:"",
             backgrounde:""
         }
@@ -89,8 +89,12 @@ class Register extends Component {
     handlePasswordChange(pc) {
         this.setState({ pass: pc.target.value });
       }
-      toggleShow() {
-        this.setState({ hidden: !this.state.hidden });
+      toggleShow(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        this.setState({
+            type: this.state.type === 'input' ? 'password' : 'input'
+        })
       }
       componentDidMount() {
         if (this.props.pass) {
@@ -146,18 +150,13 @@ class Register extends Component {
                                                 }}>Email
                                             </label>
                                         </div>
-                                        <span class="fa fa-eye" aria-hidden="true" onClick={this.toggleShow} style={{margin:'0 0 0 375px'}}></span>
                                         <div>
-                                            <input type={this.state.hidden ? 'password': 'text'} id="password-field" name="pass" required="" value="secret"
-                                                onChange={this.handleChange} value={this.state.pass} 
-                                                onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.pass}
-                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                {/* <button onClick={this.toggleShow}>Show / Hide</button> */}
-                                            <label 
-                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', 
-                                                // color:this.state.pass!=''?'red':'#999'
-                                                }}>Password
-                                            </label>
+                                                 <input type={this.state.type} className="password__input" onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} />
+                                                <label 
+                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'
+                                                    }}>Password
+                                                </label>
+                                                <span className={"password__show" +(this.state.type==='input' ? ' fa fa-eye':' far fa-eye-slash')} onClick={this.toggleShow}></span>
                                         </div>
                                         <div>
                                             <input type="password" name="confirmpass" required="" 

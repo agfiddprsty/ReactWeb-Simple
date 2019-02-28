@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import daftarsekarang from './img/daftarsekarang.png';
 import logo from './img/logo.png';
 import './css/Login.css';
+import PasswordMask from 'react-password-mask';
 
 class Login extends Component {
     constructor(props){
@@ -15,7 +16,7 @@ class Login extends Component {
         this.state = {
             email:'',
             password:'',
-            type: 'password',
+            type: 'input',
             hidden: true,
             background:"",
         }
@@ -67,9 +68,14 @@ class Login extends Component {
     handlePasswordChange(pc) {
         this.setState({ password: pc.target.value });
       }
-      toggleShow() {
-        this.setState({ hidden: !this.state.hidden });
-      }
+    toggleShow(e) {
+        // this.setState({ hidden: !this.state.hidden });
+        e.preventDefault();
+        e.stopPropagation();
+        this.setState({
+            type: this.state.type === 'input' ? 'password' : 'input'
+        })
+    }
       componentDidMount() {
         if (this.props.password) {
           this.setState({ password: this.props.password });
@@ -111,17 +117,13 @@ class Login extends Component {
                                                     }}>Email
                                                 </label>
                                             </div>
-                                            <span class="fa fa-eye" aria-hidden="true" onClick={this.toggleShow} style={{margin:'0 0 0 375px'}}></span>
                                             <div>
-                                                <input type={this.state.hidden ? 'password': 'text'} id="password-field" name="password" required="" value="secret"
-                                                    onChange={this.handleChange} value={this.state.password} 
-                                                    onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password}
-                                                    style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'}}/>
-                                                    {/* <button onClick={this.toggleShow}>Show / Hide</button> */}
+                                                <input type={this.state.type} className="password__input" onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} />
                                                 <label 
                                                     style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'
                                                     }}>Password
                                                 </label>
+                                                <span className={"password__show" +(this.state.type==='input' ? ' fa fa-eye':' far fa-eye-slash')} onClick={this.toggleShow}></span>
                                             </div>
                                             <div className="text-center btn-lg" 
                                             style={{width:'', padding:'10px 0 10px 0', margin:'0'}}>
