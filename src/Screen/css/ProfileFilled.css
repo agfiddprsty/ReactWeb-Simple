@@ -112,6 +112,7 @@
 .persegiprofile form div {
   position: relative;
 }
+
 .persegiprofile form div label {
   font-family:'Nunito';
   position: absolute;
@@ -124,9 +125,19 @@
   font-weight: 600;
 }
 
+.iconupload {
+  text-align: center;
+  width: 8%;
+}
+
+.iconlink {
+  text-align: center;
+  width: 8%;
+}
+
 .dftrskl{
   font-family: 'Nunito';
-  border-bottom: 2px solid #999;
+  border-bottom: 2px solid lightgrey;
   padding-bottom: 5px;
   font-size: 18px;
   margin-top: 15px;
@@ -134,7 +145,7 @@
 
 .dftrskla{
   font-family: 'Nunito';
-  border-bottom: 2px solid #999;
+  border-bottom: 2px solid lightgrey;
   padding-bottom: 5px;
   font-size: 18px;
   margin-top: 25px;
@@ -263,6 +274,7 @@ font-weight: 500;
   font-family: 'Nunito';
   border-radius: 1;
   margin-right: 20px;
+  margin-bottom: 50px;
   border: 2px solid;
   font-size: 18px;
   font-weight: 600;
@@ -272,6 +284,7 @@ font-weight: 500;
 .btnselesai {
   font-family: 'Nunito';
   border-radius: 1;
+  margin-bottom: 50px;
   border: 2px solid #d2002f;
   font-size: 18px;
   font-weight: 600;
@@ -317,6 +330,16 @@ font-weight: 500;
   display: block;
   text-align: right;
   margin-right: -40px;
+}
+
+.daterightproject {
+  color: red;
+  font-family: 'Montserrat';
+  font-size: 17px;
+  font-weight: 600;
+  display: block;
+  text-align: right;
+  margin-right: -35px;
 }
 
 /*//////////////////////////////////////////////////////////////////

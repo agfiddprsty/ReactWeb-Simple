@@ -128,7 +128,8 @@ class Register extends Component {
                                         <div>
                                             <input type="text" name="fullname" required="" pattern="[A-Za-z}"
                                                 onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
-                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',backgroundImage: 'url(' + this.state.backgroundf + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}/>
+                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',backgroundImage: 'url(' + this.state.backgroundf + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
+                                            />
                                             <label 
                                                 style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', 
                                                 // color:this.state.fullname!=''?'red':'#999'
@@ -138,7 +139,8 @@ class Register extends Component {
                                         <div>
                                             <input type="text" name="email" required="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}" 
                                                 onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
-                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',backgroundImage: 'url(' + this.state.backgrounde + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}/>
+                                                style={{fontFamily:'Open Sans, helvetica, Arial, sans serif',backgroundImage: 'url(' + this.state.backgrounde + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
+                                            />
                                             <label style={{fontFamily:'Open Sans, helvetica, Arial, sans serif', 
                                                 // color:this.state.email!=''?'red':'#999'
                                                 }}>Email

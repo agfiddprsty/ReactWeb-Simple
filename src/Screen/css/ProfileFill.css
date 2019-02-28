@@ -22,13 +22,11 @@
   position:absolute;
   top: 0%;
   left: 0%;
-  width: 500px;
+  width: 600px;
   background: #fff;
-  padding: 40px;
   box-sizing: border-box;
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid lightgrey;
   box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
-  margin-bottom: 50px;
 }
 
 .parttext {
@@ -124,9 +122,32 @@
   font-weight: 600;
 }
 
+/* icon button Portfolio */
+/* icon button upload */
+.iconupload {
+  text-align: center;
+  margin-right: 16px;
+  width: 8%;
+}
+
+/* icon button link */
+.iconlink {
+  text-align: center;
+  margin-right: 16px;
+  width: 8%;
+}
+
+/* icon button sertifikat */
+/* icon button large */
+.iconuploadsertifikat {
+  text-align: center;
+  margin-right: 16px;
+  width: 4%;
+}
+
 .dftrskl{
   font-family: 'Nunito';
-  border-bottom: 2px solid #999;
+  border-bottom: 1px solid lightgrey;
   padding-bottom: 5px;
   font-size: 18px;
   margin-top: 15px;
@@ -134,7 +155,7 @@
 
 .dftrskla{
   font-family: 'Nunito';
-  border-bottom: 2px solid #999;
+  border-bottom: 1px solid lightgrey;
   padding-bottom: 5px;
   font-size: 18px;
   margin-top: 25px;
@@ -199,11 +220,13 @@ font-weight: 500;
   background-color: #FFF;
   height: 100%;
   overflow: hidden;
+  text-align: center;
 }
 
 .btnupload {
 padding: 25px 0 25px 0;
 border-radius: 0; 
+text-align: center;
 border: 2px solid;
 font-family: 'Montserrat';
 font-weight: 500;
@@ -213,11 +236,13 @@ font-weight: 500;
   background-color: #FFF;
   height: 100%;
   overflow: hidden;
+  text-align: center;
 }
 
 .btnlink {
 padding: 25px 0 25px 0;
 border-radius: 0; 
+text-align: center;
 border: 2px solid;
 font-family: 'Montserrat';
 font-weight: 500;
@@ -263,6 +288,7 @@ font-weight: 500;
   font-family: 'Nunito';
   border-radius: 1;
   margin-right: 20px;
+  margin-bottom: 50px;
   border: 2px solid;
   font-size: 18px;
   font-weight: 600;
@@ -272,6 +298,7 @@ font-weight: 500;
 .btnselesai {
   font-family: 'Nunito';
   border-radius: 1;
+  margin-bottom: 50px;
   border: 2px solid #d2002f;
   font-size: 18px;
   font-weight: 600;
@@ -286,4 +313,12 @@ font-weight: 500;
   font-weight: 300;
   margin-top: 40px;
   padding: 10px 35px 10px 35px;
+}
+
+
+@media only screen and (max-width: 550px) {
+  .persegiprofile {
+      width: 450px; 
+      box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);   
+  }
 }
