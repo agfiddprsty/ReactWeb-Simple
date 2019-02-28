@@ -83,6 +83,24 @@
 }
 
 
+@media only screen and (max-width: 1920px) {
+    .tengahagre{
+		margin-top: 100px;
+	}
+}
+
+@media only screen and (max-width: 1680px) {
+    .tengahagre{
+		margin-top: 60px;
+	}
+}
+
+@media only screen and (max-width: 1440px) {
+    .tengahagre{
+		margin-top: 0px;
+	}
+}
+
 @media only screen and (max-width: 454px) {
     .agreement {
 		box-shadow: 0 0 20px 1px rgba(136, 136, 136, 0.4);
