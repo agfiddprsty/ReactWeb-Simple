@@ -40,6 +40,14 @@
 	  }
 
 }
+@media only screen and (max-width:1680px){
+	.disscuss-vd-gd{
+		font-Weight:600;
+		margin-Left:-15px;
+		margin-Bottom:30px;
+		font-family: 'Montserrat';
+	}
+}
 @media only screen and (max-width:1920px){
 	.disscuss-vd-gd{
 		font-Weight:600;

@@ -45,6 +45,53 @@
         margin-left: 10px;
     }
 }
+@media only screen and (max-width:1680px){
+    .bd-dv-gd{
+        margin-left: 10px;
+    }
+    .diskusi-gd{
+		font-Weight:600;
+		margin-Left:1px;
+		margin-Bottom:30px;
+        font-family: 'Montserrat';
+        margin-top: 30px;
+	}
+    .submit-gd{
+        margin-left: 550px;
+    }
+    .dv-input-cmt-qz-gd{
+        margin-Top:20px
+        /* margin-Left:30px; */
+    }
+    .input-cmt-qz-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:650px;
+        font-weight: 500;
+        font-family: "Montserrat";
+    }
+    .submit-cmt-qz-gd{
+        margin-left: 550px;
+    }   
+    .submit-rpl-qz-gd{
+        margin-left: 480px;
+    }
+    .ls-dv-mg-qz-gd{
+        margin-Left:-65px;
+    }
+    .input-rpl-qz-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:580px;
+        font-weight: 500;
+        font-family: "Montserrat";
+    }
+    .sh-qz-cmt-gd{
+        margin-left: 10px;
+    }
+}
 @media only screen and (max-width:400px){
     .dv-input-cmt-qz-cl{
         margin-Top:-30px;

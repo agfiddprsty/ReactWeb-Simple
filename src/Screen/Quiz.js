@@ -16,7 +16,7 @@ class Quiz extends Component{
                                     <a class="nav-link fa fa-square-o qz-tb-gd qz-tb-cl" href="#vtab2" data-toggle="tab"> Membuat Component Dengan Gelap<i className="fa fa-check-circle" style={{marginLeft:"50px",borderRadius:"10px",color:"#4CAF50"}}></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link fa fa-square-o qz-tb-gd qz-tb-cl" href="#vtab3" data-toggle="tab"> Membuat Component Dengan Terang<i class="fa fa-times-circle "style={{marginLeft:"44px",borderRadius:"10px",color:"#FF2324"}}></i></a>
+                                    <a class="nav-link fa fa-square-o qz-tb-gd qz-tb-cl" href="#vtab3" data-toggle="tab"> Membuat Component Dengan Terang<i class="fa fa-times-circle "style={{marginLeft:"42px",borderRadius:"10px",color:"#FF2324"}}></i></a>
                                 </li>
                             </ul>
                         </div>
