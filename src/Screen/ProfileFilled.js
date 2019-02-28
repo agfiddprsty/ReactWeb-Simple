@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Header from './HeaderPage';
 import './css/ProfileFilled.css';
+import upload from './img/upload.png';
+import link from './img/link.png';
 import projects from './img/projects.png';
 import DropboxChooser from 'react-dropbox-chooser';
 import {RadioGroup,Radio} from 'react-radio-group';
@@ -267,6 +269,37 @@ class ProfileFilled extends Component {
                                                 onChange={this.handleChange} value={this.state.adress} required=""/>
                                                 <label>Alamat</label>
                                             </div>
+                                            <div style={{padding:'20px 0px 20px 20px'}}>
+                                                <p class="gender">Gender</p>
+                                                {/* <form>
+                                                    <label class="radio-inline radiogender">
+                                                        <input class="optgendermale" type="radio" name="optradio" checked/>Male
+                                                    </label>
+                                                    <label class="radio-inline radiogender">
+                                                        <input class="optgenderfemale" type="radio" name="optradio"/>Female
+                                                    </label>
+                                                </form> */}
+                                            </div>
+                                            <div style={{padding:'20px 0px 20px 20px'}}>
+                                                <p class="dateofbirth">Tanggal Lahir</p>
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-1">
+                                                            <p class="datebirth">
+                                                                Date
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-1">
+                                                            <p class="datebirth">
+                                                                Month
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-1">
+                                                            <p class="datebirth">
+                                                                Year
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                            </div>
                                             {/* <div style={{padding:'20px 0px 20px 20px'}}>
                                                 <form>
                                                     <label class="radio-inline" style={{paddingRight:'20px'}}>
@@ -327,8 +360,13 @@ class ProfileFilled extends Component {
                                             
                                             <br/>
                                         <div class="row">
-                                            <p class="titleadd">Tambah Pendidikan</p>
-                                            <p class="col-12 required" style={{color:'#7d98ff', fontFamily:'helvetica, Arial, sans serif', fontWeight:'600', fontSize:'1.00500000em', textAlign:'right', marginTop:'-61px'}}><span style={{color:'#7d98ff'}}>*</span>required</p>
+                                            <p class="col-5 parttext">Riwayat Pendidikan</p>
+                                            <p class="col-12 required">
+                                                <span class="star">
+                                                *
+                                                </span>
+                                                required
+                                            </p>
                                         </div>
                                         <div>
                                             <br/>
@@ -390,7 +428,7 @@ class ProfileFilled extends Component {
                                                                 </div>
                                                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                                     <span className="pull-left fmbmb">
-                                                                        Buisness
+                                                                        Business
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -477,7 +515,7 @@ class ProfileFilled extends Component {
                                             <p class="parttext">Pengalaman Kerja</p>
                                             <br/>
                                             <button type="button" class="btn btn-outline-danger btn-lg btn-block btnpengalaman" data-toggle="collapse" data-target="#tambahpengalamankerja"
-                                                >+ Tambah Pengalaman Kerja</button>
+                                            >+ Tambah Pengalaman Kerja</button>
                                         </div>
                                         <br/>
                                         <div>
@@ -505,6 +543,41 @@ class ProfileFilled extends Component {
                                                         onChange={this.handleChange} value={this.state.description} required=""/>
                                                         <label>Description</label>
                                                     </div>
+                                                    <div style={{padding:'20px 0px 20px 20px'}}>
+                                                        <p class="from">From</p>
+                                                            <div class="row">
+                                                                <div class="col-sm-3 col-md-1">
+                                                                    <p class="fromfrom">
+                                                                        Month
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-sm-3 col-md-1">
+                                                                    <p class="fromfrom">
+                                                                        Year
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-3 col-md-1">
+                                                                    <p class="until">
+                                                                        To
+                                                                    </p>
+                                                                    <i class="fa fa-long-arrow-right arrowright"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-3 col-md-1">
+                                                                    <p class="fromto">
+                                                                        Month
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-sm-3 col-md-1">
+                                                                    <p class="fromto">
+                                                                        Year
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     <br/>
                                                     <div class="d-flex justify-content-end divbtncando">
                                                         <a href="#"><span class="btn btn-outline-danger btn-lg btnbatal">Batal</span></a>  
@@ -553,13 +626,21 @@ class ProfileFilled extends Component {
                                                                 cancel={() => console.log('Closed')}
                                                                 multiselect={true}>
                                                                 <button type="button" class="btn btn-outline-danger btn-lg btn-block btnupload dropbox-button">
-                                                                <i class="fa fa-cloud-upload"></i> Upload</button> 
+                                                                    <span>
+                                                                        <img class="iconupload" alt='' src={upload}/>
+                                                                    </span>
+                                                                        Upload
+                                                                </button> 
                                                             </DropboxChooser>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 upldlnk">
                                                     <button type="button" class="btn btn-outline-danger btn-lg btn-block btnlink" data-toggle="collapse" data-target="#link">
-                                                        <i class="fas fa-link"></i> Link</button>
+                                                        <span>
+                                                            <img class="iconlink" alt='' src={link}/>
+                                                        </span>
+                                                            Link
+                                                    </button>
                                                     </div>
                                                     <div>
                                                         {this.state.files && this.state.files.map((files, key) => 
@@ -578,7 +659,11 @@ class ProfileFilled extends Component {
                                                 <p class="parttext">Sertifikat</p>
                                                 <br/>
                                                 <button type="button" onClick={this.upload} class="btn btn-outline-danger btn-lg btn-block btnsertifikat">
-                                                <i class="fa fa-cloud-upload"></i> Upload</button>
+                                                    <span>
+                                                        <img class="iconuploadsertifikat" alt='' src={upload}/>
+                                                    </span>
+                                                        Upload
+                                                </button>
                                                 <input id='selectImage' hidden type="file" onChange={this.fileSelectHandler} />
                                             </div>
                                             <br/>
@@ -664,6 +749,41 @@ class ProfileFilled extends Component {
                                                             onChange={this.handleChange} value={this.state.descproject}/>
                                                             <label>Description</label>
                                                         </div>
+                                                        <div style={{padding:'20px 0px 20px 20px'}}>
+                                                            <p class="from">From</p>
+                                                                <div class="row">
+                                                                    <div class="col-sm-3 col-md-1">
+                                                                        <p class="fromfrom">
+                                                                            Month
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-sm-3 col-md-1">
+                                                                        <p class="fromfrom">
+                                                                            Year
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-3 col-md-1">
+                                                                        <p class="until">
+                                                                            To
+                                                                        </p>
+                                                                        <i class="fa fa-long-arrow-right arrowright"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-3 col-md-1">
+                                                                        <p class="fromto">
+                                                                            Month
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-sm-3 col-md-1">
+                                                                        <p class="fromto">
+                                                                            Year
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         <br/>
                                                         <div class="d-flex justify-content-end divbtncando">
                                                             <a href="#"><span class="btn btn-outline-danger btn-lg btnbatal">Batal</span></a>  
