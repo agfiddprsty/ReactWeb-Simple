@@ -520,10 +520,6 @@ class ProfileFilled extends Component {
                                                 <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
                                                     Programmer
                                                 </p>
-                                                <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                    DumbWays
-                                                </p>
-                                                            
                                             </div>
                                             <div class="col-7">
                                                 <p class="dateright">

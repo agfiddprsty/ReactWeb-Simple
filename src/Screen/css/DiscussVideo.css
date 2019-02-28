@@ -31,7 +31,7 @@
 	   margin-left: 500px;
    }
 }
-@media only screen and (max-width:810px){
+@media only screen and (max-width:400px){
 	.submit-cl{
 		margin-left: 100px
 	}
