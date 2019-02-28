@@ -122,7 +122,7 @@ class Login extends Component {
                                                     style={{fontFamily:'Open Sans, helvetica, Arial, sans serif'
                                                     }}>Password
                                                 </label>
-                                                <span className="password__show fa fa-eye" onClick={this.toggleShow}></span>
+                                                <span className={"password__show" +(this.state.type==='input' ? ' fa fa-eye':' far fa-eye-slash')} onClick={this.toggleShow}></span>
                                             </div>
                                             <div className="text-center btn-lg" 
                                             style={{width:'', padding:'10px 0 10px 0', margin:'0'}}>
