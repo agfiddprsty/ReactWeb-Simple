@@ -12,6 +12,10 @@
   margin-left: -10px;
 }
 
+.logright {
+  margin-top: 0px;
+}
+
 .onlinebootcamp {
   color: grey;
   font-weight: 400;
@@ -172,6 +176,11 @@
     text-align: left;
     margin-left: -50px;
   }
+
+
+  .logright {
+    margin-top: 50px;
+  }
   
   .onlinebootcamp {
     color: grey;
@@ -306,6 +315,10 @@
     display: block;
     text-align: left;
     margin-left: -10px;
+  }
+
+  .logright {
+    margin-top: 0px;
   }
   
   .onlinebootcamp {

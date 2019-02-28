@@ -91,7 +91,7 @@ class Login extends Component {
                             <img class="illus" alt='' src={daftarsekarang}/>
                         </span>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 logright">
                         <div>
                             <div className="text-title" style={{padding:'40px 0 0 52px'}}>
                                 <img class="logo" alt='' src={logo}/>
