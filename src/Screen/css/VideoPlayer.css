@@ -122,7 +122,6 @@
     margin-Left:-30px;
     font-Weight:500;
     font-family: 'Montserrat';
-    margin-bottom: 20px;
     color: #545454;
   }
   .hr1-vp-gd{
@@ -139,7 +138,7 @@
   }
 }
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:900px){
   .vp-v-pb{
     width: 600px;
   }
