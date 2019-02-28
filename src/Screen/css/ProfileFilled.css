@@ -160,13 +160,14 @@
 }
 
 .inputskil {
-  color: red;
-  width: 100%;
+  color: red!important;
   font-family: 'Nunito';
   margin-right: 40px;
-  margin-bottom: 0px;
-  padding-top: 30px;
+  margin-bottom: 0px!important;
   padding-right: -70px;
+  padding-top: 20px!important;
+  width: 50vw!important;
+  border: none!important;
 }
 
 
@@ -226,6 +227,11 @@ border-radius: 0;
 border: 2px solid;
 font-family: 'Montserrat';
 font-weight: 500;
+}
+
+.divadskl{
+  margin: 0 -80px 0 40px;
+  border: 1px solid red;
 }
 
 .link {
@@ -448,5 +454,13 @@ font-weight: 500;
 
   .divbtncando{
     justify-content: center!important
+  }
+  .divadskl{
+    margin: 0px;
+    width: 230px;
+    border: 1px solid red;
+  }
+  .inputskil{
+    width: 110px!important;
   }
 }

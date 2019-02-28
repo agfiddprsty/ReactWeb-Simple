@@ -614,10 +614,10 @@ class ProfileFilled extends Component {
                                                     <form>
                                                         <div id="tambahskills" class="collapse" style={{marginRight:'80px'}}>
                                                             <p class="titleadd">Tambah Skills</p>
-                                                            <div class="input-group input-group-lg text-center d-flex flex-wrap align-content-center" style={{margin:'0 -80px 0 40px', border:'1px solid red'}}>
+                                                            <div class="input-group input-group-lg text-center d-flex flex-wrap align-content-center divadskl">
                                                                 <span className="fa fa-search" style={{fontSize: '30px', color: 'red', marginRight: '5px', padding: '20px'}}></span>
                                                                 <span>
-                                                                    <input class="input-group-prepend inputskil" type="text" name="skills" required="" placeholder="Skill (ex: Data Analysis)" style={{marginBottom: '0px', paddingTop: '20px', width: '750px', border: 'none'}}/>
+                                                                    <input class="input-group-prepend inputskil" type="text" name="skills" required="" placeholder="Skill (ex: Data Analysis)"/>
                                                                 </span>
                                                             </div>
                                                             <p style={{textAlign:'left', color:'black', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'.75000000em', marginLeft:'40px'}}>Kamu bisa menambahkan 10 skills lagi</p> 
