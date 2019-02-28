@@ -51,6 +51,7 @@ nav ul li a:hover{
 }
 
 .colap {
+  height: auto;
   width: 100%;
   border-radius: 10px;
 }

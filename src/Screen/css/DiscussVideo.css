@@ -26,11 +26,27 @@
 	border-right-color:#ddd;
 	border-width:8px;
 }
-@media only screen and (min-width: 600px) {
-   .submitbutton{
-	   margin-left: 500px;
-   }
+@media only screen and (max-width:1920px){
+	.disscuss-vd-gd{
+		font-Weight:600;
+		margin-Left:-15px;
+		margin-Bottom:30px;
+		font-family: 'Montserrat';
+	}
 }
+@media only screen and (max-width:1680px){
+	.disscuss-vd-gd{
+		font-Weight:600;
+		margin-Left:-15px;
+		margin-Bottom:30px;
+		font-family: 'Montserrat';
+	}
+}
+@media only screen and (min-width: 600px) {
+	.submitbutton{
+		margin-left: 500px;
+	}
+ }
 @media only screen and (max-width:400px){
 	.submit-cl{
 		margin-left: 100px
@@ -39,12 +55,4 @@
 		margin-left: 100px;
 	  }
 
-}
-@media only screen and (max-width:1920px){
-	.disscuss-vd-gd{
-		font-Weight:600;
-		margin-Left:-15px;
-		margin-Bottom:30px;
-		font-family: 'Montserrat';
-	}
 }

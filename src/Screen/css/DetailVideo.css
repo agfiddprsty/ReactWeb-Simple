@@ -1,4 +1,4 @@
-@media only screen and (max-width:1920px){
+@media only screen and (max-width:2560px){
     .dt-body-gd{
         border-Color:#E7E7E7;
     }
@@ -14,11 +14,11 @@
         overflow-X:"hidden";
     }
     .bd-dv-vd-gd{
-        margin-Left:59px;
+        margin-Left:720px;
         margin-Top:70px;
     }
     .hr-dt-gd{
-        width:290px;
+        width:320px;
     }
     .h5-tn-gd{
         font-Weight:600;
@@ -68,8 +68,505 @@
         overflow-x: hidden;
     }
 }
+@media only screen and (max-width:1920px){
+    .dt-body-gd{
+        border-Color:#E7E7E7;
+    }
+    .dt-dv-pg-gd{
+        margin-left:-68px;
+        margin-top:10px;
+        margin-bottom: -10px
+    }
+    .dv-luar-gd{
+        background:#F8F9FA;
+        padding-Right:20px;
+        padding-Left:20px;
+        overflow-X:"hidden";
+    }
+    .bd-dv-vd-gd{
+        margin-Left:400px;
+        margin-Top:70px;
+    }
+    .hr-dt-gd{
+        width:320px;
+    }
+    .h5-tn-gd{
+        font-Weight:600;
+        margin-Top:-30px;
+        font-family: 'Montserrat';
 
-@media only screen and (max-width:800px){
+    }
+    .img-cmt-gd{
+        width:70px;
+    }
+    .input-cmt-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:650px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .input-rpl-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:580px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .dv-input-cmt-gd{
+        margin-Top:20px
+        /* margin-Left:30px; */
+    }
+    .sh-cmt-gd{
+        /* marginTop:"-30px",marginLeft:"30px" */
+        margin-top: 15px;
+    }
+    .submit-cmt-gd{
+        margin-left: 550px;
+    }
+    .submit-rpl-gd{
+        margin-left: 480px;
+    }
+    .ls-dv-mg-gd{
+        margin-Left:-55px;
+    }
+    .dv-out-vd-gd{
+        /* margin-top: 0px; */
+        /* margin-left: 30px; */
+        overflow-x: hidden;
+    }
+}
+@media only screen and (max-width:1680px){
+    .dt-body-gd{
+        border-Color:#E7E7E7;
+    }
+    .dt-dv-pg-gd{
+        margin-left:-68px;
+        margin-top:10px;
+        margin-bottom: -10px
+    }
+    .dv-luar-gd{
+        background:#F8F9FA;
+        padding-Right:20px;
+        padding-Left:20px;
+        overflow-X:"hidden";
+    }
+    .bd-dv-vd-gd{
+        margin-Left:210px;
+        margin-Top:70px;
+    }
+    .hr-dt-gd{
+        width:320px;
+    }
+    .h5-tn-gd{
+        font-Weight:600;
+        margin-Top:-30px;
+        font-family: 'Montserrat';
+
+    }
+    .img-cmt-gd{
+        width:70px;
+    }
+    .input-cmt-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:650px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .input-rpl-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:580px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .dv-input-cmt-gd{
+        margin-Top:20px
+        /* margin-Left:30px; */
+    }
+    .sh-cmt-gd{
+        /* marginTop:"-30px",marginLeft:"30px" */
+        margin-top: 15px;
+    }
+    .submit-cmt-gd{
+        margin-left: 550px;
+    }
+    .submit-rpl-gd{
+        margin-left: 480px;
+    }
+    .ls-dv-mg-gd{
+        margin-Left:-55px;
+    }
+    .dv-out-vd-gd{
+        /* margin-top: 0px; */
+        /* margin-left: 30px; */
+        overflow-x: hidden;
+    }
+}
+@media only screen and (max-width:1600px){
+    .dt-body-gd{
+        border-Color:#E7E7E7;
+    }
+    .dt-dv-pg-gd{
+        margin-left:-68px;
+        margin-top:10px;
+        margin-bottom: -10px
+    }
+    .dv-luar-gd{
+        background:#F8F9FA;
+        padding-Right:20px;
+        padding-Left:20px;
+        overflow-X:"hidden";
+    }
+    .bd-dv-vd-gd{
+        margin-Left:170px;
+        margin-Top:70px;
+    }
+    .hr-dt-gd{
+        width:320px;
+    }
+    .h5-tn-gd{
+        font-Weight:600;
+        margin-Top:-30px;
+        font-family: 'Montserrat';
+
+    }
+    .img-cmt-gd{
+        width:70px;
+    }
+    .input-cmt-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:650px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .input-rpl-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:580px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .dv-input-cmt-gd{
+        margin-Top:20px
+        /* margin-Left:30px; */
+    }
+    .sh-cmt-gd{
+        /* marginTop:"-30px",marginLeft:"30px" */
+        margin-top: 15px;
+    }
+    .submit-cmt-gd{
+        margin-left: 550px;
+    }
+    .submit-rpl-gd{
+        margin-left: 480px;
+    }
+    .ls-dv-mg-gd{
+        margin-Left:-55px;
+    }
+    .dv-out-vd-gd{
+        /* margin-top: 0px; */
+        /* margin-left: 30px; */
+        overflow-x: hidden;
+    }
+}
+@media only screen and (max-width:1440px){
+    .dt-body-gd{
+        border-Color:#E7E7E7;
+    }
+    .dt-dv-pg-gd{
+        margin-left:-68px;
+        margin-top:10px;
+        margin-bottom: -10px
+    }
+    .dv-luar-gd{
+        background:#F8F9FA;
+        padding-Right:20px;
+        padding-Left:20px;
+        overflow-X:"hidden";
+    }
+    .bd-dv-vd-gd{
+        margin-Left:89px;
+        margin-Top:70px;
+    }
+    .hr-dt-gd{
+        width:320px;
+    }
+    .h5-tn-gd{
+        font-Weight:600;
+        margin-Top:-30px;
+        font-family: 'Montserrat';
+
+    }
+    .img-cmt-gd{
+        width:70px;
+    }
+    .input-cmt-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:650px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .input-rpl-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:580px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .dv-input-cmt-gd{
+        margin-Top:20px
+        /* margin-Left:30px; */
+    }
+    .sh-cmt-gd{
+        /* marginTop:"-30px",marginLeft:"30px" */
+        margin-top: 15px;
+    }
+    .submit-cmt-gd{
+        margin-left: 550px;
+    }
+    .submit-rpl-gd{
+        margin-left: 480px;
+    }
+    .ls-dv-mg-gd{
+        margin-Left:-55px;
+    }
+    .dv-out-vd-gd{
+        /* margin-top: 0px; */
+        /* margin-left: 30px; */
+        overflow-x: hidden;
+    }
+}
+@media only screen and (max-width:1366px){
+    .dt-body-gd{
+        border-Color:#E7E7E7;
+    }
+    .dt-dv-pg-gd{
+        margin-left:-68px;
+        margin-top:10px;
+        margin-bottom: -10px
+    }
+    .dv-luar-gd{
+        background:#F8F9FA;
+        padding-Right:20px;
+        padding-Left:20px;
+        overflow-X:"hidden";
+    }
+    .bd-dv-vd-gd{
+        margin-Left:59px;
+        margin-Top:70px;
+    }
+    .hr-dt-gd{
+        width:320px;
+    }
+    .h5-tn-gd{
+        font-Weight:600;
+        margin-Top:-30px;
+        font-family: 'Montserrat';
+
+    }
+    .img-cmt-gd{
+        width:70px;
+    }
+    .input-cmt-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:650px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .input-rpl-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:580px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .dv-input-cmt-gd{
+        margin-Top:20px
+        /* margin-Left:30px; */
+    }
+    .sh-cmt-gd{
+        /* marginTop:"-30px",marginLeft:"30px" */
+        margin-top: 15px;
+    }
+    .submit-cmt-gd{
+        margin-left: 550px;
+    }
+    .submit-rpl-gd{
+        margin-left: 480px;
+    }
+    .ls-dv-mg-gd{
+        margin-Left:-55px;
+    }
+    .dv-out-vd-gd{
+        /* margin-top: 0px; */
+        /* margin-left: 30px; */
+        overflow-x: hidden;
+    }
+}
+@media only screen and (max-width:1280px){
+    .dt-body-gd{
+        border-Color:#E7E7E7;
+    }
+    .dt-dv-pg-gd{
+        margin-left:-68px;
+        margin-top:10px;
+        margin-bottom: -10px
+    }
+    .dv-luar-gd{
+        background:#F8F9FA;
+        padding-Right:20px;
+        padding-Left:20px;
+        overflow-X:"hidden";
+    }
+    .bd-dv-vd-gd{
+        margin-Left:10px;
+        margin-Top:70px;
+    }
+    .hr-dt-gd{
+        width:320px;
+    }
+    .h5-tn-gd{
+        font-Weight:600;
+        margin-Top:-30px;
+        font-family: 'Montserrat';
+
+    }
+    .img-cmt-gd{
+        width:70px;
+    }
+    .input-cmt-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:650px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .input-rpl-gd{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:580px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .dv-input-cmt-gd{
+        margin-Top:20px
+        /* margin-Left:30px; */
+    }
+    .sh-cmt-gd{
+        /* marginTop:"-30px",marginLeft:"30px" */
+        margin-top: 15px;
+    }
+    .submit-cmt-gd{
+        margin-left: 550px;
+    }
+    .submit-rpl-gd{
+        margin-left: 480px;
+    }
+    .ls-dv-mg-gd{
+        margin-Left:-55px;
+    }
+    .dv-out-vd-gd{
+        /* margin-top: 0px; */
+        /* margin-left: 30px; */
+        overflow-x: hidden;
+    }
+}
+@media only screen and (max-width:1152px){
+    .dt-body-cl{
+        border-Color:#E7E7E7;
+    }
+    .dt-dv-pg-cl{
+        margin-left:90px;
+        margin-top:20px;
+    }
+    
+    .ls-dv-mg-cl{
+        margin-left: 90px;
+    }
+    .dv-out-vd-cl{
+        margin-left: 0px;
+    }
+    .h5-tn-gd{
+        font-Weight:600;
+        margin-Top:-30px;
+        font-family: 'Montserrat';
+        margin-left: 140px;
+
+    }
+    .hr-dt-gd{
+        width:280px;
+        margin-left: 150px
+    }
+}
+@media only screen and (max-width:1024px){
+    .dt-body-cl{
+        border-Color:#E7E7E7;
+    }
+    .dt-dv-pg-cl{
+        margin-left:-10px;
+        margin-top:20px;
+    }
+    .img-cmt-cl{
+        width: 30px;
+    }
+    .bd-dv-cl{
+        margin-Top:50px;
+    }
+    .input-cmt-cl{
+        border-Style:none none solid none;
+        border-Color:#E7E7E7;
+        background-Color:transparent;
+        width:200px;
+        font-family: "Nunito",sans-serif;
+        font-weight: 600;
+    }
+    .dv-input-cmt-cl{
+        margin-Top:-30px;
+        margin-Left:30px;
+    }
+    .sh-cmt-cl{
+        margin-Top:-30px;
+        margin-Left:30px;
+    }
+    .submit-cmt-cl{
+        margin-left:100px;
+    }
+    .ls-dv-mg-cl{
+        margin-left: -20px;
+    }
+    .dv-out-vd-cl{
+        margin-left: 0px;
+    }
+    .h5-tn-gd{
+        font-Weight:600;
+        margin-Top:-30px;
+        font-family: 'Montserrat';
+        margin-left: -10px;
+
+    }
+    .hr-dt-gd{
+        width:300px;
+        margin-left: 0px
+    }
+}
+@media only screen and (max-width:900px){
     .img-cmt-cl{
         width: 60px;
     }
@@ -207,6 +704,17 @@
     .ls-dv-mg-cl{
         margin-left: -20px;
     }
+    .h5-tn-gd{
+        font-Weight:600;
+        margin-Top:-30px;
+        font-family: 'Montserrat';
+        margin-left: -70px;
+
+    }
+    .hr-dt-gd{
+        width:280px;
+        margin-left: -70px
+    }
 }
 @media only screen and (max-width:400px){
     .dt-body-cl{
@@ -246,5 +754,16 @@
     }
     .dv-out-vd-cl{
         margin-left: 0px;
+    }
+    .h5-tn-gd{
+        font-Weight:600;
+        margin-Top:-30px;
+        font-family: 'Montserrat';
+        margin-left: -70px;
+
+    }
+    .hr-dt-gd{
+        width:280px;
+        margin-left: -70px
     }
 }

@@ -1,6 +1,6 @@
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 2560px) {
     .dv-pg-gd{
-        width:290px;
+        width:320px;
         background-Color:#FF6567;
         height:115px;
         border-Radius:5px;
@@ -22,7 +22,7 @@
     .pg-lb-gd{
         font-weight: 600;
         font-family: 'Nunito',sans-serif;
-        margin-Left:230px;
+        margin-Left:260px;
         margin-Top:5px;
         color:#FFF;
         font-size: 20px;

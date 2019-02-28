@@ -32,7 +32,7 @@
 	padding: 50px 40px 50px 40px;
 	background-color: #FFF; 
 	position: center;
-	margin-top: 50px;
+	margin-top: 65px;
 	border: 1px solid #ececec;
 }
 
@@ -83,6 +83,24 @@
 }
 
 
+@media only screen and (max-width: 1920px) {
+    .tengahagre{
+		margin-top: 15vh;
+	}
+}
+
+@media only screen and (max-width: 1680px) {
+    .tengahagre{
+		margin-top: 5vh;
+	}
+}
+
+@media only screen and (max-width: 1440px) {
+    .tengahagre{
+		margin-top: 0px;
+	}
+}
+
 @media only screen and (max-width: 454px) {
     .agreement {
 		box-shadow: 0 0 20px 1px rgba(136, 136, 136, 0.4);
@@ -96,5 +114,11 @@
 
 	.persetujuan {
 		font-size: 15px;
+	}
+}
+
+@media only screen and (max-height: 820px){
+	.tengahagre{
+		padding-bottom: 30px;
 	}
 }

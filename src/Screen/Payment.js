@@ -13,7 +13,7 @@ class Payment extends Component {
                 <div>
                     <Header/>
                 </div>
-                <div className="kontener">
+                <div className="kontener d-flex flex-wrap align-content-center">
                     <section className="sqare">
                         <h2 className="butuh">Pembayaran pendaftaran dibutuhkan</h2>
                         <span className="silahkan"> Silahkan membayar biaya  pendaftaran online bootcamp sebesar IDR <br/> 500.000 untuk dapat mengakses konten kami</span>

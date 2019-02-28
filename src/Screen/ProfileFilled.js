@@ -362,7 +362,7 @@ class ProfileFilled extends Component {
                                                         <label>Degree</label>
                                                     </div>
                                                     <br/>
-                                                    <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
+                                                    <div class="d-flex justify-content-end divbtncando">
                                                         <a href="#"><span class="btn btn-outline-danger btn-lg btnbatal">Batal</span></a>  
                                                         <a href="#"><span class="btn btn-danger btn-lg btnselesai"
                                                         onClick={this.pendidikanhandle}>Selesai</span></a>  
@@ -506,7 +506,7 @@ class ProfileFilled extends Component {
                                                         <label>Description</label>
                                                     </div>
                                                     <br/>
-                                                    <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
+                                                    <div class="d-flex justify-content-end divbtncando">
                                                         <a href="#"><span class="btn btn-outline-danger btn-lg btnbatal">Batal</span></a>  
                                                         <a href="#"><span class="btn btn-danger btn-lg btnselesai" 
                                                         onClick={this.kerjahandle}>Selesai</span></a>  
@@ -540,7 +540,7 @@ class ProfileFilled extends Component {
                                                 </p>
                                                 <br/>
                                                 <div class="row">
-                                                    <div class="col-6">
+                                                    <div class="col-6 upldlnk">
 
                                                         {/* <button onClick={this.upload} type="button" class="btn btn-outline-danger btn-lg btn-block" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
                                                         >
@@ -557,7 +557,7 @@ class ProfileFilled extends Component {
                                                             </DropboxChooser>
                                                         </div>
                                                     </div>
-                                                    <div class="col-6">
+                                                    <div class="col-6 upldlnk">
                                                     <button type="button" class="btn btn-outline-danger btn-lg btn-block btnlink" data-toggle="collapse" data-target="#link">
                                                         <i class="fas fa-link"></i> Link</button>
                                                     </div>
@@ -614,10 +614,10 @@ class ProfileFilled extends Component {
                                                     <form>
                                                         <div id="tambahskills" class="collapse" style={{marginRight:'80px'}}>
                                                             <p class="titleadd">Tambah Skills</p>
-                                                            <div class="input-group input-group-lg text-center d-flex flex-wrap align-content-center" style={{margin:'0 -80px 0 40px', border:'1px solid red'}}>
+                                                            <div class="input-group input-group-lg text-center d-flex flex-wrap align-content-center divadskl">
                                                                 <span className="fa fa-search" style={{fontSize: '30px', color: 'red', marginRight: '5px', padding: '20px'}}></span>
                                                                 <span>
-                                                                    <input class="input-group-prepend inputskil" type="text" name="skills" required="" placeholder="Skill (ex: Data Analysis)" style={{marginBottom: '0px', paddingTop: '20px', width: '750px', border: 'none'}}/>
+                                                                    <input class="input-group-prepend inputskil" type="text" name="skills" required="" placeholder="Skill (ex: Data Analysis)"/>
                                                                 </span>
                                                             </div>
                                                             <p style={{textAlign:'left', color:'black', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'.75000000em', marginLeft:'40px'}}>Kamu bisa menambahkan 10 skills lagi</p> 
@@ -665,7 +665,7 @@ class ProfileFilled extends Component {
                                                             <label>Description</label>
                                                         </div>
                                                         <br/>
-                                                        <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
+                                                        <div class="d-flex justify-content-end divbtncando">
                                                             <a href="#"><span class="btn btn-outline-danger btn-lg btnbatal">Batal</span></a>  
                                                             <a href="#"><span class="btn btn-danger btn-lg btnselesai" 
                                                             onClick={this.projecthandle}>Selesai</span></a>  
