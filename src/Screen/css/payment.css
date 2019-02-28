@@ -102,13 +102,13 @@
 
 @media only screen and (max-width: 1920px) {
     .sqare{
-		margin-top: 120px;
+		margin-top: 20vh;
 	}
 }
 
 @media only screen and (max-width: 1680px) {
     .sqare{
-		margin-top: 100px;
+		margin-top: 20vh;
 	}
 }
 

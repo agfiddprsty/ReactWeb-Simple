@@ -362,7 +362,7 @@ class ProfileFilled extends Component {
                                                         <label>Degree</label>
                                                     </div>
                                                     <br/>
-                                                    <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
+                                                    <div class="d-flex justify-content-end divbtncando">
                                                         <a href="#"><span class="btn btn-outline-danger btn-lg btnbatal">Batal</span></a>  
                                                         <a href="#"><span class="btn btn-danger btn-lg btnselesai"
                                                         onClick={this.pendidikanhandle}>Selesai</span></a>  
@@ -506,7 +506,7 @@ class ProfileFilled extends Component {
                                                         <label>Description</label>
                                                     </div>
                                                     <br/>
-                                                    <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
+                                                    <div class="d-flex justify-content-end divbtncando">
                                                         <a href="#"><span class="btn btn-outline-danger btn-lg btnbatal">Batal</span></a>  
                                                         <a href="#"><span class="btn btn-danger btn-lg btnselesai" 
                                                         onClick={this.kerjahandle}>Selesai</span></a>  
@@ -540,7 +540,7 @@ class ProfileFilled extends Component {
                                                 </p>
                                                 <br/>
                                                 <div class="row">
-                                                    <div class="col-6">
+                                                    <div class="col-6 upldlnk">
 
                                                         {/* <button onClick={this.upload} type="button" class="btn btn-outline-danger btn-lg btn-block" style={{borderRadius:'0', border:'2px solid', padding:'25px 0 25px 0', fontFamily:'helvetica, Arial, sans serif'}}
                                                         >
@@ -557,7 +557,7 @@ class ProfileFilled extends Component {
                                                             </DropboxChooser>
                                                         </div>
                                                     </div>
-                                                    <div class="col-6">
+                                                    <div class="col-6 upldlnk">
                                                     <button type="button" class="btn btn-outline-danger btn-lg btn-block btnlink" data-toggle="collapse" data-target="#link">
                                                         <i class="fas fa-link"></i> Link</button>
                                                     </div>
@@ -665,7 +665,7 @@ class ProfileFilled extends Component {
                                                             <label>Description</label>
                                                         </div>
                                                         <br/>
-                                                        <div class="d-flex justify-content-end" style={{paddingTop:'-25px'}}>
+                                                        <div class="d-flex justify-content-end divbtncando">
                                                             <a href="#"><span class="btn btn-outline-danger btn-lg btnbatal">Batal</span></a>  
                                                             <a href="#"><span class="btn btn-danger btn-lg btnselesai" 
                                                             onClick={this.projecthandle}>Selesai</span></a>  

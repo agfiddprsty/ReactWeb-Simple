@@ -35,6 +35,10 @@
   margin-bottom: 50px;
 }
 
+.divbtncando{
+  padding-top: -25px;
+}
+
 .parttext {
   color: #000;
   font-weight: 700;
@@ -415,4 +419,34 @@ font-weight: 500;
     margin-right: -40px;
   }
   
+}
+
+
+
+@media only screen and (max-width: 400px){
+  .btnpendidikan{
+    font-size: 15px;
+  }
+  .btnpengalaman{
+    font-size: 13px;
+  }
+  .btnprojects{
+    font-size: 18px;
+  }
+  .upldlnk{
+    flex: 0 0 0%!important;
+    max-width: 100%!important;
+  }
+  .btnupload{
+    padding: 25px 50px 25px 50px;
+    margin-bottom: 10px;
+  }
+  .btnlink{
+    padding: 25px 65px 25px 66px;
+    margin-top: 10px;
+  }
+
+  .divbtncando{
+    justify-content: center!important
+  }
 }
