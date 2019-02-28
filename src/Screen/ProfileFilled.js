@@ -3,10 +3,11 @@ import Header from './HeaderPage';
 import './css/ProfileFilled.css';
 import projects from './img/projects.png';
 import DropboxChooser from 'react-dropbox-chooser';
-import {RadioGroup,Radio} from 'react-radio-group';
 import './css/Register.css';
+import {Radio,RadioGroup} from 'react-radio-group'
 
 const APP_KEY = 'jni8bfvqjntw35s';
+
 
 class ProfileFilled extends Component {
     constructor(props){
@@ -215,7 +216,9 @@ class ProfileFilled extends Component {
     moveLogin(){
         this.props.history.push("/");
     }
-
+    setGender(event) {
+        console.log(event.target.value);
+    }
     render() {
       return (
     <div>
@@ -267,16 +270,42 @@ class ProfileFilled extends Component {
                                                 onChange={this.handleChange} value={this.state.adress} required=""/>
                                                 <label>Alamat</label>
                                             </div>
-                                            {/* <div style={{padding:'20px 0px 20px 20px'}}>
-                                                <form>
+                                            <div className="form-group">
+                                                {/* <form>
                                                     <label class="radio-inline" style={{paddingRight:'20px'}}>
                                                         <input type="radio" name="optradio" checked/>Male
                                                     </label>
                                                     <label class="radio-inline">
                                                         <input type="radio" name="optradio"/>Female
                                                     </label>
-                                                </form>
-                                            </div> */}
+                                                </form> */}
+                                                <div onChange={this.setGender.bind(this)}>
+                                                    <div className="row">
+                                                        <div className="col-md-auto">
+                                                            <div className="row">
+                                                                <div className="col-md-auto">
+                                                                    <input className="inptradio" type="radio" value="MALE" name="gender" placeholder="Male"/>[]
+                                                                </div>
+                                                                <div className="col-md-3">
+                                                                    <label style={{marginTop:"5px",marginLeft:"-10px"}}> Male</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                         <div className="col-md-auto">
+                                                            <div className="row">
+                                                                <div className="col-md-auto">
+                                                                    <input style={{display:"block"}} type="radio" value="FEMALE" name="gender" placeholder="Male"/>
+                                                                </div>
+                                                                <div className="col-md-3">
+                                                                    <label style={{marginTop:"5px",marginLeft:"-25px"}}> Female</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                            </div>
                                             {/* <div>
                                                 <form class="row">
                                                     <div class="form-group col-1">
