@@ -285,7 +285,7 @@ class ProfileFill extends Component {
                                                         </div>
                                                         <div class="col-sm-3 col-md-2">
                                                             <p class="datebirth">
-                                                                Year
+                                                                Years
                                                             </p>
                                                         </div>
                                                     </div>
@@ -496,7 +496,7 @@ class ProfileFill extends Component {
                                                                             </div>
                                                                             <div class="col-sm-3 col-md-2">
                                                                                 <p class="fromfrom">
-                                                                                    Year
+                                                                                    Years
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -547,7 +547,7 @@ class ProfileFill extends Component {
                                                                             </div>
                                                                             <div class="col-sm-3 col-md-2">
                                                                                 <p class="fromto">
-                                                                                    Year
+                                                                                    Years
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -747,11 +747,11 @@ class ProfileFill extends Component {
                                                                             </div>
                                                                             <div class="col-sm-3 col-md-2">
                                                                                 <p class="fromfrom">
-                                                                                    Year
+                                                                                    Years
                                                                                 </p>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row">
+                                                                        {/* <div class="row">
                                                                             <select name="month" class="col-1 custom-select mb-3 optdate">
                                                                                     <option selected>01</option>
                                                                                     <option>02</option>
@@ -781,7 +781,7 @@ class ProfileFill extends Component {
                                                                                     <option>1990</option>
                                                                                     <option>12</option>
                                                                                 </select>
-                                                                        </div>
+                                                                        </div> */}
                                                                         <div class="row">
                                                                             <div class="col-sm-3 col-md-1">
                                                                                 <p class="until">
@@ -790,20 +790,50 @@ class ProfileFill extends Component {
                                                                                 <i class="fa fa-long-arrow-right arrowright"></i>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row">
-                                                                            <div class="col-sm-3 col-md-1">
+                                                                        <div class="row mylf">
+                                                                            <div class="col-sm-3 col-md-2">
                                                                                 <p class="fromto">
                                                                                     Month
                                                                                 </p>
                                                                             </div>
-                                                                            <div class="col-sm-3 col-md-1">
+                                                                            <div class="col-sm-3 col-md-2">
                                                                                 <p class="fromto">
-                                                                                    Year
+                                                                                    Years
                                                                                 </p>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row">
+                                                                        <div class="row drpdndt">
                                                                             <select name="month" class="col-1 custom-select mb-3 optdate">
+                                                                                    <option selected>01</option>
+                                                                                    <option>02</option>
+                                                                                    <option>03</option>
+                                                                                    <option>04</option>
+                                                                                    <option>05</option>
+                                                                                    <option>06</option>
+                                                                                    <option>07</option>
+                                                                                    <option>08</option>
+                                                                                    <option>09</option>
+                                                                                    <option>10</option>
+                                                                                    <option>11</option>
+                                                                                    <option>12</option>
+                                                                                </select>
+
+                                                                                <select name="year" class="col-1 custom-select mb-3 optdate">
+                                                                                    <option selected>2000</option>
+                                                                                    <option>1999</option>
+                                                                                    <option>1998</option>
+                                                                                    <option>1997</option>
+                                                                                    <option>1996</option>
+                                                                                    <option>1995</option>
+                                                                                    <option>1994</option>
+                                                                                    <option>1993</option>
+                                                                                    <option>1992</option>
+                                                                                    <option>19991</option>
+                                                                                    <option>1990</option>
+                                                                                    <option>12</option>
+                                                                                </select>
+                                                                            
+                                                                                <select name="month" class="col-1 custom-select mb-3 optdate drpdnyr">
                                                                                     <option selected>01</option>
                                                                                     <option>02</option>
                                                                                     <option>03</option>
