@@ -44,100 +44,171 @@
     .ls-dv-cl{
       margin-left: -70px;
     }
+}
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .col-12-1{
+    width: 300px;
+    background-color: #FF6567;
+    border-radius: 10px;
+    height: 130px;
   }
-  
-  @media only screen and (min-width: 768px) {
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-    .col-12-1{
-      width: 300px;
-      background-color: #FF6567;
-      border-radius: 10px;
-      height: 130px;
-    }
-    .prog-gd{
-      width: 260px;
-      margin-left:20px;
-      margin-right:20px;
-      border-radius: 10px;
-    }
-    .dt-gr-gd{
-      border-color:#E7E7E7;
-      margin-left:-68px;
-      width: 300px;
-    }
-    .a-pd-gd{
-      color:#FFF;
-      margin-Left:20px;
-      border-Radius:10px;
-      font-size: 35px;
-    }
-    .pd-d-gd{
-      margin-left: 0px;
-    }
-    .ls-dv-gd{
-      margin-left: 70px;
-    }
-    .submit-gd{
-      margin-left: 100px;
-    }
+  .prog-gd{
+    width: 260px;
+    margin-left:20px;
+    margin-right:20px;
+    border-radius: 10px;
   }
-  @media only screen and (min-width: 375px) {
-    .col-xss-1{
-        width: 100px;
-        height: 50px;
-    }
-    .ls-dv-cl{
-      margin-left: -60px;
-    }
+  .dt-gr-gd{
+    border-color:#E7E7E7;
+    margin-left:-68px;
+    width: 300px;
   }
-  @media only screen and (max-width:2560px){
-    .tittlevideo-gd{
-      font-family: 'Montserrat';
-      width:"800px";
-      margin-Top:20px;
-      /* font-Weight:bold; */
-      font-weight: 600;
-      margin-Bottom:20px
-    }
-    .deskripsi-gd{
-      font-Weight:600;
-      margin-Left:-15px;
-      margin-Top:-80px;
-      font-family: 'Montserrat';
-    }
-    .detail-deskripsi-gd{
-      width:800px;
-      margin-Top:10px;
-      margin-Left:-30px;
-      font-Weight:500;
-      font-family: 'Montserrat';
-      color: #545454;
-    }
-    .hr1-vp-gd{
-      width:750px;
-      margin-Left:-15px;
-      
-    }
-    .vp-dv-out-gd{
-      margin-top: 30px;
-      /* margin-left: 60px; */
-    }
-    .vp-v-gd{
-      width: 750px;
-    }
+  .a-pd-gd{
+    color:#FFF;
+    margin-Left:20px;
+    border-Radius:10px;
+    font-size: 35px;
   }
+  .pd-d-gd{
+    margin-left: 0px;
+  }
+  .ls-dv-gd{
+    margin-left: 70px;
+  }
+  .submit-gd{
+    margin-left: 100px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .col-xss-1{
+      width: 100px;
+      height: 50px;
+  }
+  .ls-dv-cl{
+    margin-left: -60px;
+  }
+}
+@media only screen and (max-width:2560px){
+  .tittlevideo-gd{
+    font-family: 'Montserrat';
+    width:"800px";
+    margin-Top:20px;
+    /* font-Weight:bold; */
+    font-weight: 600;
+    margin-Bottom:20px
+  }
+  .deskripsi-gd{
+    font-Weight:600;
+    margin-Left:-15px;
+    margin-Top:-80px;
+    font-family: 'Montserrat';
+  }
+  .detail-deskripsi-gd{
+    width:800px;
+    margin-Top:10px;
+    margin-Left:-30px;
+    font-Weight:400;
+    font-family: 'Montserrat';
+    color: #545454;
+  }
+  .hr1-vp-gd{
+    width:750px;
+    margin-Left:-15px;
+    
+  }
+  .vp-dv-out-gd{
+    margin-top: 30px;
+    /* margin-left: 60px; */
+  }
+  .vp-v-gd{
+    width: 750px;
+  }
+}
 @media only screen and (max-width:1680px){
+  .tittlevideo-gd{
+    font-family: 'Montserrat';
+    width:"800px";
+    margin-Top:20px;
+    /* font-Weight:bold; */
+    font-weight: 600;
+    margin-Bottom:20px
+  }
+  .deskripsi-gd{
+    font-Weight:600;
+    margin-Left:-15px;
+    margin-Top:-80px;
+    font-family: 'Montserrat';
+  }
+  .detail-deskripsi-gd{
+    width:800px;
+    margin-Top:10px;
+    margin-Left:-30px;
+    font-Weight:400;
+    font-family: 'Montserrat';
+    color: #545454;
+  }
+  .hr1-vp-gd{
+    width:750px;
+    margin-Left:-15px;
+    
+  }
+  .vp-dv-out-gd{
+    margin-top: 30px;
+    margin-left: 60px;
+  }
+  .vp-v-gd{
+    width: 750px;
+  }
+}
+@media only screen and (max-width:1152px){
+  .tittlevideo-gd{
+    font-family: 'Montserrat';
+    width:"800px";
+    margin-Top:20px;
+    /* font-Weight:bold; */
+    font-weight: 600;
+    margin-Bottom:20px
+  }
+  .deskripsi-gd{
+    font-Weight:600;
+    margin-Left:-15px;
+    margin-Top:-80px;
+    font-family: 'Montserrat';
+  }
+  .detail-deskripsi-gd{
+    width:800px;
+    margin-Top:10px;
+    margin-Left:-30px;
+    font-Weight:400;
+    font-family: 'Montserrat';
+    color: #545454;
+  }
+  .hr1-vp-gd{
+    width:750px;
+    margin-Left:-15px;
+    
+  }
+  .vp-dv-out-gd{
+    margin-top: 30px;
+    margin-left: 60px;
+  }
+  .vp-v-gd{
+    width: 950px;
+  }
+}
+@media only screen and (max-width:1024px){
   .tittlevideo-gd{
     font-family: 'Montserrat';
     width:"800px";
@@ -170,13 +241,12 @@
     margin-left: 60px;
   }
   .vp-v-gd{
-    width: 750px;
+    width: 950px;
   }
 }
-
 @media only screen and (max-width:900px){
   .vp-v-pb{
-    width: 600px;
+    width: 700px;
   }
   .vp-dv-out-pb{
     margin-top: 30px;
@@ -184,6 +254,18 @@
   }
   .hr1-vp-cl{
     width: 600px;
+  }
+}
+@media only screen and (max-width:768px){
+  .vp-v-pb{
+    width: 560px;
+  }
+  .vp-dv-out-pb{
+    margin-top: 30px;
+    margin-left: 50px
+  }
+  .hr1-vp-cl{
+    width: 400px;
   }
 }
 @media only screen and (max-width:700px){
@@ -200,7 +282,7 @@
 }
 @media only screen and (max-width:600px){
   .vp-v-pb{
-    width: 350px;
+    width: 500px;
   }
   .vp-dv-out-pb{
     margin-top: 30px;
@@ -212,7 +294,7 @@
 }
 @media only screen and (max-width:500px){
   .vp-v-pb{
-    width: 300px;
+    width: 350px;
   }
   .vp-dv-out-pb{
     margin-top: 30px;

@@ -23,7 +23,7 @@ class ListVideoDown extends Component{
                     <div className="scrollbar scrollbar-primary scrollbar-cl">
                         <div class="force-overflow">
                             <CardDeck>
-                                <Card className="border-0"><a href="/detailvideo" className="modul">
+                                <Card className="border-0"><a href="/video/example" className="modul">
                                         <div className="row dv-row-gd">
                                             <div className="col-md-auto">
                                                 <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${this.state.urlbackground})`}}>
@@ -39,7 +39,7 @@ class ListVideoDown extends Component{
                                 </Card>
                             </CardDeck>
                             <CardDeck>
-                                <Card className="border-0"><a href="/detailvideo" className="modul">
+                                <Card className="border-0"><a href="/video/example" className="modul">
                                         <div className="row dv-row-gd">
                                             <div className="col-md-auto">
                                                 <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${this.state.urlbackground})`}}>
@@ -55,7 +55,7 @@ class ListVideoDown extends Component{
                                 </Card>
                             </CardDeck>
                             <CardDeck>
-                                <Card className="border-0"><a href="/detailvideo" className="modul">
+                                <Card className="border-0"><a href="/video/example" className="modul">
                                         <div className="row dv-row-gd">
                                             <div className="col-md-auto">
                                                 <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${this.state.urlbackground})`}}>
@@ -71,7 +71,7 @@ class ListVideoDown extends Component{
                                 </Card>
                             </CardDeck>
                             <CardDeck>
-                                <Card className="border-0"><a href="/detailvideo" className="modul">
+                                <Card className="border-0"><a href="/video/example" className="modul">
                                         <div className="row dv-row-gd">
                                             <div className="col-md-auto">
                                                 <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${this.state.urlbackground})`}}>
@@ -87,7 +87,7 @@ class ListVideoDown extends Component{
                                 </Card>
                             </CardDeck>
                             <CardDeck>
-                                <Card className="border-0"><a href="/detailvideo" className="modul">
+                                <Card className="border-0"><a href="/video/example" className="modul">
                                         <div className="row dv-row-gd">
                                             <div className="col-md-auto">
                                                 <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${this.state.urlbackground})`}}>
@@ -103,7 +103,7 @@ class ListVideoDown extends Component{
                                 </Card>
                             </CardDeck>
                             <CardDeck>
-                                <Card className="border-0"><a href="/detailquiz" className="modul">
+                                <Card className="border-0"><a href="/quiz/example" className="modul">
                                         <div className="row dv-row-gd">
                                             <div className="col-md-auto">
                                                 <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundColor:"#FF5D5D"}}>

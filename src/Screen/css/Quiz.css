@@ -136,7 +136,7 @@
       }
   }
   @media only screen and (max-width:1366px){
-    .qz-ul-cl{
+    /* .qz-ul-cl{
       background-Color:#FFF;
       width:500px;
     }
@@ -147,7 +147,7 @@
       margin-top: 220px;
       margin-left: -380px;
       width: 500px;
-    }
+    } */
   }
   @media only screen and (max-width:1152px){
     .qz-ul-cl{
