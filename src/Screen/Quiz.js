@@ -50,24 +50,26 @@ class Quiz extends Component{
                 <h4>To-dos(0/3)</h4>
                     <div class="row">
                         <div class="col-sm-4">
-                            <ul class="nav flex-column nav-pills qz-ul-gd qz-ul-cl">
+                            <ul class="nav flex-column nav-pills qz-ul-gd qz-ul-cl" id="tabbb">
                                 {/* <li class="nav-item" >
                                     <a class="nav-link active fa fa-square-o qz-tb-gd qz-tb-cl" href="#vtab1" data-toggle="tab"> Membuat Component Dengan Gelap<i className="fa fa-check-circle" style={{marginLeft:"50px",borderRadius:"10px",color:"#4CAF50"}}></i></a>
                                 </li> */}
-                                <li class="nav-item">
+                                <li class="nav-item" >
                                     <span className={"nav-link qz-tb-gd qz-tb-cl "+ (this.state.aclick)}>
-                                        <input type="checkbox" ch />
+                                        <input type="checkbox" style={{marginTop:"10px"}} />
                                         <a class="" href="#vtab1" data-toggle="tab" onClick={this.onaCLick}>
                                         Membuat Component Dengan Gelap
                                         <span>
-                                            <i className="fa fa-check-circle" style={{marginLeft:"30px",borderRadius:"10px",color:"#4CAF50"}}></i>
+                                            <i className="fa fa-check-circle" style={{marginLeft:"30px",borderRadius:"10px",color:"#4CAF50"}}>  </i>
                                         </span>
                                     </a>
+                                    {/* <i className="fa fa-caret-left" style={{fontSize:"30px",marginLeft:"0px",color:"#FFF"}}/> */}
                                     </span>
                                 </li>
                                 <li class="nav-item">
                                     <span className={"nav-link qz-tb-gd qz-tb-cl "+ (this.state.bclick)}>
-                                        <input type="checkbox" ch />
+                                        <input type="checkbox" style={{marginTop:"10px"}} />
+
                                         <a class="" href="#vtab2" data-toggle="tab" onClick={this.onbCLick}>
                                         Membuat Component Dengan Gelap
                                         <span>
@@ -79,7 +81,8 @@ class Quiz extends Component{
                                 </li>
                                 <li class="nav-item">
                                     <span className={"nav-link qz-tb-gd qz-tb-cl "+ (this.state.cclick)}>
-                                        <input type="checkbox" ch />
+                                        <input type="checkbox" style={{marginTop:"10px"}} />
+    
                                         <a class="" href="#vtab3" data-toggle="tab" onClick={this.oncCLick}>
                                          Membuat Component Dengan Terang
                                         
