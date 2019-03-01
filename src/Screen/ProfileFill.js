@@ -262,7 +262,24 @@ class ProfileFill extends Component {
                                                 onChange={this.handleChange} value={this.state.adress} required=""/>
                                                 <label>Alamat</label>
                                             </div>
-                                            <div style={{padding:'20px 0px 20px 20px'}}>
+                                            <span style={{margin:'20px 0px 20px 20px'}}>
+                                                <p class="gender">Gender</p>
+                                                <span className="row">
+                                                    <span className="col-xl-2 col-lg-2 col-md-2 text-left">
+                                                        <label className="radio d-inline-flex rdobtn">Male
+                                                            <input type="radio" value="male" name="gender"/>
+                                                            <span class="checkround"></span>
+                                                        </label>
+                                                    </span>
+                                                    <span className="col-xl-2 col-lg-2 col-md-2 text-left">
+                                                        <label class="radio d-inline-flex rdobtn">Female
+                                                            <input type="radio" value="male" name="gender"/>
+                                                            <span class="checkround"></span>
+                                                        </label>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            {/* <div style={{padding:'20px 0px 20px 20px'}}>
                                                 <p class="gender">Gender</p>
                                                 <div onChange={this.setGender.bind(this)} style={{marginTop:"50px"}}>
                                                     <div className="row" style={{marginLeft: '-50px'}}>
@@ -285,7 +302,7 @@ class ProfileFill extends Component {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                             <div style={{padding:'0px 0px 20px 20px'}}>
                                                 <p class="dateofbirth">Tanggal Lahir</p>
                                                     <div class="row">

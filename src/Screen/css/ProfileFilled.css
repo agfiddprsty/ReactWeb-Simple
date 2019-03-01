@@ -38,6 +38,75 @@
 .divbtncando{
   padding-top: -25px;
 }
+/* The radio */
+.radio {
+ 
+  display: flex;
+ position: relative;
+ padding-left: 30px;
+ margin-bottom: 12px;
+ cursor: pointer;
+ font-size: 20px;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ font-family: 'Nunito';
+ font-weight: 550;
+ user-select: none
+}
+
+/* Hide the browser's default radio button */
+.radio input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkround {
+
+ position: absolute;
+ top: 4px;
+ left: 0;
+ height: 17px;
+ width: 17px;
+ background-color: #fff ;
+ border-color:#f8204f;
+ border-style:solid;
+ border-width:2px;
+  border-radius: 50%;
+}
+
+
+/* When the radio button is checked, add a blue background */
+.radio input:checked ~ .checkround {
+ background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkround:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio input:checked ~ .checkround:after {
+ display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio .checkround:after {
+  left: 2px;
+ top: 1.5px;
+ width: 9px;
+ height: 9px;
+ border-radius: 50%;
+ background:#f8204f;
+ 
+
+}
+
 
 .parttext {
   color: #000;
@@ -136,7 +205,7 @@
 /* gender option */
 .gender {
   text-align: left;
-  margin: -30px 0 -30px -20px;
+  margin: -30px 0 -30px 0px;
   font-family:'Nunito';
   font-size: 18px;
   font-weight: 600;
@@ -183,6 +252,14 @@
   font-size: 18px;
   font-weight: 600;
   color: #999;
+}
+
+.rdobtn{
+  text-align: left!important ;
+  align-content: flex-start;
+  margin-top: 40px;
+  font-size: 17px;
+  margin-left: 0px;
 }
 
 /* from date input form */

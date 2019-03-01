@@ -272,8 +272,23 @@ class ProfileFilled extends Component {
                                                 onChange={this.handleChange} value={this.state.adress} required=""/>
                                                 <label>Alamat</label>
                                             </div>
-                                            <div style={{padding:'20px 0px 20px 20px'}}>
+                                            <span style={{margin:'20px 0px 20px 20px'}}>
                                                 <p class="gender">Gender</p>
+                                                <span className="row">
+                                                    <span className="col-xl-2 col-lg-2 col-md-2 text-left">
+                                                        <label className="radio d-inline-flex rdobtn">Male
+                                                            <input type="radio" value="male" name="gender"/>
+                                                            <span class="checkround"></span>
+                                                        </label>
+                                                    </span>
+                                                    <span className="col-xl-2 col-lg-2 col-md-2 text-left">
+                                                        <label class="radio d-inline-flex rdobtn">Female
+                                                            <input type="radio" value="male" name="gender"/>
+                                                            <span class="checkround"></span>
+                                                        </label>
+                                                    </span>
+                                                </span>
+                                            </span>
                                                 {/* <form>
                                                     <label class="radio-inline radiogender">
                                                         <input class="optgendermale" type="radio" name="optradio" checked/>Male
@@ -282,12 +297,13 @@ class ProfileFilled extends Component {
                                                         <input class="optgenderfemale" type="radio" name="optradio"/>Female
                                                     </label>
                                                 </form> */}
-                                                <div onChange={this.setGender.bind(this)} style={{marginTop:"50px"}}>
-                                                <div className="row" style={{marginLeft: '-50px'}}>
+                                                {/* <div onChange={this.setGender.bind(this)} style={{marginTop:"50px"}}>
+                                                    <div className="row" style={{marginLeft: '-50px'}}>
                                                         <div className="col-md-auto">
                                                             <div className="row">
-                                                                <div className="col-md-auto">
-                                                                    <input className="inptradio" style={{width:'50px'}} type="radio" value="MALE" name="gender" placeholder="Male"/>
+                                                                <div className="radio col-md-auto">
+                                                                    <input className="radio inptradio" style={{width:'50px'}} type="radio" value="MALE" name="gender" placeholder="Male"/>
+                                                                    <span class="checkround"></span>
                                                                 </div>
                                                                 <div className="col-md-3">
                                                                     <label style={{marginTop:"10px",marginLeft:"-10px"}}> Male</label>
@@ -296,8 +312,9 @@ class ProfileFilled extends Component {
                                                         </div>
                                                             <div className="col-md-auto">
                                                             <div className="row">
-                                                                <div className="col-md-auto">
-                                                                    <input style={{display:"block", width:'50px', marginTop: '5px', marginLeft: '10px'}} type="radio" value="FEMALE" name="gender" placeholder="Female"/>
+                                                                <div className="radio col-md-auto">
+                                                                    <input className="radio" checked="checked" style={{display:"block", width:'50px', marginTop: '5px', marginLeft: '10px'}} type="radio" value="FEMALE" name="gender" placeholder="Female"/>
+                                                                    <span class="checkround"></span>
                                                                 </div>
                                                                 <div className="col-md-3">
                                                                     <label style={{marginTop:"10px"}}> Female</label>
@@ -306,7 +323,7 @@ class ProfileFilled extends Component {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                             <div style={{padding:'0px 0px 20px 20px'}}>
                                                 <p class="dateofbirth">Tanggal Lahir</p>
                                                     <div class="row">
