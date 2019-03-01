@@ -283,31 +283,31 @@ class ProfileFilled extends Component {
                                                     </label>
                                                 </form> */}
                                                 <div onChange={this.setGender.bind(this)} style={{marginTop:"50px"}}>
-                                                    <div className="row">
+                                                <div className="row" style={{marginLeft: '-50px'}}>
                                                         <div className="col-md-auto">
                                                             <div className="row">
                                                                 <div className="col-md-auto">
                                                                     <input className="inptradio" style={{width:'50px'}} type="radio" value="MALE" name="gender" placeholder="Male"/>
                                                                 </div>
                                                                 <div className="col-md-3">
-                                                                    <label style={{marginTop:"5px",marginLeft:"-10px"}}> Male</label>
+                                                                    <label style={{marginTop:"10px",marginLeft:"-10px"}}> Male</label>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                             <div className="col-md-auto">
                                                             <div className="row">
                                                                 <div className="col-md-auto">
-                                                                    <input style={{display:"block", width:'50px'}} type="radio" value="FEMALE" name="gender" placeholder="Male"/>
+                                                                    <input style={{display:"block", width:'50px', marginTop: '5px', marginLeft: '10px'}} type="radio" value="FEMALE" name="gender" placeholder="Female"/>
                                                                 </div>
                                                                 <div className="col-md-3">
-                                                                    <label style={{marginTop:"5px",marginLeft:"15px"}}> Female</label>
+                                                                    <label style={{marginTop:"10px"}}> Female</label>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div style={{padding:'20px 0px 20px 20px'}}>
+                                            <div style={{padding:'0px 0px 20px 20px'}}>
                                                 <p class="dateofbirth">Tanggal Lahir</p>
                                                     <div class="row">
                                                         <div class="col-sm-3 col-md-2">
@@ -683,39 +683,62 @@ class ProfileFilled extends Component {
                                                     </div>
                                                     <div style={{padding:'20px 0px 20px 20px'}}>
                                                         <p class="from">From</p>
-                                                            <div class="row">
-                                                                <div class="col-sm-3 col-md-1">
-                                                                    <p class="fromfrom">
-                                                                        Month
-                                                                    </p>
-                                                                </div>
-                                                                <div class="col-sm-3 col-md-1">
-                                                                    <p class="fromfrom">
-                                                                        Year
-                                                                    </p>
-                                                                </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-3 col-md-2">
+                                                                <p class="fromfrom">
+                                                                    Month
+                                                                </p>
                                                             </div>
-                                                            <div class="row">
-                                                                <div class="col-sm-3 col-md-1">
-                                                                    <p class="until">
-                                                                        To
-                                                                    </p>
-                                                                    <i class="fa fa-long-arrow-right arrowright"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-sm-3 col-md-1">
-                                                                    <p class="fromto">
-                                                                        Month
-                                                                    </p>
-                                                                </div>
-                                                                <div class="col-sm-3 col-md-1">
-                                                                    <p class="fromto">
-                                                                        Year
-                                                                    </p>
-                                                                </div>
+                                                            <div class="col-sm-3 col-md-2">
+                                                                <p class="fromfrom">
+                                                                    Years
+                                                                </p>
                                                             </div>
                                                         </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-3 col-md-1">
+                                                                <p class="until">
+                                                                    To
+                                                                </p>
+                                                                <i class="fa fa-long-arrow-right arrowright"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mylf">
+                                                            <div class="col-sm-3 col-md-2">
+                                                                <p class="fromto">
+                                                                    Month
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-sm-3 col-md-2">
+                                                                <p class="fromto">
+                                                                    Years
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row drpdndt">
+                                                            <select name="month" class="col-1 custom-select mb-3 optdate">
+                                                                <option selected>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
+                                                                <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
+                                                                <option>11</option><option>12</option>
+                                                            </select>
+
+                                                            <select name="year" class="col-1 custom-select mb-3 optdate">
+                                                                <option selected>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option>
+                                                                <option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option>
+                                                            </select>
+
+                                                            <select name="month" class="col-1 custom-select mb-3 optdate" style={{marginLeft: '55px'}}>
+                                                                <option selected>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
+                                                                <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
+                                                                <option>11</option><option>12</option>
+                                                            </select>
+
+                                                            <select name="year" class="col-1 custom-select mb-3 optdate">
+                                                                <option selected>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option>
+                                                                <option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
                                                     <br/>
                                                     <div class="d-flex justify-content-end divbtncando">
                                                         <a href="#"><span class="btn btn-outline-danger btn-lg btnbatal">Batal</span></a>  
@@ -737,10 +760,31 @@ class ProfileFilled extends Component {
                                                     Januari 2019 - Maret 2020
                                                 </p>
                                             </div>
+                                            <div>
                                                 <p className="txtexker">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.
                                                 </p>
                                             </div>
+                                        </div>
+                                        <div class="row" style={{marginTop:'30px'}}>
+                                            <div class="col-4" style={{marginLeft:'40px'}}>
+                                                <div class="col-3"></div>
+                                                <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                    Programmer
+                                                </p>
+                                            </div>
+                                            <div class="col-7">
+                                                <p class="dateright">
+                                                    Januari 2019 - Maret 2020
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p className="txtexker">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.
+                                                </p>
+                                            </div>
+                                        </div>
+                                            
                                             <br/>
                                             <div>
                                                 <br/>
@@ -888,39 +932,62 @@ class ProfileFilled extends Component {
                                                         </div>
                                                         <div style={{padding:'20px 0px 20px 20px'}}>
                                                             <p class="from">From</p>
-                                                                <div class="row">
-                                                                    <div class="col-sm-3 col-md-1">
-                                                                        <p class="fromfrom">
-                                                                            Month
-                                                                        </p>
-                                                                    </div>
-                                                                    <div class="col-sm-3 col-md-1">
-                                                                        <p class="fromfrom">
-                                                                            Year
-                                                                        </p>
-                                                                    </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-3 col-md-2">
+                                                                    <p class="fromfrom">
+                                                                        Month
+                                                                    </p>
                                                                 </div>
-                                                                <div class="row">
-                                                                    <div class="col-sm-3 col-md-1">
-                                                                        <p class="until">
-                                                                            To
-                                                                        </p>
-                                                                        <i class="fa fa-long-arrow-right arrowright"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-sm-3 col-md-1">
-                                                                        <p class="fromto">
-                                                                            Month
-                                                                        </p>
-                                                                    </div>
-                                                                    <div class="col-sm-3 col-md-1">
-                                                                        <p class="fromto">
-                                                                            Year
-                                                                        </p>
-                                                                    </div>
+                                                                <div class="col-sm-3 col-md-2">
+                                                                    <p class="fromfrom">
+                                                                        Years
+                                                                    </p>
                                                                 </div>
                                                             </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-3 col-md-1">
+                                                                    <p class="until">
+                                                                        To
+                                                                    </p>
+                                                                    <i class="fa fa-long-arrow-right arrowright"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mylf">
+                                                                <div class="col-sm-3 col-md-2">
+                                                                    <p class="fromto">
+                                                                        Month
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-sm-3 col-md-2">
+                                                                    <p class="fromto">
+                                                                        Years
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row drpdndt">
+                                                                <select name="month" class="col-1 custom-select mb-3 optdate">
+                                                                    <option selected>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
+                                                                    <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
+                                                                    <option>11</option><option>12</option>
+                                                                </select>
+
+                                                                <select name="year" class="col-1 custom-select mb-3 optdate">
+                                                                    <option selected>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option>
+                                                                    <option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option>
+                                                                </select>
+
+                                                                <select name="month" class="col-1 custom-select mb-3 optdate" style={{marginLeft: '55px'}}>
+                                                                    <option selected>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
+                                                                    <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
+                                                                    <option>11</option><option>12</option>
+                                                                </select>
+
+                                                                <select name="year" class="col-1 custom-select mb-3 optdate">
+                                                                    <option selected>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option>
+                                                                    <option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
                                                         <br/>
                                                         <div class="d-flex justify-content-end divbtncando">
                                                             <a href="#"><span class="btn btn-outline-danger btn-lg btnbatal">Batal</span></a>  
