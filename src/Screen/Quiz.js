@@ -16,33 +16,33 @@ class Quiz extends Component{
         }
     }
     onaCLick(){
-        // if(this.state.aclick !=="active"){
+        if(this.state.aclick !=="active"){
         this.setState({
             aclick:"active",
             bclick:"",
             cclick:"",
             
-        })
+        })}
         // this.props.history.push("#vtab1");
         console.log(this.state.aclick)
     }
     onbCLick(){
-        // if(this.state.bclick !=="active"){
+        if(this.state.bclick !=="active"){
         this.setState({
             aclick:"",
             bclick:"active",
             cclick:""
-        })
-        // console.log(this.state.aclick)
+        })}
+        console.log(this.state.bclick)
     }
     oncCLick(){
-        // if(this.state.aclick !=="active"){
+        if(this.state.aclick !=="active"){
         this.setState({
             aclick:"",
             bclick:"",
             cclick:"active"
-        })
-        // console.log(this.state.aclick)
+        })}
+        console.log(this.state.cclick)
     }
     render(){
         return(
@@ -121,7 +121,7 @@ class Quiz extends Component{
                         </div>
                         <div class="col-sm-5">
                             <div class="tab-content tb-ct-qz-cl">
-                                <div role="tabpanel" class="tab-pane active" id="vtab1">
+                                <div role="tabpanel" class={"tab-pane "+(this.state.aclick)} id="vtab1">
                                     <h5>Membuat Component Dengan Gelap</h5>
                                     <p>Place a link with the class <code>.nav-tabs-dropdown.btn.btn-block.btn-primary</code> above the tabs list and add an id of <code>#nav-tabs-wrapper</code> to the tabs list for the dropdown to work.</p>
                                     <div style={{backgroundColor:"#4CAF50",width:"300px",height:"40px"}}>
@@ -129,7 +129,7 @@ class Quiz extends Component{
                                     </div>
                                     <Disscus/>
                                 </div>
-                                <div role="tabpanel" class="tab-pane fade" id="vtab2">
+                                <div role="tabpanel" class={"tab-pane " + (this.state.bclick)} id="vtab2">
                                     <h5>Membuat Component Dengan Gelap</h5>
                                     <p> Mauris imperdiet dignissim ante, in efficitur mauris elementum sed. Cras vulputate malesuada magna. Morbi tincidunt eros a dui cursus, vitae dignissim nulla scelerisque. Duis pharetra scelerisque mi vel luctus. Cras eu purus efficitur, blandit nisi id, fringilla nulla.</p>
                                     <div style={{backgroundColor:"#4CAF50",width:"300px",height:"40px"}}>
@@ -137,7 +137,7 @@ class Quiz extends Component{
                                     </div>
                                     <Disscus/>
                                 </div>
-                                <div role="tabpanel" class="tab-pane fade in" id="vtab3">
+                                <div role="tabpanel" class={"tab-pane " + (this.state.cclick)} id="vtab3">
                                     <h5>Membuat Component dengan Terang</h5>
                                     <p>Etiam id pharetra quam. Morbi tristique nunc vel sapien dapibus, sit amet imperdiet quam venenatis. Vestibulum et suscipit urna. Suspendisse volutpat quis est eu volutpat. Nulla non tortor venenatis turpis congue aliquet. Vivamus at elit vel massa elementum tempor sit amet sed odio. Nullam placerat, arcu sed ullamcorper ornare, erat erat placerat quam, in feugiat nulla purus in nunc. Maecenas vitae erat auctor, aliquam tellus et, vulputate eros.</p>
                                     <div style={{backgroundColor:"#FF4344",width:"300px",height:"40px"}}>
