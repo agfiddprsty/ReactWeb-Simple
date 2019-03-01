@@ -21,7 +21,7 @@ class Quiz extends Component{
                             </ul>
                         </div>
                         <div class="col-sm-5">
-                            <div class="tab-content">
+                            <div class="tab-content tb-ct-qz-cl">
                                 <div role="tabpanel" class="tab-pane active" id="vtab1">
                                     <h5>Membuat Component Dengan Gelap</h5>
                                     <p>Place a link with the class <code>.nav-tabs-dropdown.btn.btn-block.btn-primary</code> above the tabs list and add an id of <code>#nav-tabs-wrapper</code> to the tabs list for the dropdown to work.</p>
