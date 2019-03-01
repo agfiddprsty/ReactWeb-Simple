@@ -24,6 +24,11 @@
   background-position: center;
 }
 
+.slbstitle {
+  padding-top: 40px;
+  background-color: #fff;
+}
+
 .box input:valid ~ label 
 {
   font-family: 'Montserrat';
@@ -156,7 +161,7 @@
 }
 
 /* text label */
-.textlabel {
+.textlabelsilabus {
   font-family:'Nunito';
   position: absolute;
   top: -12px;
@@ -207,8 +212,12 @@ margin-bottom: 10px;
     height: 100%;
     background-position: center;
   }
-}
 
+  .slbstitle {
+    padding-top: 20px;
+    background-color: #fff;
+  }
+}
 
 @media only screen and (max-width: 1366px) {
   .silabus {
@@ -233,8 +242,12 @@ margin-bottom: 10px;
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-position: center;
+    background-position: center;}
   }
+  
+  .slbstitle {
+    padding-top: 40px;
+    background-color: #fff;
   }
 
 @media only screen and (max-width: 550px) {
@@ -249,6 +262,7 @@ margin-bottom: 10px;
       font-family: 'Montserrat';
       font-weight: 500;
     }
+    
 }
 @media only screen and (max-width: 470px) {
   .persegislbs {

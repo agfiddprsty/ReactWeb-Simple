@@ -112,13 +112,15 @@ class Login extends Component {
                                                     onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
                                                     style={{backgroundImage: 'url(' + this.state.background + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
                                                 />
-                                                <label class="textlabel">Email</label>
+                                                <label class="textlabellog">Email</label>
                                             </div>
                                             <div>
                                                 <input class="textinput" type={this.state.type} className="password__input" 
-                                                    onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} 
-                                                />
-                                                <label class="textlabel">Password</label>
+                                                onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} />
+                                                <label class="textlabellog" 
+                                                    style={{
+                                                    }}>Password
+                                                </label>
                                                 <span className={"password__show" +(this.state.type==='input' ? ' fa fa-eye':' far fa-eye-slash')} onClick={this.toggleShow}></span>
                                             </div>
                                             <div className="text-center btn-lg" 
@@ -163,11 +165,11 @@ class Login extends Component {
                                     <div class="persegilogin" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                         <form>
                                             <div>
-                                                <input class="textinput" type="text" name="email" required="" 
+                                                <input class="textinputlog" type="text" name="email" required="" 
                                                     onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
                                                     style={{backgroundImage: 'url(' + this.state.background + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
                                                 />
-                                                <label class="textlabel">Email</label>
+                                                <label class="textlabellog">Email</label>
                                             </div>
                                             <span class="fa fa-eye" aria-hidden="true" onClick={this.toggleShow} style={{margin:'0 0 0 250px'}}></span>
                                             <div>

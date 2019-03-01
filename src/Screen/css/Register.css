@@ -104,7 +104,7 @@
 }
 
 /* text label */
-.textlabel {
+.textlabelreg {
   font-family:'Nunito';
   position: absolute;
   top: -12px;
@@ -250,7 +250,7 @@
     }
   
     /* text label */
-    .textlabel {
+    .textlabelreg {
       font-family:'Nunito';
       position: absolute;
       top: -12px;
@@ -386,7 +386,7 @@
   }
 
   /* text label */
-  .textlabel {
+  .textlabelreg {
     font-family:'Nunito';
     position: absolute;
     top: -12px;

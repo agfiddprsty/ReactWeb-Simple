@@ -98,7 +98,7 @@
   position: relative;
 }
 
-.persegireg form div label {
+.persegilog form div label {
   font-family:'Nunito';
   position: absolute;
   top: -12px;
@@ -126,7 +126,7 @@
 }
 
 /* text label */
-.textlabel {
+.textlabellog {
   font-family:'Nunito';
   position: absolute;
   top: -12px;
@@ -265,7 +265,7 @@
       position: relative;
     }
   
-    .persegireg form div label {
+    .persegilog form div label {
       font-family:'Nunito';
       position: absolute;
       top: -12px;
@@ -293,7 +293,7 @@
     }
   
     /* text label */
-    .textlabel {
+    .textlabellog {
       font-family:'Nunito';
       position: absolute;
       top: -12px;
@@ -304,8 +304,8 @@
   }
 
   .btnmasuk {
-    padding: 15px 150px 15px 150px;
-    border-radius: 0; 
+    padding: 15px 200px 15px 200px;
+    border-radius: 20; 
     box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
     font-family: 'Nunito';
     font-weight: bold;
@@ -412,7 +412,7 @@
     position: relative;
   }
 
-  .persegireg form div label {
+  .persegilog form div label {
     font-family:'Nunito';
     position: absolute;
     top: -12px;
@@ -440,18 +440,18 @@
   }
 
   /* text label */
-  .textlabel {
-    font-family:'Nunito';
+  .textlabellog {
     position: absolute;
-    top: -12px;
+    font-family:'Nunito';
     left: 0;
-    color: #999;
+    top: -12px;
     font-size: 14px;
+    color: #999;
     font-weight: 400;
   }
 
   .btnmasuk {
-    padding: 15px 175px 15px 175px;
+    padding: 15px 150px 15px 150px;
     border-radius: 0; 
     box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
     font-family: 'Nunito';
