@@ -60,7 +60,7 @@ ReactDOM.render(
             <Route path="/profilefilled" component={ProfileFilled}/>
             <Route path="/syllabus" component={Silabusnew}/>
             <Route path="/payment" component={Payment}/>
-            <Route path="/videos" component={Video}/>
+            <Route path="/videoplayer" component={Video}/>
             <Route path="/listvideo" component={ListVideo}/>
             <Route path="/video/example" component={DetailVIdeo}/>
             <Route path="/videos" component={Dashboard}/>
