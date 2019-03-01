@@ -106,25 +106,61 @@ class Login extends Component {
                                 <div class="col-md-12" style={{padding:'16px 10px 0 30px', }}>
                                     <div class="persegilogin">
                                         <form>
-                                            <div>
+                                            <table style={{width: '100%'}}>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="far fa-envelope fa-lg" style={{fontSize: '30px', marginBottom: '30px'}}></span>
+                                                        </td>
+                                                        <td>
+                                                            <input class="textinput" type="text" name="email" required="" 
+                                                                onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
+                                                                style={{backgroundImage: 'url(' + this.state.background + ')', marginLeft: '0px', backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
+                                                            />
+                                                            <label class="textlabellog" style={{marginTop: '40px', marginLeft: '100px'}}>
+                                                            Email</label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa fa-lock fa-lg" style={{fontSize: '30px', marginBottom: '30px'}}></span>
+                                                        </td>
+                                                        <td>
+                                                            <input class="textinput" type={this.state.type} className="password__input" 
+                                                            onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} 
+                                                            style={{marginLeft: '0px'}}
+                                                            />
+                                                            <label class="textlabellog" style={{marginTop: '110px', marginLeft: '100px'}}>
+                                                            Password</label>
+                                                        </td>
+                                                        <td>
+                                                            <span className={"password__show" +(this.state.type==='input' ? ' fa fa-eye':' far fa-eye-slash')} 
+                                                            style={{marginBottom: '230px', marginRight: '30px'}} onClick={this.toggleShow}></span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            {/* <div>
                                                 <input class="textinput" type="text" name="email" required="" 
                                                     onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
                                                     style={{backgroundImage: 'url(' + this.state.background + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
                                                 />
-                                                <label class="textlabellog">Email</label>
-                                            </div>
-                                            <div>
+                                                <label class="textlabellog">
+                                                Email</label>
+                                            </div> */}
+                                            {/* <div>
                                                 <input class="textinput" type={this.state.type} className="password__input" 
-                                                onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} />
+                                                onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} 
+                                                />
                                                 <label class="textlabellog" 
                                                     style={{
                                                     }}>Password
                                                 </label>
                                                 <span className={"password__show" +(this.state.type==='input' ? ' fa fa-eye':' far fa-eye-slash')} onClick={this.toggleShow}></span>
-                                            </div>
+                                            </div> */}
                                             <div className="text-center btn-lg" 
                                             style={{width:'', padding:'5px 0 5px 0', margin:'0'}}>
-                                                <button type="button" class="btn btn-danger btn-lg btnmasuk" 
+                                                <button type="button" class="btn btn-lg btnmasuk" 
                                                     onClick={this.loginhandle} 
                                                     >Masuk
                                                 </button>

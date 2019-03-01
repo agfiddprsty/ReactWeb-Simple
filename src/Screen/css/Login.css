@@ -68,6 +68,7 @@
   border: none;
   border-bottom: 1px solid lightgrey;
   padding: 10px 0;
+  margin-left: 25px;
   margin-bottom: 30px;
   font-size: 14px;
   font-weight: 400;
@@ -106,6 +107,7 @@
   color: #999;
   transition: .5s;
   pointer-events: none;
+  margin-left: 25px;
   font-size: 14px;
   font-weight: 400;
 }
@@ -133,10 +135,14 @@
   left: 0;
   color: #999;
   font-size: 14px;
+  margin-left: 25px;
   font-weight: 400;
 }
 
 /* button masuk */
+.masuk {
+  color: #FFF;
+}
 
 /* button */
 .btnmasuk {
@@ -144,6 +150,8 @@
   border-radius: 0; 
   box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
   font-family: 'Nunito';
+  color: #FFF;
+  background: red;
   font-weight: bold;
 }
 
@@ -307,6 +315,8 @@
     padding: 15px 210px 15px 220px;
     border-radius: 20; 
     box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
+    background-color: red;
+  color: #FFF;
     font-family: 'Nunito';
     font-weight: bold;
   }
@@ -454,6 +464,8 @@
     padding: 15px 173px 15px 185px;
     border-radius: 0; 
     box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
+    background-color: red;
+  color: #FFF;
     font-family: 'Nunito';
     font-weight: bold;
   }
@@ -468,6 +480,8 @@
       padding: 15px 175px 15px 175px;
       border-radius: 0; 
       box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
+      background-color: red;
+  color: #FFF;
       font-family: 'Montserrat';
     }
 }
@@ -513,11 +527,41 @@
   position: absolute;
   bottom: 11px;
   height: 16px;
-  right: 0;
+  right: 10px;
   /* background: #727272; */
   /* color: white; */
   padding: 4px 8px;
   /* border-radius: 4px; */
   font-weight: 700;
   font-size: .8em;
+}
+
+.search-1{
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  left: -10px;
+  height: 25px;
+  font-size: 35px;
+  /* right: 0; */
+  /* background: #727272; */
+  /* color: white; */
+  padding: 4px 8px;
+  /* border-radius: 4px; */
+  font-weight: 700;
+}
+
+.search-2{
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  height: 25px;
+  left: -10px;
+  /* right: 0; */
+  /* background: #727272; */
+  /* color: white; */
+  padding: 4px 8px;
+  /* border-radius: 4px; */
+  font-weight: 700;
+  font-size: 40px;
 }

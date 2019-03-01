@@ -129,7 +129,74 @@ class Register extends Component {
                             <div class="col-md-12" style={{padding:'16px 10px 0 30px', }}>
                                 <div class="persegireg">
                                     <form>
-                                        <div>
+                                        <table style={{width: '100%'}}>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <span class="far fa-user fa-lg" style={{fontSize: '30px', marginBottom: '30px'}}></span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="textinput" type="text" name="fullname" required="" pattern="[A-Za-z}"
+                                                            onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
+                                                            style={{backgroundImage: 'url(' + this.state.backgroundf + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
+                                                        />
+                                                        <label class="textlabellog"
+                                                            style={{marginTop: '40px', marginLeft: '100px'
+                                                            // color:this.state.fullname!=''?'red':'#999'
+                                                            }}>Nama Lengkap
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="far fa-envelope fa-lg" style={{fontSize: '30px', marginBottom: '30px'}}></span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="textinput" type="text" name="email" required="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}" 
+                                                            onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
+                                                            style={{backgroundImage: 'url(' + this.state.backgrounde + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
+                                                        />
+                                                        <label class="textlabellog" style={{ marginTop: '110px', marginLeft: '100px'
+                                                            // color:this.state.email!=''?'red':'#999'
+                                                            }}>Email
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="fa fa-lock fa-lg" style={{fontSize: '30px', marginBottom: '30px'}}></span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="textinput" type={this.state.type} className="password__input" 
+                                                        onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} 
+                                                        style={{marginLeft: '0px'}}
+                                                        />
+                                                        <label class="textlabellog" style={{marginTop: '180px', marginLeft: '100px'}}>
+                                                        Password</label>
+                                                    </td>
+                                                    <td>
+                                                        <span className={"password__show" +(this.state.type==='input' ? ' fa fa-eye':' far fa-eye-slash')} 
+                                                        style={{marginBottom: '215px', marginRight: '30px'}} onClick={this.toggleShow}></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="fa fa-lock fa-lg" style={{fontSize: '30px', marginBottom: '30px'}}></span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="textinput" type={this.state.type} className="password__input" 
+                                                        onChange={(cp)=>this.handleConfirmpassChange(cp)} value={this.state.confirmpass} 
+                                                        style={{marginLeft: '0px'}}
+                                                        />
+                                                        <label class="textlabellog" style={{marginTop: '250px', marginLeft: '100px'}}>
+                                                        Konfirmasi Password</label>
+                                                    </td>
+                                                </tr>
+                                                
+                                                
+                                            </tbody>
+                                        </table>
+                                        {/* <div>
                                             <input class="textinput" type="text" name="fullname" required="" pattern="[A-Za-z}"
                                                 onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
                                                 style={{backgroundImage: 'url(' + this.state.backgroundf + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
@@ -139,6 +206,7 @@ class Register extends Component {
                                                 // color:this.state.fullname!=''?'red':'#999'
                                                 }}>Nama Lengkap
                                             </label>
+                                            <span class="fa fa-search search-1"></span>
                                         </div>
                                         <div>
                                             <input class="textinput" type="text" name="email" required="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}" 
@@ -149,6 +217,7 @@ class Register extends Component {
                                                 // color:this.state.email!=''?'red':'#999'
                                                 }}>Email
                                             </label>
+                                            <span class="fa fa-search search-2"></span>
                                         </div>
                                         <div>
                                             <input class="textinput" type={this.state.type} className="password__input" 
@@ -157,6 +226,7 @@ class Register extends Component {
                                                     style={{
                                                     }}>Password
                                                 </label>
+                                                <span class="fa fa-search search-3"></span>
                                                 <span className={"password__show" +(this.state.type==='input' ? ' fa fa-eye':' far fa-eye-slash')} onClick={this.toggleShow}></span>
                                         </div>
                                         <div>
@@ -169,14 +239,17 @@ class Register extends Component {
                                                 // color:this.state.confirmpass!=''?'red':'#999'
                                                 }}>Konfirmasi Password
                                             </label>
+                                            <span class="fa fa-search search-4"></span>
+
                                         </div>
+                                            */}
                                         <div className="text-center btn-lg" 
                                         style={{width:'', padding:'5px 0 5px 0', margin:'0'}}>
                                             <button type="button" 
-                                                onClick={this.daftarhandle} class="btn btn-danger btn-lg btndaftar"
+                                                onClick={this.daftarhandle} class="btn btn-lg btndaftar"
                                                 > Daftar Sekarang
                                             </button>
-                                        </div>
+                                        </div> 
                                     </form>
                                 </div>
                                 <br/>
