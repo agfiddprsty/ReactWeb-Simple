@@ -264,34 +264,23 @@ class ProfileFill extends Component {
                                             </div>
                                             <div style={{padding:'20px 0px 20px 20px'}}>
                                                 <p class="gender">Gender</p>
-                                                {/* <form>
-                                                    <label class="radio-inline radiogender">
-                                                        <input class="optgendermale" type="radio" name="optradio" checked/>Male
-                                                    </label>
-                                                    <label class="radio-inline radiogender">
-                                                        <input class="optgenderfemale" type="radio" name="optradio"/>Female
-                                                    </label>
-                                                </form> */}
                                                 <div onChange={this.setGender.bind(this)} style={{marginTop:"50px"}}>
                                                     <div className="row" style={{marginLeft: '-50px'}}>
-                                                        <div className="col-md-auto">
-                                                            <div className="row">
-                                                                <div className="col-md-auto">
-                                                                    <input className="inptradio" style={{width:'50px'}} type="radio" value="MALE" name="gender" placeholder="Male"/>
-                                                                </div>
-                                                                <div className="col-md-3">
-                                                                    <label style={{marginTop:"10px",marginLeft:"-10px"}}> Male</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                            <div className="col-md-auto">
-                                                            <div className="row">
-                                                                <div className="col-md-auto">
-                                                                    <input style={{display:"block", width:'50px', marginTop: '5px', marginLeft: '10px'}} type="radio" value="FEMALE" name="gender" placeholder="Female"/>
-                                                                </div>
-                                                                <div className="col-md-3">
-                                                                    <label style={{marginTop:"10px"}}> Female</label>
-                                                                </div>
+                                                        <div class="col-md-auto">
+                                                            <div class="row">   
+                                                                <div class="col-md-auto">
+                                                                    <label class="radio"> 
+                                                                        <input type="radio" checked="checked" name="is_company"/>
+                                                                        <span class="checkround"></span>
+                                                                    </label>
+                                                                </div>    
+                                                                
+                                                                <div class="col-md-auto">
+                                                                    <label class="radio"> 
+                                                                        <input type="radio" checked="checked" name="is_company"/>
+                                                                        <span class="checkround"></span>
+                                                                    </label>
+                                                                </div>    
                                                             </div>
                                                         </div>
                                                     </div>
@@ -337,48 +326,8 @@ class ProfileFill extends Component {
                                                                 <option selected>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option>
                                                                 <option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option>
                                                             </select>
-                                                        </div>
+                                                    </div>
                                             </div>
-                                            {/* <div>
-                                                <form class="row">
-                                                    <div class="form-group col-1">
-                                                        <label for="Date">Date</label>
-                                                        <select class="form-control" id="exampleFormControlSelect1">
-                                                        <option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
-                                            <div>
-                                                <form className="text-left" style={{marginLeft: '20px'}}>
-                                            <div class="form-group">
-                                                <form className="text-left" style={{marginLeft: '20px'}}action="">
-                                                    <div class="custom-control custom-radio custom-control-inline" style={{paddingRight: '100px'}}>
-                                                        <input type="radio" defaultChecked class="custom-control-input" onChange={this.handleValue} selectedValue={this.state.selectedValue}  id="lakilaki" name="gender" value="Laki-Laki" placeholder="Laki-Laki"/>
-                                                        <label class="custom-control-label" for="lakilaki">Laki-Laki</label>  
-                                                        
-                                                    </div>
-                                                    <div class="custom-control custom-radio custom-control-inline">
-                                                        <input type="radio"class="custom-control-input" onChange={this.handleValue} selectedValue={this.state.selectedValue} class="custom-control-input" id="perempuan" name="gender" value="Perempuan"/>
-                                                        <label class="custom-control-label" for="perempuan">Perempuan</label>
-                                                    </div> 
-                                                    
-                                                </form>
-                                            </div>
-                                            <div>
-                                                <label for="tgl">Tanggal Lahir</label>
-                                                <form class="row" id="tgl" style={{marginLeft: '0'}}>
-                                                    <div class="form-group col-2">
-                                                        <select class="form-control text-center" id="exampleFormControlSelect1">
-                                                            <option value="" selected disabled hidden>Date</option>
-                                                            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="form-group col-2">
-                                                        <select class="form-control text-center" id="exampleFormControlSelect1">
-                                                            <option value="" selected disabled hidden>Month</option>
-                                                            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
-                                                            <option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>
-                                                        </select>
-                                                    </div>
-                                                </form>
-                                            </div> */}
                                             <br/>
                                             <div>
                                                 <input type="text" name="summary" 
@@ -698,6 +647,18 @@ class ProfileFill extends Component {
                                                                                     Years
                                                                                 </p>
                                                                             </div>
+                                                                        </div>
+                                                                        <div class="row drpdndt">
+                                                                            <select name="month" class="col-1 custom-select mb-3 optdate">
+                                                                                <option selected>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
+                                                                                <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
+                                                                                <option>11</option><option>12</option>
+                                                                            </select>
+
+                                                                            <select name="year" class="col-1 custom-select mb-3 optdate">
+                                                                                <option selected>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option>
+                                                                                <option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option>
+                                                                            </select>
                                                                         </div>
                                                                         <div class="row">
                                                                             <div class="col-sm-3 col-md-1">
