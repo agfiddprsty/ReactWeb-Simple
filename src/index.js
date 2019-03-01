@@ -43,8 +43,7 @@ ReactDOM.render(
 	<Router>
         <Provider store={store}>
         <div>
-            <Route exact path="/" component={Login} />
-            <Route path="/home" component={Home}/>
+            <Route exact path="/" component={Home} />
             <Route path="/reg" component={Reg} />
             <Route path="/hack" component={Hack} />
             <Route path="/admin" component={Menu} />
@@ -56,16 +55,16 @@ ReactDOM.render(
             <Route path="/profileraport" component={ProfileRaport}/>
             <Route path="/login" component={Login}/>
             <Route path="/register" component={Register}/>
-            <Route path="/dashboardunpaid" component={DashboardUnpaid}/>
+            <Route path="/agreement" component={DashboardUnpaid}/>
             <Route path="/profilefill" component={ProfileFill}/>
             <Route path="/profilefilled" component={ProfileFilled}/>
-            <Route path="/silabusnew" component={Silabusnew}/>
+            <Route path="/syllabus" component={Silabusnew}/>
             <Route path="/payment" component={Payment}/>
-            <Route path="/video" component={Video}/>
+            <Route path="/videos" component={Video}/>
             <Route path="/listvideo" component={ListVideo}/>
-            <Route path="/detailvideo" component={DetailVIdeo}/>
-            <Route path="/dashboard" component={Dashboard}/>
-            <Route path="/detailquiz" component={DetailQuiz}/>
+            <Route path="/video/example" component={DetailVIdeo}/>
+            <Route path="/videos" component={Dashboard}/>
+            <Route path="/quiz/example" component={DetailQuiz}/>
 
         </div>
         </Provider>
