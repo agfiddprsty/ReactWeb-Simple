@@ -134,7 +134,7 @@ class Register extends Component {
                                                 onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
                                                 style={{backgroundImage: 'url(' + this.state.backgroundf + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
                                             />
-                                            <label class="textlabel"
+                                            <label class="textlabelreg"
                                                 style={{ 
                                                 // color:this.state.fullname!=''?'red':'#999'
                                                 }}>Nama Lengkap
@@ -145,7 +145,7 @@ class Register extends Component {
                                                 onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
                                                 style={{backgroundImage: 'url(' + this.state.backgrounde + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
                                             />
-                                            <label class="textlabel" style={{ 
+                                            <label class="textlabelreg" style={{ 
                                                 // color:this.state.email!=''?'red':'#999'
                                                 }}>Email
                                             </label>
@@ -153,7 +153,7 @@ class Register extends Component {
                                         <div>
                                             <input class="textinput" type={this.state.type} className="password__input" 
                                             onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} />
-                                                <label class="textlabel" 
+                                                <label class="textlabelreg" 
                                                     style={{
                                                     }}>Password
                                                 </label>
@@ -164,7 +164,7 @@ class Register extends Component {
                                                 onChange={this.handleChange} value={this.state.confirmpass} 
                                                 onChange={(cp)=>this.handleConfirmpassChange(cp)} value={this.state.confirmpass}
                                                 style={{}}/>
-                                            <label class="textlabel"
+                                            <label class="textlabelreg"
                                                 style={{ 
                                                 // color:this.state.confirmpass!=''?'red':'#999'
                                                 }}>Konfirmasi Password
@@ -205,11 +205,11 @@ class Register extends Component {
                                 <div class="persegireg" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                     <form>
                                         <div>
-                                            <input class="textinput" class="ceklist" type="text" name="fullname" required="" pattern="[A-Za-z}"
-                                                onChange={this.handleChange} value={this.state.fullname} 
+                                            <input class="textinput" type="text" name="fullname" required="" pattern="[A-Za-z}"
                                                 onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
-                                                style={{}}/>
-                                            <label class="textlabel" 
+                                                style={{backgroundImage: 'url(' + this.state.backgroundf + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
+                                            />
+                                            <label class="textlabelreg"
                                                 style={{ 
                                                 // color:this.state.fullname!=''?'red':'#999'
                                                 }}>Nama Lengkap
@@ -220,7 +220,7 @@ class Register extends Component {
                                                 onChange={this.handleChange} value={this.state.email} 
                                                 onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
                                                 style={{}}/>
-                                            <label class="textlabel"
+                                            <label class="textlabelreg"
                                                 style={{
                                                 //  color:this.state.email!=''?'red':'#999'
                                                 }}>Email
@@ -233,7 +233,7 @@ class Register extends Component {
                                                     onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.pass}
                                                     style={{}}/>
                                                     {/* <button onClick={this.toggleShow}>Show / Hide</button> */}
-                                            <label class="textlabel"
+                                            <label class="textlabelreg"
                                                     style={{ 
                                                     // color:this.state.pass!=''?'red':'#999'
                                                     }}>Password
@@ -244,7 +244,7 @@ class Register extends Component {
                                                 onChange={this.handleChange} value={this.state.confirmpass} 
                                                 onChange={(cp)=>this.handleConfirmpassChange(cp)} value={this.state.confirmpass}
                                                 style={{}}/>
-                                            <label class="textlabel"
+                                            <label class="textlabelreg"
                                                 style={{ 
                                                 // color:this.state.confirmpass!=''?'red':'#999'
                                                 }}>Konfirmasi Password

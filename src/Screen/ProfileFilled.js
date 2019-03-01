@@ -287,7 +287,7 @@ class ProfileFilled extends Component {
                                                         <div className="col-md-auto">
                                                             <div className="row">
                                                                 <div className="col-md-auto">
-                                                                    <input className="inptradio" type="radio" value="MALE" name="gender" placeholder="Male"/>[]
+                                                                    <input className="inptradio" style={{width:'50px'}} type="radio" value="MALE" name="gender" placeholder="Male"/>
                                                                 </div>
                                                                 <div className="col-md-3">
                                                                     <label style={{marginTop:"5px",marginLeft:"-10px"}}> Male</label>
@@ -297,7 +297,7 @@ class ProfileFilled extends Component {
                                                             <div className="col-md-auto">
                                                             <div className="row">
                                                                 <div className="col-md-auto">
-                                                                    <input style={{display:"block"}} type="radio" value="FEMALE" name="gender" placeholder="Male"/>[]
+                                                                    <input style={{display:"block", width:'50px'}} type="radio" value="FEMALE" name="gender" placeholder="Male"/>
                                                                 </div>
                                                                 <div className="col-md-3">
                                                                     <label style={{marginTop:"5px",marginLeft:"15px"}}> Female</label>
@@ -326,68 +326,27 @@ class ProfileFilled extends Component {
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
-                                                        <select name="date" class="col-1 custom-select mb-3 optdate">
-                                                            <option selected>01</option><option>02</option><option>03</option>
-                                                            <option>04</option>
-                                                            <option>05</option>
-                                                            <option>06</option>
-                                                            <option>07</option>
-                                                            <option>08</option>
-                                                            <option>09</option>
-                                                            <option>10</option>
-                                                            <option>11</option>
-                                                            <option>12</option>
-                                                            <option>13</option>
-                                                            <option>14</option>
-                                                            <option>15</option>
-                                                            <option>16</option>
-                                                            <option>17</option>
-                                                            <option>18</option>
-                                                            <option>19</option>
-                                                            <option>20</option>
-                                                            <option>21</option>
-                                                            <option>22</option>
-                                                            <option>23</option>
-                                                            <option>24</option>
-                                                            <option>25</option>
-                                                            <option>26</option>
-                                                            <option>27</option>
-                                                            <option>28</option>
-                                                            <option>29</option>
-                                                            <option>30</option>
-                                                            <option>31</option>
-                                                        </select>
-                                                        
-                                                        <select name="month" class="col-1 custom-select mb-3 optdate">
-                                                            <option selected>01</option>
-                                                            <option>02</option>
-                                                            <option>03</option>
-                                                            <option>04</option>
-                                                            <option>05</option>
-                                                            <option>06</option>
-                                                            <option>07</option>
-                                                            <option>08</option>
-                                                            <option>09</option>
-                                                            <option>10</option>
-                                                            <option>11</option>
-                                                            <option>12</option>
-                                                        </select>
+                                                        <div class="row">
+                                                            <select name="date" class="col-1 custom-select mb-3 optdate">
+                                                                <option selected>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
+                                                                <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
+                                                                <option>11</option><option>12</option><option>13</option><option>14</option><option>15</option>
+                                                                <option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+                                                                <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
+                                                                <option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+                                                                <option>31</option>
+                                                            </select>
+                                                            
+                                                            <select name="month" class="col-1 custom-select mb-3 optdate">
+                                                                <option selected>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
+                                                                <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
+                                                                <option>11</option><option>12</option>
+                                                            </select>
 
-                                                        <select name="year" class="col-1 custom-select mb-3 optdate">
-                                                            <option selected>2000</option>
-                                                            <option>1999</option>
-                                                            <option>1998</option>
-                                                            <option>1997</option>
-                                                            <option>1996</option>
-                                                            <option>1995</option>
-                                                            <option>1994</option>
-                                                            <option>1993</option>
-                                                            <option>1992</option>
-                                                            <option>19991</option>
-                                                            <option>1990</option>
-                                                            <option>12</option>
-                                                        </select>
+                                                            <select name="year" class="col-1 custom-select mb-3 optdate">
+                                                                <option selected>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option>
+                                                                <option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option>
+                                                            </select>
                                                     </div>
                                             </div>
                                             {/* <div style={{padding:'20px 0px 20px 20px'}}>

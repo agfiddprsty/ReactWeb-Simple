@@ -116,7 +116,7 @@ class Silabusnew extends Component {
                             </h4>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
-                            <div className="text-center" style={{padding:'60px 0 0 0', backgroundColor:'#FFF'}}>
+                            <div className="text-center slbstitle">
                                 <h1 className="tertarik">
                                     Tertarik dengan pembelajaran kami? 
                                 </h1>
@@ -138,7 +138,7 @@ class Silabusnew extends Component {
                                                         onBlur={this.disablefullnameField}
                                                         onChange={this.updateInputfullnameValue}
                                                     />
-                                                    <label class="textlabel"
+                                                    <label class="textlabelsilabus"
                                                         style={{ 
                                                         color:this.state.fullname!=''?'red':'#999'}}
                                                         // check state the input, whether it is active then apply the class for floating label
@@ -155,7 +155,7 @@ class Silabusnew extends Component {
                                                         onBlur={this.disableemailField}
                                                         onChange={this.updateInputemailValue}
                                                     />
-                                                    <label class="textlabel"
+                                                    <label class="textlabelsilabus"
                                                         style={{ 
                                                         color:this.state.email!=''?'red':'#999'}}
                                                         // check state the input, whether it is active then apply the class for floating label
@@ -176,6 +176,8 @@ class Silabusnew extends Component {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Responsive */}
                         <div class="row mb-10 d-md-none d-lg-none d-xl-none" style={{height: '100%', marginTop:'35px'}}>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
                                 <div className="text-center" style={{padding:'90px 0 0 0', backgroundColor:'#FFF'}}>
@@ -192,15 +194,15 @@ class Silabusnew extends Component {
                                             <div class="persegislbs" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                                 <form>
                                                     <div>
-                                                        <input class="textinput" className="floating-label" className="floating-label" type="text" name="fullname" required="" placeholder="" pattern="[A-Za-z}"
+                                                        <input class="textinput"type="text" name="fullname" required="" placeholder="" pattern="[A-Za-z}"
                                                             onChange={this.handleChange} value={this.state.fullname} 
                                                             onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
-                                                            value={this.state.inputValue}
-                                                            onFocus={this.activateField}
-                                                            onBlur={this.disableField}
-                                                            onChange={this.updateInputValue}
+                                                            value={this.state.inpufullnametValue}
+                                                            onFocus={this.activatefullanmeField}
+                                                            onBlur={this.disablefullnameField}
+                                                            onChange={this.updateInputfullnameValue}
                                                         />
-                                                        <label class="textlabel"
+                                                        <label class="textlabelsilabus"
                                                             style={{
                                                             color:this.state.fullname!=''?'red':'#999'}}
                                                             className={this.state.fieldActive ? "field-active" : ""}
@@ -208,15 +210,15 @@ class Silabusnew extends Component {
                                                         </label>
                                                     </div>
                                                     <div>
-                                                        <input class="textinput" className="floating-label" className="floating-label" type="text" name="email" required=""  placeholder="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
+                                                        <input class="textinput" type="text" name="email" required=""  placeholder="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
                                                             onChange={this.handleChange} value={this.state.email}                                                     
                                                             onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
-                                                            value={this.state.inputValue}
-                                                            onFocus={this.activateField}
-                                                            onBlur={this.disableField}
-                                                            onChange={this.updateInputValue}
+                                                            value={this.state.inputemailValue}
+                                                            onFocus={this.activateemailField}
+                                                            onBlur={this.disableemailField}
+                                                            onChange={this.updateInputemailValue}
                                                         />
-                                                        <label class="textlabel"
+                                                        <label class="textlabelsilabus"
                                                             style={{
                                                             color:this.state.email!=''?'red':'#999'}}
                                                             className={this.state.fieldActive ? "field-active" : ""}
