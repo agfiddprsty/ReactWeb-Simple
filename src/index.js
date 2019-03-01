@@ -47,7 +47,7 @@ ReactDOM.render(
             <Route path="/reg" component={Reg} />
             <Route path="/hack" component={Hack} />
             <Route path="/admin" component={Menu} />
-            <Route path='/profile' component={Profile} />
+            <Route path='/profile' component={ProfileFilled} />
             <Route path='/profilelink/:uid' component={ProfileLink}/>
             <Route path="/silabus/list" component={ListSilabus}/>
             <Route path="/silabus/detail" component={Silabus}/>
@@ -57,7 +57,6 @@ ReactDOM.render(
             <Route path="/register" component={Register}/>
             <Route path="/agreement" component={DashboardUnpaid}/>
             <Route path="/profilefill" component={ProfileFill}/>
-            <Route path="/profilefilled" component={ProfileFilled}/>
             <Route path="/syllabus" component={Silabusnew}/>
             <Route path="/payment" component={Payment}/>
             <Route path="/videoplayer" component={Video}/>
