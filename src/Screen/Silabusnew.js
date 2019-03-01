@@ -149,7 +149,7 @@ class Silabusnew extends Component {
                                                 <div>
                                                     <input class="textinput" type="text" name="email" required=""  placeholder="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
                                                         onChange={this.handleChange} value={this.state.email}                                                     
-                                                        onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
+                                                        onChange={(e)=>this.handleemailChange(e)} value={this.state.email}
                                                         value={this.state.inputemailValue}
                                                         onFocus={this.activateemailField}
                                                         onBlur={this.disableemailField}

@@ -21,7 +21,7 @@
 .agremnt {
 	color: red;
 	font-weight: 510;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: 1.7em;
 	display: block;
 }
@@ -41,9 +41,9 @@
 	color: #313131;
 	font-weight: 150;
 	text-align: justify;
-	font-size: 1em;
-	font-weight: 400;
-	font-family: 'Montserrat', sans-serif;
+	font-size: 1.25em;
+	font-weight: 250;
+	font-family: 'Nunito';
 }
 
 .tolak {
@@ -65,14 +65,14 @@
 {
 	-webkit-box-shadow: inset 0 0 6px rgb(250, 250, 250);
 	border-radius: 10px;
-	background-color: #F5F5F5;
+	background-color: #fff;
 }
 
 
 #style-1::-webkit-scrollbar
 {
 	width: 8px;
-	background-color: #F5F5F5;
+	background-color: #fff;
 }
 
 #style-1::-webkit-scrollbar-thumb
