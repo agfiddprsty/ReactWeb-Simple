@@ -140,7 +140,7 @@
 
 /* button */
 .btnmasuk {
-  padding: 15px 150px 15px 150px;
+  padding: 15px 190px 15px 190px;
   border-radius: 0; 
   box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
   font-family: 'Nunito';
@@ -451,7 +451,7 @@
   }
 
   .btnmasuk {
-    padding: 15px 150px 15px 150px;
+    padding: 15px 180px 15px 180px;
     border-radius: 0; 
     box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
     font-family: 'Nunito';
