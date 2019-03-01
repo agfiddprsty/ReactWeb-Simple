@@ -46,6 +46,9 @@ class QuizDisscuss extends Component{
                         </div>
                         <div class="col-sm-10">
                             <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
+                                </div>
                                 <div class="panel-body sh-cmt-gd sh-cmt-cl">
                                     <div class="row" >
                                     </div>
@@ -90,6 +93,9 @@ class QuizDisscuss extends Component{
                         </div>
                         <div class="col-sm-10">
                             <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <strong>yourusername</strong> <span class="text-muted">commented 5 days ago</span>
+                                </div>
                                 <div class="panel-body sh-cmt-gd sh-cmt-cl">
                                     <div class="row" >
                                     </div>
