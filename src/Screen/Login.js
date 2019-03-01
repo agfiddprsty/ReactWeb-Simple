@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import daftarsekarang from './img/daftarsekarang.png';
 import logo from './img/logo.png';
-import imgboy from './img/boy.png';
 import './css/Login.css';
 
 class Login extends Component {
@@ -108,9 +107,6 @@ class Login extends Component {
                                     <div class="persegilogin">
                                         <form>
                                             <div>
-                                                <span>
-                                                    <img alt="" src={logo} style={{width:'10%'}}/>
-                                                </span>
                                                 <input class="textinput" type="text" name="email" required="" 
                                                     onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
                                                     style={{backgroundImage: 'url(' + this.state.background + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
