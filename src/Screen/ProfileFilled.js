@@ -475,98 +475,115 @@ class ProfileFilled extends Component {
                                             </form>
                                         </div>
                                         <div className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                                            <div class="row" style={{marginTop:'15px'}}>
-                                                <span class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6 schol">
-                                                    <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                        SMK Uhuy Lah
-                                                    </p>
-                                                    <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                        SMA/SMK
-                                                    </p>
-                                                    <div className="row">
-                                                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div className="row">
-                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                    <span className="pull-left fmbm">
-                                                                        Field Of Study
-                                                                    </span>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <ul class="timeline">
+                                                        <li>
+                                                            <div class="row">
+                                                                <div class="col-4" style={{marginLeft:'40px'}}>
+                                                                    <div class="col-3"></div>
+                                                                    <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                                    SMK Uhuy Lah
+                                                                    </p>
                                                                 </div>
-                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                    <span className="pull-left fmbmb">
-                                                                        Business
-                                                                    </span>
+                                                                <div class="col-7">
+                                                                    <p class="dateright">
+                                                                        Januari 2019 - Maret 2020
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="row">
-                                                        <div className="col-lg-12 col-md-12 d-sm-12 col-xs-12">
-                                                            <div className="row">
-                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                    <span className="pull-left fmbm">
-                                                                        Major
-                                                                    </span>
+                                                            <div className="container" style={{marginLeft:'25px'}}>
+                                                                <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                                    SMA/SMK
+                                                                </p>
+                                                                <div className="row">
+                                                                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <div className="row">
+                                                                            <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                                                                <span className="pull-left fmbm">
+                                                                                    Field Of Study
+                                                                                </span>
+                                                                            </div>
+                                                                            <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                                                                <span className="pull-left fmbmb">
+                                                                                    Business
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                    <span className="pull-left fmbmb">
-                                                                        Multimedia
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                                <span class="col-xl-7 col-lg-7 col-md-7 col-sm-5 col-xs-5">
-                                                    <span class="dateright">
-                                                        Januari 2019 - Maret 2020
-                                                    </span>
-                                                </span>
-                                                <span class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6 schol"
-                                                style={{marginTop:'25px'}}>
-                                                    <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                        SMK Uhuy Lah
-                                                    </p>
-                                                    <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                        SMA/SMK
-                                                    </p>
-                                                    <div className="row">
-                                                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div className="row">
-                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                    <span className="pull-left fmbm">
-                                                                        Field Of Study
-                                                                    </span>
-                                                                </div>
-                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                    <span className="pull-left fmbmb">
-                                                                        Business
-                                                                    </span>
+                                                                <div className="row">
+                                                                    <div className="col-lg-12 col-md-12 d-sm-12 col-xs-12">
+                                                                        <div className="row">
+                                                                            <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                                                                <span className="pull-left fmbm">
+                                                                                    Major
+                                                                                </span>
+                                                                            </div>
+                                                                            <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                                                                <span className="pull-left fmbmb">
+                                                                                    Multimedia
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="row">
-                                                        <div className="col-lg-12 col-md-12 d-sm-12 col-xs-12">
-                                                            <div className="row">
-                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                    <span className="pull-left fmbm">
-                                                                        Major
-                                                                    </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="row">
+                                                                <div class="col-4" style={{marginLeft:'40px'}}>
+                                                                    <div class="col-3"></div>
+                                                                    <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                                    SMK Uhuy Lah
+                                                                    </p>
                                                                 </div>
-                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                    <span className="pull-left fmbmb">
-                                                                        Multimedia
-                                                                    </span>
+                                                                <div class="col-7">
+                                                                    <p class="dateright">
+                                                                        Januari 2019 - Maret 2020
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                                <span class="col-xl-7 col-lg-7 col-md-7 col-sm-5 col-xs-5" style={{marginTop:'25px'}}>
-                                                    <span class="dateright">
-                                                        Januari 2019 - Maret 2020
-                                                    </span>
-                                                </span>
+                                                            <div className="container" style={{marginLeft:'25px'}}>
+                                                                <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                                    SMA/SMK
+                                                                </p>
+                                                                <div className="row">
+                                                                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <div className="row">
+                                                                            <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                                                                <span className="pull-left fmbm">
+                                                                                    Field Of Study
+                                                                                </span>
+                                                                            </div>
+                                                                            <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                                                                <span className="pull-left fmbmb">
+                                                                                    Business
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="row">
+                                                                    <div className="col-lg-12 col-md-12 d-sm-12 col-xs-12">
+                                                                        <div className="row">
+                                                                            <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                                                                <span className="pull-left fmbm">
+                                                                                    Major
+                                                                                </span>
+                                                                            </div>
+                                                                            <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                                                                <span className="pull-left fmbmb">
+                                                                                    Multimedia
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -765,40 +782,50 @@ class ProfileFilled extends Component {
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="row" style={{marginTop:'15px'}}>
-                                            <div class="col-4" style={{marginLeft:'40px'}}>
-                                                <div class="col-3"></div>
-                                                <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                    Programmer
-                                                </p>
-                                            </div>
-                                            <div class="col-7">
-                                                <p class="dateright">
-                                                    Januari 2019 - Maret 2020
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <p className="txtexker">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="row" style={{marginTop:'30px'}}>
-                                            <div class="col-4" style={{marginLeft:'40px'}}>
-                                                <div class="col-3"></div>
-                                                <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                    Programmer
-                                                </p>
-                                            </div>
-                                            <div class="col-7">
-                                                <p class="dateright">
-                                                    Januari 2019 - Maret 2020
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <p className="txtexker">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.
-                                                </p>
+                                        <div class="row">
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <ul class="timeline">
+                                                    <li>
+                                                        <div class="row" style={{marginTop:'15px'}}>
+                                                            <div class="col-4" style={{marginLeft:'40px'}}>
+                                                                <div class="col-3"></div>
+                                                                <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                                    Programmer
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-7">
+                                                                <p class="dateright">
+                                                                    Januari 2019 - Maret 2020
+                                                                </p>
+                                                            </div>
+                                                            <div>
+                                                                <p className="txtexker">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="row" style={{marginTop:'15px'}}>
+                                                            <div class="col-4" style={{marginLeft:'40px'}}>
+                                                                <div class="col-3"></div>
+                                                                <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
+                                                                    Programmer
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-7">
+                                                                <p class="dateright">
+                                                                    Januari 2019 - Maret 2020
+                                                                </p>
+                                                            </div>
+                                                            <div>
+                                                                <p className="txtexker">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                             

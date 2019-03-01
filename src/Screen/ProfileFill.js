@@ -576,7 +576,7 @@ class ProfileFill extends Component {
                                                     >Skills
                                                     </p>
                                                     <button type="button" class="btn" data-toggle="collapse" data-target="#tambahskills" 
-                                                    style={{backgroundColor:'lightgrey', color:'#000', marginLeft:'630px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif'}}
+                                                    style={{backgroundColor:'lightgrey', color:'#000', marginLeft:'646px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif'}}
                                                     >Add Skill</button>
                                                 </div>
                                                 <div className="text-left">

@@ -140,7 +140,7 @@
 
 /* button */
 .btnmasuk {
-  padding: 15px 190px 15px 190px;
+  padding: 15px 185px 15px 185px;
   border-radius: 0; 
   box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
   font-family: 'Nunito';
@@ -304,7 +304,7 @@
   }
 
   .btnmasuk {
-    padding: 15px 200px 15px 200px;
+    padding: 15px 210px 15px 220px;
     border-radius: 20; 
     box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
     font-family: 'Nunito';
@@ -451,7 +451,7 @@
   }
 
   .btnmasuk {
-    padding: 15px 180px 15px 180px;
+    padding: 15px 173px 15px 185px;
     border-radius: 0; 
     box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
     font-family: 'Nunito';

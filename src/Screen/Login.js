@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import daftarsekarang from './img/daftarsekarang.png';
 import logo from './img/logo.png';
 import './css/Login.css';
-import PasswordMask from 'react-password-mask';
 
 class Login extends Component {
     constructor(props){
