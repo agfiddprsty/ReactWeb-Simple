@@ -662,7 +662,7 @@
         margin-Left:35px;
     }
     .dt-dv-pg-cl{
-        margin-left:60px;
+        margin-left:50px;
         margin-top:20px;
     }
     .ls-dv-mg-cl{
@@ -675,6 +675,10 @@
       }
 }
 @media only screen and (max-width:500px){
+    .bd-dv-vd-gd {
+        margin-Left: 30px;
+        /* margin-Top: 70px; */
+    }
     .img-cmt-cl{
         width: 35px;
     }
@@ -698,25 +702,29 @@
         margin-Left:30px;
     }
     .dt-dv-pg-cl{
-        margin-left:-10px;
+        margin-left:0px;
         margin-top:20px;
     }
     .ls-dv-mg-cl{
-        margin-left: -20px;
+        margin-left: 10px;
     }
     .h5-tn-gd{
         font-Weight:600;
         margin-Top:-30px;
         font-family: 'Montserrat';
-        margin-left: -70px;
+        margin-left: -60px;
 
     }
     .hr-dt-gd{
         width:280px;
-        margin-left: -70px
+        margin-left: -60px
     }
 }
 @media only screen and (max-width:400px){
+    .bd-dv-vd-gd {
+        margin-Left: 50px;
+        /* margin-Top: 70px; */
+    }
     .dt-body-cl{
         border-Color:#E7E7E7;
     }
