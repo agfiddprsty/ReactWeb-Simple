@@ -273,31 +273,31 @@ class ProfileFill extends Component {
                                                     </label>
                                                 </form> */}
                                                 <div onChange={this.setGender.bind(this)} style={{marginTop:"50px"}}>
-                                                    <div className="row">
+                                                    <div className="row" style={{marginLeft: '-50px'}}>
                                                         <div className="col-md-auto">
                                                             <div className="row">
                                                                 <div className="col-md-auto">
                                                                     <input className="inptradio" style={{width:'50px'}} type="radio" value="MALE" name="gender" placeholder="Male"/>
                                                                 </div>
                                                                 <div className="col-md-3">
-                                                                    <label style={{marginTop:"5px",marginLeft:"-10px"}}> Male</label>
+                                                                    <label style={{marginTop:"10px",marginLeft:"-10px"}}> Male</label>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                             <div className="col-md-auto">
                                                             <div className="row">
                                                                 <div className="col-md-auto">
-                                                                    <input style={{display:"block", width:'50px'}} type="radio" value="FEMALE" name="gender" placeholder="Male"/>
+                                                                    <input style={{display:"block", width:'50px', marginTop: '5px', marginLeft: '10px'}} type="radio" value="FEMALE" name="gender" placeholder="Female"/>
                                                                 </div>
                                                                 <div className="col-md-3">
-                                                                    <label style={{marginTop:"5px",marginLeft:"15px"}}> Female</label>
+                                                                    <label style={{marginTop:"10px"}}> Female</label>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div style={{padding:'20px 0px 20px 20px'}}>
+                                            <div style={{padding:'0px 0px 20px 20px'}}>
                                                 <p class="dateofbirth">Tanggal Lahir</p>
                                                     <div class="row">
                                                         <div class="col-sm-3 col-md-2">
