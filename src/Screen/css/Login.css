@@ -24,6 +24,7 @@
   font-size: 18px;
   margin-left: 125px;
   margin-top: -30px;
+  margin-bottom: 40px;
   font-family: 'Nunito';
 }
 
@@ -191,19 +192,34 @@
 
 @media only screen and (max-width: 1920px) {
   .registe {
-    padding: 150px 0 0 150px;
+    padding: 115px 0 0 150px;
   }
   
   .welcome {
     color: #3b3b3b;
     font-weight: 600;
     font-family: 'Montserrat';
-    font-size: 2.55000000em;
+    font-size: 2.65000000em;
     display: block;
     text-align: left;
     margin-left: -50px;
   }
 
+  .arrowleft {
+    margin: 95px 0 0 75px;
+    color: #ff003a;
+    width: 30%;
+    font-size: 25px;
+  }
+  
+  .underarrow {
+    color: #ff003a;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-top: -30px;
+    margin-bottom: -50px;
+    font-family: 'Nunito';
+  }
 
   .logright {
     margin-top: 50px;
@@ -212,14 +228,14 @@
   .onlinebootcamp {
     color: grey;
     font-weight: 400;
-    font-size: 1.650000000em;
+    font-size: 1.750000000em;
     display: block;
     margin: 0 0 20px -50px;
   }
   
   .illus {
-    width: 90%;
-    margin: 100px 0 0 35px;
+    width: 75%;
+    margin: 115px 0 0 60px;
   }
   
   .registe {
@@ -246,7 +262,7 @@
       border: 1px solid rgba(0,0,0,.1);
       box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
       margin-bottom: 50px;
-      margin-left: -50px;
+      margin-left: -45px;
     }
   
     .persegilogin input{
@@ -352,6 +368,22 @@
     display: block;
     text-align: left;
     margin-left: -10px;
+  }
+
+  .arrowleft {
+    margin: 40px 0 0 100px;
+    color: #ff003a;
+    width: 30%;
+    font-size: 25px;
+  }
+  
+  .underarrow {
+    color: #ff003a;
+    font-size: 18px;
+    margin-left: 125px;
+    margin-top: -30px;
+    margin-bottom: 40px;
+    font-family: 'Nunito';
   }
 
   .logright {
