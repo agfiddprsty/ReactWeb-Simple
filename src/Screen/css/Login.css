@@ -12,6 +12,21 @@
   margin-left: -10px;
 }
 
+.arrowleft {
+  margin: 40px 0 0 100px;
+  color: #ff003a;
+  width: 30%;
+  font-size: 25px;
+}
+
+.underarrow {
+  color: #ff003a;
+  font-size: 18px;
+  margin-left: 125px;
+  margin-top: -30px;
+  font-family: 'Nunito';
+}
+
 .shadow {
   box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
 }
@@ -30,7 +45,7 @@
 
 .illus {
   width: 75%;
-  margin: 150px 0 0 85px;
+  margin: 75px 0 0 85px;
 }
 
 .registe {
@@ -353,7 +368,7 @@
   
   .illus {
     width: 80%;
-    margin: 175px 0 0 90px;
+    margin: 120px 0 0 90px;
   }
   
   .registe {
