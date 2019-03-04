@@ -11,13 +11,17 @@ class ListVideoDown extends Component{
     constructor(){
         super()
         this.state={
-            urlbackground:"https://source.unsplash.com/95YRwf6CNw8/450x250",
-            url:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://source.unsplash.com/95YRwf6CNw8/450x250)",
             listvideo:[
-                {id:"1",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Test"},
-                {id:"2",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Test"},
-                {id:"3",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Test"},
-                {id:"4",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Test"},
+                {id:"1",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Test",type:"video"},
+                {id:"2",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Test",type:"video"},
+                {id:"3",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Test",type:"video"},
+                {id:"4",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Kuiz 1",type:"quiz"},
+                {id:"5",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Test",type:"video"},
+                {id:"6",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Kuiz 1",type:"lock"},
+                {id:"6",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Kuiz 1",type:"lock"},
+                {id:"6",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Kuiz 1",type:"lock"},
+                {id:"6",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Kuiz 1",type:"lock"},
+
             ],
         }
     }
@@ -32,191 +36,68 @@ class ListVideoDown extends Component{
                     <div className="scrollbar scrollbar-primary scrollbar-cl">
                         <div class="force-overflow">
                             {this.state.listvideo.map((item,key)=>{
-                                return(
-                                    <div>
+                                if(item.type==="video"){
+                                    return(
+                                        <div>
+                                            <CardDeck>
+                                                <Card className="border-0"><a href="/video/example" className="modul">
+                                                        <div className="row dv-row-gd">
+                                                            <div className="col-md-auto">
+                                                                <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${item.image})`}}>
+                                                                    <img class="img-fluid img-thumbnail play-img-gd" src={ply} alt=""></img>
+                                                                </div>
+                                                            </div>
+                                                            <div className="col-md-auto dv-tittle-gd">
+                                                                <h6 className="tittledown">{item.tittle}</h6>
+                                                                <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </Card>
+                                            </CardDeck>
+                                        </div>
+                                    )
+                                }else if(item.type==="quiz"){
+                                    return(
                                         <CardDeck>
-                                            <Card className="border-0"><a href="/video/example" className="modul">
+                                            <Card className="border-0">
+                                                <a href="/quiz/example" className="modul">
                                                     <div className="row dv-row-gd">
                                                         <div className="col-md-auto">
-                                                            <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${item.image})`}}>
-                                                                <img class="img-fluid img-thumbnail play-img-gd" src={ply} alt=""></img>
+                                                            <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundColor:"#FF5D5D"}}>
                                                             </div>
                                                         </div>
                                                         <div className="col-md-auto dv-tittle-gd">
                                                             <h6 className="tittledown">{item.tittle}</h6>
+                                                            <a className="a-clock-gd">Level <img src={lvl} style={{width:"13px"}}></img></a>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </Card>
+                                        </CardDeck>
+                                    )
+                                }else{
+                                    return(
+                                        <CardDeck>
+                                            <Card className="border-0">
+                                                <a href="#" className="modul">
+                                                    <div className="row dv-row-gd">
+                                                        <div className="col-md-auto">
+                                                            <div className="d-flex justify-content-center dv-bg-gd" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("+item.image+")"}}>
+                                                                <img class="img-fluid img-thumbnail play-img-gd" src={lock} alt=""></img>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-md-auto dv-tittle-gd">
+                                                            <h6 className="tittledown">1.Perkenalan</h6>
                                                             <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
                                                         </div>
                                                     </div>
                                                 </a>
                                             </Card>
                                         </CardDeck>
-                                    </div>
-                                )
+                                    )
+                                }
                             })}
-                            {/* <CardDeck>
-                                <Card className="border-0"><a href="/video/example" className="modul">
-                                        <div className="row dv-row-gd">
-                                            <div className="col-md-auto">
-                                                <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${this.state.urlbackground})`}}>
-                                                    <img class="img-fluid img-thumbnail play-img-gd" src={ply} alt=""></img>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-auto dv-tittle-gd">
-                                                <h6 className="tittledown">1.Perkenalan</h6>
-                                                <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </Card>
-                            </CardDeck>
-                            <CardDeck>
-                                <Card className="border-0"><a href="/video/example" className="modul">
-                                        <div className="row dv-row-gd">
-                                            <div className="col-md-auto">
-                                                <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${this.state.urlbackground})`}}>
-                                                    <img class="img-fluid img-thumbnail play-img-gd" src={ply} alt=""></img>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-auto dv-tittle-gd">
-                                                <h6 className="tittledown">1.Perkenalan</h6>
-                                                <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </Card>
-                            </CardDeck>
-                            <CardDeck>
-                                <Card className="border-0"><a href="/video/example" className="modul">
-                                        <div className="row dv-row-gd">
-                                            <div className="col-md-auto">
-                                                <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${this.state.urlbackground})`}}>
-                                                    <img class="img-fluid img-thumbnail play-img-gd" src={ply} alt=""></img>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-auto dv-tittle-gd">
-                                                <h6 className="tittledown">1.Perkenalan</h6>
-                                                <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </Card>
-                            </CardDeck>
-                            <CardDeck>
-                                <Card className="border-0"><a href="/video/example" className="modul">
-                                        <div className="row dv-row-gd">
-                                            <div className="col-md-auto">
-                                                <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${this.state.urlbackground})`}}>
-                                                    <img class="img-fluid img-thumbnail play-img-gd" src={ply} alt=""></img>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-auto dv-tittle-gd">
-                                                <h6 className="tittledown">1.Perkenalan</h6>
-                                                <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </Card>
-                            </CardDeck>
-                            <CardDeck>
-                                <Card className="border-0"><a href="/video/example" className="modul">
-                                        <div className="row dv-row-gd">
-                                            <div className="col-md-auto">
-                                                <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${this.state.urlbackground})`}}>
-                                                    <img class="img-fluid img-thumbnail play-img-gd" src={ply} alt=""></img>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-auto dv-tittle-gd">
-                                                <h6 className="tittledown">1.Perkenalan</h6>
-                                                <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </Card>
-                            </CardDeck>
-                            <CardDeck>
-                                <Card className="border-0"><a href="/quiz/example" className="modul">
-                                        <div className="row dv-row-gd">
-                                            <div className="col-md-auto">
-                                                <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundColor:"#FF5D5D"}}>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-auto dv-tittle-gd">
-                                                <h6 className="tittledown">Kuiz</h6>
-                                                <a className="a-clock-gd">Level <img src={lvl} style={{width:"13px"}}></img></a>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </Card>
-                            </CardDeck>
-                            <CardDeck>
-                                <Card className="border-0">
-                                    <a href="#" className="modul">
-                                        <div className="row dv-row-gd">
-                                            <div className="col-md-auto">
-                                                <div className="d-flex justify-content-center dv-bg-gd" style={{background:this.state.url}}>
-                                                    <img class="img-fluid img-thumbnail play-img-gd" src={lock} alt=""></img>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-auto dv-tittle-gd">
-                                                <h6 className="tittledown">1.Perkenalan</h6>
-                                                <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </Card>
-                            </CardDeck>
-                            <CardDeck>
-                                <Card className="border-0">
-                                    <a href="#" className="modul">
-                                        <div className="row dv-row-gd">
-                                            <div className="col-md-auto">
-                                                <div className="d-flex justify-content-center dv-bg-gd" style={{background:this.state.url}}>
-                                                    <img class="img-fluid img-thumbnail play-img-gd" src={lock} alt=""></img>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-auto dv-tittle-gd">
-                                                <h6 className="tittledown">1.Perkenalan</h6>
-                                                <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </Card>
-                            </CardDeck>
-                            <CardDeck>
-                                <Card className="border-0">
-                                    <a href="#" className="modul">
-                                        <div className="row dv-row-gd">
-                                            <div className="col-md-auto">
-                                                <div className="d-flex justify-content-center dv-bg-gd" style={{background:this.state.url}}>
-                                                    <img class="img-fluid img-thumbnail play-img-gd" src={lock} alt=""></img>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-auto dv-tittle-gd">
-                                                <h6 className="tittledown">1.Perkenalan</h6>
-                                                <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </Card>
-                            </CardDeck>
-                            <CardDeck>
-                                <Card className="border-0">
-                                    <a href="#" className="modul">
-                                        <div className="row dv-row-gd">
-                                            <div className="col-md-auto">
-                                                <div className="d-flex justify-content-center dv-bg-gd" style={{background:this.state.url}}>
-                                                    <img class="img-fluid img-thumbnail play-img-gd" src={lock} alt=""></img>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-auto dv-tittle-gd">
-                                                <h6 className="tittledown">1.Perkenalan</h6>
-                                                <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </Card>
-                            </CardDeck> */}
-                            
                         </div>
                     </div>
                 </div>
