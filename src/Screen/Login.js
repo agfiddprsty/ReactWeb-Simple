@@ -39,11 +39,11 @@ class Login extends Component {
     loginhandle(){
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (!pattern.test(this.state.email)) {
-            alert('Silahkan masukkan email yang valid')
+            alert('Silakan masukkan email yang valid')
         }else if(this.state.email === ""){
-            alert("Silahkan masukkan email anda");
+            alert("Silakan masukkan email anda");
         }else if(this.state.password === ""){
-            alert("Silahkan masukkan password anda");
+            alert("Silakan masukkan password anda");
         }
         else{
             //init POST AXIOS
@@ -84,8 +84,11 @@ class Login extends Component {
     render() {
       return (
             <div className="registe">
+                    
                 <div class="row mb-5 d-none d-lg-flex d-xl-flex">
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">   
+                    <i class="fa fa-chevron-left arrowleft"><a href="/home"></a></i>     
+                    <p class="underarrow">Kembali ke Beranda</p>                
                         <span className="col-lg-6 col-md-6 col-sm-6 col-xs-6 mx-auto">
                             <img class="illus" alt='' src={daftarsekarang}/>
                         </span>

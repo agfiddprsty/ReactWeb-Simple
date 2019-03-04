@@ -16,7 +16,7 @@ class Payment extends Component {
                 <div className="kontener d-flex flex-wrap align-content-center">
                     <section className="sqare">
                         <h2 className="butuh">Pembayaran pendaftaran dibutuhkan</h2>
-                        <span className="silahkan"> Silahkan membayar biaya  pendaftaran online bootcamp sebesar IDR <br/> 500.000 untuk dapat mengakses konten kami</span>
+                        <span className="silahkan"> Silakan membayar biaya  pendaftaran online bootcamp sebesar IDR <br/> 500.000 untuk dapat mengakses konten kami</span>
                         <div className="norek">
                             <div className="rekbca">
                                 <img className="rounded icobca" src={bca} alt="" /> 
@@ -29,7 +29,7 @@ class Payment extends Component {
                         </div>
                     </section>
                     <div className="text-center">
-                        <h6 className="plsconfrm">Silahkan Konfirmasi, jika sudah melakukan pembayaran, melalui:</h6>
+                        <h6 className="plsconfrm">Silakan Konfirmasi, jika sudah melakukan pembayaran, melalui:</h6>
                         <div>
                             <img src={telegram} alt="" className="icotel"/> 
                             <img src={whatsapp} alt="" className="icowa"/> 

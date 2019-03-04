@@ -22,6 +22,9 @@ class ProfileFilled extends Component {
         this.moveLogin = this.moveLogin.bind(this);
         this.upload = this.upload.bind(this)
         this.onSuccess = this.onSuccess.bind(this);
+        this.handlearrayschool = this.handlearrayschool.bind(this);
+        this.handlearraywork = this.handlearraywork.bind(this);
+        this.handlearrayproject = this.handlearrayproject.bind(this);
         this.state = {
             isverified: false,
             fullname:'',
@@ -46,15 +49,40 @@ class ProfileFilled extends Component {
             descproject: '',
             image:null,
             files: '',
-        }
-        this.state = {
-            school: [1, 2],
-        }
-        this.state = {
-            work: [1, 2],
-        }
-        this.state = {
-            project: [1,2],
+            school : [ 
+                {id:"1", 
+                sekolah:"SMK Uhuy Lah", 
+                study:"Field of Study", 
+                jurusan:"Multimedia", 
+                degree:"Major"},
+                {id:"2", 
+                sekolah:"SMK Uhuy Lah", 
+                study:"Field of Study", 
+                jurusan:"Multimedia", 
+                degree:"Major"}
+            ],
+            work : [
+                {id:"1", 
+                perusahaan:"Google", 
+                industri:"", 
+                title:"programmer", 
+                description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet."},
+                {id:"2", 
+                perusahaan:"Facebook", 
+                industri:"", 
+                title:"Programmer", 
+                description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet."}
+            ],
+            project : [
+                {id:"1", 
+                projectname:"Aplikasi Kopi Kenangan", 
+                projecturl:"", 
+                projectdesc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet."},
+                {id:"2", 
+                projectname:"Aplikasi DumbWays", 
+                projecturl:"", 
+                projectdesc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet."}
+            ]
         }
     }
     setGender(event) {
@@ -71,17 +99,17 @@ class ProfileFilled extends Component {
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (!pattern.test(this.state.email)) {
-            alert('Silahkan masukkan email yang valid')
+            alert('Silakan masukkan email yang valid')
         }else if(this.state.fullname === ""){
-            alert("Silahkan masukkan nama lengkap anda");
+            alert("Silakan masukkan nama lengkap anda");
         }else if(this.state.email === ""){
-            alert("Silahkan masukkan email anda");
+            alert("Silakan masukkan email anda");
         }else if(this.state.telpnumber === ""){
-            alert("Silahkan masukkan nomor telepon anda");
+            alert("Silakan masukkan nomor telepon anda");
         }else if(this.state.adress === ""){
-            alert("Silahkan masukkan alamat anda");
+            alert("Silakan masukkan alamat anda");
         }else if(this.state.summary === ""){
-            alert("Silahkan masukkan summary anda");
+            alert("Silakan masukkan summary anda");
         }
         else{
             //init POST AXIOS
@@ -105,6 +133,67 @@ class ProfileFilled extends Component {
         }        
         
     }
+
+    handlearrayschool(){
+        this.state.school.push('newschool');
+    
+        this.setState({
+            id:"1", 
+            sekolah:"SMK Uhuy Lah", 
+            study:"Field of Study", 
+            jurusan:"Multimedia", 
+            degree:"Major",
+        
+            id:"2", 
+            sekolah:"SMK Uhuy Lah", 
+            study:"Field of Study", 
+            jurusan:"Multimedia", 
+            degree:"Major",
+            
+            school:this.state.school
+        })
+    }
+    
+    handlearraywork(){
+        this.state.work.push('newwork');
+    
+        this.setState({
+            id:"1", 
+            perusahaan:"Google", 
+            industri:"", 
+            title:"programmer", 
+            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.",
+            
+            id:"2",
+            perusahaan:"Facebook", 
+            industri:"", 
+            title:"Programmer", 
+            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.",
+            
+            work:this.state.work
+        })
+    }
+
+    handlearrayproject(){
+        this.state.project.push('newproject');
+    
+        this.setState({
+            id:"1", 
+            projectname:"Aplikasi Kopi Kenangan", 
+            projecturl:"", 
+            projectdesc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.",
+            
+            id:"2", 
+            projectname:"Aplikasi DumbWays", 
+            projecturl:"", 
+                projectdesc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.",
+
+            work:this.state.work
+        })
+    }
+    
+
+    
 
     handleChecked(){
         this.setState({
@@ -136,13 +225,13 @@ class ProfileFilled extends Component {
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (this.state.sekolah === "") {
-            alert('Silahkan masukkan sekolah anda')
+            alert('Silakan masukkan sekolah anda')
         }else if(this.state.study === ""){
-            alert("Silahkan masukkan bidang study anda");
+            alert("Silakan masukkan bidang study anda");
         }else if(this.state.jurusan === ""){
-            alert("Silahkan masukkan jurusan anda");
+            alert("Silakan masukkan jurusan anda");
         }else if(this.state.degree === ""){
-            alert("Silahkan masukkan degree anda");
+            alert("Silakan masukkan degree anda");
         }
         else{
             //init POST AXIOS
@@ -168,13 +257,13 @@ class ProfileFilled extends Component {
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (this.state.perusahaan === "") {
-            alert('Silahkan masukkan perusahaan pekerjaan anda')
+            alert('Silakan masukkan perusahaan pekerjaan anda')
         }else if(this.state.industri === ""){
-            alert("Silahkan masukkan industri pekerjaan anda");
+            alert("Silakan masukkan industri pekerjaan anda");
         }else if(this.state.title === ""){
-            alert("Silahkan masukkan title pekerjaan anda");
+            alert("Silakan masukkan title pekerjaan anda");
         }else if(this.state.description === ""){
-            alert("Silahkan masukkan deskripsi pekerjaan anda");
+            alert("Silakan masukkan deskripsi pekerjaan anda");
         }
         else{
             //init POST AXIOS
@@ -200,11 +289,11 @@ class ProfileFilled extends Component {
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (this.state.namaproject === "") {
-            alert('Silahkan masukkan nama project anda')
+            alert('Silakan masukkan nama project anda')
         }else if(this.state.projecturl === ""){
-            alert("Silahkan masukkan project url anda");
+            alert("Silakan masukkan project url anda");
         }else if(this.state.descproject === ""){
-            alert("Silahkan masukkan description project anda");
+            alert("Silakan masukkan description project anda");
         }
         else{
             //init POST AXIOS
@@ -223,8 +312,7 @@ class ProfileFilled extends Component {
             console.log(this.state.selectedValue);
         }
     }
-
-
+    
     moveLogin(){
         this.props.history.push("/");
     }
@@ -243,7 +331,7 @@ class ProfileFilled extends Component {
                                 Terimakasih telah mengikuti bootcamp online ini
                             </h1>
                             <p className="profilebootcamp">
-                                Silahkan melengkapi profile anda demi kemudahan kami dalam menyalurkan kerja dan administrasi
+                                Silakan melengkapi profile anda demi kemudahan kami dalam menyalurkan kerja dan administrasi
                             </p>
                         </div>
                     </div>
@@ -390,7 +478,7 @@ class ProfileFilled extends Component {
                                                     </div>
                                                     <br/>
                                                     <div class="d-flex justify-content-end divbtncando">
-                                                        <a href="#"><span class="btn btn-outline btn-lg btnbatal">Batal</span></a>  
+                                                        <a href="#"><span class="btn btn-lg btnbatal">Batal</span></a>  
                                                         <a href="#"><span class="btn btn-lg btnselesai"
                                                         onClick={this.pendidikanhandle}>Selesai</span></a>  
                                                     </div>
@@ -401,8 +489,7 @@ class ProfileFilled extends Component {
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <ul class="timeline">
-                                                        <li 
-                                                        >
+                                                        <li handlearrayschool={this.handlearrayschool}>
                                                             <div class="row">
                                                                 <div class="col-4" style={{marginLeft:'40px'}}>
                                                                     <div class="col-3"></div>
@@ -454,8 +541,7 @@ class ProfileFilled extends Component {
                                                                 </div>
                                                             </div>
                                                         </li>
-                                                        <li 
-                                                        onChange={this.handleChange} value={this.state.school}>
+                                                        <li handlearrayschool={this.handlearrayschool}>
                                                             <div class="row">
                                                                 <div class="col-4" style={{marginLeft:'40px'}}>
                                                                     <div class="col-3"></div>
@@ -611,7 +697,7 @@ class ProfileFilled extends Component {
                                             <br/>
                                             <p class="parttext">Pengalaman Kerja</p>
                                             <br/>
-                                            <button type="button" class="btn btn-outline btn-lg btn-block btnpengalaman" data-toggle="collapse" data-target="#tambahpengalamankerja"
+                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block btnpengalaman" data-toggle="collapse" data-target="#tambahpengalamankerja"
                                             >+ Tambah Pengalaman Kerja</button>
                                         </div>
                                         <br/>
@@ -700,7 +786,7 @@ class ProfileFilled extends Component {
                                                     </div>
                                                     <br/>
                                                     <div class="d-flex justify-content-end divbtncando">
-                                                        <a href="#"><span class="btn btn-outline btn-lg btnbatal">Batal</span></a>  
+                                                        <a href="#"><span class="btn btn-lg btnbatal">Batal</span></a>  
                                                         <a href="#"><span class="btn btn-lg btnselesai" 
                                                         onClick={this.kerjahandle}>Selesai</span></a>  
                                                     </div>
@@ -710,7 +796,7 @@ class ProfileFilled extends Component {
                                         <div class="row">
                                             <div class="col-xl-12 col-lg-12 col-md-12">
                                                 <ul class="timeline">
-                                                    <li>
+                                                    <li handlearraywork={this.handlearraywork}>
                                                         <div class="row" style={{marginTop:'15px'}}>
                                                             <div class="col-4" style={{marginLeft:'40px'}}>
                                                                 <div class="col-3"></div>
@@ -730,7 +816,7 @@ class ProfileFilled extends Component {
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li>
+                                                    <li handlearraywork={this.handlearraywork}>
                                                         <div class="row" style={{marginTop:'15px'}}>
                                                             <div class="col-4" style={{marginLeft:'40px'}}>
                                                                 <div class="col-3"></div>
@@ -775,7 +861,7 @@ class ProfileFilled extends Component {
                                                                 success={files => this.onSuccess(files)}
                                                                 cancel={() => console.log('Closed')}
                                                                 multiselect={true}>
-                                                                <button type="button" class="btn btn-outline btn-lg btn-block btnupload dropbox-button">
+                                                                <button type="button" class="btn btn-outline-danger btn-lg btn-block btnupload dropbox-button">
                                                                     <span>
                                                                         <img class="iconupload" alt='' src={upload}/>
                                                                     </span>
@@ -785,7 +871,7 @@ class ProfileFilled extends Component {
                                                         </div>
                                                     </div>
                                                     <div class="col-6 upldlnk">
-                                                    <button type="button" class="btn btn-outline btn-lg btn-block btnlink" data-toggle="collapse" data-target="#link">
+                                                    <button type="button" class="btn btn-outline-danger btn-lg btn-block btnlink" data-toggle="collapse" data-target="#link">
                                                         <span>
                                                             <img class="iconlink" alt='' src={link}/>
                                                         </span>
@@ -808,7 +894,7 @@ class ProfileFilled extends Component {
                                             <br/>
                                                 <p class="parttext">Sertifikat</p>
                                                 <br/>
-                                                <button type="button" onClick={this.upload} class="btn btn-outline btn-lg btn-block btnsertifikat">
+                                                <button type="button" onClick={this.upload} class="btn btn-outline-danger btn-lg btn-block btnsertifikat">
                                                     <span>
                                                         <img class="iconuploadsertifikat" alt='' src={upload}/>
                                                     </span>
@@ -875,7 +961,7 @@ class ProfileFilled extends Component {
                                             <div>
                                                 <p class="parttextprojects">Projects</p>
                                                 <br/>
-                                                <button type="button" class="btn btn-outline btn-lg btn-block btnprojects" data-toggle="collapse" data-target="#tambahproject"
+                                                <button type="button" class="btn btn-outline-danger btn-lg btn-block btnprojects" data-toggle="collapse" data-target="#tambahproject"
                                                 >+ Tambah Project</button>
                                             </div>
                                             <br/>
@@ -885,17 +971,17 @@ class ProfileFilled extends Component {
                                                         <p class="titleadd">Tambah Project</p>
                                                         <br/>
                                                         <div>
-                                                            <input type="text" name="" required="" 
+                                                            <input type="text" name="projectname" required="" 
                                                                 onChange={this.handleChange} value={this.state.namaproject}/>
                                                             <label>Nama Project</label>
                                                         </div>
                                                         <div>
-                                                            <input type="text" name="" required=""
+                                                            <input type="text" name="projecturl" required=""
                                                             onChange={this.handleChange} value={this.state.projecturl}/>
                                                             <label>Project URL</label>
                                                         </div>
                                                         <div>
-                                                            <input type="text" name="" required="" 
+                                                            <input type="text" name="projectdesc" required="" 
                                                             onChange={this.handleChange} value={this.state.descproject}/>
                                                             <label>Description</label>
                                                         </div>
@@ -959,7 +1045,7 @@ class ProfileFilled extends Component {
                                                         </div>
                                                         <br/>
                                                         <div class="d-flex justify-content-end divbtncando">
-                                                            <a href="#"><span class="btn btn-outline btn-lg btnbatal">Batal</span></a>  
+                                                            <a href="#"><span class="btn btn-lg btnbatal">Batal</span></a>  
                                                             <a href="#"><span class="btn btn-lg btnselesai" 
                                                             onClick={this.projecthandle}>Selesai</span></a>  
                                                         </div>
@@ -970,7 +1056,9 @@ class ProfileFilled extends Component {
                                                 <div class="col-1" style={{margin:'5px 0 0 -10px'}}>
                                                     <img alt='' src={projects}/>
                                                 </div>
-                                                <div class="col-4" style={{marginLeft:'-25px'}}>
+                                                <div class="col-4" 
+                                                style={{marginLeft:'-25px'}}
+                                                handlearrayproject={this.handlearrayproject}>
                                                     <div class="col-3"></div>
                                                     <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
                                                         Aplikasi Kopi Kenangan
@@ -996,7 +1084,9 @@ class ProfileFilled extends Component {
                                                 <div class="col-1" style={{margin:'5px 0 0 -10px'}}>
                                                     <img alt='' src={projects}/>
                                                 </div>
-                                                <div class="col-4" style={{marginLeft:'-25px'}}>
+                                                <div class="col-4" 
+                                                style={{marginLeft:'-25px'}}
+                                                handlearrayproject={this.handlearrayproject}>
                                                     <div class="col-3"></div>
                                                     <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
                                                         Aplikasi DumbWays
@@ -1018,7 +1108,7 @@ class ProfileFilled extends Component {
                                             </span>
                                             <a href="#"><p className="seepro text-left">See Project</p></a>
                                         <div class="d-flex justify-content-end" style={{paddingTop: '35px'}}>
-                                            <a href="#"><span class="btn btn-lg setuju" onClick={this.finishhandle} style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'5px'}}>Finish</span></a>  
+                                            <a href="#"><span class="btn btn-lg setuju" onClick={this.finishhandle} style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'5px', color:'#ff003a'}}>Finish</span></a>  
                                         </div>
                                     </div>
                                     <br/>
