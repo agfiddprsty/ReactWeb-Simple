@@ -19,48 +19,7 @@
       /* margin-Left:30px; */
       margin-Top:-10px;
     }
-    /* .nav-tabs-dropdown {
-        display: block;
-    }
-    #nav-tabs-wrapper {
-        display: none;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        text-align: center;
-    }
-   .nav-tabs-horizontal {
-        min-height: 20px;
-        padding: 19px;
-        margin-bottom: 20px;
-        background-color: #f5f5f5;
-        border: 1px solid #e3e3e3;
-        border-radius: 4px;
-        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-        box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-   }
-    .nav-tabs-horizontal  > li {
-        float: none;
-    }
-    .nav-tabs-horizontal  > li + li {
-        margin-left: 2px;
-    }
-    .nav-tabs-horizontal > li,
-    .nav-tabs-horizontal > li > a {
-        background: transparent;
-        width: 100%;
-    } 
-    .nav-tabs-horizontal  > li > a {
-        border-radius: 4px;
-    }
-    .nav-tabs-horizontal  > li.active > a,
-    .nav-tabs-horizontal  > li.active > a:hover,
-    .nav-tabs-horizontal  > li.active > a:focus {
-        color: #ffffff;
-        background-color: #BACFFF;
-    }
-    #nav-tabs-wrapper {
-      display: block!important;
-    } */
+  
     .qz-tb-gd{
       height:50px;
     }
@@ -70,6 +29,36 @@
     }
     .qz-outt-gd{
       margin-Left:85px;margin-Top:-10px;
+    }
+    .nav-pills .pill .nav-link:not(.active) {
+      background-color: #fff;
+    }
+    .nav-pills .pill .nav-link{
+      background-color: #BCD0FF;
+      
+    }
+    .nav-pills .pill .nav-link:hover{
+      background-color: #BCD0FF;
+    }
+    .aquiz:hover::before{
+      color: #fff;
+    }
+    .nav > li > a:hover{
+      background-color:#FCC;
+    }
+    .aquiz:focus::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 419px;
+    margin-left: -15px;
+    width: 0px;
+    height: 0px;
+    /* : 0px auto; */
+    /* border-left: 15px solid  white; */
+    border-right: 11px solid white;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
     }
 }
   @media screen and (max-width: 1920px) {
@@ -129,13 +118,38 @@
       .qz-outt-gd{
         margin-Left:85px;margin-Top:-10px;
       }
-  }
-  @media only screen and (max-width:1680px){
-      .qz-outt-gd{
-        margin-Left:80px;margin-Top:-10px;
+      .nav-pills .pill .nav-link:not(.active) {
+        background-color: #fff;
+      }
+      .nav-pills .pill .nav-link{
+        background-color: #BCD0FF;
+        
+      }
+      .nav-pills .pill .nav-link:hover{
+        background-color: #BCD0FF;
+      }
+      .aquiz:hover::before{
+        color: #fff;
+      }
+      .nav > li > a:hover{
+        background-color:#FCC;
+      }
+      .aquiz:focus::before{
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 419px;
+      margin-left: -15px;
+      width: 0px;
+      height: 0px;
+      /* : 0px auto; */
+      /* border-left: 15px solid  white; */
+      border-right: 11px solid white;
+      border-bottom: 5px solid transparent;
+      border-top: 5px solid transparent;
       }
   }
-  @media only screen and (max-width:1366px){
+  @media only screen and (max-width:1680px){
     .nav-pills .pill .nav-link:not(.active) {
       background-color: #fff;
     }
@@ -143,8 +157,50 @@
       background-color: #BCD0FF;
       
     }
+    .nav-pills .pill .nav-link:hover{
+      background-color: #BCD0FF;
+    }
     .aquiz:hover::before{
       color: #fff;
+    }
+    .nav > li > a:hover{
+      background-color:#FCC;
+    }
+    .aquiz:focus::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 419px;
+    margin-left: -15px;
+    width: 0px;
+    height: 0px;
+    /* : 0px auto; */
+    /* border-left: 15px solid  white; */
+    border-right: 11px solid white;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    }
+      .qz-outt-gd{
+        margin-Left:80px;margin-Top:-10px;
+      }
+  }
+  @media only screen and (max-width:1366px){
+
+    .nav-pills .pill .nav-link:not(.active) {
+      background-color: #fff;
+    }
+    .nav-pills .pill .nav-link{
+      background-color: #BCD0FF;
+      
+    }
+    .nav-pills .pill .nav-link:hover{
+      background-color: #BCD0FF;
+    }
+    .aquiz:hover::before{
+      color: #fff;
+    }
+    .nav > li > a:hover{
+      background-color:#FCC;
     }
     .aquiz:focus::before{
     content: "";
@@ -174,6 +230,36 @@
     } */
   }
   @media only screen and (max-width:1152px){
+    .nav-pills .pill .nav-link:not(.active) {
+      background-color: #fff;
+    }
+    .nav-pills .pill .nav-link{
+      background-color: #BCD0FF;
+      
+    }
+    .nav-pills .pill .nav-link:hover{
+      background-color: #BCD0FF;
+    }
+    .aquiz:hover::before{
+      color: #fff;
+    }
+    .nav > li > a:hover{
+      background-color:#FCC;
+    }
+    .aquiz:focus::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 419px;
+    margin-left: -15px;
+    width: 0px;
+    height: 0px;
+    /* : 0px auto; */
+    /* border-left: 15px solid  white; */
+    border-right: 11px solid white;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    }
     .qz-ul-cl{
       background-Color:#FFF;
       width:500px;
@@ -188,6 +274,36 @@
     }
   }
   @media only screen and (max-width:1024px){
+    .nav-pills .pill .nav-link:not(.active) {
+      background-color: #fff;
+    }
+    .nav-pills .pill .nav-link{
+      background-color: #BCD0FF;
+      
+    }
+    .nav-pills .pill .nav-link:hover{
+      background-color: #BCD0FF;
+    }
+    .aquiz:hover::before{
+      color: #fff;
+    }
+    .nav > li > a:hover{
+      background-color:#FCC;
+    }
+    .aquiz:focus::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 419px;
+    margin-left: -15px;
+    width: 0px;
+    height: 0px;
+    /* : 0px auto; */
+    /* border-left: 15px solid  white; */
+    border-right: 11px solid white;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    }
     .qz-ul-cl{
       background-Color:#FFF;
       width:500px;
@@ -202,6 +318,36 @@
     }
   }
   @media only screen and (max-width:800px){
+    .nav-pills .pill .nav-link:not(.active) {
+      background-color: #fff;
+    }
+    .nav-pills .pill .nav-link{
+      background-color: #BCD0FF;
+      
+    }
+    .nav-pills .pill .nav-link:hover{
+      background-color: #BCD0FF;
+    }
+    .aquiz:hover::before{
+      color: #fff;
+    }
+    .nav > li > a:hover{
+      background-color:#FCC;
+    }
+    .aquiz:focus::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 419px;
+    margin-left: -15px;
+    width: 0px;
+    height: 0px;
+    /* : 0px auto; */
+    /* border-left: 15px solid  white; */
+    border-right: 11px solid white;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    }
     .qz-ul-cl{
       background-Color:#FFF;
       width:500px;
@@ -216,6 +362,36 @@
     }
   }
   @media only screen and (max-width:768px){
+    .nav-pills .pill .nav-link:not(.active) {
+      background-color: #fff;
+    }
+    .nav-pills .pill .nav-link{
+      background-color: #BCD0FF;
+      
+    }
+    .nav-pills .pill .nav-link:hover{
+      background-color: #BCD0FF;
+    }
+    .aquiz:hover::before{
+      color: #fff;
+    }
+    .nav > li > a:hover{
+      background-color:#FCC;
+    }
+    .aquiz:focus::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 419px;
+    margin-left: -15px;
+    width: 0px;
+    height: 0px;
+    /* : 0px auto; */
+    /* border-left: 15px solid  white; */
+    border-right: 11px solid white;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    }
     .qz-ul-cl{
       background-Color:#FFF;
       width:500px;
@@ -230,6 +406,36 @@
     }
   }
   @media only screen and (max-width:600px){
+    .nav-pills .pill .nav-link:not(.active) {
+      background-color: #fff;
+    }
+    .nav-pills .pill .nav-link{
+      background-color: #BCD0FF;
+      
+    }
+    .nav-pills .pill .nav-link:hover{
+      background-color: #BCD0FF;
+    }
+    .aquiz:hover::before{
+      color: #fff;
+    }
+    .nav > li > a:hover{
+      background-color:#FCC;
+    }
+    .aquiz:focus::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 419px;
+    margin-left: -15px;
+    width: 0px;
+    height: 0px;
+    /* : 0px auto; */
+    /* border-left: 15px solid  white; */
+    border-right: 11px solid white;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    }
     .qz-ul-cl{
       background-Color:#FFF;
       width:500px;
@@ -244,6 +450,36 @@
     }
   }
   @media only screen and (max-width:500px){
+    .nav-pills .pill .nav-link:not(.active) {
+      background-color: #fff;
+    }
+    .nav-pills .pill .nav-link{
+      background-color: #BCD0FF;
+      
+    }
+    .nav-pills .pill .nav-link:hover{
+      background-color: #BCD0FF;
+    }
+    .aquiz:hover::before{
+      color: #fff;
+    }
+    .nav > li > a:hover{
+      background-color:#FCC;
+    }
+    .aquiz:focus::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 419px;
+    margin-left: -15px;
+    width: 0px;
+    height: 0px;
+    /* : 0px auto; */
+    /* border-left: 15px solid  white; */
+    border-right: 11px solid white;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    }
     .qz-ul-cl{
       background-Color:#FFF;
       width:300px;
@@ -258,6 +494,36 @@
     }
   }
   @media only screen and (max-width:400px){
+    .nav-pills .pill .nav-link:not(.active) {
+      background-color: #fff;
+    }
+    .nav-pills .pill .nav-link{
+      background-color: #BCD0FF;
+      
+    }
+    .nav-pills .pill .nav-link:hover{
+      background-color: #BCD0FF;
+    }
+    .aquiz:hover::before{
+      color: #fff;
+    }
+    .nav > li > a:hover{
+      background-color:#FCC;
+    }
+    .aquiz:focus::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 419px;
+    margin-left: -15px;
+    width: 0px;
+    height: 0px;
+    /* : 0px auto; */
+    /* border-left: 15px solid  white; */
+    border-right: 11px solid white;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    }
       .qz-ul-cl{
         background-Color:#FFF;
         width:200px;
