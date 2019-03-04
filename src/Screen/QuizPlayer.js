@@ -18,13 +18,12 @@ class QuizPlayer extends Component{
                     </div>
                     <h6 className="col-12 col-s-9 h6-detail-gd">Lorem Ipsum is simply dummy text of the printing and typesetting<br/> industry. Lorem Ipsum has been the <br/> industry's standard dummy text ever since the 1500s,</h6>
                     <h5 className="h5-pet-gd">Petunjuk: </h5>
-                  <div className="qp-dv-pg qp-dv-cl">
+                    <div className="qp-dv-pg qp-dv-cl">
                         <br/>
                         <h6 className="qp-h6-pg qp-h6-cl" style={{fontWeight:"bold"}}>Cara Submit git : </h6>
-                        <ul className="col-12 col-s-9 ul-gd" style={{listStyleType:"disc"}}>
-                            <li className="qp-li-cl" > Register Ke git arkademy melalui link berikut</li>
-                            <li className="qp-li-cl"> Buat Repository baru dengan nama "kuis"</li>
-                        </ul>
+                        {/* <li className="qp-li-cl" > Register Ke git arkademy melalui link berikut</li> */}
+                        <h7 style={{color:"#fff"}} className="h7-gd"> Register Ke git arkademy melalui link berikut</h7><br/>
+                        <h7 style={{color:"#fff"}} className="h7-gd">Buat Repository baru dengan nama "kuis"</h7>
                     </div>
                 </div>     
             </div>
