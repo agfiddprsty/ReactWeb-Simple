@@ -133,7 +133,7 @@ class Register extends Component {
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <span class="far fa-user fa-lg" style={{fontSize: '30px', marginBottom: '30px'}}></span>
+                                                        <span class="far fa-user fa-lg" style={{fontSize: '30px', marginBottom: '32px', marginLeft:'2px'}}></span>
                                                     </td>
                                                     <td>
                                                         <input class="textinput" type="text" name="fullname" required="" pattern="[A-Za-z}"
@@ -149,7 +149,7 @@ class Register extends Component {
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <span class="far fa-envelope fa-lg" style={{fontSize: '30px', marginBottom: '30px'}}></span>
+                                                        <span class="far fa-envelope fa-lg" style={{fontSize: '30px', marginBottom: '32px'}}></span>
                                                     </td>
                                                     <td>
                                                         <input class="textinput" type="text" name="email" required="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}" 
@@ -164,7 +164,9 @@ class Register extends Component {
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <span class="fa fa-lock fa-lg" style={{fontSize: '30px', marginBottom: '30px'}}></span>
+                                                        <img src="https://img.icons8.com/material-outlined/35/000000/lock.png"
+                                                        style={{marginBottom:'25px', marginLeft:'-3px'}}/>
+                                                        {/* <span class="" style={{fontSize: '35px', marginBottom: '32px', marginLeft:'4px'}}></span> */}
                                                     </td>
                                                     <td>
                                                         <input class="textinput" type={this.state.type} className="password__input" 
@@ -181,7 +183,9 @@ class Register extends Component {
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <span class="fa fa-lock fa-lg" style={{fontSize: '30px', marginBottom: '30px'}}></span>
+                                                    <img src="https://img.icons8.com/material-outlined/35/000000/lock.png"
+                                                    style={{marginBottom:'25px', marginLeft:'-3px'}}/>
+                                                        {/* <span class="zmdi zmdi-lock-outline" style={{fontSize: '35px', marginBottom: '32px', marginLeft:'4px'}}></span> */}
                                                     </td>
                                                     <td>
                                                         <input class="textinput" type={this.state.type} className="password__input" 
