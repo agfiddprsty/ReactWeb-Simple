@@ -698,11 +698,7 @@ class ProfileFilled extends Component {
                                             <br/>
                                             <p class="parttext">Pengalaman Kerja</p>
                                             <br/>
-<<<<<<< HEAD
                                             <button type="button" class="btndngr btn btn-outline-danger btn-lg btn-block btnpengalaman" data-toggle="collapse" data-target="#tambahpengalamankerja"
-=======
-                                            <button type="button" class="btn btn-outline btn-lg btn-block btnpengalaman" data-toggle="collapse" data-target="#tambahpengalamankerja"
->>>>>>> f4612ae289cf03a151e759eccdb9636242a33a4a
                                             >+ Tambah Pengalaman Kerja</button>
                                         </div>
                                         <br/>
@@ -866,11 +862,7 @@ class ProfileFilled extends Component {
                                                                 success={files => this.onSuccess(files)}
                                                                 cancel={() => console.log('Closed')}
                                                                 multiselect={true}>
-<<<<<<< HEAD
                                                                 <button type="button" class="btndngr btn btn-outline-danger btn-lg btn-block btnupload dropbox-button">
-=======
-                                                                <button type="button" class="btn btn-outline btn-lg btn-block btnupload dropbox-button">
->>>>>>> f4612ae289cf03a151e759eccdb9636242a33a4a
                                                                     <span>
                                                                         <img class="iconupload" alt='' src={upload}/>
                                                                     </span>
@@ -880,11 +872,7 @@ class ProfileFilled extends Component {
                                                         </div>
                                                     </div>
                                                     <div class="col-6 upldlnk">
-<<<<<<< HEAD
                                                     <button type="button" class="btndngr btn btn-outline-danger btn-lg btn-block btnlink" data-toggle="collapse" data-target="#link">
-=======
-                                                    <button type="button" class="btn btn-outline btn-lg btn-block btnlink" data-toggle="collapse" data-target="#link">
->>>>>>> f4612ae289cf03a151e759eccdb9636242a33a4a
                                                         <span>
                                                             <img class="iconlink" alt='' src={link}/>
                                                         </span>
@@ -907,11 +895,7 @@ class ProfileFilled extends Component {
                                             <br/>
                                                 <p class="parttext">Sertifikat</p>
                                                 <br/>
-<<<<<<< HEAD
                                                 <button type="button" onClick={this.upload} class="btndngr btn btn-outline-danger btn-lg btn-block btnsertifikat">
-=======
-                                                <button type="button" onClick={this.upload} class="btn btn-outline btn-lg btn-block btnsertifikat">
->>>>>>> f4612ae289cf03a151e759eccdb9636242a33a4a
                                                     <span>
                                                         <img class="iconuploadsertifikat" alt='' src={upload}/>
                                                     </span>
@@ -984,11 +968,7 @@ class ProfileFilled extends Component {
                                             <div>
                                                 <p class="parttextprojects">Projects</p>
                                                 <br/>
-<<<<<<< HEAD
                                                 <button type="button" class="btndngr btn btn-outline-danger btn-lg btn-block btnprojects" data-toggle="collapse" data-target="#tambahproject"
-=======
-                                                <button type="button" class="btn btn-outline btn-lg btn-block btnprojects" data-toggle="collapse" data-target="#tambahproject"
->>>>>>> f4612ae289cf03a151e759eccdb9636242a33a4a
                                                 >+ Tambah Project</button>
                                             </div>
                                             <br/>
@@ -1135,13 +1115,7 @@ class ProfileFilled extends Component {
                                             </span>
                                             <a href="#"><p className="seepro text-left">See Project</p></a>
                                         <div class="d-flex justify-content-end" style={{paddingTop: '35px'}}>
-<<<<<<< HEAD
                                             <a href="#"><span class="btnfin btn btn-lg setuju" onClick={this.finishhandle} style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'5px', color:'#ff003a'}}>Finish</span></a>  
-=======
-                                            <a href="#"><span class="btn btn-lg setuju" 
-                                            onClick={this.finishhandle} 
-                                            style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'5px', color:'#FFF', background:'#ff003a'}}>Finish</span></a>  
->>>>>>> f4612ae289cf03a151e759eccdb9636242a33a4a
                                         </div>
                                     </div>
                                     <br/>
