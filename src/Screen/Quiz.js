@@ -51,26 +51,22 @@ class Quiz extends Component{
                     <div class="row">
                         <div class="col-sm-4">
                             <ul class="nav flex-column nav-pills qz-ul-gd qz-ul-cl" id="tabbb" style={{borderRadius:"0px!important"}}>
-                                {/* <li class="nav-item" >
-                                    <a class="nav-link active fa fa-square-o qz-tb-gd qz-tb-cl" href="#vtab1" data-toggle="tab"> Membuat Component Dengan Gelap<i className="fa fa-check-circle" style={{marginLeft:"50px",borderRadius:"10px",color:"#4CAF50"}}></i></a>
-                                </li> */}
-                                <li class="nav-item" >
+                                <li class="nav-item pill" >
                                     <span className={"nav-link qz-tb-gd qz-tb-cl rounded-0 "+ (this.state.aclick)}>
                                         <input type="checkbox" style={{marginTop:"10px",marginRight:"10px"}} />
-                                        <a class="" href="#vtab1" data-toggle="tab" onClick={this.onaCLick}>
+                                        <a class="aquiz" href="#vtab1" data-toggle="tab" onClick={this.onaCLick}>
                                         Membuat Component Dengan Gelap
                                         <span>
                                             <i className="fa fa-check-circle" style={{marginLeft:"20px",borderRadius:"10px",color:"#4CAF50"}}>  </i>
                                         </span>
                                     </a>
-                                    {/* <i className="fa fa-caret-left" style={{fontSize:"30px",marginLeft:"0px",color:"#FFF"}}/> */}
                                     </span>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item pill">
                                     <span className={"nav-link qz-tb-gd qz-tb-cl rounded-0 "+ (this.state.bclick)}>
                                         <input type="checkbox" style={{marginTop:"10px",marginRight:"10px"}} />
 
-                                        <a class="" href="#vtab2" data-toggle="tab" onClick={this.onbCLick}>
+                                        <a class="aquiz" href="#vtab2" data-toggle="tab" onClick={this.onbCLick}>
                                         Membuat Component Dengan Gelap
                                         <span>
                                             <i className="fa fa-check-circle" style={{marginLeft:"20px",borderRadius:"10px",color:"#4CAF50"}}></i>
@@ -79,11 +75,11 @@ class Quiz extends Component{
                                     </span>
                                     
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item pill">
                                     <span className={"nav-link qz-tb-gd qz-tb-cl rounded-0 "+ (this.state.cclick)}>
                                         <input type="checkbox" style={{marginTop:"10px",marginRight:"10px"}} />
     
-                                        <a class="" href="#vtab3" data-toggle="tab" onClick={this.oncCLick}>
+                                        <a class="aquiz" href="#vtab3" data-toggle="tab" onClick={this.oncCLick}>
                                          Membuat Component Dengan Terang
                                         
                                         <span>
@@ -93,33 +89,8 @@ class Quiz extends Component{
                                     </a>
                                     </span>
                                     
-                                </li>
-                                {/* <li class="nav-item">
-                                    <a class="nav-link qz-tb-gd qz-tb-cl" href="#vtab2" data-toggle="tab">
-                                        <input type="checkbox"/>
-
-                                        Membuat Component Dengan Gelap
-                                        <span>
-                                            <i className="fa fa-check-circle" style={{marginLeft:"30px",borderRadius:"10px",color:"#4CAF50"}}></i>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fa fa-square-o qz-tb-gd qz-tb-cl" href="#vtab2" data-toggle="tab"> Membuat Component Dengan Gelap<i className="fa fa-check-circle" style={{marginLeft:"50px",borderRadius:"10px",color:"#4CAF50"}}></i></a>
-                                </li>
-                                 <li class="nav-item">
-                                    <a class="nav-link qz-tb-gd qz-tb-cl" href="#vtab3" data-toggle="tab">
-                                        <input type="checkbox"/>
-
-                                         Membuat Component Dengan Terang
-                                        <span>
-                                            <i className="fa fa-times-circle" style={{marginLeft:"21px",borderRadius:"10px",color:"#FF2324"}}></i>
-                                        </span>
-                                    </a>
-                                </li> */}
-                                {/* <li class="nav-item">
-                                    <a class="nav-link fa fa-square-o qz-tb-gd qz-tb-cl" href="#vtab3" data-toggle="tab"> Membuat Component Dengan Terang<i class="fa fa-times-circle "style={{marginLeft:"42px",borderRadius:"10px",color:"#FF2324"}}></i></a>
-                                </li> */}
+                                </li>   
+                               
                             </ul>
                         </div>
                         <div class="col-sm-5">
