@@ -42,7 +42,7 @@ ul.timeline > li:before {
   color: #666666;
   font-weight: 400;
   font-family: 'Nunito';
-  font-size: 23.5px;
+  font-size: 24.2px;
   font-weight: 500;
   display: block;
   margin: 15px 0 75px 0;
@@ -141,18 +141,18 @@ ul.timeline > li:before {
 
 .parttext {
   color: #000;
-  font-weight: 700;
+  font-weight: 750;
   font-family:'Montserrat';
-  font-size: 25px;
+  font-size: 26px;
   display: block;
   text-align: left;
 }
 
 .parttextprojects {
   color: #000;
-  font-weight: 700;
+  font-weight: 750;
   font-family:'Montserrat';
-  font-size: 25px;
+  font-size: 26px;
   display: block;
   text-align: left;
   margin-top: 30px;
@@ -604,6 +604,16 @@ font-weight: 500;
   display: block;
   text-align: right;
   margin-right: -40px;
+}
+
+.daterightmnth {
+  color: red;
+  font-family: 'Montserrat';
+  font-size: 17px;
+  font-weight: 600;
+  display: block;
+  text-align: right;
+  margin-right: -35px;
 }
 
 .daterightproject {
