@@ -13,16 +13,8 @@ import './Screen/css/index.css';
 import App from './Screen/App';
 import Home from './Screen/Home';
 import * as serviceWorker from './serviceWorker';
-import Reg from './Screen/Registrasi';
-import Hack from './Screen/Hackerrank';
 import Menu from './Screen/Menu';
-import Batch from './Screen/ListBatch';
-import Silabus from './Screen/Silabus';
-import Profile from './Screen/Profile';
-import InfoSilabus from './Screen/InfoSilabus';
 import ListSilabus from './Screen/ListSilabus';
-import Log from './Screen/Log';
-import ProfileLink from './Screen/ProfileLinked';
 import ProfileRaport from './Screen/ProfileRaport';
 import Login from './Screen/Login';
 import Register from './Screen/Register';
@@ -44,14 +36,9 @@ ReactDOM.render(
         <Provider store={store}>
         <div>
             <Route exact path="/" component={Home} />
-            <Route path="/reg" component={Reg} />
-            <Route path="/hack" component={Hack} />
             <Route path="/admin" component={Menu} />
             <Route path='/profile' component={ProfileFilled} />
-            <Route path='/profilelink/:uid' component={ProfileLink}/>
             <Route path="/silabus/list" component={ListSilabus}/>
-            <Route path="/silabus/detail" component={Silabus}/>
-            <Route path="/batch" component={Batch}/>
             <Route path="/profileraport" component={ProfileRaport}/>
             <Route path="/login" component={Login}/>
             <Route path="/register" component={Register}/>
