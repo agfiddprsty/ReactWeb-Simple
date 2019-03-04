@@ -51,7 +51,7 @@
 
 .registe {
   background-color: #FFF;
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden;
 }
 
@@ -123,7 +123,7 @@
   color: #999;
   transition: .5s;
   pointer-events: none;
-  margin-left: 25px;
+  margin-left: 30px;
   font-size: 14px;
   font-weight: 400;
 }
@@ -151,7 +151,7 @@
   left: 0;
   color: #999;
   font-size: 14px;
-  margin-left: 25px;
+  margin-left: 30px;
   font-weight: 400;
 }
 
@@ -192,7 +192,7 @@
 
 @media only screen and (max-width: 1920px) {
   .registe {
-    padding: 115px 0 0 150px;
+    padding: 50px 0 0 150px;
   }
   
   .welcome {
@@ -235,12 +235,12 @@
   
   .illus {
     width: 75%;
-    margin: 115px 0 0 60px;
+    margin: 85px 0 0 60px;
   }
   
   .registe {
     background-color: #FFF;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden;
   }
   
@@ -399,13 +399,13 @@
   }
   
   .illus {
-    width: 80%;
-    margin: 120px 0 0 90px;
+    width: 75%;
+    margin: 20px 0 0 85px;
   }
   
   .registe {
     background-color: #FFF;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden;
   }
   
@@ -477,6 +477,7 @@
     color: #999;
     transition: .5s;
     pointer-events: none;
+    margin-right: 10px;
     font-size: 14px;
     font-weight: 400;
   }
@@ -502,6 +503,7 @@
     font-family:'Nunito';
     left: 0;
     top: -12px;
+    margin-right: 10px;
     font-size: 14px;
     color: #999;
     font-weight: 400;

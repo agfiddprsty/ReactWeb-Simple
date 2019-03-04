@@ -390,23 +390,24 @@ class ProfileFilled extends Component {
                                                 <p class="dateofbirth">Tanggal Lahir</p>
                                                     <div class="row">
                                                         <div class="col-sm-3 col-md-2">
-                                                            <p class="datebirth">
+                                                            <p class="datebirth" style={{marginLeft:'-25px'}}>
                                                                 Date
                                                             </p>
                                                         </div>
                                                         <div class="col-sm-3 col-md-2">
-                                                            <p class="datebirth">
+                                                            <p class="datebirth" style={{marginLeft:'-39px'}}>
                                                                 Month
                                                             </p>
                                                         </div>
                                                         <div class="col-sm-3 col-md-2">
-                                                            <p class="datebirth">
+                                                            <p class="datebirth" style={{marginLeft:'-49px'}}>
                                                                 Year
                                                             </p>
                                                         </div>
                                                     </div>
                                                         <div class="row">
-                                                            <select name="date" class="col-1 custom-select mb-3 optdate">
+                                                            <select name="date" class="col-1 custom-select col-sm-1 optdate"
+                                                            style={{textAlign:'left'}}>
                                                                 <option selected>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
                                                                 <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
                                                                 <option>11</option><option>12</option><option>13</option><option>14</option><option>15</option>
@@ -416,15 +417,21 @@ class ProfileFilled extends Component {
                                                                 <option>31</option>
                                                             </select>
                                                             
-                                                            <select name="month" class="col-1 custom-select mb-3 optdate">
+                                                            <select name="month" class="col-1 custom-select col-sm-1 optdate"
+                                                            style={{textAlign:'left'}}>
                                                                 <option selected>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
                                                                 <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
                                                                 <option>11</option><option>12</option>
                                                             </select>
 
-                                                            <select name="year" class="col-1 custom-select mb-3 optdate">
-                                                                <option selected>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option>
+                                                            <select name="year" class="col-1 custom-select col-sm-1 optdate"
+                                                            style={{textAlign:'left'}}>
+                                                                <option selected>2005</option><option>2004</option><option>2003</option><option>2002</option><option>2001</option>
+                                                                <option>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option>
                                                                 <option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option>
+                                                                <option>1989</option><option>1987</option><option>1986</option><option>1985</option><option>1984</option><option>1985</option>
+                                                                <option>1984</option><option>1983</option><option>1982</option><option>1981</option><option>1980</option>
+
                                                             </select>
                                                     </div>
                                             </div>
@@ -904,43 +911,33 @@ class ProfileFilled extends Component {
                                                 <input id='selectImage' hidden type="file" onChange={this.fileSelectHandler} />
                                             </div>
                                             <br/>
-                                            <div>
+                                            <div>   
                                                 <br/>
                                                 <div class="row">
                                                 <p class="col-3 parttext" 
                                                     style={{color:'black', fontWeight:'601', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.75000000em', display:'block', textAlign:'left'}}
                                                     >Skills
                                                     </p>
-                                                    <div className="text-left" style={{marginLeft: '100px'}}>
-                                                        <span className="btn btn-sm design" style={{
-                                                            borderRadius: '50px', fontWeight: '600', margin: '0 5px 0 0', color: '#FFF', backgroundColor:'red'}}>Design</span>
-                                                        <span className="btn btn-sm design" style={
-                                                            {borderRadius: '50px', fontWeight: '600', margin: '0 5px 0 5px', color: '#FFF', backgroundColor:'red'}}>Design</span>
-                                                        <span className="btn btn-sm design" style={{
-                                                            borderRadius: '50px', fontWeight: '600', margin: '0 5px 0 5px', color: '#FFF', backgroundColor:'red'}}>Design</span>
-                                                        <span className="btn btn-sm design" style={{
-                                                            borderRadius: '50px', fontWeight: '600', margin: '0 0 0 5px', color: '#FFF', backgroundColor:'red'}}>Design</span>
-                                                    </div>
+                                                        <div className="text-left" style={{marginLeft: '-35px'}}>
+                                                            <span className="btn btn-md design" style={{
+                                                                borderRadius: '70px', fontSize:'18px', fontWeight: '950', margin: '0 5px 0 0', color: '#FFF',
+                                                                fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>Design</span>
+                                                            <span className="btn btn-md design" style={
+                                                                {borderRadius: '80px', fontSize:'18px', fontWeight: '950', margin: '0 5px 0 5px', color: '#FFF', 
+                                                                fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>Front End</span>
+                                                            <span className="btn btn-md design" style={{
+                                                                borderRadius: '90px', fontSize:'18px', fontWeight: '950', margin: '0 5px 0 5px', color: '#FFF', 
+                                                                fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>Back End</span>
+                                                            <span className="btn btn-md design" style={{
+                                                                borderRadius: '50px', fontSize:'18px', fontWeight: '950', margin: '0 0 0 5px', color: '#FFF',
+                                                                fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>Web Dev</span>
+                                                            <span className="btn btn-md design" style={{
+                                                                borderRadius: '50px', fontSize:'18px', fontWeight: '950', margin: '0 5px 0 10px', color: '#FFF',
+                                                                fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>Mobile Dev</span>
+                                                        </div>
                                                     <button type="button" class="btn ml-auto" data-toggle="collapse" data-target="#tambahskills" 
                                                     style={{backgroundColor:'lightgrey', color:'#000', marginRight:'20px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif'}}
                                                     >Add Skill</button>
-                                                </div>
-                                                <div className="text-left">
-                                                    <div className="dftrskl">
-                                                        <span>
-                                                            User Interface Design
-                                                        </span>
-                                                    </div>
-                                                    <div className="dftrskla">
-                                                        <span>
-                                                            Graphic Design
-                                                        </span>
-                                                    </div>
-                                                    <div className="dftrskla">
-                                                        <span>
-                                                            User Experience Design
-                                                        </span>
-                                                    </div>
                                                 </div>
                                                 <div>
                                                     <form>
@@ -954,6 +951,7 @@ class ProfileFilled extends Component {
                                                             </div>
                                                             <p style={{textAlign:'left', color:'black', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'.75000000em', marginLeft:'40px'}}>Kamu bisa menambahkan 10 skills lagi</p> 
                                                             <br/>
+                                                            
                                                             
                                                             <br/>
                                                             <div class="d-flex justify-content-end" style={{paddingTop:'-25px', marginRight:'-40px'}}>  
@@ -1076,7 +1074,7 @@ class ProfileFilled extends Component {
                                                                 
                                                 </div>
                                                 <div class="col-7">
-                                                    <p class="dateright">
+                                                    <p class="daterightmnth">
                                                         Maret 2020
                                                     </p>
                                                 </div>
@@ -1103,7 +1101,7 @@ class ProfileFilled extends Component {
                                                     </p>
                                                 </div>
                                                 <div className="col-7">
-                                                    <p class="dateright">
+                                                    <p class="daterightmnth">
                                                         Maret 2020
                                                     </p>
                                                 </div>

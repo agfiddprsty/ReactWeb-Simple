@@ -87,8 +87,9 @@ class Login extends Component {
                     
                 <div class="row mb-5 d-none d-lg-flex d-xl-flex">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">   
-                    <i class="fa fa-chevron-left arrowleft"><a href="/home"></a></i>     
-                    <p class="underarrow">Kembali ke Beranda</p>                
+                    <a href="/"><i class="fa fa-chevron-left arrowleft"></i>     
+                        <p class="underarrow">Kembali ke Beranda</p>
+                    </a>         
                         <span className="col-lg-6 col-md-6 col-sm-6 col-xs-6 mx-auto">
                             <img class="illus" alt='' src={daftarsekarang}/>
                         </span>
@@ -118,7 +119,7 @@ class Login extends Component {
                                                         <td>
                                                             <input class="textinput" type="text" name="email" required="" 
                                                                 onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
-                                                                style={{backgroundImage: 'url(' + this.state.background + ')', marginLeft: '0px', backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
+                                                                style={{backgroundImage: 'url(' + this.state.background + ')', marginLeft: '-5px', backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
                                                             />
                                                             <label class="textlabellog" style={{marginTop: '40px', marginLeft: '100px'}}>
                                                             Email</label>
@@ -133,7 +134,7 @@ class Login extends Component {
                                                         <td>
                                                             <input class="textinput" type={this.state.type} className="password__input" 
                                                             onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} 
-                                                            style={{marginLeft: '0px'}}
+                                                            style={{marginLeft: '-5px'}}
                                                             />
                                                             <label class="textlabellog" style={{marginTop: '110px', marginLeft: '100px'}}>
                                                             Password</label>
