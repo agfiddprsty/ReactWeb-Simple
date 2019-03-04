@@ -27,7 +27,7 @@ return (
         <div class="container">
             <div>
                 <br/>
-                <h2 className="h2week1" style={{paddingTop:"90px"}}>Minggu 1</h2>
+                <h2 className="h2week1" style={{fontFamily:"Montserrat",fontWeight:"700",paddingTop:"90px"}}>Minggu 2</h2>
                 <br/>
             </div>
             <div class="row text-center text-lg-left">
@@ -39,7 +39,7 @@ return (
                     </a>
                 </div>
                 <a style={{paddingTop:"15px"}} href="/video/example" class="d-block mb-4 h-100">
-                    <span className="span-title-video" style={{fontWeight:"500"}}>1. Perkenalan</span>
+                    <span className="span-title-video" style={{fontFamily:"Montserrat",fontWeight:"500"}}>1. Perkenalan</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"96px",color:"red"}}></span> 04:32 </span>
                 </a>
             </div>
@@ -51,7 +51,7 @@ return (
                     </a>
                 </div>
                     <a style={{paddingTop:"15px"}}href="/video/example" class="d-block mb-4 h-100">
-                    <span className="span-title-video" style={{fontWeight:"500"}}>2. Components</span>
+                    <span className="span-title-video" style={{fontFamily:"Montserrat",fontWeight:"500"}}>2. Components</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"75px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -61,7 +61,7 @@ return (
                         <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                        </a>
                     </div>
                     <a style={{paddingTop:"15px"}} href="/video/example" class="d-block mb-4 h-100">
-                    <span className="span-title-video" style={{fontWeight:"500"}}>3. Instalasi</span>
+                    <span className="span-title-video" style={{fontFamily:"Montserrat",fontWeight:"500"}}>3. Instalasi</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"115px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -71,7 +71,7 @@ return (
                         <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                        </a>
                     </div>
                     <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
-                    <span className="span-title-video" style={{fontWeight:"500"}}>4. Character</span>
+                    <span className="span-title-video" style={{fontFamily:"Montserrat",fontWeight:"500"}}>4. Character</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"103px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -82,7 +82,7 @@ return (
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} href="/quiz/example" class="d-block mb-4 h-100">
-                    <span className="span-title-video"style={{fontWeight:"500"}}>Quiz Minggu 1</span>
+                    <span className="span-title-video"style={{fontFamily:"Montserrat",fontWeight:"500"}}>Quiz Minggu 1</span>
                     <span className="span-time" style={{fontSize:"13px",marginLeft:"85px",paddingBottom:"1px",color:"#00DFEB"}}>Level <img src={lvl} style={{width:"13px"}}></img>  </span>
                     </a>
                 </div>
@@ -93,7 +93,7 @@ return (
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} href="/video/example" class="d-block mb-4 h-100">
-                    <span className="span-title-video"style={{fontWeight:"500"}}>1. Perkenalan</span>
+                    <span className="span-title-video"style={{fontFamily:"Montserrat",fontWeight:"500"}}>1. Perkenalan</span>
                     <span className="span-time" style={{fontSize:"13px"}} ><span className="far fa-clock" style={{opacity:0.4 ,marginLeft:"96px",paddingBottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -103,7 +103,7 @@ return (
                         <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                        </a>
                     </div>
                     <a style={{paddingTop:"15px"}} href="/video/example" class="d-block mb-4 h-100">
-                    <span className="span-title-video"style={{fontWeight:"500"}}>2. Components</span>
+                    <span className="span-title-video"style={{fontFamily:"Montserrat",fontWeight:"500"}}>2. Components</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"75px",paddingBottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -113,7 +113,7 @@ return (
                         <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                        </a>
                     </div>
                     <a style={{paddingTop:"15px"}} href="/video/example" class="d-block mb-4 h-100">
-                    <span className="span-title-video"style={{fontWeight:"500"}}>3. Instalasi</span>
+                    <span className="span-title-video"style={{fontFamily:"Montserrat",fontWeight:"500"}}>3. Instalasi</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"115px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>  
@@ -122,7 +122,7 @@ return (
             <div>
                 <br/>
             <hr class="mt-2 mb-5"></hr>
-                <h2 className="h2week2" >Minggu 2</h2>
+                <h2 className="h2week2" style={{fontFamily:"Montserrat",fontWeight:"700"}}>Minggu 2</h2>
                 <br/>
                 
                 {/* <div stlye={{width:"20px"}} class="alert alert-danger" role="alert">

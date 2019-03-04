@@ -637,13 +637,13 @@
   }
 
 .h2week1{
-  font-family: Nunito;
+  font-family: Montserrat;
   font-weight: bold;
   padding-top: 90px;
 }
 
 .span-title-video{
-  font-family: Nunito;
+  font-family: Montserrat;
   font-size: 15px;
   font-weight: bold;
 }
@@ -651,7 +651,6 @@
 font-family: Nunito;
 }
   .h2week2{
-    font-family: Nunito;
     font-weight: bold;
   }
 .hoverblack:hover{
