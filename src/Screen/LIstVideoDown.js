@@ -12,8 +12,17 @@ class ListVideoDown extends Component{
         super()
         this.state={
             urlbackground:"https://source.unsplash.com/95YRwf6CNw8/450x250",
-            url:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://source.unsplash.com/95YRwf6CNw8/450x250)"
+            url:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://source.unsplash.com/95YRwf6CNw8/450x250)",
+            listvideo:[
+                {id:"1",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Test"},
+                {id:"2",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Test"},
+                {id:"3",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Test"},
+                {id:"4",image:"https://source.unsplash.com/95YRwf6CNw8/450x250",tittle:"Test"},
+            ],
         }
+    }
+    componentDidMount(){
+        console.log(this.state.listvideo);
     }
     render(){
         return(
@@ -22,7 +31,29 @@ class ListVideoDown extends Component{
                 <div className="col-md">
                     <div className="scrollbar scrollbar-primary scrollbar-cl">
                         <div class="force-overflow">
-                            <CardDeck>
+                            {this.state.listvideo.map((item,key)=>{
+                                return(
+                                    <div>
+                                        <CardDeck>
+                                            <Card className="border-0"><a href="/video/example" className="modul">
+                                                    <div className="row dv-row-gd">
+                                                        <div className="col-md-auto">
+                                                            <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${item.image})`}}>
+                                                                <img class="img-fluid img-thumbnail play-img-gd" src={ply} alt=""></img>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-md-auto dv-tittle-gd">
+                                                            <h6 className="tittledown">{item.tittle}</h6>
+                                                            <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </Card>
+                                        </CardDeck>
+                                    </div>
+                                )
+                            })}
+                            {/* <CardDeck>
                                 <Card className="border-0"><a href="/video/example" className="modul">
                                         <div className="row dv-row-gd">
                                             <div className="col-md-auto">
@@ -107,7 +138,6 @@ class ListVideoDown extends Component{
                                         <div className="row dv-row-gd">
                                             <div className="col-md-auto">
                                                 <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundColor:"#FF5D5D"}}>
-                                                    {/* <img class="img-fluid img-thumbnail play-img-gd" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/280967b2-c1da-4ccf-a6d0-291621216405/d798zp5-74577664-7bf1-4e52-9849-959ab72ffc2e.png" alt=""></img> */}
                                                 </div>
                                             </div>
                                             <div className="col-md-auto dv-tittle-gd">
@@ -185,7 +215,7 @@ class ListVideoDown extends Component{
                                         </div>
                                     </a>
                                 </Card>
-                            </CardDeck>
+                            </CardDeck> */}
                             
                         </div>
                     </div>

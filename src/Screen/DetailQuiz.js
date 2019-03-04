@@ -3,7 +3,6 @@ import HeaderDashboard from './HeaderPage';
 import ListVideoDown from './LIstVideoDown';
 import QuizPlayer from './QuizPlayer';
 import Quiz from './Quiz';
-// import './css/VideoPlayer.css'
 import './css/DetailQuiz.css'
 class DetailQuiz extends Component{
     render(){

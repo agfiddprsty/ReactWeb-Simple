@@ -28,7 +28,7 @@ class QuizDisscuss extends Component{
                     <div>
                         <div class="row" id="post-review-box" >
                             <div className="img-cmt-gd img-cmt-cl">
-                                    <img  class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
+                                    <img alt="profileimage"  class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
                             </div>
                             <div class="col-md-auto col-s-9 dv-input-cmt-qz-gd dv-input-cmt-qz-cl">
                                 <input onClick={this.showreply} className="input-cmt-qz-gd input-cmt-qz-cl" placeholder="Write A Comment"></input>
@@ -41,7 +41,7 @@ class QuizDisscuss extends Component{
                     <div class="row" style={{marginTop:"30px"}}> 
                             <div className="img-cmt-gd img-cmt-cl">
                             <div class="thumbnail">
-                                <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
+                                <img alt="profileimage" class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
                             </div>
                         </div>
                         <div class="col-sm-10">
@@ -70,13 +70,11 @@ class QuizDisscuss extends Component{
                                     {/* end true false ? */}
                                         <div class="row" id="post-review-box" style={{marginTop:"30px"}} >
                                             <div className="img-cmt-gd img-cmt-cl">
-                                                    <img  class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
+                                                    <img alt="profileimage" class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
                                             </div>
                                             <div class="col-md-auto col-s-9 dv-input-cmt-gd dv-input-cmt-cl">
                                                 <input onClick={this.showreply} className="input-rpl-qz-gd input-rpl-qz-cl" placeholder="Write A Comment"></input>
-                                                {/* <div id="btn" style={{display: this.state.show ? 'block' : 'none'}}> */}
                                                 <button class="btn btn-outline-primary submit-rpl-qz-gd submit-rpl-qz-cl" > Submit</button>
-                                                {/* </div> */}
                                             </div>
                                         </div>
                                     </div>
@@ -88,7 +86,7 @@ class QuizDisscuss extends Component{
                     <div class="row" style={{marginTop:"30px"}}> 
                             <div className="img-cmt-gd img-cmt-cl">
                             <div class="thumbnail">
-                                <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
+                                <img alt="profileimage" class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
                             </div>
                         </div>
                         <div class="col-sm-10">
@@ -117,13 +115,11 @@ class QuizDisscuss extends Component{
                                     {/* end true false ? */}
                                         <div class="row" id="post-review-box" style={{marginTop:"30px"}} >
                                             <div className="img-cmt-gd img-cmt-cl">
-                                                    <img  class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
+                                                    <img alt="profileimage" class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
                                             </div>
                                             <div class="col-md-auto col-s-9 dv-input-cmt-gd dv-input-cmt-cl">
                                                 <input onClick={this.showreply} className="input-rpl-qz-gd input-rpl-qz-cl" placeholder="Write A Comment"></input>
-                                                {/* <div id="btn" style={{display: this.state.show ? 'block' : 'none'}}> */}
                                                 <button class="btn btn-outline-primary submit-rpl-gd submit-rpl-qz-cl" > Submit</button>
-                                                {/* </div> */}
                                             </div>
                                         </div>
                                     </div>
