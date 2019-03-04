@@ -64,7 +64,7 @@ class Home extends Component {
                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div className="text-center" style={{padding: "20px 0 20px 0"}}>
                                                     <a href="/register" style={{fontWeight: '600' }} class="btn btn-danger reg">Daftar Sekarang</a>
-                                                    <a href="/silabusnew" style={{fontWeight: '600', color: '#fff'}} class="btn btn-outline-danger text-center lengkap">Lihat Silabus</a>
+                                                    <a href="/syllabus" style={{fontWeight: '600', color: '#fff'}} class="btn btn-outline-danger text-center lengkap">Lihat Silabus</a>
                                                 </div> 
                                             </div>
                                         </div>
@@ -264,7 +264,7 @@ class Home extends Component {
                                             <div className="col-xl-6 col-lg-7 col-md-6 col-sm-6 col-xs-8">
                                                 <div className="text-center divbtnsoo">
                                                     <a href="/register" class="btn btn-warning btndftrskrng">Daftar Sekarang</a>
-                                                    <a href="/silabusnew" class="btn btn-outline-light text-center btnseesilab">Lihat Silabus</a>
+                                                    <a href="/syllabus" class="btn btn-outline-light text-center btnseesilab">Lihat Silabus</a>
                                                 </div> 
                                             </div>
                                         </div>
