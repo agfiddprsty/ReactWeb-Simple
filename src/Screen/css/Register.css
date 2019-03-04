@@ -12,6 +12,21 @@
   margin-left: -10px;
 }
 
+.arrowleft {
+  margin: 35px 0 0 100px;
+  color: #ff003a;
+  width: 30%;
+  font-size: 25px;
+}
+
+.underarrow {
+  color: #ff003a;
+  font-size: 18px;
+  margin-left: 140px;
+  margin-top: -29px;
+  font-family: 'Nunito';
+}
+
 .logrightreg {
   margin-top: 0px;
 }
