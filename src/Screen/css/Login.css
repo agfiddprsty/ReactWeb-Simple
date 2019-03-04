@@ -24,7 +24,7 @@
   font-size: 18px;
   margin-left: 125px;
   margin-top: -30px;
-  margin-bottom: 40px;
+  margin-bottom: -20px;
   font-family: 'Nunito';
 }
 
@@ -45,8 +45,8 @@
 }
 
 .illus {
-  width: 75%;
-  margin: 20px 0 0 85px;
+  width: 80%;
+  margin: 115px 0 0 90px;
 }
 
 .registe {
@@ -235,7 +235,11 @@
   
   .illus {
     width: 75%;
+<<<<<<< HEAD
     margin: 85px 0 0 60px;
+=======
+    margin: 115px 0 0 75px;
+>>>>>>> 2080e370e88d3bd95705e1a87460e608e5023e26
   }
   
   .registe {
@@ -382,7 +386,7 @@
     font-size: 18px;
     margin-left: 125px;
     margin-top: -30px;
-    margin-bottom: 40px;
+    margin-bottom: -20px;
     font-family: 'Nunito';
   }
 
@@ -399,8 +403,13 @@
   }
   
   .illus {
+<<<<<<< HEAD
     width: 75%;
     margin: 20px 0 0 85px;
+=======
+    width: 80%;
+    margin: 115px 0px 0px 90px;
+>>>>>>> 2080e370e88d3bd95705e1a87460e608e5023e26
   }
   
   .registe {

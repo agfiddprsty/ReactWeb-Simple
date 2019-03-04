@@ -97,14 +97,20 @@
     }
     .qp-dv-out-gd{
         margin-bottom: 40px;
-        margin-left: 70px;
+        margin-left: 75px;
     }
     .lvl-qz-ds-gd{
         margin-Top:45px;
         margin-Left:537px;
     }
+    .h7-gd{
+        margin-left: 10px;
+    }
 }
 @media only screen and (max-width:1366px){
+    .h7-gd{
+        margin-left: 10px;
+    }
     .qp-dv-pg{
         background-Color:#FFAE40;
         width:500px;
@@ -329,6 +335,7 @@
     }
     .qp-li-cl{
         font-size: 13px;
+        margin-left: -100px;
     }
     .img-quiz-cl{
         width: 700px;
