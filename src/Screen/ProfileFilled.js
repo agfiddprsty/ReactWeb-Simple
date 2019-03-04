@@ -99,17 +99,17 @@ class ProfileFilled extends Component {
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (!pattern.test(this.state.email)) {
-            alert('Silahkan masukkan email yang valid')
+            alert('Silakan masukkan email yang valid')
         }else if(this.state.fullname === ""){
-            alert("Silahkan masukkan nama lengkap anda");
+            alert("Silakan masukkan nama lengkap anda");
         }else if(this.state.email === ""){
-            alert("Silahkan masukkan email anda");
+            alert("Silakan masukkan email anda");
         }else if(this.state.telpnumber === ""){
-            alert("Silahkan masukkan nomor telepon anda");
+            alert("Silakan masukkan nomor telepon anda");
         }else if(this.state.adress === ""){
-            alert("Silahkan masukkan alamat anda");
+            alert("Silakan masukkan alamat anda");
         }else if(this.state.summary === ""){
-            alert("Silahkan masukkan summary anda");
+            alert("Silakan masukkan summary anda");
         }
         else{
             //init POST AXIOS
@@ -225,13 +225,13 @@ class ProfileFilled extends Component {
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (this.state.sekolah === "") {
-            alert('Silahkan masukkan sekolah anda')
+            alert('Silakan masukkan sekolah anda')
         }else if(this.state.study === ""){
-            alert("Silahkan masukkan bidang study anda");
+            alert("Silakan masukkan bidang study anda");
         }else if(this.state.jurusan === ""){
-            alert("Silahkan masukkan jurusan anda");
+            alert("Silakan masukkan jurusan anda");
         }else if(this.state.degree === ""){
-            alert("Silahkan masukkan degree anda");
+            alert("Silakan masukkan degree anda");
         }
         else{
             //init POST AXIOS
@@ -257,13 +257,13 @@ class ProfileFilled extends Component {
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (this.state.perusahaan === "") {
-            alert('Silahkan masukkan perusahaan pekerjaan anda')
+            alert('Silakan masukkan perusahaan pekerjaan anda')
         }else if(this.state.industri === ""){
-            alert("Silahkan masukkan industri pekerjaan anda");
+            alert("Silakan masukkan industri pekerjaan anda");
         }else if(this.state.title === ""){
-            alert("Silahkan masukkan title pekerjaan anda");
+            alert("Silakan masukkan title pekerjaan anda");
         }else if(this.state.description === ""){
-            alert("Silahkan masukkan deskripsi pekerjaan anda");
+            alert("Silakan masukkan deskripsi pekerjaan anda");
         }
         else{
             //init POST AXIOS
@@ -289,11 +289,11 @@ class ProfileFilled extends Component {
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (this.state.namaproject === "") {
-            alert('Silahkan masukkan nama project anda')
+            alert('Silakan masukkan nama project anda')
         }else if(this.state.projecturl === ""){
-            alert("Silahkan masukkan project url anda");
+            alert("Silakan masukkan project url anda");
         }else if(this.state.descproject === ""){
-            alert("Silahkan masukkan description project anda");
+            alert("Silakan masukkan description project anda");
         }
         else{
             //init POST AXIOS
@@ -331,7 +331,7 @@ class ProfileFilled extends Component {
                                 Terimakasih telah mengikuti bootcamp online ini
                             </h1>
                             <p className="profilebootcamp">
-                                Silahkan melengkapi profile anda demi kemudahan kami dalam menyalurkan kerja dan administrasi
+                                Silakan melengkapi profile anda demi kemudahan kami dalam menyalurkan kerja dan administrasi
                             </p>
                         </div>
                     </div>

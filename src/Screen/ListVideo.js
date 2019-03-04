@@ -5,7 +5,22 @@ import ply from './img/ply.png';
 import lvl from './img/Level.png';
 import lock from './img/LockRed.png'
 class ListVideo extends Component {
-
+    constructor(){
+        super()
+        this.state={
+            urlbackground:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",
+            url:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://source.unsplash.com/95YRwf6CNw8/450x250)",
+            listvideo:[
+                {id:"1",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"Test"},
+                {id:"2",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"Test"},
+                {id:"3",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"Test"},
+                {id:"4",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"Test"},
+            ],
+        }
+    }
+    componentDidMount(){
+        console.log(this.state.listvideo);
+    }
 render() {
 return (
         <div style={{overflow:"hidden",backgroundColor:"#fff"}} >
@@ -18,41 +33,41 @@ return (
             <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-6">
                 <div className="d-flex justify-content-center listA">
-                    <a href="/detailvideo" class="d-block mb-4 h-100">
+                    <a href="/video/example" class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
                         <br/>
                     </a>
                 </div>
-                <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
+                <a style={{paddingTop:"15px"}} href="/video/example" class="d-block mb-4 h-100">
                     <span className="span-title-video" style={{fontWeight:"500"}}>1. Perkenalan</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"96px",color:"red"}}></span> 04:32 </span>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-6">
                 <div className="d-flex justify-content-center listB">
-                    <a href="/detailvideo" class="d-block mb-4 h-100">
+                    <a href="/video/example" class="d-block mb-4 h-100">
                     <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
                         <br/>
                     </a>
                 </div>
-                    <a style={{paddingTop:"15px"}}href="/detailvideo" class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}}href="/video/example" class="d-block mb-4 h-100">
                     <span className="span-title-video" style={{fontWeight:"500"}}>2. Components</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"75px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center listA">
-                        <a href="/detailvideo" class="d-block mb-4 h-100">
+                        <a href="/video/example" class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                        </a>
                     </div>
-                    <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} href="/video/example" class="d-block mb-4 h-100">
                     <span className="span-title-video" style={{fontWeight:"500"}}>3. Instalasi</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"115px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div className="d-flex justify-content-center listB">
-                        <a href="/detailvideo" class="d-block mb-4 h-100">
+                        <a href="/video/example" class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                        </a>
                     </div>
                     <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
@@ -66,7 +81,7 @@ return (
                         <img class="img-fluid img-thumbnail" style={{opacity: 0.4,background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/5a461410d099a2ad03f9c998.png" alt=""></img>
                         </a>
                     </div>
-                    <a style={{paddingTop:"15px"}} href="/detailquiz" class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} href="/quiz/example" class="d-block mb-4 h-100">
                     <span className="span-title-video"style={{fontWeight:"500"}}>Quiz Minggu 1</span>
                     <span className="span-time" style={{fontSize:"13px",marginLeft:"85px",paddingBottom:"1px",color:"#00DFEB"}}>Level <img src={lvl} style={{width:"13px"}}></img>  </span>
                     </a>
@@ -77,7 +92,7 @@ return (
                         <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                         </a>
                     </div>
-                    <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} href="/video/example" class="d-block mb-4 h-100">
                     <span className="span-title-video"style={{fontWeight:"500"}}>1. Perkenalan</span>
                     <span className="span-time" style={{fontSize:"13px"}} ><span className="far fa-clock" style={{opacity:0.4 ,marginLeft:"96px",paddingBottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
@@ -87,7 +102,7 @@ return (
                         <a href="/detailvideo" class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                        </a>
                     </div>
-                    <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} href="/video/example" class="d-block mb-4 h-100">
                     <span className="span-title-video"style={{fontWeight:"500"}}>2. Components</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"75px",paddingBottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
@@ -97,12 +112,12 @@ return (
                         <a href="/detailvideo" class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                        </a>
                     </div>
-                    <a style={{paddingTop:"15px"}} href="/detailvideo" class="d-block mb-4 h-100">
+                    <a style={{paddingTop:"15px"}} href="/video/example" class="d-block mb-4 h-100">
                     <span className="span-title-video"style={{fontWeight:"500"}}>3. Instalasi</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"115px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>  
-            </div>  
+            </div>
             <div></div>
             <div>
                 <br/>

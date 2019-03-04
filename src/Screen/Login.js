@@ -39,11 +39,11 @@ class Login extends Component {
     loginhandle(){
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (!pattern.test(this.state.email)) {
-            alert('Silahkan masukkan email yang valid')
+            alert('Silakan masukkan email yang valid')
         }else if(this.state.email === ""){
-            alert("Silahkan masukkan email anda");
+            alert("Silakan masukkan email anda");
         }else if(this.state.password === ""){
-            alert("Silahkan masukkan password anda");
+            alert("Silakan masukkan password anda");
         }
         else{
             //init POST AXIOS
