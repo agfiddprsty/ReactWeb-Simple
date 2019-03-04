@@ -697,7 +697,7 @@ class ProfileFilled extends Component {
                                             <br/>
                                             <p class="parttext">Pengalaman Kerja</p>
                                             <br/>
-                                            <button type="button" class="btn btn-outline-danger btn-lg btn-block btnpengalaman" data-toggle="collapse" data-target="#tambahpengalamankerja"
+                                            <button type="button" class="btn btn-outline btn-lg btn-block btnpengalaman" data-toggle="collapse" data-target="#tambahpengalamankerja"
                                             >+ Tambah Pengalaman Kerja</button>
                                         </div>
                                         <br/>
@@ -861,7 +861,7 @@ class ProfileFilled extends Component {
                                                                 success={files => this.onSuccess(files)}
                                                                 cancel={() => console.log('Closed')}
                                                                 multiselect={true}>
-                                                                <button type="button" class="btn btn-outline-danger btn-lg btn-block btnupload dropbox-button">
+                                                                <button type="button" class="btn btn-outline btn-lg btn-block btnupload dropbox-button">
                                                                     <span>
                                                                         <img class="iconupload" alt='' src={upload}/>
                                                                     </span>
@@ -871,7 +871,7 @@ class ProfileFilled extends Component {
                                                         </div>
                                                     </div>
                                                     <div class="col-6 upldlnk">
-                                                    <button type="button" class="btn btn-outline-danger btn-lg btn-block btnlink" data-toggle="collapse" data-target="#link">
+                                                    <button type="button" class="btn btn-outline btn-lg btn-block btnlink" data-toggle="collapse" data-target="#link">
                                                         <span>
                                                             <img class="iconlink" alt='' src={link}/>
                                                         </span>
@@ -894,7 +894,7 @@ class ProfileFilled extends Component {
                                             <br/>
                                                 <p class="parttext">Sertifikat</p>
                                                 <br/>
-                                                <button type="button" onClick={this.upload} class="btn btn-outline-danger btn-lg btn-block btnsertifikat">
+                                                <button type="button" onClick={this.upload} class="btn btn-outline btn-lg btn-block btnsertifikat">
                                                     <span>
                                                         <img class="iconuploadsertifikat" alt='' src={upload}/>
                                                     </span>
@@ -910,6 +910,16 @@ class ProfileFilled extends Component {
                                                     style={{color:'black', fontWeight:'601', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.75000000em', display:'block', textAlign:'left'}}
                                                     >Skills
                                                     </p>
+                                                    <div className="text-left" style={{marginLeft: '100px'}}>
+                                                        <span className="btn btn-sm design" style={{
+                                                            borderRadius: '50px', fontWeight: '600', margin: '0 5px 0 0', color: '#FFF', backgroundColor:'red'}}>Design</span>
+                                                        <span className="btn btn-sm design" style={
+                                                            {borderRadius: '50px', fontWeight: '600', margin: '0 5px 0 5px', color: '#FFF', backgroundColor:'red'}}>Design</span>
+                                                        <span className="btn btn-sm design" style={{
+                                                            borderRadius: '50px', fontWeight: '600', margin: '0 5px 0 5px', color: '#FFF', backgroundColor:'red'}}>Design</span>
+                                                        <span className="btn btn-sm design" style={{
+                                                            borderRadius: '50px', fontWeight: '600', margin: '0 0 0 5px', color: '#FFF', backgroundColor:'red'}}>Design</span>
+                                                    </div>
                                                     <button type="button" class="btn ml-auto" data-toggle="collapse" data-target="#tambahskills" 
                                                     style={{backgroundColor:'lightgrey', color:'#000', marginRight:'20px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif'}}
                                                     >Add Skill</button>
@@ -936,22 +946,18 @@ class ProfileFilled extends Component {
                                                         <div id="tambahskills" class="collapse" style={{marginRight:'80px'}}>
                                                             <p class="titleadd">Tambah Skills</p>
                                                             <div class="input-group input-group-lg text-center d-flex flex-wrap align-content-center divadskl">
-                                                                <span className="fa fa-search" style={{fontSize: '30px', color: 'red', marginRight: '5px', padding: '20px'}}></span>
+                                                                <span className="fa fa-search" style={{fontSize: '30px', color: '#ff003a', marginRight: '5px', padding: '20px'}}></span>
                                                                 <span>
                                                                     <input class="input-group-prepend inputskil" type="text" name="skills" required="" placeholder="Skill (ex: Data Analysis)"/>
                                                                 </span>
                                                             </div>
                                                             <p style={{textAlign:'left', color:'black', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'.75000000em', marginLeft:'40px'}}>Kamu bisa menambahkan 10 skills lagi</p> 
                                                             <br/>
-                                                            <div className="text-left" style={{marginLeft: '40px'}}>
-                                                                <span className="btn" style={{borderRadius: '50px', fontWeight: '600', margin: '0 5px 0 0'}}>Design</span>
-                                                                <span className="btn" style={{borderRadius: '50px', fontWeight: '600', margin: '0 5px 0 5px'}}>Design</span>
-                                                                <span className="btn" style={{borderRadius: '50px', fontWeight: '600', margin: '0 5px 0 5px'}}>Design</span>
-                                                                <span className="btn" style={{borderRadius: '50px', fontWeight: '600', margin: '0 0 0 5px'}}>Design</span>
-                                                            </div>
+                                                            
                                                             <br/>
                                                             <div class="d-flex justify-content-end" style={{paddingTop:'-25px', marginRight:'-40px'}}>  
-                                                                <a href="#"><button class="btn btn-sm setuju" style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'0'}}>Tambah</button></a>  
+                                                                <a href="#"><button class="btn btn-sm setuju" style={{
+                                                                    fontFamily:'helvetica, Arial, sans serif', borderRadius:'0', backgroundColor:'#ff003a', color: '#FFF'}}>Tambah</button></a>  
                                                             </div>  
                                                         </div>
                                                     </form>
@@ -961,7 +967,7 @@ class ProfileFilled extends Component {
                                             <div>
                                                 <p class="parttextprojects">Projects</p>
                                                 <br/>
-                                                <button type="button" class="btn btn-outline-danger btn-lg btn-block btnprojects" data-toggle="collapse" data-target="#tambahproject"
+                                                <button type="button" class="btn btn-outline btn-lg btn-block btnprojects" data-toggle="collapse" data-target="#tambahproject"
                                                 >+ Tambah Project</button>
                                             </div>
                                             <br/>
@@ -1108,7 +1114,9 @@ class ProfileFilled extends Component {
                                             </span>
                                             <a href="#"><p className="seepro text-left">See Project</p></a>
                                         <div class="d-flex justify-content-end" style={{paddingTop: '35px'}}>
-                                            <a href="#"><span class="btn btn-lg setuju" onClick={this.finishhandle} style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'5px', color:'#ff003a'}}>Finish</span></a>  
+                                            <a href="#"><span class="btn btn-lg setuju" 
+                                            onClick={this.finishhandle} 
+                                            style={{fontFamily:'helvetica, Arial, sans serif', borderRadius:'5px', color:'#FFF', background:'#ff003a'}}>Finish</span></a>  
                                         </div>
                                     </div>
                                     <br/>

@@ -60,16 +60,16 @@ class QuizDisscuss extends Component{
                                             </div>
                                             <label >{item.comment}</label>
                                             <div className="row">
-                                                <div style={{marginLeft:"15px",marginRight:"10px"}}>
-                                                    <i className="fa fa-thumbs-up"></i>
-                                                </div>
-                                                <div style={{marginRight:"10px"}}>
-                                                    <i className="fa fa-thumbs-down fa-flip-horizontal"></i>
-                                                </div>
-                                                <div style={{marginLeft:"1px"}}>
-                                                    <a onClick={this.showreply} className="btn" style={{marginTop:"-6px",marginLeft:"-15px"}}>Reply</a>
+                                            <div style={{marginLeft:"15px",marginRight:"10px"}}>
+                                                <i className="btn fa fa-thumbs-up"style={{marginTop:"-6px",marginLeft:"-13px"}}></i>
+                                            </div>
+                                            <div style={{marginRight:"10px"}}>
+                                                <i className="btn fa fa-thumbs-down fa-flip-horizontal" style={{marginTop:"-6px",marginLeft:"-25px"}}></i>
+                                            </div>
+                                            <div style={{marginLeft:"1px"}}>
+                                                <a onClick={this.showreply} className="btn" style={{marginTop:"-6px",marginLeft:"-25px"}}>Reply</a>
 
-                                                </div>
+                                            </div>
                                             </div>
                                             {/* true false ? */}
                                             <div id="reply" style={{display: this.state.show ? 'block' : 'none'}}>

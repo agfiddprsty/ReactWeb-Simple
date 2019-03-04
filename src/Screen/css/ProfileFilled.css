@@ -520,8 +520,8 @@ padding: 25px 0 30px 0;
 border-radius: 0; 
 border: 2px solid;
 font-family: 'Montserrat';
-background-color: red;
-color: #FFF;
+background-color: #FFF;
+color: #ff003a;
 font-weight: 500;
 }
 
@@ -547,10 +547,12 @@ font-weight: 500;
   padding: 8px 25px 8px 25px;
 }
 
-.btnfinish {
+.btnsetuju {
   font-family: 'Montserrat';
   border-radius: 3;
-  border: 2px solid #d2002f;
+  border: 2px solid #FFF;
+  color: #ff003a;
+  background: #FFF;
   font-size: 22px;
   font-weight: 300;
   margin-top: 40px;
@@ -576,6 +578,19 @@ font-weight: 500;
   text-align: left;
   margin-bottom: 0;
   /* margin-top: -10px; */
+}
+
+.design{
+  background-color: #FFF;
+  height: 100%;
+  overflow: hidden;
+}
+
+.btndesign {
+  border-radius: 50px;
+  font-weight: 600;
+  color: #FFF;
+  background: #ff003a;
 }
 
 .schol{

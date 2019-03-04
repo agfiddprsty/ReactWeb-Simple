@@ -13,7 +13,7 @@
 }
 
 .arrowleft {
-  margin: 35px 0 0 100px;
+  margin: 40px 0 0 100px;
   color: #ff003a;
   width: 30%;
   font-size: 25px;
@@ -22,8 +22,9 @@
 .underarrow {
   color: #ff003a;
   font-size: 18px;
-  margin-left: 140px;
-  margin-top: -29px;
+  margin-left: 125px;
+  margin-top: -30px;
+  margin-bottom: 40px;
   font-family: 'Nunito';
 }
 
@@ -178,27 +179,43 @@
     color: #3b3b3b;
     font-weight: 600;
     font-family: 'Montserrat';
-    font-size: 2.55000000em;
+    font-size: 2.65000000em;
     display: block;
     text-align: left;
-    margin-left: -55px;
+    margin-left: -50px;
+  }
+
+  .arrowleft {
+    margin: 75px 0 0 75px;
+    color: #ff003a;
+    width: 30%;
+    font-size: 25px;
+  }
+  
+  .underarrow {
+    color: #ff003a;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-top: -30px;
+    margin-bottom: -50px;
+    font-family: 'Nunito';
   }
   
   .logrightreg {
-    margin-top: 25px;
+    margin-top: 50px;
   }
 
   .onlinebootcamp {
     color: grey;
     font-weight: 400;
-    font-size: 1.650000000em;
+    font-size: 1.750000000em;
     display: block;
-    margin: 0 0 20px -60px;
+    margin: 0 0 20px -50px;
   }
   
   .illus {
-    width: 90%;
-    margin: 100px 0 0 35px;
+    width: 75%;
+    margin: 175px 0 0 25px;
   }
   
   .registr {
@@ -331,6 +348,22 @@
     display: block;
     text-align: left;
     margin-left: -10px;
+  }
+
+  .arrowleft {
+    margin: 40px 0 0 100px;
+    color: #ff003a;
+    width: 30%;
+    font-size: 25px;
+  }
+  
+  .underarrow {
+    color: #ff003a;
+    font-size: 18px;
+    margin-left: 125px;
+    margin-top: -30px;
+    margin-bottom: 40px;
+    font-family: 'Nunito';
   }
 
   .logrightreg {
