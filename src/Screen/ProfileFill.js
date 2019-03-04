@@ -44,7 +44,8 @@ class ProfileFill extends Component {
             projecturl: '',
             descproject: '',
             image:null,
-            files: ''
+            files: '',
+
         }
     }
     onSuccess(value){
@@ -279,30 +280,6 @@ class ProfileFill extends Component {
                                                     </span>
                                                 </span>
                                             </span>
-                                            {/* <div style={{padding:'20px 0px 20px 20px'}}>
-                                                <p class="gender">Gender</p>
-                                                <div onChange={this.setGender.bind(this)} style={{marginTop:"50px"}}>
-                                                    <div className="row" style={{marginLeft: '-50px'}}>
-                                                        <div class="col-md-auto">
-                                                            <div class="row">   
-                                                                <div class="col-md-auto">
-                                                                    <label class="radio"> 
-                                                                        <input type="radio" checked="checked" name="is_company"/>
-                                                                        <span class="checkround"></span>
-                                                                    </label>
-                                                                </div>    
-                                                                
-                                                                <div class="col-md-auto">
-                                                                    <label class="radio"> 
-                                                                        <input type="radio" checked="checked" name="is_company"/>
-                                                                        <span class="checkround"></span>
-                                                                    </label>
-                                                                </div>    
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div> */}
                                             <div style={{padding:'0px 0px 20px 20px'}}>
                                                 <p class="dateofbirth">Tanggal Lahir</p>
                                                     <div class="row">

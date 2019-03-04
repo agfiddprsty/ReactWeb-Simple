@@ -120,7 +120,7 @@
   padding: 15px 135px 15px 135px;
   border-radius: 0; 
   box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
-  background-color: red;
+  background-color: #ff003a;
   color: #FFF;
   font-family: 'Nunito';
   font-weight: bold;
@@ -294,7 +294,7 @@
     padding: 15px 180px 15px 180px;
     border-radius: 0; 
     box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
-    background: red;
+    background: #ff003a;
     color: #FFF;
     font-family: 'Nunito';
     font-weight: bold;
@@ -440,7 +440,7 @@
     padding: 15px 135px 15px 135px;
     border-radius: 0; 
     box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
-    background-color: red;
+    background-color: #ff003a;
   color: #FFF;
     font-family: 'Nunito';
     font-weight: bold;
@@ -457,7 +457,7 @@
     padding: 15px 100px 15px 100px;
     font-family: 'Nunito';
     box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
-    background-color: red;
+    background-color: #ff003a;
   color: #FFF;
     }
   }
@@ -472,7 +472,7 @@
     padding: 15px 50px 15px 50px;
     font-family: 'Nunito';
     box-shadow: 0 0 15px 0 rgba(136, 136, 136, 0.4);
-    background-color: red;
+    background-color: r#ff003aed;
   color: #FFF;
       font-weight: bold;
     }

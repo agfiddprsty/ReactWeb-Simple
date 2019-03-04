@@ -123,7 +123,9 @@ class Login extends Component {
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <span class="fa fa-lock fa-lg" style={{fontSize: '30px', marginBottom: '30px'}}></span>
+                                                            <img src="https://img.icons8.com/material-outlined/35/000000/lock.png"
+                                                            style={{marginBottom:'25px', marginLeft:'-3px'}}/>
+                                                            {/* <span class="fa fa-lock fa-lg" style={{fontSize: '35px', marginBottom: '30px', marginLeft:'4px'}}></span> */}
                                                         </td>
                                                         <td>
                                                             <input class="textinput" type={this.state.type} className="password__input" 
