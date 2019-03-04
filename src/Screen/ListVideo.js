@@ -5,7 +5,22 @@ import ply from './img/ply.png';
 import lvl from './img/Level.png';
 import lock from './img/LockRed.png'
 class ListVideo extends Component {
-
+    constructor(){
+        super()
+        this.state={
+            urlbackground:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",
+            url:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://source.unsplash.com/95YRwf6CNw8/450x250)",
+            listvideo:[
+                {id:"1",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"Test"},
+                {id:"2",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"Test"},
+                {id:"3",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"Test"},
+                {id:"4",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"Test"},
+            ],
+        }
+    }
+    componentDidMount(){
+        console.log(this.state.listvideo);
+    }
 render() {
 return (
         <div style={{overflow:"hidden",backgroundColor:"#fff"}} >
