@@ -1,0 +1,28 @@
+.btndngr {
+    color: red!important;
+    background-color: #fff!important;
+    outline-color: red!important;
+  }
+  
+  .btndngr:hover{
+    outline-color: #fff!important;
+    background-color: red!important;
+    color: #fff!important;
+  }
+
+.btnsel:hover {
+    color: #fff;
+}
+
+.btncel {
+    color: red;
+}
+
+.btncel:hover {
+    color: red;
+}
+
+.btnfin{
+    background-color: red;
+    color: #fff!important;
+}

@@ -110,7 +110,7 @@ class Register extends Component {
         <div className="registr">
             <div class="row mb-5 d-none d-lg-flex d-xl-flex">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <i class="fa fa-chevron-left arrowleft"><a href="/home"></a></i>     
+                <a href="/home"><i class="fa fa-chevron-left arrowleft"></i></a>     
                     <p class="underarrow">Kembali ke Beranda</p>          
                     <span className="col-lg-6 col-md-6 col-sm-6 col-xs-6 mx-auto">
                         <img class="illus" alt='' src={daftarsekarang}/>
@@ -252,7 +252,7 @@ class Register extends Component {
                                         <div className="text-center btn-lg" 
                                         style={{width:'', padding:'5px 0 5px 0', margin:'0'}}>
                                             <button type="button" 
-                                                onClick={this.daftarhandle} class="btn btn-lg btndaftar"
+                                                onClick={this.daftarhandle} class="btnsel btn btn-lg btndaftar"
                                                 > Daftar Sekarang
                                             </button>
                                         </div> 
@@ -332,7 +332,7 @@ class Register extends Component {
                                         <div className="text-center btn-lg" 
                                         style={{width:'', padding:'5px 0 5px 0', margin:'0'}}>
                                             <button type="button" 
-                                                onClick={this.daftarhandle} class="btn btn-danger btn-lg btndaftar"
+                                                onClick={this.daftarhandle} class="btnsel btn btn-danger btn-lg btndaftar"
                                                 > Daftar Sekarang
                                             </button>
                                         </div>

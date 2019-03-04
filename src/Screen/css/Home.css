@@ -47,6 +47,10 @@
     transform: scale(0.80); 
 }
 
+.btndftrskrng:hover {
+    color: #fff;
+}
+
 .btndftrskrng{
     color: #fff;
     width: 210px;
