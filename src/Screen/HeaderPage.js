@@ -20,7 +20,7 @@ class Header extends Component {
                         <img src={boy} alt="" className="rounded-circle img-fluid imgboy"/>
                       </a>
                       <div class="dropdown-menu">
-                        <a class="dropdown-item" href="/profilefilled">Profile</a>
+                        <a class="dropdown-item" href="/profile">Profile</a>
                         <a class="dropdown-item" href="/register">Logout</a>
                       </div>
                     </li>
@@ -45,7 +45,7 @@ class Header extends Component {
                   <div class="collapse bg-light navbar-collapse bg-light colap" id="collapsibleNavbar" >
                   <ul class="navbar-nav ml-auto">
                     <li className="nav-item">
-                      <a href='/profilefilled' className="nav-link">Profile</a>
+                      <a href='/profile' className="nav-link">Profile</a>
                     </li>
                     <li className="nav-item">
                       <a href="/register" className="nav-link active">Logout</a>
