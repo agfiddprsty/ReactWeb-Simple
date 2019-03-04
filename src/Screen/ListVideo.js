@@ -27,7 +27,7 @@ return (
         <div class="container">
             <div>
                 <br/>
-                <h2 className="h2week1" style={{fontFamily:"Montserrat",fontWeight:"700",paddingTop:"90px"}}>Minggu 2</h2>
+                <h2 className="h2week1" style={{fontFamily:"Montserrat",fontWeight:"700",paddingTop:"90px"}}>Minggu 1</h2>
                 <br/>
             </div>
             <div class="row text-center text-lg-left">
