@@ -166,7 +166,7 @@ class Silabusnew extends Component {
                                                 <div className="text-center btn-block" 
                                                         onClick={this.kirimhandle}
                                                         style={{width:'', padding:'10px 0 15px 0', margin:'0'}}>
-                                                        <button type="button" class="btn btn-block btnsilabus">
+                                                        <button type="button" class="btnsel btn btn-block btnsilabus">
                                                             Kirim Silabus
                                                         </button>
                                                 </div>
@@ -229,7 +229,7 @@ class Silabusnew extends Component {
                                                         onClick={this.kirimhandle}
                                                         style={{width:'', padding:'10px 0 15px 0', margin:'0'}}>
                                                         <button 
-                                                            type="button" class="btn btn-block btnsilabus">
+                                                            type="button" class="btnsel btn btn-block btnsilabus">
                                                             Kirim Silabus
                                                         </button>
                                                     </div>

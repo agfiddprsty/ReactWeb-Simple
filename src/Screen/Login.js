@@ -165,7 +165,7 @@ class Login extends Component {
                                             </div> */}
                                             <div className="text-center btn-lg" 
                                             style={{width:'', padding:'5px 0 5px 0', margin:'0'}}>
-                                                <button type="button" class="btn btn-lg btnmasuk" 
+                                                <button type="button" class="btnsel btn btn-lg btnmasuk" 
                                                     onClick={this.loginhandle} 
                                                     >Masuk
                                                 </button>
@@ -223,7 +223,7 @@ class Login extends Component {
                                             <div className="text-center btn-lg" 
                                             style={{padding:'5px 0 5px 0', margin:'0'}}>
                                                 <button type="button" 
-                                                    onClick={this.loginhandle} class="btn btn-danger btn-lg btnmasuk">
+                                                    onClick={this.loginhandle} class="btnsel btn btn-danger btn-lg btnmasuk">
                                                     Masuk
                                                 </button>
                                             </div>

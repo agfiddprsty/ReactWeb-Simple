@@ -252,7 +252,7 @@ class Register extends Component {
                                         <div className="text-center btn-lg" 
                                         style={{width:'', padding:'5px 0 5px 0', margin:'0'}}>
                                             <button type="button" 
-                                                onClick={this.daftarhandle} class="btn btn-lg btndaftar"
+                                                onClick={this.daftarhandle} class="btnsel btn btn-lg btndaftar"
                                                 > Daftar Sekarang
                                             </button>
                                         </div> 
@@ -332,7 +332,7 @@ class Register extends Component {
                                         <div className="text-center btn-lg" 
                                         style={{width:'', padding:'5px 0 5px 0', margin:'0'}}>
                                             <button type="button" 
-                                                onClick={this.daftarhandle} class="btn btn-danger btn-lg btndaftar"
+                                                onClick={this.daftarhandle} class="btnsel btn btn-danger btn-lg btndaftar"
                                                 > Daftar Sekarang
                                             </button>
                                         </div>

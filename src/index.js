@@ -1,6 +1,7 @@
 //import library
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
+import './Screen/css/button.css';
 import ReactDOM from 'react-dom';
 import {
 	BrowserRouter as Router,
