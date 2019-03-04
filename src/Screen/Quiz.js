@@ -57,10 +57,10 @@ class Quiz extends Component{
                                             <td>
                                                 <input type="checkbox" className="nav-link" style={{marginTop:"10px",marginRight:"10px"}} />
                                             </td>
-                                            <td style={{marginTop:"10px"}}>
+                                            <td>
                                                 <a  class="aquiz" href="#vtab1" data-toggle="tab" onClick={this.onaCLick} >
                                                     <span>
-                                                    <a class="aquiz" href="#vtab1" data-toggle="tab" onClick={this.onaCLick} style={{marginTop:"50px"}}>
+                                                    <a class="aquiz" href="#vtab1" data-toggle="tab" onClick={this.onaCLick} style={{marginTop:"10px"}}>
                                                     Membuat Component Dengan Gelap
                                                         <span>
                                                             <i className="fa fa-check-circle" style={{marginLeft:"20px",borderRadius:"10px",color:"#4CAF50"}}>  </i>
