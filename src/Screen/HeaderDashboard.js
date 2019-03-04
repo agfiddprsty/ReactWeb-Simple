@@ -36,7 +36,7 @@ class Header extends Component {
           <div className="headdash fixed-top bg-light">
             <header className="Hom-header bg-light">
                 <nav className="container navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light" style={{height: '64px'}}>
-                  <a class="brand" href="/home">
+                  <a class="brand" href="/">
                     <img alt="" className="imgdw" src={dwicon}/>
                   </a> 
                   <ul class="navbar-nav ml-auto">
@@ -45,7 +45,7 @@ class Header extends Component {
                         <img src={boy} alt="" className="rounded-circle img-fluid imgman"/>
                       </a>
                       <div class="dropdown-menu">
-                        <a class="dropdown-item" href="/profilefilled">Profile</a>
+                        <a class="dropdown-item" href="/profile">Profile</a>
                         <a class="dropdown-item" href="/register">Logout</a>
                       </div>
                     </li>
@@ -59,7 +59,7 @@ class Header extends Component {
           <div className="headland fixed-top bg-light">
             <header className="Hom-header bg-light">
                 <nav className="container navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light" style={{height:"80px"}}>
-                  <a class="brand" href="/home">
+                  <a class="brand" href="/">
                   <img alt="" className="img-fluid imgbran" src={dwicon}/>
                   </a>
 
@@ -70,7 +70,7 @@ class Header extends Component {
                   <div class="collapse navbar-collapse bg-light colap" id="collapsibleNavbar" >
                   <ul class="navbar-nav ml-auto">
                     <li className="nav-item">
-                      <a href='/profilefilled' className="nav-link">Profile</a>
+                      <a href='/profile' className="nav-link">Profile</a>
                     </li>
                     <li className="nav-item">
                       <a href="/register" className="nav-link active">Logout</a>
