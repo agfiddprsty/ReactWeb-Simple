@@ -123,7 +123,7 @@
   color: #999;
   transition: .5s;
   pointer-events: none;
-  margin-left: 30px;
+  margin-right: 10px;
   font-size: 14px;
   font-weight: 400;
 }
@@ -145,13 +145,14 @@
 
 /* text label */
 .textlabellog {
-  font-family:'Nunito';
   position: absolute;
-  top: -12px;
+  font-family:'Nunito';
   left: 0;
-  color: #999;
+  top: -12px;
+  margin-right: 10px;
+  margin-left: 100px;
   font-size: 14px;
-  margin-left: 30px;
+  color: #999;
   font-weight: 400;
 }
 
@@ -192,7 +193,7 @@
 
 @media only screen and (max-width: 1920px) {
   .registe {
-    padding: 50px 0 0 150px;
+    padding: 0px 0 0 150px;
   }
   
   .welcome {
@@ -202,11 +203,11 @@
     font-size: 2.65000000em;
     display: block;
     text-align: left;
-    margin-left: -50px;
+    margin-left: -58px;
   }
 
   .arrowleft {
-    margin: 95px 0 0 75px;
+    margin: 115px 0 0 75px;
     color: #ff003a;
     width: 30%;
     font-size: 25px;
@@ -230,26 +231,22 @@
     font-weight: 400;
     font-size: 1.750000000em;
     display: block;
-    margin: 0 0 20px -50px;
+    margin: 0 0 20px -70px;
   }
   
   .illus {
     width: 75%;
-<<<<<<< HEAD
-    margin: 85px 0 0 60px;
-=======
-    margin: 115px 0 0 75px;
->>>>>>> 2080e370e88d3bd95705e1a87460e608e5023e26
+    margin: 75px 0 0 90px;
   }
   
   .registe {
     background-color: #FFF;
-    /* height: 100vh; */
+    height: 100vh;
     overflow: hidden;
   }
   
   .logo {
-    margin: 0 0 15px -50px;
+    margin: -50px 0 15px -8px;
     width: 17%;
   }
   
@@ -266,7 +263,7 @@
       border: 1px solid rgba(0,0,0,.1);
       box-shadow: 0 0 20px 1px rgba (0,0,0,0.2);
       margin-bottom: 50px;
-      margin-left: -45px;
+      margin-left: -48px;
     }
   
     .persegilogin input{
@@ -316,6 +313,7 @@
       color: #999;
       transition: .5s;
       pointer-events: none;
+      margin-left: 20px;
       font-size: 14px;
       font-weight: 400;
     }
@@ -342,6 +340,8 @@
       top: -12px;
       left: 0;
       color: #999;
+      margin-left: 20px;
+      margin-left: 103px;
       font-size: 14px;
       font-weight: 400;
   }
@@ -403,13 +403,8 @@
   }
   
   .illus {
-<<<<<<< HEAD
-    width: 75%;
-    margin: 20px 0 0 85px;
-=======
     width: 80%;
     margin: 115px 0px 0px 90px;
->>>>>>> 2080e370e88d3bd95705e1a87460e608e5023e26
   }
   
   .registe {
@@ -513,6 +508,7 @@
     left: 0;
     top: -12px;
     margin-right: 10px;
+    margin-left: 100px;
     font-size: 14px;
     color: #999;
     font-weight: 400;

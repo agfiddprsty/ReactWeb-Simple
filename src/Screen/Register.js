@@ -82,7 +82,7 @@ class Register extends Component {
             // Axios.post('url',body).then(ress=>{
             //     this.setState({ressjson:ress})
             // })
-            this.props.history.push("/silabusnew");
+            this.props.history.push("/login");
             console.log(this.state.selectedValue);
         }        
     }
@@ -110,14 +110,9 @@ class Register extends Component {
         <div className="registr">
             <div class="row mb-5 d-none d-lg-flex d-xl-flex">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-<<<<<<< HEAD
                 <a href="/"><i class="fa fa-chevron-left arrowleft"></i>     
                     <p class="underarrow">Kembali ke Beranda</p>
                 </a>  
-=======
-                <a href="/home"><i class="fa fa-chevron-left arrowleft"></i></a>     
-                    <p class="underarrow">Kembali ke Beranda</p>          
->>>>>>> 2080e370e88d3bd95705e1a87460e608e5023e26
                     <span className="col-lg-6 col-md-6 col-sm-6 col-xs-6 mx-auto">
                         <img class="illus" alt='' src={daftarsekarang}/>
                     </span>
@@ -149,7 +144,7 @@ class Register extends Component {
                                                             style={{marginLeft:'-5px', backgroundImage: 'url(' + this.state.backgroundf + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
                                                         />
                                                         <label class="textlabellog"
-                                                            style={{marginTop: '40px', marginLeft: '100px'
+                                                            style={{marginTop: '40px'
                                                             // color:this.state.fullname!=''?'red':'#999'
                                                             }}>Nama Lengkap
                                                         </label>
@@ -164,7 +159,7 @@ class Register extends Component {
                                                             onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
                                                             style={{marginLeft:'-5px', backgroundImage: 'url(' + this.state.backgrounde + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
                                                         />
-                                                        <label class="textlabellog" style={{ marginTop: '110px', marginLeft: '100px'
+                                                        <label class="textlabellog" style={{ marginTop: '110px'
                                                             // color:this.state.email!=''?'red':'#999'
                                                             }}>Email
                                                         </label>
@@ -181,7 +176,7 @@ class Register extends Component {
                                                         onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} 
                                                         style={{marginLeft: '-5px'}}
                                                         />
-                                                        <label class="textlabellog" style={{marginTop: '180px', marginLeft: '100px'}}>
+                                                        <label class="textlabellog" style={{marginTop: '180px'}}>
                                                         Password</label>
                                                     </td>
                                                     <td>
@@ -200,7 +195,7 @@ class Register extends Component {
                                                         onChange={(cp)=>this.handleConfirmpassChange(cp)} value={this.state.confirmpass} 
                                                         style={{marginLeft: '-5px'}}
                                                         />
-                                                        <label class="textlabellog" style={{marginTop: '250px', marginLeft: '100px'}}>
+                                                        <label class="textlabellog" style={{marginTop: '250px'}}>
                                                         Konfirmasi Password</label>
                                                     </td>
                                                     <td>

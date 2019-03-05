@@ -56,7 +56,7 @@ class Login extends Component {
             // Axios.post('url',body).then(ress=>{
             //     this.setState({ressjson:ress})
             // })
-            this.props.history.push("/silabusnew");
+            this.props.history.push("/syllabus");
             console.log(this.state.selectedValue);
         }        
     }
@@ -87,14 +87,9 @@ class Login extends Component {
                     
                 <div class="row mb-5 d-none d-lg-flex d-xl-flex">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">   
-<<<<<<< HEAD
                     <a href="/"><i class="fa fa-chevron-left arrowleft"></i>     
                         <p class="underarrow">Kembali ke Beranda</p>
                     </a>         
-=======
-                    <a href="/home"><i class="fa fa-chevron-left arrowleft"></i></a> 
-                    <p class="underarrow">Kembali ke Beranda</p>                
->>>>>>> 2080e370e88d3bd95705e1a87460e608e5023e26
                         <span className="col-lg-6 col-md-6 col-sm-6 col-xs-6 mx-auto">
                             <img class="illus" alt='' src={daftarsekarang}/>
                         </span>
@@ -126,7 +121,7 @@ class Login extends Component {
                                                                 onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
                                                                 style={{backgroundImage: 'url(' + this.state.background + ')', marginLeft: '-5px', backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
                                                             />
-                                                            <label class="textlabellog" style={{marginTop: '40px', marginLeft: '100px'}}>
+                                                            <label class="textlabellog" style={{marginTop: '40px'}}>
                                                             Email</label>
                                                         </td>
                                                     </tr>
@@ -141,7 +136,7 @@ class Login extends Component {
                                                             onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} 
                                                             style={{marginLeft: '-5px'}}
                                                             />
-                                                            <label class="textlabellog" style={{marginTop: '110px', marginLeft: '100px'}}>
+                                                            <label class="textlabellog" style={{marginTop: '110px'}}>
                                                             Password</label>
                                                         </td>
                                                         <td>
@@ -151,24 +146,6 @@ class Login extends Component {
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            {/* <div>
-                                                <input class="textinput" type="text" name="email" required="" 
-                                                    onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
-                                                    style={{backgroundImage: 'url(' + this.state.background + ')',backgroundSize: '20px',backgroundRepeat: "no-repeat",backgroundPosition: "right 12px"}}
-                                                />
-                                                <label class="textlabellog">
-                                                Email</label>
-                                            </div> */}
-                                            {/* <div>
-                                                <input class="textinput" type={this.state.type} className="password__input" 
-                                                onChange={(pc)=>this.handlePasswordChange(pc)} value={this.state.password} 
-                                                />
-                                                <label class="textlabellog" 
-                                                    style={{
-                                                    }}>Password
-                                                </label>
-                                                <span className={"password__show" +(this.state.type==='input' ? ' fa fa-eye':' far fa-eye-slash')} onClick={this.toggleShow}></span>
-                                            </div> */}
                                             <div className="text-center btn-lg" 
                                             style={{width:'', padding:'5px 0 5px 0', margin:'0'}}>
                                                 <button type="button" class="btnsel btn btn-lg btnmasuk" 

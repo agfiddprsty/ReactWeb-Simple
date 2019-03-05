@@ -9,6 +9,7 @@ import DropboxChooser from 'react-dropbox-chooser';
 import {RadioGroup,Radio} from 'react-radio-group';
 import './css/Register.css';
 
+// DropBox Key for Upload
 const APP_KEY = 'jni8bfvqjntw35s';
 
 class ProfileFilled extends Component {
@@ -135,66 +136,66 @@ class ProfileFilled extends Component {
         
     }
 
+
     handlearrayschool(){
-        this.state.school.push('newschool');
-    
-        this.setState({
-            id:"1", 
-            sekolah:"SMK Uhuy Lah", 
-            study:"Field of Study", 
-            jurusan:"Multimedia", 
-            degree:"Major",
+        var id="1";
+        var sekolah="SMK Uhuy Lah";
+        var study="Field of Study";
+        var jurusan="Multimedia";
+        var degree="Major";
         
-            id:"2", 
-            sekolah:"SMK Uhuy Lah", 
-            study:"Field of Study", 
-            jurusan:"Multimedia", 
-            degree:"Major",
-            
-            school:this.state.school
-        })
-    }
+        var id="2";
+        var sekolah="SMK Uhuy Lah";
+        var study="Field of Study";
+        var jurusan="Multimedia";
+        var degree="Major";
+            var newSchool = [
+                id,sekolah,study,jurusan,degree
+            ]
+            this.setState({
+                arrayschool: [...this.state.arrayschool,newSchool]
+            })
+        }
     
     handlearraywork(){
-        this.state.work.push('newwork');
-    
-        this.setState({
-            id:"1", 
-            perusahaan:"Google", 
-            industri:"", 
-            title:"programmer", 
-            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.",
-            
-            id:"2",
-            perusahaan:"Facebook", 
-            industri:"", 
-            title:"Programmer", 
-            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.",
-            
-            work:this.state.work
-        })
-    }
+        var id="1"; 
+        var perusahaan="Google";
+        var industri="";
+        var title="programmer";
+        var description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.";
+        
+        var id="2";
+        var perusahaan="Facebook"; 
+        var industri=""; 
+        var title="Programmer";
+        var description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.";
+            var newWork = [
+                id,perusahaan,industri,title,description
+            ]
+            this.setState({
+                arraywork: [...this.setState.arraywork,newWork]
+
+            })
+        }
 
     handlearrayproject(){
-        this.state.project.push('newproject');
-    
-        this.setState({
-            id:"1", 
-            projectname:"Aplikasi Kopi Kenangan", 
-            projecturl:"", 
-            projectdesc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.",
+        var id="1"; 
+        var projectname="Aplikasi Kopi Kenangan";
+        var projecturl="";
+        var projectdesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.";
             
-            id:"2", 
-            projectname:"Aplikasi DumbWays", 
-            projecturl:"", 
-                projectdesc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.",
+        var id="2"; 
+        var projectname="Aplikasi DumbWays";
+        var projecturl=""; 
+        var projectdesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.";
+            var newProject = [
+                id,projectname,projecturl,projectdesc 
+            ]
+            this.setState({
+                arrayproject: [...this.setState.arrayproject.newProject]
+            })
+        }
 
-            work:this.state.work
-        })
-    }
-    
-
-    
 
     handleChecked(){
         this.setState({
@@ -323,7 +324,6 @@ class ProfileFilled extends Component {
     <div>
         <Header/>
         <body>
-    
             <div className="pgpro">
                 <div className="container">
                     <div className="text-title">
@@ -390,18 +390,18 @@ class ProfileFilled extends Component {
                                                 <p class="dateofbirth">Tanggal Lahir</p>
                                                     <div class="row">
                                                         <div class="col-sm-3 col-md-2">
-                                                            <p class="datebirth" style={{marginLeft:'-25px'}}>
+                                                            <p class="datebirth" style={{marginLeft:'-20px'}}>
                                                                 Date
                                                             </p>
                                                         </div>
                                                         <div class="col-sm-3 col-md-2">
-                                                            <p class="datebirth" style={{marginLeft:'-39px'}}>
+                                                            <p class="datebirth" style={{marginLeft:'-30px'}}>
                                                                 Month
                                                             </p>
                                                         </div>
                                                         <div class="col-sm-3 col-md-2">
-                                                            <p class="datebirth" style={{marginLeft:'-49px'}}>
-                                                                Year
+                                                            <p class="datebirth" style={{marginLeft:'-36px'}}>
+                                                                Years
                                                             </p>
                                                         </div>
                                                     </div>
@@ -433,9 +433,9 @@ class ProfileFilled extends Component {
                                                                 <option>1984</option><option>1983</option><option>1982</option><option>1981</option><option>1980</option>
 
                                                             </select>
+                                                        </div>
                                                     </div>
-                                            </div>
-                                            <br/>
+                                                <br/>
                                             <div>
                                                 <input type="text" name="summary" 
                                                 onChange={this.handleChange} value={this.state.summary} required=""/>
@@ -488,7 +488,8 @@ class ProfileFilled extends Component {
                                                     <div class="d-flex justify-content-end divbtncando">
                                                         <a href="#"><span class="btncel btn btn-lg btnbatal">Batal</span></a>  
                                                         <a href="#"><span class="btnsel btn btn-lg btnselesai"
-                                                        onClick={this.pendidikanhandle}>Selesai</span></a>  
+                                                        onClick={this.pendidikanhandle}
+                                                        onClick={this.handlearrayschool}>Selesai</span></a>  
                                                     </div>
                                                 </div>
                                             </form>
@@ -497,8 +498,8 @@ class ProfileFilled extends Component {
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <ul class="timeline">
-                                                        <li handlearrayschool={this.handlearrayschool}>
-                                                            <div class="row">
+                                                        <li>
+                                                            <div class="row" >
                                                                 <div class="col-4" style={{marginLeft:'40px'}}>
                                                                     <div class="col-3"></div>
                                                                     <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
@@ -549,8 +550,8 @@ class ProfileFilled extends Component {
                                                                 </div>
                                                             </div>
                                                         </li>
-                                                        <li handlearrayschool={this.handlearrayschool}>
-                                                            <div class="row">
+                                                        <li>
+                                                            <div class="row" >
                                                                 <div class="col-4" style={{marginLeft:'40px'}}>
                                                                     <div class="col-3"></div>
                                                                     <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
@@ -796,7 +797,8 @@ class ProfileFilled extends Component {
                                                     <div class="d-flex justify-content-end divbtncando">
                                                         <a href="#"><span class="btncel btn btn-lg btnbatal">Batal</span></a>  
                                                         <a href="#"><span class="btnsel btn btn-lg btnselesai" 
-                                                        onClick={this.kerjahandle}>Selesai</span></a>  
+                                                        onClick={this.kerjahandle}
+                                                        onClick={this.handlearraywork}>Selesai</span></a>  
                                                     </div>
                                                 </div>
                                             </form>
@@ -804,7 +806,7 @@ class ProfileFilled extends Component {
                                         <div class="row">
                                             <div class="col-xl-12 col-lg-12 col-md-12">
                                                 <ul class="timeline">
-                                                    <li handlearraywork={this.handlearraywork}>
+                                                    <li >
                                                         <div class="row" style={{marginTop:'15px'}}>
                                                             <div class="col-4" style={{marginLeft:'40px'}}>
                                                                 <div class="col-3"></div>
@@ -824,7 +826,7 @@ class ProfileFilled extends Component {
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li handlearraywork={this.handlearraywork}>
+                                                    <li >
                                                         <div class="row" style={{marginTop:'15px'}}>
                                                             <div class="col-4" style={{marginLeft:'40px'}}>
                                                                 <div class="col-3"></div>
@@ -918,7 +920,7 @@ class ProfileFilled extends Component {
                                                     style={{color:'black', fontWeight:'601', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.75000000em', display:'block', textAlign:'left'}}
                                                     >Skills
                                                     </p>
-                                                        <div className="text-left" style={{marginLeft: '-35px'}}>
+                                                        {/* <div className="text-left" style={{marginLeft: '-35px'}}>
                                                             <span className="btn btn-md design" style={{
                                                                 borderRadius: '70px', fontSize:'18px', fontWeight: '950', margin: '0 5px 0 0', color: '#FFF',
                                                                 fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>Design</span>
@@ -934,7 +936,7 @@ class ProfileFilled extends Component {
                                                             <span className="btn btn-md design" style={{
                                                                 borderRadius: '50px', fontSize:'18px', fontWeight: '950', margin: '0 5px 0 10px', color: '#FFF',
                                                                 fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>Mobile Dev</span>
-                                                        </div>
+                                                        </div> */}
                                                     <button type="button" class="btn ml-auto" data-toggle="collapse" data-target="#tambahskills" 
                                                     style={{backgroundColor:'lightgrey', color:'#000', marginRight:'20px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif'}}
                                                     >Add Skill</button>
@@ -998,7 +1000,8 @@ class ProfileFilled extends Component {
                                                                         Month
                                                                     </p>
                                                                 </div>
-                                                                <div class="col-sm-3 col-md-2">
+                                                                <div class="col-sm-3 col-md-2"
+                                                                style={{marginLeft:'-5px'}}>
                                                                     <p class="fromfrom">
                                                                         Years
                                                                     </p>
@@ -1019,7 +1022,8 @@ class ProfileFilled extends Component {
                                                                     </p>
                                                                 </div>
                                                                 <div class="col-sm-3 col-md-2">
-                                                                    <p class="fromto">
+                                                                    <p class="fromtoright"
+                                                                    style={{marginLeft:'80px'}}>
                                                                         Years
                                                                     </p>
                                                                 </div>
@@ -1052,7 +1056,8 @@ class ProfileFilled extends Component {
                                                         <div class="d-flex justify-content-end divbtncando">
                                                             <a href="#"><span class="btncel btn btn-lg btnbatal">Batal</span></a>  
                                                             <a href="#"><span class="btnsel btn btn-lg btnselesai" 
-                                                            onClick={this.projecthandle}>Selesai</span></a>  
+                                                            onClick={this.projecthandle} 
+                                                            onClick={this.handlearrayproject}>Selesai</span></a>  
                                                         </div>
                                                     </div>
                                                 </form>
@@ -1062,9 +1067,7 @@ class ProfileFilled extends Component {
                                                     <img alt='' src={projects}/>
                                                 </div>
                                                 <div class="col-4" 
-                                                style={{marginLeft:'-25px'}}
-                                                handlearrayproject={this.handlearrayproject}>
-                                                    <div class="col-3"></div>
+                                                style={{marginLeft:'-25px'}}>
                                                     <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
                                                         Aplikasi Kopi Kenangan
                                                     </p>
@@ -1090,9 +1093,7 @@ class ProfileFilled extends Component {
                                                     <img alt='' src={projects}/>
                                                 </div>
                                                 <div class="col-4" 
-                                                style={{marginLeft:'-25px'}}
-                                                handlearrayproject={this.handlearrayproject}>
-                                                    <div class="col-3"></div>
+                                                style={{marginLeft:'-25px'}}>
                                                     <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
                                                         Aplikasi DumbWays
                                                     </p>

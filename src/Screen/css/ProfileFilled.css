@@ -339,6 +339,10 @@ ul.timeline > li:before {
   color: #999;
 }
 
+fromtoright {
+  textalign: ''
+}
+
 .roundicon {
   color: red;
   margin-left: -350px;
