@@ -82,6 +82,7 @@ class QuizDisscuss extends Component{
                                                         <input onClick={this.showreply} className="input-rpl-qz-gd input-rpl-qz-cl" placeholder="Write A Comment"></input>
                                                         <button class="btn btn-outline-primary submit-rpl-qz-gd submit-rpl-qz-cl" > Submit</button>
                                                     </div>
+                                                    <br/>
                                                 </div>
                                             </div>
                                         </div>
