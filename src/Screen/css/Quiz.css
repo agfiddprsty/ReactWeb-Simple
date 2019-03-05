@@ -127,19 +127,19 @@
       background-color: #fff;
     }
     .nav-pills .pill .nav-link{
-      background-color: #BCD0FF;
+      background-color:#007BFF;
       
     }
     .nav-pills .pill .nav-link:hover{
       background-color: #BCD0FF;
     }
-    .aquiz:hover::before{
+    .aquiz:hover{
       color: #fff;
     }
     .nav > li > a:hover{
       background-color:#FCC;
     }
-      .qz-outt-gd{
+    .qz-outt-gd{
         margin-Left:80px;margin-Top:-10px;
       }
   }

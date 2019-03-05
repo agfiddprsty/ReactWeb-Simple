@@ -80,9 +80,9 @@ class Quiz extends Component{
                                                     <input type="checkbox" className="nav-link" style={{marginTop:"10px",marginRight:"10px"}} />
                                                 </td>
                                                 <td>
-                                                    <a  class="aquiz" href="#vtab1" data-toggle="tab" onClick={this.onbCLick} >
+                                                    <a  class="aquiz" href="#vtab2" data-toggle="tab" onClick={this.onbCLick} >
                                                         <span>
-                                                        <a class="aquiz" href="#vtab1" data-toggle="tab" onClick={this.onbCLick} style={{marginTop:"10px"}}>
+                                                        <a class="aquiz" href="#vtab2" data-toggle="tab" onClick={this.onbCLick} style={{marginTop:"10px"}}>
                                                         Membuat Component Dengan Gelap
                                                             <span>
                                                                 <i className="fa fa-check-circle" style={{marginLeft:"20px",borderRadius:"10px",color:"#4CAF50"}}>  </i>
@@ -101,9 +101,9 @@ class Quiz extends Component{
                                                     <input type="checkbox" className="nav-link" style={{marginTop:"10px",marginRight:"10px"}} />
                                                 </td>
                                                 <td>
-                                                    <a  class="aquiz" href="#vtab1" data-toggle="tab" onClick={this.oncCLick} >
+                                                    <a  class="aquiz" href="#vtab3" data-toggle="tab" onClick={this.oncCLick} >
                                                         <span>
-                                                        <a class="aquiz" href="#vtab1" data-toggle="tab" onClick={this.oncCLick} style={{marginTop:"10px"}}>
+                                                        <a class="aquiz" href="#vtab3" data-toggle="tab" onClick={this.oncCLick} style={{marginTop:"10px"}}>
                                                         Membuat Component Dengan Gelap
                                                             <span>
                                                                 <i className="fa fa-times-circle" style={{marginLeft:"20px",borderRadius:"10px",color:"#E44E41"}}>  </i>
