@@ -80,9 +80,12 @@ nav ul li a:hover{
 }
 
 .btnhead {
-  margin-left: 80px;
   width: 100px;
   font-weight: 600;
+}
+
+.ahead{
+  margin-left: 80px;
 }
 
 .Hom-header {
