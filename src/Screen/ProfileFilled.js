@@ -920,10 +920,13 @@ class ProfileFilled extends Component {
                                                     style={{color:'black', fontWeight:'601', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.75000000em', display:'block', textAlign:'left'}}
                                                     >Skills
                                                     </p>
-                                                    <button type="button" class="btn btndngr btn btn-outline ml-auto" data-toggle="collapse" data-target="#tambahskills" 
+                                                    {/* <button type="button" class="btn btndngr btn btn-outline ml-auto" data-toggle="collapse" data-target="#tambahskills" 
                                                     style={{marginRight:'20px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif', border:'2px solid #ff003a', outlineColor:'#ff003a'}}
-                                                    >Add Skill</button>
+                                                    >Add Skill</button> */}
                                                 </div>
+                                                <br/>
+                                                <button type="button" class="btndngr btn btn-outline btn-lg btn-block btnpendidikan" data-toggle="collapse" data-target="#tambahskills"
+                                                >+ Add Skill</button>
                                                 <div>
                                                     <form>
                                                         <div id="tambahskills" class="collapse" style={{marginRight:'80px'}}>
