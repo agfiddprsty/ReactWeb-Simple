@@ -470,8 +470,9 @@ font-weight: 500;
 }
 
 .divadskl{
-  margin: 0 -80px 0 40px;
+  margin: 0 -80px 0 0;
   border: 1px solid red;
+  width: 108.9%;
 }
 
 .link {
