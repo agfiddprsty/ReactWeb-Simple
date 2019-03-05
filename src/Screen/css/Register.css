@@ -34,7 +34,7 @@
   
 .registr {
   background-color: #FFF;
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden;
 }
 
@@ -172,7 +172,7 @@
 
 @media only screen and (max-width: 1920px) {
   .registr {
-    padding: 115px 0 0 150px;
+    padding: 50px 0 0 150px;
   }
   
   .welcome {
@@ -220,7 +220,7 @@
   
   .registr {
     background-color: #FFF;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden;
   }
   
@@ -274,7 +274,7 @@
       background: transparent;
       color: #fff;
       margin-bottom: 0;
-      left: 10px;
+      left: -5px;
       font-size: 14px;
       font-weight: 400;
     }
@@ -385,7 +385,7 @@
   
   .registr {
     background-color: #FFF;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden;
   }
   
