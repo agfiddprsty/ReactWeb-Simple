@@ -597,6 +597,11 @@ font-weight: 500;
   background: #ff003a;
 }
 
+.plus {
+  color: #FFF;
+  font-size: 14px;
+}
+
 .schol{
   margin-left: 40px;
 }

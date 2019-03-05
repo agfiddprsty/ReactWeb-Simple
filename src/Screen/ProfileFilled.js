@@ -920,8 +920,8 @@ class ProfileFilled extends Component {
                                                     style={{color:'black', fontWeight:'601', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.75000000em', display:'block', textAlign:'left'}}
                                                     >Skills
                                                     </p>
-                                                    <button type="button" class="btn ml-auto" data-toggle="collapse" data-target="#tambahskills" 
-                                                    style={{backgroundColor:'lightgrey', color:'#000', marginRight:'20px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif'}}
+                                                    <button type="button" class="btn btndngr btn btn-outline ml-auto" data-toggle="collapse" data-target="#tambahskills" 
+                                                    style={{marginRight:'20px', borderRadius:'0', fontFamily:'helvetica, Arial, sans serif', border:'2px solid #ff003a', outlineColor:'#ff003a'}}
                                                     >Add Skill</button>
                                                 </div>
                                                 <div>
@@ -938,20 +938,25 @@ class ProfileFilled extends Component {
                                                                 <br/>
                                                             <div className="text-left" style={{marginTop: '-20px'}}>
                                                                 <span className="btn btn-md design" style={{
-                                                                    borderRadius: '70px', fontSize:'18px', fontWeight: '950', margin: '0 5px 0 0', color: '#FFF',
-                                                                    fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>Design</span>
+                                                                    borderRadius: '70px', fontSize:'16px', fontWeight: '950', margin: '0 5px 0 0', color: '#FFF',
+                                                                    fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>
+                                                                    <i class="fas fa-plus" style={{fontSize:'14px'}}> </i> Design</span>
                                                                 <span className="btn btn-md design" style={
-                                                                    {borderRadius: '80px', fontSize:'18px', fontWeight: '950', margin: '0 5px 0 5px', color: '#FFF', 
-                                                                    fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>Front End</span>
+                                                                    {borderRadius: '80px', fontSize:'16px', fontWeight: '950', margin: '0 5px 0 5px', color: '#FFF', 
+                                                                    fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>
+                                                                    <i class="fas fa-plus" style={{fontSize:'14px'}}> </i> Front End</span>
                                                                 <span className="btn btn-md design" style={{
-                                                                    borderRadius: '90px', fontSize:'18px', fontWeight: '950', margin: '0 5px 0 5px', color: '#FFF', 
-                                                                    fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>Back End</span>
+                                                                    borderRadius: '90px', fontSize:'16px', fontWeight: '950', margin: '0 5px 0 5px', color: '#FFF', 
+                                                                    fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>
+                                                                    <i class="fas fa-plus" style={{fontSize:'14px'}}> </i>  Back End</span>
                                                                 <span className="btn btn-md design" style={{
-                                                                    borderRadius: '50px', fontSize:'18px', fontWeight: '950', margin: '0 0 0 5px', color: '#FFF',
-                                                                    fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>Web Dev</span>
+                                                                    borderRadius: '50px', fontSize:'16px', fontWeight: '950', margin: '0 0 0 5px', color: '#FFF',
+                                                                    fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>
+                                                                    <i class="fas fa-plus" style={{fontSize:'14px'}}> </i> Web Dev</span>
                                                                 <span className="btn btn-md design" style={{
-                                                                    borderRadius: '50px', fontSize:'18px', fontWeight: '950', margin: '0 5px 0 10px', color: '#FFF',
-                                                                    fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>Mobile Dev</span>
+                                                                    borderRadius: '50px', fontSize:'16px', fontWeight: '950', margin: '0 5px 0 10px', color: '#FFF',
+                                                                    fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>
+                                                                    <i class="fas fa-plus" style={{fontSize:'14px'}}> </i> Mobile Dev</span>
                                                             </div>
                                                             <br/>
                                                             <div class="d-flex justify-content-end" style={{paddingTop:'-25px', marginRight:'-40px'}}>  
