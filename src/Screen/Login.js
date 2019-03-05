@@ -90,7 +90,6 @@ class Login extends Component {
                     <a href="/"><i class="fa fa-chevron-left arrowleft"></i>     
                         <p class="underarrow">Kembali ke Beranda</p>
                     </a>         
-
                         <span className="col-lg-6 col-md-6 col-sm-6 col-xs-6 mx-auto">
                             <img class="illus" alt='' src={daftarsekarang}/>
                         </span>
