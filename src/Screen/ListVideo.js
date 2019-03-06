@@ -80,7 +80,9 @@ return (
             <div class="row" style={{height:"1px",width:"3440px"}}>
             <div style={{backgroundcolor:"#b2b2b2",height:"442px",width:"1470px"}} class="col-sm-4"><div className="bg-overlay">
             <img src={lock} style={{height:"130px",marginLeft:"508px",marginTop:"155px",zIndex:"1",position:"absolute"}}></img>
-            <label className="label-locked" style={{fontWeight:"500",fontSize:"23.5px",fontFamily:"Nunito",marginLeft:"287px",marginTop:"315px",color:"red",zIndex:"1",position:"absolute"}}> Konten Terkunci, selesaikan semua kuis di minggu 1</label>
+            <label className="label-locked" style={{fontWeight:"500",fontSize:"23.5px",fontFamily:"Nunito",marginLeft:"287px",marginTop:"315px",color:"red",zIndex:"1",position:"absolute"}}> 
+                Konten Terkunci, selesaikan semua kuis di minggu 1
+            </label>
             </div></div>
             </div>
             <div class="row text-center text-lg-left">
