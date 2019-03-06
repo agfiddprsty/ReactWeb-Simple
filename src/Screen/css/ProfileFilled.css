@@ -386,7 +386,7 @@ fromtoright {
   border-bottom: 2px solid lightgrey;
   padding-bottom: 5px;
   font-size: 18px;
-  margin-top: 15px;
+  margin-top:50px;
 }
 
 .dftrskla{
@@ -470,8 +470,9 @@ font-weight: 500;
 }
 
 .divadskl{
-  margin: 0 -80px 0 40px;
+  margin: 0 -80px 0 0;
   border: 1px solid red;
+  width: 108.9%;
 }
 
 .link {
@@ -594,6 +595,11 @@ font-weight: 500;
   font-weight: 600;
   color: #FFF;
   background: #ff003a;
+}
+
+.plus {
+  color: #FFF;
+  font-size: 14px;
 }
 
 .schol{
