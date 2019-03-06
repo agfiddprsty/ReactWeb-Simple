@@ -19,10 +19,10 @@ import ListSilabus from './Screen/ListSilabus';
 import ProfileRaport from './Screen/ProfileRaport';
 import Login from './Screen/Login';
 import Register from './Screen/Register';
-import DashboardUnpaid from './Screen/DashboardUnpaid';
+import Agreement from './Screen/Agreement';
 import ProfileFill from './Screen/ProfileFill';
 import ProfileFilled from './Screen/ProfileFilled';
-import Silabusnew from './Screen/Silabusnew';
+import Syllabus from './Screen/Syllabus';
 import Payment from './Screen/Payment';
 import Video from './Screen/VideoPlayer';
 import ListVideo from './Screen/ListVideo'
@@ -43,9 +43,9 @@ ReactDOM.render(
             <Route path="/profileraport" component={ProfileRaport}/>
             <Route path="/login" component={Login}/>
             <Route path="/register" component={Register}/>
-            <Route path="/agreement" component={DashboardUnpaid}/>
+            <Route path="/agreement" component={Agreement}/>
             <Route path="/profilefill" component={ProfileFill}/>
-            <Route path="/syllabus" component={Silabusnew}/>
+            <Route path="/syllabus" component={Syllabus}/>
             <Route path="/payment" component={Payment}/>
             <Route path="/videoplayer" component={Video}/>
             <Route path="/listvideo" component={ListVideo}/>

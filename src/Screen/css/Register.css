@@ -100,6 +100,7 @@
   top: -12px;
   left: 0;
   color: #999;
+  margin-left: 0px;
   font-size: 14px;
   font-weight: 400;
 }
@@ -126,6 +127,7 @@
   top: -12px;
   left: 0;
   color: #999;
+  margin-left: 0px;
   font-size: 14px;
   font-weight: 400;
 }
@@ -172,7 +174,7 @@
 
 @media only screen and (max-width: 1920px) {
   .registr {
-    padding: 50px 0 0 150px;
+    padding: 0 0 0 50px;
   }
   
   .welcome {
@@ -182,7 +184,7 @@
     font-size: 2.65000000em;
     display: block;
     text-align: left;
-    margin-left: -50px;
+    margin-left: -58px;
   }
 
   .arrowleft {
@@ -210,7 +212,7 @@
     font-weight: 400;
     font-size: 1.750000000em;
     display: block;
-    margin: 0 0 20px -50px;
+    margin: 0 0 20px -58px;
   }
   
   .illus {
@@ -220,12 +222,12 @@
   
   .registr {
     background-color: #FFF;
-    /* height: 100vh; */
+    height: 100vh;
     overflow: hidden;
   }
   
   .logo {
-    margin: 0 0 15px -60px;
+    margin: 0 0 15px -55px;
     width: 17%;
   }
   
@@ -254,6 +256,7 @@
       border: none;
       border-bottom: 1px solid lightgrey;
       padding: 10px 0;
+      margin-left: -10px;
       margin-bottom: 30px;
       font-size: 14px;
       font-weight: 400;
@@ -274,6 +277,7 @@
       background: transparent;
       color: #fff;
       margin-bottom: 0;
+      margin-left: -10px;
       left: -5px;
       font-size: 14px;
       font-weight: 400;
@@ -292,6 +296,7 @@
       color: #999;
       transition: .5s;
       pointer-events: none;
+      margin-left: 15px;
       font-size: 14px;
       font-weight: 400;
     }
@@ -318,6 +323,7 @@
       top: -12px;
       left: 0;
       color: #999;
+      margin-left: 15px;
       font-size: 14px;
       font-weight: 400;
   }
@@ -453,11 +459,11 @@
     top: -12px;
     left: 0;
     color: #999;
-    transition: .5s;
-    pointer-events: none;
-    font-size: 16px;
+    margin-left: 0px;
+    font-size: 14px;
+    font-weight: 400;
   }
-
+  
   /* text input */
   .textinput {
     font-family:'Nunito';
@@ -472,7 +478,7 @@
     font-size: 14px;
     font-weight: 400;
   }
-
+  
   /* text label */
   .textlabelreg {
     font-family:'Nunito';
@@ -480,8 +486,9 @@
     top: -12px;
     left: 0;
     color: #999;
-    font-size: 16px;
-    font-weight: 500;
+    margin-left: 0px;
+    font-size: 14px;
+    font-weight: 400;
   }
 
   .btndaftar {

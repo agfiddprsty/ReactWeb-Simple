@@ -31,7 +31,6 @@ import bagidata from './img/bagidata.png';
 import telecreative from './img/telecreative.png';
 import truemoney from './img/true-money.png';
 import HomeVideo from './HomeVideo';
-import Slider from './slider';
 
 class Home extends Component {
   render() {

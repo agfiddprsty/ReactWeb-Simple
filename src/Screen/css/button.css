@@ -1,12 +1,12 @@
 .btndngr {
-    color: red!important;
+    color: #ff003a!important;
     background-color: #fff!important;
-    outline-color: red!important;
+    outline-color: #ff003a!important;
   }
   
   .btndngr:hover{
     outline-color: #fff!important;
-    background-color: red!important;
+    background-color: #ff003a!important;
     color: #fff!important;
   }
 
@@ -15,14 +15,14 @@
 }
 
 .btncel {
-    color: red;
+    color: #ff003a;
 }
 
 .btncel:hover {
-    color: red;
+    color: #ff003a;
 }
 
 .btnfin{
-    background-color: red;
+    background-color: #ff003a;
     color: #fff!important;
 }
