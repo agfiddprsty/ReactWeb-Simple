@@ -816,18 +816,19 @@
   }
 
 .h2week1{
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-weight: bold;
   padding-top: 90px;
 }
 
 .span-title-video{
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 15px;
   font-weight: bold;
+  color: #000;
 }
 .span-time{
-font-family: Nunito;
+font-family: 'Nunito';
 }
   .h2week2{
     font-weight: bold;
