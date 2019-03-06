@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Header from './HeaderPage'
-import './css/DashboardUnpaid.css';
+import './css/Agreement.css';
 
-class DashboardUnpaid extends Component {
+class Agreement extends Component {
     render() {
       return (
         <div className="hir">
@@ -32,4 +32,4 @@ class DashboardUnpaid extends Component {
       );
     }
   }
-  export default DashboardUnpaid;
+  export default Agreement;

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Header from './HeaderPage'
-import './css/Silabusnew.css';
+import './css/Syllabus.css';
 
-class Silabusnew extends Component {
+class Syllabus extends Component {
     constructor(props){
         super(props)
         this.kirimhandle = this.kirimhandle.bind(this);
@@ -247,4 +247,4 @@ class Silabusnew extends Component {
         );
     }
   }
-  export default Silabusnew;
+  export default Syllabus;
