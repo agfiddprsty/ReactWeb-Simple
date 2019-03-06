@@ -55,7 +55,7 @@ class Home extends Component {
                                             <span className="text-center duajt">2.000.000</span>
                                             <span className="limaratus">500.000</span>
                                         </div>
-                                        <p className="text-center berakhir">Penawaran Akan Berakhir Dalam:</p>
+                                        <p className="text-center berakhir">Penawaran berakhir dalam:</p>
                                         <div className="timer" >
                                             <Timer date={`${year}-03-15T00:00:00`} />
                                         </div>
@@ -92,7 +92,7 @@ class Home extends Component {
                                                     </div>
                                                     <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mrgnrght">
                                                         <section class="kotakanan text-left">
-                                                            <h5 className="title-cara">Daftar dan Lengkapi Profile</h5>
+                                                            <h5 className="title-cara">Daftar dan Lengkapi Profil</h5>
                                                             <span className="crtacc">
                                                                 Buat akun dan lengkapi data diri serta lakukan pembayaran untuk dana awal
                                                             </span>
@@ -109,7 +109,7 @@ class Home extends Component {
                                                     </div>
                                                     <div class="sqregstp col-lg-6 col-md-12 col-sm-12 col-xs-12 mx-auto">
                                                         <section class="kotakanan bootcamp-step-list">
-                                                            <h5 className="title-cara">Daftar dan Lengkapi Profile</h5>
+                                                            <h5 className="title-cara">Daftar dan Lengkapi Profil</h5>
                                                             <span className="crtacc">
                                                                 buat akun dan lengkapi data diri serta lakukan pembayaran untuk dana awal
                                                             </span>
@@ -160,9 +160,9 @@ class Home extends Component {
                                                     </div>
                                                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mx-auto">
                                                         <section class="kotakanan bootcamp-step-list">
-                                                            <h5 className="title-cara">Kerjakan Quiz Mingguan</h5>
+                                                            <h5 className="title-cara">Kerjakan Kuis Mingguan</h5>
                                                             <span className="crtacc">
-                                                                Kerjakan Mini Quiz, Weekly Quiz dan Quiz Final untuk mengasah skillmu!
+                                                                Kerjakan Mini Kuis, Weekly Kuis, dan Kuis Final untuk mengasah skill-mu
                                                             </span>
                                                             <div class="d-flex justify-content-end zerone"><p className="numberstep">03</p></div>
                                                         </section>
@@ -177,9 +177,9 @@ class Home extends Component {
                                                     </div>
                                                     <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mrgnrght">
                                                         <section class="kotakanan text-left">
-                                                            <h5 className="title-cara">Kerjakan Quiz Mingguan</h5>
+                                                            <h5 className="title-cara">Kerjakan Kuis Mingguan</h5>
                                                             <span className="crtacc">
-                                                                Kerjakan Mini Quiz, Weekly Quiz dan Quiz Final untuk mengasah skillmu!
+                                                                Kerjakan Mini Kuis, Weekly Kuis dan Kuis Final untuk mengasah skill-mu
                                                             </span>
                                                             <div class="d-flex justify-content-end zerone"><p className="numberstep">03</p></div>
                                                         </section>
@@ -197,7 +197,7 @@ class Home extends Component {
                                                             <div class="d-flex justify-content-end zerotwo"><p className="numberstep">04</p></div>
                                                             <h5 className="title-cara">Penyaluran Kerja</h5>
                                                             <span className="crtacc">
-                                                            Kami akan menyalurkan Anda ke perusahaan rekanan kami, Berdasarkan hasil Quiz yang anda kerjakan
+                                                            Kami akan menyalurkan anda ke perusahaan rekanan kami, berdasarkan hasil kuis yang anda kerjakan
                                                             </span>
                                                         </section>
                                                         <section className="kotakananduo"></section>
@@ -209,7 +209,7 @@ class Home extends Component {
                                                             <div class="d-flex justify-content-end zerotwo"><p className="numberstep">04</p></div>
                                                             <h5 className="title-cara">Penyaluran Kerja</h5>
                                                             <span className="crtacc">
-                                                                Kami akan menyalurkan Anda ke perusahaan rekanan kami, Berdasarkan hasil Quiz yang anda kerjakan
+                                                                Kami akan menyalurkan anda ke perusahaan rekanan kami, berdasarkan hasil kuis yang anda kerjakan
                                                             </span>
                                                         </section>
                                                         <section className="kotakananduo"></section>

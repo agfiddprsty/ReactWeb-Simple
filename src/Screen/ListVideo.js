@@ -29,7 +29,7 @@ return (
         <div class="container">
             <div>
                 <br/>
-                <h2 className="h2week1" style={{fontFamily:"Montserrat",fontWeight:"700",paddingTop:"90px"}}>Minggu 1</h2>
+                <h2 className="h2week1" style={{fontFamily:"Nunito",fontWeight:"625",paddingTop:"75px"}}>Minggu 1</h2>
                 <br/>
             </div>
             <div class="row text-center text-lg-left">
@@ -74,13 +74,13 @@ return (
             <div>
                 <br/>
             <hr class="mt-2 mb-5"></hr>
-                <h2 className="h2week2" style={{fontFamily:"Montserrat",fontWeight:"700"}}>Minggu 2</h2>
+                <h2 className="h2week2" style={{fontFamily:"Nunito",fontWeight:"625",marginTop:"-5px"}}>Minggu 2</h2>
                 <br/>
             </div> 
             <div class="row" style={{height:"1px",width:"3440px"}}>
-            <div style={{backgroundcolor:"black",height:"442px",width:"1470px"}} class="col-sm-4"><div className="bg-overlay">
-            <img src={lock} style={{height:"130px",marginLeft:"515px",marginTop:"130px",zIndex:"1",position:"absolute"}}></img>
-            <label className="label-locked" style={{fontWeight:"bold",fontSize:"17px",fontFamily:"Montserrat",marginLeft:"290px",marginTop:"300px",color:"red",zIndex:"1",position:"absolute"}}> Konten Terkunci,silakan selesaikan semua kuis di minggu 1</label>
+            <div style={{backgroundcolor:"#b2b2b2",height:"442px",width:"1470px"}} class="col-sm-4"><div className="bg-overlay">
+            <img src={lock} style={{height:"130px",marginLeft:"508px",marginTop:"155px",zIndex:"1",position:"absolute"}}></img>
+            <label className="label-locked" style={{fontWeight:"500",fontSize:"23.5px",fontFamily:"Nunito",marginLeft:"287px",marginTop:"315px",color:"red",zIndex:"1",position:"absolute"}}> Konten Terkunci, selesaikan semua kuis di minggu 1</label>
             </div></div>
             </div>
             <div class="row text-center text-lg-left">
