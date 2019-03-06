@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import daftarsekarang from './img/daftarsekarang.png';
 import logo from './img/logo.png';
+import Axios from 'axios';
+import {Redirect} from 'react-router';
 import './css/Login.css';
 
 class Login extends Component {
@@ -18,6 +20,7 @@ class Login extends Component {
             type: 'input',
             hidden: true,
             background:"",
+            toSyllabus: false
         }
     }
     handleChange(event) {
@@ -53,10 +56,12 @@ class Login extends Component {
                 email,
                 password
             }
-            // Axios.post('url',body).then(ress=>{
-            //     this.setState({ressjson:ress})
-            // })
-            this.props.history.push("/syllabus");
+            Axios.post('http://localhost:3333/login',body).then(ress=>{
+                this.setState({ressjson:ress});
+                this.setState({ toSyllabus: true});
+            })
+            .catch(err => alert('Username or password wrong!'));
+            // this.props.history.push("/syllabus");
             console.log(this.state.selectedValue);
         }        
     }
@@ -82,6 +87,9 @@ class Login extends Component {
       }  
       
     render() {
+        if (this.state.toSyllabus === true) {
+            return <Redirect to="/syllabus" />
+          }
       return (
             <div className="registe">
                     
