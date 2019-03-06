@@ -19,8 +19,22 @@
   }
 
   .padten {
+    font-family: 'Nunito';
     margin: 0;
     padding: 10px;
+    border-radius:4px;
+  }
+
+  .hjmd {
+    font-family: 'Nunito';
+    font-size: 18px;
+  }
+
+  .td {
+    font-family: 'Nunito';
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: -5px; 
   }
 
 
