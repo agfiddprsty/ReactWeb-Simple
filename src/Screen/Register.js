@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import daftarsekarang from './img/daftarsekarang.png';
 import logo from './img/logo.png';
 import './css/Registerpage.css';
+import Axios from 'axios';
 class Register extends Component {
     constructor(props){
         super(props)
@@ -69,21 +70,18 @@ class Register extends Component {
         }
         else{
             //init POST AXIOS
-            const fullname = this.state.fullname;
+            const username = this.state.fullname;
             const email = this.state.email;
-            const pass = this.state.pass;
-            const confirmpass = this.state.confirmpass;
+            const password = this.state.pass;
             const body={
-                fullname,
-                email,
-                pass,
-                confirmpass
+               email,username,password
             }
-            // Axios.post('url',body).then(ress=>{
-            //     this.setState({ressjson:ress})
-            // })
+            Axios.post('http://localhost:3333/register',body).then(ress=>{
+                this.setState({ressjson:ress})
+            })
             this.props.history.push("/login");
             console.log(this.state.selectedValue);
+            
         }        
     }
     handlePasswordChange(pc) {
