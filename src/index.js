@@ -25,7 +25,6 @@ import ProfileFilled from './Screen/ProfileFilled';
 import Syllabus from './Screen/Syllabus';
 import Payment from './Screen/Payment';
 import Video from './Screen/VideoPlayer';
-import ListVideo from './Screen/ListVideo'
 import Dashboard from './Screen/Dashboard'
 import DetailVIdeo from './Screen/DetailVideo'
 import DetailQuiz from './Screen/DetailQuiz';
@@ -48,7 +47,6 @@ ReactDOM.render(
             <Route path="/syllabus" component={Syllabus}/>
             <Route path="/payment" component={Payment}/>
             <Route path="/videoplayer" component={Video}/>
-            <Route path="/listvideo" component={ListVideo}/>
             <Route path="/video/:uid" component={DetailVIdeo}/>
             <Route path="/videos" component={Dashboard}/>
             <Route path="/quiz/:uid" component={DetailQuiz}/>
