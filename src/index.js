@@ -29,31 +29,34 @@ import Dashboard from './Screen/Dashboard'
 import DetailVIdeo from './Screen/DetailVideo'
 import DetailQuiz from './Screen/DetailQuiz';
 //import store 
-import store from './store'
+import { store, persistor } from './store';
+import { PersistGate } from 'redux-persist/integration/react';
+
 ReactDOM.render(
     
-	<Router>
-        <Provider store={store}>
-        <div>
-            <Route exact path="/" component={Home} />
-            <Route path="/admin" component={Menu} />
-            <Route path='/profile' component={ProfileFilled} />
-            <Route path="/silabus/list" component={ListSilabus}/>
-            <Route path="/profileraport" component={ProfileRaport}/>
-            <Route path="/login" component={Login}/>
-            <Route path="/register" component={Register}/>
-            <Route path="/agreement" component={Agreement}/>
-            <Route path="/profilefill" component={ProfileFill}/>
-            <Route path="/syllabus" component={Syllabus}/>
-            <Route path="/payment" component={Payment}/>
-            <Route path="/videoplayer" component={Video}/>
-            <Route path="/video/:uid" component={DetailVIdeo}/>
-            <Route path="/videos" component={Dashboard}/>
-            <Route path="/quiz/:uid" component={DetailQuiz}/>
-
-        </div>
-        </Provider>
-    </Router>
+    <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+            <Router>
+                <div>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/admin" component={Menu} />
+                    <Route path='/profile' component={ProfileFilled} />
+                    <Route path="/silabus/list" component={ListSilabus}/>
+                    <Route path="/profileraport" component={ProfileRaport}/>
+                    <Route path="/login" component={Login}/>
+                    <Route path="/register" component={Register}/>
+                    <Route path="/agreement" component={Agreement}/>
+                    <Route path="/profilefill" component={ProfileFill}/>
+                    <Route path="/syllabus" component={Syllabus}/>
+                    <Route path="/payment" component={Payment}/>
+                    <Route path="/videoplayer" component={Video}/>
+                    <Route path="/video/:uid" component={DetailVIdeo}/>
+                    <Route path="/videos" component={Dashboard}/>
+                    <Route path="/quiz/:uid" component={DetailQuiz}/>
+                </div>
+            </Router>
+        </PersistGate>
+    </Provider>
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
