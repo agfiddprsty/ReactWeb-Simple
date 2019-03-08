@@ -7,6 +7,7 @@ import './css/VideoPlayer.css'
 import lvl from './img/Level.png'
 import lock from './img/LockWhite.png'
 import ply from './img/ply.png'
+import Axios from 'axios';
 class ListVideoDown extends Component{
     constructor(){
         super()
@@ -27,6 +28,11 @@ class ListVideoDown extends Component{
     }
     componentDidMount(){
         console.log(this.state.listvideo);
+        Axios.get("http://localhost:3333/lectures").then(ress=>{
+            
+        }).catch(err=>{
+            console.log(err)
+        })
     }
     render(){
         return(
@@ -40,7 +46,7 @@ class ListVideoDown extends Component{
                                     return(
                                         <div>
                                             <CardDeck>
-                                                <Card className="border-0"><a href="/video/example" className="modul">
+                                                <Card className="border-0"><a href={"/video/"+item.id} className="modul">
                                                         <div className="row dv-row-gd">
                                                             <div className="col-md-auto">
                                                                 <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${item.image})`}}>

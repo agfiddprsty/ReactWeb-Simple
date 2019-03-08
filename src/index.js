@@ -49,9 +49,9 @@ ReactDOM.render(
             <Route path="/payment" component={Payment}/>
             <Route path="/videoplayer" component={Video}/>
             <Route path="/listvideo" component={ListVideo}/>
-            <Route path="/video/example" component={DetailVIdeo}/>
+            <Route path="/video/:uid" component={DetailVIdeo}/>
             <Route path="/videos" component={Dashboard}/>
-            <Route path="/quiz/example" component={DetailQuiz}/>
+            <Route path="/quiz/:uid" component={DetailQuiz}/>
 
         </div>
         </Provider>

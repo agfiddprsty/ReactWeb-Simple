@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import daftarsekarang from './img/daftarsekarang.png';
 import logo from './img/logo.png';
 import './css/Registerpage.css';
+import { Redirect } from 'react-router';
 import Axios from 'axios';
+import { connect } from 'react-redux';
+import { register } from '../Actions/auth';
+
 class Register extends Component {
     constructor(props){
         super(props)
@@ -22,7 +26,8 @@ class Register extends Component {
             ressjson:'',
             type: 'password',
             backgroundf:"",
-            backgrounde:""
+            backgrounde:"",
+            toLogin: false
         }
     }
     handleChange(event) {
@@ -76,11 +81,16 @@ class Register extends Component {
             const body={
                email,username,password
             }
-            Axios.post('http://localhost:3333/register',body).then(ress=>{
-                this.setState({ressjson:ress})
+            this.props.dispatch(register(body))
+            .then(() => {
+              this.setState({ toLogin: true });
             })
-            this.props.history.push("/login");
+            .catch(err => {
+              alert(err.response.data.messages);
+              // console.log(err.response);
+            // this.props.history.push("/login");
             console.log(this.state.selectedValue);
+        });
             
         }        
     }
@@ -100,10 +110,13 @@ class Register extends Component {
         }
       }  
     moveLogin(){
-        this.props.history.push("/");
+        this.props.history.push("/login");
     }
     
     render() {
+        if (this.state.toLogin === true) {
+            return <Redirect to="/login" />
+          }
       return (
         <div className="registr">
             <div class="row mb-5 d-none d-lg-flex d-xl-flex">
@@ -384,4 +397,5 @@ class Register extends Component {
       );
     }
   }
-  export default Register;
+
+export default connect()(Register);
