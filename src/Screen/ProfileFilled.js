@@ -393,20 +393,23 @@ class ProfileFilled extends Component {
                                                             <p class="datebirth" style={{marginLeft:'-20px'}}>
                                                                 Date
                                                             </p>
+                                                            <br/>
                                                         </div>
                                                         <div class="col-sm-3 col-md-2">
-                                                            <p class="datebirth" style={{marginLeft:'-30px'}}>
+                                                            <p class="datebirth" style={{marginLeft:'52px'}}>
                                                                 Month
                                                             </p>
+                                                            <br/>
                                                         </div>
                                                         <div class="col-sm-3 col-md-2">
-                                                            <p class="datebirth" style={{marginLeft:'-36px'}}>
+                                                            <p class="datebirth" style={{marginLeft:'130px'}}>
                                                                 Years
                                                             </p>
+                                                            <br/>
                                                         </div>
                                                     </div>
                                                         <div class="row">
-                                                            <select name="date" class="col-1 custom-select col-sm-1 optdate"
+                                                            <select name="date" class="col-1 select col-sm-2 optdate"
                                                             style={{textAlign:'left'}}>
                                                                 <option selected>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
                                                                 <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
@@ -416,23 +419,28 @@ class ProfileFilled extends Component {
                                                                 <option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
                                                                 <option>31</option>
                                                             </select>
+                                                            <span class="fa fa-sort-desc"
+                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'142px', fontSize:'24px'}}></span>
                                                             
-                                                            <select name="month" class="col-1 custom-select col-sm-1 optdate"
+                                                            <select name="month" class="col-1 select col-sm-2 optdate"
                                                             style={{textAlign:'left'}}>
                                                                 <option selected>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
                                                                 <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
                                                                 <option>11</option><option>12</option>
                                                             </select>
+                                                            <span class="fa fa-sort-desc"
+                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'380px', fontSize:'24px'}}></span>
 
-                                                            <select name="year" class="col-1 custom-select col-sm-1 optdate"
+                                                            <select name="year" class="col-1 select col-sm-2 optdate"
                                                             style={{textAlign:'left'}}>
                                                                 <option selected>2005</option><option>2004</option><option>2003</option><option>2002</option><option>2001</option>
                                                                 <option>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option>
                                                                 <option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option>
                                                                 <option>1989</option><option>1987</option><option>1986</option><option>1985</option><option>1984</option><option>1985</option>
                                                                 <option>1984</option><option>1983</option><option>1982</option><option>1981</option><option>1980</option>
-
                                                             </select>
+                                                            <span class="fa fa-sort-desc"
+                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'618px', fontSize:'24px'}}></span>
                                                         </div>
                                                     </div>
                                                 <br/>
