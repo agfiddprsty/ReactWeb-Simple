@@ -13,7 +13,7 @@ class QuizPlayer extends Component{
                             <h5 className="h5-desk-gd">Deskripsi: </h5>
                         </div>
                         <div className="col-md-auto lvl-qz-ds-gd lvl-qz-ds-cl">
-                            <a style={{color:"#22E2ED",fontWeight:"600"}}>Level <img alt="Level Image" style={{marginLeft:"5px"}} src={lvl}></img></a>
+                            <a style={{color:"#22E2ED",fontWeight:"600", marginLeft:"10px"}}>Level <img alt="Level Image" style={{marginLeft:"5px"}} src={lvl}></img></a>
                         </div>
                     </div>
                     <h6 className="col-12 col-s-9 h6-detail-gd">Lorem Ipsum is simply dummy text of the printing and typesetting<br/> industry. Lorem Ipsum has been the <br/> industry's standard dummy text ever since the 1500s,</h6>

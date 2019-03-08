@@ -12,7 +12,7 @@ class ListVideo extends Component {
                 {id:"2",image:"https://source.unsplash.com/F2WX4BTIkpQ/650x240",tittle:"2. Komponen",type:"video"},
                 {id:"3",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"3. Instalation",type:"video"},
                 {id:"4",image:"https://source.unsplash.com/F2WX4BTIkpQ/650x240",tittle:"4. Character",type:"video"},
-                {id:"5",image:"https://source.unsplash.com/ZSPBhokqDMc/550x240",tittle:"Quiz Minggu 1",type:"quiz"},
+                {id:"5",image:"https://source.unsplash.com/ZSPBhokqDMc/550x240",tittle:"Kuis Mingguan #1",type:"quiz"},
                 {id:"6",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"1. Perkenalan",type:"video"},
                 {id:"7",image:"https://source.unsplash.com/F2WX4BTIkpQ/650x240",tittle:"2. Komponen",type:"video"},
                 {id:"8",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"3. Instalation",type:"video"},
@@ -45,7 +45,7 @@ return (
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} href="/video/example" class="d-block mb-4 h-100">
-                        <span className="span-title-video" style={{fontFamily:"Montserrat",fontWeight:"500"}}>{item.tittle}</span>
+                        <span className="span-title-video" style={{fontFamily:"Nunito",fontWeight:"500"}}>{item.tittle}</span>
                         <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"96px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -61,8 +61,8 @@ return (
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} href="/quiz/example" class="d-block mb-4 h-100">
-                    <span className="span-title-video"style={{fontFamily:"Montserrat",fontWeight:"500"}}>{item.tittle}</span>
-                    <span className="span-time" style={{fontSize:"13px",marginLeft:"85px",paddingBottom:"1px",color:"#00DFEB"}}>Level <img src={lvl} style={{width:"13px"}}></img>  </span>
+                    <span className="span-title-video"style={{fontFamily:"Nunito",fontWeight:"500"}}>{item.tittle}</span>
+                    <span className="span-time" style={{fontSize:"13px",marginLeft:"65px",paddingBottom:"1px",color:"#00DFEB"}}>Level <img src={lvl} style={{width:"13px"}}></img>  </span>
                     </a>
                 </div>
                     )
@@ -95,7 +95,8 @@ return (
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
-                    <span className="span-title-video">1. Perkenalan</span>
+                    <span className="span-title-video"
+                    style={{fontFamily:"Nunito"}}>1. Perkenalan</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"96px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -107,7 +108,8 @@ return (
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
-                    <span className="span-title-video">2. Components</span>
+                    <span className="span-title-video"
+                    style={{fontFamily:"Nunito"}}>2. Components</span>
                     <span className="span-time" style={{fontSize:"13px"}} ><span className="far fa-clock" style={{opacity:0.4,marginLeft:"75px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -119,7 +121,8 @@ return (
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
-                    <span className="span-title-video">3. Instalasi</span>
+                    <span className="span-title-video"
+                    style={{fontFamily:"Nunito"}}>3. Instalasi</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"115px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -130,7 +133,8 @@ return (
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
-                    <span className="span-title-video">4. Character</span>
+                    <span className="span-title-video"
+                    style={{fontFamily:"Nunito"}}>4. Character</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>  
@@ -141,7 +145,8 @@ return (
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
-                    <span className="span-title-video">1. Perkenalan</span>
+                    <span className="span-title-video"
+                    style={{fontFamily:"Nunito"}}>1. Perkenalan</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"96px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -152,7 +157,8 @@ return (
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
-                    <span className="span-title-video">2. Components</span>
+                    <span className="span-title-video"
+                    style={{fontFamily:"Nunito"}}>2. Components</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"75px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -163,7 +169,8 @@ return (
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
-                    <span className="span-title-video">3. Instalasi</span>
+                    <span className="span-title-video"
+                    style={{fontFamily:"Nunito"}}>3. Instalasi</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"115px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -174,7 +181,8 @@ return (
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
-                    <span className="span-title-video">4. Character</span>   
+                    <span className="span-title-video"
+                    style={{fontFamily:"Nunito"}}>4. Character</span>   
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
             </div>     
