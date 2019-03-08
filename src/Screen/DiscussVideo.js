@@ -9,7 +9,8 @@ class DiscussVideo extends Component{
         this.state={
             showreply:false,
             jumlahlike:"1.8rb",
-            showbtn:false, comment:[
+            showbtn:false, 
+            comment:[
                 {id:"1",photo:"https://ssl.gstatic.com/accounts/ui/avatar_2x.png",commented:"commented 5 days ago",username:"myusername",comment:"How To Fast Learning ?",reply:""},
                 {id:"1",photo:"https://ssl.gstatic.com/accounts/ui/avatar_2x.png",commented:"commented 5 days ago",username:"yourusername",comment:"Just Try Anytime",reply:"myusername"}
             ]

@@ -84,7 +84,7 @@ class Syllabus extends Component {
         else{
             //init POST AXIOS
             const email = this.state.email;
-            const password = this.state.fullname;
+            const fullname = this.state.fullname;
             const body={
                 email:'',
                 fullname:''
@@ -147,8 +147,7 @@ class Syllabus extends Component {
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="textinput" type="text" name="email" required=""  placeholder="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
-                                                        onChange={this.handleChange} value={this.state.email}                                                     
+                                                    <input class="textinput" type="text" name="email" required=""  placeholder=""
                                                         onChange={(e)=>this.handleemailChange(e)} value={this.state.email}
                                                         value={this.state.inputemailValue}
                                                         onFocus={this.activateemailField}
