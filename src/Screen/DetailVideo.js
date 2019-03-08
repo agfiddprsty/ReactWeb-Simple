@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import HeaderDashboard from './HeaderPage';
-import ProgressDetail from './ProgressDetail';
 import './css/VideoPlayer.css'
 import './css/DetailVideo.css'
-import './css/VideoPlayer.css'
 import Iframeresponsive from 'react-responsive-embed'
 import Axios from 'axios';
 import { Card, CardImg, CardDeck,
@@ -13,6 +11,8 @@ import './css/VideoPlayer.css'
 import lvl from './img/Level.png'
 import lock from './img/LockWhite.png'
 import ply from './img/ply.png'
+import './css/ProgressDetail.css'
+
 class DetailVideo extends Component {
     constructor(){
         super();
@@ -208,7 +208,13 @@ class DetailVideo extends Component {
                             <div class="col-md-3" >
                                 <div className="dt-dv-pg-gd dt-dv-pg-cl">
                                     
-                                    <ProgressDetail/>
+                                    <div className="dv-pg-gd dv-pg-cl">
+                                        <br/>
+                                        <h2 className="h2-pg-gd h2-pg-cl">Progress</h2>
+                                        <Progress className="pg-pg-gd" value="40" color="warning"></Progress>
+                                        <label className="pg-lb-gd pg-lb-cl">40%</label>
+
+                                    </div>
                                 </div>
                                 <br/>
                                 <div className="dt-gr-gd dt-gr-cl" >
@@ -216,7 +222,6 @@ class DetailVideo extends Component {
                                     <h5 className="h5-tn-gd">Tonton Selanjutnya </h5>
                                 </div>
                                 <div className="ls-dv-mg-gd ls-dv-mg-cl">
-                                    {/* <ListVideo/> */}
                                     <div className="dv-list-out-gd">
                                         <div className="col-md">
                                             <div className="scrollbar scrollbar-primary scrollbar-cl">
@@ -247,14 +252,14 @@ class DetailVideo extends Component {
                                                             return(
                                                                 <CardDeck>
                                                                     <Card className="border-0">
-                                                                        <a href="/quiz/example" className="modul">
+                                                                        <a href={"/quiz/"+item.id} className="modul">
                                                                             <div className="row dv-row-gd">
                                                                                 <div className="col-md-auto">
                                                                                     <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundColor:"#FF5D5D"}}>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div className="col-md-auto dv-tittle-gd">
-                                                                                    <h6 className="tittledown">{item.tittle}</h6>
+                                                                                    <h6 className="tittledown">{item.title}</h6>
                                                                                     <a className="a-clock-gd">Level <img src={lvl} style={{width:"13px"}}></img></a>
                                                                                 </div>
                                                                             </div>
@@ -269,7 +274,7 @@ class DetailVideo extends Component {
                                                                         <a href="#" className="modul">
                                                                             <div className="row dv-row-gd">
                                                                                 <div className="col-md-auto">
-                                                                                    <div className="d-flex justify-content-center dv-bg-gd" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("+item.image+")"}}>
+                                                                                    <div className="d-flex justify-content-center dv-bg-gd" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("+item.thumbnail_url+")"}}>
                                                                                         <img class="img-fluid img-thumbnail play-img-gd" src={lock} alt=""></img>
                                                                                     </div>
                                                                                 </div>
