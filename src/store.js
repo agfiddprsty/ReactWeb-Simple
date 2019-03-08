@@ -1,17 +1,31 @@
-import {createStore, combineReducers,applyMiddleware} from 'redux';
-import logger from 'redux-logger';
+import {createStore,applyMiddleware} from 'redux';
+import {logger} from 'redux-logger';
 import thunk from 'redux-thunk';
-import newsReducer from './Reducers/newsReducer';
 import promise from 'redux-promise-middleware'
-import Axios from 'axios';
+import storage from 'redux-persist/lib/storage';
+import { persistStore, persistReducer } from 'redux-persist';
+import reducers from './Reducers';
 
-const middleware = applyMiddleware(promise(),thunk,logger);
+const persistConfig = {
+    key: 'root',
+    storage,
+}
 
-const store = createStore(
-   newsReducer,
-    // {},
-    middleware
-);
+const persistedReducer = persistReducer(persistConfig, reducers)
+
+const middleware = applyMiddleware(logger, thunk, promise());
+
+export const store = createStore(persistedReducer, middleware);
+
+export const persistor = persistStore(store);
+
+// const middleware = applyMiddleware(promise(),thunk,logger);
+
+// const store = createStore(
+//    newsReducer,
+//     // {},
+//     middleware
+// );
 // store.dispatch((dispatch)=>{
 //     dispatch({type: 'FETCH_NEWS_PENDING'});
 //     Axios.get('http://rest.learncode.academy/api/fiid/pras').then((response)=>{
@@ -20,4 +34,4 @@ const store = createStore(
 //         dispatch({type:'FETCH_NEWS_ERROR'})
 //     })
 // })
-export default store;
+// export default store;
