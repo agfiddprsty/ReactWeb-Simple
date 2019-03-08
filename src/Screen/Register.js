@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import daftarsekarang from './img/daftarsekarang.png';
 import logo from './img/logo.png';
 import './css/Registerpage.css';
+import { Redirect } from 'react-router';
 import Axios from 'axios';
 class Register extends Component {
     constructor(props){
@@ -22,7 +23,8 @@ class Register extends Component {
             ressjson:'',
             type: 'password',
             backgroundf:"",
-            backgrounde:""
+            backgrounde:"",
+            toLogin: false
         }
     }
     handleChange(event) {
@@ -77,10 +79,15 @@ class Register extends Component {
                email,username,password
             }
             Axios.post('http://localhost:3333/register',body).then(ress=>{
-                this.setState({ressjson:ress})
+                this.setState({ressjson:ress});
+                this.setState({ toLogin: true});
             })
-            this.props.history.push("/login");
+            .catch(err => {
+                alert('Email Already Registered');
+            console.log(err.response);
+            // this.props.history.push("/login");
             console.log(this.state.selectedValue);
+        });
             
         }        
     }
@@ -100,10 +107,13 @@ class Register extends Component {
         }
       }  
     moveLogin(){
-        this.props.history.push("/");
+        this.props.history.push("/login");
     }
     
     render() {
+        if (this.state.toLogin === true) {
+            return <Redirect to="/login" />
+          }
       return (
         <div className="registr">
             <div class="row mb-5 d-none d-lg-flex d-xl-flex">
