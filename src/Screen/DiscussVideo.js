@@ -25,7 +25,7 @@ class DiscussVideo extends Component{
         return(
             <div style={{marginTop:"-30px"}} >
                 <h5 className="disscuss-vd-gd">
-                    Diskusi
+                    Diskusi 
                 </h5>
                 <div  >
                     <div class="row" id="post-review-box" >
