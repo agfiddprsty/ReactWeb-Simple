@@ -4,6 +4,9 @@ import logo from './img/logo.png';
 import './css/Registerpage.css';
 import { Redirect } from 'react-router';
 import Axios from 'axios';
+import { connect } from 'react-redux';
+import { register } from '../Actions/auth';
+
 class Register extends Component {
     constructor(props){
         super(props)
@@ -78,13 +81,13 @@ class Register extends Component {
             const body={
                email,username,password
             }
-            Axios.post('http://localhost:3333/register',body).then(ress=>{
-                this.setState({ressjson:ress});
-                this.setState({ toLogin: true});
+            this.props.dispatch(register(body))
+            .then(() => {
+              this.setState({ toLogin: true });
             })
             .catch(err => {
-                alert('Email Already Registered');
-            console.log(err.response);
+              alert(err.response.data.messages);
+              // console.log(err.response);
             // this.props.history.push("/login");
             console.log(this.state.selectedValue);
         });
@@ -394,4 +397,5 @@ class Register extends Component {
       );
     }
   }
-  export default Register;
+
+export default connect()(Register);
