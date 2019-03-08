@@ -37,7 +37,7 @@ class Footer extends Component {
                 </div>
             </div>
             <div className="text-center copiret">
-                <p className="txtcpy">&copy; DumbWays 2019 - All rights Reserved. Yes, all of them. That means you. Ega.</p>
+                <p className="txtcpy">&copy; DumbWays 2019. All rights reserved. Yes, all of them. That means you. Ega.</p>
             </div>
           </div>
         </footer>

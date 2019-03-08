@@ -45,7 +45,7 @@ return (
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} href="/video/example" class="d-block mb-4 h-100">
-                        <span className="span-title-video" style={{fontFamily:"Nunito",fontWeight:"500"}}>{item.tittle}</span>
+                        <span className="span-title-video" style={{fontSize:"14px", fontFamily:"Nunito",fontWeight:"525"}}>{item.tittle}</span>
                         <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"96px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -61,7 +61,7 @@ return (
                         </a>
                     </div>
                     <a style={{paddingTop:"15px"}} href="/quiz/example" class="d-block mb-4 h-100">
-                    <span className="span-title-video"style={{fontFamily:"Nunito",fontWeight:"500"}}>{item.tittle}</span>
+                    <span className="span-title-video"style={{fontSize:"14px", fontFamily:"Nunito",fontWeight:"525"}}>{item.tittle}</span>
                     <span className="span-time" style={{fontSize:"13px",marginLeft:"65px",paddingBottom:"1px",color:"#00DFEB"}}>Level <img src={lvl} style={{width:"13px"}}></img>  </span>
                     </a>
                 </div>
@@ -96,7 +96,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span className="span-title-video"
-                    style={{fontFamily:"Nunito"}}>1. Perkenalan</span>
+                    style={{fontSize:"14px", fontFamily:"Nunito", fontWeight:"525"}}>1. Perkenalan</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"96px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -109,7 +109,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span className="span-title-video"
-                    style={{fontFamily:"Nunito"}}>2. Components</span>
+                    style={{fontSize:"14px", fontFamily:"Nunito", fontWeight:"525"}}>2. Components</span>
                     <span className="span-time" style={{fontSize:"13px"}} ><span className="far fa-clock" style={{opacity:0.4,marginLeft:"75px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -122,7 +122,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span className="span-title-video"
-                    style={{fontFamily:"Nunito"}}>3. Instalasi</span>
+                    style={{fontSize:"14px", fontFamily:"Nunito", fontWeight:"525"}}>3. Instalasi</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"115px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -134,7 +134,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span className="span-title-video"
-                    style={{fontFamily:"Nunito"}}>4. Character</span>
+                    style={{fontSize:"14px", fontFamily:"Nunito", fontWeight:"525"}}>4. Character</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>  
@@ -146,7 +146,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span className="span-title-video"
-                    style={{fontFamily:"Nunito"}}>1. Perkenalan</span>
+                    style={{fontSize:"14px", fontFamily:"Nunito", fontWeight:"525"}}>1. Perkenalan</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"96px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -158,7 +158,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span className="span-title-video"
-                    style={{fontFamily:"Nunito"}}>2. Components</span>
+                    style={{fontSize:"14px", fontFamily:"Nunito", fontWeight:"525"}}>2. Components</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"75px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -170,7 +170,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span className="span-title-video"
-                    style={{fontFamily:"Nunito"}}>3. Instalasi</span>
+                    style={{fontSize:"14px", fontFamily:"Nunito", fontWeight:"525"}}>3. Instalasi</span>
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"115px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
                 </div>
@@ -182,7 +182,7 @@ return (
                     </div>
                     <a style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
                     <span className="span-title-video"
-                    style={{fontFamily:"Nunito"}}>4. Character</span>   
+                    style={{fontSize:"14px", fontFamily:"Nunito", fontWeight:"525"}}>4. Character</span>   
                     <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                     </a>
             </div>     

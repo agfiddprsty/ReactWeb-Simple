@@ -22,7 +22,7 @@
 	color: red;
 	font-weight: 510;
 	font-family: 'Montserrat';
-	font-size: 1.7em;
+	font-size: 1.6em;
 	display: block;
 }
 
@@ -49,16 +49,17 @@
 .tolak {
 	border-radius: 0; 
 	padding: 15px 42px 15px 42px; 
+	border: 2px solid;
 	margin-right:25px;
 	font-weight: 600;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Nunito';
 }
 
 .setuju {
 	border-radius: 0; 
 	padding: 15px 42px 15px 42px;
 	font-weight: 600;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Nunito';
 }
 
 #style-1:-webkit-scrollbar-track

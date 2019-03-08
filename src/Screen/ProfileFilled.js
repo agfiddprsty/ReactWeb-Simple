@@ -937,19 +937,19 @@ class ProfileFilled extends Component {
                                                                     <input class="input-group-prepend inputskil" type="text" name="skills" required="" placeholder="Skill (ex: Data Analysis)"/>
                                                                 </span>
                                                             </div>
-                                                                <p style={{textAlign:'left', color:'black', fontWeight:'100', fontFamily:'Open Sans, helvetica, Arial, sans serif', fontSize:'.75000000em', marginTop:'5px'}}>Kamu bisa menambahkan 10 skills lagi</p> 
+                                                                <p class="textunder">Kamu bisa menambahkan 10 skills lagi</p> 
                                                                 <br/>
                                                             <div className="text-left" style={{marginTop: '-20px'}}>
                                                                 <span className="btn btn-md design" style={{
-                                                                    borderRadius: '70px', fontSize:'16px', fontWeight: '950', margin: '0 5px 0 0', color: '#FFF',
+                                                                    borderRadius: '50px', fontSize:'16px', fontWeight: '950', margin: '0 5px 0 0', color: '#FFF',
                                                                     fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>
                                                                     <i class="fas fa-plus" style={{fontSize:'14px'}}> </i> Design</span>
                                                                 <span className="btn btn-md design" style={
-                                                                    {borderRadius: '80px', fontSize:'16px', fontWeight: '950', margin: '0 5px 0 5px', color: '#FFF', 
+                                                                    {borderRadius: '50px', fontSize:'16px', fontWeight: '950', margin: '0 5px 0 5px', color: '#FFF', 
                                                                     fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>
                                                                     <i class="fas fa-plus" style={{fontSize:'14px'}}> </i> Front End</span>
                                                                 <span className="btn btn-md design" style={{
-                                                                    borderRadius: '90px', fontSize:'16px', fontWeight: '950', margin: '0 5px 0 5px', color: '#FFF', 
+                                                                    borderRadius: '50px', fontSize:'16px', fontWeight: '950', margin: '0 5px 0 5px', color: '#FFF', 
                                                                     fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>
                                                                     <i class="fas fa-plus" style={{fontSize:'14px'}}> </i>  Back End</span>
                                                                 <span className="btn btn-md design" style={{
@@ -992,7 +992,7 @@ class ProfileFilled extends Component {
                                                 <p class="parttextprojects">Projects</p>
                                                 <br/>
                                                 <button type="button" class="btndngr btn btn-outline-danger btn-lg btn-block btnprojects" data-toggle="collapse" data-target="#tambahproject"
-                                                >+ Tambah Project</button>
+                                                > Tambah Project</button>
                                             </div>
                                             <br/>
                                             <div>
@@ -1045,8 +1045,7 @@ class ProfileFilled extends Component {
                                                                     </p>
                                                                 </div>
                                                                 <div class="col-sm-3 col-md-2">
-                                                                    <p class="fromtoright"
-                                                                    style={{marginLeft:'80px'}}>
+                                                                    <p class="fromto">
                                                                         Years
                                                                     </p>
                                                                 </div>

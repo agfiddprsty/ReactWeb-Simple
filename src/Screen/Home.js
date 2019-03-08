@@ -49,7 +49,7 @@ class Home extends Component {
                             <div>    
                                 <div className="jumbotron jumbotron-fluid gmbrlanding" style={{height: "600px"}}>
                                     <div>
-                                        <h4 className="card-title text-center title">Menjadi Fullstack Mobile Developer Professional dan Disalurkan Kerja</h4>
+                                        <h4 className="card-title text-center title">Menjadi Fullstack Mobile Developer Profesional dan Disalurkan Kerja</h4>
                                         <div style={{textAlign: "center", marginTop: "50px"}}>
                                             <span className="card-text text-center isi idr">IDR</span>
                                             <span className="text-center duajt">2.000.000</span>

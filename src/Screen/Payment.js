@@ -29,7 +29,7 @@ class Payment extends Component {
                         </div>
                     </section>
                     <div className="text-center">
-                        <h6 className="plsconfrm">Silakan Konfirmasi, jika sudah melakukan pembayaran, melalui:</h6>
+                        <h6 className="plsconfrm">Silakan konfirmasi, jika sudah melakukan pembayaran, melalui:</h6>
                         <div>
                             <img src={telegram} alt="" className="icotel"/> 
                             <img src={whatsapp} alt="" className="icowa"/> 
