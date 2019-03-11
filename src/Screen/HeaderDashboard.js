@@ -16,9 +16,9 @@ class Header extends Component {
                   </a> 
                   <ul class="navbar-nav ml-auto">
                     <li className="nav-item dropdown" style={{marginLeft: '200px', width: '75px'}}>
-                      <a class="nav-link togldrpdn" href="#" id="navbardrop" data-toggle="dropdown">
+                      <ul class="nav-link togldrpdn" href="#" id="navbardrop" data-toggle="dropdown">
                         <img src={boy} alt="" className="rounded-circle img-fluid imgman"/>
-                      </a>
+                      </ul>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="/profile">Profile</a>
                         <a class="dropdown-item" href="/register">Logout</a>
