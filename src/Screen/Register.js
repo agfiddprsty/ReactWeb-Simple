@@ -86,7 +86,7 @@ class Register extends Component {
               this.setState({ toLogin: true });
             })
             .catch(err => {
-              alert(err.response.data.messages);
+              alert(err.response.data.message);
               // console.log(err.response);
             // this.props.history.push("/login");
             console.log(this.state.selectedValue);

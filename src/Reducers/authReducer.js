@@ -46,7 +46,7 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 Fetching: false, Fetched: true,
-                token: [action.payload.data.token.token],
+                token: [action.payload.data.token],
                 user: [action.payload.data.user]
             }
 
