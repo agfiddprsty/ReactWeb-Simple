@@ -90,101 +90,101 @@ class ListVideo extends Component {
                     
                             <div className="d-flex justify-content-center lockedctn">
                                 <span className="d-block mb-4 h-100">
-                                    <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
+                                        <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
                                     <br/>
                                 </span>
                             </div>
                             <span style={{paddingTop:"15px"}} className="d-block mb-4 h-100">
-                            <span className="span-title-video"
-                            style={{fontFamily:"Nunito"}}>1. Perkenalan</span>
-                            <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"96px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                                <span className="span-title-video"
+                                    style={{fontFamily:"Nunito"}}>1. Perkenalan</span>
+                                <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"96px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                             </span>
                         </div>
                         <div className="col-lg-3 col-md-4 col-6">
                             <div className="d-flex justify-content-center lockedctn">
                                 <span className="d-block mb-4 h-100">
-                                    <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
+                                        <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
                                     <br/>
                                 </span>
                             </div>
                             <span style={{paddingTop:"15px"}} className="d-block mb-4 h-100">
-                            <span className="span-title-video"
-                            style={{fontFamily:"Nunito"}}>2. Components</span>
-                            <span className="span-time" style={{fontSize:"13px"}} ><span className="far fa-clock" style={{opacity:0.4,marginLeft:"75px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                                <span className="span-title-video"
+                                    style={{fontFamily:"Nunito"}}>2. Components</span>
+                                <span className="span-time" style={{fontSize:"13px"}} ><span className="far fa-clock" style={{opacity:0.4,marginLeft:"75px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                             </span>
                         </div>
                         <div className="col-lg-3 col-md-4 col-6">
                             <div className="d-flex justify-content-center lockedctn">
                                 <span className="d-block mb-4 h-100">
-                                    <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
+                                        <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
                                     <br/>
                                 </span>
                             </div>
                             <span style={{paddingTop:"15px"}} className="d-block mb-4 h-100">
-                            <span className="span-title-video"
-                            style={{fontFamily:"Nunito"}}>3. Instalasi</span>
-                            <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"115px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                                <span className="span-title-video"
+                                    style={{fontFamily:"Nunito"}}>3. Instalasi</span>
+                                <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"115px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                             </span>
                         </div>
                         <div className="col-lg-3 col-md-4 col-6">
                             <div className="d-flex justify-content-center lockedctn">
                                 <span className="d-block mb-4 h-100">
-                                <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
+                                    <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                                 </span>
                             </div>
                             <span style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
-                            <span className="span-title-video"
-                            style={{fontFamily:"Nunito"}}>4. Character</span>
-                            <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                                <span className="span-title-video"
+                                    style={{fontFamily:"Nunito"}}>4. Character</span>
+                                <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                             </span>
                         </div>  
                         <div className="col-lg-3 col-md-4 col-6">
                             <div className="d-flex justify-content-center lockedctn">
                                 <span className="d-block mb-4 h-100">
-                                <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
+                                    <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                                 </span>
                             </div>
                             <span style={{paddingTop:"15px"}} className="d-block mb-4 h-100">
-                            <span className="span-title-video"
-                            style={{fontFamily:"Nunito"}}>1. Perkenalan</span>
-                            <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"96px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                                <span className="span-title-video"
+                                    style={{fontFamily:"Nunito"}}>1. Perkenalan</span>
+                                <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"96px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                             </span>
                         </div>
                         <div className="col-lg-3 col-md-4 col-6">
                             <div className="d-flex justify-content-center lockedctn">
                                 <span className="d-block mb-4 h-100">
-                                <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
+                                    <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                                 </span>
                             </div>
                             <span style={{paddingTop:"15px"}} className="d-block mb-4 h-100">
-                            <span className="span-title-video"
-                            style={{fontFamily:"Nunito"}}>2. Components</span>
-                            <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"75px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                                <span className="span-title-video"
+                                     style={{fontFamily:"Nunito"}}>2. Components</span>
+                                <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"75px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                             </span>
                         </div>
                         <div className="col-lg-3 col-md-4 col-6">
                             <div className="d-flex justify-content-center lockedctn">
                                 <span className="d-block mb-4 h-100">
-                                <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
+                                    <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                                 </span>
                             </div>
                             <span style={{paddingTop:"15px"}} className="d-block mb-4 h-100">
-                            <span className="span-title-video"
-                            style={{fontFamily:"Nunito"}}>3. Instalasi</span>
-                            <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"115px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                                <span className="span-title-video"
+                                    style={{fontFamily:"Nunito"}}>3. Instalasi</span>
+                                <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"115px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                             </span>
                         </div>
                         <div className="col-lg-3 col-md-4 col-6">
                             <div className="d-flex justify-content-center lockedctn">
                                 <span className="d-block mb-4 h-100">
-                                <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
+                                    <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
                                 </span>
                             </div>
                             <span style={{paddingTop:"15px"}} className="d-block mb-4 h-100">
-                            <span className="span-title-video"
-                            style={{fontFamily:"Nunito"}}>4. Character</span>   
-                            <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
-                            </span>
+                                 <span className="span-title-video"
+                                    style={{fontFamily:"Nunito"}}>4. Character</span>   
+                                <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                             </span>
                     </div>     
                     </div>
                     </div>
