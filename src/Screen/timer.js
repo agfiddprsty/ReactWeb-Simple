@@ -89,14 +89,14 @@ class Timer extends Component {
         <span className="Countdown-col">
           <span className="Countdown-col-element border border-warning padten">
               <strong>{this.addLeadingZeros(countDown.days)}</strong>
-              <span class="hjmd">Hari</span>
+              <span className="hjmd">Hari</span>
           </span>
         </span>
 
 
         <span className="Countdown-col">
           <span className="Countdown-col-element">
-            <strong class="td">:</strong>
+            <strong className="td">:</strong>
           </span>
         </span>
 
@@ -104,13 +104,13 @@ class Timer extends Component {
         <span className="Countdown-col">
           <span className="Countdown-col-element border border-warning padten">
             <strong>{this.addLeadingZeros(countDown.hours)}</strong>
-            <span class="hjmd">Jam</span>
+            <span className="hjmd">Jam</span>
           </span>
         </span>
 
         <span className="Countdown-col">
           <span className="Countdown-col-element">
-            <strong class="td">:</strong>
+            <strong className="td">:</strong>
           </span>
         </span>
 
@@ -118,20 +118,20 @@ class Timer extends Component {
         <span className="Countdown-col">
           <span className="Countdown-col-element border border-warning padten">
             <strong>{this.addLeadingZeros(countDown.min)}</strong>
-            <span class="hjmd">Menit</span>
+            <span className="hjmd">Menit</span>
           </span>
         </span>
 
         <span className="Countdown-col">
           <span className="Countdown-col-element">
-            <strong class="td">:</strong>
+            <strong className="td">:</strong>
           </span>
         </span>
 
         <span className="Countdown-col">
           <span className="Countdown-col-element border border-warning padten">
             <strong>{this.addLeadingZeros(countDown.sec)}</strong>
-            <span class="hjmd">Detik</span>
+            <span className="hjmd">Detik</span>
           </span>
         </span>
       </div>

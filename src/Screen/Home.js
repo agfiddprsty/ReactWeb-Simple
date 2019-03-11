@@ -76,57 +76,57 @@ class Home extends Component {
                                         <h1 className="caraker">Cara Kerja</h1>
                                     </div>
 
-                                    <div class="bootcamp-steps">
-                                        <div class="vertical-line"></div>
-                                        <div class="bootcamp-step-content text-center">
-                                            <div class="circle-steps-bootcamp"></div>
-                                            <div class="circle-steps-bootcamp1"></div>
-                                            <div class="circle-steps-bootcamp2"></div>
-                                            <div class="circle-steps-bootcamp3"></div>
-                                            <div class="kontainer">
-                                                <div class="row mb-5 d-none d-lg-flex d-xl-flex">
-                                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                                        <p class="bootcamp-step-list">
+                                    <div className="bootcamp-steps">
+                                        <div className="vertical-line"></div>
+                                        <div className="bootcamp-step-content text-center">
+                                            <div className="circle-steps-bootcamp"></div>
+                                            <div className="circle-steps-bootcamp1"></div>
+                                            <div className="circle-steps-bootcamp2"></div>
+                                            <div className="circle-steps-bootcamp3"></div>
+                                            <div className="kontainer">
+                                                <div className="row mb-5 d-none d-lg-flex d-xl-flex">
+                                                    <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                                        <p className="bootcamp-step-list">
                                                             <img alt="" className="img-fluid mrgnl onefivzer" src={daftar}/>
                                                         </p>
                                                     </div>
-                                                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mrgnrght">
-                                                        <section class="kotakanan text-left">
+                                                    <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12 mrgnrght">
+                                                        <section className="kotakanan text-left">
                                                             <h5 className="title-cara">Daftar dan Lengkapi Profil</h5>
                                                             <span className="crtacc">
                                                                 Buat akun dan lengkapi data diri serta lakukan pembayaran untuk dana awal
                                                             </span>
-                                                            <div class="d-flex justify-content-end zerone"><p className="numberstep">01</p></div>
+                                                            <div className="d-flex justify-content-end zerone"><p className="numberstep">01</p></div>
                                                         </section>
                                                         <section className="kotakananduo"></section>
                                                     </div>
                                                 </div>
-                                                <div class="row mb-5 d-lg-none d-xl-none">
-                                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                                        <p class="bootcamp-step-list">
+                                                <div className="row mb-5 d-lg-none d-xl-none">
+                                                    <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                                        <p className="bootcamp-step-list">
                                                             <img alt="" className="img-fluid onefivezer" src={daftar}/>
                                                         </p>
                                                     </div>
-                                                    <div class="sqregstp col-lg-6 col-md-12 col-sm-12 col-xs-12 mx-auto">
-                                                        <section class="kotakanan bootcamp-step-list">
+                                                    <div className="sqregstp col-lg-6 col-md-12 col-sm-12 col-xs-12 mx-auto">
+                                                        <section className="kotakanan bootcamp-step-list">
                                                             <h5 className="title-cara">Daftar dan Lengkapi Profil</h5>
                                                             <span className="crtacc">
                                                                 buat akun dan lengkapi data diri serta lakukan pembayaran untuk dana awal
                                                             </span>
-                                                            <div class="d-flex justify-content-end zerone"><p className="numberstep">01</p></div>
+                                                            <div className="d-flex justify-content-end zerone"><p className="numberstep">01</p></div>
                                                         </section>
                                                         <section className="kotakananduo"></section>
                                                     </div>
                                                 </div>
-                                                <div class="row mb-5 d-lg-none d-xl-none">
-                                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                                        <p class="bootcamp-step-list">
+                                                <div className="row mb-5 d-lg-none d-xl-none">
+                                                    <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                                        <p className="bootcamp-step-list">
                                                             <img alt="" className="img-fluid onefivzer" src={lengkapi}/>
                                                         </p>
                                                     </div>
-                                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
-                                                        <section class="kotakiri bootcamp-step-list">
-                                                            <div class="d-flex justify-content-end zerotwo"><p className="numberstep">02</p></div>
+                                                    <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+                                                        <section className="kotakiri bootcamp-step-list">
+                                                            <div className="d-flex justify-content-end zerotwo"><p className="numberstep">02</p></div>
                                                             <h5 className="title-cara">Mulai Belajar</h5>
                                                             <span className="crtacc">
                                                                 Dipandu oleh mentor professional, anda dapat belajar melalui media video streaming yang bisa anda akses selamanya
@@ -135,10 +135,10 @@ class Home extends Component {
                                                         <section className="kotakananduo"></section>
                                                     </div>
                                                 </div>
-                                                <div class="row mb-5 d-none d-lg-flex d-xl-flex">
-                                                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ">
-                                                        <section class="kotakiri text-left">
-                                                            <div class="d-flex justify-content-end zerotwo"><p className="numberstep">02</p></div>
+                                                <div className="row mb-5 d-none d-lg-flex d-xl-flex">
+                                                    <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12 ">
+                                                        <section className="kotakiri text-left">
+                                                            <div className="d-flex justify-content-end zerotwo"><p className="numberstep">02</p></div>
                                                             <h5 className="title-cara">Mulai Belajar</h5>
                                                             <span className="crtacc">
                                                                 Dipandu oleh mentor professional, anda dapat belajar melalui media video streaming yang bisa anda akses selamanya
@@ -146,55 +146,55 @@ class Home extends Component {
                                                         </section>
                                                         <section className="kotakananduo"></section>
                                                     </div>
-                                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mrgnrght">
-                                                        <p class="bootcamp-step-list">
+                                                    <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 mrgnrght">
+                                                        <p className="bootcamp-step-list">
                                                             <img alt="" className="img-fluid onefivzerpc" src={lengkapi}/>
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div class="row mb-5 d-lg-none d-xl-none">
-                                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
-                                                        <p class="bootcamp-step-list">
+                                                <div className="row mb-5 d-lg-none d-xl-none">
+                                                    <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+                                                        <p className="bootcamp-step-list">
                                                             <img alt="" className="img-fluid onefivzer" src={quiz}/>
                                                         </p>
                                                     </div>
-                                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mx-auto">
-                                                        <section class="kotakanan bootcamp-step-list">
+                                                    <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 mx-auto">
+                                                        <section className="kotakanan bootcamp-step-list">
                                                             <h5 className="title-cara">Kerjakan Kuis Mingguan</h5>
                                                             <span className="crtacc">
                                                                 Kerjakan Mini Kuis, Weekly Kuis, dan Kuis Final untuk mengasah skill-mu
                                                             </span>
-                                                            <div class="d-flex justify-content-end zerone"><p className="numberstep">03</p></div>
+                                                            <div className="d-flex justify-content-end zerone"><p className="numberstep">03</p></div>
                                                         </section>
                                                         <section className="kotakananduo"></section>
                                                     </div>
                                                 </div>
-                                                <div class="row mb-5 d-none d-lg-flex d-xl-flex">
-                                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                                        <p class="bootcamp-step-list">
+                                                <div className="row mb-5 d-none d-lg-flex d-xl-flex">
+                                                    <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                                        <p className="bootcamp-step-list">
                                                             <img alt="" className="img-fluid mrgnlf onefivzerpzl" src={quiz}/>
                                                         </p>
                                                     </div>
-                                                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mrgnrght">
-                                                        <section class="kotakanan text-left">
+                                                    <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12 mrgnrght">
+                                                        <section className="kotakanan text-left">
                                                             <h5 className="title-cara">Kerjakan Kuis Mingguan</h5>
                                                             <span className="crtacc">
                                                                 Kerjakan Mini Kuis, Weekly Kuis dan Kuis Final untuk mengasah skill-mu
                                                             </span>
-                                                            <div class="d-flex justify-content-end zerone"><p className="numberstep">03</p></div>
+                                                            <div className="d-flex justify-content-end zerone"><p className="numberstep">03</p></div>
                                                         </section>
                                                         <section className="kotakananduo"></section>
                                                     </div>
                                                 </div>
-                                                <div class="row mb-5 d-lg-none d-xl-none">
-                                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                                        <p class="bootcamp-step-list">
+                                                <div className="row mb-5 d-lg-none d-xl-none">
+                                                    <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                                        <p className="bootcamp-step-list">
                                                             <img alt="" className="img-fluid onefivzer" src={koper}/>
                                                         </p>
                                                     </div>
-                                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                                        <section class="kotakiri bootcamp-step-list">
-                                                            <div class="d-flex justify-content-end zerotwo"><p className="numberstep">04</p></div>
+                                                    <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                                        <section className="kotakiri bootcamp-step-list">
+                                                            <div className="d-flex justify-content-end zerotwo"><p className="numberstep">04</p></div>
                                                             <h5 className="title-cara">Penyaluran Kerja</h5>
                                                             <span className="crtacc">
                                                             Kami akan menyalurkan anda ke perusahaan rekanan kami, berdasarkan hasil kuis yang anda kerjakan
@@ -203,10 +203,10 @@ class Home extends Component {
                                                         <section className="kotakananduo"></section>
                                                     </div>
                                                 </div>
-                                                <div class="row mb-5 d-none d-lg-flex d-xl-flex">
-                                                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                                                        <section class="kotakiri text-left">
-                                                            <div class="d-flex justify-content-end zerotwo"><p className="numberstep">04</p></div>
+                                                <div className="row mb-5 d-none d-lg-flex d-xl-flex">
+                                                    <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                                        <section className="kotakiri text-left">
+                                                            <div className="d-flex justify-content-end zerotwo"><p className="numberstep">04</p></div>
                                                             <h5 className="title-cara">Penyaluran Kerja</h5>
                                                             <span className="crtacc">
                                                                 Kami akan menyalurkan anda ke perusahaan rekanan kami, berdasarkan hasil kuis yang anda kerjakan
@@ -214,8 +214,8 @@ class Home extends Component {
                                                         </section>
                                                         <section className="kotakananduo"></section>
                                                     </div>
-                                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mrgnrght">
-                                                        <p class="bootcamp-step-list">
+                                                    <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 mrgnrght">
+                                                        <p className="bootcamp-step-list">
                                                             <img alt="" className="img-fluid onefivzerkoper gmbrstep" src={koper}/>
                                                         </p>
                                                     </div>
