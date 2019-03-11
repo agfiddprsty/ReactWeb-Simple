@@ -11,17 +11,17 @@ class Header extends Component {
           <div className="headdash fixed-top bg-light">
             <header className="Hom-header bg-light">
                 <nav className="container navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light" style={{height: '64px'}}>
-                  <a class="brand" href="/">
+                  <a className="brand" href="/">
                     <img alt="" className="imgdw" src={dwicon}/>
                   </a> 
-                  <ul class="navbar-nav ml-auto">
+                  <ul className="navbar-nav ml-auto">
                     <li className="nav-item dropdown" style={{marginLeft: '200px', width: '75px'}}>
-                      <span class="nav-link togldrpdn" href="#" id="navbardrop" data-toggle="dropdown">
+                      <span className="nav-link togldrpdn" href="#" id="navbardrop" data-toggle="dropdown">
                         <img src={boy} alt="" className="rounded-circle img-fluid imgman"/>
                       </span>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="/profile">Profile</a>
-                        <a class="dropdown-item" href="/register">Logout</a>
+                      <div className="dropdown-menu">
+                        <a className="dropdown-item" href="/profile">Profile</a>
+                        <a className="dropdown-item" href="/register">Logout</a>
                       </div>
                     </li>
                   </ul>

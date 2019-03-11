@@ -32,7 +32,7 @@ class QuizDisscuss extends Component{
                     <div>
                         <div className="row" id="post-review-box" >
                             <div className="img-cmt-gd img-cmt-cl">
-                                    <img alt="profileimage"  class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
+                                    <img alt="profileimage"  className="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
                             </div>
                             <div className="col-md-auto col-s-9 dv-input-cmt-qz-gd dv-input-cmt-qz-cl">
                                 <input onClick={this.showreply} className="input-cmt-qz-gd input-cmt-qz-cl" placeholder="Write A Comment"></input>

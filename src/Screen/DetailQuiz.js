@@ -102,7 +102,7 @@ class DetailQuiz extends Component{
                                                                                 <div className="row dv-row-gd">
                                                                                     <div className="col-md-auto">
                                                                                         <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${item.thumbnail_url})`}}>
-                                                                                            <img class="img-fluid img-thumbnail play-img-gd" src={ply} alt=""></img>
+                                                                                            <img className="img-fluid img-thumbnail play-img-gd" src={ply} alt=""></img>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div className="col-md-5 dv-tittle-gd">
@@ -142,7 +142,7 @@ class DetailQuiz extends Component{
                                                                             <div className="row dv-row-gd">
                                                                                 <div className="col-md-auto">
                                                                                     <div className="d-flex justify-content-center dv-bg-gd" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("+item.thumbnail_url+")"}}>
-                                                                                        <img class="img-fluid img-thumbnail play-img-gd" src={lock} alt=""></img>
+                                                                                        <img className="img-fluid img-thumbnail play-img-gd" src={lock} alt=""></img>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div className="col-md-5 dv-tittle-gd">
