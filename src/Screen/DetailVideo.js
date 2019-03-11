@@ -238,8 +238,9 @@ class DetailVideo extends Component {
                                                                                             <img class="img-fluid img-thumbnail play-img-gd" src={ply} alt=""></img>
                                                                                         </div>
                                                                                     </div>
-                                                                                    <div className="col-md-auto dv-tittle-gd">
+                                                                                    <div className="col-md-5  dv-tittle-gd">
                                                                                         <h6 className="tittledown">{item.title}</h6>
+                                                                                        {/* <span className="tittledown">{item.title}</span> */}
                                                                                         <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
                                                                                     </div>
                                                                                 </div>
@@ -258,7 +259,7 @@ class DetailVideo extends Component {
                                                                                     <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundColor:"#FF5D5D"}}>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div className="col-md-auto dv-tittle-gd">
+                                                                                <div className="col-md-5 dv-tittle-gd">
                                                                                     <h6 className="tittledown">{item.title}</h6>
                                                                                     <a className="a-clock-gd">Level <img src={lvl} style={{width:"13px"}}></img></a>
                                                                                 </div>
@@ -278,8 +279,8 @@ class DetailVideo extends Component {
                                                                                         <img class="img-fluid img-thumbnail play-img-gd" src={lock} alt=""></img>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div className="col-md-auto dv-tittle-gd">
-                                                                                    <h6 className="tittledown">1.Perkenalan</h6>
+                                                                                <div className="col-md-5 dv-tittle-gd">
+                                                                                    <h6 className="tittledown">{item.title}</h6>
                                                                                     <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
                                                                                 </div>
                                                                             </div>

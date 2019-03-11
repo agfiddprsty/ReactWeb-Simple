@@ -139,11 +139,12 @@
 @media only screen and (max-width:1680px){
   .tittlevideo-gd{
     font-family: 'Nunito';
-    width:"800px";
+    /* width:"800px"; */
     margin-Top:20px;
     /* font-Weight:bold; */
     font-weight: 600;
-    margin-Bottom:20px
+    margin-Bottom:20px;
+    width: 750px;
   }
   .deskripsi-gd{
     font-Weight:600;
@@ -175,7 +176,7 @@
 @media only screen and (max-width:1152px){
   .tittlevideo-gd{
     font-family: 'Nunito';
-    width:"800px";
+    width:950px;
     margin-Top:20px;
     /* font-Weight:bold; */
     font-weight: 600;
@@ -211,7 +212,7 @@
 @media only screen and (max-width:1024px){
   .tittlevideo-gd{
     font-family: 'Nunito';
-    width:"800px";
+    width:950px;
     margin-Top:20px;
     /* font-Weight:bold; */
     font-weight: 600;
@@ -245,6 +246,15 @@
   }
 }
 @media only screen and (max-width:900px){
+  .tittlevideo-gd{
+    font-family: 'Nunito';
+    width:700px;
+    margin-Top:20px;
+    /* font-Weight:bold; */
+    font-weight: 600;
+    margin-Bottom:20px;
+    width: 750px;
+  }
   .vp-v-pb{
     width: 700px;
   }
@@ -267,6 +277,15 @@
   .hr1-vp-cl{
     width: 400px;
   }
+  .tittlevideo-gd{
+    font-family: 'Nunito';
+    width:560px;
+    margin-Top:20px;
+    /* font-Weight:bold; */
+    font-weight: 600;
+    margin-Bottom:20px;
+    width: 750px;
+  }
 }
 @media only screen and (max-width:700px){
   .vp-v-pb{
@@ -278,6 +297,15 @@
   }
   .hr1-vp-cl{
     width: 400px;
+  }
+  .tittlevideo-gd{
+    font-family: 'Nunito';
+    width:400px;
+    margin-Top:20px;
+    /* font-Weight:bold; */
+    font-weight: 600;
+    margin-Bottom:20px;
+    width: 750px;
   }
 }
 @media only screen and (max-width:600px){
@@ -291,6 +319,15 @@
   .hr1-vp-cl{
     width: 350px;
   }
+  .tittlevideo-gd{
+    font-family: 'Nunito';
+    width:500px;
+    margin-Top:20px;
+    /* font-Weight:bold; */
+    font-weight: 600;
+    margin-Bottom:20px;
+    width: 750px;
+  }
 }
 @media only screen and (max-width:500px){
   .vp-v-pb{
@@ -303,6 +340,15 @@
   .hr1-vp-cl{
     width: 300px;
   }
+  .tittlevideo-gd{
+    font-family: 'Nunito';
+    width:350px;
+    margin-Top:20px;
+    /* font-Weight:bold; */
+    font-weight: 600;
+    margin-Bottom:20px;
+    width: 750px;
+  }
 }
 @media only screen and (max-width:400px){
   .vp-v-cl{
@@ -314,5 +360,14 @@
   }
   .hr1-vp-cl{
     width: 300px;
+  }
+  .tittlevideo-gd{
+    font-family: 'Nunito';
+    width:300px;
+    margin-Top:20px;
+    /* font-Weight:bold; */
+    font-weight: 600;
+    margin-Bottom:20px;
+    width: 750px;
   }
 }

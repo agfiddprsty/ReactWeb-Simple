@@ -21,7 +21,7 @@ class Header extends Component {
                       </a>
                       <div className="dropdown-menu">
                         <a className="dropdown-item" href="/profile">Profile</a>
-                        <a className="dropdown-item" href="/register">Logout</a>
+                        <a className="dropdown-item" href="/login">Logout</a>
                       </div>
                     </li>
                   </ul>
@@ -48,7 +48,7 @@ class Header extends Component {
                       <a href='/profile' className="nav-link">Profile</a>
                     </li>
                     <li className="nav-item">
-                      <a href="/register" className="nav-link active">Logout</a>
+                      <a href="/login" className="nav-link active">Logout</a>
                     </li>
                   </ul>
                 </div> 
