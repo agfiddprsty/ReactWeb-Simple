@@ -151,6 +151,10 @@
   .tittledown{
     font-family: 'Nunito';
     font-weight: 500;
+    overflow:hidden;
+    width: 180px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .dv-bg-gd{
     background-Repeat:no-repeat;
@@ -330,6 +334,10 @@
   .tittledown{
     font-family: 'Nunito';
     font-weight: 500;
+    overflow:hidden;
+    width: 180px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .dv-bg-gd{
     background-Repeat:no-repeat;
@@ -509,6 +517,12 @@
   .tittledown{
     font-family: 'Nunito';
     font-weight: 500;
+    overflow:hidden;
+    width: 180px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* white-space:nowrap; */
+    /* text-overflow:ellipsis; */
   }
   .dv-bg-gd{
     background-Repeat:no-repeat;
