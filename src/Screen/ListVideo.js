@@ -7,7 +7,7 @@ class ListVideo extends Component {
     constructor(){
         super()
         this.state={
-            listvideo:[
+            List:[
                 {id:"1",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"1. Perkenalan",type:"video"},
                 {id:"2",image:"https://source.unsplash.com/F2WX4BTIkpQ/650x240",tittle:"2. Komponen",type:"video"},
                 {id:"3",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"3. Instalation",type:"video"},
@@ -21,10 +21,10 @@ class ListVideo extends Component {
         }
     }
     componentDidMount(){
-        console.log(this.state.listvideo);
+        // console.log(this.state.listvideo);
     }
-render() {
-return (
+    render() {
+        return (
                 <div style={{overflow:"hidden",backgroundColor:"#fff"}} >
                 <div className="container">
                     <div>
@@ -33,41 +33,39 @@ return (
                         <br/>
                     </div>
                     <div className="row text-center text-lg-left">
-                    {this.state.listvideo.map((item,key)=>{
-                        if(item.type==="video"){
-                        return(
-                        <div className="col-lg-3 col-md-4 col-6">
-                            <div className="d-flex justify-content-center" style={{height:"165px",width:"260px",background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("+item.image+")"}}>
-                            
-                                <a href="/video/example" className="d-block mb-4 h-100">
-                                    <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
-                                    <br/>
-                                </a>
-                            </div>
-                            <a style={{paddingTop:"15px"}} href="/video/example" className="d-block mb-4 h-100">
-                                <span className="span-title-video" style={{fontFamily:"Nunito",fontWeight:"500"}}>{item.tittle}</span>
-                                <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"96px",color:"red"}}></span> 04:32 </span>
-                            </a>
-                        </div>
+                        {this.state.List.map((item,key)=>{
+                            if(item.type==="video"){
+                                return(
+                                    <div className="col-lg-3 col-md-4 col-6">
+                                        <div className="d-flex justify-content-center" style={{height:"165px",width:"260px",background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("+item.image+")"}}>             
+                                            <a href="/video/example" className="d-block mb-4 h-100">
+                                                <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
+                                                <br/>
+                                            </a>
+                                        </div>
+                                        <a style={{paddingTop:"15px"}} href="/video/example" className="d-block mb-4 h-100">
+                                            <span className="span-title-video" style={{fontFamily:"Nunito",fontWeight:"500"}}>{item.tittle}</span>
+                                            <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"96px",color:"red"}}></span> 04:32 </span>
+                                        </a>
+                                    </div>
                         
-                        )
-                        }
-                        else if(item.type==="quiz"){
-                            return (
-                                <div className="col-lg-3 col-md-4 col-6">
-                            <div className="d-flex justify-content-center " style={{height:"165px",width:"260px",background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("+item.image+")"}}>
-                                <a href="/quiz/example" className="d-block mb-4 h-100">
-                                <img className="img-fluid img-thumbnail" style={{opacity: 0.4,background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/5a461410d099a2ad03f9c998.png" alt=""></img>
-                                </a>
-                            </div>
-                            <a style={{paddingTop:"15px"}} href="/quiz/example" className="d-block mb-4 h-100">
-                            <span className="span-title-video"style={{fontFamily:"Nunito",fontWeight:"500"}}>{item.tittle}</span>
-                            <span className="span-time" style={{fontSize:"13px",marginLeft:"65px",paddingBottom:"1px",color:"#00DFEB"}}>Level <img src={lvl} alt="level" style={{width:"13px"}}></img>  </span>
-                            </a>
-                        </div>
-                        )
+                                )
+                            }else if(item.type==="quiz"){
+                                return (
+                                    <div className="col-lg-3 col-md-4 col-6">
+                                        <div className="d-flex justify-content-center " style={{height:"165px",width:"260px",background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("+item.image+")"}}>
+                                            <a href="/quiz/example" className="d-block mb-4 h-100">
+                                                <img className="img-fluid img-thumbnail" style={{opacity: 0.4,background: 'transparent', width: '150px', border: 'none'}} src="http://www.stickpng.com/assets/images/5a461410d099a2ad03f9c998.png" alt=""></img>
+                                            </a>
+                                        </div>
+                                        <a style={{paddingTop:"15px"}} href="/quiz/example" className="d-block mb-4 h-100">
+                                            <span className="span-title-video"style={{fontFamily:"Nunito",fontWeight:"500"}}>{item.tittle}</span>
+                                            <span className="span-time" style={{fontSize:"13px",marginLeft:"65px",paddingBottom:"1px",color:"#00DFEB"}}>Level <img src={lvl} alt="level" style={{width:"13px"}}></img>  </span>
+                                        </a>
+                                    </div>
+                                )
                             }
-                               })}
+                        })}
                     </div>
                     <div>
                     </div>
