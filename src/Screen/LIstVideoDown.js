@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardDeck,
-    CardBody, Progress } from 'reactstrap';   
-import rnredux from './img/rnreduxplay.png';
+import { Card, CardDeck} from 'reactstrap';   
 import './css/ListVideo.css';
 import './css/VideoPlayer.css'
 import lvl from './img/Level.png'
@@ -55,7 +53,7 @@ class ListVideoDown extends Component{
                                                             </div>
                                                             <div className="col-md-auto dv-tittle-gd">
                                                                 <h6 className="tittledown">{item.tittle}</h6>
-                                                                <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
+                                                                <ul><i className="far fa-clock i-clock-gd"></i> <ul className="a-clock-gd">04.32</ul></ul>
                                                             </div>
                                                         </div>
                                                     </a>
@@ -75,7 +73,7 @@ class ListVideoDown extends Component{
                                                         </div>
                                                         <div className="col-md-auto dv-tittle-gd">
                                                             <h6 className="tittledown">{item.tittle}</h6>
-                                                            <a className="a-clock-gd">Level <img src={lvl} style={{width:"13px"}}></img></a>
+                                                            <span className="a-clock-gd">Level <img src={lvl} alt="" style={{width:"13px"}}></img></span>
                                                         </div>
                                                     </div>
                                                 </a>
@@ -86,7 +84,7 @@ class ListVideoDown extends Component{
                                     return(
                                         <CardDeck>
                                             <Card className="border-0">
-                                                <a href="#" className="modul">
+                                                <span className="modul">
                                                     <div className="row dv-row-gd">
                                                         <div className="col-md-auto">
                                                             <div className="d-flex justify-content-center dv-bg-gd" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("+item.image+")"}}>
@@ -95,10 +93,10 @@ class ListVideoDown extends Component{
                                                         </div>
                                                         <div className="col-md-auto dv-tittle-gd">
                                                             <h6 className="tittledown">1.Perkenalan</h6>
-                                                            <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
+                                                            <ul><i className="far fa-clock i-clock-gd"></i> <ul className="a-clock-gd">04.32</ul></ul>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </span>
                                             </Card>
                                         </CardDeck>
                                     )
