@@ -11,17 +11,17 @@ class Header extends Component {
           <div className="headsilab fixed-top bg-light">
             <header className="Hom-header bg-light">
                 <nav className="container navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light" style={{height: '64px'}}>
-                  <a class="brand" href="/">
+                  <a className="brand" href="/">
                     <img alt="" className="imgbran" src={dwicon}/>
                   </a> 
-                  <ul class="navbar-nav ml-auto">
+                  <ul className="navbar-nav ml-auto">
                     <li className="nav-item dropdown" style={{marginLeft: '200px', width: '75px'}}>
-                      <a class="nav-link togldrpdn" href="#" id="navbardrop" data-toggle="dropdown">
+                      <a className="nav-link togldrpdn" href="#" id="navbardrop" data-toggle="dropdown">
                         <img src={boy} alt="" className="rounded-circle img-fluid imgboy"/>
                       </a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="/profile">Profile</a>
-                        <a class="dropdown-item" href="/register">Logout</a>
+                      <div className="dropdown-menu">
+                        <a className="dropdown-item" href="/profile">Profile</a>
+                        <a className="dropdown-item" href="/register">Logout</a>
                       </div>
                     </li>
                   </ul>
@@ -34,16 +34,16 @@ class Header extends Component {
           <div className="headland fixed-top bg-light">
             <header className="Hom-header bg-light">
                 <nav className="container navbar navbar-light navbar-expand-sm navbar-toggleable-sm fixed-top bg-light" style={{height:"80px"}}>
-                  <a class="brand" href="/">
+                  <a className="brand" href="/">
                   <img alt="" className="img-fluid imgbran" src={dwicon}/>
                   </a>
 
                   {/* <!-- Toggler/collapsibe Button --> */}
-                  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
+                  <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span className="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse bg-light navbar-collapse bg-light colap" id="collapsibleNavbar" >
-                  <ul class="navbar-nav ml-auto">
+                  <div className="collapse bg-light navbar-collapse bg-light colap" id="collapsibleNavbar" >
+                  <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
                       <a href='/profile' className="nav-link">Profile</a>
                     </li>

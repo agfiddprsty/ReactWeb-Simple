@@ -765,7 +765,7 @@ class ProfileFilled extends Component {
                                                                 <i class="fa fa-long-arrow-right arrowright"></i>
                                                             </div>
                                                         </div>
-                                                        <div class="row mylf">
+                                                        <div class="row">
                                                             <div class="col-sm-3 col-md-2">
                                                                 <p class="fromto">
                                                                     Month
@@ -778,27 +778,35 @@ class ProfileFilled extends Component {
                                                             </div>
                                                         </div>
                                                         <div class="row drpdndt">
-                                                            <select name="month" class="col-1 custom-select mb-3 optdate">
+                                                            <select name="month" class="col-1 select mb-3 optdate">
                                                                 <option selected>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
                                                                 <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
                                                                 <option>11</option><option>12</option>
                                                             </select>
+                                                            <span class="fa fa-sort-desc"
+                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'52px', fontSize:'24px'}}></span>
 
-                                                            <select name="year" class="col-1 custom-select mb-3 optdate">
+                                                            <select name="year" class="col-1 select mb-3 optdate">
                                                                 <option selected>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option>
                                                                 <option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option>
                                                             </select>
+                                                            <span class="fa fa-sort-desc"
+                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'202px', fontSize:'24px'}}></span>
 
-                                                            <select name="month" class="col-1 custom-select mb-3 optdate" style={{marginLeft: '55px'}}>
+                                                            <select name="month" class="col-1 select mb-3 optdate" style={{marginLeft: '55px'}}>
                                                                 <option selected>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
                                                                 <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
                                                                 <option>11</option><option>12</option>
                                                             </select>
+                                                            <span class="fa fa-sort-desc"
+                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'412px', fontSize:'24px'}}></span>
 
-                                                            <select name="year" class="col-1 custom-select mb-3 optdate">
+                                                            <select name="year" class="col-1 select mb-3 optdate">
                                                                 <option selected>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option>
                                                                 <option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option>
                                                             </select>
+                                                            <span class="fa fa-sort-desc"
+                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'562px', fontSize:'24px'}}></span>
                                                         </div>
                                                     </div>
                                                     <br/>
@@ -1047,7 +1055,7 @@ class ProfileFilled extends Component {
                                                                 </div>
                                                             </div>
                                                             <div class="row mylf">
-                                                                <div class="col-sm-3 col-md-2">
+                                                                <div class="col-sm-3 col-md-2 ">
                                                                     <p class="fromto">
                                                                         Month
                                                                     </p>
@@ -1059,27 +1067,35 @@ class ProfileFilled extends Component {
                                                                 </div>
                                                             </div>
                                                             <div class="row drpdndt">
-                                                                <select name="month" class="col-1 custom-select mb-3 optdate">
+                                                                <select name="month" class="col-1 select mb-3 optdate">
                                                                     <option selected>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
                                                                     <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
                                                                     <option>11</option><option>12</option>
                                                                 </select>
+                                                                <span class="fa fa-sort-desc"
+                                                                style={{color:'darkgrey', position:'absolute', marginLeft:'52px', fontSize:'24px'}}></span>
 
-                                                                <select name="year" class="col-1 custom-select mb-3 optdate">
+                                                                <select name="year" class="col-1 select mb-3 optdate">
                                                                     <option selected>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option>
                                                                     <option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option>
                                                                 </select>
+                                                                <span class="fa fa-sort-desc"
+                                                                style={{color:'darkgrey', position:'absolute', marginLeft:'202px', fontSize:'24px'}}></span>
 
-                                                                <select name="month" class="col-1 custom-select mb-3 optdate" style={{marginLeft: '55px'}}>
+                                                                <select name="month" class="col-1 select mb-3 optdate" style={{marginLeft: '55px'}}>
                                                                     <option selected>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
                                                                     <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
                                                                     <option>11</option><option>12</option>
                                                                 </select>
+                                                                <span class="fa fa-sort-desc"
+                                                                style={{color:'darkgrey', position:'absolute', marginLeft:'412px', fontSize:'24px'}}></span>
 
-                                                                <select name="year" class="col-1 custom-select mb-3 optdate">
+                                                                <select name="year" class="col-1 select mb-3 optdate">
                                                                     <option selected>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option>
                                                                     <option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option>
                                                                 </select>
+                                                                <span class="fa fa-sort-desc"
+                                                                style={{color:'darkgrey', position:'absolute', marginLeft:'562px', fontSize:'24px'}}></span>
                                                             </div>
                                                         </div>
                                                         <br/>
