@@ -31,7 +31,7 @@ class DiscussVideo extends Component{
                 <div  >
                     <div class="row" id="post-review-box" >
                         <div className="img-cmt-gd img-cmt-cl">
-                                <img  class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
+                                <img  class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" alt="" style={{borderRadius:"50px"}}/>
                         </div>
                         <div class="col-md-auto col-s-9 dv-input-cmt-gd dv-input-cmt-cl">
                             <input onClick={this.showreply} className="input-cmt-gd input-cmt-cl" placeholder="Write A Comment"></input>
@@ -70,7 +70,7 @@ class DiscussVideo extends Component{
                                                 <i className="btn fa fa-thumbs-down fa-flip-horizontal" style={{marginTop:"-6px",marginLeft:"-25px"}}></i>
                                             </div>
                                             <div style={{marginLeft:"1px"}}>
-                                                <a onClick={this.showreply} className="btn" style={{marginTop:"-6px",marginLeft:"-25px"}}>Reply</a>
+                                                <span onClick={this.showreply} className="btn" style={{marginTop:"-6px",marginLeft:"-25px"}}>Reply</span>
 
                                             </div>
                                         </div>
@@ -117,7 +117,7 @@ class DiscussVideo extends Component{
                                                 <i className="btn fa fa-thumbs-down fa-flip-horizontal" style={{marginTop:"-6px",marginLeft:"-25px"}}></i>
                                             </div>
                                             <div style={{marginLeft:"1px"}}>
-                                                <a onClick={this.showreply} className="btn" style={{marginTop:"-6px",marginLeft:"-25px"}}>Reply</a>
+                                                <span onClick={this.showreply} className="btn" style={{marginTop:"-6px",marginLeft:"-25px"}}>Reply</span>
 
                                             </div>
                                         </div>

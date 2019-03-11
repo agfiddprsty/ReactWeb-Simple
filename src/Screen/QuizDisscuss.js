@@ -67,7 +67,7 @@ class QuizDisscuss extends Component{
                                                 <i className="btn fa fa-thumbs-down fa-flip-horizontal" style={{marginTop:"-6px",marginLeft:"-25px"}}></i>
                                             </div>
                                             <div style={{marginLeft:"1px"}}>
-                                                <a onClick={this.showreply} className="btn" style={{marginTop:"-6px",marginLeft:"-25px"}}>Reply</a>
+                                                <span onClick={this.showreply} className="btn" style={{marginTop:"-6px",marginLeft:"-25px"}}>Reply</span>
 
                                             </div>
                                             </div>
