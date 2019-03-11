@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './HeaderPage'
+import Header from './HeaderPage';
 import './css/Syllabus.css';
 
 class Syllabus extends Component {
@@ -115,7 +115,7 @@ class Syllabus extends Component {
                                 Professional dan Disalurkan Kerja
                             </h4>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
                             <div className="text-center slbstitle">
                                 <h1 className="tertarik">
                                     Tertarik dengan pembelajaran kami? 
@@ -125,12 +125,12 @@ class Syllabus extends Component {
                                 </p>
                             </div>
                             <div className="d-flex justify-content-center">
-                                <div class="daftar" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
-                                    <div class="col-md-12" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}></div>
-                                        <div class="persegislbs" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
+                                <div className="daftar" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
+                                    <div className="col-md-12" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}></div>
+                                        <div className="persegislbs" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                             <form>
                                                 <div >
-                                                    <input class="textinput" type="text" name="fullname" required="" placeholder="" pattern="[A-Za-z}"
+                                                    <input className="textinput" type="text" name="fullname" required="" placeholder="" pattern="[A-Za-z}"
                                                         onChange={this.handleChange} value={this.state.fullname} 
                                                         onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
                                                         value={this.state.inputfullnameValue}
@@ -138,7 +138,7 @@ class Syllabus extends Component {
                                                         onBlur={this.disablefullnameField}
                                                         onChange={this.updateInputfullnameValue}
                                                     />
-                                                    <label class="textlabelsilabus"
+                                                    <label className="textlabelsilabus"
                                                         style={{ 
                                                         color:this.state.fullname!=''?'red':'#999'}}
                                                         // check state the input, whether it is active then apply the class for floating label
@@ -147,14 +147,14 @@ class Syllabus extends Component {
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="textinput" type="text" name="email" required=""  placeholder=""
+                                                    <input className="textinput" type="text" name="email" required=""  placeholder=""
                                                         onChange={(e)=>this.handleemailChange(e)} value={this.state.email}
                                                         value={this.state.inputemailValue}
                                                         onFocus={this.activateemailField}
                                                         onBlur={this.disableemailField}
                                                         onChange={this.updateInputemailValue}
                                                     />
-                                                    <label class="textlabelsilabus"
+                                                    <label className="textlabelsilabus"
                                                         style={{ 
                                                         color:this.state.email!=''?'red':'#999'}}
                                                         // check state the input, whether it is active then apply the class for floating label
@@ -165,7 +165,7 @@ class Syllabus extends Component {
                                                 <div className="text-center btn-block" 
                                                         onClick={this.kirimhandle}
                                                         style={{width:'', padding:'10px 0 15px 0', margin:'0'}}>
-                                                        <button type="button" class="btnsel btn btn-block btnsilabus">
+                                                        <button type="button" className="btnsel btn btn-block btnsilabus">
                                                             Kirim Silabus
                                                         </button>
                                                 </div>
@@ -177,8 +177,8 @@ class Syllabus extends Component {
                         </div>
 
                         {/* Responsive */}
-                        <div class="row mb-10 d-md-none d-lg-none d-xl-none" style={{height: '100%', marginTop:'35px'}}>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
+                        <div className="row mb-10 d-md-none d-lg-none d-xl-none" style={{height: '100%', marginTop:'35px'}}>
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
                                 <div className="text-center" style={{padding:'90px 0 0 0', backgroundColor:'#FFF'}}>
                                     <h1 className="tertarik">
                                         Tertarik dengan pembelajaran kami? 
@@ -188,12 +188,12 @@ class Syllabus extends Component {
                                     </p>
                                 </div>
                                 <div className="d-flex justify-content-center">
-                                    <div class="daftar">
-                                        <div class="col-md-12">
-                                            <div class="persegislbs" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
+                                    <div className="daftar">
+                                        <div className="col-md-12">
+                                            <div className="persegislbs" style={{boxShadow:'0 0 20px 1px rgba (0,0,0,0.2)'}}>
                                                 <form>
                                                     <div>
-                                                        <input class="textinput"type="text" name="fullname" required="" placeholder="" pattern="[A-Za-z}"
+                                                        <input className="textinput"type="text" name="fullname" required="" placeholder="" pattern="[A-Za-z}"
                                                             onChange={this.handleChange} value={this.state.fullname} 
                                                             onChange={(f)=>this.handleFullnameChange(f)} value={this.state.fullname}
                                                             value={this.state.inpufullnametValue}
@@ -201,7 +201,7 @@ class Syllabus extends Component {
                                                             onBlur={this.disablefullnameField}
                                                             onChange={this.updateInputfullnameValue}
                                                         />
-                                                        <label class="textlabelsilabus"
+                                                        <label className="textlabelsilabus"
                                                             style={{
                                                             color:this.state.fullname!=''?'red':'#999'}}
                                                             className={this.state.fieldActive ? "field-active" : ""}
@@ -209,7 +209,7 @@ class Syllabus extends Component {
                                                         </label>
                                                     </div>
                                                     <div>
-                                                        <input class="textinput" type="text" name="email" required=""  placeholder="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
+                                                        <input className="textinput" type="text" name="email" required=""  placeholder="" pattern="[^@]+@[^@]+.[a-zA-z]{2,6}"
                                                             onChange={this.handleChange} value={this.state.email}                                                     
                                                             onChange={(e)=>this.handleEmailChange(e)} value={this.state.email}
                                                             value={this.state.inputemailValue}
@@ -217,7 +217,7 @@ class Syllabus extends Component {
                                                             onBlur={this.disableemailField}
                                                             onChange={this.updateInputemailValue}
                                                         />
-                                                        <label class="textlabelsilabus"
+                                                        <label className="textlabelsilabus"
                                                             style={{
                                                             color:this.state.email!=''?'red':'#999'}}
                                                             className={this.state.fieldActive ? "field-active" : ""}
@@ -228,7 +228,7 @@ class Syllabus extends Component {
                                                         onClick={this.kirimhandle}
                                                         style={{width:'', padding:'10px 0 15px 0', margin:'0'}}>
                                                         <button 
-                                                            type="button" class="btnsel btn btn-block btnsilabus">
+                                                            type="button" className="btnsel btn btn-block btnsilabus">
                                                             Kirim Silabus
                                                         </button>
                                                     </div>
