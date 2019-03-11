@@ -7,7 +7,7 @@ import NewsReducer from "./newsReducer";
 
 const reducers = combineReducers({
     auth: authReducer,
-    chara: NewsReducer
+    news: NewsReducer
 });
 
 export default reducers;
