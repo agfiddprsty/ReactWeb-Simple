@@ -4,8 +4,7 @@ import './css/VideoPlayer.css'
 import './css/DetailVideo.css'
 import Iframeresponsive from 'react-responsive-embed'
 import Axios from 'axios';
-import { Card, CardImg, CardDeck,
-    CardBody, Progress } from 'reactstrap';   
+import { Card,CardDeck,Progress } from 'reactstrap';   
 import './css/ListVideo.css';
 import './css/VideoPlayer.css'
 import lvl from './img/Level.png'
@@ -90,7 +89,7 @@ class DetailVideo extends Component {
                                             <div  >
                                                 <div class="row" id="post-review-box" >
                                                     <div className="img-cmt-gd img-cmt-cl">
-                                                            <img  class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
+                                                            <img  class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" alt= "" style={{borderRadius:"50px"}}/>
                                                     </div>
                                                     <div class="col-md-auto col-s-9 dv-input-cmt-gd dv-input-cmt-cl">
                                                         <input onClick={this.showreply} className="input-cmt-gd input-cmt-cl" placeholder="Write A Comment"></input>
@@ -129,7 +128,7 @@ class DetailVideo extends Component {
                                                                             <i className="btn fa fa-thumbs-down fa-flip-horizontal" style={{marginTop:"-6px",marginLeft:"-25px"}}></i>
                                                                         </div>
                                                                         <div style={{marginLeft:"1px"}}>
-                                                                            <a onClick={this.showreply} className="btn" style={{marginTop:"-6px",marginLeft:"-25px"}}>Reply</a>
+                                                                            <span onClick={this.showreply} className="btn" style={{marginTop:"-6px",marginLeft:"-25px"}}>Reply</span>
 
                                                                         </div>
                                                                     </div>
@@ -176,7 +175,7 @@ class DetailVideo extends Component {
                                                                             <i className="btn fa fa-thumbs-down fa-flip-horizontal" style={{marginTop:"-6px",marginLeft:"-25px"}}></i>
                                                                         </div>
                                                                         <div style={{marginLeft:"1px"}}>
-                                                                            <a onClick={this.showreply} className="btn" style={{marginTop:"-6px",marginLeft:"-25px"}}>Reply</a>
+                                                                            <span onClick={this.showreply} className="btn" style={{marginTop:"-6px",marginLeft:"-25px"}}>Reply</span>
 
                                                                         </div>
                                                                     </div>
@@ -243,7 +242,7 @@ class DetailVideo extends Component {
                                                                                     <div className="col-md-5  dv-tittle-gd">
                                                                                         <h6 className="tittledown">{item.title}</h6>
                                                                                         {/* <span className="tittledown">{item.title}</span> */}
-                                                                                        <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
+                                                                                        <span><i className="far fa-clock i-clock-gd"></i> <span className="a-clock-gd">04.32</span></span>
                                                                                     </div>
                                                                                 </div>
                                                                             </a>
@@ -263,7 +262,7 @@ class DetailVideo extends Component {
                                                                                 </div>
                                                                                 <div className="col-md-5 dv-tittle-gd">
                                                                                     <h6 className="tittledown">{item.title}</h6>
-                                                                                    <a className="a-clock-gd">Level <img src={lvl} style={{width:"13px"}}></img></a>
+                                                                                    <span className="a-clock-gd">Level <img src={lvl} alt="" style={{width:"13px"}}></img></span>
                                                                                 </div>
                                                                             </div>
                                                                         </a>
@@ -274,7 +273,7 @@ class DetailVideo extends Component {
                                                             return(
                                                                 <CardDeck>
                                                                     <Card className="border-0">
-                                                                        <a href="#" className="modul">
+                                                                        <a href="a" className="modul">
                                                                             <div className="row dv-row-gd">
                                                                                 <div className="col-md-auto">
                                                                                     <div className="d-flex justify-content-center dv-bg-gd" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("+item.thumbnail_url+")"}}>
@@ -283,7 +282,7 @@ class DetailVideo extends Component {
                                                                                 </div>
                                                                                 <div className="col-md-5 dv-tittle-gd">
                                                                                     <h6 className="tittledown">{item.title}</h6>
-                                                                                    <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
+                                                                                    <span><i className="far fa-clock i-clock-gd"></i> <span className="a-clock-gd">04.32</span></span>
                                                                                 </div>
                                                                             </div>
                                                                         </a>

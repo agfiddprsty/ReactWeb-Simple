@@ -1,12 +1,9 @@
 import React,{Component} from 'react';
 import HeaderDashboard from './HeaderPage';
-import ListVideoDown from './LIstVideoDown';
 import Quiz from './Quiz';
 import './css/QuizPlayer.css'
 import './css/DetailQuiz.css'
-import quizzimage from  './img/quiz-1400-800x500.jpg'
-import { Card, CardImg, CardDeck,
-    CardBody, Progress } from 'reactstrap';  
+import { Card,CardDeck } from 'reactstrap';  
     import lvl from './img/Level.png'
 import lock from './img/LockWhite.png'
 import ply from './img/ply.png'
@@ -70,7 +67,7 @@ class DetailQuiz extends Component{
                                                 <h5 className="h5-desk-gd">Deskripsi: </h5>
                                             </div>
                                             <div className="col-md-auto lvl-qz-ds-gd lvl-qz-ds-cl">
-                                                <a style={{color:"#22E2ED",fontWeight:"600", marginLeft:"10px"}}>Level <img alt="Level Image" style={{marginLeft:"5px"}} src={lvl}></img></a>
+                                                <span style={{color:"#22E2ED",fontWeight:"600", marginLeft:"10px"}}>Level <img alt="Level" style={{marginLeft:"5px"}} src={lvl}></img></span>
                                             </div>
                                         </div>
                                         <h6 className="col-12 col-s-9 h6-detail-gd">{this.state.deskripsi}</h6>
@@ -110,7 +107,7 @@ class DetailQuiz extends Component{
                                                                                     </div>
                                                                                     <div className="col-md-5 dv-tittle-gd">
                                                                                         <h6 className="tittledown">{item.title}</h6>
-                                                                                        <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
+                                                                                        <span><i className="far fa-clock i-clock-gd"></i> <span className="a-clock-gd">04.32</span></span>
                                                                                     </div>
                                                                                 </div>
                                                                             </a>
@@ -130,7 +127,7 @@ class DetailQuiz extends Component{
                                                                                 </div>
                                                                                 <div className="col-md-5 dv-tittle-gd">
                                                                                     <h6 className="tittledown">{item.title}</h6>
-                                                                                    <a className="a-clock-gd">Level <img src={lvl} style={{width:"13px"}}></img></a>
+                                                                                    <span className="a-clock-gd">Level <img src={lvl} alt="" style={{width:"13px"}}></img></span>
                                                                                 </div>
                                                                             </div>
                                                                         </a>
@@ -141,7 +138,7 @@ class DetailQuiz extends Component{
                                                             return(
                                                                 <CardDeck>
                                                                     <Card className="border-0">
-                                                                        <a href="#" className="modul">
+                                                                        <a href="a" className="modul">
                                                                             <div className="row dv-row-gd">
                                                                                 <div className="col-md-auto">
                                                                                     <div className="d-flex justify-content-center dv-bg-gd" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("+item.thumbnail_url+")"}}>
@@ -150,7 +147,7 @@ class DetailQuiz extends Component{
                                                                                 </div>
                                                                                 <div className="col-md-5 dv-tittle-gd">
                                                                                     <h6 className="tittledown">{item.title}</h6>
-                                                                                    <a><i className="far fa-clock i-clock-gd"></i> <a className="a-clock-gd">04.32</a></a>
+                                                                                    <span><i className="far fa-clock i-clock-gd"></i> <span className="a-clock-gd">04.32</span></span>
                                                                                 </div>
                                                                             </div>
                                                                         </a>
