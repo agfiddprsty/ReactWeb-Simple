@@ -26,6 +26,7 @@ class DetailQuiz extends Component{
             ListVideo:[],
             title:"",
             fileurl:"",
+            deskripsi:"",
         }
     }
     componentDidMount(){
@@ -36,6 +37,20 @@ class DetailQuiz extends Component{
         }).then(ress=>{
             this.setState({ListVideo:ress.data.data})
             console.log(this.state.ListVideo);
+        })
+        var uid = window.location.href;
+        var id = uid.replace('http://localhost:3000/quiz/','');
+        Axios.get("http://localhost:3333/lecture/"+id,{
+            'headers':{
+                'Authorization':'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU1MjAxMzk3NX0.EWlD_LAWdCdMbQxh9UFbKlCMIUMxqijtFSMqLwDd2Y4'
+            }
+        }).then(res=>{
+            console.log(res.data)
+            this.setState({
+                title:res.data.title,
+                fileurl:res.data.file_url,
+                deskripsi:res.data.text
+            })
         })
     }
     render(){
@@ -48,7 +63,7 @@ class DetailQuiz extends Component{
                             <div class="col-md-auto">
                                 <h3 className="h3-gd">Kuis Mingguan #1</h3>
                                 <div className="col-12 col-s-9 qp-dv-out-gd">
-                                    <img src={quizzimage} className="img-quiz-gd img-quiz-cl" alt="quizimage" ></img>
+                                    <img src={this.state.fileurl} className="img-quiz-gd img-quiz-cl" alt="quizimage" ></img>
                                     <div className="col-12 col-s-9 dv-gd">
                                         <div className="row" style={{marginTop:"-23px"}}>
                                             <div className="col-md-auto"> 
@@ -58,7 +73,7 @@ class DetailQuiz extends Component{
                                                 <a style={{color:"#22E2ED",fontWeight:"600", marginLeft:"10px"}}>Level <img alt="Level Image" style={{marginLeft:"5px"}} src={lvl}></img></a>
                                             </div>
                                         </div>
-                                        <h6 className="col-12 col-s-9 h6-detail-gd">Lorem Ipsum is simply dummy text of the printing and typesetting<br/> industry. Lorem Ipsum has been the <br/> industry's standard dummy text ever since the 1500s,</h6>
+                                        <h6 className="col-12 col-s-9 h6-detail-gd">{this.state.deskripsi}</h6>
                                         <h5 className="h5-pet-gd">Petunjuk: </h5>
                                         <div className="qp-dv-pg qp-dv-cl">
                                             <br/>
