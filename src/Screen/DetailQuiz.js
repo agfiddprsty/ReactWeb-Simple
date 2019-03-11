@@ -107,7 +107,7 @@ class DetailQuiz extends Component{
                                                                                     </div>
                                                                                     <div className="col-md-5 dv-tittle-gd">
                                                                                         <h6 className="tittledown">{item.title}</h6>
-                                                                                        <span><i className="far fa-clock i-clock-gd"></i> <ul className="a-clock-gd">04.32</ul></span>
+                                                                                        <span><i className="far fa-clock i-clock-gd"></i> <span className="a-clock-gd">04.32</span></span>
                                                                                     </div>
                                                                                 </div>
                                                                             </a>
@@ -147,7 +147,7 @@ class DetailQuiz extends Component{
                                                                                 </div>
                                                                                 <div className="col-md-5 dv-tittle-gd">
                                                                                     <h6 className="tittledown">{item.title}</h6>
-                                                                                    <span><i className="far fa-clock i-clock-gd"></i> <ul className="a-clock-gd">04.32</ul></span>
+                                                                                    <span><i className="far fa-clock i-clock-gd"></i> <span className="a-clock-gd">04.32</span></span>
                                                                                 </div>
                                                                             </div>
                                                                         </a>
