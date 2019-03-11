@@ -11,7 +11,7 @@ class Agreement extends Component {
           </div>
           <body style={{backgroundColor:'#FFF'}}>
             <div className="tengahagre" style={{backgroundColor:'#FFF'}}>
-              <div class="agreement"> 
+              <div className="agreement"> 
                 <div className="persetujuan">
                   <h1 className="text-center agremnt">
                       Persetujuan</h1>
@@ -23,7 +23,7 @@ class Agreement extends Component {
 
                 <div className="d-flex justify-content-end" style={{paddingTop: '50px', marginRight: '25px'}}>
                   <a href="/silabusnew" ><span className="btn btn-outline-danger tolak">Tolak</span></a>
-                  <a href="/payment"><span class="btn btn-danger setuju">Setuju</span></a>  
+                  <a href="/payment"><span className="btn btn-danger setuju">Setuju</span></a>  
                 </div>
               </div>
             </div>
