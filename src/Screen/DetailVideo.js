@@ -81,20 +81,20 @@ class DetailVideo extends Component {
                                         <h6 className="col-12 col-s-9 detail-deskripsi-gd">{this.state.deskripsi}</h6>
                                     </div> 
                                     <div style={{width:"800px"}}className="col-12 col-s-9">
-                                        <hr class="mt-2 mb-5 hr1-vp-gd hr1-vp-cl"></hr>
+                                        <hr className="mt-2 mb-5 hr1-vp-gd hr1-vp-cl"></hr>
                                         <div style={{marginTop:"-30px"}} >
                                             <h5 className="disscuss-vd-gd">
                                                 Diskusi
                                             </h5>
                                             <div  >
-                                                <div class="row" id="post-review-box" >
+                                                <div className="row" id="post-review-box" >
                                                     <div className="img-cmt-gd img-cmt-cl">
                                                             <img  class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" alt= "" style={{borderRadius:"50px"}}/>
                                                     </div>
-                                                    <div class="col-md-auto col-s-9 dv-input-cmt-gd dv-input-cmt-cl">
+                                                    <div className="col-md-auto col-s-9 dv-input-cmt-gd dv-input-cmt-cl">
                                                         <input onClick={this.showreply} className="input-cmt-gd input-cmt-cl" placeholder="Write A Comment"></input>
                                                         <div id="btn" style={{display: this.state.show ? 'block' : 'none'}}>
-                                                            <button class="btn btn-outline-primary submit-cmt-gd submit-cmt-cl" > Submit</button>
+                                                            <button className="btn btn-outline-primary submit-cmt-gd submit-cmt-cl" > Submit</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -103,21 +103,21 @@ class DetailVideo extends Component {
                                                 // if else .map
                                                 if(item.reply!==""){
                                                 return(
-                                                    <div class="row" style={{marginTop:"30px"}}> 
+                                                    <div className="row" style={{marginTop:"30px"}}> 
                                                         <div className="img-cmt-gd img-cmt-cl">
-                                                            <div class="thumbnail">
-                                                                <img alt="profileimage" class="img-responsive user-photo" src={item.photo} style={{borderRadius:"50px"}}/>
+                                                            <div className="thumbnail">
+                                                                <img alt="profileimage" className="img-responsive user-photo" src={item.photo} style={{borderRadius:"50px"}}/>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-10">
-                                                            <div class="panel panel-default">
-                                                                <div class="panel-heading">
-                                                                    <strong>{item.username}</strong> <span class="text-muted">{item.commented}</span><br/>
+                                                        <div className="col-sm-10">
+                                                            <div className="panel panel-default">
+                                                                <div className="panel-heading">
+                                                                    <strong>{item.username}</strong> <span className="text-muted">{item.commented}</span><br/>
                                                                     
-                                                                    <span class="text-muted">{"Reply To " + item.reply}</span>
+                                                                    <span className="text-muted">{"Reply To " + item.reply}</span>
                                                                 </div>
-                                                                <div class="panel-body sh-cmt-gd sh-cmt-cl">
-                                                                    <div class="row" >
+                                                                <div className="panel-body sh-cmt-gd sh-cmt-cl">
+                                                                    <div className="row" >
                                                                     </div>
                                                                     <label >{item.comment}</label>
                                                                     <div className="row">
@@ -135,13 +135,13 @@ class DetailVideo extends Component {
                                                                     {/* true false ? */}
                                                                     <div id="reply" style={{display: this.state.show ? 'block' : 'none'}}>
                                                                     {/* end true false ? */}
-                                                                        <div class="row" id="post-review-box" style={{marginTop:"30px"}} >
+                                                                        <div className="row" id="post-review-box" style={{marginTop:"30px"}} >
                                                                             <div className="img-cmt-gd img-cmt-cl">
-                                                                                    <img alt="profileimage" class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
+                                                                                    <img alt="profileimage" className="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
                                                                             </div>
-                                                                            <div class="col-md-auto col-s-9 dv-input-cmt-gd dv-input-cmt-cl">
+                                                                            <div className="col-md-auto col-s-9 dv-input-cmt-gd dv-input-cmt-cl">
                                                                                 <input onClick={this.showreply} className="input-rpl-qz-gd input-rpl-qz-cl" placeholder="Write A Comment"></input>
-                                                                                <button class="btn btn-outline-primary submit-rpl-qz-gd submit-rpl-qz-cl" > Submit</button>
+                                                                                <button className="btn btn-outline-primary submit-rpl-qz-gd submit-rpl-qz-cl" > Submit</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>

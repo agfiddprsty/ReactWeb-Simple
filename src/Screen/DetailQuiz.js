@@ -82,7 +82,7 @@ class DetailQuiz extends Component{
                                     </div>     
                                 </div>
                             </div>
-                            <div class="col-md-3" >
+                            <div className="col-md-3" >
                                 <div className="dv-md3-gd">
                                     <br/>
                                     <h5 className="h5-gd h5-cl">Tonton Selanjutnya </h5>
@@ -92,7 +92,7 @@ class DetailQuiz extends Component{
                                     <div className="dv-list-out-gd">
                                         <div className="col-md">
                                             <div className="scrollbar scrollbar-primary scrollbar-cl">
-                                                <div class="force-overflow">
+                                                <div className="force-overflow">
                                                     {this.state.ListVideo.map((item,key)=>{
                                                         if(item.type==="video"){
                                                             return(

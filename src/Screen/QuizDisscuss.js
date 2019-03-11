@@ -30,33 +30,33 @@ class QuizDisscuss extends Component{
                 </h5>
                 <div className="sh-qz-cmt-gd">
                     <div>
-                        <div class="row" id="post-review-box" >
+                        <div className="row" id="post-review-box" >
                             <div className="img-cmt-gd img-cmt-cl">
                                     <img alt="profileimage"  class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
                             </div>
-                            <div class="col-md-auto col-s-9 dv-input-cmt-qz-gd dv-input-cmt-qz-cl">
+                            <div className="col-md-auto col-s-9 dv-input-cmt-qz-gd dv-input-cmt-qz-cl">
                                 <input onClick={this.showreply} className="input-cmt-qz-gd input-cmt-qz-cl" placeholder="Write A Comment"></input>
                                 <div id="btn" style={{display: this.state.show ? 'block' : 'none'}}>
-                                    <button class="btn btn-outline-primary submit-cmt-qz-gd submit-cmt-qz-cl" > Submit</button>
+                                    <button className="btn btn-outline-primary submit-cmt-qz-gd submit-cmt-qz-cl" > Submit</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     {this.state.comment.map((item,key)=>{
                         return(
-                            <div class="row" style={{marginTop:"30px"}}> 
+                            <div className="row" style={{marginTop:"30px"}}> 
                                 <div className="img-cmt-gd img-cmt-cl">
-                                    <div class="thumbnail">
-                                        <img alt="profileimage" class="img-responsive user-photo" src={item.photo} style={{borderRadius:"50px"}}/>
+                                    <div className="thumbnail">
+                                        <img alt="profileimage" className="img-responsive user-photo" src={item.photo} style={{borderRadius:"50px"}}/>
                                     </div>
                                 </div>
-                                <div class="col-sm-10">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <strong>{item.username}</strong> <span class="text-muted">{item.commented}</span>
+                                <div className="col-sm-10">
+                                    <div className="panel panel-default">
+                                        <div className="panel-heading">
+                                            <strong>{item.username}</strong> <span className="text-muted">{item.commented}</span>
                                         </div>
-                                        <div class="panel-body sh-cmt-gd sh-cmt-cl">
-                                            <div class="row" >
+                                        <div className="panel-body sh-cmt-gd sh-cmt-cl">
+                                            <div className="row" >
                                             </div>
                                             <label >{item.comment}</label>
                                             <div className="row">
@@ -74,13 +74,13 @@ class QuizDisscuss extends Component{
                                             {/* true false ? */}
                                             <div id="reply" style={{display: this.state.show ? 'block' : 'none'}}>
                                             {/* end true false ? */}
-                                                <div class="row" id="post-review-box" style={{marginTop:"30px"}} >
+                                                <div className="row" id="post-review-box" style={{marginTop:"30px"}} >
                                                     <div className="img-cmt-gd img-cmt-cl">
-                                                            <img alt="profileimage" class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
+                                                            <img alt="profileimage" className="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" style={{borderRadius:"50px"}}/>
                                                     </div>
-                                                    <div class="col-md-auto col-s-9 dv-input-cmt-gd dv-input-cmt-cl">
+                                                    <div className="col-md-auto col-s-9 dv-input-cmt-gd dv-input-cmt-cl">
                                                         <input onClick={this.showreply} className="input-rpl-qz-gd input-rpl-qz-cl" placeholder="Write A Comment"></input>
-                                                        <button class="btn btn-outline-primary submit-rpl-qz-gd submit-rpl-qz-cl" > Submit</button>
+                                                        <button className="btn btn-outline-primary submit-rpl-qz-gd submit-rpl-qz-cl" > Submit</button>
                                                     </div>
                                                     <br/>
                                                 </div>
