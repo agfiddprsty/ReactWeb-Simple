@@ -14,7 +14,6 @@ import './Screen/css/index.css';
 import App from './Screen/App';
 import Home from './Screen/Home';
 import * as serviceWorker from './serviceWorker';
-import ProfileRaport from './Screen/ProfileRaport';
 import Login from './Screen/Login';
 import Register from './Screen/Register';
 import Agreement from './Screen/Agreement';
