@@ -7,6 +7,8 @@ import link from './img/link.png';
 import projects from './img/projects.png';
 import DropboxChooser from 'react-dropbox-chooser';
 import {RadioGroup,Radio} from 'react-radio-group';
+import {store} from '../store';
+import axios from 'axios';
 import './css/Register.css';
 
 // DropBox Key for Upload
@@ -51,6 +53,7 @@ class ProfileFilled extends Component {
             descproject: '',
             image:null,
             files: '',
+            skills: [],
             school : [ 
                 {id:"1", 
                 sekolah:"SMK Uhuy Lah", 
@@ -86,6 +89,13 @@ class ProfileFilled extends Component {
                 projectdesc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet."}
             ]
         }
+    }
+    componentDidMount(){
+        axios.get('http://localhost:3333/skills', { 'headers': { 'Authorization' : 'Bearer '+ store.getState().auth.token}} )
+        .then(res=>{
+            this.setState({skills:res.data.data})
+            console.log(this.state.skills)
+        })
     }
     setGender(event) {
         console.log(event.target.value);
@@ -985,22 +995,18 @@ class ProfileFilled extends Component {
                                                         </div>
                                                     </form>
                                                 </div>  
-                                                <div className="text-left">
-                                                    <div className="dftrskl">
+                                                <div className="lskl text-left">
+                                                    {this.state.skills && this.state.skills.map((skills, key) =>
+                                                    <div className="dftrskla" key={key}>
                                                         <span>
-                                                            User Interface Design
+                                                            {skills.name}
                                                         </span>
-                                                    </div>
-                                                    <div className="dftrskla">
-                                                        <span>
-                                                            Graphic Design
-                                                        </span>
-                                                    </div>
-                                                    <div className="dftrskla">
+                                                    </div> )}
+                                                    {/* <div className="dftrskla">
                                                         <span>
                                                             User Experience Design
                                                         </span>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                             </div>
                                             <br/>
