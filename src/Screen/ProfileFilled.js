@@ -806,7 +806,7 @@ class ProfileFilled extends Component {
                                                                 </p>
                                                             </div>
                                                         </div>
-                                                        <div className="row">
+                                                        <div className="row" style={{marginTop:'-10px'}}>
                                                             <div className="col-sm-3 col-md-1">
                                                                 <p className="until">
                                                                     To
@@ -814,13 +814,15 @@ class ProfileFilled extends Component {
                                                                 <i className="fa fa-long-arrow-right arrowright"></i>
                                                             </div>
                                                         </div>
-                                                        <div className="row">
-                                                            <div className="col-sm-3 col-md-2">
+                                                        <div className="row" style={{marginLeft:'20px'}}>
+                                                            <div className="col-sm-3 col-md-2"
+                                                            style={{marginTop:'-20px'}}>
                                                                 <p className="fromto">
                                                                     Month
                                                                 </p>
                                                             </div>
-                                                            <div className="col-sm-3 col-md-2">
+                                                            <div className="col-sm-3 col-md-2"
+                                                            style={{marginTop:'-20px'}}>
                                                                 <p className="fromto">
                                                                     Years
                                                                 </p>
@@ -1094,13 +1096,15 @@ class ProfileFilled extends Component {
                                                                     <i className="fa fa-long-arrow-right arrowright"></i>
                                                                 </div>
                                                             </div>
-                                                            <div className="row mylf" style={{marginTop:'-10px'}}>
-                                                                <div className="col-sm-3 col-md-2 ">
-                                                                    <p className="fromto" style={{marginTop:'50px'}}>
+                                                            <div className="row" style={{marginLeft:'20px'}}>
+                                                                <div className="col-sm-3 col-md-2"
+                                                                style={{marginTop:'-30px'}}>
+                                                                    <p className="fromto">
                                                                         Month
                                                                     </p>
                                                                 </div>
-                                                                <div className="col-sm-3 col-md-2">
+                                                                <div className="col-sm-3 col-md-2"
+                                                                style={{marginTop:'-30px'}}>
                                                                     <p className="fromto">
                                                                         Years
                                                                     </p>
@@ -1122,7 +1126,7 @@ class ProfileFilled extends Component {
                                                                 <span className="fa fa-sort-desc"
                                                                 style={{color:'darkgrey', position:'absolute', marginLeft:'202px', fontSize:'24px'}}></span>
 
-                                                                <select name="month" className="col-1 custom-select mb-3 optdate" style={{marginLeft: '55px', marginTop:'10px'}}>
+                                                                <select name="month" className="col-1 custom-select mb-3 optdate" style={{marginLeft: '55px', marginTop:'5px'}}>
                                                                     <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
                                                                     <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
                                                                     <option value="11">11</option><option value="12">12</option>
