@@ -22,6 +22,11 @@ class ProfileFilled extends Component {
         this.kerjahandle = this.kerjahandle.bind(this);
         this.projecthandle = this.projecthandle.bind(this);
         this.addSkills = this.addSkills.bind(this);
+        this.btnAdddesign = this.btnAdddesign.bind(this);
+        this.btnAddfront = this.btnAddfront.bind(this);
+        this.btnAddback = this.btnAddback.bind(this);
+        this.btnAddweb = this.btnAddweb.bind(this);
+        this.btnAddmobile = this.btnAddmobile.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleChecked = this.handleChecked.bind(this);
         this.moveLogin = this.moveLogin.bind(this);
@@ -343,6 +348,21 @@ class ProfileFilled extends Component {
                 console.log(resss)
             })
         }
+    }
+    btnAdddesign(value){
+        this.setState({addSkill: 'Design'})
+    }
+    btnAddfront(value){
+        this.setState({addSkill: 'Front End'})
+    }
+    btnAddweb(value){
+        this.setState({addSkill: 'Web Dev'})
+    }
+    btnAddback(value){
+        this.setState({addSkill: 'Back End'})
+    }
+    btnAddmobile(value){
+        this.setState({addSkill: 'Mobile Dev'})
     }
     moveLogin(){
         this.props.history.push("/");
@@ -984,24 +1004,24 @@ class ProfileFilled extends Component {
                                                             </div>
                                                                 <p className="textunder">Kamu bisa menambahkan 10 skills lagi</p> 
                                                                 <br/>
-                                                            <div className="text-left" style={{marginTop: '-20px'}}>
-                                                                <span className="btn btn-md design" style={{
+                                                                <div className="text-left" style={{marginTop: '-20px'}}>
+                                                                <span className="btn btn-md design" onClick={this.btnAdddesign} style={{
                                                                     borderRadius: '50px', fontSize:'16px', fontWeight: '950', margin: '0 5px 0 0', color: '#FFF',
                                                                     fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>
                                                                     <i className="fas fa-plus" style={{fontSize:'14px'}}> </i> Design</span>
-                                                                <span className="btn btn-md design" style={
+                                                                <span className="btn btn-md design"  onClick={this.btnAddfront} style={
                                                                     {borderRadius: '50px', fontSize:'16px', fontWeight: '950', margin: '0 5px 0 5px', color: '#FFF', 
                                                                     fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>
                                                                     <i className="fas fa-plus" style={{fontSize:'14px'}}> </i> Front End</span>
-                                                                <span className="btn btn-md design" style={{
+                                                                <span className="btn btn-md design" onClick={this.btnAddback} style={{
                                                                     borderRadius: '50px', fontSize:'16px', fontWeight: '950', margin: '0 5px 0 5px', color: '#FFF', 
                                                                     fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>
                                                                     <i className="fas fa-plus" style={{fontSize:'14px'}}> </i>  Back End</span>
-                                                                <span className="btn btn-md design" style={{
+                                                                <span className="btn btn-md design" onClick={this.btnAddweb} style={{
                                                                     borderRadius: '50px', fontSize:'16px', fontWeight: '950', margin: '0 0 0 5px', color: '#FFF',
                                                                     fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>
                                                                     <i className="fas fa-plus" style={{fontSize:'14px'}}> </i> Web Dev</span>
-                                                                <span className="btn btn-md design" style={{
+                                                                <span className="btn btn-md design" onClick={this.btnAddmobile} style={{
                                                                     borderRadius: '50px', fontSize:'16px', fontWeight: '950', margin: '0 5px 0 10px', color: '#FFF',
                                                                     fontFamily:'Montserrat', backgroundColor:'#ff003a'}}>
                                                                     <i className="fas fa-plus" style={{fontSize:'14px'}}> </i> Mobile Dev</span>
