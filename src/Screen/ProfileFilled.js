@@ -1002,11 +1002,6 @@ class ProfileFilled extends Component {
                                                             {skills.name}
                                                         </span>
                                                     </div> )}
-                                                    {/* <div className="dftrskla">
-                                                        <span>
-                                                            User Experience Design
-                                                        </span>
-                                                    </div> */}
                                                 </div>
                                             </div>
                                             <br/>
