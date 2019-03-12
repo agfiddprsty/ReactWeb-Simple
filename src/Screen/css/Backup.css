@@ -1,0 +1,599 @@
+body{
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #EDEDEE;
+  }
+  
+  a{
+    color: inherit;
+  }
+  
+  .list-group-flush{
+    color: #495057;
+  }
+  
+  .active{
+    background-color: #e9ecef !;
+  }
+  
+  main {
+    background-color: #EDEDEE;
+  }
+  
+  .navbar-brand{
+    margin-left: 15px;
+    color: #2196f3 !important;
+  }
+  
+  .sidebar-fixed {
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 270px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    z-index: 1050;
+    background-color: #fff;
+    padding: 1.5rem;
+    padding-top: 0;
+  }
+  
+  
+  .flexible-navbar {
+    transition: padding-left 0.5s;
+    padding-left: 270px;
+    background: #fff;
+  }
+  
+  #content{
+    margin-left: 270px;
+  }    
+  
+  
+  .sidebar-fixed .logo-wrapper img{
+    width: 100%;
+    padding: 2.5rem;
+  }
+  
+  .list-group-item {
+    display: block !important;
+    transition: background-color 0.3s;
+  }
+  
+  .list-group-item:hover {
+    color: #49505B;
+    text-decoration: none;
+    background-color: #f8f9fa
+  }
+  
+  .list-group-item:hover {
+    color: #49505B;
+    text-decoration: none;
+    background-color: #f8f9fa
+  }
+  
+  
+  .list-group .active {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+  }
+  /* 
+  .card-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+  } */
+  
+  .card-subtitle{
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .full {
+    height: 70vh;
+  }
+  
+  .bad-gateway-row {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .card .view.gradient-card-header {
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+  
+  .card h3, .card.card-cascade h4 {
+    margin-bottom: 0px;
+  }
+  
+  .cascading-admin-card .admin-up {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: -20px;
+  }
+  
+  .cascading-admin-card .admin-up .fa {
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.2), 0 2px 13px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .cascading-admin-card .admin-up .fa {
+    padding: 1.7rem;
+    font-size: 2rem;
+    color: #fff;
+    text-align: left;
+    margin-right: 1rem;
+    border-radius: 3px;
+  }
+  
+  .cascading-admin-card .admin-up .data {
+    float: right;
+    margin-top: 2rem;
+    text-align: right;
+  }
+  .admin-up .data p {
+    color: #999999;
+    font-size: 12px;
+  }
+  .classic-admin-card .card-body {
+    color: #fff;
+    margin-bottom: 0;
+    padding: 0.9rem;
+  }
+  .classic-admin-card .card-body p {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-bottom: 0;
+  }
+  .classic-admin-card .card-body h4 {
+    margin-top: 10px;
+  }
+  
+  .form-inline{
+    flex-flow: unset
+  }
+  
+  .breadcrumb{
+    margin: 0;
+  }
+  
+  .activeClass .list-group-item {
+    z-index: 5;
+    color: #fff;
+    border-color: #007bff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 5px !important;
+    background-color: #007bff !important;
+  }
+  
+  .page-footer{
+    margin-left: 270px;
+  }
+  
+  @media (max-width: 1199.98px) {
+    .sidebar-fixed {
+      display: none;
+    }
+    .flexible-content {
+      padding-left: 0;
+    }
+    .flexible-navbar {
+      padding-left: 10px;
+    }
+  
+    #content{
+      margin-left: 0px;
+    }
+  
+    .page-footer{
+      margin-left: 0px;
+    }
+  
+    .card.cascading-admin-card {
+      margin-top: 2.5rem;
+    } 
+  }
+  
+  @media (max-width: 576px) { 
+    .card.cascading-admin-card {
+      margin-top: 2.5rem;
+    }
+  
+    #breadcrumb{
+      flex-direction: column;
+    }
+  }
+  .all{
+    background-color: #f7f7f7;
+    margin: 0px 10% 0px 10%;
+
+}
+
+.headline {
+    border: 5px;
+    height: 30px;
+    color: #f2001d;
+    background-color: #f2001d;
+}
+
+.bodyraport {
+    margin: 70px 10px 20px 10px;
+}
+
+.headeraport {
+    transform: scale(0.90); 
+}
+
+.txtright {
+    margin-top: 30px;
+    margin-left: 50px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.dwcamp {
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 75px;
+    padding-top: 2%;
+    color: #f2001d;
+    line-break: strict;
+    word-break: normal;
+    transform: scale(0.90); 
+}
+
+.progresreport {
+    font-family: 'Lato', sans-serif;
+    padding-top: 40px;
+    font-size: 20px;
+    color: black;
+    word-spacing: 5px;
+    letter-spacing: 10px;
+}
+
+.bio {
+    margin-top: 100px;
+}
+
+.name {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    word-spacing: 2px;
+    font-size: 15px;
+}
+
+.number {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    padding-top: 10px;   
+    word-spacing: 2px;
+
+}
+
+.line {
+    background-color: #f2001d;
+    height: 3px;
+    margin-top: -10px;
+}
+
+.txtsys {
+    margin-top: 50px;
+}
+
+.grading {
+    color: #f2001d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.nilai {
+    color: black;
+}
+
+
+/* ====================
+  TABLE Section
+=======================*/
+
+
+.tablenilai {
+    margin-top: 100px;
+}
+
+table.table-bordered{
+    border:2px solid #f2001d;
+    margin-top:20px;
+}
+
+table.table-bordered > thead > tr > th{
+    border:2px solid #f2001d;
+    height: 50px;
+}
+
+table.table-bordered > tbody > tr > td{
+    border:2px solid #f2001d;
+    background-color: #ffe5e5;
+}
+
+.headtable {
+    color: #f2001d;
+    background-color: #f2001d;
+}
+
+.left {
+    width: 700px;
+}
+
+.nilaitable {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.bottomline {
+    border: 5px;
+    height: 30px;
+    margin-top: 100px;
+    color: #f2001d;
+    background-color: #f2001d;
+}
+
+
+
+/* ====================
+  RESPONSIVE PAGE       
+=======================*/
+
+
+
+@media only screen and (max-width: 1323px) {
+    .dwcamp {
+        font-size: 50px;
+        transform: scale(1.2); 
+        padding-left: 60px;
+    }
+
+    .progresreport{
+        transform: scale(1.1);
+        padding-left: 60px;
+        font-size: 15px;
+    }
+
+    .logo {
+        transform: scale(0.99); 
+    }
+}
+
+
+@media only screen and (max-width: 1033px) {
+    .dwcamp {
+        font-size: 45px;
+        transform: scale(1.2); 
+        padding-left: 50px;
+    }
+
+    .progresreport{
+        transform: scale(1.1);
+        padding-left: 50px;
+        font-size: 13px;
+    }
+
+    .logo {
+        transform: scale(0.99); 
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .dwcamp {
+        font-size: 40px;
+        transform: scale(1.3); 
+        margin-left: -50px;
+    }
+
+    .progresreport{
+        transform: scale(1.1);
+        margin-left: -50px;
+    }
+
+    .logo {
+        transform: scale(0.80); 
+    }
+}
+
+@media only screen and (max-width: 871px) {
+    .dwcamp {
+        font-size: 35px;
+        transform: scale(1.4); 
+        margin-left: -30px;
+    }
+
+    .progresreport{
+        transform: scale(1.2);
+        margin-left: -30px;
+    }
+
+    .logo {
+        transform: scale(0.80); 
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    .dwcamp {
+        font-size: 30;
+        transform: scale(1.4); 
+        margin-left: -50px;
+    }
+
+    .progresreport{
+        transform: scale(1.1);
+        margin-left: -50px;
+    }
+
+    .logo {
+        transform: scale(0.70); 
+    }
+}
+
+@media only screen and (max-width: 809px) {
+    .dwcamp {
+        font-size: 25px;
+        transform: scale(1.4); 
+    }
+
+    .progresreport{
+        transform: scale(0.9)
+    }
+
+    .logo {
+        transform: scale(0.70); 
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .dwcamp {
+        font-size: 25px;
+        transform: scale(1.4); 
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .progresreport{
+        font-size: 12px;
+        transform: scale(0.8);
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .logo {
+        transform: scale(0.80); 
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: table-cell;
+    }
+}
+
+@media only screen and (max-width: 656px) {
+    .dwcamp {
+        font-size: 25px;
+        transform: scale(1.4); 
+        margin-left: -90px;
+    }
+
+    .progresreport{
+        font-size: 12px;
+        transform: scale(0.8);
+        margin-left: -90px;
+    }
+
+    .logo {
+        transform: scale(0.60); 
+    }
+}
+
+
+@media only screen and (max-width: 595px) {
+    .dwcamp {
+        font-size: 20px;
+        transform: scale(1.4); 
+        margin-left: -90px;
+    }
+
+    .progresreport{
+        font-size: 11px;
+        transform: scale(0.8);
+        margin-left: -90px;
+    }
+
+    .logo {
+        transform: scale(0.60); 
+    }
+}
+
+
+@media only screen and (max-width: 583px) {
+    .dwcamp {
+        font-size: 19px;
+        transform: scale(1.4); 
+    }
+
+    .progresreport{
+        font-size: 10px;
+        transform: scale(0.8);
+    }
+
+    .logo {
+        transform: scale(0.60); 
+    }
+}
+
+
+@media only screen and (max-width: 573px) {
+    .dwcamp {
+        font-size: 25px;
+        transform: scale(1.4); 
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .progresreport{
+        font-size: 16px;
+        transform: scale(0.8);
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .logo {
+        position: relative;
+        transform: scale(0.80); 
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: table-cell;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .dwcamp {
+        font-size: 25px;
+        transform: scale(1); 
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .progresreport{
+        font-size: 16px;
+        transform: scale(0.8);
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .logo {
+        position: relative;
+        transform: scale(0.80); 
+        margin-left: 40%;
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: table-cell;
+    }
+}
+
+  
+  
+  
+  

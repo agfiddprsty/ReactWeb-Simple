@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import HeaderDashboard from './HeaderPage';
-import './css/VideoPlayer.css'
-import './css/DetailVideo.css'
-import Iframeresponsive from 'react-responsive-embed'
+import './css/VideoPlayer.css';
+import './css/DetailVideo.css';
+import './css/Backup.css';
+import Iframeresponsive from 'react-responsive-embed';
 import Axios from 'axios';
 import { Card,CardDeck,Progress } from 'reactstrap';   
 import './css/ListVideo.css';
-import './css/VideoPlayer.css'
-import lvl from './img/Level.png'
-import lock from './img/LockWhite.png'
-import ply from './img/ply.png'
-import './css/ProgressDetail.css'
+import './css/VideoPlayer.css';
+import lvl from './img/Level.png';
+import lock from './img/LockWhite.png';
+import ply from './img/ply.png';
+import './css/ProgressDetail.css';
 
 class DetailVideo extends Component {
     constructor(){
