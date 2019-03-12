@@ -13,7 +13,7 @@ class Payment extends Component {
                 <div>
                     <Header/>
                 </div>
-                <body>
+                <body style={{background:'#FFF'}}>
                     <div className="kontener d-flex flex-wrap align-content-center">
                         <section className="sqare">
                             <h2 className="butuh">Pembayaran pendaftaran dibutuhkan</h2>

@@ -15,7 +15,6 @@ import App from './Screen/App';
 import Home from './Screen/Home';
 import * as serviceWorker from './serviceWorker';
 import Menu from './Screen/Menu';
-import ListSilabus from './Screen/ListSilabus';
 import ProfileRaport from './Screen/ProfileRaport';
 import Login from './Screen/Login';
 import Register from './Screen/Register';
@@ -39,10 +38,7 @@ ReactDOM.render(
             <Router>
                 <div>
                     <Route exact path="/" component={Home} />
-                    <Route path="/admin" component={Menu} />
                     <Route path='/profile' component={ProfileFilled} />
-                    <Route path="/silabus/list" component={ListSilabus}/>
-                    <Route path="/profileraport" component={ProfileRaport}/>
                     <Route path="/login" component={Login}/>
                     <Route path="/register" component={Register}/>
                     <Route path="/agreement" component={Agreement}/>

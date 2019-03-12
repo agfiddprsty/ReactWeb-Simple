@@ -4,10 +4,7 @@ import './css/profile.css';
 import phone from './img/phone.png';
 import gps from './img/gps.png';
 import mail from './img/mail.png';
-import Header from './HeaderSilabus';
-import Footer from './Footer';
-import ModalProfile from './ModalProfile';
-import Raport from './raport';
+// import Header from './HeaderSilabus';
 import {withRouter,Link} from 'react-router-dom';
 
 class Profile extends Component {
@@ -15,10 +12,7 @@ class Profile extends Component {
         return (
             <div>
                 <div className="about">
-                    <div>
-                        <Header/>
-                    </div>
-
+                  
                 {/* <!-- About section start --> */}
                     <section class="about-section spad" id="about">
                         <div class="container kiela">
@@ -116,11 +110,6 @@ class Profile extends Component {
 
 
 
-                {/* <!-- Raport section start --> */}
-                    <div className="raport spad">
-                        <Raport />
-                    </div>
-                {/* <!-- Raport section start --> */}
 
 
                 {/* <!-- Portfolio section start --> */}
@@ -172,9 +161,6 @@ class Profile extends Component {
                     </section>
                 </div>
             <div>
-                <Footer/>
-            </div>
-            <div>
                 <div>
                     <div class="modal fade" id="myModal">
                         <div class="modal-dialog modal-lg">
@@ -186,12 +172,6 @@ class Profile extends Component {
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
 
-                            {/* <!-- Modal body --> */}
-                                <div class="modal-body">  
-                                    <div>
-                                        <ModalProfile />
-                                    </div>
-                                </div>
 
                         {/* <!-- Modal footer --> */}
                                 <div class="modal-footer">
