@@ -253,7 +253,7 @@ class DetailVideo extends Component {
                                                             )
                                                         }else if(item.type==="quiz"){
                                                             return(
-                                                                <CardDeck>
+                                                                <CardDeck style={{marginBottom:"8px"}}>
                                                                     <Card className="border-0">
                                                                         <a href={"/quiz/"+item.id} className="modul">
                                                                             <div className="row dv-row-gd">
@@ -272,7 +272,7 @@ class DetailVideo extends Component {
                                                             )
                                                         }else{
                                                             return(
-                                                                <CardDeck>
+                                                                <CardDeck style={{marginBottom:"8px"}}>
                                                                     <Card className="border-0">
                                                                         <a href="a" className="modul">
                                                                             <div className="row dv-row-gd">
