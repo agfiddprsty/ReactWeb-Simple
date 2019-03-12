@@ -419,7 +419,7 @@ class ProfileFilled extends Component {
                                                         </div>
                                                     </div>
                                                         <div className="row">
-                                                            <select name="date" className="col-1 select col-sm-2 optdate"
+                                                            <select name="date" className="col-1 custom-select col-sm-2 optdate"
                                                             style={{textAlign:'left'}}>
                                                                 <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
                                                                 <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
@@ -432,7 +432,7 @@ class ProfileFilled extends Component {
                                                             <span className="fa fa-sort-desc"
                                                             style={{color:'darkgrey', position:'absolute', marginLeft:'142px', fontSize:'24px'}}></span>
                                                             
-                                                            <select name="month" className="col-1 select col-sm-2 optdate"
+                                                            <select name="month" className="col-1 custom-select col-sm-2 optdate"
                                                             style={{textAlign:'left'}}>
                                                                 <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
                                                                 <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
@@ -441,7 +441,7 @@ class ProfileFilled extends Component {
                                                             <span className="fa fa-sort-desc"
                                                             style={{color:'darkgrey', position:'absolute', marginLeft:'380px', fontSize:'24px'}}></span>
 
-                                                            <select name="year" className="col-1 select col-sm-2 optdate"
+                                                            <select name="year" className="col-1 custom-select col-sm-2 optdate"
                                                             style={{textAlign:'left'}}>
                                                                 <option value="2005" selected>2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option>
                                                                 <option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option>
@@ -788,7 +788,7 @@ class ProfileFilled extends Component {
                                                             </div>
                                                         </div>
                                                         <div className="row drpdndt">
-                                                            <select name="month" className="col-1 select mb-3 optdate">
+                                                            <select name="month" className="col-1 custom-select mb-3 optdate">
                                                                 <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
                                                                 <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
                                                                 <option value="11">11</option><option value="12">12</option>
@@ -796,14 +796,14 @@ class ProfileFilled extends Component {
                                                             <span className="fa fa-sort-desc"
                                                             style={{color:'darkgrey', position:'absolute', marginLeft:'52px', fontSize:'24px'}}></span>
 
-                                                            <select name="year" className="col-1 select mb-3 optdate">
+                                                            <select name="year" className="col-1 custom-select mb-3 optdate">
                                                                 <option value="2000" selected>2000</option><option value="199">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option>
                                                                 <option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option>
                                                             </select>
                                                             <span className="fa fa-sort-desc"
                                                             style={{color:'darkgrey', position:'absolute', marginLeft:'202px', fontSize:'24px'}}></span>
 
-                                                            <select name="month" className="col-1 select mb-3 optdate" style={{marginLeft: '55px'}}>
+                                                            <select name="month" className="col-1 custom-select mb-3 optdate" style={{marginLeft: '55px'}}>
                                                                 <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
                                                                 <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
                                                                 <option value="11">11</option><option value="12">12</option>
@@ -811,7 +811,7 @@ class ProfileFilled extends Component {
                                                             <span className="fa fa-sort-desc"
                                                             style={{color:'darkgrey', position:'absolute', marginLeft:'412px', fontSize:'24px'}}></span>
 
-                                                            <select name="year" className="col-1 select mb-3 optdate">
+                                                            <select name="year" className="col-1 custom-select mb-3 optdate">
                                                                 <option value="2000" selected>2000</option><option value="199">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option>
                                                                 <option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option>
                                                             </select>
@@ -1055,9 +1055,9 @@ class ProfileFilled extends Component {
                                                                     <i className="fa fa-long-arrow-right arrowright"></i>
                                                                 </div>
                                                             </div>
-                                                            <div className="row mylf">
+                                                            <div className="row mylf" style={{marginTop:'-10px'}}>
                                                                 <div className="col-sm-3 col-md-2 ">
-                                                                    <p className="fromto">
+                                                                    <p className="fromto" style={{marginTop:'50px'}}>
                                                                         Month
                                                                     </p>
                                                                 </div>
@@ -1068,7 +1068,7 @@ class ProfileFilled extends Component {
                                                                 </div>
                                                             </div>
                                                             <div className="row drpdndt">
-                                                                <select name="month" className="col-1 select mb-3 optdate">
+                                                                <select name="month" className="col-1 custom-select mb-3 optdate">
                                                                     <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
                                                                     <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
                                                                     <option value="11">11</option><option value="12">12</option>
@@ -1076,14 +1076,14 @@ class ProfileFilled extends Component {
                                                                 <span className="fa fa-sort-desc"
                                                                 style={{color:'darkgrey', position:'absolute', marginLeft:'52px', fontSize:'24px'}}></span>
 
-                                                                <select name="year" className="col-1 select mb-3 optdate">
+                                                                <select name="year" className="col-1 custom-select mb-3 optdate">
                                                                     <option value="2000" selected>2000</option><option value="199">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option>
                                                                     <option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option>
                                                                 </select>
                                                                 <span className="fa fa-sort-desc"
                                                                 style={{color:'darkgrey', position:'absolute', marginLeft:'202px', fontSize:'24px'}}></span>
 
-                                                                <select name="month" className="col-1 select mb-3 optdate" style={{marginLeft: '55px'}}>
+                                                                <select name="month" className="col-1 custom-select mb-3 optdate" style={{marginLeft: '55px', marginTop:'10px'}}>
                                                                     <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
                                                                     <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
                                                                     <option value="11">11</option><option value="12">12</option>
@@ -1091,7 +1091,7 @@ class ProfileFilled extends Component {
                                                                 <span className="fa fa-sort-desc"
                                                                 style={{color:'darkgrey', position:'absolute', marginLeft:'412px', fontSize:'24px'}}></span>
 
-                                                                <select name="year" className="col-1 select mb-3 optdate">
+                                                                <select name="year" className="col-1 custom-select mb-3 optdate">
                                                                     <option value="2000" selected>2000</option><option value="199">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option>
                                                                     <option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option>
                                                                 </select>

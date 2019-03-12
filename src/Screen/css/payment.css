@@ -12,6 +12,7 @@
     padding-left: 50px;
     justify-content: center;
     box-shadow: 0 0 20px 1px rgba(136, 136, 136, 0.4);
+    border-radius: 4px;
     margin-top: 65px;
     align-items: center;
 }
