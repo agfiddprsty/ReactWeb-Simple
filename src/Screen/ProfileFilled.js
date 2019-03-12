@@ -21,6 +21,7 @@ class ProfileFilled extends Component {
         this.pendidikanhandle = this.pendidikanhandle.bind(this);
         this.kerjahandle = this.kerjahandle.bind(this);
         this.projecthandle = this.projecthandle.bind(this);
+        this.addSkills = this.addSkills.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleChecked = this.handleChecked.bind(this);
         this.moveLogin = this.moveLogin.bind(this);
@@ -53,6 +54,7 @@ class ProfileFilled extends Component {
             descproject: '',
             image:null,
             files: '',
+            addSkill: '',
             skills: [],
             school : [ 
                 {id:"1", 
@@ -324,7 +326,24 @@ class ProfileFilled extends Component {
             console.log(this.state.selectedValue);
         }
     }
-    
+    addSkills(){
+        //check all is ok
+        if (this.state.addSkill === "") {
+            alert('Silakan masukkan Skill anda')
+        }
+        else{
+            //init POST AXIOS
+            const name = this.state.addSkill;
+            const user_id = 1;
+            const body={
+                name,
+                user_id
+            }
+            axios.post('http://localhost:3333/skill', body, { 'headers': { 'Authorization' : 'Bearer '+ store.getState().auth.token}}).then(resss=>{
+                console.log(resss)
+            })
+        }
+    }
     moveLogin(){
         this.props.history.push("/");
     }
@@ -960,7 +979,7 @@ class ProfileFilled extends Component {
                                                             <div className="input-group input-group-lg text-center d-flex flex-wrap align-content-center divadskl">
                                                                 <span className="fa fa-search" style={{fontSize: '30px', color: '#ff003a', marginRight: '5px', padding: '20px', width:'7%'}}></span>
                                                                 <span>
-                                                                    <input className="input-group-prepend inputskil" type="text" name="skills" required="" placeholder="Skill (ex: Data Analysis)"/>
+                                                                    <input className="input-group-prepend inputskil" type="text" onChange={this.handleChange} value={this.state.addSkill} name="addSkill" required="" placeholder="Skill (ex: Data Analysis)"/>
                                                                 </span>
                                                             </div>
                                                                 <p className="textunder">Kamu bisa menambahkan 10 skills lagi</p> 
@@ -989,7 +1008,7 @@ class ProfileFilled extends Component {
                                                             </div>
                                                             <br/>
                                                             <div className="d-flex justify-content-end" style={{paddingTop:'-25px', marginRight:'-40px'}}>  
-                                                                <a href="#"><button className="btn btn-sm setuju" style={{
+                                                                <a href="#"><button className="btn btn-sm setuju" onClick={this.addSkills} style={{
                                                                     fontFamily:'helvetica, Arial, sans serif', borderRadius:'0', backgroundColor:'#ff003a', color: '#FFF', marginRight:'-40px'}}>Tambah</button></a>  
                                                             </div>  
                                                         </div>
