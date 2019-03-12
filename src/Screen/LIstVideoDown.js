@@ -38,7 +38,7 @@ class ListVideoDown extends Component{
                 {/* <h5>Berikutnya</h5> */}
                 <div className="col-md">
                     <div className="scrollbar scrollbar-primary scrollbar-cl">
-                        <div class="force-overflow">
+                        <div className="force-overflow">
                             {this.state.listvideo.map((item,key)=>{
                                 if(item.type==="video"){
                                     return(
@@ -48,7 +48,7 @@ class ListVideoDown extends Component{
                                                         <div className="row dv-row-gd">
                                                             <div className="col-md-auto">
                                                                 <div className="d-flex justify-content-center dv-bg-gd" style={{backgroundImage:`url(${item.image})`}}>
-                                                                    <img class="img-fluid img-thumbnail play-img-gd" src={ply} alt=""></img>
+                                                                    <img className="img-fluid img-thumbnail play-img-gd" src={ply} alt=""></img>
                                                                 </div>
                                                             </div>
                                                             <div className="col-md-auto dv-tittle-gd">
@@ -88,7 +88,7 @@ class ListVideoDown extends Component{
                                                     <div className="row dv-row-gd">
                                                         <div className="col-md-auto">
                                                             <div className="d-flex justify-content-center dv-bg-gd" style={{background:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("+item.image+")"}}>
-                                                                <img class="img-fluid img-thumbnail play-img-gd" src={lock} alt=""></img>
+                                                                <img className="img-fluid img-thumbnail play-img-gd" src={lock} alt=""></img>
                                                             </div>
                                                         </div>
                                                         <div className="col-md-auto dv-tittle-gd">

@@ -16,6 +16,11 @@ class ListVideo extends Component {
                 {id:"6",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"1. Perkenalan",type:"video"},
                 {id:"7",image:"https://source.unsplash.com/F2WX4BTIkpQ/650x240",tittle:"2. Komponen",type:"video"},
                 {id:"8",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"3. Instalation",type:"video"},
+                {id:"1",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"3. Instalation",type:"lock"},
+                {id:"1",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"3. Instalation",type:"lock"},
+                {id:"1",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"3. Instalation",type:"lock"},
+                {id:"1",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"3. Instalation",type:"lock"},
+                
 
             ],  
         }
@@ -76,16 +81,19 @@ class ListVideo extends Component {
                         <br/>
                     </div> 
 
-                    {/* LOCKED CONTENT */}
+                    {/* LOCKED CONTENT START */}
                     <div className="row" style={{height:"1px",width:"3440px"}}>
                     <div style={{backgroundcolor:"#b2b2b2",height:"442px",width:"1470px"}} className="col-sm-4"><div className="bg-overlay">
                     <img src={lock} alt="lock" style={{height:"130px",marginLeft:"508px",marginTop:"155px",zIndex:"1",position:"absolute"}}></img>
                     <label className="label-locked" style={{fontWeight:"500",fontSize:"23.5px",fontFamily:"Nunito",marginLeft:"287px",marginTop:"315px",color:"red",zIndex:"1",position:"absolute"}}> 
                         Konten Terkunci, selesaikan semua kuis di minggu 1
-                    </label>    
+                    </label>
+                    {/* LOCKED CONTENT END */}
+
+                            
                     </div></div>
                     </div>
-                    <div className="row text-center text-lg-left">
+                <div className="row text-center text-lg-left">
                     <div className="col-lg-3 col-md-4 col-6">
                     
                             <div className="d-flex justify-content-center lockedctn">
@@ -185,12 +193,10 @@ class ListVideo extends Component {
                                     style={{fontFamily:"Nunito"}}>4. Character</span>   
                                 <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
                              </span>
-                    </div>     
+                        </div>     
                     </div>
-                    </div>
-                            <br/>
-                            <br/>
-                    </div>
+                </div>
+            </div>
             
         );
     }
