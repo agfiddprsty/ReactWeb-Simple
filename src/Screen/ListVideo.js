@@ -25,7 +25,7 @@ class ListVideo extends Component {
     }
     render() {
         return (
-                <div style={{overflow:"hidden",backgroundColor:"#fff"}} >
+            <div style={{overflow:"hidden",backgroundColor:"#fff"}} >
                 <div className="container">
                     <div>
                         <br/>
@@ -63,139 +63,50 @@ class ListVideo extends Component {
                                             <span className="span-time" style={{fontSize:"13px",marginLeft:"65px",paddingBottom:"1px",color:"#00DFEB"}}>Level <img src={lvl} alt="level" style={{width:"13px"}}></img>  </span>
                                         </a>
                                     </div>
-                <div>
+                                )
+                            }else{
+                                return(
+                                    <div>
+                                        <div>
+                                            <br/>
+                                            <hr className="mt-2 mb-5"></hr>
+                                            <h2 className="h2week2" style={{fontFamily:"Nunito",fontWeight:"625",marginTop:"-5px"}}>Minggu 2</h2>
+                                            <br/>
+                                        </div> 
+                                        {/* LOCKED CONTENT */}
+                                        <div className="row" style={{height:"1px",width:"3440px"}}>
+                                        <div style={{backgroundcolor:"#b2b2b2",height:"442px",width:"1470px"}} className="col-sm-4"><div className="bg-overlay">
+                                        <img src={lock} alt="lock" style={{height:"130px",marginLeft:"508px",marginTop:"155px",zIndex:"1",position:"absolute"}}></img>
+                                        <label className="label-locked" style={{fontWeight:"500",fontSize:"23.5px",fontFamily:"Nunito",marginLeft:"287px",marginTop:"315px",color:"red",zIndex:"1",position:"absolute"}}> 
+                                            Konten Terkunci, selesaikan semua kuis di minggu 1
+                                        </label>    
+                                        </div></div>
+                                        </div>
+                                        <div className="row text-center text-lg-left">
+                                            <div className="col-lg-3 col-md-4 col-6">
+                                            
+                                                    <div className="d-flex justify-content-center lockedctn">
+                                                        <span className="d-block mb-4 h-100">
+                                                                <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
+                                                            <br/>
+                                                        </span>
+                                                    </div>
+                                                    <span style={{paddingTop:"15px"}} className="d-block mb-4 h-100">
+                                                        <span className="span-title-video"
+                                                            style={{fontFamily:"Nunito"}}>1. Perkenalan</span>
+                                                        <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"96px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
+                                                    </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                        })}
+                    </div>
+                </div>
+                <br/>
+                <br/>
             </div>
-        
-                    <div>
-                        <br/>
-                    <hr className="mt-2 mb-5"></hr>
-                        <h2 className="h2week2" style={{fontFamily:"Nunito",fontWeight:"625",marginTop:"-5px"}}>Minggu 2</h2>
-                        <br/>
-                    </div> 
-
-                    {/* LOCKED CONTENT */}
-                                <div className="row" style={{height:"1px",width:"3440px"}}>
-                            <div style={{backgroundcolor:"#b2b2b2",height:"442px",width:"1470px"}} className="col-sm-4"><div className="bg-overlay">
-                    <img src={lock} alt="lock" style={{height:"130px",marginLeft:"508px",marginTop:"155px",zIndex:"1",position:"absolute"}}></img>
-                    <label className="label-locked" style={{fontWeight:"500",fontSize:"23.5px",fontFamily:"Nunito",marginLeft:"287px",marginTop:"315px",color:"red",zIndex:"1",position:"absolute"}}> 
-                        Konten Terkunci, selesaikan semua kuis di minggu 1
-                    </label>    
-                                </div>
-                            </div>
-                                 </div>
-                        )
-                        }else{
-                            return(
-                                    <div className="row text-center text-lg-left">
-                                    <div className="col-lg-3 col-md-4 col-6">
-                                    
-                                            <div className="d-flex justify-content-center lockedctn">
-                                                <span className="d-block mb-4 h-100">
-                                                        <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
-                                                    <br/>
-                                                </span>
-                                            </div>
-                                            <span style={{paddingTop:"15px"}} className="d-block mb-4 h-100">
-                                                <span className="span-title-video"
-                                                    style={{fontFamily:"Nunito"}}>1. Perkenalan</span>
-                                                <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"96px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
-                                            </span>
-                                        </div>
-                                        )
-                                        }
-                                    })}
-                                    </div>
-                                        <div className="col-lg-3 col-md-4 col-6">
-                                            <div className="d-flex justify-content-center lockedctn">
-                                                <span className="d-block mb-4 h-100">
-                                                        <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
-                                                    <br/>
-                                                </span>
-                                            </div>
-                                            <span style={{paddingTop:"15px"}} className="d-block mb-4 h-100">
-                                                <span className="span-title-video"
-                                                    style={{fontFamily:"Nunito"}}>2. Components</span>
-                                                <span className="span-time" style={{fontSize:"13px"}} ><span className="far fa-clock" style={{opacity:0.4,marginLeft:"75px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
-                                            </span>
-                                        </div>
-                                        <div className="col-lg-3 col-md-4 col-6">
-                                            <div className="d-flex justify-content-center lockedctn">
-                                                <span className="d-block mb-4 h-100">
-                                                        <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>
-                                                    <br/>
-                                                </span>
-                                            </div>
-                                            <span style={{paddingTop:"15px"}} className="d-block mb-4 h-100">
-                                                <span className="span-title-video"
-                                                    style={{fontFamily:"Nunito"}}>3. Instalasi</span>
-                                                <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"115px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
-                                            </span>
-                                        </div>
-                                        <div className="col-lg-3 col-md-4 col-6">
-                                            <div className="d-flex justify-content-center lockedctn">
-                                                <span className="d-block mb-4 h-100">
-                                                    <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
-                                                </span>
-                                            </div>
-                                            <span style={{paddingTop:"15px"}} class="d-block mb-4 h-100">
-                                                <span className="span-title-video"
-                                                    style={{fontFamily:"Nunito"}}>4. Character</span>
-                                                <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
-                                            </span>
-                                        </div>  
-                                        <div className="col-lg-3 col-md-4 col-6">
-                                            <div className="d-flex justify-content-center lockedctn">
-                                                <span className="d-block mb-4 h-100">
-                                                    <img class="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
-                                                </span>
-                                            </div>
-                                            <span style={{paddingTop:"15px"}} className="d-block mb-4 h-100">
-                                                <span className="span-title-video"
-                                                    style={{fontFamily:"Nunito"}}>1. Perkenalan</span>
-                                                <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"96px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
-                                            </span>
-                                        </div>
-                                        <div className="col-lg-3 col-md-4 col-6">
-                                            <div className="d-flex justify-content-center lockedctn">
-                                                <span className="d-block mb-4 h-100">
-                                                    <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
-                                                </span>
-                                            </div>
-                                            <span style={{paddingTop:"15px"}} className="d-block mb-4 h-100">
-                                                <span className="span-title-video"
-                                                    style={{fontFamily:"Nunito"}}>2. Components</span>
-                                                <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"75px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
-                                            </span>
-                                        </div>
-                                        <div className="col-lg-3 col-md-4 col-6">
-                                            <div className="d-flex justify-content-center lockedctn">
-                                                <span className="d-block mb-4 h-100">
-                                                    <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
-                                                </span>
-                                            </div>
-                                            <span style={{paddingTop:"15px"}} className="d-block mb-4 h-100">
-                                                <span className="span-title-video"
-                                                    style={{fontFamily:"Nunito"}}>3. Instalasi</span>
-                                                <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity: 0.4,marginLeft:"115px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
-                                            </span>
-                                        </div>
-                                        <div className="col-lg-3 col-md-4 col-6">
-                                            <div className="d-flex justify-content-center lockedctn">
-                                                <span className="d-block mb-4 h-100">
-                                                    <img className="img-fluid img-thumbnail plybtn" src={ply} alt=""></img>                            <br/>
-                                                </span>
-                                            </div>
-                                            <span style={{paddingTop:"15px"}} className="d-block mb-4 h-100">
-                                                <span className="span-title-video"
-                                                    style={{fontFamily:"Nunito"}}>4. Character</span>   
-                                                <span className="span-time" style={{fontSize:"13px"}}><span className="far fa-clock" style={{opacity:0.4,marginLeft:"103px",paddingbottom:"1px",color:"red"}}></span> 04:32 </span>
-                                            </span>
-                                    </div>     
-                                    </div>
-                                    </div>
-                                            <br/>
-                                            <br/>
-                                </div>
             
         );
     }
