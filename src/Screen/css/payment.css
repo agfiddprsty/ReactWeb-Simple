@@ -1,6 +1,6 @@
 .isii{
     /* margin: 0 15% 0 15%; */
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     background-color: #fff;
 }
@@ -18,7 +18,7 @@
 }
 
 .kontener{
-    margin-top: 65px;
+    margin-top: 50px;
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
