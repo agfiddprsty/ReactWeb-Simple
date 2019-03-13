@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardDeck} from 'reactstrap';   
-import './css/ListVideo.css';
+import './css/ListVideoDown.css';
 import './css/VideoPlayer.css'
 import lvl from './img/Level.png'
 import lock from './img/LockWhite.png'
