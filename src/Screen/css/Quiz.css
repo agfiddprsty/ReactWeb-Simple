@@ -167,6 +167,10 @@
       font-family: 'Nunito';
     }
     .aquiz{
+      overflow:hidden;
+      /* width: 180px; */
+      white-space: nowrap;
+      text-overflow: ellipsis;
       width: 200px;
     }
     .nav > li > a:hover{

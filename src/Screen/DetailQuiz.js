@@ -81,20 +81,22 @@ class DetailQuiz extends Component{
         })
         console.log(this.state.isActive)
     }
-    componentDidUpdate(){
-        var auth = "bearer " +store.getState().auth.token;
+    componentDidUpdate(prevProps,prevState){
+        if(this.state.isActive !== prevState.isActive){
+            var auth = "bearer " +store.getState().auth.token;
 
-        Axios.get("http://localhost:3333/todo/"+this.state.isActive,{
-            'headers':{
-                'Authorization':auth
-            }
-        }).then(res=>{
-            console.log(res.data.title)
-            this.setState({
-                titdodo:res.data.title,
-                textodo:res.data.text,
+            Axios.get("http://localhost:3333/todo/"+this.state.isActive,{
+                'headers':{
+                    'Authorization':auth
+                }
+            }).then(res=>{
+                console.log(res.data.title)
+                this.setState({
+                    titdodo:res.data.title,
+                    textodo:res.data.text,
+                })
             })
-        })
+        }
     }
     setActiveTab(id) {
         console.log(id)
