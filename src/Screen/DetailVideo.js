@@ -6,7 +6,7 @@ import './css/Backup.css';
 import Iframeresponsive from 'react-responsive-embed';
 import Axios from 'axios';
 import { Card,CardDeck,Progress } from 'reactstrap';   
-import './css/ListVideo.css';
+import './css/ListVideoDown.css';
 import './css/VideoPlayer.css';
 import lvl from './img/Level.png';
 import lock from './img/LockWhite.png';
