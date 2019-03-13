@@ -166,6 +166,9 @@
       color: #fff;
       font-family: 'Nunito';
     }
+    .aquiz{
+      width: 200px;
+    }
     .nav > li > a:hover{
       background-color:#FCC;
     }
