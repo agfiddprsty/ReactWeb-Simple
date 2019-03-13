@@ -13,7 +13,7 @@ class ListVideo extends Component {
                 {id:"2",image:"https://source.unsplash.com/F2WX4BTIkpQ/650x240",tittle:"2. Komponen",type:"video"},
                 {id:"3",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"3. Instalation",type:"video"},
                 {id:"4",image:"https://source.unsplash.com/F2WX4BTIkpQ/650x240",tittle:"4. Character",type:"video"},
-                {id:"5",image:"https://source.unsplash.com/ZSPBhokqDMc/550x240",tittle:"Kuis Mingguan #1",type:"quiz"},
+                {id:"5",image:"https://source.unsplash.com/1_CMoFsPfso/550x240",tittle:"Kuis Mingguan #1",type:"quiz"},
                 {id:"6",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"1. Perkenalan",type:"video"},
                 {id:"7",image:"https://source.unsplash.com/F2WX4BTIkpQ/650x240",tittle:"2. Komponen",type:"video"},
                 {id:"8",image:"https://source.unsplash.com/Mv4sg6_6qmE/650x240",tittle:"3. Instalation",type:"video"},
@@ -196,6 +196,7 @@ class ListVideo extends Component {
                              </span>
                         </div>     
                     </div>
+                    <br/>
                 </div>
             </div>
             

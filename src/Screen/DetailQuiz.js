@@ -6,7 +6,7 @@ import { Card,CardDeck } from 'reactstrap';
     import lvl from './img/Level.png'
 import lock from './img/LockWhite.png'
 import ply from './img/ply.png'
-import './css/ListVideo.css';
+import './css/ListVideoDown.css';
 import './css/VideoPlayer.css'
 import './css/DetailVideo.css'
 import Axios from 'axios';
@@ -28,6 +28,8 @@ class DetailQuiz extends Component{
             deskripsi:"",
             Todos:[],
             isActive: 1,
+            titdodo:"",
+            textodo:"",
         }
     }
 
@@ -66,6 +68,35 @@ class DetailQuiz extends Component{
                 deskripsi:res.data.text
             })
         })
+        Axios.get("http://localhost:3333/todo/"+this.state.isActive,{
+            'headers':{
+                'Authorization':auth
+            }
+        }).then(res=>{
+            console.log(res.data.title)
+            this.setState({
+                titdodo:res.data.title,
+                textodo:res.data.text,
+            })
+        })
+        console.log(this.state.isActive)
+    }
+    componentDidUpdate(prevProps,prevState){
+        if(this.state.isActive !== prevState.isActive){
+            var auth = "bearer " +store.getState().auth.token;
+
+            Axios.get("http://localhost:3333/todo/"+this.state.isActive,{
+                'headers':{
+                    'Authorization':auth
+                }
+            }).then(res=>{
+                console.log(res.data.title)
+                this.setState({
+                    titdodo:res.data.title,
+                    textodo:res.data.text,
+                })
+            })
+        }
     }
     setActiveTab(id) {
         console.log(id)
@@ -197,14 +228,14 @@ class DetailQuiz extends Component{
                                             <ul class="nav flex-column nav-pills qz-ul-gd qz-ul-cl" id="tabbb" style={{borderRadius:"0px!important"}}>
                                                 <li class="nav-item pill" >
                                                     <table>
-                                                        <tr className={"nav-link qz-tb-gd qz-tb-cl rounded-0" + (this.state.isActive === key ? '':'active')} style={{marginTop:"10px"}}>
+                                                        <tr className={"nav-link qz-tb-gd qz-tb-cl rounded-0 " + (this.state.isActive === item.id ? 'active':'')} style={{marginTop:"10px"}}>
                                                             <td>
                                                                 <input type="checkbox" className="nav-link" style={{marginTop:"3px",marginRight:"10px"}} />
                                                             </td>
                                                             <td>
-                                                                <a  class="aquiz" href={"#"+key} data-toggle="tab" onClick={() => this.setActiveTab(key)} >
+                                                                <a  class="aquiz" href={"#"+item.id} data-toggle="tab" onClick={() => this.setActiveTab(item.id)} >
                                                                     <span>
-                                                                    <a class="aquiz" href={"#"+key} data-toggle="tab" style={{marginTop:"10px"}}>
+                                                                    <a class="aquiz" href={"#"+item.id} data-toggle="tab" style={{marginTop:"10px"}}>
                                                                         {item.title}
                                                                         <span>
                                                                             <i className="fa fa-check-circle" style={{marginLeft:"20px",borderRadius:"10px",color:"#4CAF50"}}>  </i>
@@ -221,13 +252,12 @@ class DetailQuiz extends Component{
                                     })}
                                 </div>
                                 <div class="col-sm-5">
-
-                                    {this.state.Todos.map((item,key)=>{
-                                        return(                                        
+                                    {/* {this.state.Todos.map((item,key)=>{ */}
+                                        {/* return(                                         */}
                                             <div class="tab-content tb-ct-qz-cl">
-                                                <div role="tabpanel" class={"tab-pane"} id={key}>
-                                                    <h5>{item.title}</h5>
-                                                    <p>{item.text}</p>
+                                                <div role="tabpanel" class={"tab-pane active"} id={this.state.isActive}>
+                                                    <h5>{this.state.titdodo}</h5>
+                                                    <p>{this.state.textodo}</p>
                                                     <div style={{backgroundColor:"#4CAF50",width:"300px",height:"40px"}}>
                                                         <i className="fa fa-info-circle" style={{marginLeft:"10px",marginTop:"10px",color:"#FFF"}}> 
                                                             <span style={{marginLeft:"10px"}}>
@@ -238,8 +268,8 @@ class DetailQuiz extends Component{
                                                     <Disscus/>
                                                 </div>
                                             </div>
-                                        )
-                                    })}
+                                        {/* ) */}
+                                    {/* })} */}
                                 </div>
                                     
                             </div>
