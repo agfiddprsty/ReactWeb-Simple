@@ -12,6 +12,7 @@ import lvl from './img/Level.png';
 import lock from './img/LockWhite.png';
 import ply from './img/ply.png';
 import './css/ProgressDetail.css';
+import {store} from '../store';
 
 class DetailVideo extends Component {
     constructor(){
@@ -30,9 +31,11 @@ class DetailVideo extends Component {
     componentDidMount(){
         var uid = window.location.href;
         var id = uid.replace('http://localhost:3000/video/','');
+        var auth = "bearer " +store.getState().auth.token;
+        console.log(auth)
         Axios.get("http://localhost:3333/lecture/"+id,{
             'headers':{
-                'Authorization':'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU1MjAxMzk3NX0.EWlD_LAWdCdMbQxh9UFbKlCMIUMxqijtFSMqLwDd2Y4'
+                'Authorization':auth
             }
         }).then(res=>{
             this.setState({
@@ -43,7 +46,7 @@ class DetailVideo extends Component {
         })
         Axios.get("http://localhost:3333/lectures",{
             'headers':{
-            'Authorization':'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU1MjAxMzk3NX0.EWlD_LAWdCdMbQxh9UFbKlCMIUMxqijtFSMqLwDd2Y4'
+            'Authorization':auth
             }
         }).then(ress=>{
             this.setState({ListVideo:ress.data.data})

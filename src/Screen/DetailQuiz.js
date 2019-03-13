@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import HeaderDashboard from './HeaderPage';
-import Quiz from './Quiz';
 import './css/QuizPlayer.css'
 import './css/DetailQuiz.css'
 import { Card,CardDeck } from 'reactstrap';  
@@ -11,7 +10,9 @@ import './css/ListVideo.css';
 import './css/VideoPlayer.css'
 import './css/DetailVideo.css'
 import Axios from 'axios';
-
+import {store} from '../store';
+import './css/Quiz.css'
+import Disscus from './QuizDisscuss';
 class DetailQuiz extends Component{
     constructor(){
         super();
@@ -24,22 +25,35 @@ class DetailQuiz extends Component{
             title:"",
             fileurl:"",
             deskripsi:"",
+            Todos:[],
         }
     }
     componentDidMount(){
+        var uid = window.location.href;
+        var id = uid.replace('http://localhost:3000/quiz/','');
+        var auth = "bearer " +store.getState().auth.token;
+        Axios.get("http://localhost:3333/todos/",{
+            'headers':{
+                'Authorization':auth
+            }
+        }).then(res=>{
+            console.log(res.data)
+            this.setState({
+                Todos:res.data.data
+            })
+            console.log(this.state.Todos)
+        })
         Axios.get("http://localhost:3333/lectures",{
             'headers':{
-            'Authorization':'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU1MjAxMzk3NX0.EWlD_LAWdCdMbQxh9UFbKlCMIUMxqijtFSMqLwDd2Y4'
+            'Authorization':auth
             }
         }).then(ress=>{
             this.setState({ListVideo:ress.data.data})
             console.log(this.state.ListVideo);
         })
-        var uid = window.location.href;
-        var id = uid.replace('http://localhost:3000/quiz/','');
         Axios.get("http://localhost:3333/lecture/"+id,{
             'headers':{
-                'Authorization':'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU1MjAxMzk3NX0.EWlD_LAWdCdMbQxh9UFbKlCMIUMxqijtFSMqLwDd2Y4'
+                'Authorization':auth
             }
         }).then(res=>{
             console.log(res.data)
@@ -166,7 +180,58 @@ class DetailQuiz extends Component{
                             </div>
                         </div>
                         <hr class="mt-2 mb-5 hr-gd"></hr>
-                        <Quiz/>
+                        {/* <Quiz/> */}
+                        <div className="qz-outt-gd">
+                            <h4>{"To-dos(0/"+this.state.Todos.length+")"}</h4>
+                            {this.state.Todos.map((item,key)=>{
+                                return(
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <ul class="nav flex-column nav-pills qz-ul-gd qz-ul-cl" id="tabbb" style={{borderRadius:"0px!important"}}>
+                                                <li class="nav-item pill" >
+                                                    <table>
+                                                        <tr className={"nav-link qz-tb-gd qz-tb-cl rounded-0"} style={{marginTop:"10px"}}>
+                                                            <td>
+                                                                <input type="checkbox" className="nav-link" style={{marginTop:"3px",marginRight:"10px"}} />
+                                                            </td>
+                                                            <td>
+                                                                <a  class="aquiz" href={"#"+key} data-toggle="tab" onClick={this.onaCLick} >
+                                                                    <span>
+                                                                    <a class="aquiz" href={"#"+key} data-toggle="tab" onClick={this.onaCLick} style={{marginTop:"10px"}}>
+                                                                        {item.title}
+                                                                        <span>
+                                                                            <i className="fa fa-check-circle" style={{marginLeft:"20px",borderRadius:"10px",color:"#4CAF50"}}>  </i>
+                                                                        </span>
+                                                                    </a>
+                                                                    </span>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="tab-content tb-ct-qz-cl">
+                                                <div role="tabpanel" class={"tab-pane"} id={key}>
+                                                <h5>{item.title}</h5>
+                                                <p>{item.text}</p>
+                                                <div style={{backgroundColor:"#4CAF50",width:"300px",height:"40px"}}>
+                                                    <i className="fa fa-info-circle" style={{marginLeft:"10px",marginTop:"10px",color:"#FFF"}}> 
+                                                        <span style={{marginLeft:"10px"}}>
+                                                        Jawaban Benar
+                                                        </span>
+                                                    </i>
+                                                </div>
+                                                <Disscus/>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                        
                     </div>
                 </body>
             </div>
