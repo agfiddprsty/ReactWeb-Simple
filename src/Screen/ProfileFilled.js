@@ -61,6 +61,11 @@ class ProfileFilled extends Component {
             files: '',
             addSkill: '',
             skills: [],
+            work_experience: [],
+            monthFrWrk: '',
+            yearFrWrk: '',
+            monthToWrk: '',
+            yearToWrk: '',
             school : [ 
                 {id:"1", 
                 sekolah:"SMK Uhuy Lah", 
@@ -102,6 +107,11 @@ class ProfileFilled extends Component {
         .then(res=>{
             this.setState({skills:res.data.data})
             console.log(this.state.skills)
+        })
+        axios.get('http://localhost:3333/work_experiences', { 'headers': { 'Authorization' : 'Bearer '+ store.getState().auth.token}} )
+        .then(ress=>{
+            this.setState({work_experience:ress.data.data})
+            console.log(this.state.work_experience)
         })
     }
     setGender(event) {
@@ -286,21 +296,21 @@ class ProfileFilled extends Component {
         }
         else{
             //init POST AXIOS
-            const perusahaan = this.state.perusahaan;
-            const industri = this.state.industri;
-            const title = this.state.title;
-            const description = this.state.description;
+            const user_id = 1;
+            const company_name = this.state.title;
+            const work_description = this.state.description;
+            const from = this.state.yearFrWrk + '-' + this.state.monthFrWrk + '-' + '17';
+            const to = this.state.yearToWrk + '-' + this.state.monthToWrk + '-' + '17';
             const body={
-                perusahaan,
-                industri,
-                title,
-                description
+                user_id,
+                company_name,
+                work_description,
+                from,
+                to
             }
-            // Axios.post('url',body).then(ress=>{
-            //     this.setState({ressjson:ress})
-            // })
-            this.props.history.push("#");
-            console.log(this.state.selectedValue);
+            axios.post('http://localhost:3333/work_experience', body, { 'headers': { 'Authorization' : 'Bearer '+ store.getState().auth.token}}).then(resp=>{
+                console.log(resp);
+            })
         }
     }
 
@@ -346,7 +356,7 @@ class ProfileFilled extends Component {
             }
             axios.post('http://localhost:3333/skill', body, { 'headers': { 'Authorization' : 'Bearer '+ store.getState().auth.token}}).then(resss=>{
                 console.log(resss)
-            })
+            });
         }
     }
     btnAdddesign(value){
@@ -829,7 +839,7 @@ class ProfileFilled extends Component {
                                                             </div>
                                                         </div>
                                                         <div className="row drpdndt">
-                                                            <select name="month" className="col-1 custom-select mb-3 optdate">
+                                                            <select name="monthFrWrk" onChange={this.handleChange} className="col-1 custom-select mb-3 optdate">
                                                                 <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
                                                                 <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
                                                                 <option value="11">11</option><option value="12">12</option>
@@ -837,19 +847,19 @@ class ProfileFilled extends Component {
                                                             <span className="fa fa-sort-desc"
                                                             style={{color:'darkgrey', position:'absolute', marginLeft:'52px', fontSize:'24px'}}></span>
 
-                                                            <select name="year" className="col-1 custom-select mb-3 optdate">
+                                                            <select name="yearFrWrk" onChange={this.handleChange} className="col-1 custom-select mb-3 optdate">
                                                                 <option value="2019" selected>2019</option>
                                                                 <option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option>
                                                                 <option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option>
                                                                 <option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option>
                                                                 <option value="2002">2002</option><option value="2001">2001</option>
-                                                                <option value="199">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option>
+                                                                <option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option>
                                                                 <option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option>
                                                             </select>
                                                             <span className="fa fa-sort-desc"
                                                             style={{color:'darkgrey', position:'absolute', marginLeft:'202px', fontSize:'24px'}}></span>
 
-                                                            <select name="month" className="col-1 custom-select mb-3 optdate" style={{marginLeft: '55px'}}>
+                                                            <select name="monthToWrk" onChange={this.handleChange} className="col-1 custom-select mb-3 optdate" style={{marginLeft: '55px'}}>
                                                                 <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
                                                                 <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
                                                                 <option value="11">11</option><option value="12">12</option>
@@ -857,7 +867,7 @@ class ProfileFilled extends Component {
                                                             <span className="fa fa-sort-desc"
                                                             style={{color:'darkgrey', position:'absolute', marginLeft:'412px', fontSize:'24px'}}></span>
 
-                                                            <select name="year" className="col-1 custom-select mb-3 optdate">
+                                                            <select name="yearToWrk" onChange={this.handleChange} className="col-1 custom-select mb-3 optdate">
                                                                 <option value="2019" selected>2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option>
                                                                 <option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option>
                                                                 <option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option>
@@ -871,8 +881,7 @@ class ProfileFilled extends Component {
                                                     <div className="d-flex justify-content-end divbtncando">
                                                         <a href="#"><span className="btncel btn btn-lg btnbatal">Batal</span></a>  
                                                         <a href="#"><span className="btnsel btn btn-lg btnselesai" 
-                                                        onClick={this.kerjahandle}
-                                                        onClick={this.handlearraywork}>Selesai</span></a>  
+                                                        onClick={this.kerjahandle}>Selesai</span></a>  
                                                     </div>
                                                 </div>
                                             </form>
@@ -880,46 +889,27 @@ class ProfileFilled extends Component {
                                         <div className="row">
                                             <div className="col-xl-12 col-lg-12 col-md-12">
                                                 <ul className="timeline">
+                                                    {this.state.work_experience && this.state.work_experience.map((work, key) => 
                                                     <li >
-                                                        <div className="row" style={{marginTop:'15px'}}>
+                                                        <div className="row" key={key} style={{marginTop:'15px'}}>
                                                             <div className="col-4" style={{marginLeft:'40px'}}>
                                                                 <div className="col-3"></div>
                                                                 <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                                    Programmer
+                                                                    {work.company_name}
                                                                 </p>
                                                             </div>
                                                             <div className="col-7">
                                                                 <p className="dateright">
-                                                                    Januari 2019 - Maret 2020
+                                                                {formatDate(work.from)} - {formatDate(work.to)}
                                                                 </p>
                                                             </div>
                                                             <div>
                                                                 <p className="txtexker">
-                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.
+                                                                    {work.work_description}
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                    </li>
-                                                    <li >
-                                                        <div className="row" style={{marginTop:'15px'}}>
-                                                            <div className="col-4" style={{marginLeft:'40px'}}>
-                                                                <div className="col-3"></div>
-                                                                <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                                    Programmer
-                                                                </p>
-                                                            </div>
-                                                            <div className="col-7">
-                                                                <p className="dateright">
-                                                                    Januari 2019 - Maret 2020
-                                                                </p>
-                                                            </div>
-                                                            <div>
-                                                                <p className="txtexker">
-                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                                        </div> 
+                                                    </li>)}
                                                 </ul>
                                             </div>
                                         </div>
@@ -1232,6 +1222,19 @@ class ProfileFilled extends Component {
                 
         </div>
       );
+      function formatDate(date) {
+
+        const monthNames = ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ]
+        const d = new Date(date)
+
+        const year 		= d.getFullYear()
+        const monthName = monthNames[d.getMonth()]	
+        const day  		= d.getDate()
+
+        return monthName + " " + year
+        }
     }
   }
   export default ProfileFilled;
