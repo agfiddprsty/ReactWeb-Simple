@@ -17,6 +17,8 @@ import {store} from '../store';
 class DetailVideo extends Component {
     constructor(){
         super();
+        this.showreply = this.showreply.bind(this)
+        this.showbtn = this.showbtn.bind(this)
         this.state={
             comment:[
                 {id:"1",photo:"https://ssl.gstatic.com/accounts/ui/avatar_2x.png",commented:"commented 5 days ago",username:"myusername",comment:"How To Fast Learning ?",reply:""},
@@ -26,6 +28,9 @@ class DetailVideo extends Component {
             title:"",
             fileurl:"",
             deskripsi:"",
+            showreply:false,
+            jumlahlike:"1.8rb",
+            showbtn:false, 
         }
     }
     componentDidMount(){
@@ -53,7 +58,12 @@ class DetailVideo extends Component {
             console.log(this.state.ListVideo);
         })
     }
-
+    showreply(){
+        this.setState({show:!this.state.showreply})
+    }
+    showbtn(){
+        this.setState({show:!this.state.showbtn})
+    }
     render(){
         return(
             <div className="dv-out-vd-gd dv-out-vd-cl">

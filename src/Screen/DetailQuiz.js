@@ -16,6 +16,7 @@ import Disscus from './QuizDisscuss';
 class DetailQuiz extends Component{
     constructor(){
         super();
+        this.setActiveTab = this.setActiveTab.bind(this)
         this.state={
             comment:[
                 {id:"1",photo:"https://ssl.gstatic.com/accounts/ui/avatar_2x.png",commented:"commented 5 days ago",username:"myusername",comment:"How To Fast Learning ?",reply:""},
@@ -26,8 +27,10 @@ class DetailQuiz extends Component{
             fileurl:"",
             deskripsi:"",
             Todos:[],
+            isActive: 1,
         }
     }
+
     componentDidMount(){
         var uid = window.location.href;
         var id = uid.replace('http://localhost:3000/quiz/','');
@@ -63,6 +66,10 @@ class DetailQuiz extends Component{
                 deskripsi:res.data.text
             })
         })
+    }
+    setActiveTab(id) {
+        console.log(id)
+        this.setState({ isActive: id })
     }
     render(){
         return(
@@ -183,21 +190,21 @@ class DetailQuiz extends Component{
                         {/* <Quiz/> */}
                         <div className="qz-outt-gd">
                             <h4>{"To-dos(0/"+this.state.Todos.length+")"}</h4>
-                            {this.state.Todos.map((item,key)=>{
-                                return(
-                                    <div class="row">
-                                        <div class="col-sm-4">
+                            <div className="row">
+                                <div className="col-sm-4">
+                                    {this.state.Todos.map((item,key)=>{
+                                        return(
                                             <ul class="nav flex-column nav-pills qz-ul-gd qz-ul-cl" id="tabbb" style={{borderRadius:"0px!important"}}>
                                                 <li class="nav-item pill" >
                                                     <table>
-                                                        <tr className={"nav-link qz-tb-gd qz-tb-cl rounded-0"} style={{marginTop:"10px"}}>
+                                                        <tr className={"nav-link qz-tb-gd qz-tb-cl rounded-0" + (this.state.isActive === key ? '':'active')} style={{marginTop:"10px"}}>
                                                             <td>
                                                                 <input type="checkbox" className="nav-link" style={{marginTop:"3px",marginRight:"10px"}} />
                                                             </td>
                                                             <td>
-                                                                <a  class="aquiz" href={"#"+key} data-toggle="tab" onClick={this.onaCLick} >
+                                                                <a  class="aquiz" href={"#"+key} data-toggle="tab" onClick={() => this.setActiveTab(key)} >
                                                                     <span>
-                                                                    <a class="aquiz" href={"#"+key} data-toggle="tab" onClick={this.onaCLick} style={{marginTop:"10px"}}>
+                                                                    <a class="aquiz" href={"#"+key} data-toggle="tab" style={{marginTop:"10px"}}>
                                                                         {item.title}
                                                                         <span>
                                                                             <i className="fa fa-check-circle" style={{marginLeft:"20px",borderRadius:"10px",color:"#4CAF50"}}>  </i>
@@ -210,26 +217,33 @@ class DetailQuiz extends Component{
                                                     </table>
                                                 </li>
                                             </ul>
-                                        </div>
-                                        <div class="col-sm-5">
+                                        )
+                                    })}
+                                </div>
+                                <div class="col-sm-5">
+
+                                    {this.state.Todos.map((item,key)=>{
+                                        return(                                        
                                             <div class="tab-content tb-ct-qz-cl">
                                                 <div role="tabpanel" class={"tab-pane"} id={key}>
-                                                <h5>{item.title}</h5>
-                                                <p>{item.text}</p>
-                                                <div style={{backgroundColor:"#4CAF50",width:"300px",height:"40px"}}>
-                                                    <i className="fa fa-info-circle" style={{marginLeft:"10px",marginTop:"10px",color:"#FFF"}}> 
-                                                        <span style={{marginLeft:"10px"}}>
-                                                        Jawaban Benar
-                                                        </span>
-                                                    </i>
+                                                    <h5>{item.title}</h5>
+                                                    <p>{item.text}</p>
+                                                    <div style={{backgroundColor:"#4CAF50",width:"300px",height:"40px"}}>
+                                                        <i className="fa fa-info-circle" style={{marginLeft:"10px",marginTop:"10px",color:"#FFF"}}> 
+                                                            <span style={{marginLeft:"10px"}}>
+                                                                Jawaban Benar
+                                                            </span>
+                                                        </i>
+                                                    </div>
+                                                    <Disscus/>
                                                 </div>
-                                                <Disscus/>
                                             </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                )
-                            })}
+                                        )
+                                    })}
+                                </div>
+                                    
+                            </div>
+                            
                         </div>
                         
                     </div>
