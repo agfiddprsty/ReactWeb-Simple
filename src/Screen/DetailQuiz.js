@@ -6,7 +6,7 @@ import { Card,CardDeck } from 'reactstrap';
     import lvl from './img/Level.png'
 import lock from './img/LockWhite.png'
 import ply from './img/ply.png'
-import './css/ListVideo.css';
+import './css/ListVideoDown.css';
 import './css/VideoPlayer.css'
 import './css/DetailVideo.css'
 import Axios from 'axios';
