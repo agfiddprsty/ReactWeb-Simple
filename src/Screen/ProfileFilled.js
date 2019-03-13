@@ -33,7 +33,6 @@ class ProfileFilled extends Component {
         this.upload = this.upload.bind(this)
         this.onSuccess = this.onSuccess.bind(this);
         this.handlearrayschool = this.handlearrayschool.bind(this);
-        this.handlearraywork = this.handlearraywork.bind(this);
         this.handlearrayproject = this.handlearrayproject.bind(this);
         this.state = {
             isverified: false,
@@ -66,6 +65,11 @@ class ProfileFilled extends Component {
             yearFrWrk: '',
             monthToWrk: '',
             yearToWrk: '',
+            monthFrEdu: '',
+            yearFrEdu: '',
+            monthToEdu: '',
+            yearToEdu: '',
+            educations: [],
             school : [ 
                 {id:"1", 
                 sekolah:"SMK Uhuy Lah", 
@@ -77,18 +81,6 @@ class ProfileFilled extends Component {
                 study:"Field of Study", 
                 jurusan:"Multimedia", 
                 degree:"Major"}
-            ],
-            work : [
-                {id:"1", 
-                perusahaan:"Google", 
-                industri:"", 
-                title:"programmer", 
-                description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet."},
-                {id:"2", 
-                perusahaan:"Facebook", 
-                industri:"", 
-                title:"Programmer", 
-                description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet."}
             ],
             project : [
                 {id:"1", 
@@ -112,6 +104,11 @@ class ProfileFilled extends Component {
         .then(ress=>{
             this.setState({work_experience:ress.data.data})
             console.log(this.state.work_experience)
+        })
+        axios.get('http://localhost:3333/educations', { 'headers': { 'Authorization' : 'Bearer '+ store.getState().auth.token}} )
+        .then(ressp=>{
+            this.setState({educations:ressp.data.data})
+            console.log(this.state.educations)
         })
     }
     setGender(event) {
@@ -183,27 +180,6 @@ class ProfileFilled extends Component {
                 arrayschool: [...this.state.arrayschool,newSchool]
             })
         }
-    
-    handlearraywork(){
-        var id="1"; 
-        var perusahaan="Google";
-        var industri="";
-        var title="programmer";
-        var description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.";
-        
-        var id="2";
-        var perusahaan="Facebook"; 
-        var industri=""; 
-        var title="Programmer";
-        var description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet.";
-            var newWork = [
-                id,perusahaan,industri,title,description
-            ]
-            this.setState({
-                arraywork: [...this.setState.arraywork,newWork]
-
-            })
-        }
 
     handlearrayproject(){
         var id="1"; 
@@ -264,21 +240,24 @@ class ProfileFilled extends Component {
         }
         else{
             //init POST AXIOS
-            const sekolah = this.state.sekolah;
-            const study = this.state.study;
-            const jurusan = this.state.jurusan;
+            const user_id = 1;
+            const school_name = this.state.sekolah;
+            const field = this.state.study;
             const degree = this.state.degree;
+            const from = this.state.yearFrEdu + '-' + this.state.monthFrEdu + '-' + '17';
+            const to = this.state.yearToEdu + '-' + this.state.monthToEdu + '-' + '17';
             const body={
-                sekolah,
-                study,
-                jurusan,
-                degree
+                user_id,
+                degree,
+                school_name,
+                field,
+                from,
+                to
             }
-            // Axios.post('url',body).then(ress=>{
-            //     this.setState({ressjson:ress})
-            // })
-            this.props.history.push("#");
-            console.log(this.state.selectedValue);
+            axios.post('http://localhost:3333/education',body, { 'headers': { 'Authorization' : 'Bearer '+ store.getState().auth.token}}).then(rees=>{
+                console.log(rees)
+                // this.setState({ressjson:ress})
+            })
         }
     }
 
@@ -551,12 +530,87 @@ class ProfileFilled extends Component {
                                                         onChange={this.handleChange} value={this.state.degree} required=""/>
                                                         <label>Degree</label>
                                                     </div>
+                                                    <div style={{padding:'20px 0px 20px 20px'}}>
+                                                        <p className="from">From</p>
+                                                        <div className="row">
+                                                            <div className="col-sm-3 col-md-2">
+                                                                <p className="fromfrom" style={{marginLeft:'-20px'}}>
+                                                                    Month
+                                                                </p>
+                                                            </div>
+                                                            <div className="col-sm-3 col-md-2"
+                                                            style={{marginLeft:'-5px'}}>
+                                                                <p className="fromfrom" style={{marginLeft:'52px'}}>
+                                                                    Years
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="row" style={{marginLeft:'125px'}}>
+                                                            <div className="col-sm-3 col-md-1">
+                                                                <p className="until">
+                                                                    To
+                                                                </p>
+                                                                <i className="fa fa-long-arrow-right arrowright"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div className="row" style={{marginLeft:'20px'}}>
+                                                            <div className="col-sm-3 col-md-2"
+                                                            style={{marginTop:'-30px', marginLeft:'100px'}}>
+                                                                <p className="fromto">
+                                                                    Month
+                                                                </p>
+                                                            </div>
+                                                            <div className="col-sm-3 col-md-2"
+                                                            style={{marginTop:'-30px', marginLeft:'72px'}}>
+                                                                <p className="fromto">
+                                                                    Years
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="row drpdndt">
+                                                            <select name="monthFrEdu" onChange={this.handleChange} className="col-1 custom-select col-sm-2 optdate">
+                                                                <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
+                                                                <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
+                                                                <option value="11">11</option><option value="12">12</option>
+                                                            </select>
+                                                            <span className="fa fa-sort-desc"
+                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'122px', fontSize:'24px'}}></span>
+
+                                                            <select name="yearFrEdu" onChange={this.handleChange} className="col-1 custom-select col-sm-2 optdate">
+                                                                <option value="2019" selected>2019</option>
+                                                                <option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option>
+                                                                <option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option>
+                                                                <option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option>
+                                                                <option value="2002">2002</option><option value="2001">2001</option>
+                                                                <option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option>
+                                                                <option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option>
+                                                            </select>
+                                                            <span className="fa fa-sort-desc"
+                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'345px', fontSize:'24px'}}></span>
+
+                                                            <select name="monthToEdu" onChange={this.handleChange} className="col-1 custom-select col-sm-2 optdate" style={{marginLeft: '0px'}}>
+                                                                <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
+                                                                <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
+                                                                <option value="11">11</option><option value="12">12</option>
+                                                            </select>
+                                                            <span className="fa fa-sort-desc"
+                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'787px', fontSize:'24px'}}></span>
+
+                                                            <select name="yearToEdu" onChange={this.handleChange} className="col-1 custom-select col-sm-2 optdate" style={{marginLeft:'-15px'}}>
+                                                                <option value="2019" selected>2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option>
+                                                                <option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option>
+                                                                <option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option>
+                                                                <option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option>
+                                                            </select>
+                                                            <span className="fa fa-sort-desc"
+                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'577px', fontSize:'24px'}}></span>
+                                                        </div>
+                                                    </div>
                                                     <br/>
                                                     <div className="d-flex justify-content-end divbtncando">
                                                         <a href="#"><span className="btncel btn btn-lg btnbatal">Batal</span></a>  
-                                                        <a href="#"><span className="btnsel btn btn-lg btnselesai"
-                                                        onClick={this.pendidikanhandle}
-                                                        onClick={this.handlearrayschool}>Selesai</span></a>  
+                                                        <span ><button className="btnsel btn btn-lg btnselesai"
+                                                        onClick={this.pendidikanhandle}>Selesai</button></span>
                                                     </div>
                                                 </div>
                                             </form>
@@ -565,23 +619,24 @@ class ProfileFilled extends Component {
                                             <div className="row">
                                                 <div className="col-md-12">
                                                     <ul className="timeline">
-                                                        <li>
+                                                    {this.state.educations && this.state.educations.map((edu, key) => 
+                                                        <li key={key}>
                                                             <div className="row" >
                                                                 <div className="col-4" style={{marginLeft:'40px'}}>
                                                                     <div className="col-3"></div>
                                                                     <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                                    SMK Uhuy Lah
+                                                                    {edu.school_name}
                                                                     </p>
                                                                 </div>
                                                                 <div className="col-7">
                                                                     <p className="dateright">
-                                                                        Januari 2019 - Maret 2020
+                                                                        {formatDate(edu.from)} - {formatDate(edu.to)}
                                                                     </p>
                                                                 </div>
                                                             </div>
                                                             <div className="container" style={{marginLeft:'25px'}}>
                                                                 <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                                    SMA/SMK
+                                                                    {edu.degree}
                                                                 </p>
                                                                 <div className="row">
                                                                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -593,7 +648,7 @@ class ProfileFilled extends Component {
                                                                             </div>
                                                                             <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6">
                                                                                 <span className="pull-left fmbmb">
-                                                                                    Business
+                                                                                    {edu.field}
                                                                                 </span>
                                                                             </div>
                                                                         </div>
@@ -616,59 +671,7 @@ class ProfileFilled extends Component {
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </li>
-                                                        <li>
-                                                            <div className="row" >
-                                                                <div className="col-4" style={{marginLeft:'40px'}}>
-                                                                    <div className="col-3"></div>
-                                                                    <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                                    SMK Uhuy Lah
-                                                                    </p>
-                                                                </div>
-                                                                <div className="col-7">
-                                                                    <p className="dateright">
-                                                                        Januari 2019 - Maret 2020
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                            <div className="container" style={{marginLeft:'25px'}}>
-                                                                <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                                    SMA/SMK
-                                                                </p>
-                                                                <div className="row">
-                                                                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                        <div className="row">
-                                                                            <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                                                                <span className="pull-left fmbm">
-                                                                                    Field Of Study
-                                                                                </span>
-                                                                            </div>
-                                                                            <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                                                                <span className="pull-left fmbmb">
-                                                                                    Business
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="row">
-                                                                    <div className="col-lg-12 col-md-12 d-sm-12 col-xs-12">
-                                                                        <div className="row">
-                                                                            <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                                                                <span className="pull-left fmbm">
-                                                                                    Major
-                                                                                </span>
-                                                                            </div>
-                                                                            <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                                                                <span className="pull-left fmbmb">
-                                                                                    Multimedia
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
+                                                        </li>)}
                                                     </ul>
                                                 </div>
                                             </div>
@@ -677,16 +680,17 @@ class ProfileFilled extends Component {
                                         {/* Responsive Pendidikan */}
                                         <div className="d-sm-none d-md-none d-lg-none d-xl-none">
                                             <div className="row" style={{marginTop:'15px'}}>
-                                                <span className="col-xs-12 schol">
+                                            {this.state.educations && this.state.educations.map((edu, key) => 
+                                                <span className="col-xs-12 schol" key={key}>
                                                     <div className="col-3"></div>
                                                     <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                        SMK Uhuy Lah
+                                                        {edu.school_name}
                                                     </p>
                                                     <span className="dateright">
-                                                        Januari 2019 - Maret 2020
+                                                        {formatDate(edu.from)} - {formatDate(edu.to)}
                                                     </span>
                                                     <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                        SMA/SMK
+                                                        {edu.degree}
                                                     </p>
                                                     <div className="row">
                                                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -698,7 +702,7 @@ class ProfileFilled extends Component {
                                                                 </div>
                                                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                                     <span className="pull-left fmbmb">
-                                                                        Business
+                                                                        {edu.field}
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -720,51 +724,7 @@ class ProfileFilled extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </span>
-                                                <span className="col-xs-12 schol">
-                                                    <div className="col-3"></div>
-                                                    <p style={{color:'black', fontWeight:'600', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.25000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                        SMK Uhuy Lah
-                                                    </p>
-                                                    <span className="dateright">
-                                                        Januari 2019 - Maret 2020
-                                                    </span>
-                                                    <p style={{color:'red', fontFamily:'helvetica, Arial, sans serif', fontSize:'1.15000000em', display:'block', textAlign:'left', marginBottom:'0'}}>
-                                                        SMA/SMK
-                                                    </p>
-                                                    <div className="row">
-                                                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div className="row">
-                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                    <span className="pull-left fmbm">
-                                                                        Field Of Study
-                                                                    </span>
-                                                                </div>
-                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                    <span className="pull-left fmbmb">
-                                                                        Business
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="row">
-                                                        <div className="col-lg-12 col-md-12 d-sm-12 col-xs-12">
-                                                            <div className="row">
-                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                    <span className="pull-left fmbm">
-                                                                        Major
-                                                                    </span>
-                                                                </div>
-                                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                    <span className="pull-left fmbmb">
-                                                                        Multimedia
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </span>
+                                                </span>)}
                                             </div>
                                         </div>
 
@@ -840,7 +800,7 @@ class ProfileFilled extends Component {
                                                             </div>
                                                         </div>
                                                         <div className="row drpdndt">
-                                                            <select name="month" className="col-1 custom-select col-sm-2 optdate">
+                                                            <select name="monthFrWrk" onChange={this.handleChange} className="col-1 custom-select col-sm-2 optdate">
                                                                 <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
                                                                 <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
                                                                 <option value="11">11</option><option value="12">12</option>
@@ -848,19 +808,19 @@ class ProfileFilled extends Component {
                                                             <span className="fa fa-sort-desc"
                                                             style={{color:'darkgrey', position:'absolute', marginLeft:'122px', fontSize:'24px'}}></span>
 
-                                                            <select name="year" className="col-1 custom-select col-sm-2 optdate">
+                                                            <select name="yearFrWrk" onChange={this.handleChange} className="col-1 custom-select col-sm-2 optdate">
                                                                 <option value="2019" selected>2019</option>
                                                                 <option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option>
                                                                 <option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option>
                                                                 <option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option>
                                                                 <option value="2002">2002</option><option value="2001">2001</option>
-                                                                <option value="199">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option>
+                                                                <option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option>
                                                                 <option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option>
                                                             </select>
                                                             <span className="fa fa-sort-desc"
                                                             style={{color:'darkgrey', position:'absolute', marginLeft:'345px', fontSize:'24px'}}></span>
 
-                                                            <select name="month" className="col-1 custom-select col-sm-2 optdate" style={{marginLeft: '0px'}}>
+                                                            <select name="monthToWrk" onChange={this.handleChange} className="col-1 custom-select col-sm-2 optdate" style={{marginLeft: '0px'}}>
                                                                 <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
                                                                 <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
                                                                 <option value="11">11</option><option value="12">12</option>
@@ -868,7 +828,7 @@ class ProfileFilled extends Component {
                                                             <span className="fa fa-sort-desc"
                                                             style={{color:'darkgrey', position:'absolute', marginLeft:'787px', fontSize:'24px'}}></span>
 
-                                                            <select name="year" className="col-1 custom-select col-sm-2 optdate" style={{marginLeft:'-15px'}}>
+                                                            <select name="yearToWrk" onChange={this.handleChange} className="col-1 custom-select col-sm-2 optdate" style={{marginLeft:'-15px'}}>
                                                                 <option value="2019" selected>2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option>
                                                                 <option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option>
                                                                 <option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option>
