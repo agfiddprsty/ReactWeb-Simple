@@ -196,6 +196,7 @@ class ListVideo extends Component {
                              </span>
                         </div>     
                     </div>
+                    <br/>
                 </div>
             </div>
             
