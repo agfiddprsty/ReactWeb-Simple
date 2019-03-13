@@ -806,17 +806,18 @@ class ProfileFilled extends Component {
                                                         <p className="from">From</p>
                                                         <div className="row">
                                                             <div className="col-sm-3 col-md-2">
-                                                                <p className="fromfrom">
+                                                                <p className="fromfrom" style={{marginLeft:'-20px'}}>
                                                                     Month
                                                                 </p>
                                                             </div>
-                                                            <div className="col-sm-3 col-md-2">
-                                                                <p className="fromfrom">
+                                                            <div className="col-sm-3 col-md-2"
+                                                            style={{marginLeft:'-5px'}}>
+                                                                <p className="fromfrom" style={{marginLeft:'52px'}}>
                                                                     Years
                                                                 </p>
                                                             </div>
                                                         </div>
-                                                        <div className="row" style={{marginTop:'-10px'}}>
+                                                        <div className="row" style={{marginLeft:'125px'}}>
                                                             <div className="col-sm-3 col-md-1">
                                                                 <p className="until">
                                                                     To
@@ -826,62 +827,62 @@ class ProfileFilled extends Component {
                                                         </div>
                                                         <div className="row" style={{marginLeft:'20px'}}>
                                                             <div className="col-sm-3 col-md-2"
-                                                            style={{marginTop:'-20px'}}>
+                                                            style={{marginTop:'-30px', marginLeft:'100px'}}>
                                                                 <p className="fromto">
                                                                     Month
                                                                 </p>
                                                             </div>
                                                             <div className="col-sm-3 col-md-2"
-                                                            style={{marginTop:'-20px'}}>
+                                                            style={{marginTop:'-30px', marginLeft:'72px'}}>
                                                                 <p className="fromto">
                                                                     Years
                                                                 </p>
                                                             </div>
                                                         </div>
                                                         <div className="row drpdndt">
-                                                            <select name="monthFrWrk" onChange={this.handleChange} className="col-1 custom-select mb-3 optdate">
+                                                            <select name="month" className="col-1 custom-select col-sm-2 optdate">
                                                                 <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
                                                                 <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
                                                                 <option value="11">11</option><option value="12">12</option>
                                                             </select>
                                                             <span className="fa fa-sort-desc"
-                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'52px', fontSize:'24px'}}></span>
+                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'122px', fontSize:'24px'}}></span>
 
-                                                            <select name="yearFrWrk" onChange={this.handleChange} className="col-1 custom-select mb-3 optdate">
+                                                            <select name="year" className="col-1 custom-select col-sm-2 optdate">
                                                                 <option value="2019" selected>2019</option>
                                                                 <option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option>
                                                                 <option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option>
                                                                 <option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option>
                                                                 <option value="2002">2002</option><option value="2001">2001</option>
-                                                                <option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option>
+                                                                <option value="199">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option>
                                                                 <option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option>
                                                             </select>
                                                             <span className="fa fa-sort-desc"
-                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'202px', fontSize:'24px'}}></span>
+                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'345px', fontSize:'24px'}}></span>
 
-                                                            <select name="monthToWrk" onChange={this.handleChange} className="col-1 custom-select mb-3 optdate" style={{marginLeft: '55px'}}>
+                                                            <select name="month" className="col-1 custom-select col-sm-2 optdate" style={{marginLeft: '0px'}}>
                                                                 <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
                                                                 <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
                                                                 <option value="11">11</option><option value="12">12</option>
                                                             </select>
                                                             <span className="fa fa-sort-desc"
-                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'412px', fontSize:'24px'}}></span>
+                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'787px', fontSize:'24px'}}></span>
 
-                                                            <select name="yearToWrk" onChange={this.handleChange} className="col-1 custom-select mb-3 optdate">
+                                                            <select name="year" className="col-1 custom-select col-sm-2 optdate" style={{marginLeft:'-15px'}}>
                                                                 <option value="2019" selected>2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option>
                                                                 <option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option>
                                                                 <option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option>
                                                                 <option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option>
                                                             </select>
                                                             <span className="fa fa-sort-desc"
-                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'562px', fontSize:'24px'}}></span>
+                                                            style={{color:'darkgrey', position:'absolute', marginLeft:'577px', fontSize:'24px'}}></span>
                                                         </div>
                                                     </div>
                                                     <br/>
                                                     <div className="d-flex justify-content-end divbtncando">
                                                         <a href="#"><span className="btncel btn btn-lg btnbatal">Batal</span></a>  
-                                                        <a href="#"><span className="btnsel btn btn-lg btnselesai" 
-                                                        onClick={this.kerjahandle}>Selesai</span></a>  
+                                                        <span><button className="btnsel btn btn-lg btnselesai" 
+                                                        onClick={this.kerjahandle}>Selesai</button></span>  
                                                     </div>
                                                 </div>
                                             </form>
@@ -1074,18 +1075,18 @@ class ProfileFilled extends Component {
                                                             <p className="from">From</p>
                                                             <div className="row">
                                                                 <div className="col-sm-3 col-md-2">
-                                                                    <p className="fromfrom">
+                                                                    <p className="fromfrom" style={{marginLeft:'-20px'}}>
                                                                         Month
                                                                     </p>
                                                                 </div>
                                                                 <div className="col-sm-3 col-md-2"
                                                                 style={{marginLeft:'-5px'}}>
-                                                                    <p className="fromfrom">
+                                                                    <p className="fromfrom" style={{marginLeft:'52px'}}>
                                                                         Years
                                                                     </p>
                                                                 </div>
                                                             </div>
-                                                            <div className="row">
+                                                            <div className="row" style={{marginLeft:'125px'}}>
                                                                 <div className="col-sm-3 col-md-1">
                                                                     <p className="until">
                                                                         To
@@ -1095,28 +1096,28 @@ class ProfileFilled extends Component {
                                                             </div>
                                                             <div className="row" style={{marginLeft:'20px'}}>
                                                                 <div className="col-sm-3 col-md-2"
-                                                                style={{marginTop:'-30px'}}>
+                                                                style={{marginTop:'-30px', marginLeft:'100px'}}>
                                                                     <p className="fromto">
                                                                         Month
                                                                     </p>
                                                                 </div>
                                                                 <div className="col-sm-3 col-md-2"
-                                                                style={{marginTop:'-30px'}}>
+                                                                style={{marginTop:'-30px', marginLeft:'72px'}}>
                                                                     <p className="fromto">
                                                                         Years
                                                                     </p>
                                                                 </div>
                                                             </div>
                                                             <div className="row drpdndt">
-                                                                <select name="month" className="col-1 custom-select mb-3 optdate">
+                                                                <select name="month" className="col-1 custom-select col-sm-2 optdate">
                                                                     <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
                                                                     <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
                                                                     <option value="11">11</option><option value="12">12</option>
                                                                 </select>
                                                                 <span className="fa fa-sort-desc"
-                                                                style={{color:'darkgrey', position:'absolute', marginLeft:'52px', fontSize:'24px'}}></span>
+                                                                style={{color:'darkgrey', position:'absolute', marginLeft:'122px', fontSize:'24px'}}></span>
 
-                                                                <select name="year" className="col-1 custom-select mb-3 optdate">
+                                                                <select name="year" className="col-1 custom-select col-sm-2 optdate">
                                                                     <option value="2019" selected>2019</option>
                                                                     <option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option>
                                                                     <option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option>
@@ -1126,24 +1127,24 @@ class ProfileFilled extends Component {
                                                                     <option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option>
                                                                 </select>
                                                                 <span className="fa fa-sort-desc"
-                                                                style={{color:'darkgrey', position:'absolute', marginLeft:'202px', fontSize:'24px'}}></span>
+                                                                style={{color:'darkgrey', position:'absolute', marginLeft:'345px', fontSize:'24px'}}></span>
 
-                                                                <select name="month" className="col-1 custom-select mb-3 optdate" style={{marginLeft: '55px'}}>
+                                                                <select name="month" className="col-1 custom-select col-sm-2 optdate" style={{marginLeft: '0px'}}>
                                                                     <option value="01" selected>01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option>
                                                                     <option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option>
                                                                     <option value="11">11</option><option value="12">12</option>
                                                                 </select>
                                                                 <span className="fa fa-sort-desc"
-                                                                style={{color:'darkgrey', position:'absolute', marginLeft:'412px', fontSize:'24px'}}></span>
+                                                                style={{color:'darkgrey', position:'absolute', marginLeft:'787px', fontSize:'24px'}}></span>
 
-                                                                <select name="year" className="col-1 custom-select mb-3 optdate">
+                                                                <select name="year" className="col-1 custom-select col-sm-2 optdate" style={{marginLeft:'-15px'}}>
                                                                     <option value="2019" selected>2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option>
                                                                     <option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option>
                                                                     <option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option>
                                                                     <option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option>
                                                             </select>
                                                                 <span className="fa fa-sort-desc"
-                                                                style={{color:'darkgrey', position:'absolute', marginLeft:'562px', fontSize:'24px'}}></span>
+                                                                style={{color:'darkgrey', position:'absolute', marginLeft:'577px', fontSize:'24px'}}></span>
                                                             </div>
                                                         </div>
                                                         <br/>

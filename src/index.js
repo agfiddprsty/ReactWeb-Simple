@@ -13,13 +13,13 @@ import {Provider} from 'react-redux';
 import './Screen/css/index.css';
 import Home from './Screen/Home';
 import * as serviceWorker from './serviceWorker';
-import Login from './Screen/Login';
 import Register from './Screen/Register';
+import Login from './Screen/Login';
+import Syllabus from './Screen/Syllabus';
 import Agreement from './Screen/Agreement';
+import Payment from './Screen/Payment';
 import ProfileFill from './Screen/ProfileFill';
 import ProfileFilled from './Screen/ProfileFilled';
-import Syllabus from './Screen/Syllabus';
-import Payment from './Screen/Payment';
 import Video from './Screen/VideoPlayer';
 import Dashboard from './Screen/Dashboard'
 import DetailVIdeo from './Screen/DetailVideo'
@@ -35,13 +35,12 @@ ReactDOM.render(
             <Router>
                 <div>
                     <Route exact path="/" component={Home} />
-                    <Route path='/profile' component={ProfileFilled} />
-                    <Route path="/login" component={Login}/>
                     <Route path="/register" component={Register}/>
+                    <Route path="/login" component={Login}/>
+                    <Route path="/syllabus" component={Syllabus}/>                    
                     <Route path="/agreement" component={Agreement}/>
-                    <Route path="/profilefill" component={ProfileFill}/>
-                    <Route path="/syllabus" component={Syllabus}/>
                     <Route path="/payment" component={Payment}/>
+                    <Route path='/profile' component={ProfileFilled} />
                     <Route path="/videoplayer" component={Video}/>
                     <Route path="/video/:uid" component={DetailVIdeo}/>
                     <Route path="/videos" component={Dashboard}/>
