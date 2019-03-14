@@ -4,6 +4,7 @@ import logo from './img/logo.png';
 import { connect } from 'react-redux';
 import {Redirect} from 'react-router';
 import './css/Login.css';
+import {store} from '../store';
 import { login } from '../Actions/auth';
 
 class Login extends Component {
@@ -59,7 +60,9 @@ class Login extends Component {
             }
             this.props.dispatch(login(body))
             .then(() => {
+              localStorage.setItem('token', store.getState().auth.token);
               this.setState({ toSyllabus: true });
+              console.log(localStorage.getItem('token'));
             })
             .catch(err => alert('Username or password wrong!'));
             // this.props.history.push("/syllabus");

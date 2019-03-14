@@ -9,6 +9,7 @@ import {
 
 } from 'react-router-dom';
 import {Provider} from 'react-redux';
+import {PrivateRoute} from './PrivateRoute';
 //import screen
 import './Screen/css/index.css';
 import Home from './Screen/Home';
@@ -35,16 +36,16 @@ ReactDOM.render(
             <Router>
                 <div>
                     <Route exact path="/" component={Home} />
-                    <Route path="/register" component={Register}/>
-                    <Route path="/login" component={Login}/>
-                    <Route path="/syllabus" component={Syllabus}/>                    
-                    <Route path="/agreement" component={Agreement}/>
-                    <Route path="/payment" component={Payment}/>
-                    <Route path='/profile' component={ProfileFilled} />
-                    <Route path="/videoplayer" component={Video}/>
-                    <Route path="/video/:uid" component={DetailVIdeo}/>
-                    <Route path="/videos" component={Dashboard}/>
-                    <Route path="/quiz/:uid" component={DetailQuiz}/>
+                    <Route exact path="/register" component={Register}/>
+                    <Route exact path="/login" component={Login}/>
+                    <PrivateRoute exact path="/syllabus" component={Syllabus}/>                    
+                    <PrivateRoute exact path="/agreement" component={Agreement}/>
+                    <PrivateRoute exact path="/payment" component={Payment}/>
+                    <PrivateRoute exact path='/profile' component={ProfileFilled} />
+                    <PrivateRoute exact path="/videoplayer" component={Video}/>
+                    <PrivateRoute exact path="/video/:uid" component={DetailVIdeo}/>
+                    <PrivateRoute exact path="/videos" component={Dashboard}/>
+                    <PrivateRoute exact path="/quiz/:uid" component={DetailQuiz}/>
                 </div>
             </Router>
         </PersistGate>
