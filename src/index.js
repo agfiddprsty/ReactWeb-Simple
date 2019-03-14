@@ -35,9 +35,9 @@ ReactDOM.render(
         <PersistGate loading={null} persistor={persistor}>
             <Router>
                 <div>
-                    <Route path="/" component={Home} />
-                    <Route path="/register" component={Register}/>
-                    <Route path="/login" component={Login}/>
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/register" component={Register}/>
+                    <Route exact path="/login" component={Login}/>
                     <PrivateRoute path="/syllabus" component={Syllabus}/>                    
                     <PrivateRoute path="/agreement" component={Agreement}/>
                     <PrivateRoute path="/payment" component={Payment}/>
