@@ -18,8 +18,8 @@ class ProfileFilled extends Component {
     constructor(props){
         super(props)
         this.finishhandle = this.finishhandle.bind(this);
-        this.pendidikanhandle = this.pendidikanhandle.bind(this);
-        this.kerjahandle = this.kerjahandle.bind(this);
+        this.educationhandle = this.educationhandle.bind(this);
+        this.workhandle = this.workhandle.bind(this);
         this.projecthandle = this.projecthandle.bind(this);
         this.addSkills = this.addSkills.bind(this);
         this.btnAdddesign = this.btnAdddesign.bind(this);
@@ -32,7 +32,6 @@ class ProfileFilled extends Component {
         this.moveLogin = this.moveLogin.bind(this);
         this.upload = this.upload.bind(this)
         this.onSuccess = this.onSuccess.bind(this);
-        this.handlearrayschool = this.handlearrayschool.bind(this);
         this.handlearrayproject = this.handlearrayproject.bind(this);
         this.state = {
             isverified: false,
@@ -70,28 +69,6 @@ class ProfileFilled extends Component {
             monthToEdu: '',
             yearToEdu: '',
             educations: [],
-            school : [ 
-                {id:"1", 
-                sekolah:"SMK Uhuy Lah", 
-                study:"Field of Study", 
-                jurusan:"Multimedia", 
-                degree:"Major"},
-                {id:"2", 
-                sekolah:"SMK Uhuy Lah", 
-                study:"Field of Study", 
-                jurusan:"Multimedia", 
-                degree:"Major"}
-            ],
-            project : [
-                {id:"1", 
-                projectname:"Aplikasi Kopi Kenangan", 
-                projecturl:"", 
-                projectdesc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet."},
-                {id:"2", 
-                projectname:"Aplikasi DumbWays", 
-                projecturl:"", 
-                projectdesc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada aliquet urna. Etiam non malesuada magna. Quisque eget velit sit amet mauris facilisis lacinia. Fusce mattis enim sem, sed pulvinar lectus condimentum sit amet."}
-            ]
         }
     }
     componentDidMount(){
@@ -160,27 +137,6 @@ class ProfileFilled extends Component {
         
     }
 
-
-    handlearrayschool(){
-        var id="1";
-        var sekolah="SMK Uhuy Lah";
-        var study="Field of Study";
-        var jurusan="Multimedia";
-        var degree="Major";
-        
-        var id="2";
-        var sekolah="SMK Uhuy Lah";
-        var study="Field of Study";
-        var jurusan="Multimedia";
-        var degree="Major";
-            var newSchool = [
-                id,sekolah,study,jurusan,degree
-            ]
-            this.setState({
-                arrayschool: [...this.state.arrayschool,newSchool]
-            })
-        }
-
     handlearrayproject(){
         var id="1"; 
         var projectname="Aplikasi Kopi Kenangan";
@@ -226,7 +182,7 @@ class ProfileFilled extends Component {
         document.getElementById("selectImage").click()
     }
 
-    pendidikanhandle(){
+    educationhandle(){
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (this.state.sekolah === "") {
@@ -261,7 +217,7 @@ class ProfileFilled extends Component {
         }
     }
 
-    kerjahandle(){
+    workhandle(){
         //check all is ok
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (this.state.perusahaan === "") {
@@ -501,13 +457,13 @@ class ProfileFilled extends Component {
                                         </div>
                                         <div>
                                             <br/>
-                                            <button type="button" className="btndngr btn btn-outline btn-lg btn-block btnpendidikan" data-toggle="collapse" data-target="#tambahpendidikan"
+                                            <button type="button" className="btndngr btn btn-outline btn-lg btn-block btnpendidikan" data-toggle="collapse" data-target="#addeducation"
                                             >+ Tambah Pendidikan</button>
                                         </div>
                                         <br/>  
                                         <div>
                                             <form>
-                                                <div id="tambahpendidikan" className="collapse" style={{margin:'0 40px 0 40px'}}>
+                                                <div id="addeducation" className="collapse" style={{margin:'0 40px 0 40px'}}>
                                                     <p className="titleadd">Tambah Pendidikan</p>
                                                     <br/>
                                                     <div>
@@ -610,7 +566,7 @@ class ProfileFilled extends Component {
                                                     <div className="d-flex justify-content-end divbtncando">
                                                         <a href="#"><span className="btncel btn btn-lg btnbatal">Batal</span></a>  
                                                         <span ><button className="btnsel btn btn-lg btnselesai"
-                                                        onClick={this.pendidikanhandle}>Selesai</button></span>
+                                                        onClick={this.educationhandle}>Selesai</button></span>
                                                     </div>
                                                 </div>
                                             </form>
@@ -733,13 +689,13 @@ class ProfileFilled extends Component {
                                             <br/>
                                             <p className="parttext">Pengalaman Kerja</p>
                                             <br/>
-                                            <button type="button" className="btndngr btn btn-outline-danger btn-lg btn-block btnpengalaman" data-toggle="collapse" data-target="#tambahpengalamankerja"
+                                            <button type="button" className="btndngr btn btn-outline-danger btn-lg btn-block btnpengalaman" data-toggle="collapse" data-target="#addworkexperience"
                                             >+ Tambah Pengalaman Kerja</button>
                                         </div>
                                         <br/>
                                         <div>
                                             <form>
-                                                <div id="tambahpengalamankerja" className="collapse" style={{margin:'0 40px 0 40px'}}>
+                                                <div id="addworkexperience" className="collapse" style={{margin:'0 40px 0 40px'}}>
                                                     <p className="titleadd">Tambah Pengalaman</p>
                                                     <br/>
                                                     <div>
@@ -842,7 +798,7 @@ class ProfileFilled extends Component {
                                                     <div className="d-flex justify-content-end divbtncando">
                                                         <a href="#"><span className="btncel btn btn-lg btnbatal">Batal</span></a>  
                                                         <span><button className="btnsel btn btn-lg btnselesai" 
-                                                        onClick={this.kerjahandle}>Selesai</button></span>  
+                                                        onClick={this.workhandle}>Selesai</button></span>  
                                                     </div>
                                                 </div>
                                             </form>
@@ -950,11 +906,11 @@ class ProfileFilled extends Component {
                                                     >Add Skill</button> */}
                                                 </div>
                                                 <br/>
-                                                <button type="button" className="btndngr btn btn-outline btn-lg btn-block btnpendidikan" data-toggle="collapse" data-target="#tambahskills"
+                                                <button type="button" className="btndngr btn btn-outline btn-lg btn-block btnpendidikan" data-toggle="collapse" data-target="#addskill"
                                                 >+ Add Skill</button>
                                                 <div>
                                                     <form>
-                                                        <div id="tambahskills" className="collapse" style={{marginRight:'80px'}}>
+                                                        <div id="addskill" className="collapse" style={{marginRight:'80px'}}>
                                                             <p className="titleadd">Tambah Skills</p>
                                                             <div className="input-group input-group-lg text-center d-flex flex-wrap align-content-center divadskl">
                                                                 <span className="fa fa-search" style={{fontSize: '30px', color: '#ff003a', marginRight: '5px', padding: '20px', width:'7%'}}></span>
@@ -1007,13 +963,13 @@ class ProfileFilled extends Component {
                                             <div>
                                                 <p className="parttextprojects">Projects</p>
                                                 <br/>
-                                                <button type="button" className="btndngr btn btn-outline-danger btn-lg btn-block btnprojects" data-toggle="collapse" data-target="#tambahproject"
+                                                <button type="button" className="btndngr btn btn-outline-danger btn-lg btn-block btnprojects" data-toggle="collapse" data-target="#addproject"
                                                 > Tambah Project</button>
                                             </div>
                                             <br/>
                                             <div>
                                                 <form>
-                                                    <div id="tambahproject" class="collapse" style={{margin:'0 40px 0 40px'}}>
+                                                    <div id="addproject" class="collapse" style={{margin:'0 40px 0 40px'}}>
                                                         <p className="titleadd">Tambah Project</p>
                                                         <br/>
                                                         <div>
