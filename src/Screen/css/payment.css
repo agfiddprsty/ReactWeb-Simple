@@ -294,7 +294,7 @@
 	}
 }
 
-@media only screen and (max-height: 730px) {
+@media only screen and (max-height: 665px) {
     .isii{
         overflow: auto;
         overflow-x: hidden;
