@@ -36,7 +36,7 @@ class Home extends Component {
   render() {
 
     const currentDate = new Date();
-    const year = (currentDate.getMonth() === 3 && currentDate.getDate() > 14) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
+    const year = (currentDate.getMonth() === 3 && currentDate.getDate() > 31) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
     
     return (
             <div className="Hom-b">
@@ -57,7 +57,7 @@ class Home extends Component {
                                         </div>
                                         <p className="text-center berakhir">Penawaran berakhir dalam:</p>
                                         <div className="timer" >
-                                            <Timer date={`${year}-03-15T00:00:00`} />
+                                            <Timer date={`${year}-03-31T00:00:00`} />
                                         </div>
                                         <div className="row">
                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
