@@ -36,7 +36,7 @@ class DetailVideo extends Component {
     componentDidMount(){
         var uid = window.location.href;
         var id = uid.replace('http://localhost:3000/video/','');
-        var auth = "bearer " +store.getState().auth.token;
+        var auth = "bearer " +localStorage.getItem('token');
         console.log(auth)
         Axios.get("http://localhost:3333/lecture/"+id,{
             'headers':{
