@@ -3,7 +3,6 @@ import daftarsekarang from './img/daftarsekarang.png';
 import logo from './img/logo.png';
 import './css/Registerpage.css';
 import { Redirect } from 'react-router';
-import Axios from 'axios';
 import { connect } from 'react-redux';
 import { register } from '../Actions/auth';
 

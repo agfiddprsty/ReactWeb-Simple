@@ -38,14 +38,14 @@ ReactDOM.render(
                     <Route exact path="/" component={Home} />
                     <Route exact path="/register" component={Register}/>
                     <Route exact path="/login" component={Login}/>
-                    <PrivateRoute path="/syllabus" component={Syllabus}/>                    
-                    <PrivateRoute path="/agreement" component={Agreement}/>
-                    <PrivateRoute path="/payment" component={Payment}/>
-                    <PrivateRoute path='/profile' component={ProfileFilled} />
-                    <PrivateRoute path="/videoplayer" component={Video}/>
-                    <PrivateRoute path="/video/:uid" component={DetailVIdeo}/>
-                    <PrivateRoute path="/videos" component={Dashboard}/>
-                    <PrivateRoute path="/quiz/:uid" component={DetailQuiz}/>
+                    <PrivateRoute exact path="/syllabus" component={Syllabus}/>                    
+                    <PrivateRoute exact path="/agreement" component={Agreement}/>
+                    <PrivateRoute exact path="/payment" component={Payment}/>
+                    <PrivateRoute exact path='/profile' component={ProfileFilled} />
+                    <PrivateRoute exact path="/videoplayer" component={Video}/>
+                    <PrivateRoute exact path="/video/:uid" component={DetailVIdeo}/>
+                    <PrivateRoute exact path="/videos" component={Dashboard}/>
+                    <PrivateRoute exact path="/quiz/:uid" component={DetailQuiz}/>
                 </div>
             </Router>
         </PersistGate>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './HeaderPage';
 import './css/Syllabus.css';
+import {store} from '../store';
 
 class Syllabus extends Component {
     constructor(props){

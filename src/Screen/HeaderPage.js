@@ -1,10 +1,29 @@
 import React, { Component } from 'react';
 import './css/Header.css';
-import  dwicon from './img/Logodw.png'
+import  dwicon from './img/Logodw.png';
 import boy from './img/man1.png';
+import {Redirect} from 'react-router';
 
 class Header extends Component {
+
+  constructor(){
+    super()
+    this.logoutHandle = this.logoutHandle.bind(this);
+    this.state = {
+      toLogin: false
+    }
+  }
+
+  logoutHandle(){
+    localStorage.removeItem('token')
+    console.log(localStorage.getItem('token'));
+    this.setState({toLogin: true})
+  }
+
   render() {
+    if (this.state.toLogin === true) {
+      return <Redirect to="/login" />
+    }
     return (
       <div>
         <div className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
@@ -21,7 +40,7 @@ class Header extends Component {
                       </span>
                       <div className="dropdown-menu">
                         <a className="dropdown-item" href="/profile">Profile</a>
-                        <a className="dropdown-item" href="/login">Logout</a>
+                        <span onClick={this.logoutHandle} style={{cursor: 'pointer', fontSize: '15px'}} className="dropdown-item">Logout</span>
                       </div>
                     </li>
                   </ul>
@@ -48,7 +67,7 @@ class Header extends Component {
                       <a href='/profile' className="nav-link">Profile</a>
                     </li>
                     <li className="nav-item">
-                      <a href="/login" className="nav-link active">Logout</a>
+                      <span onClick={this.logoutHandle} style={{cursor: 'pointer'}} className="nav-link active">Logout</span>
                     </li>
                   </ul>
                 </div> 
