@@ -72,17 +72,17 @@ class ProfileFilled extends Component {
         }
     }
     componentDidMount(){
-        axios.get('http://localhost:3333/skills', { 'headers': { 'Authorization' : 'Bearer '+ store.getState().auth.token}} )
+        axios.get('http://localhost:3333/skills', { 'headers': { 'Authorization' : 'Bearer '+ localStorage.getItem('token')}} )
         .then(res=>{
             this.setState({skills:res.data.data})
             console.log(this.state.skills)
         })
-        axios.get('http://localhost:3333/work_experiences', { 'headers': { 'Authorization' : 'Bearer '+ store.getState().auth.token}} )
+        axios.get('http://localhost:3333/work_experiences', { 'headers': { 'Authorization' : 'Bearer '+ localStorage.getItem('token')}} )
         .then(ress=>{
             this.setState({work_experience:ress.data.data})
             console.log(this.state.work_experience)
         })
-        axios.get('http://localhost:3333/educations', { 'headers': { 'Authorization' : 'Bearer '+ store.getState().auth.token}} )
+        axios.get('http://localhost:3333/educations', { 'headers': { 'Authorization' : 'Bearer '+ localStorage.getItem('token')}} )
         .then(ressp=>{
             this.setState({educations:ressp.data.data})
             console.log(this.state.educations)
@@ -210,7 +210,7 @@ class ProfileFilled extends Component {
                 from,
                 to
             }
-            axios.post('http://localhost:3333/education',body, { 'headers': { 'Authorization' : 'Bearer '+ store.getState().auth.token}}).then(rees=>{
+            axios.post('http://localhost:3333/education',body, { 'headers': { 'Authorization' : 'Bearer '+ localStorage.getItem('token')}}).then(rees=>{
                 console.log(rees)
                 // this.setState({ressjson:ress})
             })
@@ -243,7 +243,7 @@ class ProfileFilled extends Component {
                 from,
                 to
             }
-            axios.post('http://localhost:3333/work_experience', body, { 'headers': { 'Authorization' : 'Bearer '+ store.getState().auth.token}}).then(resp=>{
+            axios.post('http://localhost:3333/work_experience', body, { 'headers': { 'Authorization' : 'Bearer '+ localStorage.getItem('token')}}).then(resp=>{
                 console.log(resp);
             })
         }
@@ -289,7 +289,7 @@ class ProfileFilled extends Component {
                 name,
                 user_id
             }
-            axios.post('http://localhost:3333/skill', body, { 'headers': { 'Authorization' : 'Bearer '+ store.getState().auth.token}}).then(resss=>{
+            axios.post('http://localhost:3333/skill', body, { 'headers': { 'Authorization' : 'Bearer '+ localStorage.getItem('token')}}).then(resss=>{
                 console.log(resss)
             });
         }
